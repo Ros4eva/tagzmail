@@ -1,18 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {DataService} from './data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ApiComponent } from './api/api.component';
+import { MailComponent } from './mail/mail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { Router,RouterModule } from '@angular/router';
+import {Location} from "@angular/common";
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ApiComponent,
+    MailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [DataService,Location],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
