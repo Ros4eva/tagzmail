@@ -44,11 +44,11 @@ export class DataService {
 
   logout() {
     sessionStorage.clear()
-    window.location.replace('http://127.0.0.1:8000')
+    window.location.replace('http://34.220.182.121:4000')
   }
 
   sessionSet(token:string)  {
-    this.http.post('http://127.0.0.1:8000' + '/sso_api/confirm_key/' + 3,JSON.stringify({'token':token}),this.httpOptions)
+    this.http.post('http://34.220.182.121:4000' + '/sso_api/confirm_key/' + 3,JSON.stringify({'token':token}),this.httpOptions)
       .subscribe(data=>{
       sessionStorage.clear();
       sessionStorage.setItem('username', data['username']);

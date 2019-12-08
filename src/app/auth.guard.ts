@@ -23,13 +23,11 @@ export class AuthGuard implements CanActivate {
 
       const hash = route.queryParamMap.get('hash');
       if(hash){
-        if( this.dataservice.sessionSet(hash)){
-          return true
-        }       
+        this.dataservice.sessionSet(hash)     
       } 
       else {
         alert("Session expired, redirecting back to linuxjobber");
-        window.location.replace('http://127.0.0.1:8000')
+        window.location.replace('http://34.220.182.121:4000')
         return false;
       }
     }

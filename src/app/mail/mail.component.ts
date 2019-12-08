@@ -10,9 +10,11 @@ import {DataService} from "./../data.service";
 export class MailComponent implements OnInit {
 
   public username:any;
+  public email:any;
 
   constructor(private dataservice: DataService) {
   	this.username=sessionStorage.getItem('username');
+  	this.email=sessionStorage.getItem('email');
   }
 
   ngOnInit() {
