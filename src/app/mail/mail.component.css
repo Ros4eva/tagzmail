@@ -507,7 +507,7 @@ body {
     height: calc(100% - 130px);
   }
   .sideBar-body {
-    height: 80px;
+    height: 80px !important;
   }
   .sideBar-avatar {
     text-align: left;
