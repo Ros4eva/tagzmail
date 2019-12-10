@@ -20,6 +20,13 @@ export class DataService {
   public email;
   public users;
 
+  public message;
+
+  public from_email;
+  public message_body;
+  public to_email;
+  public email_subject;
+
   private headers: HttpHeaders = new HttpHeaders();
 
 
@@ -44,11 +51,37 @@ export class DataService {
 
   logout() {
     sessionStorage.clear()
-    window.location.replace('http://34.220.182.121:4000')
+    window.location.replace('http://127.0.0.1:8000')
   }
 
+  sendEmail()
+  {
+    console.log(this.message_body)
+    console.log(this.from_email)
+    console.log(this.to_email)
+    console.log(this.email_subject)
+    this.from_email = sessionStorage.getItem('email');
+    this.http.post('http://127.0.0.1:5000' + '/mail/', JSON.stringify({'frommail': this.from_email, 'tomail': this.to_email, 'subject': this.email_subject, 'msgb':this.message_body}), this.httpOptions).subscribe(
+        data => {
+            this.message = 'Email has been sent.'
+            this.message_body = '';
+            this.from_email = '';
+            this.to_email = '';
+            this.email_subject = '';
+        },
+        err => {
+            this.message = 'Email Not sent! Error!';
+            console.error(err);
+            this.message_body = '';
+            this.from_email = '';
+            this.to_email = '';
+            this.email_subject = '';
+        }
+    );
+  }  
+
   sessionSet(token:string)  {
-    this.http.post('http://34.220.182.121:4000' + '/sso_api/confirm_key/' + 3,JSON.stringify({'token':token}),this.httpOptions)
+    this.http.post('http://127.0.0.1:8000' + '/sso_api/confirm_key/' + 3,JSON.stringify({'token':token}),this.httpOptions)
       .subscribe(data=>{
       sessionStorage.clear();
       sessionStorage.setItem('username', data['username']);

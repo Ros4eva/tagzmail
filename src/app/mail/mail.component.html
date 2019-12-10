@@ -38,6 +38,23 @@
     </div>
 </div> -->
 
+<button style="float: right; margin-top: 20px; margin-right: 50px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" (click)="myModal.openModal()">
+  Compose
+</button>
+
+<h3 style="text-align: center; ">{{dataservice.message}}</h3>
+<!--
+<div ngIf="{{dataservice.message}} === Email has been sent.">
+   <h3 style="text-align: center; color: green;">{{dataservice.message}}</h3>
+</div>
+<div ngIf="{{dataservice.message}} != Email has been sent.">
+    <h3 style="text-align: center; color: red;">{{dataservice.message}}</h3>
+</div>
+-->
+<br>
+<br>
+<br>
+
   <div class="container app">
     <div class="row app-one">
 
@@ -266,3 +283,33 @@
   </div>
 
   <!-- App End -->
+
+  <!-- The Modal -->
+  <mz-modal #myModal>
+        <mz-modal-header>
+            <h4>Compose Mail</h4>
+        </mz-modal-header>
+        <mz-modal-content>
+            <h6>Click outside this dialog to cancel.</h6>
+            <form (ngSubmit)="sendEmail();" id="signUp">
+              <!--  <div class="form-group">
+                    <label>From:</label>
+                    <input required="required" class="form-control" type="text" id="email" [(ngModel)]="dataservice.from_email" name="fromemail" placeholder="{{email}}" required>
+                </div> -->
+                <div class="form-group">
+                    <label>To:</label>
+                    <input required="required" class="form-control" type="text" id="email" [(ngModel)]="dataservice.to_email" name="toemail" required>
+                </div>
+                <div class="form-group">
+                    <label>Subject:</label>
+                    <input required="required" class="form-control" type="text" id="email" [(ngModel)]="dataservice.email_subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label>Body:</label>
+                    <textarea required="required" class="form-control" type="text" id="messagebody" [(ngModel)]="dataservice.message_body" name="messagebody" required></textarea>
+                    
+                </div>
+                <input class="modal-close btn btn-default" type="submit" value="Send" id="send_mail">
+            </form>
+        </mz-modal-content>
+    </mz-modal>

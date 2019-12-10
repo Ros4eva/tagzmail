@@ -8,7 +8,9 @@ import { MailComponent } from './mail/mail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Router,RouterModule } from '@angular/router';
 import {Location} from "@angular/common";
-
+import { FormsModule } from '@angular/forms';
+import { MzButtonModule, MzModalModule } from 'ngx-materialize';
+import { CommonModule } from '@angular/common';  
 
 
 @NgModule({
@@ -21,7 +23,11 @@ import {Location} from "@angular/common";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    MzButtonModule,
+    MzModalModule,
+    CommonModule
   ],
   providers: [DataService,Location],
   bootstrap: [AppComponent]

@@ -27,7 +27,7 @@ export class AuthGuard implements CanActivate {
       } 
       else {
         alert("Session expired, redirecting back to linuxjobber");
-        window.location.replace('http://34.220.182.121:4000')
+        window.location.replace('http://127.0.0.1:8000')
         return false;
       }
     }
