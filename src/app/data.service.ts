@@ -36,13 +36,17 @@ export class DataService {
   public authOptions;
   private required:boolean = false;
   private uploaded:boolean = true;
-
+  fileData: File = null;
 
   constructor(private http: HttpClient, private router: Router,
               private route: ActivatedRoute,location:Location,
              ) {
 
   }
+
+  fileProgress(fileInput: any) {
+    this.fileData = <File>fileInput.target.files[0];
+  } 
 
 
   static islogin() {
@@ -53,13 +57,14 @@ export class DataService {
     sessionStorage.clear()
     window.location.replace('http://127.0.0.1:8000')
   }
-
+ 
   sendEmail()
   {
     console.log(this.message_body)
     console.log(this.from_email)
     console.log(this.to_email)
     console.log(this.email_subject)
+
     this.from_email = sessionStorage.getItem('email');
     this.http.post('http://127.0.0.1:5000' + '/mail/', JSON.stringify({'frommail': this.from_email, 'tomail': this.to_email, 'subject': this.email_subject, 'msgb':this.message_body}), this.httpOptions).subscribe(
         data => {

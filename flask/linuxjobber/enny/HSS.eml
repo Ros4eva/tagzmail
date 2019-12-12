@@ -1,0 +1,174 @@
+Delivered-To: nathanoluwaseyi@gmail.com
+Received: by 2002:aed:32c5:0:0:0:0:0 with SMTP id z63csp103402qtd;
+        Wed, 4 Dec 2019 01:25:38 -0800 (PST)
+X-Google-Smtp-Source: APXvYqy/29XxLJOTzTCLvDG3lPGBVtZLVz5fIm29Yg08b7g9O3+2Ao/rA9xfnjHMqEHSSGMltfSd
+X-Received: by 2002:a02:4e01:: with SMTP id r1mr2081676jaa.90.1575451538500;
+        Wed, 04 Dec 2019 01:25:38 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1575451538; cv=none;
+        d=google.com; s=arc-20160816;
+        b=QTLVJ5XIK8kbqJOrVrmSD5W4vvTqqfaBtQ0ISYE6IAumosz++Kb2pomr3ofYWIprKf
+         kuTQbdAhhqhgjALOShfTqlWS6UwNwtSf0Wy6eGp5VYLfEBFwqJlQpqLo68fZ9TiLgsxj
+         rwzvpacDBmuwCWhVfMDbsHZcSrBwIMZKI+o9VBhLKmbDzCNWH9vUvi83p1n+TLeBQTQ6
+         sNLpYs9lrZRZX08O7oyghS0QQDTgG2UjfXynPSXz8kzZ/u9Q4C6QNoeUCFcPtmHaO/7n
+         LhqYJnJN7pj7k3B/4bpNYxIuufaZ/J8xSTJKvmPLl4ipGp7ZO0LVs5e6KqcEbvJP8WhC
+         ms6A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:from:to:reply-to
+         :message-id:sender:date:dkim-signature:dkim-signature;
+        bh=RioTZf8ljOjx1Q3drIHX+q8U9qvSs/Fa65RWLRbFzno=;
+        b=c5RBnrDE3QQGmhde4AKuEOvlzntXgXl4sU7EYyrT5J3kCTpOOMrmsMkKVlwM2fv6f0
+         MFQ1jv1LTRN5b7fgZDwet9H6Gpl3XlU6gNIpevAwDJ4wKvhOtg39EN7VgaarwgkY0RCC
+         6QcT6IXNVHrColSwsa5MK91sjcd3x2N56rEbhtdELxsqZf/XZcwHS0uNabYABPtZzCxw
+         4cLGaKAbJFD1Tj1IwcSH85U+uhiAJ/Utkayasy9Odpb/WFUBHGkec7Hz3/2Jaw5LEFIe
+         5LQhLAL5kG3fos8WlkZ8jomdSITIuxdH7D2jM2Bye99G0hSBtiBPVKDSgZHjH+ow3N9W
+         MzWA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@z.teachablemail.com header.s=krs header.b=WMfsLEnu;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=LeHYbC9l;
+       spf=pass (google.com: domain of bounce+107699.1b8f22-nathanoluwaseyi=gmail.com@z.teachablemail.com designates 198.61.255.227 as permitted sender) smtp.mailfrom="bounce+107699.1b8f22-nathanoluwaseyi=gmail.com@z.teachablemail.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=teachablemail.com
+Return-Path: <bounce+107699.1b8f22-nathanoluwaseyi=gmail.com@z.teachablemail.com>
+Received: from do255-227.mailgun.net (do255-227.mailgun.net. [198.61.255.227])
+        by mx.google.com with UTF8SMTPS id r17si5212125ioj.90.2019.12.04.01.25.37
+        for <nathanoluwaseyi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 04 Dec 2019 01:25:38 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounce+107699.1b8f22-nathanoluwaseyi=gmail.com@z.teachablemail.com designates 198.61.255.227 as permitted sender) client-ip=198.61.255.227;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@z.teachablemail.com header.s=krs header.b=WMfsLEnu;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=LeHYbC9l;
+       spf=pass (google.com: domain of bounce+107699.1b8f22-nathanoluwaseyi=gmail.com@z.teachablemail.com designates 198.61.255.227 as permitted sender) smtp.mailfrom="bounce+107699.1b8f22-nathanoluwaseyi=gmail.com@z.teachablemail.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=teachablemail.com
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=z.teachablemail.com;
+ q=dns/txt; s=krs; t=1575451538; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date: X-Feedback-Id;
+ bh=RioTZf8ljOjx1Q3drIHX+q8U9qvSs/Fa65RWLRbFzno=; b=WMfsLEnuhpMm/2W1SFKS2CfjmSa6FSPM4CTW48AqXr6RGjOQd8ojWp2GmYhCOM34Wf6Np6BX
+ fRsM2g7n+p2gBO0+rcQ8v6zQKo812fEnc7KdehPcnjnR6tM7mhZ2ijM9M0nh9nEcJ2IP8r7q
+ 6nBq3zYugH2U1ZEtNGIkrFeemoY=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg;
+ t=1575451538; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date: X-Feedback-Id;
+ bh=RioTZf8ljOjx1Q3drIHX+q8U9qvSs/Fa65RWLRbFzno=; b=LeHYbC9l5mN+SF5dU8fwRw5hKM7sJUyzDZo7YxYEyyiWE7VnDQUx6Q4ys/GKGvdRJTovXzJq
+ DNLf0jALOR/Jj1nUlseAnhfRsA+Kyc7bjD7tiIRUdesIUEbW/9ek3X0XG0XYmGm7mZkPcdzL
+ lkbclTSENWmv5uel6AEmcdPVPAY=
+X-Feedback-Id: 5c1272ffff8b9e0001765639:mailgun
+X-Mailgun-Sending-Ip: 198.61.255.227
+X-Mailgun-Sid: WyI0YTc5ZSIsICJuYXRoYW5vbHV3YXNleWlAZ21haWwuY29tIiwgIjFiOGYyMiJd
+X-Mailgun-Batch-Id: 3d5a0a33-d200-44b0-abdf-a7bfcd860e44
+Received: by luna.mailgun.net with HTTP; Wed, 04 Dec 2019 09:25:36 +0000
+Date: Wed, 04 Dec 2019 09:25:35 +0000
+Sender: notifications@z.teachablemail.com
+Message-Id: <20191204092535.1.FEA9AF126C126E77@z.teachablemail.com>
+X-Mailgun-Variables: {"email_receipt_id": "\"392562138\"", "message_id":
+ "\"498508\"", "school_id": "\"13898\""}
+Reply-To: "EH Academy" <support@ehacking.net>
+To: nathanoluwaseyi@gmail.com
+From: EH Academy <notifications@z.teachablemail.com>
+Subject: Holiday Season Sale - EH Academy All Bundles
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head></head>
+  <body>
+    <!--
+Email template: email
+Description: This email is sent to a student when they are emailed directly=
+=2E
+ -->
+
+<!-- Content -->
+<p>Hi there,
+</p>
+<p>EH Academy brings the Biggest =F0=9F=9B=8D=F0=9F=A4=91<strong><u><em>Hol=
+iday Season Sale</em></u></strong> =F0=9F=9B=8D=F0=9F=A4=91 of the Year. Yo=
+u can avail the discount on following Bundles:
+</p>
+<ol>
+	<li>Lifetime Access of Unlimited Cyber Security, Networking & Programming =
+Courses (<a href=3D"http://e.z.teachablemail.com/c/eJw9j9mKhDAQRb9G3wxZ3PKQ=
+B-lpf0NiUpowWcREhp6vn7Q0A3WhtlPU1YKs40ZpbQXFhBOKW8xpxzpE0Pyc-DQT2j-KnsNQtfg=
+XZZDKyNWBl9YhFX1tRK_6AknGCWy9wnqlrO0wxZwM28rIUDthcj5SxaaKziWkkhr8C4GR6tuGHQ=
+XIpX0UObtBth4aqRSk1OTYXMFZbzPoRsXrTJDeR9hciiOGRUUNFfu6_6l9QeQOi9WiorTlY4fHk=
+tT3dDlBgT3yZ8qKz54Sdi-cIshsZIju-pEJXraY3f8tJmVidB-uEPzN_AEPJ2GY" target=3D"=
+_blank">VIEW</a>)</li>
+	<li>The Complete Ethical Hacking Certification Bundle (<a href=3D"http://e=
+=2Ez.teachablemail.com/c/eJw9T8uKhDAQ_Bq9=
+GfIwag4eZHb8DWljOwkbEzGRZfbrNyOy0AVN=
+14OupWdzt3Je2p5TphinNVVcCkkYGZ-DGkbGm0fGs22Lmv6ShKANzA43sI7osJWml3RhoFC3c7O=
+uLV3bWaxKMwVUKtlQUbrepLTHQgwFH_OAhgW3N0ED-tv6F_GY8nnPSAarnLo7TFhhMlaDq25Zpf=
+FIds2nZIOP1Xz6xeEnUow6nHvwkw4LFuLr-q7cMEZ44WSXvuC8Vp2kXV7Ki50O1Gj3dLMit244E=
+5fg6D0kAz648wcivm2u_vovHLUJwd2-7FAfzx-homeP" target=3D"_blank">VIEW</a>)</l=
+i>
+	<li>Master in Cyber Security (<a href=3D"http://e.z.teachablemail.com/c/eJ=
+w9j1GLhSAQhX9NvSVqWvrgQyy3v3GZbEpZs0hjaX_9ei-XhTlwODMfzJkNm9TCee0Np0wzTgXVX=
+LaSMDI-Bj2MjHdfRY--rwT9JRnBOpgCbuADsftWO6Nlt9BFUKmo7XtQsu30opkCK5QQs62DcTkf=
+qWqHio9lwMKM203Qgf32cSURc4mPog1SxrPxsbH3VExCe50-36-ENdMV54D1hinBik8_m4pzoZW=
+kqpj6_dTzRIv-yJ9tW-p0nLXvg9NEyA7iHq4fSHj70mn9b5Ks2_fw4QqhX8wfd1NYpw" target=
+=3D"_blank">View</a>)</li>
+	<li>Master in Ethical Hacking, Linux & Networking (<a href=3D"http://e.z.t=
+eachablemail.com/c/eJw9j8GKhDAQRL9Gb4bYiYkePMgw_sbQxh4TNkYxGWZnv36zIgtdUHTX=
+g665r6f2CVC6Hnjd1cAl76ARDavZeB-6YaxB3bLuWheS_7BEaCxOnlZ0npltLW0vJ00wEzRc8_k=
+5SakaDUJRK4xWqETpe5vSHgsxFDDmQYMzrR9GFs2XCwsLlPJ6z1oxJjoqFypK1hn01ZWpcua9Ha=
+f1Lry-y5VixIUebu4LANm1DW-zKc_XHgcZcnu6riKXUlCLM3D0AZPFsPnXGyN9XG62_PeJxm6bv=
+7hMdH_MLysGW68" target=3D"_blank">View</a>)</li>
+	<li>Become Expert in Linux from Scratch to Advanced (<a href=3D"http://e.z=
+=2Eteachablemail.com/c/eJw9jk2OwyAMhU-T7I=
+r4CQQWLKJRc43KIU5AQ0gUqKbt6YepqpH8JM=
+v29_xmyya9cN4GyykzjNOOGi6FJIyM18EMI-Pqq-ra901HX6QgOA9TxA1CJG7fWm-16HqhFqQSJ=
+ape6xmYqjY4qUVRptpofSlHbsTQ8LEWOJhxexL04L5DWknCUsdH1Qa54HkJ6RJDuj_aDXOGFW9h=
+tg3nndGS6tq07_-3Ex2Go3y2oiZXnIn3wWkTFA9pj_cfyPgMNf76Hzo7v-_xw1XC_DG_DINRDQ"=
+ target=3D"_blank">View</a>)</li>
+	<li>The Complete Networking Certification Bundle (<a href=3D"http://e.z.te=
+achablemail.com/c/eJw9T9GKgzAQ_Bp9MyTR2OTBByn1N8q6WU24mIimlN7XX1rKwQ4sszPLj=
+B3ErBcpaz9ILoyQvONGqlYxwabbaMZJyP5acLtcqo7_skyADuZAG_jAMG21GxZpFq1RitbOqAyI=
+vuPYKiXBmk4j1mFwOe9n1Y6VnMoAgqXtxcgB_vi4ski50HtBdtSUr3ugTE2hn-l4KxqkI_vFI2S=
+fYjM_og1Ub3SesNLd26GSsjNacV2W-hPufhCS3_P32pZafYn4ERxDhOwgpvB4wkkvX7qt_41OdC=
+mFr684zNvzB2UFXRc" target=3D"_blank">View</a>)</li>
+	<li>Master in Bug Bounty & Earn Millions (<a href=3D"http://e.z.teachablem=
+ail.com/c/eJw9j92KxCAMRp-mvVM0taO96EUZpq8xpNZWWX9KtSyzT7_uMCzkg5DkQM468kVtA=
+K0bgfGBAxNsgL7rKafzYxqmmcPtXvOQshHshxaD2uLiTUDnqU6htePKlZTYK8V6EJsACQMTm0Yh=
+ueRs61o_2lKO3HRTA3Mt1Lia8KLGov5ycafRlDo-agLmYk7iIlmunSzpiuVFMK7E4BlJcN67FHM=
+bTM64m6dbxwZADKpnqjbt-63nabRxR_lsuyp0A969D84xYrEYk7--MZuXq1b7v0vWNiX_4Sox_D=
+G__thZQw" target=3D"_blank">View</a>)</li>
+	<li>Master in Web Development (<a href=3D"http://e.z.teachablemail.com/c/e=
+Jw9j91qwzAMRp8mvovxT9zYF74Io3mNojhqbGY7IfZWuqefV8pAHwhJB45Wyxd9F4IEKxg3XLCB=
+GaGkopzO18lMMxeXj5brOHYD-6EVwXlYIiYIkbo9EW-VBgnQMKMGvDNkA2dy5FqDk06tjkTraz1=
+KJ6dOzK3AwYrpSdGD-wx5oxlrGx8tCUrFsw-5f-DSr_iNcT8S5koSlgIb3sJqOyEGoxXTrSEvk9=
+uJDsNR31vZZC6Cy9fBaTNUD3mPXw8o-Aztke1fvzi_7_HNNcL8Mb_QQ1U0" target=3D"_blan=
+k">View</a>)</li>
+	<li>The Complete Microsoft Office Certification Bundle (<a href=3D"http://=
+e.z.teachablemail.com/c/eJw9T8uKxCAQ_JrkFlHzMB48hGHyG0NH2yhrNESHZfbr1x2GhS4=
+ourqKLqPYNlvOW684ZZJxOlDJx34kjKz3RS4r49Ot4i5EM9AfUhC0gy3gAT4QnY7WKWoFTkYOAs=
+dRaNhwmLW1hoIRzOoZ26BcKWdu-qXhax3QYPB4EXSgv3zcScRS12dFcdjV1DNgwe7w-ko52dIla=
+72uCl7FVwbFp9htz2gCtgfmDDs-vFEN54OcRzpX0r5ffFyo0Z_lo_a13MRZ_z64VITiIKbw_IaM=
+L18b7v-9snYphY-vOuSf5xeJA2A8">View</a>)</li>
+</ol>
+<p>Enroll Now & avail the Limited Time Offer.
+</p>
+<p>Regards,
+</p>
+<p>Team EH Academy
+</p>
+
+    <hr style=3D"border-left: 0; border-top: 1px solid #FFF; margin-top: 30=
+px; margin-bottom: 20px;">
+    <a data-skip-utm-params=3D"true" data-skip-click=3D"true" href=3D"http:=
+//e.z.teachablemail.com/c/eJw9UMluwjAQ_Zrk1sh24iQ-5BAoSUGiHFgKuSAvk9jNhkgoh=
+a-vQajSjDTbG733VIJFXBLimoQgzDBBAWKE-tTDXjZLWZphEk5tzqLICdDdG4FLzUUDLTeNJ_vW=
+1QkEDCEWYCBIIsXCMMZcYQWMRhwpoG6T6HE8OX7qkMwGl1xBe_NAc1mbrvI6GO348bE2srblcBG=
+DPJvTaPpusP0k1WK6rc1HS7XKtRYtG9ReaUl2lG8nnfjKTmJKvwVB-aoqsl1evxfzIlyv54vd_r=
+OR1SFKZ8VirrP7gegfQX7L5WYZrDZVvrpOtm9vJdAokDRkIvRlHBPGEPZDpgIK2Me8xGB1AUeWz=
+KV70RPgtjAMvIKjUYlDSMBiimJbuE97jmeQYEW8tr41NiTYfx6ck46Pmnd9c7nyAW7Gulv9ezpI=
+3ffNC2cR7IH5A5Fqg_k" class=3D"unsubscribe-link" style=3D"color: #B4B4B4; fo=
+nt-size: 11px;">Unsubscribe from these emails</a>
+  <img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://e.z.teachablemai=
+l.com/o/eJw9TksKgzAQPY1ZyswkmmSRRSl6DRl11ICfopbSnr5apIvHW7xvG7B2HZGKgQA9Ehj=
+wlOksxbQsbv5WIuX3A4W1iYFPugs3A9ejTBzHtFkmNQSowYpl0YZzMDkQeo1at17b2qDp1NYMyz=
+JWsQ0JEWrn3cHqV1Gt0kh87Jeoj_H8tJyGNcy8Dzwv4_PFm7zj8aD_706ybdzLFTTeZXCmvuKMP=
+J8"></body>
+</html>

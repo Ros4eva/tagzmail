@@ -8,7 +8,7 @@ import { MailComponent } from './mail/mail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Router,RouterModule } from '@angular/router';
 import {Location} from "@angular/common";
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MzButtonModule, MzModalModule } from 'ngx-materialize';
 import { CommonModule } from '@angular/common';  
 
@@ -27,7 +27,8 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     MzButtonModule,
     MzModalModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   providers: [DataService,Location],
   bootstrap: [AppComponent]
