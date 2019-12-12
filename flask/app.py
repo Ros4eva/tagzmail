@@ -4,6 +4,8 @@ import yagmail
 from flask_cors import CORS
 from flask import request
 from flask import jsonify
+import boto3
+
 
 app =Flask(__name__)
 CORS(app)
@@ -22,6 +24,14 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
+
+def get_client():
+   return boto3.client(
+      's3',
+      aws_access_key_id='*********************',
+      aws_secret_access_key='**********************'
+   )   
+
 @app.route("/")
 def index():
    msg = Message('Hello', sender = 'papuzzymaniac@gmail.com', recipients = ['oluwaseyieniayomi@gmail.com'])
@@ -31,10 +41,25 @@ def index():
 
 @app.route("/mail/", methods=['POST'])
 def mail_api():
-   req_data = request.get_json()	
-   yag = yagmail.SMTP({app.config['MAIL_USERNAME']:req_data['frommail']}, app.config['MAIL_PASSWORD'], host=app.config['MAIL_SERVER'], port=587, smtp_starttls=True, smtp_ssl=False)
-   yag.send(req_data['tomail'], req_data['subject'], req_data['msgb'])
+   print (request.files)
+   yag = yagmail.SMTP({app.config['MAIL_USERNAME']:request.form.get('frommail')}, app.config['MAIL_PASSWORD'], host=app.config['MAIL_SERVER'], port=587, smtp_starttls=True, smtp_ssl=False)
+   yag.send(request.form.get('tomail'), request.form.get('subject'), request.form.get('msgb'), request.files.get('attach'))
    return jsonify("Email Sent!") 
+
+@app.route("/refresh")
+def mail_refresh():
+   s3 = get_client()  
+   list=s3.list_objects(Bucket='ljtestmails')['Contents']
+   for s3_key in list:
+      s3_object = s3_key['Key']
+      if not s3_object.endswith("/"):
+         s3.download_file('ljtestmails', s3_object, s3_object)
+      else:
+         import os
+         if not os.path.exists(s3_object):
+            os.makedirs(s3_object)
+   return "Refreshed"                     
+
 
 
 @app.route("/send")
