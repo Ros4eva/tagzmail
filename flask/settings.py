@@ -1,5 +1,5 @@
-aws_access_key='*******************'
-aws_secret_key='**********************'
+aws_access_key='AKIA6RSO4E74CLPHQCQO'
+aws_secret_key='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'
 bucket='ljtestmails'
 mail_username='nathanoluwaseyi@gmail.com'
 mail_password='anjolaoluwa1'

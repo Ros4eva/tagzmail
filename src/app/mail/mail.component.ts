@@ -17,6 +17,7 @@ export class MailComponent implements OnInit {
   form: FormGroup;
   public username:any;
   public email:any;
+  public message;
 
   public modalOptions: Materialize.ModalOptions = {
     dismissible: false, // Modal can be dismissed by clicking outside of the modal
@@ -34,7 +35,7 @@ export class MailComponent implements OnInit {
 
   fileData: File = null;
 
-  constructor(private dataservice: DataService, private modalModule: MzModalModule, public fb: FormBuilder, private http: HttpClient) {
+  constructor(public dataservice: DataService, private modalModule: MzModalModule, public fb: FormBuilder, private http: HttpClient) {
     this.form = this.fb.group({
       frommail: [sessionStorage.getItem('email')],
       toemail: [''],
@@ -77,10 +78,14 @@ export class MailComponent implements OnInit {
     formData.append("msgb", this.form.get('messagebody').value);
     formData.append("attach", this.form.get('avatar').value);
 
-    this.http.post('http://localhost:5000/mail/', formData).subscribe(
-      (response) => console.log(response),
-      (error) => console.log(error)
-    )
+    this.http.post('http://127.0.0.1:6000/mail/', formData).subscribe(
+      data => {
+            this.message = 'Email has been sent.'
+      },
+      err => {
+            this.message = 'Email Not sent! Error!';
+            }
+    );
 
 
   }
