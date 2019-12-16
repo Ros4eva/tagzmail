@@ -57,7 +57,8 @@ RUN /bin/pip3.6 install flask-mail
 RUN mkdir -p /web/
 COPY . /web/www/
 COPY nginx.conf /etc/nginx/
-RUN chmod +x /web/www/start.sh
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ENV NVM_DIR=/root/.nvm
@@ -83,8 +84,8 @@ RUN yes | cp -r /web/fasmail/dist/fasmail/* /usr/share/nginx/web/fasmail
 
 
 
-RUN chgrp -R 0 /web/www/start.sh /run /etc /usr/share/nginx /var/lib /var/log \
-    && chmod -R g=u /web/www/start.sh /run /etc /usr/share/nginx /var/lib /var/log
+RUN chgrp -R 0 /start.sh /web/www/flask/* /run /etc /usr/share/nginx /var/lib /var/log \
+    && chmod -R g=u /start.sh /web/www/flask/*/run /etc /usr/share/nginx /var/lib /var/log
 
 EXPOSE 4300 9000 
 
