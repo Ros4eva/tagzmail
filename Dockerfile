@@ -71,21 +71,21 @@ RUN . $HOME/.nvm/nvm.sh && yes | cp -r /web/www/* /web/fasmail
 
 RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:6000/int.linuxjobber.com:6000/' src/app/data.service.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/int.linuxjobber.com:9000/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:6000/int.linuxjobber.com:6000/' src/app/data.service.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/int.linuxjobber.com:9000/' src/app/mail/mail.component.ts;
 
 RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/auth.guard.ts;
 
 RUN cd /web/fasmail && . $HOME/.nvm/nvm.sh && npm install ngx-materialize materialize-css@next ng2-dragula rxjs && ng build --prod --aot
 RUN mkdir -p /usr/share/nginx/web/fasmail
-RUN yes | cp -r /web/fasmailr/dist/fasmail/* /usr/share/nginx/web/fasmail
+RUN yes | cp -r /web/fasmail/dist/fasmail/* /usr/share/nginx/web/fasmail
 
 
 
-RUN chgrp -R 0 /start.sh /run /etc /usr/share/nginx /var/lib /var/log \
-    && chmod -R g=u /start.sh /run /etc /usr/share/nginx /var/lib /var/log
+RUN chgrp -R 0 /web/www/start.sh /run /etc /usr/share/nginx /var/lib /var/log \
+    && chmod -R g=u /web/www/start.sh /run /etc /usr/share/nginx /var/lib /var/log
 
-EXPOSE 4300 6000 
+EXPOSE 4300 9000 
 
 CMD ["/start.sh"]

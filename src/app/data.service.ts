@@ -66,7 +66,7 @@ export class DataService {
     console.log(this.email_subject)
 
     this.from_email = sessionStorage.getItem('email');
-    this.http.post('http://127.0.0.1:6000' + '/mail/', JSON.stringify({'frommail': this.from_email, 'tomail': this.to_email, 'subject': this.email_subject, 'msgb':this.message_body}), this.httpOptions).subscribe(
+    this.http.post('http://127.0.0.1:9000' + '/mail/', JSON.stringify({'frommail': this.from_email, 'tomail': this.to_email, 'subject': this.email_subject, 'msgb':this.message_body}), this.httpOptions).subscribe(
         data => {
             this.message = 'Email has been sent.'
             this.message_body = '';
