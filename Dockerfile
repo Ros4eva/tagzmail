@@ -53,12 +53,16 @@ RUN /bin/pip3.6 install flask
 RUN /bin/pip3.6 install flask-cors
 RUN /bin/pip3.6 install yagmail
 RUN /bin/pip3.6 install flask-mail
+RUN /bin/pip3.6 install boto3
 
 RUN mkdir -p /web/
 COPY . /web/www/
 COPY nginx.conf /etc/nginx/
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
+COPY ang.sh /ang.sh
+RUN chmod +x /ang.sh
+RUN mkdir -p /web/www/flask/attachments
 
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ENV NVM_DIR=/root/.nvm
@@ -72,9 +76,9 @@ RUN . $HOME/.nvm/nvm.sh && yes | cp -r /web/www/* /web/fasmail
 
 RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/int.linuxjobber.com:9000/' src/app/data.service.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/intfasmailapi.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/int.linuxjobber.com:9000/' src/app/mail/mail.component.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/intfasmailapi.linuxjobber.com/' src/app/mail/mail.component.ts;
 
 RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/auth.guard.ts;
 
@@ -85,7 +89,7 @@ RUN yes | cp -r /web/fasmail/dist/fasmail/* /usr/share/nginx/web/fasmail
 
 
 RUN chgrp -R 0 /start.sh /web/www/flask/* /run /etc /usr/share/nginx /var/lib /var/log \
-    && chmod -R g=u /start.sh /web/www/flask/*/run /etc /usr/share/nginx /var/lib /var/log
+    && chmod -R g=u /start.sh /web/www/flask/* /run /etc /usr/share/nginx /var/lib /var/log
 
 EXPOSE 4300 9000 
 

@@ -55,7 +55,7 @@ export class DataService {
 
   logout() {
     sessionStorage.clear()
-    window.location.replace('http://127.0.0.1:8000')
+    window.location.replace('https://127.0.0.1:8000')
   }
  
   sendEmail()
@@ -66,7 +66,7 @@ export class DataService {
     console.log(this.email_subject)
 
     this.from_email = sessionStorage.getItem('email');
-    this.http.post('http://127.0.0.1:9000' + '/mail/', JSON.stringify({'frommail': this.from_email, 'tomail': this.to_email, 'subject': this.email_subject, 'msgb':this.message_body}), this.httpOptions).subscribe(
+    this.http.post('https://127.0.0.1:9000' + '/mail/', JSON.stringify({'frommail': this.from_email, 'tomail': this.to_email, 'subject': this.email_subject, 'msgb':this.message_body}), this.httpOptions).subscribe(
         data => {
             this.message = 'Email has been sent.'
             this.message_body = '';
@@ -86,7 +86,7 @@ export class DataService {
   }  
 
   sessionSet(token:string)  {
-    this.http.post('http://127.0.0.1:8000' + '/sso_api/confirm_key/' + 3,JSON.stringify({'token':token}),this.httpOptions)
+    this.http.post('https://127.0.0.1:8000' + '/sso_api/confirm_key/' + 3,JSON.stringify({'token':token}),this.httpOptions)
       .subscribe(data=>{
       sessionStorage.clear();
       sessionStorage.setItem('username', data['username']);
