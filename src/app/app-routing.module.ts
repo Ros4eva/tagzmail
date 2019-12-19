@@ -21,3 +21,4 @@ const routes: Routes = [
   providers: [AuthGuard]
 })
 export class AppRoutingModule { }
+// export const routingComponents = [MailComponent,]

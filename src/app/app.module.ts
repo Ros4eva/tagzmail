@@ -4,12 +4,13 @@ import {DataService} from './data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiComponent } from './api/api.component';
-import { MailComponent } from './mail/mail.component';
+// import { MailComponent } from './mail/mail.component';
+import { MailPlatformModule } from './mail-platform/mail-platform.module';
 import { HttpClientModule } from '@angular/common/http';
-import { Router,RouterModule } from '@angular/router';
+// import { Router,RouterModule } from '@angular/router';
 import {Location} from "@angular/common";
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MzButtonModule, MzModalModule } from 'ngx-materialize';
+// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { MzButtonModule, MzModalModule } from 'ngx-materialize';
 import { CommonModule } from '@angular/common';  
 
 
@@ -17,18 +18,19 @@ import { CommonModule } from '@angular/common';
   declarations: [
     AppComponent,
     ApiComponent,
-    MailComponent
+    // MailComponent
   ],
   imports: [
     BrowserModule,
+    MailPlatformModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule,
-    FormsModule,
-    MzButtonModule,
-    MzModalModule,
+    // RouterModule,
+    // FormsModule,
+    // MzButtonModule,
+    // MzModalModule,
     CommonModule,
-    ReactiveFormsModule
+    // ReactiveFormsModule
   ],
   providers: [DataService,Location],
   bootstrap: [AppComponent]

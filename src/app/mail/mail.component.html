@@ -42,7 +42,7 @@
   Compose
 </button>
 
-<h3 style="text-align: center; ">{{this.message}}</h3>
+<h3 style="text-align: center; ">{{from}}</h3>
 <!--
 <div ngIf="{{dataservice.message}} === Email has been sent.">
    <h3 style="text-align: center; color: green;">{{dataservice.message}}</h3>
@@ -59,25 +59,30 @@
     <div class="row app-one">
 
       <div class="col-sm-4 side">
-        <div class="side-one">
+          <!-- <div *ngFor="let mail of mails |async"> -->
+            <!-- <h4>mail title{{mails | json}}</h4> -->
+            <!-- <p>mail content{{email}}</p> 
+        </div> -->
+        <!-- div class="side-one">  -->
 
+<!-- enabling user click and navigate -->
+          <!-- <nav>
+            <a routerLink='/' routerlinkActive='active'>test</a>
+          </nav> -->
 
+        <div>
 <!-- sideBar -->
           <div class="row sideBar">
-            <div class="row sideBar-body" style="height: 82px !important;">
+            <div class="row sideBar-body" style="height: 82px !important;" *ngFor="let mail of mails; index as i" [id]='i' (click)="viewMail($event)">
               <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
+                <div class="avatar-icon"></div>
               </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
+              <div class="col-sm-9 col-xs-9 sideBar-main" >
                 <div class="row">
                   <div class="col-sm-8 col-xs-8 sideBar-name">
-                    <span class="name-meta">Test Test
-                  </span>
+                    <span class="name-meta">{{mail.first_name }} {{mail.last_name }} </span>
                   <br>
-                  <span class="name-meta">Test@gmail.com
-                  </span>
+                  <span class="name-meta">{{mail.email}}</span>
                   </div>
                   <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
                     
@@ -281,7 +286,14 @@
           </div>
     <!-- App One End -->
   </div>
-
+  <!-- main -->
+  <div class="col-sm-8 main">
+    <div >
+      <p>{{message}}</p>
+    </div>
+  </div>
+  <!-- main End -->
+    </div>
   <!-- App End -->
 
   <!-- The Modal -->
