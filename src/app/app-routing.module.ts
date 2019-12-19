@@ -6,14 +6,10 @@ import {MailComponent} from "./mail/mail.component";
 
 
 
-
-
 const routes: Routes = [
   { path: '', redirectTo: '/mail', pathMatch: 'full'},
   { path: 'mail', component: MailComponent, canActivate: [AuthGuard]},
 ];
-
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -21,4 +17,3 @@ const routes: Routes = [
   providers: [AuthGuard]
 })
 export class AppRoutingModule { }
-// export const routingComponents = [MailComponent,]
