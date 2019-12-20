@@ -57,7 +57,7 @@
 
   <div class="container app">
     <div class="row app-one">
-
+     
       <div class="col-sm-4 side">
           <!-- <div *ngFor="let mail of mails |async"> -->
             <!-- <h4>mail title{{mails | json}}</h4> -->
@@ -69,7 +69,7 @@
           <!-- <nav>
             <a routerLink='/' routerlinkActive='active'>test</a>
           </nav> -->
-
+          <input class="modal-close btn btn-default" type="submit" value="Add New" id="add_mail">
         <div>
 <!-- sideBar -->
           <div class="row sideBar">
@@ -91,7 +91,7 @@
               </div>
             </div>
 
-            <div class="row sideBar-body" style="height: 82px !important;">
+            <!-- <div class="row sideBar-body" style="height: 82px !important;">
               <div class="col-sm-3 col-xs-3 sideBar-avatar">
                 <div class="avatar-icon">
                   
@@ -280,16 +280,47 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
   
-          </div>
+        </div>
     <!-- App One End -->
   </div>
   <!-- main -->
   <div class="col-sm-8 main">
-    <div >
-      <p>{{message}}</p>
+    <div class="col-sm-9 col-xs-9 sideBar-main">
+      <div class="row">
+        <div class="col-sm-8 col-xs-8 sideBar-name" *ngFor="let message of emailMessage; index as i" >
+            <p>{{message}}</p>
+        </div>
+      </div>
+      <mz-modal-content>
+        <h6>YOU MAY SEND MAIL BELOW.</h6>
+        <form [formGroup]="form" (ngSubmit)="sendEmail();" id="signUp">
+          <!--  <div class="form-group">
+                <label>From:</label>
+                <input required="required" class="form-control" type="text" id="email" [(ngModel)]="dataservice.from_email" name="fromemail" placeholder="{{email}}" required>
+            </div> -->
+            <div class="form-group">
+                <label>To:</label>
+                <input required="required" class="form-control" type="text" id="email" formControlName="toemail" name="toemail" required>
+            </div>
+            <div class="form-group">
+                <label>Subject:</label>
+                <input required="required" class="form-control" type="text" id="subject" formControlName="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label>Body:</label>
+                <textarea required="required" class="form-control" type="text" id="messagebody" formControlName="messagebody" name="messagebody" required></textarea>
+                
+            </div>
+            <div class="form-group">
+                <label>Attachment:</label>
+                <input type="file" (change)="uploadFile($event)">
+            </div>
+            <input class="modal-close btn btn-default" type="submit" value="Send" id="send_mail">
+        </form>
+    </mz-modal-content>
     </div>
   </div>
   <!-- main End -->
