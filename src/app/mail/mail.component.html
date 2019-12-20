@@ -16,41 +16,12 @@
 </div>
 </nav>
 
-
-
-<!-- main app container 
-<div class="">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 offset-sm-3">
-                <h1>Hi {{username}}!</h1>
-                <h1>{{email}}</h1>
-<p>Welcome to Fasmail!</p>
-<h3>All registered users:</h3>
-<ul>
-    <li *ngFor="let user of users">
-        {{user.username}} ({{user.firstName}} {{user.lastName}})
-        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
-    </li>
-</ul>
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <button style="float: right; margin-top: 20px; margin-right: 50px;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" (click)="myModal.openModal()">
   Compose
 </button>
 
 <h3 style="text-align: center; ">{{from}}</h3>
-<!--
-<div ngIf="{{dataservice.message}} === Email has been sent.">
-   <h3 style="text-align: center; color: green;">{{dataservice.message}}</h3>
-</div>
-<div ngIf="{{dataservice.message}} != Email has been sent.">
-    <h3 style="text-align: center; color: red;">{{dataservice.message}}</h3>
-</div>
--->
+
 <br>
 <br>
 <br>
@@ -59,16 +30,7 @@
     <div class="row app-one">
      
       <div class="col-sm-4 side">
-          <!-- <div *ngFor="let mail of mails |async"> -->
-            <!-- <h4>mail title{{mails | json}}</h4> -->
-            <!-- <p>mail content{{email}}</p> 
-        </div> -->
-        <!-- div class="side-one">  -->
-
-<!-- enabling user click and navigate -->
-          <!-- <nav>
-            <a routerLink='/' routerlinkActive='active'>test</a>
-          </nav> -->
+        
           <input class="modal-close btn btn-default" type="submit" value="Add New" id="add_mail">
         <div>
 <!-- sideBar -->
@@ -91,196 +53,6 @@
               </div>
             </div>
 
-            <!-- <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Linux Jobber
-                  </span>
-                  <br>
-                    <span class="name-meta">linuxjobber@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                    <span class="name-meta">Noobaid surulere
-                  </span>
-                  <br>
-                    <span class="name-meta">noobtest@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Azeem Animashaun
-                  </span>
-                  <br>
-                    <span class="name-meta">azeemtest@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Boluwatife Fasugba
-                  </span>
-                  <br>
-                    <span class="name-meta">bolutest@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Eniayomi Oluwaseyi
-                  </span>
-                  <br>
-                    <span class="name-meta">ennytest@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Goodness Pelumi
-                  </span>
-                  <br>
-                    <span class="name-meta">goodtest@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Dane Oluwaseyi
-                  </span>
-                  <br>
-                    <span class="name-meta">danetest@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Sam Enoch
-                  </span>
-                  <br>
-                    <span class="name-meta">samtest@gmail.com
-                  </span>
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row sideBar-body" style="height: 82px !important;">
-              <div class="col-sm-3 col-xs-3 sideBar-avatar">
-                <div class="avatar-icon">
-                  
-                </div>
-              </div>
-              <div class="col-sm-9 col-xs-9 sideBar-main">
-                <div class="row">
-                  <div class="col-sm-8 col-xs-8 sideBar-name">
-                  	<span class="name-meta">Vikor Manuel
-                  </span>
-                  <br>
-                    <span class="name-meta">vikortest@gmail.com
-                  </span>
-
-                  </div>
-                  <div class="col-sm-4 col-xs-4 pull-right sideBar-time">
-                    
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
   
         </div>
@@ -297,10 +69,6 @@
       <mz-modal-content>
         <h6>YOU MAY SEND MAIL BELOW.</h6>
         <form [formGroup]="form" (ngSubmit)="sendEmail();" id="signUp">
-          <!--  <div class="form-group">
-                <label>From:</label>
-                <input required="required" class="form-control" type="text" id="email" [(ngModel)]="dataservice.from_email" name="fromemail" placeholder="{{email}}" required>
-            </div> -->
             <div class="form-group">
                 <label>To:</label>
                 <input required="required" class="form-control" type="text" id="email" formControlName="toemail" name="toemail" required>
