@@ -8,6 +8,7 @@ import boto3
 import os
 from werkzeug.utils import secure_filename
 import settings
+import mailparser, json
 
 
 app =Flask(__name__)
@@ -40,10 +41,7 @@ def get_client():
 
 @app.route("/")
 def index():
-   msg = Message('Hello', sender = 'papuzzymaniac@gmail.com', recipients = ['oluwaseyieniayomi@gmail.com'])
-   msg.body = "Hello Flask message sent from Flask-Mail"
-   mail.send(msg)
-   return "Sent"
+   return "Welcome to fasmail api"
 
 @app.route("/mail/", methods=['POST'])
 def mail_api():
@@ -77,13 +75,23 @@ def mail_refresh():
             os.makedirs(s3_object)
    return "Refreshed"                     
 
+@app.route("/mail_con")
+def mail_con():
+   for subdir, dirs, files in os.walk('./IBK/IBK01'):
+      for file in files:
+         filepath = subdir + os.sep + file
+         mail = mailparser.parse_from_file(filepath)
+         to = mail.to
+         fro = mail.from_
+         mails = mail.body
+         obj = {
+            "To": to,
+            "From": fro,
+            "Body": mails
+         }
+         json_string = json.dumps(obj)
+   return json_string     
 
-
-@app.route("/send")
-def yaggy():
-   yag = yagmail.SMTP({settings.mail_username:'gammyd@gmail.com'}, settings.mail_password, host=settings.mail_server, port=587, smtp_starttls=True, smtp_ssl=False)
-   yag.send('oluwaseyieniayomi@gmail.com', 'SUBJECT', 'Helool gvvsab as  dhbdhjbd')
-   return "Sent" 
 
 
 
