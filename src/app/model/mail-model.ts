@@ -1,7 +1,7 @@
 export class MailModel {
     first_name: string;
     last_name: string;
-    content: string;
+    content= [];
     email: string;
     id:number;
 

@@ -19,6 +19,7 @@ export class MailComponent implements OnInit {
   public username:any;
   public email:any;
   public message;
+  public emailMessage;
   public from;
   public mails:MailModel[];
   
@@ -100,56 +101,56 @@ export class MailComponent implements OnInit {
       {
         first_name: 'Test',
       last_name: 'Ologbo',
-      content: 'Send me email and your fine',
+      content: ["The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.", "uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. 'Your global Angular CLI version (8.3.20) is greater than your local version (7.0.7). The local Angular CLI version is used"],
       email: 'Test@gmail.com ',
       id:0
       },
       {
         first_name: 'Oluwaseyi',
       last_name: 'Dane',
-      content: 'Your global Angular CLI version (8.3.20) is greater than your local version (7.0.7). The local Angular CLI version is used',
+      content:[" It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. 'Your global Angular CLI version (8.3.20) is greater than your local version (7.0.7). The local Angular CLI version is used'", " Over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. 'Your global Angular CLI version (8.3.20) is greater than your local version (7.0.7). The local Angular CLI version is used'",], 
       email: 'danetest@gmail.com',
       id:1
       },
       {
         first_name: 'Linux',
       last_name: 'Jobber',
-      content: 'Send me email and your fine',
+      content: ["If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.'Send me email and your fine'", "Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.'Send me email and your fine'"],
       email: 'linuxjobber@gmail.com',
       id:2
       },
       {
         first_name: 'Noobaid',
       last_name: 'surulere',
-      content: 'Send me email esktop/ALCWITH GOOGLE-Project/HNG/fasma and your fine',
+      content: ["'Send me email esktop/ALCWITH GOOGLE-Project/HNG/fasma and your fine'. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.",],
       email: 'noobtest@gmail.com',
       id:3
       },
       {
         first_name: 'Azeem ',
       last_name: 'Animashaun',
-      content: 'Send me your fine',
+      content:["An NgModule is a class marked by the @NgModule decorator. @NgModule takes a metadata object that describes how to compile a component's template and how to create an injector at runtime. It identifies the modules own components, directives, and pipes, making some of", " It identifies the modules own components, directives, and pipes, making some of. An NgModule is a class marked by the @NgModule decorator. @NgModule takes a metadata object that describes how to compile a component's template and how to create an injector at runtime"], 
       email: 'azeemtest@gmail.com',
       id:4
       },
       {
         first_name: 'Boluwatife',
       last_name: 'Test',
-      content: 'Send me email and your fine o disable this warning use "ng config -g cli.warnings.versionMismatch ',
+      content: ['Send me email and your fine o disable this warning use "ng config -g cli.warnings.versionMismatch ', 'Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.'],
       email: 'test@testmail.com',
       id:5
       },
       {
         first_name: 'Boluwatife',
       last_name: 'Fasugba',
-      content: 'So disable this warning use "ng config -g cli.warnings.versionMismatch email and your fine',
+      content: ['So disable this warning use "ng config -g cli.warnings.versionMismatch email and your fine. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.', 'Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.'],
       email: 'bolutest@gmail.com',
       id:6
       },
       {
         first_name: 'Eniayomi',
       last_name: 'Oluwaseyi',
-      content: 'Send me o disable this warning use ng config -g cli.warnings.versionMismatch m',
+      content: ['Send me o disable this warning use ng config -g cli.warnings.versionMismatch m Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.', 'looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.'],
       email: 'ennytest@gmail.com',
       id:7
       },
@@ -159,7 +160,7 @@ export class MailComponent implements OnInit {
 
   viewMail(tag){
 
-      this.message =this.mails[tag.path[4].id].content
+      this.emailMessage =this.mails[tag.path[4].id].content
       this.from =this.mails[tag.path[4].id].last_name
       return console.log('clicked')
    
