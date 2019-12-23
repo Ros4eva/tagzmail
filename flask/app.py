@@ -8,6 +8,7 @@ import boto3
 import os
 from werkzeug.utils import secure_filename
 import settings
+import json
 
 
 app =Flask(__name__)
@@ -75,8 +76,28 @@ def mail_refresh():
          import os
          if not os.path.exists(s3_object):
             os.makedirs(s3_object)
-   return "Refreshed"                     
+   return "Refreshed"   
 
+@app.route("/test")
+def mail_test(): 
+   # = os.path.dirname(os.path.abspath(__file__))
+   MAIL_FOLD = 'LJB\\LJB01\\nsn.eml'
+   UPLOADM_FOLDER = os.path.join(APP_ROOT, MAIL_FOLD)
+   # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+   f=open(UPLOADM_FOLDER, 'r')
+   print(UPLOADM_FOLDER)
+   # f.close() 
+   # f.readline() 
+   #f.read()   json.load(f.read()) 
+   # for line in f:
+   #    print (line)
+  
+   # return 'testing1 ' + json.dumps(f.read())         
+   return f.read()         
+   # return f.read(600)         
+   # return line         
+   #    return 'testing1 ' + line         
+   # return 'testing1 '
 
 
 @app.route("/send")
@@ -89,5 +110,5 @@ def yaggy():
 
 
 if __name__ == '__main__':
-   #app.run(debug = True)
+   app.run(debug = True)
    app.run(host='0.0.0.0', port=9000)
