@@ -1,0 +1,92 @@
+Delivered-To: nathanoluwaseyi@gmail.com
+Received: by 2002:aed:32c5:0:0:0:0:0 with SMTP id z63csp835322qtd;
+        Tue, 3 Dec 2019 12:49:10 -0800 (PST)
+X-Google-Smtp-Source: APXvYqzk9Xb7+65YuQcrrhF7GWO/qUGlmSb6He00JMTOjQZoeivu+dYfG6zJsssGZji/rzLXKam8
+X-Received: by 2002:a17:906:b219:: with SMTP id p25mr910282ejz.36.1575406150484;
+        Tue, 03 Dec 2019 12:49:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1575406150; cv=none;
+        d=google.com; s=arc-20160816;
+        b=f6JdM2JHronbMSMwwlm9DcsufIQT8VXzLQE3RPwZUFnYTSX/dFf5kRRbkY8wh/j928
+         NSL0+Omh/L1kV2N6rb7jQdzGfPLbLIRuOqT9Ovs0BAavXl4N5HRoMiSXpuhJwfActyFb
+         Cc+4ZdUrkDA7GeUznHXfWODMfM59Dmz9RJXAnaRolE5wkb3WmKvf6+trOmjXgCTyPdAC
+         yZNXlqmg1nMZhK2j2Q4bDP8VO1GUP8WUx1q9L99KgTZMngL/MNgiPvcEKjzut6WiNlkt
+         eTtv3qGMNOR5vfIOU60RLZBgBYWvpUTPEtLhqe46Dm59xMOKb6yqrhlvvAEv4uni0gQw
+         6KlQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=categories:content-transfer-encoding:mime-version:subject
+         :message-id:to:from:date:dkim-signature:dkim-signature;
+        bh=bN9pExMROcNcDBW1Ny6vMwXcarOzdWOUBjMyTeE9JKg=;
+        b=TW/uhGEx+5lV0DQx1BFPkSdBsNajsoUyMeaJRmati7ooYfQVBL2qNV/8KHsk+f3Ya0
+         jlX42xLpeTOQ4YqJVHpwbBVIS6333pS6tBXJkXxPDL+HLXoYMBzHHE61Vn2d35gTnc4h
+         nLT6jYNS3bSSZXzs6/gPbS8amV9dbY6uR8vAKjwFSmrRgLWiPo9dcNy7ZxQb8Yv+uyW1
+         1iQKmAtlB4904BTKyHW883sTPlgHbugjMGwOwxLaOlAln2ImF+TDqyJwP/riZmiBWSm6
+         kDmhsnZ/UK2Ne1s7NtlMwwwGQhJhuFhOisz2qd+HNPt+CLIZ6AxAk80E6Oj6j7uppt7T
+         sVjA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@github.com header.s=s20150108 header.b=EsUiiku3;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=cXq3yjzx;
+       spf=pass (google.com: domain of bounces+848413-b0d7-nathanoluwaseyi=gmail.com@sgmail.github.com designates 192.254.112.99 as permitted sender) smtp.mailfrom="bounces+848413-b0d7-nathanoluwaseyi=gmail.com@sgmail.github.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=github.com
+Return-Path: <bounces+848413-b0d7-nathanoluwaseyi=gmail.com@sgmail.github.com>
+Received: from o4.sgmail.github.com (o4.sgmail.github.com. [192.254.112.99])
+        by mx.google.com with ESMTPS id b15si3028210edy.397.2019.12.03.12.49.09
+        for <nathanoluwaseyi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 03 Dec 2019 12:49:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of bounces+848413-b0d7-nathanoluwaseyi=gmail.com@sgmail.github.com designates 192.254.112.99 as permitted sender) client-ip=192.254.112.99;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@github.com header.s=s20150108 header.b=EsUiiku3;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=cXq3yjzx;
+       spf=pass (google.com: domain of bounces+848413-b0d7-nathanoluwaseyi=gmail.com@sgmail.github.com designates 192.254.112.99 as permitted sender) smtp.mailfrom="bounces+848413-b0d7-nathanoluwaseyi=gmail.com@sgmail.github.com";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=github.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=github.com; 
+	h=from:to:subject:mime-version:content-type:content-transfer-encoding; 
+	s=s20150108; bh=bN9pExMROcNcDBW1Ny6vMwXcarOzdWOUBjMyTeE9JKg=; b=
+	EsUiiku3P35zyedY1356AIp+jgNUbA4Grn00v2CFy2ViKN1Ey+bv9KAC/nHdSBcq
+	U7pG4yA3NIj/XDk1FPrN3bqUSxzfCMpOwNJB2BTT2DFq8bY2+mbcT9df74UMYXPs
+	qGQSDMzISkE86Bu9y1v606EkZ0qzeJZjjhRBYTYgr0Q=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=sendgrid.info; 
+	h=from:to:subject:mime-version:content-type:content-transfer-encoding:x-feedback-id; 
+	s=smtpapi; bh=bN9pExMROcNcDBW1Ny6vMwXcarOzdWOUBjMyTeE9JKg=; b=cX
+	q3yjzxS8qOo4PT1vyZC1Ip1oc2OFnTQG02cHJCgm0j/AVEiLWy0HZ+rnfTOiJANi
+	LoMiUWjOl5rJE+BBhNgzfLY00sMgD3k/SfQ+tuDP9VY3yA10XOlSksSkQtue92Q7
+	F4bmor9AqJbQOw0wGCeP9YXu6HtY3pL1Xyp5/RzRQ=
+Received: by filter0577p1iad2.sendgrid.net with SMTP id filter0577p1iad2-26318-5DE6CA43-10
+        2019-12-03 20:49:07.836463068 +0000 UTC m=+1559287.816713936
+Received: from github-lowworker-baaab27.cp1-iad.github.net (unknown [140.82.115.66])
+	by ismtpd0063p1mdw1.sendgrid.net (SG) with ESMTP id 17gMIO-RQMCJdjW9JSRI5w
+	Tue, 03 Dec 2019 20:49:07.648 +0000 (UTC)
+Received: from github.com (localhost [127.0.0.1])
+	by github-lowworker-baaab27.cp1-iad.github.net (Postfix) with ESMTP id 83342801E3;
+	Tue,  3 Dec 2019 12:49:07 -0800 (PST)
+Date: Tue, 03 Dec 2019 20:49:07 +0000 (UTC)
+From: nklj <ghgfvg@das.com>
+To: jeff.adekunbi@ideabakr.org
+Message-ID: <5de6ca4382951_7d933fcadb0cd95c139079@github-lowworker-baaab27.cp1-iad.github.net.mail>
+Subject: [GitHub] A third-party OAuth application has been added to your
+ account
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Auto-Response-Suppress: All
+categories: account-security,new-oauth-authorization
+X-SG-EID: yvqMOHy0xIqyiElGdAFwNAGQqIFwn14BGJ4v0pD5y+DYnLsESgtpWaPxB3j+v1ycbNfAmKjYpUf5Zj
+ k5gB7oTH+buxT6iCXKO17B2XepOokQy3e2pMDU/mwRzoimSTNjj3d4X2fo79OsIsEuzx4Hw0kVRhT3
+ XTuQrcGdau0AUZBYa6gk8CoNPsmpfSVNPLYIbgQeZzq9VyKlimb3EM8tXQ==
+X-SG-ID: HjuyJHjWedrv+ZABmVoKqJUGcbnIrpG8Dl8TZw63o/tYHvHAZuj7fE3sBkCPSNz92pSnrCLqO00MaT
+ UToqoVhg==
+X-Feedback-ID: 848413:6xvVEJqleZlAW7/vhv7PzD/cv5tamo2SWZDKyvugGvg=:/tVyTrc5pGf9LyskfwdeL8MHpmfxmY45w4+vOgpL1lE=:SG
+
+Hey eniayomi!
+
+A third-party OAuth application (WakaTime) with user:email scope was recently authorized to access your account.
+Visit https://github.com/settings/connections/applications/a012f99e47bb94935d83 for more information.
+
+To see this and other security events for your account, visit https://github.com/settings/security
+
+If you run into problems, please contact support by visiting https://github.com/contact
+
+Thanks,
+The GitHub Team

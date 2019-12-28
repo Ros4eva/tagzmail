@@ -1,0 +1,328 @@
+Return-Path: <chris.sr@avanceservices.us>
+Received: from mail-pg1-f180.google.com (mail-pg1-f180.google.com [209.85.215.180])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id dvnha3g4v9jcjkg1vupoid2bss35csgiu17tpog1
+ for josephs@linuxjobber.com;
+ Mon, 19 Aug 2019 20:57:48 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of avanceservices.us designates 209.85.215.180 as permitted sender) client-ip=209.85.215.180; envelope-from=chris.sr@avanceservices.us; helo=mail-pg1-f180.google.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of avanceservices.us designates 209.85.215.180 as permitted sender) client-ip=209.85.215.180; envelope-from=chris.sr@avanceservices.us; helo=mail-pg1-f180.google.com;
+ dkim=pass header.i=@avanceservices.us;
+ dmarc=none header.from=avanceservices.us;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFITmFqN3RCWis2T3YrZllPSG5Mam51QVJoSDU0UjhpVXVINWlEZk5vZC9zaDY4VHFQNnBLZVZmeXhlMzRGTm1PQ0ZQM2F0Y2pvZFU2OEhTbjhPek44bzZJNHZOYlV5TnBkZDhBSEdWVERvRk1JaTZPQVErSHNJMU1FbnNuRnJSSFZyU2krQjZRdzNJQ3Bxai80VHk0UWQzNDhlSVVEWk03MXA2cDR2MkFOSUNNWm5oeUxQdjR1bUg0NHkxVzdxN0lSV0pWRmE1QUl3TVphc29kdXVZQWowZ2c4SC9BVG42a01QaERVODZCVGtzMExFUk0rZ3N1ckVEaGIrb3ZmRlF1WDZ1K1BlOEQ0RWZEcEEzaGVSWmhmVm9veTliVjc4L0RsQmwvUjA4bmpHRHc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=S+vtDNaHGZWK1CzxO6gygFSVAq7G/2EmzrEmMrN4vzMVKauMLpdZejiIZcVnPvZUiOwUFWbZ93UuGZH+A1//7dDqT3ZVqkSpewas+o+s+GMY5vKQnptQ3Ar0VuzR808PPOzedeGA8uB76cZSZATCxUJHdNAZP5d3xGyPgh/yuRE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1566248269; v=1; bh=7L7M0BsSZxP1EcRajtRlFIrIYfR1XFy43wlWTOh+2C8=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: by mail-pg1-f180.google.com with SMTP id p3so1874129pgb.9
+        for <josephs@linuxjobber.com>; Mon, 19 Aug 2019 13:57:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=avanceservices.us; s=google;
+        h=from:subject:cc:to:message-id:date:user-agent:mime-version
+         :content-language;
+        bh=tPDRl7jrxpr2M69mfJ3elDfA4Ozp7Fo8HYvOjYogoBY=;
+        b=e7BdeQ5A/t1R0MlAUBntzW/IbSyCbU2Bs85gEaDyGKIHcR72QcubV6ok0la/I1TSB2
+         Xoizcd5BGix+RuKZUPB31q+3BtC2Hfe/TY0dl3jq1g/RPxfWIrsY/uH/ARk2D9Z8CoFK
+         L282eOMn0yKNLVKk+dUfHQG15Gb4UpYWft/+4=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:subject:cc:to:message-id:date:user-agent
+         :mime-version:content-language;
+        bh=tPDRl7jrxpr2M69mfJ3elDfA4Ozp7Fo8HYvOjYogoBY=;
+        b=cj4L70AlAqVK4HZadshODT9uoc86mDz9qVxRnZmN9RYrYuVo4Vc+hXSDhccqwC1wkD
+         uGzGQWCDBvaY1PjkOSpznncFlEJKcCJ3bbJ81AUTRxZ6vMD23bH2ZjNCCY2D37s0tpw7
+         MOyAjy+aqNv9MhTobQawelUqWm2WShRC+6Ni+UmQLwlY1ZxoajUpDCc4yvfVKerJkpKa
+         dqxHW7tFwhNksXUSBWHY4F65MQDX4xYilPDLCxuGD/NiwRMyXm46jIr8Pe76AgxoF4nf
+         8fmJmPLSa0+lo9qyfe0IsNJvQKS5Az+6EurKI+vaceH6ynqKzSAqdDErpDFmea7tpkaJ
+         gkkA==
+X-Gm-Message-State: APjAAAXIeK6nuWAPsFnRgk2Y8Ls+HJl3E2LYJx+AOZotoPHDnd/n2m/A
+	zpmEbvEIm4Dkb3Kv47luGwZ5Jg==
+X-Google-Smtp-Source: APXvYqyTdKuWZ4a2/69y/jB3538M6hWLf27/LV/FhO9yEONWrECZ9S1febgm4WfkFhfvmUyg/38Yhg==
+X-Received: by 2002:a17:90a:de02:: with SMTP id m2mr22811822pjv.18.1566248268002;
+        Mon, 19 Aug 2019 13:57:48 -0700 (PDT)
+Return-Path: <chris.sr@avanceservices.us>
+Received: from [192.168.179.8] ([182.72.106.178])
+        by smtp.gmail.com with ESMTPSA id l26sm20493832pgb.90.2019.08.19.13.57.46
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 19 Aug 2019 13:57:47 -0700 (PDT)
+From: Chris Sr <chris.sr@avanceservices.us>
+Subject: Hiring for Systems Engineer -- Columbia MD -- Longterm Contract
+Cc: aaron.smith@avanceservices.com
+To: josephs@linuxjobber.com
+Message-ID: <8f16ef7e-4981-6c43-4d04-b3cebdc0edd2@avanceservices.us>
+Date: Mon, 19 Aug 2019 16:57:45 -0400
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:52.0) Gecko/20100101
+ Thunderbird/52.9.1
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="------------8AA2E8FB5848E57B07818C85"
+Content-Language: en-US
+
+This is a multi-part message in MIME format.
+--------------8AA2E8FB5848E57B07818C85
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Hello Joseph,
+
+Hope you are doing good,
+
+One of our client is looking to fill the below open requirement. If you 
+are interested, Please share your resume and expected compensation.
+
+Job title: Superlative Systems Engineer
+Location: Columbia, MD, United States
+Duration: 24 months contract (possible extensions)
+
+*Mandatory:*
+TS/SCI clearance plus poly
+Red Hat Certified Systems Administrator (RHCSA) Certification
+
+*Client*: Parsons Cyber
+
+*Job Description *
+In this role, you will provide system engineering support, build, 
+administer and maintain multiple virtualization infrastructures, and tag 
+in on network infrastructure engineering efforts. You’ll be working with 
+a team of driven technical staff to develop solutions to tough problems, 
+applying your accumulated knowledge while honing your skills on 
+cutting-edge projects.
+
+*The objectives of this role are to:*
+
+  * Build and maintain complex Linux systems running CentOS and hardened
+    to meet operational standards.
+  * Enable orchestration and automation of the entire system from start
+    to maintenance through Puppet, Kickstart, and Bash/Python scripts.
+  * Troubleshoot systems and networks to maintain efficiency and up-time.
+  * Create and update health and status monitoring solutions.
+  * Build and maintain networks consisting of a mix of physical and
+    virtual equipment
+  * Configure and administer next generation firewalls (e.g. Palo Alto,
+    McAfee) and suggest new rules, routines, and indicators of compromise.
+  * Set up or assist with Microsoft environments (e.g. Group Policy,
+    Active Directory), container technologies like Docker, and
+    Gluster/libvirt Linux knowledge/abilities.
+  * Exercise infrastructures primarily using VMware products.
+  * Lead network engineering efforts through subject matter expertise.
+  * Work collaboratively with other team members to solve challenging
+    problems, research new and effective solutions, and identify avenues
+    for innovation.
+
+*Qualification:*
+15 years systems engineering experience; up to 6 years may be 
+substituted for education (4 years for a bachelor's degree in Computer 
+Science or related field, an additional 2 years for a master's degree).
+
+*Preferred:*
+
+  * Experience with Puppet or similar orchestration tool.
+  * Experience with Windows desktop and server operating systems.
+  * Experience with server hardware troubleshooting.
+  * Experience with PCAP and Netflow Data Collection.
+  * Experience with TCP/IP routing and switching.
+  * Experience with standard network services—DNS, DHCP, NTP, Syslog, etc.
+  * Experience with VMware VSphere suite—ESXi, vCenter.
+
+-- 
+Best Regards,
+Chris
+Talent Acquisition
++1 732 226 8073 *Ext :* 366
+chris.sr@avanceservices.us <chris.sr@avanceservices.us>
+		Avance Services <http://www.avanceservices.com/>
+www.avanceservices.com <http://www.avanceservices.com/> 	
+Avance Consulting | 100 Franklin Sq Drive, Suite 209, Somerset NJ 08873, 
+USA |
+
+*Disclaimer:
+*This e-mail communication and any attachments to it are confidential 
+and privileged to Avance Consulting and are strictly intended only for 
+the personal and confidential use of the designated recipient(s) named 
+above. If you are not the intended recipient of this message, you are 
+hereby notified that any review, dissemination, distribution or copying 
+of this message is strictly prohibited and may be unlawful. Please 
+notify the sender immediately and destroy all copies of this message 
+along with all attachments there to.
+
+
+--------------8AA2E8FB5848E57B07818C85
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  </head>
+  <body text="#000000" bgcolor="#FFFFFF">
+    <p>Hello Joseph,<br>
+      <br>
+      Hope you are doing good,<br>
+      <br>
+      One of our client is looking to fill the below open requirement.
+      If you are interested, Please share your resume and expected
+      compensation.<br>
+      <br>
+      Job title: Superlative Systems Engineer<br>
+      Location: Columbia, MD, United States<br>
+      Duration: 24 months contract (possible extensions)<br>
+      <br>
+      <b>Mandatory:</b><br>
+      TS/SCI clearance plus poly <br>
+      Red Hat Certified Systems Administrator (RHCSA) Certification <br>
+    </p>
+    <p><b>Client</b>: Parsons Cyber</p>
+    <p><b>Job Description </b><br>
+      In this role, you will provide system engineering support, build,
+      administer and maintain multiple virtualization infrastructures,
+      and tag in on network infrastructure engineering efforts. You’ll
+      be working with a team of driven technical staff to develop
+      solutions to tough problems, applying your accumulated knowledge
+      while honing your skills on cutting-edge projects.<br>
+      <br>
+      <b>The objectives of this role are to:</b><br>
+    </p>
+    <ul>
+      <li>Build and maintain complex Linux systems running CentOS and
+        hardened to meet operational standards.</li>
+      <li>Enable orchestration and automation of the entire system from
+        start to maintenance through Puppet, Kickstart, and Bash/Python
+        scripts.</li>
+      <li>Troubleshoot systems and networks to maintain efficiency and
+        up-time.</li>
+      <li>Create and update health and status monitoring solutions.</li>
+      <li>Build and maintain networks consisting of a mix of physical
+        and virtual equipment</li>
+      <li>Configure and administer next generation firewalls (e.g. Palo
+        Alto, McAfee) and suggest new rules, routines, and indicators of
+        compromise.</li>
+      <li>Set up or assist with Microsoft environments (e.g. Group
+        Policy, Active Directory), container technologies like Docker,
+        and Gluster/libvirt Linux knowledge/abilities.</li>
+      <li>Exercise infrastructures primarily using VMware products.</li>
+      <li>Lead network engineering efforts through subject matter
+        expertise.</li>
+      <li>Work collaboratively with other team members to solve
+        challenging problems, research new and effective solutions, and
+        identify avenues for innovation.</li>
+    </ul>
+    <p><b>Qualification:</b><br>
+      15 years systems engineering experience; up to 6 years may be
+      substituted for education (4 years for a bachelor's degree in
+      Computer Science or related field, an additional 2 years for a
+      master's degree).<br>
+      <br>
+      <b>Preferred:</b><br>
+    </p>
+    <ul>
+      <li>Experience with Puppet or similar orchestration tool.</li>
+      <li>Experience with Windows desktop and server operating systems.</li>
+      <li>Experience with server hardware troubleshooting.</li>
+      <li>Experience with PCAP and Netflow Data Collection.</li>
+      <li>Experience with TCP/IP routing and switching.</li>
+      <li>Experience with standard network services—DNS, DHCP, NTP,
+        Syslog, etc.</li>
+      <li>Experience with VMware VSphere suite—ESXi, vCenter. </li>
+    </ul>
+    <div class="moz-signature">-- <br>
+      <table style="font-family:Arial, Helvetica, sans-serif;
+        font-size:12px;" width="100%" cellspacing="0" cellpadding="0"
+        align="center">
+        <tbody>
+          <tr>
+            <td>
+              <div style="font-size:14px; color:#333333; padding:0 0
+                20px 0;">Best Regards,</div>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" align="left"><!-- <div style="border:1px dashed #cccccc;">-->
+              <table width="100%" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td style="padding:0 0 10px 0; line-height:20px;"
+                      width="40%" valign="top" align="left">
+                      <div style="font-size:14px; margin-bottom:0;
+                        color:#137793; font-weight:bold;">
+                        <!-- name ---> Chris
+                        <!-- name ---> </div>
+                      <div style="color:#666666; font-size:12px;">
+                        <!-- designation  ---> Talent Acquisition
+                        <!-- designation  ---> </div>
+                      <div style="color:#137793; font-size:12px;">
+                        <!-- Phone ---> +1 732 226 8073
+                        <!-- Phone ---> <strong style="color:#137793;">Ext
+                          :</strong>
+                        <!-- Extension ---> 366
+                        <!-- Extension ---> </div>
+                      <div style="color:#137793;"><a
+                          href="chris.sr@avanceservices.us"
+                          style="color:#137793; font-size:12px;"
+                          target="_blank">
+                          <!-- Email need to change above the href="" link also --->
+                          chris.sr@avanceservices.us
+                          <!-- Email --->
+                          <!-- LinkedIn need to change above the href="" link also --->
+                          <!-- LinkedIn ---> </a> </div>
+                      <!-- Email need to change above the href=" " link also --->
+                      <!-- Email ---> </td>
+                    <td width="5%" valign="top" align="left"> </td>
+                    <td style="padding:0 0 10px 20px;line-height:20px;"
+                      width="55%" valign="middle" align="left"><a
+                        href="http://www.avanceservices.com/"
+                        target="_blank"> <img
+src="http://www.avanceservices.com/wp-content/uploads/2018/10/cropped-avance-300x46.png"
+                          alt="Avance Services"> </a></td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" style="color:#FFFFFF;" height="25"
+                      bgcolor="#137793">
+                      <table style="color:#FFFFFF;" width="100%"
+                        cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td style="padding:0 0 0px 20px;
+                              font-size:12px;" width="45%"
+                              valign="middle" align="left"><a
+                                style="color:#FFFFFF;
+                                text-decoration:none;"
+                                href="http://www.avanceservices.com/"
+                                target="_blank">www.avanceservices.com</a></td>
+                            <td width="55%" valign="middle" align="left">
+                              <div style="color:#FFFFFF; padding:0 0 0px
+                                20px; font-size:12px;">Avance Consulting
+                                | 100 Franklin Sq Drive, Suite 209,
+                                Somerset NJ 08873, USA |</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" style="font-size:11px;
+                      color:#666666;">
+                      <p><strong>Disclaimer:<br>
+                        </strong>This e-mail communication and any
+                        attachments to it are confidential and
+                        privileged to Avance Consulting and are strictly
+                        intended only for the personal and confidential
+                        use of the designated recipient(s) named above.
+                        If you are not the intended recipient of this
+                        message, you are hereby notified that any
+                        review, dissemination, distribution or copying
+                        of this message is strictly prohibited and may
+                        be unlawful. Please notify the sender
+                        immediately and destroy all copies of this
+                        message along with all attachments there to.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- </div>--></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+--------------8AA2E8FB5848E57B07818C85--

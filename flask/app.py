@@ -8,12 +8,8 @@ import boto3
 import os
 from werkzeug.utils import secure_filename
 import settings
-<<<<<<< HEAD
-import mailparser, json
-=======
+import mailparser
 import json
->>>>>>> bf69ef4f4307e2bb01ed7d8be8f794f2248f56ca
-
 
 app =Flask(__name__)
 CORS(app)
@@ -77,7 +73,6 @@ def mail_refresh():
          import os
          if not os.path.exists(s3_object):
             os.makedirs(s3_object)
-<<<<<<< HEAD
    return "Refreshed"                     
 
 @app.route("/mail_con")
@@ -96,12 +91,11 @@ def mail_con():
          }
          json_string = json.dumps(obj)
    return json_string     
-=======
    return "Refreshed"   
 
 @app.route("/test")
 def mail_test(): 
-   MAIL_FOLD = 'LJB\\LJB01\\nsn.eml'
+   MAIL_FOLD = 'LJB/LJB01/nsn.eml'
    UPLOADM_FOLDER = os.path.join(APP_ROOT, MAIL_FOLD)
    f=open(UPLOADM_FOLDER, 'r')
    print(UPLOADM_FOLDER) 
@@ -109,7 +103,7 @@ def mail_test():
    for line in f:
       line = line.split('/r')
       line=str(line)
-      key=line.strip("[''\\n] ").split(':')
+      key=line.strip("[''/n] ").split(':')
       location_data.append({switch_case(key[0]):line})   
       
       location_data.append({switch_case(key[0]):key})
@@ -125,8 +119,9 @@ def switch_case(num):
       'Received':'Received',
       'From':'From',
       'To':'To',
-      'Date':'Date',
-      'Subject':'Subject'
+      'Date':'Date'
+     # 'Subject':'Subject'
+   #   'Body':'Body'
    }
    return switch.get(num, 'none')
 
@@ -137,9 +132,7 @@ def mail_test1():
    UPLOADM_FOLDER = os.path.join(APP_ROOT, MAIL_FOLD)
    f=open(UPLOADM_FOLDER, 'r')
         
-   return f.read()         
->>>>>>> bf69ef4f4307e2bb01ed7d8be8f794f2248f56ca
-
+   return f.read()     
 
 
 
