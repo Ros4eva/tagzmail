@@ -8,6 +8,7 @@ import boto3
 import os
 from werkzeug.utils import secure_filename
 import settings
+import json
 
 
 app =Flask(__name__)
@@ -75,8 +76,63 @@ def mail_refresh():
          import os
          if not os.path.exists(s3_object):
             os.makedirs(s3_object)
-   return "Refreshed"                     
+   return "Refreshed"   
 
+@app.route("/test")
+def mail_test(): 
+   MAIL_FOLD = 'LJB\\LJB01\\nsn.eml'
+   UPLOADM_FOLDER = os.path.join(APP_ROOT, MAIL_FOLD)
+   f=open(UPLOADM_FOLDER, 'r')
+   print(UPLOADM_FOLDER) # f.close()  # f.readline() #f.read()   json.load(f.read())
+    
+   # for line in f:
+   #    print (line)
+   # process_text_to_json():
+   # for line in f:
+   location_data = []   # index=0
+   for line in f:
+      line = line.split('/r')
+      line=str(line)
+      key=line.strip("[''\\n] ").split(':')
+      location_data.append({switch_case(key[0]):line})   
+      # print(key)  # location_data.append({"key1": line[index], "city": line[x], "description": line[y]})
+      location_data.append({switch_case(key[0]):key})
+      # location_data.append({"key1": line}) # index = index+3  
+   location_data = {"location_data": location_data}
+         
+   # return json.dumps(location_data)         # return 'testing1 ' + json.dumps(f.read())  
+   return location_data        # return 'testing1 ' + json.dumps(f.read())  
+
+   # return f.read(600)   # return line    #    return 'testing1 ' + line  # return 'testing1 '   
+
+# def process_text_to_json():
+#     location_data = []
+#     with open("file.txt") as f:
+#         for line in f:
+#             line = line.split()
+#             location_data.append({"key1": line[0], "city": line[1], "description": line[2]})
+#     location_data = {"location_data": location_data}
+
+
+def switch_case(num):
+   switch={
+      'Delivered-To':'Delivered-To',
+      'Received':'Received',
+      'From':'From',
+      'To':'To',
+      'Date':'Date',
+      'Subject':'Subject'
+   }
+   return switch.get(num, 'none')
+
+
+@app.route("/test1")
+def mail_test1(): 
+   MAIL_FOLD = 'LJB\\LJB01\\nsn.eml'
+   UPLOADM_FOLDER = os.path.join(APP_ROOT, MAIL_FOLD)
+   f=open(UPLOADM_FOLDER, 'r')
+        
+   return f.read()         
 
 
 @app.route("/send")
@@ -89,5 +145,5 @@ def yaggy():
 
 
 if __name__ == '__main__':
-   #app.run(debug = True)
+   # app.run(debug = True)
    app.run(host='0.0.0.0', port=9000)
