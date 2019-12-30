@@ -30,24 +30,26 @@ def list_content_and_parse():
         eml_dict = {}
         eml_list = []
         for find_eml in contents:
-            if not os.path.isfile(find_eml):
-            	continue
-            
-            eml_list.append(find_eml)
+            print(find_eml)
+            if(find_eml[-1] != "/"):
+            	eml_list.append(find_eml)
+       
             print('........')
             print('........')
             print('........')
-            sss = [find_eml.split('/')[1]]
-            bbb = find_eml.split('/')[-1]
-            eml_dict.update({bbb:sss})
+            print('........')
+            print('........')
+            print('........')
+            print('........')
+            print('........')
             print(eml_list)
+            eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
                 
-
+    user_content = {}
     final_list = []
     #Read eml files and assigns content to dicitonary
     for list_values in eml_list:
         print(list_values)
-        user_content = {}
         data = conn.get_object(Bucket=settings.bucket,Key=list_values )
         read_content = data['Body'].read()
         mail = mailparser.parse_from_bytes(read_content)
@@ -60,8 +62,8 @@ def list_content_and_parse():
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
+        user_content['CONTENT'] = body
         final_list.append(user_content)
-        print(user_content)
     return final_list 
 
 @api.route('/api/v1.0/get_user_detail/',methods=['GET'])
