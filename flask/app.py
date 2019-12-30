@@ -168,7 +168,7 @@ def list_content_and_parse():
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
-        user_content['MESSAGE'] = body
+        user_content['MESSAGE'] = content
         final_list.append(user_content)
     return final_list
 
