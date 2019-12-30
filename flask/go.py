@@ -5,6 +5,7 @@ from botocore.exceptions import ClientError
 from boto3 import client
 from flask import jsonify
 import settings
+import os
 
 
 api = Flask(__name__)
@@ -13,7 +14,7 @@ def get_client():
    return client(
       's3',
          aws_access_key_id=settings.aws_access_key,
-      aws_secret_access_key=settings.aws_secret_key
+     	 aws_secret_access_key=settings.aws_secret_key
    )
 
 def list_content_and_parse():
@@ -23,35 +24,44 @@ def list_content_and_parse():
     '''    
     conn = get_client()
     contents =[]
-    for key in conn.list_objects(Bucket='ljtestmails')['Contents']:
+    for key in conn.list_objects(Bucket=settings.bucket)['Contents']:
         contents.append(key['Key'])
         #Finds every eml file     
         eml_dict = {}
         eml_list = []
         for find_eml in contents:
-            print(find_eml)
-            if '.eml' in find_eml:
-                eml_list.append(find_eml)
-                eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
+            if not os.path.isfile(find_eml):
+            	continue
+            
+            eml_list.append(find_eml)
+            print('........')
+            print('........')
+            print('........')
+            sss = [find_eml.split('/')[1]]
+            bbb = find_eml.split('/')[-1]
+            eml_dict.update({bbb:sss})
+            print(eml_list)
                 
-    user_content = {}
+
     final_list = []
     #Read eml files and assigns content to dicitonary
     for list_values in eml_list:
         print(list_values)
-        data = conn.get_object(Bucket='brownre',Key=list_values )
+        user_content = {}
+        data = conn.get_object(Bucket=settings.bucket,Key=list_values )
         read_content = data['Body'].read()
         mail = mailparser.parse_from_bytes(read_content)
         receiver_name,receiver_mail = [x for x in mail.to][0]
         sender_name,sender_mail =  [x for x in mail.from_][0]
         subject = mail.subject
         content = list(mail.text_plain)
+        body = mail.body
         #print(content)
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
-        user_content['CONTENT'] = content
         final_list.append(user_content)
+        print(user_content)
     return final_list 
 
 @api.route('/api/v1.0/get_user_detail/',methods=['GET'])
@@ -68,7 +78,7 @@ def find_user_content():
     
     final_list = list_content_and_parse()
     for find_mail in final_list:
-        if id == find_mail['FROM']:
+        if id == find_mail['TO']:
             return jsonify(find_mail)
         else:
             return None
