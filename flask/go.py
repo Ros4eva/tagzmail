@@ -1,12 +1,77 @@
-from flask import Flask, json
+from flask import Flask, json,request
+import boto3
+import mailparser
+from botocore.exceptions import ClientError
+from boto3 import client
+from flask import jsonify
+import settings
 
-companies = [{"id": 1, "name": "Company One"}, {"id": 2, "name": "Company Two"}]
 
 api = Flask(__name__)
 
-@api.route('/companies', methods=['GET'])
-def get_companies():
-  return json.dumps(companies)
+def get_client():
+   return client(
+      's3',
+         aws_access_key_id=settings.aws_access_key,
+      aws_secret_access_key=settings.aws_secret_key
+   )
+
+def list_content_and_parse():
+    '''
+   # input: BucketID
+    #ouput: List
+    '''    
+    conn = get_client()
+    contents =[]
+    for key in conn.list_objects(Bucket='ljtestmails')['Contents']:
+        contents.append(key['Key'])
+        #Finds every eml file     
+        eml_dict = {}
+        eml_list = []
+        for find_eml in contents:
+            print(find_eml)
+            if '.eml' in find_eml:
+                eml_list.append(find_eml)
+                eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
+                
+    user_content = {}
+    final_list = []
+    #Read eml files and assigns content to dicitonary
+    for list_values in eml_list:
+        print(list_values)
+        data = conn.get_object(Bucket='brownre',Key=list_values )
+        read_content = data['Body'].read()
+        mail = mailparser.parse_from_bytes(read_content)
+        receiver_name,receiver_mail = [x for x in mail.to][0]
+        sender_name,sender_mail =  [x for x in mail.from_][0]
+        subject = mail.subject
+        content = list(mail.text_plain)
+        #print(content)
+        user_content['TO'] = receiver_mail
+        user_content['FROM'] = sender_mail
+        user_content['SUBJECT'] = subject
+        user_content['CONTENT'] = content
+        final_list.append(user_content)
+    return final_list 
+
+@api.route('/api/v1.0/get_user_detail/',methods=['GET'])
+def find_user_content():
+    '''
+   This function checks if a user is registered and pulls their mail contents from bucket in json
+    arg: registered mail of user
+    output: json file showing the user details with every mail sent to user
+    '''
+    if 'id' in request.args:
+        id = request.args['id']
+    else:
+        return "Error: No id field provided. Please specify an id."
+    
+    final_list = list_content_and_parse()
+    for find_mail in final_list:
+        if id == find_mail['FROM']:
+            return jsonify(find_mail)
+        else:
+            return None
 
 if __name__ == '__main__':
-    api.run()
+    api.run(debug=True)
