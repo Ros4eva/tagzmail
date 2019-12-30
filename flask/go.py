@@ -76,9 +76,7 @@ def find_user_content():
     #	print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
-    return jsonify(mail_list)
-
+    return jsonify(mail_list)        
 
 if __name__ == '__main__':
     api.run(debug=True)
-
