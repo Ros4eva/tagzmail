@@ -6,7 +6,7 @@ from boto3 import client
 from flask import jsonify
 import settings
 import os
-
+import json
 
 api = Flask(__name__)
 
@@ -30,26 +30,15 @@ def list_content_and_parse():
         eml_dict = {}
         eml_list = []
         for find_eml in contents:
-            print(find_eml)
             if(find_eml[-1] != "/"):
             	eml_list.append(find_eml)
-       
-            print('........')
-            print('........')
-            print('........')
-            print('........')
-            print('........')
-            print('........')
-            print('........')
-            print('........')
-            print(eml_list)
             eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
                 
-    user_content = {}
+
     final_list = []
     #Read eml files and assigns content to dicitonary
     for list_values in eml_list:
-        print(list_values)
+        user_content = {}
         data = conn.get_object(Bucket=settings.bucket,Key=list_values )
         read_content = data['Body'].read()
         mail = mailparser.parse_from_bytes(read_content)
@@ -62,9 +51,9 @@ def list_content_and_parse():
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
-        user_content['CONTENT'] = body
         final_list.append(user_content)
-    return final_list 
+    return final_list
+
 
 @api.route('/api/v1.0/get_user_detail/',methods=['GET'])
 def find_user_content():
@@ -73,17 +62,20 @@ def find_user_content():
     arg: registered mail of user
     output: json file showing the user details with every mail sent to user
     '''
+    id=0
     if 'id' in request.args:
         id = request.args['id']
     else:
         return "Error: No id field provided. Please specify an id."
     
     final_list = list_content_and_parse()
+    #print(final_list)
+    mail_list = []
     for find_mail in final_list:
+    #	print(find_mail)
         if id == find_mail['TO']:
-            return jsonify(find_mail)
-        else:
-            return None
+            mail_list.append(find_mail)
+    return jsonify(mail_list)        
 
 if __name__ == '__main__':
     api.run(debug=True)
