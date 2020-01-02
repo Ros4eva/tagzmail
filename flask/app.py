@@ -189,12 +189,13 @@ def find_user_content():
         return "Error: No id field provided. Please specify an id."
     
     final_list = list_content_and_parse()
-    #print(final_list)
+    print(final_list)
     mail_list = []
     for find_mail in final_list:
-    # print(find_mail)
+    #    print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
+    print(mail_list)
     return jsonify(mail_list)   
 
 
