@@ -150,6 +150,7 @@ def list_content_and_parse():
             if(find_eml[-1] != "/"):
                eml_list.append(find_eml)
             eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
+            print(eml_list)
                 
 
     final_list = []
@@ -195,7 +196,7 @@ def find_user_content():
     #    print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
-    print(mail_list)
+    #print(mail_list)
     return jsonify(mail_list)   
 
 
