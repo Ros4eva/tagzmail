@@ -164,11 +164,13 @@ def list_content_and_parse():
         subject = mail.subject
         content = list(mail.text_plain)
         body = mail.body
+        print(sender_name)
         #print(content)
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
         user_content['MESSAGE'] = content
+        user_content['Name'] = sender_name
         final_list.append(user_content)
     return final_list
 
