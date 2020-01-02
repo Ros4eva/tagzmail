@@ -5,6 +5,7 @@ from flask_cors import CORS
 from flask import request
 from flask import jsonify
 import boto3
+from flask.ext.mysql import MySQL
 import os
 from werkzeug.utils import secure_filename
 import settings
@@ -30,7 +31,6 @@ app.config['MAIL_PASSWORD']
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
-
 
 def get_client():
    return boto3.client(
