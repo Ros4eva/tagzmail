@@ -19,9 +19,16 @@ export class DataService {
   public id;
   public email;
   public users;
-
+  public staff_email;
+  public TO;
+  public FROM;
+  public MESSAGE;
+  public SUBJECT;
+  public Name;
+  public projects;
+  public det;
   public message;
-
+  public data: any = []
   public from_email;
   public message_body;
   public to_email;
@@ -101,6 +108,20 @@ export class DataService {
       return true;
       
     },error => console.log('oops', error))
+  }
+
+  mail_det() {
+    this.message = 'Welcome!';
+    console.log(this.message);
+    this.staff_email=sessionStorage.getItem('email');
+    console.log(this.staff_email)
+
+    //this.http.get('http://127.0.0.1:9000' + '/api/v1.0/get_user_detail/?id=' + 'josephs@linuxjobber')
+    this.http.get('http://127.0.0.1:9000'+'/api/v1.0/get_user_detail/?id='+'josephs@linuxjobber.com')
+      .subscribe((res) => {
+      this.data = res
+      console.log(this.data)
+    })
   }
 }
 

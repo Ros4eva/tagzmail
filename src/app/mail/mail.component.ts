@@ -22,6 +22,7 @@ export class MailComponent implements OnInit {
   public emailMessage;
   public from;
   public mails:MailModel[];
+  public user_message;
   
 
   public modalOptions: Materialize.ModalOptions = {
@@ -55,6 +56,8 @@ export class MailComponent implements OnInit {
 
 
   ngOnInit() {
+    console.log("Testing")
+    this.dataservice.mail_det();
   }
 
   uploadFile(event) {
@@ -158,11 +161,9 @@ export class MailComponent implements OnInit {
     return sample
   }
 
-  viewMail(tag){
-
-      this.emailMessage =this.mails[tag.path[4].id].content
-      this.from =this.mails[tag.path[4].id].last_name
-      return console.log('clicked')
+  viewMail(mail){
+      console.log(mail)
+      this.user_message = mail;
    
   }
 

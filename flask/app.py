@@ -150,6 +150,7 @@ def list_content_and_parse():
             if(find_eml[-1] != "/"):
                eml_list.append(find_eml)
             eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
+            print(eml_list)
                 
 
     final_list = []
@@ -164,11 +165,13 @@ def list_content_and_parse():
         subject = mail.subject
         content = list(mail.text_plain)
         body = mail.body
+        print(sender_name)
         #print(content)
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
-        user_content['MESSAGE'] = body
+        user_content['MESSAGE'] = content
+        user_content['Name'] = sender_name
         final_list.append(user_content)
     return final_list
 
@@ -187,12 +190,13 @@ def find_user_content():
         return "Error: No id field provided. Please specify an id."
     
     final_list = list_content_and_parse()
-    #print(final_list)
+    print(final_list)
     mail_list = []
     for find_mail in final_list:
-    # print(find_mail)
+    #    print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
+    #print(mail_list)
     return jsonify(mail_list)   
 
 
