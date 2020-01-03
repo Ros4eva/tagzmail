@@ -51,7 +51,9 @@ def list_content_and_parse():
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
-        user_content['Message'] = content
+        user_content['MESSAGE'] = content
+        user_content['NAME'] = sender_name
+
         final_list.append(user_content)
     return final_list
 
@@ -76,7 +78,20 @@ def find_user_content():
     #	print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
-    return jsonify(mail_list)        
+
+    sorted_dict = {}
+    sorted_list = []
+    for mails in mail_list:
+        if mails['FROM'] not in sorted_dict:
+            sorted_dict[mails['FROM']] = mails
+        else:
+            if mails['FROM'] in sorted_dict.keys():
+                sorted_list.append(sorted_dict.get(mails['FROM']))
+                sorted_list.append(mails)
+                sorted_dict[mails['FROM']]= sorted_list
+
+
+    return jsonify(sorted_dict)        
 
 if __name__ == '__main__':
     api.run(debug=True)

@@ -5,7 +5,6 @@ from flask_cors import CORS
 from flask import request
 from flask import jsonify
 import boto3
-from flask.ext.mysql import MySQL
 import os
 from werkzeug.utils import secure_filename
 import settings
@@ -171,7 +170,7 @@ def list_content_and_parse():
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
         user_content['MESSAGE'] = content
-        user_content['Name'] = sender_name
+        user_content['NAME'] = sender_name
         final_list.append(user_content)
     return final_list
 
@@ -196,9 +195,19 @@ def find_user_content():
     #    print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
-    #print(mail_list)
-    return jsonify(mail_list)   
+    sorted_dict = {}
+    sorted_list = []
+    for mails in mail_list:
+        if mails['FROM'] not in sorted_dict:
+            sorted_dict[mails['FROM']] = mails
+        else:
+            if mails['FROM'] in sorted_dict.keys():
+                sorted_list.append(sorted_dict.get(mails['FROM']))
+                sorted_list.append(mails)
+                sorted_dict[mails['FROM']]= sorted_list
 
+
+    return jsonify(sorted_dict)        
 
 if __name__ == '__main__':
    #app.run(debug = True)
