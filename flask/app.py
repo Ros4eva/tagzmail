@@ -195,19 +195,18 @@ def find_user_content():
     #    print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
-    sorted_dict = {}
-    sorted_list = []
-    for mails in mail_list:
-        if mails['FROM'] not in sorted_dict:
-            sorted_dict[mails['FROM']] = mails
-        else:
-            if mails['FROM'] in sorted_dict.keys():
-                sorted_list.append(sorted_dict.get(mails['FROM']))
-                sorted_list.append(mails)
-                sorted_dict[mails['FROM']]= sorted_list
 
+   initial_keys_to_check = [x['FROM'] for x in mail_list]
+    keys_to_check = list(set(initial_keys_to_check))
 
-    return jsonify(sorted_dict)        
+    sorted_list =[]
+
+    for key_to_check in keys_to_check:
+        new_list =  list(filter(lambda x: x["FROM"] in key_to_check, final_list))
+        sorted_list.append(new_list)
+    
+    return jsonify(sorted_list)
+
 
 if __name__ == '__main__':
    #app.run(debug = True)

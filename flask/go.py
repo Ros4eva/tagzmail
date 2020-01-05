@@ -1,5 +1,6 @@
 from flask import Flask, json,request
 import boto3
+import collections
 import mailparser
 from botocore.exceptions import ClientError
 from boto3 import client
@@ -47,12 +48,15 @@ def list_content_and_parse():
         subject = mail.subject
         content = list(mail.text_plain)
         body = mail.body
+        date = mail.date
         #print(content)
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
         user_content['SUBJECT'] = subject
         user_content['MESSAGE'] = content
         user_content['NAME'] = sender_name
+        user_content['DATE'] = date
+
 
         final_list.append(user_content)
     return final_list
@@ -78,20 +82,18 @@ def find_user_content():
     #	print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
+    
+    initial_keys_to_check = [x['FROM'] for x in mail_list]
+    keys_to_check = list(set(initial_keys_to_check))
 
-    sorted_dict = {}
-    sorted_list = []
-    for mails in mail_list:
-        if mails['FROM'] not in sorted_dict:
-            sorted_dict[mails['FROM']] = mails
-        else:
-            if mails['FROM'] in sorted_dict.keys():
-                sorted_list.append(sorted_dict.get(mails['FROM']))
-                sorted_list.append(mails)
-                sorted_dict[mails['FROM']]= sorted_list
+    sorted_list =[]
 
-
-    return jsonify(sorted_dict)        
+    for key_to_check in keys_to_check:
+        print(key_to_check)
+        new_list =  list(filter(lambda x: x["FROM"] in key_to_check, final_list))
+        sorted_list.append(new_list)
+    
+    return jsonify(sorted_list)        
 
 if __name__ == '__main__':
     api.run(debug=True)
