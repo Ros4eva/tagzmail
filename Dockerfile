@@ -61,8 +61,8 @@ COPY . /web/www/
 COPY nginx.conf /etc/nginx/
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
-#COPY ang.sh /ang.sh
-#RUN chmod +x /ang.sh
+COPY ang.sh /ang.sh
+RUN chmod +x /ang.sh
 RUN mkdir -p /web/www/flask/attachments
 
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
