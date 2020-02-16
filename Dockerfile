@@ -45,14 +45,15 @@ RUN yum -y install gcc
 
 RUN pip install --upgrade pip && pip install boto && pip install boto3
 RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm python36u python36u-devel python36u-pip
-RUN pip install pathlib
+RUN /bin/pip3.6 install django==2.1
+#RUN /bin/pip3.6 install channels
+RUN /bin/pip3.6 install djangorestframework
+RUN /bin/pip3.6 install django-cors-headers
 RUN /bin/pip3.6 install mysqlclient
 RUN /bin/pip3.6 install mysql-connector-python
-RUN /bin/pip3.6 install Pillow pymysql
-RUN /bin/pip3.6 install flask
-RUN /bin/pip3.6 install flask-cors
-RUN /bin/pip3.6 install yagmail
-RUN /bin/pip3.6 install flask-mail
+RUN /bin/pip3.6 install djangorestframework-jwt
+RUN /bin/pip3.6 install Pillow weasyprint yagmail wand xhtml2pdf
+RUN /bin/pip3.6 install stripe selenium django-ckeditor boto django-background-tasks pycrypto
 RUN /bin/pip3.6 install boto3
 
 RUN mkdir -p /web/
@@ -60,8 +61,8 @@ COPY . /web/www/
 COPY nginx.conf /etc/nginx/
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
-COPY ang.sh /ang.sh
-RUN chmod +x /ang.sh
+#COPY ang.sh /ang.sh
+#RUN chmod +x /ang.sh
 RUN mkdir -p /web/www/flask/attachments
 
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -88,8 +89,8 @@ RUN yes | cp -r /web/fasmail/dist/fasmail/* /usr/share/nginx/web/fasmail
 
 
 
-RUN chgrp -R 0 /start.sh /web/www/flask/* /run /etc /usr/share/nginx /var/lib /var/log \
-    && chmod -R g=u /start.sh /web/www/flask/* /run /etc /usr/share/nginx /var/lib /var/log
+RUN chgrp -R 0 /start.sh /web/www/django/* /run /etc /usr/share/nginx /var/lib /var/log \
+    && chmod -R g=u /start.sh /web/www/django/* /run /etc /usr/share/nginx /var/lib /var/log
 
 EXPOSE 4300 9000 
 
