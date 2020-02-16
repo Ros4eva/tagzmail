@@ -29,12 +29,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'corsheaders',
+    'django_ses',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +46,10 @@ INSTALLED_APPS = [
     'djangoapi',
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -118,6 +123,19 @@ USE_L10N = True
 
 USE_TZ = True
 
+#EMAIL_BACKEND = 'django_ses.SESBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'email-smtp.us-west-2.amazonaws.com'
+EMAIL_HOST_USER = 'AKIA4HTONAOE6BAR4J22'
+EMAIL_HOST_PASSWORD = 'BMXn9wA4MFTzcoUI/7oDgswo0zpW9/bjkfTIzCBoJyE1'
+EMAIL_PORT =587
+
+##AWS_ACCESS_KEY_ID = 'AKIAQXZFKREYF4LGKUAY'
+#AWS_SECRET_ACCESS_KEY = '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'
+#AWS_DEFAULT_REGION = 'us-west-2'
+#AWS_SES_REGION = 'us-west-2'
+#AWS_SES_REGION_ENDPOINT = 'email.us-west-2.amazonaws.com'
+#AWS_SES_CONFIGURATION_SET_NAME = 'my_configuration_set'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

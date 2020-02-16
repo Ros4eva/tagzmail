@@ -2,11 +2,17 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
 from django.conf import settings
+from flask import Flask
+from flask_mail import Mail, Message
 import os
 import boto3
 import collections
 import mailparser
+import yagmail
 from .settings_secret import *
+from django.views.decorators.csrf import csrf_exempt
+from django.core.mail import send_mail
+from django.http import HttpResponse, HttpResponseRedirect
 # Create your views here.
 
 
@@ -19,20 +25,41 @@ def get_client():
 
 def index(request):
     return HttpResponse("Welcome to the fasmail api")
+ 
+send_mail(
+subject = 'Subject here',
+message = 'Here is the message.',
+from_email = 'test001@linuxjobber.com',
+recipient_list = ['oluwaseyieniayomi@gmail.com'],
+fail_silently=False,
+)
 
+@csrf_exempt 
 def mail(request):
+    subject = request.POST.get('subject', '')
+    message = request.POST.get('msgb', '')
+    from_email = mail_from
+    send_mail(subject, message, from_email, [request.POST.get('tomail')])
+    safe=False
+    return JsonResponse("Email Sent!", safe=False) 
+
+
+
+@csrf_exempt 
+def smail(request):
     UPLOAD_FOLDERS = settings.UPLOAD_FOLDER
-    print(UPLOAD_FOLDERS)
+   # print(UPLOAD_FOLDERS)
     if request.method == 'POST':
         if not 'attach' in request.FILES:
             contents = [request.POST.get('msgb')]
-            yag = yagmail.SMTP({mail_username:request.POST.get('frommail')}, mail_password, host=mail_server, port=587, smtp_starttls=True, smtp_ssl=False)
-            yag.send(request.POST.get('tomail'), request.POST.get('subject'), contents)
+            msg = Message(request.form.get('subject'), sender = settings.mail_from, recipients = [request.form.get('tomail')])
+            msg.body = request.form.get('msgb')
+            mail.send(msg)
             return JsonResponse("Email Sent!") 
         if 'attach' in request.FILES:
             f = request.FILES['attach']
             f.save(os.path.join(UPLOAD_FOLDERS, f.filename))
-            print(f.filename)
+           # print(f.filename)
             h = os.path.join(UPLOAD_FOLDERS,f.filename)
             contents = [request.POST.get('msgb'), h]
             yag = yagmail.SMTP({mail_username:request.POST.get('frommail')}, mail_password, host=mail_server, port=587, smtp_starttls=True, smtp_ssl=False)
@@ -75,7 +102,7 @@ def test(request):
    MAIL_FOLD = 'LJB/LJB01/nsn.eml'
    UPLOADM_FOLDER = os.path.join(settings.BASE_DIR, MAIL_FOLD)
    f=open(UPLOADM_FOLDER, 'r')
-   print(UPLOADM_FOLDER) 
+   #print(UPLOADM_FOLDER) 
    location_data = []   # index=0
    for line in f:
       line = line.split('/r')
@@ -128,7 +155,7 @@ def list_content_and_parse():
         subject = mail.subject
         content = list(mail.text_plain)
         body = mail.body
-        print(sender_name)
+        #print(sender_name)
         #print(content)
         user_content['TO'] = receiver_mail
         user_content['FROM'] = sender_mail
@@ -155,7 +182,7 @@ def find_user_content(request):
     print(final_list)
     mail_list = []
     for find_mail in final_list:
-    #    print(find_mail)
+        print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
             
