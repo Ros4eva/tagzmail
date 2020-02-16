@@ -74,13 +74,13 @@ RUN cd /web && . $HOME/.nvm/nvm.sh && ng new fasmail --routing
 
 RUN . $HOME/.nvm/nvm.sh && yes | cp -r /web/www/* /web/fasmail
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/data.service.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/stage.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/intfasmailapi.linuxjobber.com/' src/app/data.service.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/stagefasmailapi.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/intfasmailapi.linuxjobber.com/' src/app/mail/mail.component.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/stagefasmailapi.linuxjobber.com/' src/app/mail/mail.component.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/auth.guard.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/stage.linuxjobber.com/' src/app/auth.guard.ts;
 
 RUN cd /web/fasmail && . $HOME/.nvm/nvm.sh && npm install ngx-materialize materialize-css@next ng2-dragula rxjs && ng build --prod --aot
 RUN mkdir -p /usr/share/nginx/web/fasmail

@@ -114,7 +114,7 @@ export class MailComponent implements OnInit {
     }
 
 
-    this.http.post('http://127.0.0.1:9000/mail/', formData).subscribe(
+    this.http.post('https://127.0.0.1:9000/mail/', formData).subscribe(
       data => {
         this.message = 'Email has been sent.'
       },
@@ -140,7 +140,7 @@ export class MailComponent implements OnInit {
     }
 
 
-    this.http.post('http://127.0.0.1:9000/mail/', formData).subscribe(
+    this.http.post('https://127.0.0.1:9000/mail/', formData).subscribe(
       data => {
         this.message = 'Email has been sent.'
       },
