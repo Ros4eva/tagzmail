@@ -24,7 +24,7 @@ export class DataService {
   public FROM;
   public MESSAGE;
   public SUBJECT;
-  public Name;
+  public NAME;
   public projects;
   public det;
   public message;
@@ -117,7 +117,7 @@ export class DataService {
     console.log(this.staff_email)
 
     //this.http.get('http://127.0.0.1:9000' + '/api/v1.0/get_user_detail/?id=' + 'josephs@linuxjobber')
-    this.http.get('http://127.0.0.1:9000'+'/api/v1.0/get_user_detail/?id='+'josephs@linuxjobber.com')
+    this.http.get('http://127.0.0.1:9000'+'/api/v1.0/get_user_detail/?id='+this.staff_email)
       .subscribe((res) => {
       this.data = res
       console.log(this.data)
