@@ -54,7 +54,7 @@ RUN /bin/pip3.6 install mysql-connector-python
 RUN /bin/pip3.6 install djangorestframework-jwt
 RUN /bin/pip3.6 install Pillow weasyprint yagmail wand xhtml2pdf
 RUN /bin/pip3.6 install stripe selenium django-ckeditor boto django-background-tasks pycrypto
-RUN /bin/pip3.6 install boto3
+RUN /bin/pip3.6 install boto3 django-ses django-amazon-ses
 
 RUN mkdir -p /web/
 COPY . /web/www/
