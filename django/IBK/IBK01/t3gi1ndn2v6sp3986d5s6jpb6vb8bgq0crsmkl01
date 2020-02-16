@@ -1,0 +1,210 @@
+Return-Path: <careers@northeastern.edu>
+Received: from barracuda.neu.edu (neu-spf-hosts.northeastern.edu [155.33.16.32])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id t3gi1ndn2v6sp3986d5s6jpb6vb8bgq0crsmkl01
+ for jeff.adekunbi@ideabakr.org;
+ Tue, 21 Jan 2020 18:05:50 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of northeastern.edu designates 155.33.16.32 as permitted sender) client-ip=155.33.16.32; envelope-from=careers@northeastern.edu; helo=neu-spf-hosts.northeastern.edu;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of northeastern.edu designates 155.33.16.32 as permitted sender) client-ip=155.33.16.32; envelope-from=careers@northeastern.edu; helo=neu-spf-hosts.northeastern.edu;
+ dmarc=pass header.from=northeastern.edu;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHa2lBc1FDUVVaS3N1TFJsTEFXbUNLMEdxdlFLMzhFQzBDSjdQMW1kVkNMMjd5OG5sUUM2U2VpR05kZE5zYzBtc1JKTm84K242Q2tTQUtKQ0RiOW96Q0d1TzhnNVRwcGFUUFZGNDRrSWxVUkh4NzkrUTlZMk5SbU5KUmxuUWFSc0tDcmV4Z2ppci9EUjlERG1lWWtVMFJSdEJHYTFVaWYwZDNVUWpXZ3hoclZMSlVIbmlHUlp3WEx6cFJqWmZDK1I2bXpPVEthczM5ZkFFSjBVK2tSYjgyZjJCckxIai9nNzB2WmR2cnJWRm9yQWtvYS91VGdmVUUwRjR6SmY5M1ozQkJiUGdkTkY4Q1UwT2dlRmVrYkplVmJKTWhWMVRJUXlqcFRMSWZ6MEFKUWc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=WMLdTA3xJwH1QPdL1OHK4QjXXBr4e5+TMJOADP1+1NPVyEZ9e41DT0CV2tjHIvvVJoJec/YHkt5LRZiUIb5LPk03XroLt5MZI3cDtNwr71JkGpJ1eAKMOVrYocftT9Mot49H9LygnL3YqBXwEAZBP874TDUprdto6PWDznUWymM=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579629951; v=1; bh=BJm3+JZR6B1uUleatjrboVgqCectkZqdIXWz0VLcoY4=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+X-ASG-Debug-ID: 1579629948-03dc905b561afd90001-JAlvLd
+Received: from BOS3332 ([155.33.20.149]) by barracuda.neu.edu with ESMTP id OonvAmzxaMVwm1Gp for <jeff.adekunbi@ideabakr.org>; Tue, 21 Jan 2020 13:05:48 -0500 (EST)
+X-Barracuda-Envelope-From: careers@northeastern.edu
+X-Barracuda-Effective-Source-IP: UNKNOWN[155.33.20.149]
+X-Barracuda-Apparent-Source-IP: 155.33.20.149
+Date: Tue, 21 Jan 2020 13:05:30 -0500 (EST)
+From: careers@northeastern.edu
+To: jeff.adekunbi@ideabakr.org
+Message-ID: <493164199.18176.1579629948501.JavaMail.orbissvc@BOS3332>
+Subject: Northeastern University's Spring 2020 (2/13 and 2/14) Career Fair
+ Registration Update Reminder
+MIME-Version: 1.0
+X-ASG-Orig-Subj: Northeastern University's Spring 2020 (2/13 and 2/14) Career Fair
+ Registration Update Reminder
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_18174_828192607.1579629948482"
+X-Barracuda-Connect: UNKNOWN[155.33.20.149]
+X-Barracuda-Start-Time: 1579629948
+X-Barracuda-URL: https://155.33.16.32:443/cgi-mod/mark.cgi
+X-Virus-Scanned: by bsmtpd at neu.edu
+X-Barracuda-Scan-Msg-Size: 8082
+X-Barracuda-BRTS-Status: 1
+X-Barracuda-Spam-Score: 0.00
+X-Barracuda-Spam-Status: No, SCORE=0.00 using global scores of TAG_LEVEL=1000.0 QUARANTINE_LEVEL=1000.0 KILL_LEVEL=8.0 tests=HTML_MESSAGE, NO_REAL_NAME
+X-Barracuda-Spam-Report: Code version 3.2, rules version 3.2.3.79487
+	Rule breakdown below
+	 pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	0.00 NO_REAL_NAME           From: does not include a real name
+	0.00 HTML_MESSAGE           BODY: HTML included in message
+
+------=_Part_18174_828192607.1579629948482
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_18175_1648692425.1579629948482"
+
+------=_Part_18175_1648692425.1579629948482
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Dear Valued Partner,
+ 
+I hope that this message finds you well as we begin the new year.
+I am simply reaching out again with this additional reminder that our spring career fair registrations are open, but space is filling quickly.
+
+If you have not yet registered, please remember that our career fairs usually sell-out well in advance,so if you are planning to attend, please register soon.
+ 
+Please find the logistical details link and the registration link for the each of the fairs below:
+  
+o	All Majors Graduate Students (Only) Career Fair - February 13, 2020, 11:00 am-4:00 pm   https://careers.northeastern.edu/article/spring-2020-career-fair-employer-logistical-information
+Register on NUcareers 
+ 
+o	All Majors Undergraduate Students (Only) Career Fair - February 14, 11:00 am-3:00 pm  https://careers.northeastern.edu/article/spring-2020-career-fair-employer-logistical-information
+Register on NUcareers
+
+I hope to see you on our campus this spring, and please do not hesitate to reach back to me should you need any additional information or assistance.
+ 
+Thank you again for your continued support of our students.
+
+Best regards,
+ 
+Bob
+ 
+Bob Blanchette
+Associate Director
+Global Employer Engagement
+Employer Engagement and Career Design
+Northeastern University
+360 Huntington Avenue
+530A Stearns Center
+Boston, MA 02115
+b.blanchette@northeastern.edu
+617.373.7781
+<img src='https://nucareers.northeastern.edu/emailStat.htm?action=emailOpened&email=15871&emailAddress=jeff.adekunbi@ideabakr.org'>
+------=_Part_18175_1648692425.1579629948482
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Dear Valued Partner,<br />
+&nbsp;<br />
+I hope that this message finds you well as we begin the new year.<br />
+&nbsp;<br />
+I am simply reaching out with this additional reminder that our spring care=
+er fair registrations are open, but space is filling quickly.<br />
+&nbsp;<br />
+If you have not yet registered, please remember that <strong>our career fai=
+rs usually sell-out well in advance, </strong>so if you are planning to att=
+end, please register soon.<br />
+<br />
+Please find the <u>logistical details</u> link and the <u>registration link=
+</u> for the each of the fairs below:<br />
+&nbsp;
+<ul style=3D"list-style-type:circle;">
+=09<li><strong>All Majors <u>Graduate Students</u>&nbsp;(Only) Career Fair&=
+mdash;February 13, 2020, 11:00 am-4:00 pm&nbsp; &nbsp;</strong><a href=3D"h=
+ttps://nucareers.northeastern.edu/emailStat.htm?action=3Dredirect&email=3D1=
+5871&emailAddress=3Djeff.adekunbi@ideabakr.org&url=3Dhttps://careers.northe=
+astern.edu/article/spring-2020-career-fair-employer-logistical-information"=
+ originalsrc=3D"https://careers.northeastern.edu/article/spring-2020-career=
+-fair-employer-logistical-information/" shash=3D"iSRZlkqmi++JpmyI/U9jdtqy7y=
+S5xWBoFNIvkxTzXO7cMr57WRtkgNUyvU85tZlY16m2tTWC6M/puVJEkmY49i2Dd0TH/Ex/ps+kO=
+NiH36F5xHWkH5L4FfUFqvGVmzsFfnHIIA4i0TaDzatYZj35DNDODJZ6B3qinR5bwh97huM=3D" =
+target=3D"_blank">https://careers.northeastern.edu/article/spring-2020-care=
+er-fair-employer-logistical-information</a></li>
+</ul>
+
+<div style=3D"margin-left: 80px;">Register on <a href=3D"https://nucareers.=
+northeastern.edu/emailStat.htm?action=3Dredirect&email=3D15871&emailAddress=
+=3Djeff.adekunbi@ideabakr.org&url=3Dhttps://nucareers.northeastern.edu/myAc=
+count/view-events.htm" originalsrc=3D"https://nucareers.northeastern.edu/em=
+ailStat.htm?action=3Dredirect&amp;email=3D14275&amp;emailAddress=3Da.armeli=
+n@northeastern.edu&amp;url=3Dhttp://nucareers.northeastern.edu/myAccount/vi=
+ew-events.htm" shash=3D"m1U+0Ph7RUFjXIG0XGO9EMnBNMfxNZAaLgx+PxMKvWC2zdk4SKu=
+10gFvYZgyaiTYbBxOExZfQpG/CdZy0t7rS/pBbfx8/rAxP2QvJaE3yUoIQJgJr4r0e7GW6lvI0M=
+a6VIfubYZN6p7ZMhZ0XwfjXnf5orVrHxScINt4bG+iOd0=3D" target=3D"_blank">NUcaree=
+rs</a>&nbsp;<br />
+&nbsp;</div>
+
+<ul style=3D"list-style-type:circle;">
+=09<li><strong>All Majors <u>Undergraduate Students (Only)</u>&nbsp;Career =
+Fair&mdash;February 14,&nbsp;11:00 am-3:00 pm</strong> &nbsp;<a href=3D"htt=
+ps://nucareers.northeastern.edu/emailStat.htm?action=3Dredirect&email=3D158=
+71&emailAddress=3Djeff.adekunbi@ideabakr.org&url=3Dhttps://careers.northeas=
+tern.edu/article/spring-2020-career-fair-employer-logistical-information" o=
+riginalsrc=3D"https://careers.northeastern.edu/article/spring-2020-career-f=
+air-employer-logistical-information/" shash=3D"ohALbGdo559ud/a5xYnb36IUVjHE=
+Y3abGaoiBTqV3U5/FtyCavYqs51YgGGz/7EhBf98xNJNh4KjejtPsuBDXN06Y1pCgXXRUcPzls4=
+dBiHTxCQyU+FKnWKXtGevGd8lZ6bbV9TOmAoVGaSixcVlmm//s/F05IAKI/1O0pomHMo=3D" ta=
+rget=3D"_blank">https://careers.northeastern.edu/article/spring-2020-career=
+-fair-employer-logistical-information</a></li>
+</ul>
+
+<div style=3D"margin-left: 80px;"><a href=3D"https://nucareers.northeastern=
+.edu/emailStat.htm?action=3Dredirect&email=3D15871&emailAddress=3Djeff.adek=
+unbi@ideabakr.org&url=3Dhttps://nam05.safelinks.protection.outlook.com/?url=
+=3Dhttps%3A%2F%2Fcareers.northeastern.edu%2Farticle%2Fspring-2020-career-fa=
+ir-employer-logistical-information%2F&amp;data=3D02%7C01%7Ca.armelin%40nort=
+heastern.edu%7C6c9b86e51ea1437123c408d762014fb8%7Ca8eec281aaa34daeac9b9a398=
+b9215e7%7C0%7C0%7C637085630117338024&amp;sdata=3DfAux4VlWqeNqs8bxetWG4g7l54=
+RorNBYn8TyBhOXxQ0%3D&amp;reserved=3D0" originalsrc=3D"https://careers.north=
+eastern.edu/article/spring-2020-career-fair-employer-logistical-information=
+/" shash=3D"ohALbGdo559ud/a5xYnb36IUVjHEY3abGaoiBTqV3U5/FtyCavYqs51YgGGz/7E=
+hBf98xNJNh4KjejtPsuBDXN06Y1pCgXXRUcPzls4dBiHTxCQyU+FKnWKXtGevGd8lZ6bbV9TOmA=
+oVGaSixcVlmm//s/F05IAKI/1O0pomHMo=3D">&#8203;</a>Register on <a href=3D"htt=
+ps://nucareers.northeastern.edu/emailStat.htm?action=3Dredirect&email=3D158=
+71&emailAddress=3Djeff.adekunbi@ideabakr.org&url=3Dhttps://nucareers.northe=
+astern.edu/myAccount/view-events.htm" originalsrc=3D"https://nucareers.nort=
+heastern.edu/emailStat.htm?action=3Dredirect&amp;email=3D14275&amp;emailAdd=
+ress=3Da.armelin@northeastern.edu&amp;url=3Dhttp://nucareers.northeastern.e=
+du/myAccount/view-events.htm" shash=3D"aaAxjLncSQQLvf7848eV1apB9Qlgg31VMQhG=
+MpMtGDXQWk8sLfCAjnfTNJEP2IJHi66sdeebb9PoDEZC16kmYspk38oZxKAIo0sRnZW29Q+ifIW=
+LSM3Kz0LHJawelDZhX0b3ookaATl5yyLB6ERIW9JCXSUkekq/4ULTo0RF6ko=3D" target=3D"=
+_blank">NUcareer</a><a href=3D"https://nucareers.northeastern.edu/emailStat=
+.htm?action=3Dredirect&email=3D15871&emailAddress=3Djeff.adekunbi@ideabakr.=
+org&url=3Dhttps://nam05.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F=
+%2Fnucareers.northeastern.edu%2FemailStat.htm%3Faction%3Dredirect%26email%3=
+D14275%26emailAddress%3Da.armelin%40northeastern.edu%26url%3Dhttp%3A%2F%2Fn=
+ucareers.northeastern.edu%2FmyAccount%2Fview-events.htm&amp;data=3D02%7C01%=
+7Ca.armelin%40northeastern.edu%7C6c9b86e51ea1437123c408d762014fb8%7Ca8eec28=
+1aaa34daeac9b9a398b9215e7%7C0%7C0%7C637085630117348024&amp;sdata=3DXaig6RhW=
+1tmnJ8MLaezjK7IlsSYHnuydgXhXswiYbPU%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://nucareers.northeastern.edu/emailStat.htm?action=3Dredirect&amp;email=
+=3D14275&amp;emailAddress=3Da.armelin@northeastern.edu&amp;url=3Dhttp://nuc=
+areers.northeastern.edu/myAccount/view-events.htm" shash=3D"ATrSCTNxYZU+9+k=
+b+cFC8aUOn9jHJkxnsSlu9AYkXkx4reatZF52ArntlZFIpbM0SzlWgBBCSmxxntOY3oW7EraZTV=
+jnkwW5wdm9oiKxcAaIRbfkJa8BFLN8qlQ0pNVpch3pgsnLuB058e+nqgrhX6laEKa4PQoEQwIyh=
+ivE9YM=3D" target=3D"_blank">s</a></div>
+<br />
+I hope to see you on our campus this spring, and please do not hesitate to =
+reach back to me should you need any additional information or assistance.<=
+br />
+&nbsp;<br />
+Thank you again for your continued support of our students.<br />
+<br />
+Best regards,<br />
+&nbsp;<br />
+Bob<br />
+&nbsp;<br />
+<strong>Bob Blanchette</strong><br />
+<em>Associate Director</em><br />
+<em>Global Employer Engagement</em><br />
+Employer Engagement and Career Design<br />
+Northeastern University<br />
+<strong>360 Huntington Avenue</strong><br />
+<strong>530A Stearns Center</strong><br />
+<strong>Boston, MA 02115</strong><br />
+<strong><a href=3D"https://nucareers.northeastern.edu/emailStat.htm?action=
+=3Dredirect&email=3D15871&emailAddress=3Djeff.adekunbi@ideabakr.org&url=3Dm=
+ailto:b.blanchette@northeastern.edu">b.blanchette@northeastern.edu</a></str=
+ong><br />
+<strong>617.373.7781</strong><br />
+<strong>617-448-1953 mobile</strong><br />
+&nbsp;<br />
+&nbsp;<img src=3D'https://nucareers.northeastern.edu/emailStat.htm?action=
+=3DemailOpened&email=3D15871&emailAddress=3Djeff.adekunbi@ideabakr.org'>
+------=_Part_18175_1648692425.1579629948482--
+
+------=_Part_18174_828192607.1579629948482--

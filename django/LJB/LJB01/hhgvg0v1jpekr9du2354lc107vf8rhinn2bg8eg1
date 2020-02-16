@@ -1,0 +1,102 @@
+Return-Path: <bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com>
+Received: from m250.email.mailgun.net (m250.email.mailgun.net [146.20.191.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id hhgvg0v1jpekr9du2354lc107vf8rhinn2bg8eg1
+ for josephs@linuxjobber.com;
+ Mon, 20 Jan 2020 19:08:15 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of avanciers.com does not designate 146.20.191.250 as permitted sender) client-ip=146.20.191.250; envelope-from=bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com; helo=m250.email.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of avanciers.com does not designate 146.20.191.250 as permitted sender) client-ip=146.20.191.250; envelope-from=bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com; helo=m250.email.mailgun.net;
+ dkim=pass header.i=@avanciers.com;
+ dmarc=none header.from=avanciers.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIbCtkN1ZJYldCWDMyNUZEd2d2NnJ5WmpiZElqRHc1cHY1SFZ2TTVFWnJmV3NCSzdWTm5FRjZ5eWpYMTRHaUdsWVJnT3NVVXBTSzNXcW9EMi9CNTBUWVB5R2hIdHZPQ1JhendDYWVmbFpqRjdaa3RiQlRybllVVjFLVkMyb0JmVjhLMmMzcEtDN3ZwSXhaTnhyVlh5djF0VGRMRTVPZ0JoSXBoUWJMazAwdEx4YWtnYm5LRjZZRzloajI4clNaU1FtU1EyNmZ3UjZaYXhwbVkvT3hxQkJ3ZnNBTW5odWlmV3NiKzhzTjZaNGJHSnlxVWk4OXUwOS9oUVRkTkdyTnJOMzZ6WlN4VjUvTk1RdmlnWEYxcytnajNBUG9mL0RNV3lPa2xBWUdVaEV6TTJ4Y0p5cXRxaFhzQTRYN0d2ZXZFR0VDaHo5b25QaHNpVVlSWFEzYUtoanM=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=OnQuOVORbWYFhSoESukeOXgq39QLp1x+4nlSsR4LE7FXf/wibgRhZY5FfrEkJf/HOByq93P9lUYatZklTXkziHB4EsDYIhBwvPPe7AAphOMyQf2VKXbiiocNFcoMH9ZhGPPzXkLvRRbC4RYhcTnjaIvw6mCZY95hg/GNJVWzing=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579547298; v=1; bh=iYq1A/X77h7wYbSzfg7e6JduaKB36O/t++QRpcptVK4=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=avanciers.com; q=dns/txt;
+ s=pic; t=1579547298; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=Smnwi6sswwjMSTkGyA4OHxsLT/YuzNc2CwUMjf8VSIY=; b=obphmztrxOE3MT5ga+eUuq6E9ygOxE22StMdZzV+pG6VMisPBscXAX5UAQ/DlDZPUdH8Fx1R
+ d34szykWs3zDbQqq0EpeRiPX2YYFtkn4S4thljzA7WaepUtYbupxdfyv4qfFhR0T2/pphfns
+ owycnOXd9PfHghNOdIzv8b66wwA=
+X-Mailgun-Sending-Ip: 146.20.191.250
+X-Mailgun-Sid: WyJkODM5NSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJiOWJkMDEiXQ==
+X-Mailgun-Batch-Id: 5e25fa94c46aff9f4a3fd1a7
+Received: by luna.mailgun.net with HTTP; Mon, 20 Jan 2020 19:08:04 +0000
+Date: Mon, 20 Jan 2020 19:08:04 +0000
+Sender: Gulshan@avanciers.com
+Message-Id: <20200120190804.1.BBC4B77F20CA9EA4@avanciers.com>
+X-Mailgun-Variables: {"ref_id": "3864"}
+Reply-To: Gulshan@avanciers.com
+To: josephs@linuxjobber.com
+From: Gulshan Kumar <Gulshan@avanciers.com>
+Subject: Looking For - SDET @ New York, NY - Global Logic
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <p><span style="font-size:14px;">Hello Joseph,</span></p>
+
+<div>
+<div>
+<p><span style="font-size:14px;"><span style="font-family:Calibri,sans-serif">Hope you are doing good.</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,sans-serif">I am having a <b>Contract </b>job position for you. If you are interested in the position listed below, please share your updated <b>resume</b> along with best <b>time</b> <b>slot</b> to reach you.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="line-height:150%"><span style="font-family:Calibri,sans-serif"><b><span style="background:yellow"><span style="color:black">Job Title: SDET</span></span></b></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="line-height:150%"><span style="font-family:Calibri,sans-serif"><b><span style="background:yellow"><span style="color:black">Location: New York, NY</span></span></b></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="line-height:150%"><span style="font-family:Calibri,sans-serif"><b><span style="background:yellow"><span style="color:black">Duration: Long Term</span></span></b></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="line-height:150%"><span style="font-family:Calibri,sans-serif"><b><span style="background:yellow"><span style="color:black">Client: Global Logic</span></span></b></span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,sans-serif"><b>Detailed Job Description:</b></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,sans-serif">Strong automation testing skills. They expect them to code as part of their interview process. (Jenkin, GIT, Selenium, REST, SOAP and other industry leading tools)</span></span></li>
+	<li class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,sans-serif">They use Cypress and JavaScript will be a huge advantage. If not, the candidates should be able convince that they can scale and learn JavaScript </span></span></li>
+	<li class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,sans-serif">Experience with tools that they use &ndash; docker, Hadoop, Spark, Kubernetes . If not hands-on, candidate must be able to explain these tools and how they are implemented in projects</span></span></li>
+</ul>
+</div>
+</div>
+<br />
+<div id="EditorSignatureID">
+<p><span style="font-size:11pt"><span style="line-height:13.5pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:12.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#012a46">Gulshan Kumar</span></span></span></b><br />
+<span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#434343"><b>Avanciers Inc</b></span></span></span><br />
+<b><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#ef5c26">Desk</span></span></span></b><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#434343"> 510-806-7610 </span></span></span><br />
+<b><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#ef5c26">Email</span></span></span></b><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#ef5c26">:&nbsp;</span></span></span><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#434343"><a href="mailto:gulshan@avanciers.com" style="color:#0563c1; text-decoration:underline">gulshan@avanciers.com</a></span></span></span><br />
+<b><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#ef5c26">Web</span></span></span></b><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#ef5c26">:&nbsp;</span></span></span><span style="font-size:9.0pt"><span style="font-family:"Arial",sans-serif"><span style="color:#434343"><a href="http://www.avanciers.com/" style="color:#0563c1; text-decoration:underline" target="_blank"><span style="color:#434343">www.avanciers.com</span></a></span></span></span></span></span></span></p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="https://talenthirecls4.ceipal.com/users/unsubscribe/54a734611576b0e683b676068450a54ad2c3ed2a/b09ae5a5e94f41e038a5d937b4109f06c0d63b75/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+</body>
+</html>

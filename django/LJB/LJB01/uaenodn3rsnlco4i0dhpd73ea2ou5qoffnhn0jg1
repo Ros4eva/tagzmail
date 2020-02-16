@@ -1,0 +1,307 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-156.mailgun.net (m71-156.mailgun.net [166.78.71.156])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id uaenodn3rsnlco4i0dhpd73ea2ou5qoffnhn0jg1
+ for josephs@linuxjobber.com;
+ Wed, 08 Jan 2020 17:24:10 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.156 as permitted sender) client-ip=166.78.71.156; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-156.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.156 as permitted sender) client-ip=166.78.71.156; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-156.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGMDVuZTBNd0xaQTlBdGpyQ0g1SGRNMy9reUpEMnhIVXRsNExKOUszbi9adSt3SlJnM1JZSnNrdE8ya2RyU3JsMG9Qd0hCbXpYNHdMVmNvcEh3YTR5N3JzYms5R3EzVUZDQS9zMk5NT0haZ3pRQ3N0SGVRWFhLQzlmNjhmcFdHRWRiVC9HazE0UFFIQm9ZVVo5V2xRYjNJUkttMG9FZmRibVBocmZnZXlCekxJZUFzMUhlTFRBOEEzV0xSazZmaE9TMmZXamUySC8xYjVFanVQMjk3NWxibmxHYzBlU3p4MkNzNnR3MWJ5Ly9QYnhuYXo5WXRDb0VSQU82ZGNHcFdIOUpEZzFDZ3Jkdk1yQTVtazlrOXY4SWlSV3VDaGlQQU5KajA1c0FOQ1N4RDRNbEJ5WFVFSW5nTGZaNXlEWEczajdxa1NIaE50UnpsM0VETHp0WVpzZzY=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=DoF2OyRpIPfD1FFMW2z9os5Bw92Du6yACaY4rE3BP/1a0QRt55Ra+ajx/DxapnWFQxYMmA32DQy7fIswwHGrgRImahNBGDyfkm66zuqD4yAplvgjr01XxNJDB9+DCuqa4DFSl8cFrbuBTYkyudEpl+/YAWFUV1NAk+3kXusIXqA=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578504252; v=1; bh=GZsszt/2qDeAP3uYSxvBnU0Msiw1lFnMPG1xHrdCOUo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1578504251; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=sBPchj4oqMpDsKeZNQrI/71F0sEPYWUR7OkbrPA2hqA=; b=fN3WnhMuG5K//wUeQvY7gBKBLOKcKOWmHsVmsrl597Ef9hxJjcX9PPBAsmPSgTumnmQyVK0C
+ rScl1XK7DwkmZZ6ln/40c8vsvcKzr+rzFz6hqo0+frSl93XWkzL4kjcsxHtNrGsUIUMjUbY+
+ DRqtU2f11rKppHsGVAWmG2EsIcs=
+X-Mailgun-Sending-Ip: 166.78.71.156
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e161037c2164d6bc1788592
+Received: by luna.mailgun.net with HTTP; Wed, 08 Jan 2020 17:24:07 +0000
+Date: Wed, 08 Jan 2020 17:24:07 +0000
+Sender: mukesh.sb@usgrpinc.com
+Message-Id: <20200108172407.1.478F21746AD4CE59@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: mukesh.sb@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Mukesh Bohra <mukesh.sb@usgrpinc.com>
+Subject: Fulltime :: Devops Engineer :: NYC/NY || SFO, CA || Atlanta, GA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div id=3D"EditorSalutationID">
+<p class=3D"gmail-m8700060101744232818gmail-xwordsection1"><span style=3D"f=
+ont-size:12pt"><span style=3D"line-height:16.5pt"><span style=3D"font-famil=
+y:"Times New Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"=
+font-family:"Calibri",sans-serif">Hi,<br />
+&nbsp;<br />
+I am Mukesh,&nbsp;a recruiter with&nbsp;USG Inc. Hope&nbsp;you are doing gr=
+eat! I have an urgent requirement mentioned below. If you find yourself com=
+fortable with the requirement please reply back with your updated resume an=
+d I will get back to you<b>.</b></span></span></span></span></span></p>
+
+<p class=3D"gmail-m8700060101744232818gmail-xwordsection1">&nbsp;</p>
+
+<p class=3D"gmail-m8700060101744232818gmail-xwordsection1"><span style=3D"f=
+ont-size:12pt"><span style=3D"line-height:16.5pt"><span style=3D"font-famil=
+y:"Times New Roman",serif"><b><span style=3D"font-size:11.0pt"><span style=
+=3D"background:yellow"><span style=3D"font-family:"Calibri",sans-serif">Pos=
+ition# &nbsp;&ndash; Devops Engineer</span></span></span></b></span></span>=
+</span></p>
+
+<p class=3D"wordsection1" style=3D"text-align:start"><span style=3D"font-si=
+ze:10pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"b=
+ackground:yellow">Location- NYC/NY || SFO, CA || Atlanta, GA</span></b></sp=
+an></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"lin=
+e-height:16.5pt"><span style=3D"font-family:Calibri,sans-serif"><b><span st=
+yle=3D"background:yellow">Position Type : Fulltime</span></b></span></span>=
+</span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1" style=3D"margin-bottom:16px; text-align:start"><s=
+pan style=3D"font-size:10pt"><span style=3D"line-height:105%"><span style=
+=3D"font-family:Calibri,sans-serif"><b>Job Description</b></span></span></s=
+pan></p>
+
+<ul>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Minimum 5+ year=
+s of experience in Implementing CICD process flow using Jenkins platform </=
+span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Minimum experie=
+nce of 5+ years in Integrating plugins for SONAR, Jmeter, Jbehave, Selenium=
+ components to CICD platform</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Minimum 5+ year=
+s of experience on Developing customer scripting using Python, Ant and depl=
+oying them on platform.</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Minimum 2+ year=
+s of experience on Cloud Deployments.</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Configuring scr=
+ipts in Cloud console / Jenkins for Automated executions </span></span></li=
+>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Experience of 3=
++ years on Google cloud platform tools Kubernetes engines, Pub/Sub, Big que=
+ry tools</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Prior work expe=
+rience in Supply Chain, Warehouse functional domains will be an added advan=
+tage</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Hands on experi=
+ence on Pipeline creation from scratch and troubleshooting GCP configuratio=
+n issues</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Should have wor=
+ked on SVN, GitHub, and Continuous Integration environment like Jenkins.</s=
+pan></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Publishing repo=
+rts on CICD tool compliance and execution reports to scrum teams.</span></s=
+pan></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Should have exp=
+erience SQLs, NoSQL Databases</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Should have exp=
+erience in working in teams following Agile or XP methodology </span></span=
+></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Should have Ret=
+ail domain experience to understand the business requirement. </span></span=
+></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Minimum 2+ year=
+s of Senior programming level experience involving some architecture and hi=
+gh level design</span></span></li>
+	<li class=3D"wordsection1" style=3D"text-align:justify"><span style=3D"fon=
+t-size:10pt"><span style=3D"font-family:Calibri,sans-serif">Understanding o=
+f distributed systems and related concepts required</span></span></li>
+</ul>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt">With Regards,=
+</span></span></span></p>
+
+<p class=3D"wordsection1" style=3D"margin-bottom:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"=
+font-size:12.0pt">Mukesh Bohra </span></b><span style=3D"font-size:12.0pt">=
+| Sr. IT Recruiter</span></span></span></p>
+
+<table class=3D"Table" style=3D"width:571.1pt; border-collapse:collapse; bo=
+rder:dotted #948a54 1.0pt" width=3D"761">
+	<tbody>
+		<tr style=3D"height:.3in">
+			<td style=3D"border:dotted #948a54 1.0pt; width:108.5pt; padding:.05in .=
+1in .05in .1in; height:.3in" width=3D"145">
+			<p align=3D"center" style=3D"text-align:center"><img height=3D"40" src=
+=3D"https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBj=
+QnYzSU5URUcyN28rUXVkUU5BcXIxaTZjWStXOW9JVlZoSGFPYTNJOG54c1RFRHl4VTdDZGxYTyt=
+6S2d2QlhCN0xLL1NIY1I5YWFJQ2IyRXA4eUQ2V2VrdXh4NUMwLzFlNUdzT2x4RnFaVmcwanpCRl=
+cyejc0bkUzZzBxdDRvVXdIV1NrSnAvZktUb0tpZXdQMTJoYTljPQ=3D=3D" width=3D"75" />=
+</p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>United Software Gr=
+oup, Inc.</b></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"font-s=
+ize:7.0pt">End-to-End IT Systems | Services | Solutions Provider</span></sp=
+an></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"fon=
+t-size:9.0pt">A Minority Business Enterprise</span></b></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:92.9pt; border-left:none=
+; padding:.05in .1in .05in .1in; height:.3in" width=3D"124">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt">565, Metro Place South,</span></s=
+pan></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt">Suite # 110,</span></span></span>=
+</p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt">Dublin, OH 43017</span></span></s=
+pan></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><a href=3D"http://www.usgrpinc.com/" style=3D"color:#0563c1; text-=
+decoration:underline"><span style=3D"font-size:10.0pt">www.usgrpinc.com</sp=
+an></a></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:230.2pt; border-left:non=
+e; padding:.05in .1in .05in .1in; height:.3in" width=3D"307">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt">Phone: 614-495-9222 Ext.494</span=
+></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt">Fax:&nbsp; &nbsp;&nbsp;&nbsp;&nbs=
+p; 866-764-1148</span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt">Email:&nbsp; </span><a href=3D"ma=
+ilto:mukesh.sb@usgrpinc.com" style=3D"color:#0563c1; text-decoration:underl=
+ine"><span style=3D"font-size:10.0pt">mukesh.sb@usgrpinc.com</span></a></sp=
+an></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"line-height:16.5pt"><sp=
+an style=3D"font-family:Calibri,sans-serif"><b><span style=3D"font-size:10.=
+0pt">Twitter:</span></b><span style=3D"font-size:10.0pt"> Madmax_bohra358</=
+span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"line-height:16.5pt"><sp=
+an style=3D"font-family:Calibri,sans-serif"><b><span style=3D"font-size:10.=
+0pt">LinkedIn:</span></b> <a href=3D"https://in.linkedin.com/in/mukesh-bohr=
+a-0aa86547" style=3D"color:#0563c1; text-decoration:underline" target=3D"_b=
+lank"><span style=3D"font-size:10.0pt">https://in.linkedin.com/in/mukesh-bo=
+hra-0aa86547</span></a></span></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:139.5pt; border-left:non=
+e; padding:0in 0in 0in 0in; height:.3in" valign=3D"top" width=3D"186">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif">&nbsp;&nbsp; &nbsp;</span></span><img height=3D"90" src=3D"https:/=
+/talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUc=
+yN28rUXVkUU5BcXIxajFGRzN6Z1RjbFh1YTBibWZPT21GNUdFdzgyOERuR2FkSEpCcXgxNEJCMX=
+lORnlLUWc1V1RSeTFtQ0hsQkZyS1hwc3dMS1hGc0c1TTk3MkpwdE9WRHhBV1VTOHp6UmFjREZKV=
+ThlVE51dzJzbGtkLzNDeTFLNDdhUWZjQUFXcGpFPQ=3D=3D" width=3D"90" /></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><b><span style=3D"font-size:8.0pt">&nbsp;&nbsp;&nbsp; 2016 - 2017 =
+- 2018</span></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>&nbsp;</b></span></span></p>
+
+<p class=3D"wordsection1"><img height=3D"51" src=3D"https://talenthirecls3.=
+ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXI=
+xZzFJa1paTlNNM1A3MmlKT0JoNEk2ekF1SnF6RTgxeCt0K3JGVktyZklyVlpUWEZXZk50NXVZQj=
+Jvd3FxbWVNQmZ5MzZHTFdQWnM4Q1pkZ1dScGJvRnFobmpTT3l5bjgvVk1qSnIxbHBYdFhKNmFkR=
+lJBWWdhREExZ2dPVVpyV3ljPQ=3D=3D" width=3D"216" /></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:8.0pt"><span style=3D=
+"background:white">To unsubscribe from this mailing, please reply to this e=
+mail with the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or cli=
+ck here&nbsp;</span></span><a href=3D"mailto:techsupport@usgrpinc.com?subje=
+ct=3DUNSUBSCRIBE" style=3D"color:#0563c1; text-decoration:underline" target=
+=3D"_blank"><span style=3D"font-size:8.0pt"><span style=3D"background:white=
+">UNSUBSCRIBE</span></span></a><span style=3D"font-size:8.0pt"><span style=
+=3D"background:white">.</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:8.0pt">USG is an E=
+qual Opportunity Employer. Qualified applicants will receive consideration =
+for employment without regard to race, color, religion, gender, age, disabi=
+lity, military status, national origin or any other characteristic protecte=
+d under federal, state, or applicable local law</span></b></span></span></p=
+>
+
+<p class=3D"wordsection1">&nbsp;</p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/695636d6=
+1090c76935d5f1911031ef4935088ef7/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D/" style=3D"color:#0077c5; text-decoration:underline"><=
+b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEsOwiAQANDTyJIMU5iBBQvj5xoGKFgaLQ2kicdX3wHe7FWGACCqR0AABVYxamCppGZ7=
+R8Wazld9uRl30nCMZ9_rlmRqb7H4YoqxyBmIKcUQIiXDkZ2dyDimLHoujzp7nMCK7tc28r6M3_O=
+q2_FZW4y5_6svU5UmwA"></body>
+</html>

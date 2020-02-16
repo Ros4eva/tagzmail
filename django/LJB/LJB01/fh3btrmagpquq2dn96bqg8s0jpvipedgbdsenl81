@@ -1,0 +1,132 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m40-235.mailgun.net (m40-235.mailgun.net [69.72.40.235])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id fh3btrmagpquq2dn96bqg8s0jpvipedgbdsenl81
+ for josephs@linuxjobber.com;
+ Wed, 18 Dec 2019 20:46:23 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.235 as permitted sender) client-ip=69.72.40.235; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-235.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.235 as permitted sender) client-ip=69.72.40.235; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-235.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGKzdvMHFweFFwQmxhbnFYc2NOMGc4MkREazlXN0NoRnRMTU9oWitmTU5DWmM0MTRWRENPRVZVUGlKaTcrYk5MNlJ1dkZsMjZXMXBDa1RsNS9JUzdpVXhrNGtJWU5hQ0FxeTVHQkl2TVYvdUhpSEdDTnp5Q1VheGZHQ0NiWCtpMzJvVGlQaFgxU2pDc2xVNjhiNXJkLzd2WUFRT0RjMVc2NUxPVlR5V3FNUGMvaVB1WWp2a2syRnBRUHkrSUJodUo0c3hZWmJqSkFkNWp5MWR5dnlRaDlpenhueHZZYnVMUENnVDdBSWRvMDRwY2dSakdQMjRnQzQ5c0hlV3huOFMvdVJWSnRPdm0yNW1LMllDcHhjNnYwYzVDcm91MmFMQTJScDBWTFNRSU1nR285anlIV1hMZDhYUTBDRUhic0FQUzh1L2FGS3ZIK3UyM3pqa0dGWVJIcUg=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=WOQhmSHXaal8HDkVRXc1glkUsp57O+JaIHWHnb1gjHUKqLdQ4krMwDnQTw8SdXztBv51cHarCcolQKREnOv2DnegoQLsA/2/BOmx9b6WVA4oUeTibcRNwyc9n2PPHSJhjhS/naA0zp6NgWB3pHOV3bu+XdNyQRC8xgWjT8kjaAo=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576701988; v=1; bh=d709zWvMBsSqiSP6QKUhCFCARdlOZSMyo5Zt2+ayB6w=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1576701987; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=QXgBp6evzVrEKOo5q8wjhsh2tQLgSk1NseDAZod2D3A=; b=GjUy3rxPcCWbZC4WQnp2peRbBz2J9zuLTaLEjkUm0Tzk4xhy8FEjMh9BrLNvjOxipCVcxwKW
+ p0T+YpKGff/T+uG/RiRT39cNs7q0Xzro/2QQe7DSh7ViTSn5fqC2aNHcKrjSuvNc2Kf1cyOb
+ WviVO+9ws57VW2Ced2HzRKpy83M=
+X-Mailgun-Sending-Ip: 69.72.40.235
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5dfa901c976ceb3ca52ab77c
+Received: by luna.mailgun.net with HTTP; Wed, 18 Dec 2019 20:46:20 +0000
+Date: Wed, 18 Dec 2019 20:46:20 +0000
+Sender: tushar.goyal=tryfacta.ai@mg1.ceipalmm.com
+Message-Id: <20191218204620.1.7999407045C4DA15@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: tushar.goyal@tryfacta.ai
+To: josephs@linuxjobber.com
+From: Tushar Goyal <tushar.goyal@tryfacta.ai>
+Subject: Full Time Position // Senior DevOps/Site Reliability Engineer //
+ Portland, OR // R-System // TransUnion
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div><span style="font-size:12px;">Hello&nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:12px;">My name is Tushar Goyal and I am a Staffing Specialist at Tryfacta Inc.&nbsp;I am reaching out to you on an exciting job opportunity with one of our clients.</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Position: Senior DevOps/Site Reliability Engineer</b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Client &ndash; R-System // TransUnion</b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Location- Portland, OR</b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Job: Full Time position</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="background:yellow">GC, GC-EAD or USC only</span></b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Job description</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">At least 3 years of development operations and/or application development experience, including demonstrated experience in a SaaS environment.</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Proven experience performing root cause analysis and advanced troubleshooting</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience with systems management tools such as Puppet, Chef, or Ansible and concepts of configuration management in a large-scale environment</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Strong experience supporting customer-facing applications on a Linux platform</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Practical knowledge of at least one scripting language (Bash, Ruby, Python, Perl)</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>We&rsquo;d Love to See</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience operating SQL and NoSQL data stores in a high throughput, high availability, low latency environment</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience with capacity planning practices or methodologies</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Familiarity with Java debugging tools</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Familiarity with operating software based on Spring Cloud and/or associated components</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience operating Apache Cassandra, Elastic Search, Lucene, Solr or Katta in a production environment</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience operating containers (Docker, rkt) in a production setting</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience using Kubernetes, Marathon, Docker Swarm or another container orchestration platform</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience troubleshooting and/or building systems in the JVM</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Arial","sans-serif""><span style="color:black">Thanks & Regards,</span></span></span></b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="background-image:initial"><span style="background-position:initial"><span style="background-repeat:initial"><span style="font-family:Calibri,sans-serif"><b><span style="color:#01b5f2">Tushar Goyal</span></b></span></span></span></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#1f497d">Technical Recruiter</span></b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:#1f497d">+1 7327376072 Direct</span></b></span></span></p>
+
+<p>&nbsp;</p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.tryfacta.ai/users/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/4f6f0ce798bcceffec15d6d5cb56d843ba8807d1/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://clicks.mg1.ceipalmm.com/o/eJwVzFEOwiAMANDTyCdpoaP0gw-j9zAwOscy3LLFxOOr7wCvJq-1eDItOUBBh9EBBQcWLYsIAQMNN7pfcbgQ9CfaUdue197tuHUzpxxizJIz-8o6CkqNbgpFgZnI52gOnR6tpsCOzJGW7dR9Pn_X2l7vz7KVose_-gL7byga"></body>
+</html>

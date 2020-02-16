@@ -1,0 +1,498 @@
+Return-Path: <DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com>
+Received: from Ser1.Technicalcenter.in:9998 ([192.155.241.216])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 6tbkjmu22hnm8409iqkju3audu7c4geh0rtmglg1
+ for josephs@linuxjobber.com;
+ Mon, 03 Feb 2020 18:41:46 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+ dkim=permerror header.i=@nytpinc.com;
+ dmarc=none header.from=nytpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFdmF1TUZ5R3dnc243NWJwUTR2emQxenl1WS8xRnh2YndiMEUrdkh1L3VUaXlGZXdDV3lVSWFSVGcrdE0reGo1OXFUL2t1dk9ISGVwV2NoVnE1MFVzWDlNaWk5cFd6dUM2WWlBakZJaHg4STFJYmN1VW4vb0ZxbDlVVVR2RGZWRjdMaGJlekt0VTZ4SnVmWCtmbmVKT2QwcU5nUmljUVZHTDFXMHcrNmt5dWRZZGNzVXVVK3VodUI1RlB4elVlNWpGLzR5cERGV0NtZHpQa0NHNGFDc0xSckhYaFRrU2k3d2xHOFR5VzNMLzlNRk9xTGEreWxybzFwYWRpVlFwcStvOTNmRHpGamF5emlISFBMcytSNnUyaS9IMnE4cDJ4K2tvZzlueHkrR3Q5RStXWHdIdDdTdytCTDVleDZmYTJSY05Md0hOLy8wbHF1TE5vL3hZNGZzTTZ0RGRaNG1hQk84U2JKL0hwU1NXK0d3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=O0JUoTaDKoj5v2a/tfAH0oBv711gkWABxV/aTxWoRX9NpJ4FYYKWTZvyvW44XiQEXUCmZ5HWlQYn/laqS2Pi9Fs2BvAgtTD8pLW1fnaE8t0aOd8/ttCebaqrr8v/WzCGG102FHjLAyR8pB+WCXcnVhEuzA2UCnQYCbve1y4guLM=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580755306; v=1; bh=wWwqNUdxKCN3+318PGzmrsxXMr8W7K0TKXXwihglpZU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+X-SmarterMail-Authenticated-As: Bhavesh@nytpinc.com
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns;
+        d=nytpinc.com; s=key;
+        h=received:from:to:references:in-reply-to:subject:date:message-id
+          :mime-version:content-type:x-mailer:thread-index:content-language
+          :list-id:x-mailing-list:reply-to:precedence:sender:cc;
+        b=EPo5RujRMKrR2rKv4P1rJut7FVFbTUkjZx3iP6sPI9FOKrxE1r5WhXgLFszEo+Iek
+          JChli9xgp1knd/J6OjVS5GozoXmdcL1wK/+umLKYe7raAIgHrYipS2dkeGR57tMIc
+          MvAgtSPkNn+KVxnfGsWXWZImoBfTmhqNsO6zmu3X5PRLll6GwyLfPyHH/7a3tHM76
+          7YyPwjttuDIo+OmDdenDQkZqqM69JEnAiRzo62Il3l/AxRwmg43tbHmJtR4SwS/XK
+          6cby+dUhaJKSw7Nhd52+iam0l8pgOWph0Gcs57HMWKOn8WRz7RB0t0gguaZKPoTAv
+          soDLqw/ahhKotKLWQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=nytpinc.com; s=key;
+        h=cc:sender:precedence:reply-to:x-mailing-list:list-id
+          :content-language:thread-index:x-mailer:content-type:mime-version
+          :message-id:date:subject:in-reply-to:references:to:from;
+        bh=AOddtGW9p1bTDTogVyrR5Umdnmxj/ed8rvy0CQd8mpw=;
+        b=vXTvwRHlyZVlHPkZbIvZyaVqu3Jn9RFVYYWA2b6doQLNIHoH7aMKjwcYNChiqURmV
+          eGAXq9oOnsUapswEsW/7A0gulko1vfUpBnHL8A2xZZ9r9Nufmix2DhvYHe/P6gsr5
+          Ig/v9EqjKuNPMWzUH+R734ezR+0z7EEFotljlZttZa/Si5sM2Q5P09xdLr+T1pOXH
+          aWLmEMdrlyjqnf5MlPbN/w4sPQPPGRzwgVNQj/S9u90pXqo6/17hI9ylUnXiSPVks
+          Efl08HmtbPATz6FWqZctqOvn08yuvkCD6ZQKj3VzRl9jIKr7glCyxZl+MI9FiwjgW
+          SjYJkMEGwVxpFKogA==
+Received: from nytppc31 (cpe-70-121-27-82.tx.res.rr.com [70.121.27.82]) by Ser1.Technicalcenter.in:9998 with SMTP;
+   Mon, 3 Feb 2020 12:33:43 -0600
+From: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+To: josephs@linuxjobber.com
+References: 
+In-Reply-To: 
+Subject: Direct client need - Contract to hire role - Sponsorship is not available - Devops Architect for Hackensack, NJ
+Date: Mon, 3 Feb 2020 13:36:51 -0500
+Message-ID: <533492359_631012545@nytpinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_08B7_01D5DA96.FE674CF0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdXXiT4iPAloyhFKSJO7lLveOyFbrgDN5oPQ
+Content-Language: en-us
+List-Id: <listid.DevOps.631012545.nytpinc.com>
+X-Mailing-List: DevOps@nytpinc.com
+Reply-to: "bhavesh@nytpinc.com" <Bhavesh@Nytpinc.com>
+Precedence: list
+Sender: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+CC: 
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_000_08B7_01D5DA96.FE674CF0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_08B8_01D5DA96.FE677400"
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_001_08B8_01D5DA96.FE677400
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+DIRECT CLIENT NEED
+
+Looking for a Senior Engineer for the role. 
+
+3-6 months contract to hire role.  Sponsorship is not available now or in
+future so apply accordingly. 
+
+Location:  Hackensack, NJ. 
+
+It would be a 3-6 months to hire.  
+
+ 
+
+Job Description:
+
+ 
+
+Handle all CI/CD processes and automation
+
+Work directly with software developers and project manager to test system
+integrity
+
+Design and implement build, deployment, and configuration management
+
+Troubleshoot and test implemented designs
+
+Build and test automation tools for infrastructure provisioning
+
+Handle code deployments in all environments on AWS and premises 
+
+Monitor metrics and develop ways to improve
+
+Dynamic and static scanning for all application
+
+Provide technical guidance and educate team members and coworkers on
+development and operations
+
+Brainstorm for new ideas and ways to improvement development delivery
+
+Consult with peers for feedback during testing stages
+
+Build, maintain, and monitor configuration standards
+
+Maintain day-to-day management and administration of projects
+
+Document and design various processes; update existing processes
+
+Improve infrastructure development and application development
+
+Follow all best practices and procedures as established by company
+
+ 
+
+DevOps Requirements and Qualifications
+
+ 
+
+Strong background in Linux / elastic bean/ Pipeline /AWS micro services
+
+Sold experience with AWS VPC and security 
+
+Ability to work independently and lead others 
+
+Minimum 5 yrs. experience in CI/CD
+
+Ability to use a wide variety of open source technologies and cloud service=
+s
+Strong experience with SQL, RDS and MySQL
+
+Minimum 5 years of experience in AWS design and code deployment
+
+Knowledge of software development, SDLC, and operations
+
+Experience with Linux infrastructures, database SQL (MS SQL), CI/CD tools,
+scripting such as JavaScript, Knowledge of Python, Java, Scrum, Agile
+workflow methodologies
+
+Up-to-date on latest industry trends; able to articulate trends and
+potential clearly and confidently
+
+Good interpersonal skills and communication with all levels of management
+
+Able to multitask, prioritize, and manage time efficiently
+
+AWS certification is a plus
+
+ 
+
+Thanks,
+
+_____________________________________
+
+Bhavesh Khatri | New York Technology Partners 
+
+120 Wood Ave S, suite 504. Iselin NJ 08830
+
+Direct: 201.448.8157 | Fax: 201.521.0400 |  <http://www.nytp.com/>
+www.nytp.com
+ <https://www.linkedin.com/in/khatribhavesh/> 
+
+
+Hi, just a reminder that you're receiving this email because you have
+expressed an interest in New York Technology Partners. Don't forget to add
+bhavesh@nytp.com <mailto:bhavesh@nytp.com>  to your address book so we'll b=
+e
+sure to land in your inbox! 
+
+ 
+
+ 
+
+
+
+
+
+Click here to http://Ser1.Technicalcenter.in:9998/public/list.aspx?action=
+=3Dunsubscribe&email=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3D=
+devops@nytpinc.com
+
+Looking for Bulk Email Service Provider ? mail to Info@TechnicalCenter.in
+
+ 
+
+ 
+
+
+
+------=_NextPart_001_08B8_01D5DA96.FE677400
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 15 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#def=
+ault#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calisto MT";
+	panose-1:2 4 6 3 5 5 5 3 3 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.EmailStyle18
+	{mso-style-type:personal;
+	font-family:"Calisto MT",serif;
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;}
+span.EmailStyle19
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+span.EmailStyle21
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle22
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3D"#0563C1=
+" vlink=3D"#954F72"><div class=3DWordSection1><p class=3DMsoNormal style=3D=
+'margin-bottom:12.0pt'><b><span style=3D'font-family:"Times New Roman",seri=
+f'>DIRECT CLIENT NEED<o:p></o:p></span></b></p><p class=3DMsoNormal style=
+=3D'margin-bottom:12.0pt'><span style=3D'font-family:"Times New Roman",seri=
+f'>Looking for a Senior Engineer for the role. <o:p></o:p></span></p><p cla=
+ss=3DMsoNormal><b><span style=3D'font-family:"Times New Roman",serif;color:=
+red'>3-6 months contract to hire role. &nbsp;Sponsorship is not available n=
+ow or in future so apply accordingly. <o:p></o:p></span></b></p><p class=3D=
+MsoNormal><b><span style=3D'font-family:"Times New Roman",serif'>Location: =
+&nbsp;Hackensack, NJ. <o:p></o:p></span></b></p><p class=3DMsoNormal><b><sp=
+an style=3D'font-family:"Times New Roman",serif'>It would be a 3-6 months t=
+o hire. &nbsp;</span></b><span style=3D'font-family:"Times New Roman",serif=
+'><o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Ti=
+mes New Roman",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'font-family:"Times New Roman",serif'>Job Description:<o:p></o:p>=
+</span></p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roman=
+",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'fo=
+nt-family:"Times New Roman",serif'>Handle all CI/CD processes and automatio=
+n<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Tim=
+es New Roman",serif'>Work directly with software developers and project man=
+ager to test system integrity<o:p></o:p></span></p><p class=3DMsoNormal><sp=
+an style=3D'font-family:"Times New Roman",serif'>Design and implement build=
+, deployment, and configuration management<o:p></o:p></span></p><p class=3D=
+MsoNormal><span style=3D'font-family:"Times New Roman",serif'>Troubleshoot =
+and test implemented designs<o:p></o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'font-family:"Times New Roman",serif'>Build and test automation t=
+ools for infrastructure provisioning<o:p></o:p></span></p><p class=3DMsoNor=
+mal><span style=3D'font-family:"Times New Roman",serif'>Handle code deploym=
+ents in all environments on AWS and premises <o:p></o:p></span></p><p class=
+=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>Monitor me=
+trics and develop ways to improve<o:p></o:p></span></p><p class=3DMsoNormal=
+><span style=3D'font-family:"Times New Roman",serif'>Dynamic and static sca=
+nning for all application<o:p></o:p></span></p><p class=3DMsoNormal><span s=
+tyle=3D'font-family:"Times New Roman",serif'>Provide technical guidance and=
+ educate team members and coworkers on development and operations<o:p></o:p=
+></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roma=
+n",serif'>Brainstorm for new ideas and ways to improvement development deli=
+very<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"=
+Times New Roman",serif'>Consult with peers for feedback during testing stag=
+es<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Ti=
+mes New Roman",serif'>Build, maintain, and monitor configuration standards<=
+o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times=
+ New Roman",serif'>Maintain day-to-day management and administration of pro=
+jects<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:=
+"Times New Roman",serif'>Document and design various processes; update exis=
+ting processes<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'fon=
+t-family:"Times New Roman",serif'>Improve infrastructure development and ap=
+plication development<o:p></o:p></span></p><p class=3DMsoNormal><span style=
+=3D'font-family:"Times New Roman",serif'>Follow all best practices and proc=
+edures as established by company<o:p></o:p></span></p><p class=3DMsoNormal>=
+<span style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span=
+></p><p class=3DMsoNormal><b><span style=3D'font-family:"Times New Roman",s=
+erif'>DevOps Requirements and Qualifications<o:p></o:p></span></b></p><p cl=
+ass=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'><o:p>&n=
+bsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times=
+ New Roman",serif'>Strong background in Linux / elastic bean/ Pipeline /AWS=
+ micro services<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'fo=
+nt-family:"Times New Roman",serif'>Sold experience with AWS VPC and securit=
+y <o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Ti=
+mes New Roman",serif'>Ability to work independently and lead others <o:p></=
+o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times New R=
+oman",serif'>Minimum 5 yrs. experience in CI/CD<o:p></o:p></span></p><p cla=
+ss=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>Ability =
+to use a wide variety of open source technologies and cloud services Strong=
+ experience with SQL, RDS and MySQL<o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'font-family:"Times New Roman",serif'>Minimum 5 years of e=
+xperience in AWS design and code deployment<o:p></o:p></span></p><p class=
+=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>Knowledge =
+of software development, SDLC, and operations<o:p></o:p></span></p><p class=
+=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>Experience=
+ with Linux infrastructures, database SQL (MS SQL), CI/CD tools, scripting =
+such as JavaScript, Knowledge of Python, Java, Scrum, Agile workflow method=
+ologies<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-famil=
+y:"Times New Roman",serif'>Up-to-date on latest industry trends; able to ar=
+ticulate trends and potential clearly and confidently<o:p></o:p></span></p>=
+<p class=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>Go=
+od interpersonal skills and communication with all levels of management<o:p=
+></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times Ne=
+w Roman",serif'>Able to multitask, prioritize, and manage time efficiently<=
+o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times=
+ New Roman",serif'>AWS certification is a plus<o:p></o:p></span></p><p clas=
+s=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif;color:blac=
+k'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-fam=
+ily:"Times New Roman",serif;color:black'>Thanks,<o:p></o:p></span></p><p cl=
+ass=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif;color:bl=
+ack'>_____________________________________<o:p></o:p></span></p><p class=3D=
+MsoNormal><span style=3D'font-family:"Times New Roman",serif;color:black'>B=
+havesh Khatri&nbsp;|&nbsp;New York Technology Partners <o:p></o:p></span></=
+p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>=
+120 Wood Ave S, suite 504. Iselin NJ 08830<o:p></o:p></span></p><p class=3D=
+MsoNormal><span style=3D'font-family:"Times New Roman",serif;color:black'>D=
+irect: 201.448.8157 | Fax: 201.521.0400 | <a href=3D"http://www.nytp.com/">=
+<span style=3D'color:black'>www.nytp.com</span></a><br></span><a href=3D"ht=
+tps://www.linkedin.com/in/khatribhavesh/"><span style=3D'font-family:"Times=
+ New Roman",serif;text-decoration:none'><img border=3D0 width=3D160 height=
+=3D33 style=3D'width:1.6666in;height:.3437in' id=3D"Picture_x0020_1" src=3D=
+"cid:image001.gif@01D5D75F.9D865870" alt=3DLinkedin></span></a><span style=
+=3D'font-family:"Times New Roman",serif;color:black'><o:p></o:p></span></p>=
+<p class=3DMsoNormal style=3D'background:white'><span style=3D'font-family:=
+"Times New Roman",serif;color:black'><br>Hi, just a reminder that you're re=
+ceiving this email because you have expressed an interest in New York Techn=
+ology Partners. Don't forget to add <a href=3D"mailto:bhavesh@nytp.com">bha=
+vesh@nytp.com</a> to your address book so we'll be sure to land in your inb=
+ox! <o:p></o:p></span></p><p class=3DMsoNormal style=3D'background:white'><=
+span style=3D'font-family:"Times New Roman",serif;color:black'>&nbsp;<o:p><=
+/o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times New =
+Roman",serif'><o:p>&nbsp;</o:p></span></p></div></body></html>
+<br /><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style=3D"font-size:12px;">Click here to </span><a href=3D"http:/=
+/Ser1.Technicalcenter.in:9998/public/list.aspx?action=3Dunsubscribe&email=
+=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3Ddevops@nytpinc.com">=
+Unsubscribe</a></div>
+
+<div><span style=3D"font-size:12px;">Looking for Bulk Email Service Provide=
+r ? mail to <a href=3D"mailto:Info@TechnicalCenter.in?subject=3DBulk%20Emai=
+l%20Service%20Enquiry%2C%20&amp;body=3DClick%20Send%20Button%20to%20submit%=
+20the%20inquiry.%20">Info@TechnicalCenter.in</a></span></div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+
+
+------=_NextPart_001_08B8_01D5DA96.FE677400--
+
+------=_NextPart_000_08B7_01D5DA96.FE674CF0
+Content-Type: image/gif;
+	name="image001.gif"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.gif@01D5D75F.9D865870>
+
+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
+
+
+------=_NextPart_000_08B7_01D5DA96.FE674CF0--
+

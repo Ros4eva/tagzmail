@@ -1,0 +1,217 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-153.mailgun.net (m71-153.mailgun.net [166.78.71.153])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id q1oe2klrvk9osq7oqbhkqkmjn1cglovv0afgocg1
+ for josephs@linuxjobber.com;
+ Thu, 02 Jan 2020 15:20:24 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFd2lMMGxibTJyT1dLZ1FFTmc2N1JjaVhxTTNMeHNOeXV3TnRIYzRzcHJzMmpKVmxRVERMdS9JTXltcDlYMHdDT0tmV0Q3MlZVbW5sOVUrdCsxZnRvSnk0WXBQYklXQmNXU3ZoS0xDZXY2MWNSVW1USXJCeFpZZ3ZEa0xEOXFNS1pWcGN6WFM1akplNjlEZHlrN3RFL0dFV3doUTRoTDdHS2FGSlRJLzRkTFFQVEtpd3BnSExEQmVRNE1pcXJ5UUZIZGF4K1RZc2xpUS85R0lRaXpNZWlrT3AyT0FpckNZMlBxZE5SUTEyckNvUC95cmJiNks2OTVsUVI0b2lTZWs3Z1NNc2ZNR3NkUlZlTDErYkFzNFVZSTJnTmhYckF1UkVsMk1vMFpIWWV1SHV0V1JUSUtUTmVnbEhJQnp5WklzVTIzdUhtWENhdnZGWjJ2Z0FkbjhFZnY=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=VBAjlOviZ6shsappjKBE92oUBMoTsb3k01+FHN/pe7LqNwRkvMKA6FBFPmKpCUJBRS8JUAGUzIptFYv3FfTK7VyV2gEsGk1qGf5aFU9SdkmPnVROs+JE48EBmBNEx31GX3rzTPQFK31NueSR+adlH4a4b5o1dNjL7Er56iUQn4o=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577978427; v=1; bh=B+NfYKqV2LPpS9kC/gh7JdcqvJenU1snCgBrTb5wUek=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1577978427; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=s9+inRKEQaislQy5RIXemPpnwIzf6vi2kUxXeAzqtUs=; b=M88tj3Y0uqH9BT9YCW96ohkPBSQAptw5jneRdIgw19oCyAPjFjXwW33H7rDLWnW4DS7iCvX1
+ PHe+75aF46ZiQkdSPDVlUhzMLWyGYy8rzKGEmXQCKCKPKRFvXe5vfojkx3e+SufBhF+1Tu4Q
+ uObodPT6shXJU0qWHyMt0PUM33E=
+X-Mailgun-Sending-Ip: 166.78.71.153
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e0e08de52af3ead7517eb9f
+Received: by luna.mailgun.net with HTTP; Thu, 02 Jan 2020 15:14:38 +0000
+Date: Thu, 02 Jan 2020 15:14:38 +0000
+Sender: Akash.n@usgrpinc.com
+Message-Id: <20200102151438.1.D01B19D0012DAF96@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: Akash.n@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Akash Nimrani <Akash.n@usgrpinc.com>
+Subject: QA Architect  Portland, OR
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>Hi Joseph Showunmi<br />
+&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<p><b>QA Architect</b></p>
+
+<p><b>Portland, OR</b></p>
+
+<p><b>Type: Contract</b></p>
+
+<p><b><u>Key Skill:</u></b></p>
+
+<p>Selenium with Java Mandatory Skills Selenium, Java, API Testing, ReadyAPI, Jenkins, Git, SQL Desired Skills Manual Testing, Agile</p>
+
+<p><b><u>Job Description </u></b></p>
+
+<p>&bull; Extensive experience in architecting, designing and implementing test automation initiatives. Should have experience in creating & executing enterprise test strategies.</p>
+
+<p>&bull; Hands-on current experience authoring, building and adopting large scale, cross-functional automation frameworks with well-balanced coverage across UI, back-end integration, database levels</p>
+
+<p>&bull; Well versed, hands-on with testing methodologies, automation techniques, deep knowledge of multiple tools in functional, non-functional test automation, latest trends and best practices in testing industry and integration with DevOps/Dev SecOps</p>
+
+<p>&bull; Deep understanding of different test automation approaches (keyword-driven, Data-driven, TDD, BDD, hybrid) and technology stacks (Java, Python, JavaScript, Groovy etc.)</p>
+
+<p>&bull; Ability to develop custom test automation methodologies and adapt them to clients&rsquo; needs</p>
+
+<p>&bull; Integrate test automation into CI/CD process and instrument full SDLC automation, like cloud testing execution, reporting tools such as Rally, Jira</p>
+
+<p>&bull; Improve process and quality via test and process automation: defining right strategy and technology based on process and architecture assessment by engaging different roles and stakeholders &bull; Deep practical experience with cutting edge tools for Web, Desktop, DB and Web-service testing (Selenium, Ready API, etc.) &bull; Should have worked as test automation architect for at least 2 years</p>
+
+<p>&bull; Strong analytical and problem-solving skills with the ability to work in an unstructured, fast-paced environment</p>
+
+<p>&bull;Able to manage a team independently, as well as collaboratively. Mentor test automation engineers to implement and scale automation</p>
+
+<p>&bull; Self-driven and must have good communication skills</p>
+
+<p>&bull; Experience in working in Agile teams (preferably scaled agile)</p>
+
+<p>&bull; Identifying test data management needs and create strategy"</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><a name="_MailAutoSig">With Regards,</a></p>
+
+<p><b>Akash </b></p>
+
+<table width="761">
+	<tbody>
+		<tr>
+			<td width="263">
+			<p align="center"><img height="40" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxZ1l1dUMyVnBINjlsdlNmRTFnYmY1RjV4NVNSeGdpSnU4bGlFbWFNWE9EZFJPOG9IVk9YY2R4WFJiMnFqVHNmV2ZDdWZNQjRDYi9iUmhvdW4vaHBtR2RTM0NTV2VWTjkzY2t3QjZseCtHWmd3PT0=" width="75" /></p>
+
+			<p align="center"><b>United Software Group, Inc.</b></p>
+
+			<p align="center">End-to-End IT Systems | Services | Solutions Provider</p>
+
+			<p align="center"><b>A Minority Business Enterprise</b></p>
+			</td>
+			<td width="162">
+			<p>565, Metro Place South,</p>
+
+			<p>Suite # 110,</p>
+
+			<p>Dublin, OH 43017</p>
+
+			<p><a href="http://www.usgrpinc.com/">www.usgrpinc.com</a></p>
+			</td>
+			<td width="240">
+			<p>Phone: 614-495-9222 Ext.451</p>
+
+			<p>Fax:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 866-764-1148</p>
+
+			<p>Email:&nbsp; <a href="mailto:akash.n@usgrpinc.com">akash.n@usgrpinc.com</a></p>
+			</td>
+			<td valign="top" width="96">
+			<p>&nbsp;&nbsp; &nbsp;<img height="90" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxZ0tTb0NtZDhnQVJKUkN6a0s1eUd0dlBPSk85enRkbXJESzdPMy9CWlEydEhPc013dU0yQzNDK3AzTDh0WlYvT2RxKzFEZUpyYzEzWHRmQ29kUUV0aWRya3lBOFFGUFg4aGpVVVU5UlhVak1aZTBKMmovY2doaUFVQ0pSSkduci9BPQ==" width="90" /></p>
+
+			<p><b>&nbsp;&nbsp;&nbsp; 2016 - 2017 - 2018</b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><b>&nbsp;</b></p>
+
+<p><img height="51" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxajdtWDBGTVhzcUJMNHpFL2tFbldKdk5NZytRaUNGSkhXR2ZBd25OckU5elZZeUpwZ2I5TFNETm14bUI5REdPdCtXUHA3MFhyN09Xdm9QUUZGM0d3MEhFK0laK1dRcG15MHRaRUFBSkc4YUVDdXJueFVackpXQWk5SXF0dWxjVVhjPQ==" width="216" /></p>
+
+<p>To unsubscribe from this mailing, please reply to this email with the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or click here&nbsp;<a href="mailto:techsupport@usgrpinc.com?subject=UNSUBSCRIBE" target="_blank">UNSUBSCRIBE</a>.</p>
+
+<p><b>USG is an Equal Opportunity Employer. Qualified applicants will receive consideration for employment without regard to race, color, religion, gender, age, disability, military status, national origin or any other characteristic protected under federal, state, or applicable local law</b></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+&nbsp;
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/09a2327221987e578ded8caa71c94a24d0f25a3b/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEEOgyAQBdDTlCX5A6MyCxY1ptdoQLFiWjEYkx6_dvsWb_KUEACVvYEBCIYaYus06QHUkwwXmuH-kPbGOI9X3fM26rF81OLn0IKsk8QNAneRJUQjkRyE50k6VdP8zJM3Fk5Vv5Yj7ctxPe-8nd-1xJjqv_oBOsUmbA"></body>
+</html>

@@ -1,0 +1,144 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m68-80.mailgun.net (m68-80.mailgun.net [166.78.68.80])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id h5r43b7kt3vl9a1lk7d25rem07gb7q2p862hca01
+ for josephs@linuxjobber.com;
+ Thu, 23 Jan 2020 22:16:04 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHOWhtZjJRSEdsYmhuYkM3TUJZTkV5MWlnb3V0N1YvekJZZFFieUtkYXJ4RXB3SU1ORFlsVmZ5cmN3eVYwd1FrZW04RmYyWk85ejBOUURwTjA3OUp5RGcybTdtR3VZL0FFWVdHRmhkaW1TQ2J4ejdKWWkzSnA3YjBFL0FWMU5aQklTckF0dDdKaFNqR3B2Y010UFlMcjRTRW9ZeEdwWHdRM2REYTU4QTRWNGdXQWFCM3FhTk8yTUlJaTE1Q0JML1VmYkwxc09XUm1XOUJRemdGVDl5bDFZcmtJUkFnZnFvUnl6L0c2bU5iVUJRbEhQZEN5MFpoUUNVMUVMaDI2K0piUXg2UnhENVhia09XVldUT0FTV1RzNFJkczZUYU83S3czOC84SjlReVFVeXlIVElwOTh4aXVJbW5ibkNpY2ZzaG5aNElaYm44dUt6QWRvVDIzYkdqVUc=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=IIT61x+O+1DZjcvA+DgOxF7k4uwfXLKA4Wdg1Skph3KraWrBxDdy8kVPUgiTzwKgQ2o2GuQejnjUPWa7DtSB4T63Z3nC4pXKF7y6KmpHpTnjk1onftkXCg79TxuqpZVG0sSdztjOtVuuxRbDSPgBNkQQqbkpNAPlazzoFeP3r9w=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579817769; v=1; bh=aUucFXj1X7tQ9ppmo9vM0M86woQ7C+pnATKTPtUxB2I=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1579817769; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=7J8YHZ4UN5s2PkGLWNNCvw23/CEqUftLwdZtbDCuFDQ=; b=UTLJNDBpNsKxlZjk1vRwSMRSkEUiEE0V/Gpc2aPI6ySzg6+LinxzXnQ8m4ofm1J3gvQU3s97
+ +o/bB/Hh5LASqhrWJYE11Rg2uc6FDGCE3092KPJ3rCh0Bm8WVRU92HGIshHnPhKvsauWE/0n
+ QA6BLnaxdtiDhkVyYu9kANlW7Zo=
+X-Mailgun-Sending-Ip: 166.78.68.80
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e2a1b1bc46aff9f4a112f88
+Received: by luna.mailgun.net with HTTP; Thu, 23 Jan 2020 22:15:55 +0000
+Date: Thu, 23 Jan 2020 22:15:55 +0000
+Sender: sahaj.a@usgrpinc.com
+Message-Id: <20200123221555.1.F7C9BF562F0B34C1@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: sahaj.a@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Sahaj Ambavat <sahaj.a@usgrpinc.com>
+Subject: Urgent Requirement for Linux Systems Administrator at St. Louis ,MO
+ || Full-time Role
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Hi Joseph Showunmi</span></span><br />
+&nbsp;</div>
+
+<div id="EditorDefaultBodyId">
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Hope you are doing Great!!</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">&nbsp;</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">My name is <b>Sahaj</b> from <b>United Software Group Inc</b>.</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">&nbsp;</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">I am aggressively recruiting for one of the position for <b>Linux Systems Administrator</b> at <b>St. Louis ,MO</b>, United States with one of our major client. Please have a look at the job description below and if interested feel free to call me or revert to this email. </span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">If not, then you may refer anyone you may know looking for a job/job change.</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">&nbsp;</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job Title: Linux Systems Administrator</b></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job Location: St. Louis ,MO</b></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Experience Required: 5-7 Years</b></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Interview: Telephonic & Skype</b></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Position Type: Full-time</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Role Description:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Process Access Management requests, Triaging mailbox, Incident Management coordination, Management of ticket backlogs, Troubleshoot and customer support issues </span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Collaborate with cross functional teams virtually and in person for Production support.</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Create and maintain process documentation</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Create process improvements </span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Requires the ability to multitask and well work under pressure</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Requires excellent communications skills, both verbal and written</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Must feel comfortable working in a fast-paced, dynamic and flexible environment</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Must be able to work shift as needed</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Must be able to work extended hours as needed including being available for off hours production support.</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Primary Skills:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Linux/Unix/Windows Server Administration </span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Shell Scripting knowledge</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Requires experience troubleshooting end user devices and configuration.</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Must be able to communicate with customers and troubleshoot issues supporting a complex environment</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Ability to setup and manage Multiprotocols environments</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Network Configuration</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Secure Shell (SSH), WSSO, CERTs</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Secondary Skills</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">TFS knowledge </span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">DevOps Tools knowledge ( Jenkins, JIRA, Gitlab etc)</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Familiar with SAN/NAS storage</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Coverity knowledge</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">VMWARE ESXi and Networking a plus</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">High level of proficiency with Microsoft Office</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+</div>
+&nbsp;
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/27df58563ccd542ae44a0a512100a01ab798661f/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEsOgyAQANDTlKWZGeS3YKMJ12gcwIppxUBMPH7bd4CXPGZYAETxBASAJIlQKTXgEMzspqA0BZjkOONjhKu_2lmOOMT6EZtPEVhzXtApcDJZa7KRmokVM65OipbXZ0meJFjR_F57Prf-e97luO69Muf2r75qFicV"></body>
+</html>

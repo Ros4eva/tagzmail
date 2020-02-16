@@ -1,0 +1,3014 @@
+Return-Path: <bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com>
+Received: from a4.mail.joinhandshake.com (a4.mail.joinhandshake.com [192.237.159.133])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 8qel5qndn41p0as9fkb1a6mf23oq5b4fluoi4701
+ for jeff.adekunbi@ideabakr.org;
+ Tue, 07 Jan 2020 21:27:55 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+ dkim=pass header.i=@mail.joinhandshake.com;
+ dmarc=pass header.from=mail.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGM2J2STFNK0R2ZVl0MHBlT09TbEpENFFGeVZUS3pvNjIwTXI1K1kya1JrVWNDNGxDQWhLakFqaVdnYU9IaG9ZVUJaSVhOd09CUFpPRUxWaGwyU0szdDQ5TUJUbW9GMXl5VDNvQVdjN0E5QThKS202eko0OWVBVzN1YXllYktxZ1JCaEEwMWV4eGhoQkx0c1dsdnBSSDBXQ1p5NkRtOFJyVktHc1gvZTlFcWd5MFNZNEJMZ2xJRWpHWGlaaXJNaGZkMHhFVEFMbk96NTNxajFGaU9PZFdrUXZWVUVYTkxpZmVpejd1WFNYVDFodEc2Y2hhdnBNbjZTWlk0TWxVRHdOZHhKY0V1aVlOV0VsclJ1WnI1TWxXWEN4WGFacDVsUmFDV25Ga3Q4QktHbmpqaUFCMjl6b2U5VlF5c1lROVkvQ0ZhUFBQeDZMSURnTllLY2t5Y1NVYko0UWNtRWpzZEdZbVdJQTAyS094emVnPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Phkn1yJ2SWRiYO/6XWCKEE0EeniPHiV6XR3TJxavY8q2Vv4kTJKOfOpwdhOYSFB7dp96wL4ZeVGIcEohBKGS5g/PRo+ddLeIG4PAFPBu2oQwx692vPgW4xKlhZpfwWNunFefnxnLmyiJ5Eb+oewVbckBV65pS8Qi39QPidHLXNs=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578432481; v=1; bh=Wsp6cGOENtZhLC9+FRZ5Orl5aF8aUUgQAqCFE9x7DvA=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1578432479; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe;
+ bh=bfc2SvTMDLUh006YEaZLvQvEhI05T6ZOyxWvfhXYpbI=; b=OgBbF0x+8vIHYvV1D8Tac6cAKx4f6Oc3Xv0Bv0KQfXLqyFl2sM2peD8snoh3nMwo8rZ2/qi3
+ qqJTbu6vULda/d2aQ/GhztRUghyCLUuUuba7ZNwDcvEkf9f5lNxxFvBYEj/zzqbujwq6cav+
+ SE8ShMW0KRkeS8Tlu7EPGTSICQk=
+X-Mailgun-Sending-Ip: 192.237.159.133
+X-Mailgun-Sid: WyIyNGNhOCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICI4OGNiOCJd
+List-Unsubscribe: <mailto:u+mq6tqoddmi4cm2j5giydembqgeydomrrgi3timrogexdenjqiuytcnkgiizeerrrgvdegjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihu3wemzwmnrtszbuga3tgnztga3dqnbygq4dgmtbmnsdambtg4ydsjtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6tmmbwfvjwg2dpn5wcm2dbnzshg2dbnnsv63lbonzv6zlnmfuwyx3jmq6tkmbrgm3tc@mail.joinhandshake.com>
+X-Mailgun-Batch-Id: 5e14f7ceee86af6e338f634d
+Received: by luna.mailgun.net with HTTP; Tue, 07 Jan 2020 21:27:42 +0000
+Date: Tue, 07 Jan 2020 21:27:42 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20200107212742.1.250E115FB2BF15FC@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "501371"}
+Reply-To: career@lsu.edu
+X-Mailgun-Tag: 606-School
+To: jeff.adekunbi@ideabakr.org
+From: LSU Olinde Career Center via joinhandshake.com
+ <handshake@mail.joinhandshake.com>
+Subject: Your Registration for LSU Spring Recruiting Events
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="d62d891bf16a47fe9e06e5c30df40589"
+
+--d62d891bf16a47fe9e06e5c30df40589
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+table.button table td {
+  background: #4d0d84;
+  border-color: #4d0d84;
+  color: white;
+}
+table.button table td a {
+  border-color: #4d0d84;
+  color: white;
+}
+a { color: #4d0d84; }
+a:hover { color: #5e2590; }
+a:active { color: #5e2590; }
+a:visited { color: #4d0d84; }
+table.menu th.menu-item a { color: #4d0d84; }
+=2Ewrapper.banner { background: #4d0d84; }
+table.button:hover table tr td a,
+table.button:active table tr td a,
+table.button table tr td a:visited,
+table.button.large:hover table tr td a,
+table.button.large:active table tr td a,
+table.button.large table tr td a:visited {
+  color: white;
+}
+table.button:hover table td,
+table.button:visited table td,
+table.button:active table td {
+  background: #5e2590;
+  color: white;
+}
+table.button:hover table a,
+table.button:visited table a,
+table.button:active table a {
+  border-color: #5e2590;
+}
+p.hs-content-type,
+span.colorize-high-contrast {
+  color: #4d0d84;
+}
+img.masked {
+  background: #4d0d84;
+}
+
+
+
+
+ =20
+
+=C2=A0
+
+ =20
+
+    Jeff,=C2=A0
+
+We hope 2020 is off to a great start for you and your team!  Maybe you have=
+ already begun setting hiring goals for the year ahead and determining ways=
+ to meet them?=20
+
+We hope that having a presence on LSU's campus in 2020 is part of that plan=
+=2E Students say that meeting with repres=
+entatives face-to-face is a helpful =
+indicator in deciding whether or not they are a good fit and should apply w=
+ith that organization.
+
+A full list of our Spring events, including Career Expo, is below.
+
+Can't attend an on-campus event this year? Feel free to reach out to us to =
+determine other ways to reach Tiger Talent.
+
+-the LSU Olinde Career Center team
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Career Expo Week
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+Spring=C2=A0Career=C2=A0Expo=C2=A0Week is the premier recruiting event at L=
+SU for all industries!
+
+Career Expo
+Wednesday, February 5,=C2=A011=C2=A0a.m. to=C2=A04=C2=A0p.m.
+Career Expo is our largest spring recruiting event, bringing over 2,500 stu=
+dents and alumni of all majors will attend to explore career fields, post-b=
+accalaureate programs and to learn about internship, co-op, part-time and f=
+ull-time positions.
+
+New This Year
+
+=EF=BB=BFWe are offering additional opportunities for you to elevate your o=
+rganization and enhance the student Career Expo experience! Review our Spon=
+sorship Opportunities packet here.=20
+
+
+Thank you to Career Expo Event Sponsors:
+
+DXC Technology | Fast Enterprises, LLC | Naval Information Warfare Center A=
+tlantic | Sherwin-Williams Company | Steam Solutions
+
+
+College of Engineering Networking Reception
+Tuesday, February 4, 6 to 8 p.m.
+Networking opportunity for recruiters, bringing=C2=A0over 250 Engineering s=
+tudents, held the evening before Career Expo.
+
+Thank you to Engineering Reception Event Sponsors:
+
+Entergy | Fast Enterprises, LLC | The Brandt Companies, LLC
+
+
+
+E. J. Ourso College of Business Networking Reception
+Wednesday, February 5, 6 to 8 p.m.
+Networking opportunity for recruiters,=C2=A0bringing=C2=A0over 250 Business=
+ students, held the evening of Career Expo day one.
+
+Thank you to Business Reception Event Sponsors:
+
+Briggs & Veselka Co. | DxC Technology | EY | Faulk & Winkler, LLC  | Hannis=
+ T. Bourgeois, LLP | Sherwin-Williams Company
+
+
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Register for Career Expo and/or a Networking Reception Today
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Art + Design Career Networking Day Registration Now Open
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Art + Design Career Networking Day
+Friday, March 6, 8 a.m. - 1 p.m. with optional interviews  from 1:15 to 4:1=
+5 p.m.
+*This event will now be offered in Spring only*
+Art + Design Career Networking Day connects students with employers recruit=
+ing for full-time, part-time, and internship positions in the art and desig=
+n fields.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Click to Learn More and Register for Art + Design Career Networking=
+ Day
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Summer Jobs Hiring Update
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    We are excited to announce that our Summer Jobs Fair is now combined wi=
+th the Opportunity Knocks! event in order to connect you with more students=
+ at the right time of year. Scroll down to learn more about Opportunity Kno=
+cks! below.
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    On-Campus Interviewing Program
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    On-Campus Interviewing Program
+Monday, February 10 - Thursday, April 9
+Free service connecting you with students and alumni for on-campus intervie=
+ws on a date(s) that is convenient for you. Space is limited; reserve your =
+date early.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Click to Learn More and Register for On-Campus Interviewing
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Kinesiology Career Fair
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Kinesiology Career Fair
+Tuesday, March 10, 1 to 4 p.m.
+The Kinesiology Career Fair connects employers with students recruiting for=
+ full-time, part-time, and internship positions in fields related to kinesi=
+ology.=C2=A0
+
+Thank you to Kinesiology Career Fair Event Sponsor(s):
+Parker University
+
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Register for the Kinesiology Career Fair Today!
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Construction Interviewing Day
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Construction Interviewing Day
+Thursday, March 12, 8:30 a.m. to 4:30 p.m.
+Recruiters interview Construction Management and Industrial and Civil Engin=
+eering students and alumni for full-time, internship and co-op positions.=
+=C2=A0
+
+Thank you to Construction Interviewing Day Event Sponsor(s):
+
+DE Harvey Builders |  D.R. Horton, Inc.  |  Hensel Phelps
+
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Register for Construction Interviewing Today!
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Networking Night at Manship
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Networking Night at Manship School of Mass Communication
+Tuesday, March 31, 6 p.m. to 7:30 p.m.
+Students network with employers in communication fields to learn about thei=
+r respective organizations, build professional relationships and find out a=
+bout internship and other job opportunities.
+
+Thank you to Networking Night at Manship Event Sponsor(s):
+WVLA NBC Local33 / WGMB Fox44
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Register for Networking Night at Manship Today!
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Opportunity Knocks!
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Opportunity Knocks! A Late-Season Career Fair for full-time, part-time,=
+ internship, and summer jobs
+Tuesday, April 7, 10 a.m. to 2 p.m.
+Employers hiring timelines in the late spring are encouraged to attend and =
+network with students from all majors who are seeking full-time, part-time,=
+ internship, and summer job opportunities across a variety of industries.
+
+Thank you to Opportunity Knocks Event Sponsor(s):
+Enterprise Holdings
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Register for Opportunity Knocks! Today!
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    School Professionals' Networking Day
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    School Professionals' Networking Day
+Wednesday, April 8, 8:30 a.m. to 3:30 p.m.
+Recruiters network with students and alumni for positions in school-based p=
+rofessional fields. Recruiters may choose to interview students and alumni =
+for available positions.=C2=A0
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Register for School Professionals' Networking Day Today!
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Post Your Jobs in Handshake
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Job Posting Information for Spring or Summer Employment
+Looking to hire? Post your position for free in Handshake and=C2=A0#GeauxHi=
+reATiger!
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Post Your Jobs in Handshake
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Advertise in the Annual Student Career Guide
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Our annual Student Career Guide is distributed in print and electronic =
+format to students, alumni, and LSU community members.=C2=A0Over 10,000 pri=
+nted copies=C2=A0were distributed on-campus in 2018-19, and a digital versi=
+on was circulated to=C2=A0over 37,000=C2=A0students and alumni through dire=
+ct email marketing, our online job posting platform (Handshake,) and to eve=
+n more viewers through our=C2=A0social media channels.=C2=A0This is a compr=
+ehensive guide for students and alumni preparing for their job search and t=
+he perfect place to promote your company brand.=20
+
+Each year, we reserve a limited number of pages throughout the guide for em=
+ployers to advertise.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Learn More and Reserve Your Space Today!
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Did You Hire a Tiger? Let Us Know!
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Have you hired a Tiger? Take the survey below to let us know! This data=
+ is critical for helping our office evaluate the success of our services, u=
+nderstanding where our students are being hired, and being able to share ty=
+pical salary levels with you. Thank you for your participation!
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Take the Job Offer Reporting Survey
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+    Increase Your Impact on Campus
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Become a Corporate Partner!
+For over 28 years, the Corporate Partner Program has existed to fuel the mi=
+ssion of the LSU Olinde Career Center. Your partnership with the LSU Olinde=
+ Career Center symbolizes your commitment to furthering our mission for the=
+ over 31,000 current students and growing alumni network we serve.
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+   =20
+     =20
+        Become a Corporate Partner
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+=C2=A0
+
+ =20
+
+   =20
+
+
+=EF=BB=BFLSU Olinde Career Center
+158 LSU Student Union
+225-578-2162
+http://email.mail.joinhandshake.com/c/eJw9jjsSgyAUAE8jXZjHQz4paMzEC-QADsIzo=
+igzGO8f06TabnejszaMliWHgAACDAo0LXLBUcFTCNV32PUXHk0Lm0-ZLyXts9_jMfuVeCgbm520=
+ACSNRa2VkRMEOQogUNqoAPHesuzycXKKZ4N98JWosuoWmibuI63nPqZLnyL50a-Vl_pmH6dB315=
+hLiWzf2_Y_HEM9BsZUnQKhDTiC6BNPBs
+career@lsu.edu
+ =20
+
+
+
+=C2=A0
+
+
+  =C2=A0
+ =20
+   =20
+ =20
+    This email was sent to Jeff Adekunbi from Louisiana State University.
+   =20
+    Unsubscribe from Louisiana State University =E2=80=A2
+    Unsubscribe from all Career Centers
+   =20
+    P.O. Box 40770, San Francisco, CA 94140
+--d62d891bf16a47fe9e06e5c30df40589
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"min-height:100%;backg=
+round:#f5f5f5">
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+
+<style>@media only screen and (max-width: 664px) {
+=2Esmall-float-center{margin:0 auto !impo=
+rtant;float:none !important;text-ali=
+gn:center !important}
+=2Esmall-text-center{text-align:center !important}
+=2Esmall-text-left{text-align:left !important}
+=2Esmall-text-right{text-align:right !important}
+=2Ehide-for-large{display:block !importan=
+t;width:auto !important;overflow:vis=
+ible !important;max-height:none !important;font-size:inherit !important;lin=
+e-height:inherit !important}
+table.body table.container .hide-for-large{display:table !important;width:1=
+00% !important}
+table.body table.container .row.hide-for-large{display:table !important;wid=
+th:100% !important}
+table.body table.container .callout-inner.hide-for-large{display:table-cell=
+ !important;width:100% !important}
+table.body table.container .show-for-large{display:none !important;width:0;=
+mso-hide:all;overflow:hidden}
+table.body img{width:auto;height:auto}
+table.body center{min-width:0 !important}
+table.body .container{width:95% !important}
+table.body .columns{height:auto !important;-moz-box-sizing:border-box;-webk=
+it-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important=
+;padding-right:64px !important}
+table.body .column{height:auto !important;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important;=
+padding-right:64px !important}
+table.body .columns .column{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .columns .columns{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+table.body .column .column{padding-left:0 !important;padding-right:0 !impor=
+tant}
+table.body .column .columns{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .collapse .columns{padding-left:0 !important;padding-right:0 !im=
+portant}
+table.body .collapse .column{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+td.small-1{display:inline-block !important;width:8.33333% !important}
+th.small-1{display:inline-block !important;width:8.33333% !important}
+td.small-2{display:inline-block !important;width:16.66667% !important}
+th.small-2{display:inline-block !important;width:16.66667% !important}
+td.small-3{display:inline-block !important;width:25% !important}
+th.small-3{display:inline-block !important;width:25% !important}
+td.small-4{display:inline-block !important;width:33.33333% !important}
+th.small-4{display:inline-block !important;width:33.33333% !important}
+td.small-5{display:inline-block !important;width:41.66667% !important}
+th.small-5{display:inline-block !important;width:41.66667% !important}
+td.small-6{display:inline-block !important;width:50% !important}
+th.small-6{display:inline-block !important;width:50% !important}
+td.small-7{display:inline-block !important;width:58.33333% !important}
+th.small-7{display:inline-block !important;width:58.33333% !important}
+td.small-8{display:inline-block !important;width:66.66667% !important}
+th.small-8{display:inline-block !important;width:66.66667% !important}
+td.small-9{display:inline-block !important;width:75% !important}
+th.small-9{display:inline-block !important;width:75% !important}
+td.small-10{display:inline-block !important;width:83.33333% !important}
+th.small-10{display:inline-block !important;width:83.33333% !important}
+td.small-11{display:inline-block !important;width:91.66667% !important}
+th.small-11{display:inline-block !important;width:91.66667% !important}
+td.small-12{display:inline-block !important;width:100% !important}
+th.small-12{display:inline-block !important;width:100% !important}
+=2Ecolumns td.small-12{display:block !important;width:100% !important}
+=2Ecolumn td.small-12{display:block !important;width:100% !important}
+=2Ecolumns th.small-12{display:block !important;width:100% !important}
+=2Ecolumn th.small-12{display:block !important;width:100% !important}
+table.body td.small-offset-1{margin-left:8.33333% !important}
+table.body th.small-offset-1{margin-left:8.33333% !important}
+table.body td.small-offset-2{margin-left:16.66667% !important}
+table.body th.small-offset-2{margin-left:16.66667% !important}
+table.body td.small-offset-3{margin-left:25% !important}
+table.body th.small-offset-3{margin-left:25% !important}
+table.body td.small-offset-4{margin-left:33.33333% !important}
+table.body th.small-offset-4{margin-left:33.33333% !important}
+table.body td.small-offset-5{margin-left:41.66667% !important}
+table.body th.small-offset-5{margin-left:41.66667% !important}
+table.body td.small-offset-6{margin-left:50% !important}
+table.body th.small-offset-6{margin-left:50% !important}
+table.body td.small-offset-7{margin-left:58.33333% !important}
+table.body th.small-offset-7{margin-left:58.33333% !important}
+table.body td.small-offset-8{margin-left:66.66667% !important}
+table.body th.small-offset-8{margin-left:66.66667% !important}
+table.body td.small-offset-9{margin-left:75% !important}
+table.body th.small-offset-9{margin-left:75% !important}
+table.body td.small-offset-10{margin-left:83.33333% !important}
+table.body th.small-offset-10{margin-left:83.33333% !important}
+table.body td.small-offset-11{margin-left:91.66667% !important}
+table.body th.small-offset-11{margin-left:91.66667% !important}
+table.body table.columns td.expander{display:none !important}
+table.body table.columns th.expander{display:none !important}
+table.body .right-text-pad{padding-left:10px !important}
+table.body .text-pad-right{padding-left:10px !important}
+table.body .left-text-pad{padding-right:10px !important}
+table.body .text-pad-left{padding-right:10px !important}
+table.menu{width:100% !important}
+table.menu td{width:auto !important;display:inline-block !important}
+table.menu th{width:auto !important;display:inline-block !important}
+table.menu.vertical td{display:block !important}
+table.menu.vertical th{display:block !important}
+table.menu.small-vertical td{display:block !important}
+table.menu.small-vertical th{display:block !important}
+table.menu[align=3D"center"]{width:auto !important}
+table.button.small-expand{width:100% !important}
+table.button.small-expanded{width:100% !important}
+table.button.small-expand table{width:100%}
+table.button.small-expanded table{width:100%}
+table.button.small-expand table a{text-align:center !important;width:100% !=
+important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expanded table a{text-align:center !important;width:100%=
+ !important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expand center{min-width:0}
+table.button.small-expanded center{min-width:0}
+th.columns.first.small-12{padding-left:16px !important}
+th.columns.last.small-12{padding-right:16px !important}
+table.body img.icon-20{width:20px;height:20px}
+}
+table.button:hover table tr td a{color:#ffffff}
+table.button:active table tr td a{color:#ffffff}
+table.button table tr td a:visited{color:#ffffff}
+table.button.tiny:hover table tr td a{color:#ffffff}
+table.button.tiny:active table tr td a{color:#ffffff}
+table.button.tiny table tr td a:visited{color:#ffffff}
+table.button.small:hover table tr td a{color:#ffffff}
+table.button.small:active table tr td a{color:#ffffff}
+table.button.small table tr td a:visited{color:#ffffff}
+table.button.large:hover table tr td a{color:#ffffff}
+table.button.large:active table tr td a{color:#ffffff}
+table.button.large table tr td a:visited{color:#ffffff}
+table.button:hover table td{background:#f73b33;color:#ffffff}
+table.button:visited table td{background:#f73b33;color:#ffffff}
+table.button:active table td{background:#f73b33;color:#ffffff}
+table.button:hover table a{border:0 solid #f73b33}
+table.button:visited table a{border:0 solid #f73b33}
+table.button:active table a{border:0 solid #f73b33}
+table.button.secondary:hover table td{background:#919191;color:#ffffff}
+table.button.secondary:hover table a{border:0 solid #919191}
+table.button.secondary:hover table td a{color:#ffffff}
+table.button.secondary:active table td a{color:#ffffff}
+table.button.secondary table td a:visited{color:#ffffff}
+table.button.success:hover table td{background:#004d33}
+table.button.success:hover table a{border:0 solid #004d33}
+table.button.alert:hover table td{background:#99000d}
+table.button.alert:hover table a{border:0 solid #99000d}
+table.button.warning:hover table td{background:#cc8800}
+table.button.warning:hover table a{border:0px solid #cc8800}
+=2Ethumbnail:hover{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+=2Ethumbnail:focus{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+table.button.secondary:hover table td{background:#dcdcdc;border-color:#dcdc=
+dc;color:rgba(8,8,8,0.79)}
+table.button.secondary table tr td a:visited{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a:visited{color:rgba(8,8,8,0.79)}
+a:hover{color:#5e2590}
+a:active{color:#5e2590}
+a:visited{color:#4d0d84}
+table.button:hover table tr td a{color:white}
+table.button:active table tr td a{color:white}
+table.button table tr td a:visited{color:white}
+table.button.large:hover table tr td a{color:white}
+table.button.large:active table tr td a{color:white}
+table.button.large table tr td a:visited{color:white}
+table.button:hover table td{background:#5e2590;color:white}
+table.button:visited table td{background:#5e2590;color:white}
+table.button:active table td{background:#5e2590;color:white}
+table.button:hover table a{border-color:#5e2590}
+table.button:visited table a{border-color:#5e2590}
+table.button:active table a{border-color:#5e2590}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:10=
+0%;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-=
+box;box-sizing:border-box;width:100% !important">
+<table class=3D"body" data-made-with-foundation=3D"" style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;b=
+ackground:#f5f5f5;height:100%;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left">
+<td align=3D"center" class=3D"center" valign=3D"top" style=3D"font-family:&=
+quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertical-al=
+ign:top;text-align:left">
+
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+<table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" styl=
+e=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFon=
+t, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;pad=
+ding:0;vertical-align:top;text-align:left">
+  <div style=3D"text-align:center;" class=3D" float-center"><a target=3D"_b=
+lank" href=3D"http://email.mail.joinhandshake.com/c/eJw9kFluxCAMhk-TvBWxTJZ=
+54KHTNhfoASICngmTABFLc_066SIh2f6Mfy9G9r2e-tpKTjmljHac8e7CCSO8oR-MNcON3wY0b9=
+WFOmVX8gzWz8qbNKsFiA6unmV_5Uw3oIFNnWjUdUJVPgm439m1FW1br3LOeUuVeK34gG_fd7KmQ=
+sAUjLSKAFGDzxAxhC_0EjqrTZls81aJYQ2xEu-04m3Jbkyh4HcETqU0HmMdhWfKgbHFYQoO_At1=
+QGmfkTaUiY79YeU2ZR8eefF2zCo-IIMZz9JUR_nEDYgysBQ_WTyANaAmtUQS4qPOsqXty6eeQ1j=
+r_4uM50inwmiN_On3DUQmdVA" style=3D"color:#4d0d84"><img src=3D"https://s3.am=
+azonaws.com/handshake.production/app/public/assets/user_images/1337664/orig=
+inal/data.?1578415225" alt=3D"Register today for LSU" style=3D"outline:none=
+;text-decoration:none;-ms-interpolation-mode:bicubic;width:auto;max-width:1=
+00%;clear:both;display:block;border:none;margin:0 auto;float:none;text-alig=
+n:center;width: 600px;" width=3D"600" class=3D"float-center"></a></div>
+</td></tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>Jeff,&nbsp;</div>
+<div><br></div>
+<div>We hope 2020 is off to a great start for you and your team!  Maybe you=
+ have already begun setting hiring goals for the year ahead and determining=
+ ways to meet them? </div>
+<div><br></div>
+<div>We hope that having a presence on LSU's campus in 2020 is part of that=
+ plan. Students say that meeting with representatives face-to-face is a hel=
+pful indicator in deciding whether or not they are a good fit and should ap=
+ply with that organization.</div>
+<div><br></div>
+<div>A full list of our Spring events, including Career Expo, is below.</di=
+v>
+<div><br></div>
+<div>Can't attend an on-campus event this year? Feel free to reach out to u=
+s to determine other ways to reach Tiger Talent.</div>
+<div><br></div>
+<div>-the LSU Olinde Career Center team</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Career Expo Week</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>
+<a href=3D"http://email.mail.joinhandshake.com/c/eJxlkE1vwjAMhn9Ne1uVpDQthx=
+6AAdpggm3apO1SuYlLA01TpSmMf7_A2C6TLFl-Xvn1h8yzTJRZqHJGGCGUpIyydMQiGrGEzClNF=
+lM2Xfg0C0ZEg2qivVFtDa3sazhgJIwO6zwVaVrBmMdAWIWEygoqJsZUVDwrxzQOm7x2ruuDeBKw=
+hQ_ouv9GnguwiLaoQNnelzTOMuoz6q4xZy90Fo8KT0G8cOaAbRDfm_MSn5NH5PVm-6TwQ5wz3I3=
+eJ58z4Nnxha_WEhluH3BOV835i2_eyHJ9ChhvjPXt3p0PThe9GaxADzT0fXE5FO1N0ijVoL2EF3=
+yDwrQOW-dpQmic_toI0B2o3WWxoVWFA7tDh7K4tvahzfdYVRFIPAxtqfxLlUQo4WAjY3ehyznhd=
+6-iNqYJ_15TXFe6OhRK5j_zvgF4EJCF" target=3D"_blank" style=3D"color:#4d0d84">=
+Spring&nbsp;Career&nbsp;Expo&nbsp;Week</a> is the premier recruiting event =
+at LSU for all industries!</div>
+<div><br></div>
+<div><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkF1PgzAUhn8N3EnaA=
+qW74GKbY9HNbGo00RtS2gN0fJSUsrl_bzenNyYnOec8b86nTBkTBfNVShBBCKOEYJJEJMABidEK=
+4zhbkEXm3NKLUMdVGxy06mvey7HmDQRCd36dYoKoSMQsEpHEHFAhsChmMWUIxzwuqd-mtbXD6IV=
+zj2TO-DD8b-S44AbA5CVXZnQpDhnDzkM3tPrshMHAUcHJCzOrG-i98F6f1_AcPwKtd_snBR_izK=
+CK3uefS07Z8YVuthII7B9ghTft-Yvu3tB6e_IIbbVx5cRFk-3yUU9GgAMdH8f8ciiYm9SBVFPnJ=
+LjgGxS6t9BbR2OEwwT_Yt4NXFWXxaZe5ZabCizI_Fo6-iY9QFkGXEIz9YVyL1USeMEbE2hT-Tal=
+iN69ilrr1v97TX5d6dohVzL9mfcN2RaQFA" target=3D"_blank" style=3D"color:#4d0d8=
+4"><strong>Career Expo</strong></a></div>
+<div><strong>Wednesday, February 5,&nbsp;11&nbsp;a.m. to&nbsp;4&nbsp;p.m.</=
+strong></div>
+<div>Career Expo is our largest spring recruiting event, bringing over 2,50=
+0 students and alumni of all majors will attend to explore career fields, p=
+ost-baccalaureate programs and to learn about internship, co-op, part-time =
+and full-time positions.</div>
+<div><br></div>
+<div><strong>New This Year</strong></div>
+<div>
+<strong>=EF=BB=BF</strong>We are offering additional opportunities for you =
+to elevate your organization and enhance the student Career Expo experience=
+! <a href=3D"http://email.mail.joinhandshake.com/c/eJw9kEluwzAMRU9j7ypoiCNn=
+4UXS1hfoAQxZomIllmRoaHr8Mu4AkCD5iE8SNEPf67lv3cApp5RRyRmXB04Y4R19Z6wbL_wyYnh=
+tDtQrt5JbdGFRweRF3YHo6NtlkKeZnbSQnWWdsExbe-i5AY5-kpLadh2WUrbciHPDR7TH40HWXA=
+mYipVWCSBpCAUSlvCJWcYkbzHkmOBri2RbtkaMa0yNeBMNP9bipxwrqhB4lfP0vO6p31sejKseW=
+_DEv1BH3BAK0o4yIdkfVn5T7hqQ1-CmotIVCphpl-Y2DTewligD9xpmh39wBtSs7onEdG3LcKTH=
+lw-9xLi2_4-Z9pP2CZMzw8--bwXReGo" target=3D"_blank" style=3D"color:#4d0d84">=
+Review our Sponsorship Opportunities packet here. </a>
+</div>
+<div class=3D"ql-align-center" style=3D"text-align:center"><br></div>
+<div class=3D"ql-align-center" style=3D"text-align:center">Thank you to Car=
+eer Expo Event Sponsors:</div>
+<div class=3D"ql-align-center" style=3D"text-align:center">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJw9j11uhSAQhVcjbyWA-NMHHu=
+5t6wa6AIIwKipwA5i0uy_a2yaTTPKdzJxzjOh7PfbICkYYIZR0jLKOM0wxa8gHpc1wZ_ehrLeKE=
+6fsjtdg_aK8SYvaAOvg0CIm1VAwXPPpteOj1lBTykk7mZ6wSXODdrHk_EhVfavYUGYNY8LmS-MM=
+evFhD_P3KdTDHmJVv_OKtUd2MoUjaijAqZTkaQ_xKTkw9nBFghM_oQ4-g8-FNoTWHf3Dyj2UnX3=
+hh7cyqzhDBiOv04SiWGGasDKwHX60pag1oEa1RRzijLJoSfvyqZcQdvTfXF6Rrg_SGvHr9wPW3W=
+0N" target=3D"_blank" style=3D"color:#4d0d84">DXC Technology</a> | <a href=
+=3D"http://email.mail.joinhandshake.com/c/eJw9kFtuwyAQRVdj_xXxiB_54KNp6w10A=
+dYA45jYQARY2X4hTSuNNNK5M3ceRo6jVmNrJaecUkYHzvhw4oQR3tEvxrrpwi9TSR_NiTqwO7kF=
+61fwJq2wIdHBtascxrNZukHVVmGUUmCYPptOib7vxTC2u1xzvqdGvDd8KvF4PMgCKaPPGO_RJkz=
+VqigaImJMtUxMe4iN-Owa3h_ZzSkcUWMBDlKa6zIYX5JDYw9XJKz4BXXwdUB1oEwM7A-Du4O9-s=
+IPb-cM8YoZzfxsTW2UN1wWAga3wytbzrYGQcEWSYjXNsue9m_feg1hb___MD9XejrM1sjfeT_l7=
+nHx" target=3D"_blank" style=3D"color:#4d0d84">Fast Enterprises, LLC</a> | =
+<a href=3D"http://email.mail.joinhandshake.com/c/eJw9kN1ugzAMhZ8G7hYlAVJ6wU=
+XbjetJewBkEgNp84OSMLa3X9p1kyydo8-yfWTVta0c21J3nHJKGT1wxg81J4zwhr4x1vRnfu6zX=
+IqaWtCGXL12CzgVF7ghkd6WS3esxSSquuEKqRScAlXi2FA2sbapuIDSdEtKayyqU8H7XPu-k3Ub=
+jZbEwec3sdpkmu0OIZtTMuCSltm-w4wx6wUCYogE4vpVVL3xoaheRcHFluwQ_RYkZmAhxuEeE8O=
+zZVHpzeYW3vETSu8SupRpDlkd2B8Gu4KeXeab00OCMGNCNTxGYxm6K04TAYW3zY06P0QrhBFugf=
+gwl6kTVLx8yMV7U_5_aHhEemwYtOp-7_0Arf953A" target=3D"_blank" style=3D"color:=
+#4d0d84">Naval Information Warfare Center Atlantic</a> | <a href=3D"http://=
+email.mail.joinhandshake.com/c/eJw9kN1uwyAMhZ8muSsC0vzsgot2XV5gDxA5YAJNgAqI=
+-vqjWTfJkuXvyPaxlRgGOQ-1FZxyShntOeP9mRNGeEu_GGvHK7-OJX1WZ-rAbuQerDfgVTKwIpH=
+B1UboVrMW-1nqQfdaqxmw1B-A83loKOvqTZicH6lqLhUfS0iIiDGRZDA-rT897bZZcOk1r8gmOK=
+yacQuxam59xbs9uymFPcqCbw5Sml5eML4lh8rurkj4wm8og8_oc6EtZU3P_jC4B9jFF757O2WIC=
+2ZU09Ga6ijuqDUBhevuZ1uutgphhjWSEJc6i452p29pQtjq_zdMh6VjwmSV-N33A4oCcrQ" tar=
+get=3D"_blank" style=3D"color:#4d0d84">Sherwin-Williams Company</a> | <a hr=
+ef=3D"http://email.mail.joinhandshake.com/c/eJw9kFtuhDAMRVcDf43yIMBPPjqdsoE=
+uAAVihgx5oDyEuvsGOq1kydK58vW1lej7eeprLSimGBPcUUK7hiKCKMefhPDhRm9DaR9Vg63UBj=
+29dqt0Kq5yAzR7W69CUTUxwDMA9AvjfFqU4ljhDnjDgfHaiDWlPVbsvaJDqeM4UEwgbfQmJ-1dP=
+J2KAHY3_tuCSxUbjA8Vu_cVbXOyY_Q5zFCAlTGOZxYIL8mC0tkWCU78grN36fK5c0xYR_6wtLvU=
+D1d4dnpMMjwggRqv0VgH8YRlQVLBlt2ky9VagZzkFpAPjzqJFrdvX_Pqvan_3zBekS6HUSvxu-8=
+HywFzFQ" target=3D"_blank" style=3D"color:#4d0d84">Steam Solutions</a>
+</div>
+<div><br></div>
+<div><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkE1Pg0AQhn8N3CS7S=
+_k6cGhrabQ1rRpN9EKGZYAtLEuWpbX_3m2tXkwmmZnnzXyWaRzzInZFyggjhJKIURbNmEc9FpAV=
+pUG2YIvMuqUzIxJE5x2U6Bvoy7GBFj2upNukEQ-BBwXnlATEjypCkyLhEfgxSzgH5nZpY8wwOv7=
+cYZk1GIb_jSznoBF1XoHQo02pH8fUepRDp85WGDQeBZ4cPzOqxd7x79V5jc_BI4bNbv8k8IOfY6=
+xn7_PPJYTx8SXcbEtkuH_AFd10569w90bW25PDwk5pW57YaDIyH9WkOVogYRzzy6Gob5LEUkzSS=
+njBN8hVb7A3lgaE-hH9xSAHEPVlsakXuQFdo8Eyv5aOrk4PWFUelNhOfSHsS0WJUECrPaVr16Qh=
+Ce9eeaNU5_69Jr-udO2QizL9mfcNJUyQTQ" target=3D"_blank" style=3D"color:#4d0d8=
+4"><strong>College of Engineering Networking Reception</strong></a></div>
+<div><strong>Tuesday, February 4, 6 to 8 p.m.</strong></div>
+<div>Networking opportunity for recruiters, bringing&nbsp;over 250 Engineer=
+ing students, held the evening before Career Expo.</div>
+<div><br></div>
+<div class=3D"ql-align-center" style=3D"text-align:center">Thank you to Eng=
+ineering Reception Event Sponsors:</div>
+<div class=3D"ql-align-center" style=3D"text-align:center">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJw9j81uhSAQhZ9GdiX8iNoFi9=
+62vkAfgICMigrcAC769sXb2yaTTPKdzDlzrByGyQzISUYYIZT0jLK-ZZhiJsgnpWK8sdtY13vTE=
+q_dgbfowqqDzaveAU_Ro1WagQyCG21h6ggImO1rK_qez1YT2vEBHXIt5Z4b_tawsc4WTcYQCqTl=
+-_K4KB-PmBr-QUnDurN4leOZJqjE65zVFQ7pKXmw7vRVggs_4RSrYSiVCkJ5T_-w9nftllD5GZw=
+qOi1QwKrHaUZJbjDPuP6-n8G4WtNZ0EbvCce0oCI70r18TWuMB_rvrR4vPRyUs_I37wdm0Wuo" =
+target=3D"_blank" style=3D"color:#4d0d84">Entergy</a> | <a href=3D"http://e=
+mail.mail.joinhandshake.com/c/eJw9kFtuhSAQhlejbyWA9wceetq6gS7AjDAqRwEDGLdft=
+KdNJpnk-2f-uSjRtnJscy045ZQy2nDGm5ITRnhFvxir-gd_9Cl9ZCU1oDfydNouYFVYYEUinckX=
+MZY154hj15VjXTVdByg7VresmrqSTpBvYolxD1nxnvE-xXmeZIIQ0Ub0u9cBw2WVFAke0YerrOg=
+357Pik7GM10c0Q3CHl5iIgRCGaxv0L8mg0odJEl74BaWz14REK8qK5s9GgtlBzzbxw-ohgp8xoh=
+ru1pB78cRpIqBwPeyo091aIYyweuL8nEdR0_rtWy7Obfn_I4Z7pdth0Er8zvsBDSlx9w" targe=
+t=3D"_blank" style=3D"color:#4d0d84">Fast Enterprises, LLC</a> | <a href=3D=
+"http://email.mail.joinhandshake.com/c/eJw9kEtuhDAMhk8Du4kS85xFFp22XKAHQIE4=
+ECDJKAni-g3MtJIl25_l3w_J23Yc2lxzoEApow0waEogjEBFvxmrugc8uuQ-s5IaoTeyOG1nYWW=
+YxYpkdCafuQKZ2hALySoF5VAoUOzOmvIuS4pU5RufY3yGrPjIoEt2HAcZfFKJZA8pf8W3xQ1nlh=
+Xd5nxWfDHIoN6j6YPb_YiJGBFCf-6B_l0yKPVuUglP_IajsxFtTLSirGjYHxbmKfRkE9-t7qPwE=
+0aU_dUacs8XVIoIietuB50u1hLFIFZPnJ_yyGta337G2bkt_39Bf610KfRa8te8X-RAb0A" tar=
+get=3D"_blank" style=3D"color:#4d0d84">The Brandt Companies, LLC</a>
+</div>
+<div><br></div>
+<div><br></div>
+<div><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkMlOwzAQhp8muRHZz=
+sohB1qaClrUAgIJLtHEniRuFkeO05K3xy2FC9JIM_P9mlWkScKLxJUpI4wQSmJGWRwwj3osJCtK=
+w2zBFpl1SycgHcjWOyjZ19CLsYYGPa46t05DXpKS07DEuABgDAtfBODHQRDechTcbdPamGF0_Du=
+HZdZgGP43spyDRtR5CVKPNqV-klDrsRtaNVth0HiUeHL8zKgGe8e_V_Man8NHjOrd_kniB58TrI=
+L3u88lRMnxJdpsBTLcP-CKbtr5K9q9kfX25LCoVdqWU9-Gk-nyUU2aoyUdjGN-vhT1VepQyKmzE=
+p7xFXLVG-yNpSGhfkx_MXQDyOq82dTL3ICu0KDIL6Wjq9MDlqUHApupL6T9qRQIBTTaU7pyTRqR=
+6OaV10q17t9v8stKlw65FOnPvG-i2ZE7" target=3D"_blank" style=3D"color:#4d0d84"=
+><strong>E. J. Ourso College of Business Networking Reception</strong></a><=
+/div>
+<div><strong>Wednesday, February 5, 6 to 8 p.m.</strong></div>
+<div>Networking opportunity for recruiters,&nbsp;bringing&nbsp;over 250 Bus=
+iness students, held the evening of Career Expo day one.</div>
+<div><br></div>
+<div class=3D"ql-align-center" style=3D"text-align:center">Thank you to Bus=
+iness Reception Event Sponsors:</div>
+<div class=3D"ql-align-center" style=3D"text-align:center">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJw9kFtuxCAMRVeT_A0C8v7go9=
+M2G-gCIgOeCZkAIyDN9kvSaSVLls7149pa9L2SfWkEp5xSRjvOeFdzwghv6CdjzXjl1zGn96KmF=
+sxKFm_cDE7HGR5IlLflLLqBSlSDYlDfBtmwodFN37XIkHZtL2m5ijmlZyyqt4KPOfZ9J_JbqScc=
+EzKICEHNl8XLeFRU4-pDUX2wuuDtluwU_RYUZmIhxukwguElWdRms1nCA7-g8i6hS5k2lFUd-8N=
+gn2DuLvPNmSlBuGNCPZ2tsQxiwduNgMbH5qTJJxuNIOERiA_3MomWtpcvNXu_lv8_mE5L54TJaP=
+G77wcq629r" target=3D"_blank" style=3D"color:#4d0d84">Briggs &amp; Veselka =
+Co.</a> | <a href=3D"http://email.mail.joinhandshake.com/c/eJw9kEluhDAQRU8D=
+u1geMLDxIt0dlH0OgDwUYMB2yzZScvsYMkilKun9r5qM6Hut-toKiinGBHeU0K6hiCDK8RshfLj=
+R21DKvWqwk3ZHa7B-kd6kRW6AdHD1IhSmXCuNlQE-9arlk6GNYXqSkmvOSb2LJednqthrRYcSa1=
+AJmU-NMujFhz3MX4W-Bwel7CGWTCs2HNmNKRxRQ8UeTqY0nitAkdtTcmDs4YoEJ_6FWrqntLMv-=
+PB2zDLOkMGMlycV09mePQj_8wefweeCOCasI3UUK0wTkga2wytb7rYGpJJbRCHOdRYtbl8-9BLC=
+Xv8_Yry2u2aM1oifVt_IeXHW" target=3D"_blank" style=3D"color:#4d0d84">DxC Tec=
+hnology</a> | <a href=3D"http://email.mail.joinhandshake.com/c/eJw9kNtuhCAQ=
+hp9G70o4iHrDRXdbX6APQBBGZRXYAMb07Yt222SSyXxz-meM6Hs99rUVFFOMCe4ooV1DEUGU409=
+C-HCjt6G4e9Vgp-yGHsH6RXmTFrUC0sHVi8C6n_hIueZ4gp6xsWO6YU3bcaL6kbJ6E0vOz1Sx94=
+oOxY7jQPB9dpcAvNxT8VpFgFiKhi3Ein2QtqLtnp1MYY8aCnEqJXmqgPhKOTB2dyUFJ35BHXwGn=
+wvlmLCO_GHlnsrOvvDdW5lVnCGDkVdrqqN4wDQhZWDd_WjLvdaAGtUaUYhznUWL27cvvYSw1f8P=
+kJeka4K0Rvzu-wGy5G5G" target=3D"_blank" style=3D"color:#4d0d84">EY</a> | <a=
+ href=3D"http://email.mail.joinhandshake.com/c/eJw9kFluhDAMhk8Db0SJCcs85KHT=
+lgv0AMhkGTKQBEEQ6u0bmLaSZUuf7d-LEm0rhza3AihQymgDDBoOhBGo6CdjVXeHe5fCe8apQzu=
+TZ7B-RK-2ESdNZHD5KDiDsrpJrjUHbqhB4GhuFa1buCmFkM9ijHHZsvItgy7ZcRzEHIVc8FQ4wf=
+hdGNznqTisn2a9ZmU3h-Q_WJNBvUfXb2FfpU7E4bb15y6p6pVyWtndpZQ-8S-UwUftY6IVZWXD_=
+jC6Be3DJ75720dcHzpq1V-tW76KpzaGoNLT7gebrrZK44DTSsL6yKOoaV18yTGEOf9_Q3-tdCn0=
+VonXvB_TH3D-" target=3D"_blank" style=3D"color:#4d0d84">Faulk &amp; Winkler=
+, LLC </a> | <a href=3D"http://email.mail.joinhandshake.com/c/eJw9j11uhSAQh=
+VejbyWAf_jAQ29bN9AFmBFG5SpgEOP2i_a2ySSTfCdz5hwthVCDyI3klFPKaMMZb0pOGOEV_WKs=
+6h780aX1kZXUglnJ0xs3g9P7DAsS5W0-S1EPqJpBVyAEK1jLx7aum7LUY8tRsDZf5RzjlhXvGe_=
+SnOdJ5jioDS6DBBQExLBfatGtPmTFJxMZr49o-90fQWEiFva9vzJgeEkWtTlskvDCL6i8i-hioh=
+VlRcP-MNgNzOQSP5zpI4QJI-r-Pt3zIJ84jgQ0LocbTGprNMIASyA-THmUNa3fvtXs_Zr_1-_vS=
+LdDb7T8_fcDxwRtcw" target=3D"_blank" style=3D"color:#4d0d84">Hannis T. Bour=
+geois, LLP</a> | <a href=3D"http://email.mail.joinhandshake.com/c/eJw9kN1uw=
+yAMhZ8muSsC8lN6wcW6Li-wB4gccApNgAqI-vojWTfJkqXvyMfH1lIINYnaSk45pYyeOePnlhNG=
+eEe_GOuGK78OpX1WLXVgV_II1hvwOhlYkKjgaiM5aCZYp8toq1HPSlDRs0vfTgzFPNF6lSbnZ6q=
+aj4oPpRRExJhIMhhf1p9edl0tuLT7FdkEh1UzrCFWzY1dKt5v2Y0pbFEVfnOQ0riHwfiWHGq7uS=
+Lhjt9QBZ_R50I7ypoz-8PgnmDvvvDN2zFDvGNGPR6jqY7ygfNMQOOy-cmWs61GmGCJJMR7nWVP-=
+9O3MiGs9f8fxiPS4TBaLX_3_QDYD3Ht" target=3D"_blank" style=3D"color:#4d0d84">=
+Sherwin-Williams Company</a>
+</div>
+<div><br></div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkF1=
+PgzAUhn8N3EnaUqC74GKbY9HNbGo00RtS2gN0fJSUsrl_bzenNyYnOec8b86nTBkTBfNVShBBCK=
+OEYJJQEuCARGiFcZQtyCJzbulR1HHVBget-pr3cqx5A4HQnV-nUSiSiJXhDIUzoIhCKShjpKC0Y=
+Jgy6bdpbe0weuHcI5kzPgz_GzkuuAEwecmVGV2KQ8aw89ANrT47YTBwVHDywszqBnovvNfnNTxH=
+jxDXu_2Tgg9xZlDR9_nnksfs-BJvthII7B9ghTft-SvevaH19uSRuNXGlRPkwsl2-agnI8CRjo9=
+jfrkUzE3qQKqpcxJc8A0K3VvoraMRwmGCfzHvBq6qy2ZTr3LLTQUWZH4tHX2THqAsAy6hmfpCuZ=
+8qCbzgjQm0qXybxii-exW11q3_95v8utK1Q65k-jPvG60Wj9M" style=3D"color:#4d0d84;f=
+ont-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size=
+:15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-bl=
+ock;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;bo=
+rder-color:#4d0d84;color:white">
+        Register for Career Expo and/or a Networking Reception Today
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Art + Design Career Networking Day Registration Now Op=
+en</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kMluxCAMhp8mu=
+RWBs86BwyzNsZc-QETAM2EmQMTSvH5JukiWbH-2f1tWvO_l1JeaAwVKGe2AQVcDYQQa-s5YM1zg=
+MmR3LWpqhF7I02k7C6vCLF5IpDPlzBk22J9YBX0tWyWhgb4TMNXtpDo1iVO58DnGNRTVuYAh27Z=
+tZAmJoEo5k8Ijeok2os8pfuUo5OB8-7iRdV6LalicL6obsALaFM0YXMr9mRgRwrjftU8eJYNKJ5=
+NLuONfKF3WtjHThrKq-5ORwqxCP2zmyeoxCv_AiGo8RkPp-RPvdyIUvpKddP6AVigm8fLE-UcZe=
+Uvbt085O7eU_y8Zj5MOhVEr_rPvGwnldNQ" target=3D"_blank" style=3D"color:#4d0d8=
+4"><strong>Art + Design Career Networking Day</strong></a></div>
+<div><strong>Friday, March 6, 8 a.m. - 1 p.m. with optional interviews  fro=
+m 1:15 to 4:15 p.m.</strong></div>
+<div><strong>*This event will now be offered in Spring only*</strong></div>
+<div>Art + Design Career Networking Day connects students with employers re=
+cruiting for full-time, part-time, and internship positions in the art and =
+design fields.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkM1=
+ugzAQhJ8GbkW2AQMHDiQNUqMoqpJDo1yQsRdwwJga0yh9-jrpz6XSSqv9Rjser8jTlNepL3OCCE=
+IYJQSTJCIBDkiMNhjH5YqsStfWXoQUk0Nw0XLs2CjmjvUQcK38Lhd1HcUpyyCjnGY1RRmCMKWcR=
+QRT3lB_yDtrp9kLC4-Urtg0_TdynDMDYKqGSTO7EUdxRlwHNQ365oTJwIeEqxeWVvcweuHzdkPb=
+7RC-ncr9_vD-MiJitlZl-263eb2Gx93n6dDrIlmpoijWN6av5-48uBR00MatE2dPF6uqWS-GgyO=
+KzXN1_ymYH0mBkItyEtzxD-R6tDBaR2OEwwT_YqYmJtt7smWUlWWmBQuieqzOvskv0DQBE9AvYy=
+3dTaUAVrPeBNq0vs0pok9H3mk9-H-3qR6RHg6VFPn3e1-SH5CY" style=3D"color:#4d0d84;=
+font-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-siz=
+e:15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-b=
+lock;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;b=
+order-color:#4d0d84;color:white">
+        Click to Learn More and Register for Art + Design Career Networking=
+ Day
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Summer Jobs Hiring Update</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>We are excited to announce that our Summer Jobs Fair is now combin=
+ed with the Opportunity Knocks! event in order to connect you with more stu=
+dents at the right time of year. Scroll down to learn more about Opportunit=
+y Knocks! below.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">On-Campus Interviewing Program</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kFduwzAMhk9jv=
+1XQiEcf9NC09QV6AEODjpVYkqHR9Phl3AEQHB_xkwStHEejx9ZJTjmljA6c8eHECSO8o--MddOZ=
+nycMr82JeuU2co0urCrYvKobEBN9u8pn8TyOzPQarNUAoluY0mYxIIZl4PrUbnItZc-NeGn4hHa=
+_38mWKwFbsTIqASQDoUDCEj4xy5hE49C7YOGL7OveiGmLqRFvXDS8r8XPOVaUIfEq5_lx3mPA0f=
+JgXfXYggf-hSbiilCQdpSJgf1h5XflLgF5DW4uKl2ggJ0PaW6TvMKyEGXhVoN2-AhnQWl1SySmS=
+1tkT_unD7PGuLX_n5mPk44Js7PyZ983q-54pA" target=3D"_blank" style=3D"color:#4d=
+0d84"><strong>On-Campus Interviewing Program</strong></a></div>
+<div><strong>Monday, February 10 - Thursday, April 9</strong></div>
+<div>Free service connecting you with students and alumni for on-campus int=
+erviews on a date(s) that is convenient for you. Space is limited; reserve =
+your date early.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kFl=
+uhDAMhk8Db42ysPUhD522XKAHQCExQ2ZIgrJ0evwaukiWl8_6bctGDoOeh9pKTjmljPac8b7hhB=
+He0nfG2vHCLyOG16qhTtmN3IL1q_ImreoORAdXr7IVQ981i9CmocB7ClSwbqZz-6wFUKPqTa457=
+6kSLxUf0R6PB9lSIWAKVlpFgKjBZ4hYwidmCZOgLXrrDXyRfd0rMW4hVuKNNxXvSnZTCgVlSJxK=
+aTrOOwacLQfGFoctOPAv1AFX-Iy0pUz07A8rtyt79ciLt1NW8QoZzHRKUx3lDZaFKAP34meLj7A=
+G1KzukYR4rbPsaPf0odcQtvr_M9N50jlhskb-7PsGU7F3bQ" style=3D"color:#4d0d84;fon=
+t-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size:1=
+5px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-bloc=
+k;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;bord=
+er-color:#4d0d84;color:white">
+        Click to Learn More and Register for On-Campus Interviewing
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Kinesiology Career Fair</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kFtuxCAMRVeT_=
+BUBec4HHzNts4EuICLgJEwCRDw66u7rSR-SJdvH8rV1teh7NfWlEZxyShntOONdzQkjvKHvjDXD=
+jd8GTK9FTa00O7l741bpdFzlBkR5W65C1z1r1Myh5hcGjNZMzv3Ud6xVXcfVpdzFmtIRi-pa8AH=
+j8XiQPWYCOmOnZAAIClyCgC18YhWx2IyDaPzuly9yrEdRDbsPRfXGm4K3Odkx-oxrSKyMcXy-9x=
+Q4Rxa0yRZH8MS_UHk84RLShrKqY39Y2kOaxSHPzoxJhgUS6PFcjWUQd5hnIjVs2U0GjTAa5CS3Q=
+HxYyiRa2r58qNX7vfx3ZjxfOhVGo8XPvW_TrHgO" target=3D"_blank" style=3D"color:#=
+4d0d84"><strong>Kinesiology Career Fair</strong></a></div>
+<div><strong>Tuesday, March 10, 1 to 4 p.m.</strong></div>
+<div>The Kinesiology Career Fair connects employers with students recruitin=
+g for full-time, part-time, and internship positions in fields related to k=
+inesiology.&nbsp;</div>
+<div><br></div>
+<div class=3D"ql-align-center" style=3D"text-align:center">Thank you to Kin=
+esiology Career Fair Event Sponsor(s):</div>
+<div class=3D"ql-align-center" style=3D"text-align:center"><a href=3D"http:=
+//email.mail.joinhandshake.com/c/eJw9j1tuhDAMRVdD_hrlwasf-Zhpywa6gMgQM2QgCQ=
+pBbL-BTitZsnyu7OtrVNsOfUusEkwwxlkjuGhKQTkVFfvivOru4t7l9lGUzIFd6DNYP4E32wQz0=
+iE4MqkGe1MNLXA2ljCa9xK4yUNZyoZJURuyqCmldSvkrRBdruM46ApxxkjR7CeT3RJiIT9FXYh6=
+T05vYY8DZuJg2_RpjfElOTR2d1nCE7_gEHxCnzKtGJcN_8PgVrAPn_nurU4QH5jQ6Gt1I1E9cRw=
+pGJx339sc0hqEHuZIQ3yQpGpWv30PUwgL-U-tr5euC9oa9ev3A3RFatM" target=3D"_blank"=
+ style=3D"color:#4d0d84">Parker University</a></div>
+<div><br></div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkMl=
+ugzAQhp8GbkXG4OAeOCRtOESJqnSRml7QYE_ACbapMUn79nXS5VJppJn5fs0qS85Fw2NVUkIJSU=
+lBU1rkNEkTysgyTVm1oIsquLsoJxpUnxysMh0YOXZwxERYHXdldstozglriqbYN4xJAJ6BoCy_p=
+cAyGfdl5_0wRtk8olUwGIb_jQIX4BBdvQflxpCmGec0eNRDbz-DMDg8KTxHWeXtEU2U3b-Prx9n=
+Myf9_KFx1Xa9xZtDt-Qb252fd-3p7Umtdp_i0Zye893iZb3hq0rLNqKz3rpQTosQTl7Xo52cwEA=
+0jGN9uRTdj6RRqkkHCS_4BwprPBofKCNpVqS_GPQAqr1sNhlVe3AtepT1tXSMXXnA_T4BicfJNC=
+r8VEmEBo4usa6NfTkjs5sn0Vnbx3-_qa8rXTvUSpbf874ALOmRYg" style=3D"color:#4d0d8=
+4;font-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-s=
+ize:15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline=
+-block;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px=
+;border-color:#4d0d84;color:white">
+        Register for the Kinesiology Career Fair Today!
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Construction Interviewing Day</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kMluwyAQhp_Gv=
+hWxxA49cGiSWuq5D2BhmMTEBiyW5vU7cRdpJOb_ZuHXWCWlmWTrFKecUkaPnPHjgRNGeEffGeuG=
+Ez8N-JybA_XareQeXZh1sHnWCxATfTsra8Trgfdcg5RcHBlFIXtO2ST6rutEu6q5lC034q3hA8b=
+j8SBrrgRsRWV0AkgGQoGEEr4wy5icPy5km7dGDGtMjbhw2fC-Fj_mWLEdidc5j09bz8G95MG66r=
+EET_wLTcTVoSDtKEN_f1j7TbtbQF6DG4tONyhgx300t0nd4Xol2sJSw-TwAM6CnvSSSEy3tqie9=
+i-fZo5xbf8vMu6W9g2js-rnv29F1nM7" target=3D"_blank" style=3D"color:#4d0d84">=
+<strong>Construction Interviewing Day</strong></a></div>
+<div><strong>Thursday, March 12, 8:30 a.m. to 4:30 p.m.</strong></div>
+<div>Recruiters interview Construction Management and Industrial and Civil =
+Engineering students and alumni for full-time, internship and co-op positio=
+ns.&nbsp;</div>
+<div><br></div>
+<div class=3D"ql-align-center" style=3D"text-align:center">Thank you to Con=
+struction Interviewing Day Event Sponsor(s):</div>
+<div class=3D"ql-align-center" style=3D"text-align:center">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJw9kNtuhCAQhp9G70oA19MFF7=
+ttfYE-ABlhVFaBDWLNvn3RbptMMsn3z-Gf0aJpVN_kRnDKKWW05ozXF04Y4SX9ZKzsbvzWpfSeX=
+agFs5C7N24Cp9cJZiTK23wS0OoGmwKxZ6ig0Er1JSt1C1DRQdVDvogpxseaFdeMdyn2fScThG98=
+qgUhPI85CSsIiCGVdYsPWfHB24xXW7Ry9VtQmIiFdZWHDwwvyaI2m00SHvgFlXcRXUy0pKyo2R8=
+G-wAzusQ3Z2SEMGJELc_WNQ_ijsNAQOO8ud6ki41G6GEOxIcxj6Ki1duXmrxf8v8XyNPSOUEaLX=
+73_QDuanF4" target=3D"_blank" style=3D"color:#4d0d84">DE Harvey Builders</a=
+> |  <a href=3D"http://email.mail.joinhandshake.com/c/eJw9j1tuxCAMRVcT_oqAP=
+PvBx0zbbKALQDxMwiTAiBBl-yXptJIlS-fa19eGD4NWA3KcEUYIJT2jrG8Yppi15IvSdryz-1ja=
+R9UQL92KH9GFWQazzXIBrKNHM6-7VjWK2s5IYpvW9qa2jerhfRgGq3qNVj7n_Nyq-laxsdRxHNi=
+kOaYcw-lRkJYJIJWRcY2pqj9rUrFuz15scU8aCvFy28SZAdJL8mDc7osEJ35BHUOGkAttCa17-o=
+elf0o3hcL34ESWaYIMRlyrG0r8AdZiaWDZg3LlW2dAKrkkHNOEMu9I9_at5xhX9P--uCJdDsIZ_=
+nvvBxhRbvY" target=3D"_blank" style=3D"color:#4d0d84">D.R. Horton, Inc.</a>=
+  |  <a href=3D"http://email.mail.joinhandshake.com/c/eJw9kN1uwyAMhZ8muRvip=
+wnpBRfrtrzAHiBywC00ASog6uuPZN2QEdJn-3Bso4ZBz0PrFKecUkYlZ1yeOGGEd_SLsW688MtY=
+n4_mRD24ldyjCxaCyRYWJDr61qqOAjsLI6RgSDXtrnLmZxCcS5T1DO2qbCmP3Ij3ho81ns8nsRg=
+yrg9bb951KtaQEFPea8S4xtSIT8Ea3m_FTzluSWMlHnKediuYXimPxm2-pnDHL6hjKBhKpR1lQv=
+7JaPAPcLdQ-RbcVCDdsKCZjtbcJnXH65WAwWULs6tDO4Mww5JITLe2qJ72b9_axri2_1uYDkuHw=
+uSM-v3vB9Imb_0" target=3D"_blank" style=3D"color:#4d0d84">Hensel Phelps</a>
+</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkMl=
+OwzAQhp8muRF5yXrIgQJlE6hQtVRcLMeeNk7iOHKclr49bilckEaame_XrLLMc1HloSoJIghhlB=
+FMsphEOCIJusM4mc_IbO7dTRAjzVUXNUb1Ne_lWPMWImF0WJeU8LSCXMgiTSWggnOggsYZKkQiE=
+UrDrqydG8aAXgdk7o0Pw_9GngtuASzbcmVHn2Ka57H3oIfOHL0wWNgrOAR07kwLfUBv2eqVPC8O=
+H7harpX93DDXFC9f675e3uuia542i5rNDg-Ps707LlZV-17hXfIWkLQz1pdT4sPJaTaayQrwRPN=
+xZKdLwV4kDVJN2ktwwhcoTO-gd54mCNMM_2KuB652p82mXjHH7Q4cSHYuHUNbNrDdRlxCO_WV8j=
+9VEnjFWxsZuwtdmaL0ailqY7rw7zfsvNK5A1Oy_Jn3DZNHkZ4" style=3D"color:#4d0d84;f=
+ont-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size=
+:15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-bl=
+ock;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;bo=
+rder-color:#4d0d84;color:white">
+        Register for Construction Interviewing Today!
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Networking Night at Manship</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kEluwzAMRU9j7=
+ypocGxnoUXT1hfoAQxaoiMllmRoaK5fxR0AAiQf8T8JajmOahlbKznllDI6cMaHjhNG-Il-MHaa=
+Lvwy1fTWdNSB3cgtWG_A62TgjkQF1xq5iuWsGF3V2GtKRacW3p2HtTvjOCwdqHaTJuc9NeK14VO=
+Nx-NBtlQI6lI7BRExKvQZY23xq1apFg58MnYnu9kbMW0hNuJdiIb3Jbs5hVIllThIaX6e9hQfI4=
+faFldH-MS_UIVq73OlJ8rEwP4wuB3s1VdevJ0zxCtm1PMhTW2UN1xXAhrvxS-2PsFqhAXukYR4b=
+bPsaf_yqUwIW_v_lfk46XCYrZY_-74BSQ923w" target=3D"_blank" style=3D"color:#4d=
+0d84"><strong>Networking Night at Manship School of Mass Communication</str=
+ong></a></div>
+<div><strong>Tuesday, March 31, 6 p.m. to 7:30 p.m.</strong></div>
+<div>Students network with employers in communication fields to learn about=
+ their respective organizations, build professional relationships and find =
+out about internship and other job opportunities.</div>
+<div><br></div>
+<div class=3D"ql-align-center" style=3D"text-align:center">Thank you to Net=
+working Night at Manship Event Sponsor(s):</div>
+<div class=3D"ql-align-center" style=3D"text-align:center"><a href=3D"http:=
+//email.mail.joinhandshake.com/c/eJw9kEluwzAMRU9j7yJo8JSFFklbX6AHMGiJjhVbUq=
+ABuX7lNC1AgMD7HD6p5TCoeaiN5JRTymjPGe8bThjhLf1irB2v_DqW9FE11ILZyd0bt4LTcYUNi=
+fK2XuUZceAAQnXnvkfFFwYN00uPjWAtm5d6l2tKj1iJS8XHEs_nk8zhEXzWx4iD-LCdFh9OOR4l=
+Ytx9qMSnaCre5WSn6HNQWIiFGKfDCYa3ZFGbbIuEB35D5V1ClwptKRM9-8NgH2BurvDszJQg3DC=
+hnl6tsQ7yjstCQOOW3WzKzUYjzLAF4sOtTrKj3elbrd7v9f8Tppel14TJaPm77wdKPHB7" targ=
+et=3D"_blank" style=3D"color:#4d0d84">WVLA NBC Local33 / WGMB Fox44</a></di=
+v>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkF1=
+PgzAUhn8N3EnaQqG74GJT0WiM080lekNKexgdlJJS3Oavt5vTG5OTnJznzXnPh8wZExULVU4QQQ=
+ijjGCSJSTCEaHoFmNaLMii8Ok6SJDmqot2RvUN7-XY8BYiYXTY5IhKkaFEskQIAgxYjSnNOJ7VI=
+ASdVWGXN84NYxDPA1L44MPw38hzwS2ALWuu7OhLHDNGfQY9dObohcHCp4J9EBfOtNAH8c3jPP5S=
+G00HOK758z3ez9TTqOc8W6I3je3y3azpx26D5eti9VLb5qE_HO72AUk7Y3177O3TyelyNJMV4In=
+m41ieLgV7kTRINWkvwQlfoDC9g955ShGOM_yLuR642p42m3pVOm634ECW59YxtPkO6jriEtqpr5=
+T_qZLAK97ayNht6PIUpVcr0RjThX-_Kc8rnR1KJfOfed-qYJGo" style=3D"color:#4d0d84;=
+font-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-siz=
+e:15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-b=
+lock;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;b=
+order-color:#4d0d84;color:white">
+        Register for Networking Night at Manship Today!
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Opportunity Knocks!</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kFluxCAMhk-Tv=
+BUB2R946JYL9ACIgGfCJEDE0lFvX0-6SJZsf5b9_7IR46iXsbaCU04powNnfGg5YYR39J2xbn7h=
+LzOm16qlTtmd3IL1q_ImrWoDooOrVzEB7VozcXaZJt22jRnGZmCLoYYPnWpNvYs15yNVzXPFZ4z=
+7_U72VAiYgp1WESBq8BkitvCJVcIiHEeIuXibv-Tmg94SOdajauY9xKp5a_qK9yU7mULBbSROpS=
+QfLh93zpEDY4vDETzwL9QBlXxG2lGGRv-wcoeyV48cNWVW8QoZjDxXUx3FDS4XogxsxS8W_2ENq=
+EVtkYR4rbPoaf_0odcQ9vr_QfK0dF6Q1ogfvW-wtXst" target=3D"_blank" style=3D"col=
+or:#4d0d84"><strong>Opportunity Knocks! A Late-Season Career Fair for full-=
+time, part-time, internship, <u>and summer jobs</u></strong></a></div>
+<div><strong>Tuesday, April 7, 10 a.m. to 2 p.m.</strong></div>
+<div>Employers hiring timelines in the late spring are encouraged to attend=
+ and network with students from all majors who are seeking full-time, part-=
+time, internship, and summer job opportunities across a variety of industri=
+es.</div>
+<div><br></div>
+<div class=3D"ql-align-center" style=3D"text-align:center">Thank you to Opp=
+ortunity Knocks Event Sponsor(s):</div>
+<div class=3D"ql-align-center" style=3D"text-align:center"><a href=3D"http:=
+//email.mail.joinhandshake.com/c/eJw9j1FuwyAQRE9j_ooAxwF_8NG09QV6AGsNa5vYQA=
+T4_iVuWmmlld5oZ2esVspMijgtmGCMMym4kBdBORUd--K8G27iNtT10VyYB7fTe3RhhWDzChtSE=
+z1ZdcckU1IqOYNi0kwoes7F3F3mXnGEnux6LeWRm_a9EUMdAwkxZYqhYHokl0-np9YOe0xN-9nK=
+RlyP4sccj2SwEg85j88ImF6SR-sOXyV84hc0sXqGUmnHeCv5Hwb_ALeEyo_gxgJpwYJ2PE8zSfq=
+O80zB4naEydWyziJMsCUa00KKvrLr27dZY9zJf_vxjHQ6jM7q338_k-tteQ" target=3D"_bla=
+nk" style=3D"color:#4d0d84">Enterprise Holdings</a></div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkMl=
+ugzAQhp8GbkXGBmwOHAoJ3Q6Rki5HZPAADhhTYxL17eukaS-VRpqZ79esImOsqZkvM4wwQiGiOM=
+Q0wkEY4BhtwzAuc5yXzhVehBSXY3DUcur5JJaeDxA0Wvl9JihtWZRQStIIJXUSJWlcEwQNihGNE=
+-SPWW_tvHjk3sOlMz7P_xs53nADYKqWS7O4NCSMUedBzaP-csJs4CTh7JHS6gEmj2zYx9Mbe9nt=
+T6-7UheHz_J5Ez1GfarQXZcSfcr3hyInJt2ua_lOTnVcGPZw9nAyauPKCXPhalW16NU04Ijiy1J=
+dLgVzkxQIuSonwQXfYKMnC5N1NEYhoeEv5mrmsrtstk6ystx0YEFU19LFN9kR2jbgAoZ1qqX7qR=
+TAaz6YQJvOt1mCkrtD02s9-n-_qa4rXTtUUmQ_874BHcaOaA" style=3D"color:#4d0d84;fo=
+nt-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size:=
+15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-blo=
+ck;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;bor=
+der-color:#4d0d84;color:white">
+        Register for Opportunity Knocks! Today!
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">School Professionals' Networking Day</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kNtugzAMhp8G7=
+hYlgVC44GJdx-U0qQ-ATGIgLUlQDuvrL2UHyZLtz_5ty6pvWzm1pe455ZQyeuKMn2pOGOGCvjMm=
+hjM_D9m9FTU1oDdyc9quYFVY4Y5EOlOuPa_FxGYQsulqgTh1EtjcQq2wUwJlU279GuMeiuq14EO=
+2x-NBtpAIqpQzCR7RS7QRfU7xK0chB9fPjwvZ172ohs35orpUXcGbFM0YXMr9mRgIYXze9VQeJY=
+NKJ5NL-MS_ULo828ZMBWXVif1hMDvoxWaerB4j-AUjqvGQhtL3N5xnAgrvyU46f0ArhAnunji_l=
+LFvaPNylatzW_n_kvE46ZgwatX_7PsG-i51vw" target=3D"_blank" style=3D"color:#4d=
+0d84"><strong>School Professionals' Networking Day</strong></a></div>
+<div><strong>Wednesday, April 8, 8:30 a.m. to 3:30 p.m.</strong></div>
+<div>Recruiters network with students and alumni for positions in school-ba=
+sed professional fields. Recruiters may choose to interview students and al=
+umni for available positions.&nbsp;</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlkMt=
+OwzAQRb8m2TWynTRJF1m0QEAskCgIwcpy7HHjPOzUsVvK1-OWwgZppJk5V_MUVVnypoxVRRBBCK=
+OCYFJkJMEJWaI7jJf1hmzq4G6iDI1MDUlnlG6ZFnPLeki4GeO24oisIBNQINSwVSZKnsuswWTFJ=
+ckFw_FQtc5Nc5SuI1IHY9P0v1HgnFkASyVTdg4pTsuyDB7GaTCnIEwWDgqOUVo704OO0tv1Xt43=
+W7Xdf9QgIW_eZfd1XD3A85fPX5EZ2Ken9RM9PXoDtHvTh2yxwMeI5IOxoTxDIfRupLPxlkMgI5t=
+ner4U7FUaQSg_BgnO-Aq50Q60C3SJcFrgX8zGiandeTOvFXXM7sCBoJfSObZVB1ImTEDvdaPCT5=
+UA1rDeJsbuYlflKF-88NaYIf77Db2sdOlAlah-5n0DUP6SXQ" style=3D"color:#4d0d84;fo=
+nt-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size:=
+15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-blo=
+ck;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;bor=
+der-color:#4d0d84;color:white">
+        Register for School Professionals' Networking Day Today!
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Post Your Jobs in Handshake</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJxlj0tuxCAQRE9jd=
+kF8bIwXLGaS-AI5AMJ8xowNWBjfP9iZZBOppZZeqaurjOBcTxx4QRBBCKOeYNK3BGJIOvSJcTfe=
+yX2s671pUVB-hc_k46yi2We1WKhTALPoNEat61pneqYVHQbMHO-xYz1xfOAUrGIuZWvorSFjHbV=
+t_31OiY5ryg39aHFD2FGC3NORta0kqH2XZwCbX1Kwxh-hSvbEL6hTLDaWSjuEaf9ro1XYlH_Eyo=
+_oZVH5YYs18jrdQRZP6xxUxi5HnHyt6o1Vk1oyTPkBimCIvX3pOaUV_GWWV6TLQXojfv59A4Vlb=
+H0" target=3D"_blank" style=3D"color:#4d0d84"><strong>Job Posting Informati=
+on for Spring or Summer Employment</strong></a></div>
+<div>Looking to hire? Post your position for free in Handshake and&nbsp;#Ge=
+auxHireATiger!</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJxlj0t=
+uxCAQRE9jdkF8_MuCRSYzvkAOgMA0NmMDFsb3D3Ym2URqqaVX6uoqI_p-1D1yghFGCCUdo6yrGa=
+aYNeRBaTPc2G0o67OqiVduxc_owqyC2We1AB6jR7NoG0ptY4qVJcCthncNLa1Jp4HXlmi0ijnnr=
+eIfFRvKqG3773NKfFhjqvi9ZhVrj-zlHo80QiFe7bs8A0B6SR6MO3yR4MQvOMaQIeRCG0J5R3-x=
+8ptyUyj8CE5mlSbIYOR1uqMknmAtVgaWI2hXqjoDSqsl4ZgmlEVL2revcY5xRX-Z5RXpcpDOiJ9=
+_33g4bXo" style=3D"color:#4d0d84;font-family:&quot;Suisse Int'l&quot;, Helv=
+etica, Arial, sans-serif;font-size:15px;font-weight:bold;color:#ffffff;text=
+-decoration:none;display:inline-block;padding:10px 20px 10px 20px;border:0 =
+solid #254fa5;border-radius:3px;border-color:#4d0d84;color:white">
+        Post Your Jobs in Handshake
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Advertise in the Annual Student Career Guide</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>Our annual Student Career Guide is distributed in print and electr=
+onic format to students, alumni, and LSU community members.&nbsp;<strong>Ov=
+er 10,000 printed copies</strong>&nbsp;were distributed on-campus in 2018-1=
+9, and a digital version was circulated to<strong>&nbsp;over 37,000</strong=
+>&nbsp;students and alumni through direct email marketing, our online job p=
+osting platform (Handshake,) and to even more viewers through our&nbsp;<str=
+ong>social media channels.</strong>&nbsp;This is a comprehensive guide for =
+students and alumni preparing for their job search and the perfect place to=
+ promote your company brand. </div>
+<div><br></div>
+<div>Each year, we reserve a limited number of pages throughout the guide f=
+or employers to advertise.</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kFt=
+uhDAMRVcDf41CQhj44KPTlg10AVEeBjKQBOWhUXffQB-SJdvH8rV19dj3Sva1GQkmGDf4Rhpyaw=
+lqEGH4o2nYdCf3qaS3qsVWmB09vHGrcDquYgOkvK3XkXZqYIp1IBkbOoypkgOjg5z7oZUEcL2Pa=
+0pHrOhrRaYSz-cT7TEj0Ll0SgSAoMAlCKUFe-z-C0I8a7eIBUohNJ99sOhYj4pOuw8VfW9pRbqc=
+LI8-l_VCrIiRn2-eQtfIgjbZlhGc-BcqX065VCjDDb01f1jYQ5jFFZ6d4UmEBRJofq3GOowPmGc=
+kNGzZSVMMMRqEFFtAPix1GjvcvXyq1fu9_neIXy9dCtzo8efeN2k3epE" style=3D"color:#4=
+d0d84;font-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;fo=
+nt-size:15px;font-weight:bold;color:#ffffff;text-decoration:none;display:in=
+line-block;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius=
+:3px;border-color:#4d0d84;color:white">
+        Learn More and Reserve Your Space Today!
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Did You Hire a Tiger? Let Us Know!</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>Have you hired a Tiger? Take the survey below to let us know! This=
+ data is critical for helping our office evaluate the success of our servic=
+es, understanding where our students are being hired, and being able to sha=
+re typical salary levels with you. Thank you for your participation!</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kFt=
+uhDAMRVcDf42S8BjmIx-dtmygC0AhMUOAJCgPoe6-hj6kSLGPde1ra9F1auxKIzjllDJ644zfak=
+4Y4Q39YKzpH_zR4_dW1NRKs5HFGzdLp-MsVyDK23IWmjcdtJRVFUW5hmnqxqa-3yupmnoaebmJO=
+aU9FtVrwXt8x3GQLWYCOmOmZAAIClyCgCnYffNfECLGix_9NGFM9nkvqn7zoaje67rgbU52iD6j=
+DomVMQ6nv7PDVbKgTbZYghP_QuVxhktIG3R7Y39Y2l2ap0OenRmSDE9IoIdLGssgFlyJSA1rdqP=
+BSxgNcpRrID48yyRa2r58qtn7rfw_zXBZujoMRoufed99HniZ" style=3D"color:#4d0d84;f=
+ont-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size=
+:15px;font-weight:bold;color:#ffffff;text-decoration:none;display:inline-bl=
+ock;padding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;bo=
+rder-color:#4d0d84;color:white">
+        Take the Job Offer Reporting Survey
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"no-margin" style=3D"margin-top:0;margin-bottom:0;margin-le=
+ft:0;margin-right:0">Increase Your Impact on Campus</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kN2OhCAMhZ9G7=
+5YAKuoFFzO76wvsA5AOdJQZAYOQef1F9ydp0pyvOadNjRwGfRtqKznllDLac8b7lhNGeEc_Geum=
+K79Opb1XLXVgV_II1i_gzb7AE4kOrl5kj6Yf0QgKI-eDhrHpdUMFDOZueCtEvcolpa1qLhWfSr1=
+eL7LumaDJRWmIiFGjTxgPGeIWIiTcICaPkWxLcU5riFXz0XYVFzk5tYdcLIU42Hd1XHaYz5FDY7=
+MrIzzwL9ShxPtUaEdZ07M_DG4DO_vCs7cqQZwxoVGnda-jfOD9TsDgM_ubLT-wBuEGz0hCnOskB=
+RVvX3oJYa3_n6LOk84EZY382fcNHl528w" target=3D"_blank" style=3D"color:#4d0d84=
+"><strong>Become a Corporate Partner!</strong></a></div>
+<div>For over 28 years, the Corporate Partner Program has existed to fuel t=
+he mission of the LSU Olinde Career Center. Your partnership with the LSU O=
+linde Career Center symbolizes your commitment to furthering our mission fo=
+r the over 31,000 current students and growing alumni network we serve.</di=
+v>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+   =20
+      <table class=3D"radius button float-center" style=3D"border-spacing:0=
+;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;floa=
+t:none;text-align:center;width:auto;margin:0 0 16px 0;margin:0 auto"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;color:#ffffff;background:#f73b33;border:2px sol=
+id #f73b33;background:#4d0d84;border-color:#4d0d84;color:white;border-radiu=
+s:3px;border:none"><a href=3D"http://email.mail.joinhandshake.com/c/eJw9kF2=
+OhCAMgE-jb0uAQUcfeJjZXS-wByAVqjIjYBAy1190f5ImTb_ma5sa2XV67GorOeWUMnrljF8FJ4=
+zwhn4y1gx3fh9Keq8EdWBX8gjWL-DNvsATiQ6uXiTX7WiabhJF7rHhQjPkvREg-o4x2terXFLaq=
+sut4kOJ1-tF1j0TNLlUGiJi1OgTxqMMcQsREm4Qk8dItqWYwxpidfkQbcXbnJzaQy5KIQ72XR2X=
+HfLZcmhsdqWFB_6FOpTxPhXaUHa5sj8MbgM7-8KztypBnDGhUae611E-cJoIGHxmP9ryA2sQRnh=
+GEuJcJ9nS9u1LLyGs9f9T1HnSOUFZI3_2fQN86HZb" style=3D"color:#4d0d84;font-fami=
+ly:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size:15px;fo=
+nt-weight:bold;color:#ffffff;text-decoration:none;display:inline-block;padd=
+ing:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;border-col=
+or:#4d0d84;color:white">
+        Become a Corporate Partner
+      </a></td></tr></table></td></tr></table>
+   =20
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"24px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:24px;line-height:24px;">&nbsp;</td></tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div><br></div>
+<div><br></div>
+<div><br></div>
+<div><strong>=EF=BB=BFLSU Olinde Career Center</strong></div>
+<div>158 LSU Student Union</div>
+<div>225-578-2162</div>
+<div>lsu.edu/career</div>
+<div>career@lsu.edu</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+</td></tr></table>
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+  <table class=3D"divider spacer " style=3D"border-spacing:0;border-collaps=
+e:collapse;padding:0;vertical-align:top;text-align:left;width:100%;backgrou=
+nd:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td =
+height=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-syste=
+m, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&q=
+uot;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;m=
+so-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></=
+tr></table>
+  <table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative;d=
+isplay:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" =
+style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSyste=
+mFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif=
+;padding:0;vertical-align:top;text-align:left">
+  <p class=3D"text-center footer" style=3D"text-align:center;margin:12px au=
+to 24px;font-size:12px;line-height:20px;width:80%;color:rgba(8,8,8,0.79);hy=
+phens:none;margin:12px auto 12px">
+    This email was sent to Jeff Adekunbi from Louisiana State University.
+    <br>
+    <a href=3D"http://email.mail.joinhandshake.com/u/eJw9jTkOwyAQAF8TuqBlwY=
+ALGlvxB_IAazkc8IVkJ_-P00RTTDcTnbXBW1YcAgIIMCjQKOSCYwMPIZqhw2641N8UbFRWPteyZ=
+9rjmWlJPNSNZWe81CG0UYGRRoK26kIihQggDbTscHOaJk4xLZ_dl6tVYiJPy8Hr8WJvp0HfnyHX=
+urJ_fNzoPMf0u44lugaENOILb2Q1gg" style=3D"color:#4d0d84">Unsubscribe from Lo=
+uisiana State University</a> =E2=80=A2
+    <a href=3D"http://email.mail.joinhandshake.com/u/eJw9zT0SgjAQQOHTkDKzuy=
+SEFCnEkWswmz8JGJgBvb_YWL3ue9H1ffC9KI6AABAMIRlFEiVpeCDqcaBhvHJvFFQuL7nsZZt5i=
+-fMa5Jhr2J2FMDGwKzI2NarLsdOG7I2eJtysCQOt6ScJce0fjZfLqvExJ7XQ-7HU7xdQzfxV6fK=
+5zml324q0WnA1uAXXDU0GQ" style=3D"color:#4d0d84">Unsubscribe from all Career=
+ Centers</a>
+    <br>
+    P.O. Box 40770, San Francisco, CA 94140
+  </p>
+</td></tr></table>
+
+  </tr></table>
+</td></tr></table>
+
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mail.joinhan=
+dshake.com/o/eJw9jTkOwyAQAF8TuqBlwYALGlvxB_IAazkc8IVkJ_-P00RTTDcTnbXBW1YcAg=
+IIMCjQKOSCYwMPIZqhw2641N8UbFRWPteyZ9rjmWlJPNSNZWe81CG0UYGRRoK26kIihQggDbTsc=
+HOaJk4xLZ_dl6tVYiJPy8Hr8WJvp0HfnyHXurJ_fNzoPMf0u44lugaENOILb2Q1gg"></body>
+</html>
+
+--d62d891bf16a47fe9e06e5c30df40589--

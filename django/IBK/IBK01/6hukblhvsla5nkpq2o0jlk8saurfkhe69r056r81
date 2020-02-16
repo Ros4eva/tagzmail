@@ -1,0 +1,142 @@
+Return-Path: <nde_3548979903.1@informz.net>
+Received: from mx-outaaz113.informz.net (mx-outaaz113.informz.net [64.132.221.113])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 6hukblhvsla5nkpq2o0jlk8saurfkhe69r056r81
+ for jeff.adekunbi@ideabakr.org;
+ Mon, 10 Feb 2020 18:07:09 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of informz.net designates 64.132.221.113 as permitted sender) client-ip=64.132.221.113; envelope-from=nde_3548979903.1@informz.net; helo=mx-outaaz113.informz.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of informz.net designates 64.132.221.113 as permitted sender) client-ip=64.132.221.113; envelope-from=nde_3548979903.1@informz.net; helo=mx-outaaz113.informz.net;
+ dkim=pass header.i=@yourmembership.com;
+ dmarc=pass header.from=yourmembership.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFNjZPS1J6L0p3aVMxajFFT3o4U1FRYlVMbkQwRkhGd1E0TDJocDA2OTdkd2IxYjFCVWd6TWVqdXhMdG83NEZIYXV1bkFhV1ZoKzhUSWp5OUZTeVNNVmwwdFJQQWdqWmhJSFlUeWVXdElYTTdPNzIza1ZwMENlZ1FuMWxyRklVTjBvNGpQaGh3VS9uNG5MeGl5c0ZNckJsZXdPQzljZVhSM3VZU3NhTFRiRHhpRjZKOXA5ZTR0WkZGVjB3emlRS3l6ZDNyOEdDd3NlZUpqeGhrSjJKK3ZKTGZrOGRLVExhUjZMckM3eEhpOVQyNWd3eWZjbU9GWkd1d0pmbWxLMk9YK3QyWkJUTU80MEowem56ZUllTzFybDloYjJVTFFielR4SkRtWkFWT3g1cXc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=DMoYYjZforYbwxcsIp+S73oBlNe3Y6Mnc7Dr9LW1xnRFG8axoSmvcQ2W+NVevn8yxf4PysQQBUeXK3tL3Mx1k9l97snZU9rLYo7iAteTC67OGO1dwbvJ5kdLpx1ukybNo/wkhrkp8HfuQvqqAQR+VuMYSDkFa1M6SI94gvlCESs=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581358029; v=1; bh=XhSg7tbQPsUQbcyIJzwLHmSFlL+P6GnS8H0LCPgpxAc=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=informz1; d=yourmembership.com;
+ h=Date:From:Reply-To:Subject:To:Message-ID:List-Unsubscribe:MIME-Version:
+ Content-Type; i=connectwithym@yourmembership.com;
+ bh=M4aoGiRRGkgZZWh6p1nyxFKI4h6nH1zoeBFbDj5962k=;
+ b=OQcvdnQnxHfdxlnGy/XlQXBsC1vOyJEtWwKPJJpnf6lGlKuw0uUzuHELwUqpYbqiNrgweBozwgvd
+   uWTL23vUfX1R2/27a979EN6G+EHhBzjxBoyNToixKzVC2zMC0PbjtNbBI8CKGWjwg3zJI02afMSe
+   YmKgO9mu0nUmdKYued8=
+Received: by mx-outaaz113.informz.net id h86dso2j0c0b for <jeff.adekunbi@ideabakr.org>; Mon, 10 Feb 2020 13:07:07 -0500 (envelope-from <nde_3548979903.1@informz.net>)
+X-Receiver: <jeff.adekunbi@ideabakr.org>
+X-Sender: <nde_3548979903.1@informz.net>
+Date: Mon, 10 Feb 2020 18:06:59 -0000
+From: "PCMA Career Center" <connectwithym@yourmembership.com>
+Reply-To: connectwithym@yourmembership.com
+Subject: Exclusive reach to top industry talent
+To: jeff.adekunbi@ideabakr.org
+Message-ID: <3548979903.1@informz.net>
+List-Unsubscribe: <http://ymc2.informz.net/ymc2/default.asp?action=u&email=jeff.adekunbi@ideabakr.org&mi=2864929>,<mailto:nde_3548979903.1@informz.net?subject=UNSUBSCRIBE>
+Feedback-ID: 926:2864929:64.132.221.115:informz.net
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="MTQ0OTU4Mjc0MDc4NDM1Njg0MTY0MDc3OTAxNzEyNDg5MzM1MjIzMw"
+
+--MTQ0OTU4Mjc0MDc4NDM1Njg0MTY0MDc3OTAxNzEyNDg5MzM1MjIzMw
+Content-Type: text/plain;charset=UTF-8
+
+
+Jeff,
+
+Did you know the best way to get your open positions in front of active and passive Professional Convention Management Association (PCMA) job seekers is through our exclusive Job Flash™ email? These emails reach thousands of professionals, many of whom can't be reached through other recruitment channels.
+
+If you're not familiar with the Job Flash™ product, watch this short video [ https://youtu.be/XLc9gYWMWjc ]  to learn more. For more information about this effective recruitment option, visit our website at Professional Convention Management Association (PCMA) [ http://careers.pcma.org/employer/pricing/?utm_source=CustMarketing&utm_medium=Email&utm_campaign=JFRE ] .
+
+
+
+Regards,
+
+PCMA Career Center
+ (860) 437-5700
+ clientserv@yourmembership.com
+
+To unsubscribe from future job board emails, click here. [ http://www.informz.net/ymc2/default.asp?action=u&mi=2864929&email=jeff.adekunbi@ideabakr.org&fid=3322 ] 
+{YourMembership, 541 Eastern Point Rd Suite 3, Groton, CT 06340}
+
+
+
+
+
+ 
+
+
+
+
+Powered by Higher Logic   https://www.higherlogic.com/resources/anti-spam-policy
+
+
+--MTQ0OTU4Mjc0MDc4NDM1Njg0MTY0MDc3OTAxNzEyNDg5MzM1MjIzMw
+Content-Type: text/html;charset=UTF-8
+
+
+
+
+<html>
+<head>
+ <META HTTP-EQUIV="Expires" CONTENT="Mon, 01 Jan 1990 12:00:00 GMT" />
+ <META HTTP-EQUIV="Pragma" CONTENT="no-cache" />
+ <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache" />
+ 
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+ 
+ <title>Exclusive reach to top industry talent</title>
+ 
+</head>
+<body >
+ <center>
+<p style="color: #000000; font-size: 11pt; line-height:
+ 20px; font-family: Calibri, Verdana, Arial, Helveltica, sans-serif; text-align:
+ left;"><table border=0 cellspacing=0 cellpadding=0 width='100%'><!--begin_news(6109121)--><tr><td width='100%'>
+
+<font face="Arial" size="1" color="#000000"><p style="color: #000000; font-size:
+ 11pt; line-height: 20px; font-family: Calibri, Verdana, Arial, Helveltica, sans-serif;
+ text-align: left;">Jeff,</p>
+<p style="color: #000000; font-size:
+ 11pt; line-height: 20px; font-family: Calibri, Verdana, Arial, Helveltica, sans-serif;
+ text-align: left;">Did you know the best way to get your open positions in front
+ of active and passive Professional Convention Management Association (PCMA) job seekers is through our
+ exclusive <span style="font-family: Calibri, Verdana, Arial, Helveltica, sans-serif;
+ font-size: 14.6667px;">Job Flash™</span> email? These emails reach thousands of
+ professionals, many of whom can't be reached through other recruitment channels.</p>
+<p style="color: #000000; font-size: 11pt; line-height: 20px; font-family: Calibri,
+ Verdana, Arial, Helveltica, sans-serif; text-align: left;">If you're not familiar
+ with the <span style="font-family: Calibri, Verdana, Arial, Helveltica, sans-serif;
+ font-size: 14.6667px;">Job Flash™</span> product, watch this <a 
+href="http://ymc2.informz.net/z/cjUucD9taT0yODY0OTI5JnA9MSZ1PTQwMTAyMDA5NyZsaT0yMjM1MDgwNQ/index.html"
+ target="_blank" choice="1" rel="noopener noreferrer">short video</a> to learn
+ more. For more information about this effective recruitment option, visit our
+ website at <a 
+href="http://ymc2.informz.net/z/cjUucD9taT0yODY0OTI5JnU9NDAxMDIwMDk3JmxpPTIyMzUwODA3Jmw9aHR0cDovL2NhcmVlcnMucGNtYS5vcmcvZW1wbG95ZXIvcHJpY2luZy8_dXRtX3NvdXJjZT1DdXN0TWFya2V0aW5nJnV0bV9tZWRpdW09RW1haWwmdXRtX2NhbXBhaWduPUpGUkU/index.html"
+ target="_blank" choice="1" rel="noopener noreferrer">Professional Convention Management Association (PCMA)</a>.</p></font></td></tr>
+<!--end_news(6109121)--></table></p>
+<p style="color: #000000; font-size:
+ 11pt; line-height: 20px; font-family: Calibri, Verdana, Arial, Helveltica, sans-serif; text-align: left;">Regards,</p>
+<p style="color: #000000; font-size: 11pt; line-height: 20px; font-family: Calibri,Verdana,Arial,Helveltica,sans-serif;"><table
+ border=0 cellspacing=0 cellpadding=0 width='100%'><!--begin_news(6109122)--><tr><td width='100%'>
+
+<font face="Arial" size="1" color="#000000"><p style="color: #000000; font-size:
+ 11pt; line-height: 20px; font-family: Calibri,Verdana,Arial,Helveltica,sans-serif;"><span
+ color="black" style="color: black;">PCMA Career Center<br> (860) 437-5700<br> clientserv@yourmembership.com<br></span></p>
+<p><img alt="logo" border="0" class="" height="100" id="" src="http://c.associationcareernetwork.com/CC_email_logos/518_email_logo.png"
+ style="border: 0px; height: 100px; width: 250px; vertical-align: middle;" valign="middle" width="250"></p>
+<p>&nbsp;</p>
+<p style="color: #000000; font-size: 8pt; line-height: 20px; font-family:
+ Calibri,Verdana,Arial,Helveltica,sans-serif;"><span color="black" style="color:
+ black;"><a class="Unsubscribe Form" 
+href="http://www.informz.net/ymc2/default.asp?action=u&amp;mi=2864929&amp;email=jeff.adekunbi@ideabakr.org&amp;fid=3322"
+ target="_blank" choice="12" rel="noopener noreferrer">To unsubscribe from future&nbsp;job
+ board emails, click here.</a><br>{YourMembership, 541 Eastern Point Rd Suite 3, Groton, CT 06340}</span></p></font></td></tr>
+<!--end_news(6109122)--></table><br /><br /></p>
+<p style="color: #000000;
+ font-size: 11pt; line-height: 20px; font-family: Calibri,Verdana,Arial,Helveltica,sans-serif;">&#160;</p>
+ </center>
+<!--
+This email was sent to: jeff.adekunbi@ideabakr.org (401020097)
+-->
+<img height="1" width="1" src="http://ymc2.informz.net/clk/red6d.aspx?mi=2864929&u=401020097&b=926">
+</body>
+</html>
+
+--MTQ0OTU4Mjc0MDc4NDM1Njg0MTY0MDc3OTAxNzEyNDg5MzM1MjIzMw--
+

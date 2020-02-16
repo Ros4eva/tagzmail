@@ -1,0 +1,208 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m45-14.mailgun.net (m45-14.mailgun.net [69.72.45.14])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id fffr5i0tclbcnf5reldbm5kcu485ppnutma0ee81
+ for josephs@linuxjobber.com;
+ Tue, 11 Feb 2020 19:56:26 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m45-14.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m45-14.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIOEcxSlp6ZjBoVm5qTFBLbnQrbWM0MUVCUFFuNmF2dnlkTDdEMWprR3RXMDJzVXlmQ0hpU2xlVXRWZVdkUWRRc0QzVGpuT3M1dXgvdU1FcTlQYm11WmsvMUJvV2Z0K1p0RlpGNmxaeXJrcWUyZzk1YzhpOE1VVkh0T3AwNFdlUzBlUzVyTUFkS0o2TUgxdTdtR0NTYW1pOEJkT3VmRWlaSXFxNlhmeHhQcnlXMlVHUytNVXlNQ2VIVjVXdXRxNnZNdHovTG9MV1hzcXREYmg0eGZ3U2hpMTd6cXUwalU3VUl2V3I4TXY5TldKeHdmbGpYdGgreVpnc0YrOS92amlwTHJpTE16cFB3TElhQ1gweUlyYy9sZzBEOXhFSzNYZWh5RVBSN0tCV21acC9BaGNWUkVieEc2dXRFdStIRnAwWHBpcFF6M0c3NjUyNjNvVjQrSHg1RWhmc3NZMkhod2c1QTZuWUhxd2xKb1pBPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=U68Hpd2wfyM/kaslOMV+MbKwVsgqJWIBYhj4XbOTJAHwtzA9ltiA8DbJA8FXzrL9hMPaSV6b/Rv0pO/VDWM1tzzXDdhCyRGDrL2vagHnQtszhOaHACmvoVg8/K+FRVDI9zTF62DzDShE5dDhoZTg5gXqtYIaruli4C1eCrQ6xrI=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581450986; v=1; bh=XfkXsMCDRWGGtSpYIdYJQRVIzT/7f6NyCpoi4XxvnJg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1581450986; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Date; bh=odtp/kSItwbaghJLDHjnz3CHfwqBESNQePEzUwOUX9g=; b=RuAkHYZzAg6gH5fX8L8j20FNmvxwzuJAvf+GNNsID1zcN7b9ln/u3yrA90XMawoosDjFe01S
+ i+Q+O1ciG0S4XvBak9g8kv1qU3UkbuW8NHlb9WtGFw6unYaxaIAztHCZVVRud/CPs3fpyhF0
+ gTlDeI+6W4efedlZHYc8BV9FxFo=
+X-Mailgun-Sending-Ip: 69.72.45.14
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e4306e81ca46b8b084579b9
+Received: by luna.mailgun.net with HTTP; Tue, 11 Feb 2020 19:56:24 +0000
+Date: Tue, 11 Feb 2020 19:56:24 +0000
+Message-Id: <20200211195624.1.C9F75BC988BA7F76@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: himanshu.srivastava@e-solutionsinc.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Himanshu Srivastava <himanshu.srivastava@e-solutionsinc.com>
+Subject: Full Time Requirement :: Java Developers :: Charlotte, NC
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/e96f74=
+0c4ed092853a93e2380695294d6467b751/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"font-size:12px;">My name is Himanshu Srivastava and I a=
+m a Staffing Specialist at E-Solutions INC.&nbsp;I am reaching out to you o=
+n an exciting job opportunity with one of our clients.</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b>Role:-</b> Java Developers</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b>Location:-</b> Charlotte, NC</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b>Description:-</b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Java, Microservices or Springboot</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><a name=3D"_MailAutoSig"></a></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Thanks & Regards</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b>Himanshu Srivastava</b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Tel: <span style=3D"background:white">(408) 686-2320</span></span></s=
+pan></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">email : <a href=3D"mailto:himanshu.srivastava@e-solutionsinc.com">him=
+anshu.srivastava@e-solutionsinc.com</a></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><a href=3D"http://www.e-solutionsinc.com/" target=3D"_blank">&nbsp;ww=
+w.e-solutionsinc.com</a></span></span></p>
+
+<p><img height=3D"38" src=3D"https://talenthirecls5.ceipal.com/articles/Y3N=
+CR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoanJFd3NBVGFlMEo0d3V4Y2=
+xYVXgzVDUrSE9OS0dtN3BVMGpUUTRPSFc0UkYzd2h0d1V2V2FCckFYbjNwSGRKT3dYNGdrcTkyW=
+kIzV2kxbFppTzNhbTdITjVCTytxQytieERLMUtERXBrUGFpSHVoNDlUWGljM1JrdDFIUG84MmpF=
+PQ=3D=3D" width=3D"95" /></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&nbsp;</span></span><img height=3D"26" src=3D"https://talenthirecls5.=
+ceipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDR=
+oaDQvZndYMHBFZDBHQVJuOTFMT0hwY09nYUlqc0xXYU15VzdLYkN5a0tVUzl6M1MwM0xaNjV0NH=
+JmSXBjQWkwazkzK2s1QTJkYUp4WWRyNmllU3M5czVEQVNJNGQrK1c5RU5RZXJIbHdBL0JGbXlGV=
+Gt5TldlNkNNeEdYajlKak1vPQ=3D=3D" width=3D"26" /><span style=3D"font-size:11=
+pt"><span style=3D"font-family:Calibri,sans-serif">&nbsp;</span></span><img=
+ height=3D"26" src=3D"https://talenthirecls5.ceipal.com/articles/Y3NCR1ZHeF=
+pPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoamROZXZvYU5jWi9wTVJpcUdjdDJVO=
+WNZQlVQbE5DZEozY2pBUDFaSXZhVFk2czNMSXU3UXF1ajFZNkhLQlF2RHlRWXVlbXBHWGNQL0Mw=
+TzF4aFlXZElzKzNsOVNReWFhREFiL3EzaDJHbXcvL0tDYllUY0FjelVHOXAza0JNTkpvPQ=3D=
+=3D" width=3D"26" /><span style=3D"font-size:11pt"><span style=3D"font-fami=
+ly:Calibri,sans-serif">&nbsp;</span></span><img height=3D"26" src=3D"https:=
+//talenthirecls5.ceipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSl=
+pKYUhINlA5bHlGcDRoaS80blpUUTVidHVwbUhKTjByc1ZDZ0RmV2lROUpjTHY1M2RyTCtLUjZYW=
+UV3YmlYSVhUMWR5a1dCNGRkTWZ2azZJNlZaVktyY3B5SlJuaFVmbWVpQ2tBTlFEVU5xa3RoalB0=
+dDF0U1l0UnpjS3BDMnFqNXBTTktHNFJIREF5ZDhzPQ=3D=3D" width=3D"26" /></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">e-Solutions Inc. is a 15 year old company having 15 Global Offices ac=
+ross 5 Nations and with more than 1000+ IT & Software professionals. Workin=
+g on cutting edge technologies, we are serving 100+ Fortune2000 companies g=
+lobally. </span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Disclaimer:<b>E-Solutions Inc.</b>&nbsp;provides equal employment opp=
+ortunities (EEO) to all employees and applicants for employment without reg=
+ard to race, color, religion, gender, sexual orientation, gender identity o=
+r expression, national origin, age, disability, genetic information, marita=
+l status, amnesty, or status as a covered veteran in accordance with applic=
+able federal, state and local laws. We especially invite women, minorities,=
+ veterans, and individuals with disabilities to apply. EEO/AA/M/F/Vet/Disab=
+ility.</span></span></p>
+
+<p><img height=3D"23" src=3D"https://talenthirecls5.ceipal.com/articles/Y3N=
+CR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoaUI5aWRzTDRTYjhzbVA5a0=
+VPL1lLZkR6WGhUWWF4dEhHUnlPalg2M08raSszV3ZIZWFzZFcvM3U4Y3puNzMxV3poS1U5M01aW=
+FNpQXZJTzNwM1QyMHg1K1ltdExveW54Y3dPM0w1QVhHS0VCOW5lZk4wWVVNREdnL1NMaGo3R1p3=
+PQ=3D=3D" width=3D"27" /><img height=3D"23" src=3D"https://talenthirecls5.c=
+eipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRo=
+aXBRM1loVVpDYnJkYmxhaHBhU1NKU3hBb0tVdnpCb2FxMk1xVyswN3laRHZiVktBUXRodXE2b0h=
+haTUyY1BJRTdDVzYxVk9jb1pwc2xoK0RaMlNzZ2ZXZkF2U095WGRCVXVkRkZkTWV4aTJGeHlaK3=
+U2UCt6YWJaNytlZ2JkUXFZPQ=3D=3D" width=3D"52" /><span style=3D"font-size:11p=
+t"><span style=3D"font-family:Calibri,sans-serif">&nbsp;</span></span><img =
+height=3D"23" src=3D"https://talenthirecls5.ceipal.com/articles/Y3NCR1ZHeFp=
+POXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoaEtjbDJFU1lVamlLc1FqNk5SaytibS=
+83NURTRzJpVGFJdGUzalNXVURvWmtYTXVCSGVVT0VzbktzdWhIMWowRUt2L3FpbVdBRFVnamxrM=
+2FOWlFqWU5JUGV1MXlLUWI0VVNmNUN0NS95ZWhScUgwSVV5U2VTcmF1YTdqaXpkSitZPQ=3D=3D=
+" width=3D"43" /><span style=3D"font-size:11pt"><span style=3D"font-family:=
+Calibri,sans-serif">&nbsp;</span></span><img height=3D"23" src=3D"https://t=
+alenthirecls5.ceipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKY=
+UhINlA5bHlGcDRoais3Uy9YVUo5TDYxcGN6U2VkZjIwem1KSmM4d1BUaU8rRkttdVROZkh1ZGp4=
+d3pZNXZHeVNHM3lsdjlXd0xBNUxLcU9qempCdDBVTmV0WlRTaG1mdktzWmFLQnZ3ZVBHaWZUMXZ=
+aTU1JMnAwNmdKYTBGYTR0SjI0RlE2WWxndkpZPQ=3D=3D" width=3D"82" /><span style=
+=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif">&nbsp;</=
+span></span><img height=3D"19" src=3D"https://talenthirecls5.ceipal.com/art=
+icles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoaWc3ZFFaSmlkS=
+UFIWVBCbjVzMWhCVTVNT1dlamVBQ3cyYktYUS9sc3hod1JSb2QzYnNzUjJsbWJLRXFmaURuNkpx=
+Y0MwK1A5RGl2U2t1bzNkcHY2S0ZmRjQ3dm9uVm0vTUhUUC9sM3FsRkNFQVE4L3hucThOZ3M4K0U=
+yRmtObEcwPQ=3D=3D" width=3D"80" /></p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEsOwiAQANDTyE4yQ_kuWNgmvYYRmFqaFgzYxOOr7wAv-SVaqVn2AgSAQE=
+SntJAc-eRmo8bJWTvezGz0RcLx5HTtdT_fuZaeS-SxHmz10j6IMDhQEpWLixYJFZpgLCYYBmKNl=
+ntOXjljWfNb7fRa-y_cczk_Ww2B2r_6AtWXKeQ"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

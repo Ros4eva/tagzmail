@@ -1,0 +1,264 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m68-80.mailgun.net (m68-80.mailgun.net [166.78.68.80])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id f91idbvblcqln4r4ptgeir2kghijc3330jq6em81
+ for josephs@linuxjobber.com;
+ Fri, 17 Jan 2020 22:34:12 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFQzhpQ1BxakkwVWJUNkh3YWlOeHhuUFVPYzNvcjlkcU9XcGdBdGJTYjRyd1V4cHlMQW1yejJ2RGsyS1R6dndpcDcwaHkwSGtEaUJMbTJZM0VHcWZIV2xVSnVBWitvU3JBSG95R2VyRzFKb3RWME1LRkRQbkxybDlydTZSZjVCVUVsNEVRalR1bmwwQmlNTEVrbElaSGRWTXFHWEp1cVFtVHN0NEo2a2lLWTdZeE52eUtvMW9heXZkL2tIcVBqYmxGdzBld2VLMHZUbWovbFp2dHFKcS85bGV4cUdMN0ttaytVZlZkSWhTWFhNWnorb0pWa2hQa2hTeWdXM0J2QThlN0JHaFlVS0QrL0dJK1kxejdrTkZlWEw4SitnVHVlaVc1QjRuSkJ3OUhuNFloSnRQaHErZllOSU82ZnJxRk1nempVLzZGMW9hY2U2VnZKYk1Kekd3eDI=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Dq2YTpQjNxypY0IHJFNh+h3dePqYmmzvcLyxjwQTsQmPgrkXmBklyW7xy37U49o7t79Mx0ctjpZLRmv+EBordOrX5CotB1D2LiaEuvdggNaSfUCh18qvQR161lX8ezZGoHM0KPP/b7UQZHeWEJO6f/tFiK9VZhOMvmJNrbXiL4Q=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579300456; v=1; bh=V1rXmR+VNs44PHxWOI4ceynDSgruMDFGd35Ke90WUsM=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1579300456; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=TjDHZ4eHoAVDDyUslzUFek9gcU6Ku8kz9t3WAaatrQI=; b=XqWIk4oqt5vO+FJ3lMZBuALZj2Qf9Q3y6fWz9q5p7lluRLuf0gJxn4sELnTGRoGnEVXJJOdz
+ MuELH+HVL6mpEqPYOdEtJsFZyNHu32jYm4/YAnAChg1xS0Md5d4lHLivhP5943KW7tnGi+CT
+ VPULK3pvR/Vt1bdIthnFuKT+xvM=
+X-Mailgun-Sending-Ip: 166.78.68.80
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e22365ff2f91257f85b4559
+Received: by luna.mailgun.net with HTTP; Fri, 17 Jan 2020 22:34:07 +0000
+Date: Fri, 17 Jan 2020 22:34:07 +0000
+Sender: Akash.n@usgrpinc.com
+Message-Id: <20200117223407.1.BEDF63187398A2EC@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: Akash.n@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Akash Nimrani <Akash.n@usgrpinc.com>
+Subject: =?utf-8?q?_AEM_Developer_=28Java=29=C2=A0__Eden_Prairie=2C_MN?=
+ =?utf-8?b?wqA=?=
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID">
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p>Hello,</p>
+
+<p>Hope you are doing good.</p>
+
+<p>&nbsp;</p>
+
+<p>Please check the below jd and let me know your interest.</p>
+
+<p>&nbsp;</p>
+
+<p>AEM Developer (Java)&nbsp;</p>
+
+<p>Eden Prairie, MN&nbsp;</p>
+
+<p>12+ month contract</p>
+
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></p>
+
+<p><b>Mandatory skills: Adobe CQ/AEM full stack, Java, Spring boot, JavaScript, CSS</b></p>
+
+<ul>
+	<li>Experience implementing Adobe AEM or similar web content management system (AEM 5.0 and later required)</li>
+	<li>Design, develop and support AEM components, integrations and applications</li>
+	<li>Experience integrating Adobe Analytics or Google Analytics with AEM</li>
+	<li>Experience with Adobe Target not required, but consider a huge plus.</li>
+	<li>Experience with Portal or related technologies a plus</li>
+	<li>&bull; Experience with Java, Spring Boot, CSS, and JavaScript</li>
+	<li>Accountable for the delivery and reporting of several Scrum Teams within a Program</li>
+	<li>Establishing program level cadence and driving program level ceremonies (e.g. PSI Planning, release train retrospectives, backlog refinement)</li>
+	<li>Work with other program leaders to drive the definition and refinement of the program backlog</li>
+	<li>Maintain metrics that provide visibility to stakeholders on program-level progress and quality</li>
+</ul>
+
+<p>Act as a liaison to assigned program manager and project managers. Take responsibility for managing dependencies between the program team and third parties, release managers, or between the team and other</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><a name="_MailAutoSig">With Regards,</a></p>
+
+<p><b>Akash </b></p>
+
+<table width="761">
+	<tbody>
+		<tr>
+			<td width="263">
+			<p align="center"><img height="40" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxaG50cGRjckxKQlFZMTBLcC9nTk13bHdhOWZxdWY1Y3RCRWVtczJNNFBuVjV5bHp2aUtPSFhiWlBSQ1NlVGZ2dG1iRXU2UytUSmdoMkdSWVpUMVgxY3h4cWZCSngzelFPbFloSjF1R2xRTUhnPT0=" width="75" /></p>
+
+			<p align="center"><b>United Software Group, Inc.</b></p>
+
+			<p align="center">End-to-End IT Systems | Services | Solutions Provider</p>
+
+			<p align="center"><b>A Minority Business Enterprise</b></p>
+			</td>
+			<td width="162">
+			<p>565, Metro Place South,</p>
+
+			<p>Suite # 110,</p>
+
+			<p>Dublin, OH 43017</p>
+
+			<p><a href="http://www.usgrpinc.com/">www.usgrpinc.com</a></p>
+			</td>
+			<td width="240">
+			<p>Phone: 614-495-9222 Ext.451</p>
+
+			<p>Fax:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 866-764-1148</p>
+
+			<p>Email:&nbsp; <a href="mailto:akash.n@usgrpinc.com">akash.n@usgrpinc.com</a></p>
+			</td>
+			<td valign="top" width="96">
+			<p>&nbsp;&nbsp; &nbsp;<img height="90" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxallLN0FrOFZKWGIxdEM2NFFwU3U0Y0hHSnVvSGlTN1FmR2NlUzZzYXB1TmlGMndqUDFyWitORXAyZVVURXpYYTQxV2RiWUFlNnZUcEtKVG9wL2lwbmRXeTZ1SEpNRWp2OC9tTTF1aW1oQXpPRGVhbW5IVWd1WWg1cTMxakdvSnRRPQ==" width="90" /></p>
+
+			<p><b>&nbsp;&nbsp;&nbsp; 2016 - 2017 - 2018</b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><b>&nbsp;</b></p>
+
+<p><img height="51" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxamlORDRqYTJZT2s3WjFpYnpXTi9kYlluN1ZLYU5UeGpRM1BvdzhlRkYzNlBCRFJaSENlaDljdXJ1L2QwY0xpUVhEUzNMczE4SktMM0RxYmJrSTRxTUpQOVVUVk9oN3NwWWpaY2dBVms3RHIxeHNvQmRqTlRJeUVFQlBtdXZ1ZlBvPQ==" width="216" /></p>
+
+<p>To unsubscribe from this mailing, please reply to this email with the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or click here&nbsp;<a href="mailto:techsupport@usgrpinc.com?subject=UNSUBSCRIBE" target="_blank">UNSUBSCRIBE</a>.</p>
+
+<p><b>USG is an Equal Opportunity Employer. Qualified applicants will receive consideration for employment without regard to race, color, religion, gender, age, disability, military status, national origin or any other characteristic protected under federal, state, or applicable local law</b></p>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div>\</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+
+<div id="EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/09a2327221987e578ded8caa71c94a24d0f25a3b/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEsOgyAQANDTlKWZYZDBBYt-7DWagkPFWDEQkx6_7TvAmzwKPAFU9ho0ACJrTQa4w-4y3u6W0DEN7qzH68nA0V51z1vsYnmr2aOxEpjZBGeFEw3YS0RxiaRnsaCqpEeevCZwqvqlNNnn9nvWvB2fpYQg9V99AVdqJtQ"></body>
+</html>

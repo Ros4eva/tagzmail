@@ -1,0 +1,222 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m232-8.mailgun.net (m232-8.mailgun.net [159.135.232.8])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id h6di0frujuvo0i3kgts59p4bm581pb1pvb4lkp01
+ for josephs@linuxjobber.com;
+ Thu, 13 Feb 2020 16:25:44 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.8 as permitted sender) client-ip=159.135.232.8; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-8.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.8 as permitted sender) client-ip=159.135.232.8; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-8.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGUmlrOVVDc3lyaDdYbkJaRFIwREZhQmc4cU5KZTljeldzZzdWNHRNOHVkaHg1MitkMnl3aWdiWnpmSldubTltN1Uzb1hSNFVta05RTm4ydldzTWlPNHErVlFRRUlGc0RxVlJLZSszaWlHUTVMcDdBelFDVjUvNm5icFZFaFdCRXlTcTdxclV0ay9nOGd2YlVCdHFBODcrR2R4QmkydmR4NisydlV3Y0RIcU9WNDhCYTBHZTdvd3B6NHJOeENqdXJHVmVvak9PQlV3WDZXNHhYS3d2MFlUUzdEZXl6dWFRTTgvanErS3N6NG8rdnFBcXJnNjd0VjQ0cS85MnhCOHpFY1JOa05OVUc0YVB1VGNDSys5ak5yNUFqT2h2T0VyNGZuaG9UTEpKY3dRRlJZRldZeWt2Uzl5V3RBcjJRdGpkY0RBckdkMjlTK25jTTg0dVFSQjJCb01vSjQrRGNNaUEwajJNdjdqSENQRTN3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=ht7Qcz7asibKeNtAl6DV6j7bfGs4bOP67S22tW2kfOkdIDlQMDD3RXz9175ulEMyElWqsO1zvCPv20aXfJTukaPd4574ADDYpvrYkDEkVLpQ2BhDm5acI+N3KPmIHR+qnRi89CGuSuYkuk3Z/TVlmKasBco6tE4x4hfVjpZsT4k=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581611144; v=1; bh=rzVzjGGeCdi+RhgUZdIe8TOnSwMKtkLV0JGFQ8V48nA=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1581611143; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Date; bh=Yls3lweDCbD28mkvvE0OvaUsI+51MJ0fAgUEM08AkJg=; b=C2Hoy24V6pAYwX4w1c1SiloI/mnG+MR1cbi8gZvRhsEbkr3gce4ZDHB+F/dp7NMHre1wIgbf
+ mgKmA5rpNDf6i5x61fcb+Vuf9dkq3jkhMWuFDSkY+entrw8AG158r208HafQh9+wJbXw8msQ
+ quTYPrBhuTxRa6V0QN49mlfq538=
+X-Mailgun-Sending-Ip: 159.135.232.8
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e457886429ef276616877f6
+Received: by luna.mailgun.net with HTTP; Thu, 13 Feb 2020 16:25:42 +0000
+Date: Thu, 13 Feb 2020 16:25:42 +0000
+Message-Id: <20200213162542.1.69F81A8211AF55FC@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: dave.p@e-solutionsinc.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Dave Parth <dave.p@e-solutionsinc.com>
+Subject: Devops Engineer at McLean VA ( Full Time / Onside )
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/b3a133=
+aabc37ab96679642a2a23bf328a0e5deba/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:10.5=
+pt"><span style=3D"font-family:"Arial","sans-serif"">My name is Parth Dave&=
+nbsp;and I am a Staffing Specialist at E-Solutions INC.&nbsp;I am reaching =
+out to you on an exciting job opportunity with one of our clients.<br />
+Should you be interested, please send me a copy of your resume in word/PDF =
+format along with the following details ASAP.<br />
+&nbsp;<br />
+Full Name:<br />
+Current Location:<br />
+Salary&nbsp;Expectations<br />
+Work Authorization:<br />
+Earliest Available date to start:<br />
+Date and times available to interview:</span></span></span></span></span></=
+p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></span></=
+p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><strong><span style=3D"font-f=
+amily:"Arial","sans-serif"">Role - Devops Engineer</span></strong></span></=
+span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><strong><span style=3D"font-f=
+amily:"Arial","sans-serif"">Location: McLean VA</span></strong></span></spa=
+n></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><strong><span style=3D"font-f=
+amily:"Arial","sans-serif"">Duration: Fulltime ( onside )</span></strong></=
+span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></span></=
+p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.0pt"><span style=3D"font-family:"Calibri","sans-serif"">Job description:<=
+/span></span></b></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:10.5=
+pt"><span style=3D"background:white"><span style=3D"font-family:"Arial","sa=
+ns-serif"">At least 4 years of working experience with DevOps or Agile proc=
+esses Develop CICD pipelines using BODM (Build once deploy multiple times) =
+model Build continuous integration and automated deployment pipelines for t=
+he applications Design and develop reusable frameworks, components and libr=
+aries that can be leveraged by other teams Develop Jenkins build systems us=
+ing Maven and Groovy Work closely with development teams to coordinate rele=
+ases and resolve specific build failures Implement automated testing and au=
+tomated compliance checks where appropriate Integrate with ServiceNow to st=
+reamline and automate certain change management process Develop and integra=
+te reusable libraries for pipeline. Integrate pipeline with monitoring tool=
+s like Splunk and ELK Experience with BitBucket, Github for source control =
+Experience with OpenShift or Kubernetes technologies Knowledge of continuou=
+s integration, continuous delivery, automated testing and all phases of the=
+ Software Development Life Cycle Excellent verbal and written communication=
+ and presentation skills</span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></span></=
+p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.0pt"><span style=3D"color:#1f497d">Thanks and Regards,</span></span></b><=
+/span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.0pt"><span style=3D"color:#1f497d">Parth Dave</span></span></b></span></s=
+pan></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.0=
+pt"><span style=3D"color:#1f497d">Desk: +1-732-5925-927 </span></span></spa=
+n></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.0=
+pt"><span style=3D"color:#1f497d">Cell: +1-408-650-6077</span></span></span=
+></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.0=
+pt"><span style=3D"color:#1f497d">Email:<u><a href=3D"mailto:dave.p@e-solut=
+ionsinc.com" style=3D"color:blue; text-decoration:underline"><span style=3D=
+"color:#1f497d">dave.p@e-solutionsinc.com</span></a></u></span></span></spa=
+n></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.0=
+pt"><span style=3D"color:#1f497d">E Solutions Inc.</span></span></span></sp=
+an></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.0=
+pt"><span style=3D"color:#1f497d">2 N. Market St., #400, San Jose, CA, 9511=
+3</span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.0=
+pt"><span style=3D"color:#1f497d"><a href=3D"http://www.e-solutionsinc.com/=
+" style=3D"color:blue; text-decoration:underline" target=3D"_blank"><span s=
+tyle=3D"color:#1f497d">&nbsp;www.e-solutionsinc.com</span></a></span></span=
+></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><img id=3D"_x0000_i1025" src=
+=3D"https://talenthirecls5.ceipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQ=
+eXdyTURXSlpKYUhINlA5bHlGcDRoamN4QjlOVFArT2o3SVA5a2NVZDQzRzNvUjBYK3p0OVQ5cEx=
+GSXNLelNKUHBVcENIZFB0L3ZqaXgzTkVPQytBL0V5ekh4WVJ4c0dCd2NCVWVpRjQzeGZZSG1uMk=
+szcEtDTU1IaTdzK2JhOUZvVFMzS1ZyRUg0TmxYSGZQbGhVNHhzPQ=3D=3D" style=3D"width:=
+95px; height:37px" /></span></span></span></p>
+<br />
+&nbsp;</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEsOwiAUAMDTyE7Ce3xKFywaE65h-FqaFhqwicdX5wATTQ5aKFIMMmQMgY=
+NCKZACVbPVsGgEWKyU9nET7HjRdB9tv96l1VFqoKEdZDUchVKBYZ4jaglOuhAgAWpMnis3kZ7ys=
+0Qj50mTbrY20rmOX7iXen225n3q_-oLxG4p4Q"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

@@ -1,0 +1,186 @@
+Return-Path: <bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com>
+Received: from xtrwpfpc.outbound-mail.sendgrid.net (xtrwpfpc.outbound-mail.sendgrid.net [167.89.63.60])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id lsd7m3ul2p4lhbjrq16jr10gs00l4881vtlfjho1
+ for josephs@linuxjobber.com;
+ Fri, 31 Jan 2020 18:45:18 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of email.bullhornmail.com designates 167.89.63.60 as permitted sender) client-ip=167.89.63.60; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=xtrwpfpc.outbound-mail.sendgrid.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of email.bullhornmail.com designates 167.89.63.60 as permitted sender) client-ip=167.89.63.60; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=xtrwpfpc.outbound-mail.sendgrid.net;
+ dkim=pass header.i=@bullhornmail.com;
+ dmarc=none header.from=tanishasystems.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHRkxsYms3dUNlRkcrMjhhMW80NEE3RjlXb2JrN2dINXlsNTMyWXpUMUZ2SFZ1YlhOUzd2bHZSVnRvRWZjaXZLa1c1T3JwckFOSlJuZFdXM1hKdmI2N2l4ZnhIUE53TXVqN1N2SFNlM25Gb1dNdGdBQTNLalF4S1MvT0V3RSs3REY5ODRuaXVTVjBmcGsrVEcwSUV3ODZvejc3Zm9jNHBOa1FWQ3huYVNoeFl4b1ZQMTlYdks1MjF1L1BMS1I4Z2ZIQmhWYmRTelVQdTJOa2ZDZEdaYk80emVwZTRhS2pIK2Z4Q1NNcEcxSjh4NnY4dU5XcUdqNGVwL25sbDc4Tjdtak0rd3FTaUVGbmFXNUloN1pmUEZrR0p2c1JSYXdoNWJiMGR3anhLTis4Q1liWnVRNFFnKzloVTc3RjFzREZDeWJxdWVPdWY4MHNBRU1pdWEyelFIbE9WdDhwK1dBWnNLQ0kxaGpseWlHdjZRPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=e0PANjPGyaiSLNW1ps8097Azlx5Pq328FzJbo2A2wTdl4IO2qQBcNcyeJCJWPD/TBM+E8YzGZCsNvjda6W60F6nynqZH8UjPkZzygWnEnUF0dsoSs9hyxZ1RDcCOdlq6uBkrlu/eTT/FsoYqYRwEWUpNN9XyXLD66dsYKdUS1No=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580496318; v=1; bh=wyO4D1614jQt3i78ijZ0sQjQXfJqurMO7mFuEMfo66s=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=bullhornmail.com; h=from:to:subject:mime-version:content-type; 
+	s=m1; bh=c2X4rnXpi0waDS7BFLdLogQfmW7NXRz/l7NQW4Ueia8=; b=Hyqo2bL
+	JJkcgFGZgCQZCzZfTHcwj0GlbPP+z17RvrZRYUidl4iN8V3PU9BLonwL6/NkGhKZ
+	fdHlxqehcb/rn4UY2cKfsf8SrY/SFsNf0l+qvEEx4L9RWRRi39d4+qdHcTKOJZY4
+	XJaSmBBEY1TS5JCuXG/igTJ7pKv3T+N3Cl/I=
+Received: by filter1402p1mdw1.sendgrid.net with SMTP id filter1402p1mdw1-30547-5E3475BA-42
+        2020-01-31 18:45:14.86911479 +0000 UTC m=+142276.961587915
+Received: from outbound2.bullhorn.com (outbound2.bullhorn.com [52.129.17.4])
+	by ismtpd0088p1mdw1.sendgrid.net (SG) with ESMTP id KW9-h2D3Q1SWxTfBW9Doug
+	for <josephs@linuxjobber.com>; Fri, 31 Jan 2020 18:45:14.784 +0000 (UTC)
+Received: from MassMailing (sl131app6.bos.bullhorn.com [10.77.2.65])
+	by outbound2.bullhorn.com (Postfix) with ESMTP id 66AE7A0435
+	for <josephs@linuxjobber.com>; Fri, 31 Jan 2020 13:45:14 -0500 (EST)
+Received: from mail pickup service by MassMailing with Microsoft SMTPSVC;
+	 Fri, 31 Jan 2020 13:45:14 -0500
+Message-ID: <654202513.1580496314112.JavaMail.cfservice@sl131app6>
+From: Ram Choudhary <rammehar@tanishasystems.com>
+To: josephs@linuxjobber.com
+Subject: DevOps with good experience with Ansible -- Pittsburgh, PA
+Mime-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_476896_297571214.1580496314111"
+X-Priority: 1
+X-Charset: UTF-8
+X-messageUUID: FCEBDEFE-BEE6-24FA-42C9CC07106E920D
+X-OriginalArrivalTime: 31 Jan 2020 18:45:14.0257 (UTC) FILETIME=[930B9010:01D5D866]
+Date: Fri, 31 Jan 2020 18:45:14 +0000 (UTC)
+X-SG-EID: 0yz/L0x4SOtxmT5Q2ZIaRuB3YhbCNPbHhve+IF+xP0qzTtuUxN67kwUps0W0wczC43ipTBj/QjM2Zk
+ fWddTEi8DOKhrFGxiTE25il5E+lIfQwf2vgGo1rCy8SvjXY3u7vPD6wfd0crV6kvK1xBDHufpwajAt
+ tQozuDItEoV1inVjD9VEf9NUPkwNpbHginT4/xkqgtXQ/OcsXySQ8R/J20b/s+thmczNyRPA9+bJTM
+ w=
+
+------=_Part_476896_297571214.1580496314111
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_476897_1937463482.1580496314111"
+
+------=_Part_476897_1937463482.1580496314111
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Hi there,
+
+
+Please go through the below requirement and share your consultant updated resume and expected per hour rate if you are interested in the same.
+
+
+ 
+
+
+Note: If you do not wish to receive our e-mails in future or have received this e-mail in error then please reply to the sender with "REMOVE" in the subject line.
+
+
+
+ 
+
+
+
+Role: DevOps with good experience with Ansible 
+
+
+
+Location : Pittsburgh
+
+
+
+Duration: 6+ months
+
+
+
+ 
+
+
+
+&bull;Good experience with implementation of common DevOps tools and good experience with Ansible
+
+
+
+&bull;implements application solutions using a microservices or service-oriented architecture design patterns
+
+
+
+ 
+
+
+
+ 
+
+
+
+Sincerely,
+
+
+
+
+Ram Choudhary
+
+
+
+
+Email
+: 
+rammehar@tanishasystems.com
+
+
+
+
+Website
+: 
+www.tanishasystems.com
+
+
+
+
+Tanisha Systems Inc. | 99 Wood Ave South | 350 5th Avenue | Suite # 308 | Iselin, NJ 08830
+
+
+
+
+ 
+
+
+
+This email was sent to josephs@linuxjobber.com, by Ram Choudhary<rammehar@tanishasystems.com>
+To remove your email address permanently from future mailings, please go to the following URL:
+http://email.bullhorn.com/wf/click?upn=9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwthXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYeN-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtMumGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPqt1LVwnCMSmr9WCD3NN5DISTTn7tH2jNOQHeJBrYdUs6My2rvJ70TTzicTG5VL-2F3BuzYORu-2BR5Kkx62Qld3GO7mOqFy1kuIKcD7Cs2HpknP6v2S3mMHBp8jxiIp3af2TSHg-2F3H36H36dJI03sQnDeOazRF-2FfzwmrWL6NbYRg2ckLNBRuTDHkcsGie18qM80Ig-3D
+------=_Part_476897_1937463482.1580496314111
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<p class="wordsection1">Hi there,</p>
+
+<p class="wordsection1">Please go through the below requirement and share your consultant updated resume and expected per hour rate if you are interested in the same.</p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><strong><u>Note: If you do not wish to receive our e-mails in future or have received this e-mail in error then please reply to the sender with &quot;REMOVE&quot; in the subject line.</u></strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Role: DevOps with good experience with Ansible </strong></p>
+
+<p><strong>Location : Pittsburgh</strong></p>
+
+<p><strong>Duration: 6+ months</strong></p>
+
+<p>&nbsp;</p>
+
+<p>&bull;Good experience with implementation of common DevOps tools and good experience with Ansible</p>
+
+<p>&bull;implements application solutions using a microservices or service-oriented architecture design patterns</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="color:navy">Sincerely,</span></p>
+
+<p><strong><span style="color:navy">Ram Choudhary</span></strong></p>
+
+<p><strong><span style="color:navy">Email</span></strong><span style="color:navy">: </span><a href="mailto:rammehar@tanishasystems.com" target="_blank"><span style="color:navy">rammehar@tanishasystems.com</span></a></p>
+
+<p><strong><span style="color:navy">Website</span></strong><span style="color:navy">: </span><a href="http://email.bullhorn.com/wf/click?upn=5pSeBgQvL8CbdtPamO2LiHrnmO6q20tlMNNotvdbns6eO7osrZ0PZi4GQPyy-2Fz81-2BjY4yla8iWRvy416KftXyGd-2FpEKIjtGRkZH1jU1AoCm2E524YVFa-2BeAOMbQ3mz281MUjWGb7efeAyW5-2FuCQycU1O8dl2ADF5ggh1eMfsYoC9uTmFiE4UZmcF0Zb56syuHwGWHsaRkmRPFrQwrfU-2BeTtSEhGbeaTf2aQXqmHHd6U9VCL6aYLraGr9ImL2bX1biis1yK78Y07YzfMlmdcZrogkbhSOwplZ51yABj9B4yPTmBHkJ0iQuWViYU4TFnHZADoUu5EP44BiMrjpAs3Bc1pj-2Bc-2Bv-2Fe2di5ZMIbWIRPOt4Ejdbd8eB4tkAMTiPGokvknVy-2Bo0fB8-2Bdb1v6wzIBc479lf8fAxteiqWTaIrkmdCaOYUR5EjDqGHrqVSQbr3MmA1plKubvaeMdhdN-2FUsGhIZMlUDfvcMPX5Z8I5-2BUXw-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPqt1LVwnCMSmr9WCD3NN5DIdtqYrdWu3FksbjWXu-2BgciC7I2XZR-2BhJlUXFUHpmohA6Gu5193a4sC8OERkv30D1s1IisDU9UVel19gPWyhRajs5kZoqnXvDuv3w9ZySAiEfoR65JRP4RU3R09hVp48RCquNYTQstXbC00CRYgEj36y2O-2Fkpb6YbXHVqgw55XmBk-3D" target="_blank"><span style="color:navy">www.tanishasystems.com</span></a></p>
+
+<p><span style="color:navy">Tanisha Systems Inc. | 99 Wood Ave South | 350 5th Avenue | Suite # 308 | Iselin, NJ 08830</span></p>
+
+<p>&nbsp;</p>
+<br><div style='color:#999999; font-size:8pt; font-family:arial;'>This email was sent to <a style='color:#848484' href='mailto:josephs@linuxjobber.com'>josephs@linuxjobber.com</a>, by Ram Choudhary<rammehar@tanishasystems.com>.<br>To remove your email address permanently from future mailings, please <a style='color:#848484' href="http://email.bullhorn.com/wf/click?upn=9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwthXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYeN-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtMumGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPqt1LVwnCMSmr9WCD3NN5DIdtqYrdWu3FksbjWXu-2BgciH9gOm-2FzzNZNCYvumtSXE1h6vHc1Dcd2CPoyiGsrjQm9-2BueCDX-2B3o-2FQcI0mq-2FsMP-2BgZNM9t85xZB8m-2F-2BeWiEks-2FOU1piKN5sR0T7oKz6sbsaVtPd8Owl1WYI93CM3VzbQMguCjzcgWNWigoq2R2EEd8-3D" target=_blank>click here</a>.</div><img src="http://email.bullhorn.com/wf/open?upn=xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPqt1LVwnCMSmr9WCD3NN5DIdtqYrdWu3FksbjWXu-2BgciF7J7df8tGmu-2BTUsb0EAVpX4EFKhqjOsOwa7nXbs0sgJPzpqkRt8CapTEGnxG7dQfeW3jKCG-2FNif5I0yEE2WFK-2BC22QhMhbRgd9pMAwJajmD05VsQWlHxPv1PitSvN3DKt8-2F1yjMJndNWBvcy6YCJMc-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+
+------=_Part_476897_1937463482.1580496314111--
+
+------=_Part_476896_297571214.1580496314111--

@@ -1,0 +1,147 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m68-80.mailgun.net (m68-80.mailgun.net [166.78.68.80])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id sdbj5kddhsbtag1vj3b876tc3jur20e2se0h4b01
+ for josephs@linuxjobber.com;
+ Thu, 13 Feb 2020 14:51:06 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFRTIra3JrWTVsMktkK2pEUFlHeHpBRnNIbUF1TjlCZkpoN0RuaDE1Q1U5SGcxeURzdzQ3eFNtWEppbnR5YUFzcUxoSFQzb1hUbWhrUnNBT3YvV1BGcmhFSE1ta1FSZFFKckY3QjJTTlNMdHloYUpycU9kbWtsSlpXYlphVVVrdjJNSUhTaWdCdTc4dU1Oc24xemFZZVdBRmp0Y1MrYVhaazRXY0RpclFZRXFRZXhVS2VVSUVlanJmYmc0VlpsZWJ4eEhOSGFCS0diMm9PTGJKV1cxU2dRVTZXWStidGk5ZkVPaTVrRDl0Y2JqYnhIT0lBYkl1R254Z3h5RW5DVEN5NXBZS1hGb1hyMWJMdXQyZ3dLNjVuUzJhS2E5YkI4L2g5MVlGamdtdUtucjBwOHFOY0VXR2xaRmduQTBrOTFvOUxQUld2WnFtNjJudGRnSmhEakNVVms=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Yzts0Ujv0R/aywQxJ0GbTWbB545/eOXSLAcJNETK/2is4Z7ivAKm8R6Ud3Dam7t/eRuKu7u6aXrCWSe/qHtgDb/uOZUelZsdDb99SaS15LbBX+n8BNEEUfHuZur50e4s712ETPDtT+T3l57jdvJ3xEOHbOijBx9r+/QtFYRhpTE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581605469; v=1; bh=qRexvT64IKBJWFx4LjQgWGWJ1jospKfM0CqpNLU740o=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1581605468; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Date;
+ bh=dIDb/xgXkiSh6v4idO+nWgs9QOm2D2Dp6DbQ3ekDiSo=; b=jKuVAy3vDGZPve0yYzXnqvUNO8VKX8eBUYUYjBoENVBAFqPUFOgDpkYim0JFH9z7YriV561J
+ NwYzgkqHq1KxLNWXwnY4e5V78Kr2vauDBI7iKBXD0VnNjxESWTyDbuEmJk43tcM0fJp9wLtn
+ 8XWEo0JvCJ8oay1W358VARCVjFk=
+X-Mailgun-Sending-Ip: 166.78.68.80
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e455f745f68edf3cdd1873a
+Received: by luna.mailgun.net with HTTP; Thu, 13 Feb 2020 14:38:44 +0000
+Date: Thu, 13 Feb 2020 14:38:44 +0000
+Message-Id: <20200213143844.1.E7D8489DBEF0D419@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: Vijay.ka@usgrpinc.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Vijay Ka <Vijay.ka@usgrpinc.com>
+Subject: Urgent - Hiring - DevOps Engineer @ Austin,  TX
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">Hi Joseph Showunmi</span></span></span></span></div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">I trust you are doing good.&nbsp;</span></span></span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">I found your resume online and wanted to know your availablity for below job opportunity. Kindly review and let me know your thoughts to proceed further.&nbsp;</span></span></span></span></div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">Thank you.&nbsp;</span></span></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<div>&nbsp;</div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b style=""><span style="background-color:#ffff33;">Title: DevOps Engineer</span></b></span></span></span></div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b><span style="background-color:#ffff33;">Location: Austin, TX</span></b></span></span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffff00;"><strong>Skills:</strong>&nbsp;</span><b style=""><span style="background-color:#ffff00;">Docker, Kubernetes, scripting&nbsp;</span></b></span></span></span></div>
+</div>
+
+<div>
+<div>
+<div>
+<div>
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+</div>
+
+<div><br />
+<span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong><span style="background-color:#ffffff;">Thank you.</span></strong></span></span></span></div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="display: none;"><span style="background-color:#ffffff;">&nbsp;</span></span></span></span></span></div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong><span style="background-color:#ffffff;">Note: if this Job opportunity is irrevelent to you, kindly ignore this email.&nbsp;</span></strong></span></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<div>&nbsp;</div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong><span style="background-color:#ffffff;">Warm Regards,</span></strong></span></span></span></div>
+
+<div style="margin-bottom: 8px;"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong><span style="background-color:#ffffff;">Vijay Kumar A</span></strong></span></span></span></div>
+
+<div style="margin-bottom: 8px;"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">United Software Group, Inc.</span></span></span></span></div>
+
+<div style="margin-bottom: 8px;"><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">Desk:&nbsp;&nbsp;&nbsp;&nbsp; 614-495-9222 Ext.322</span></span></span></span></div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">Mobile:&nbsp; &nbsp;332-255-1521</span></span></span></span></div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">Fax:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 866-764-1148</span></span></span></span></div>
+
+<div><span style="color:#000000;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color:#ffffff;">Email:&nbsp;&nbsp;&nbsp;&nbsp; Vijay.ka@usgrpinc.com</span></span></span></span></div>
+
+<div>&nbsp;</div>
+
+<div style="margin-bottom: 8px;">&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div style="margin-bottom: 8px;">&nbsp;</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+
+<div id="EditorDefaultBodyId">&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/b8a266a4c9ea17e2f802491b96720cffcc56d7f5/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEsOwiAQANDTyLKZASzDgo2hXsPwGSyNlgbSxOOr7wAvO2QIAKI6CRJAokKtSOsJp8V40mT9bbmD12gvGs7x7Efd05TaW6wOr1QgMFhJMUTCXDiySmgimYzzLDqXR81OKiDR3dYGH-v4Pa-6n5-txcj9X30Bd9wnVQ"></body>
+</html>

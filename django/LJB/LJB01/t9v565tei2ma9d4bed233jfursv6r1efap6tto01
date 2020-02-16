@@ -1,0 +1,341 @@
+Return-Path: <postmaster@notify.yochana.com>
+Received: from m233-158.mailgun.net (m233-158.mailgun.net [159.135.233.158])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id t9v565tei2ma9d4bed233jfursv6r1efap6tto01
+ for josephs@linuxjobber.com;
+ Thu, 02 Jan 2020 18:25:40 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notify.yochana.com designates 159.135.233.158 as permitted sender) client-ip=159.135.233.158; envelope-from=postmaster@notify.yochana.com; helo=m233-158.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notify.yochana.com designates 159.135.233.158 as permitted sender) client-ip=159.135.233.158; envelope-from=postmaster@notify.yochana.com; helo=m233-158.mailgun.net;
+ dkim=pass header.i=@notify.yochana.com;
+ dmarc=pass header.from=yochana.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGeEthbGU1Ykc2WE45NWNLdUt4UXJNcXN5MVB3cU5zQ3lYKzNqQlJkeWhFSGRzNlNhcC9HUFVvUnpFVWViV2RzSFBsN1dDcnRzZGo3K3hBaUUraTFFQ3dVSXg0bStEUXkwYndZYk9GTitQbE1ZU200b0RVYVo4cEpCQXY3S09GUDFuZmpJRHpPYkQ3VmxoVEJUUmlxdHZSMzJFR21YV1JlcnM4KzREUjF5K2NBTldxRWZYeVRIRTJSZ0RhekpPM2M3K0JCaTE4L2g4aGNYZ2lPZlVjR3Raam1yWmZGdExnd281TTBUWFRBMFpRZXVXMDF0SkkySU5WNzMwdk1mYkNVUE9XUGMxQTBXU2Zkc1ZJTXkrWjN0NlhwVmxtQW9yaHlQa2k3T3ZjWG1nU3c9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=SbS/MU3rp8yUPZl1JxIp5K7qB2vKFmPn0QgOFPniRklUvMVwADqse0uOVeU1doerXmmOqP4Os7XbUbge7eVSUxLBA1osLnvpSKfleWBAOzQFZJMmepWscF6wAnlxp9p/urSTRvaJHItv4z3nG2xLCyvtJYWFCfXmwkoTdNDYCvk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577989543; v=1; bh=YPFnXQrvYrZWIbFtdr1H3lUhFM+80mp33/2pEhmOSBY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=notify.yochana.com; q=dns/txt;
+ s=pic; t=1577989542; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=EWNbmnEvxWvE1qBa09HZfeeLZhep56pv6ST1vseINew=; b=q/whxUwtAwhNMuGKB8hS7wfpMqRjro/8tO7esfgkn2+wo3KDodJ5pMOv9nfVJNH3ArEGtxa0
+ +CCZi/UIzCE9Jxls36f9g5kAgBEvYmZN6vzJxi92MyJEaqpG8sF7jQWClGvD8zO/Opadn+wR
+ F/y7515Bb5Txqgz8OD25Yijg94M=
+X-Mailgun-Sending-Ip: 159.135.233.158
+X-Mailgun-Sid: WyI3OGZiMyIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI5Yjg5MWIiXQ==
+X-Mailgun-Batch-Id: 5e0e3582b9bfcbb0e6f689aa
+Received: by luna.mailgun.net with HTTP; Thu, 02 Jan 2020 18:25:06 +0000
+Date: Thu, 02 Jan 2020 18:25:05 +0000
+Message-Id: <20200102182505.1.4A38C4D2C50F2D72@notify.yochana.com>
+X-Mailgun-Native-Send: true
+Reply-To: rakesh@yochana.com
+To: josephs@linuxjobber.com
+From: Rakesh Ch <rakesh@yochana.com>
+Subject: Looking for Cloud Consultant at (NYC metro OR Cary-Charlotte OR GA-
+ Atlanta) for Full Time
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Oorwin Email</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+        
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            /*table-layout: fixed !important;*/
+            margin: 0 auto !important;
+        }
+        
+        table table table {
+            table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        
+        *[x-apple-data-detectors],
+        /* iOS */
+        
+        .x-gmail-data-detectors,
+        /* Gmail */
+        
+        .x-gmail-data-detectors *,
+        .aBn1 {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        img[Attributes Style] {
+            width: auto;
+        }
+
+
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head>
+
+<body style="background: #ffffff; min-width: 100%; max-width: 620px;">
+    <center>
+       <table cellspacing="0" cellpadding="0" border="0" align="center" style="width: 620px;">
+           <tr>
+                <td style="padding: 20px 0px">
+
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="margin: 0;">
+                        <tr>
+                            <td width="100%">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                        <tr>
+                                        <td style="padding: 0px 0px; font-family:calibri, Arial, Helvetica, sans-serif; font-size: 14px; color:#6f7477; line-height: 1; word-break: break-word">
+                                            <!--this comment line is required by mohan -->
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Hi, </span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Hope you are doing well&hellip;!!!</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">This is Rakesh from Yochana IT Solutions, we have an urgent requirement with one of our clients,</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">please go through the requirement below and let me know your interest.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">You can forward this opportunity to your friends or colleagues; so that we can help someone who may be desperately looking for opportunities. I sincerely appreciate your time.</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="x"><span style="font-size:12pt"><span style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,serif"><b><span style="font-size:11.0pt"><span style="background:yellow"><span style="line-height:105%"><span style="font-family:&quot;Calibri&quot;,sans-serif">Job Title: Cloud Consultant</span></span></span></span></b></span></span></span></p>
+
+<p class="x"><span style="font-size:12pt"><span style="line-height:105%"><span style="font-family:&quot;Times New Roman&quot;,serif"><b><span style="font-size:11.0pt"><span style="background:yellow"><span style="line-height:105%"><span style="font-family:&quot;Calibri&quot;,sans-serif">Location: (NYC metro OR Cary-Charlotte OR GA- Atlanta)</span></span></span></span></b></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:11.0pt"><span style="background:yellow">Mode: Full Time</span></span></b></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:11.0pt">Responsibilities:</span></b></span></span></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Engages with multiple existing and new HCL accounts</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Creates and delivers complete engagements, orchestrating disparate offering teams to deliver a rich set of cloud adoption and operation services that come together to deliver an entire engagement</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Responsible for profitable completion of successful client engagements</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Leads client-level strategy and envisioning sessions</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="background:#fffefe">Leads a functionally aligned project team consisting of Technical and Solution Architects, together with Cloud Technology Specialists covering domains such as assessment, migration, cloud native development, security, automation and next generation IT operating models.</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Assists in the development of the technical community. Shares knowledge and technical expertise. </span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Responsible for the creation and curation of Cloud Reference architectures, blueprints and other reusable assets.</span></span></span></span></span></li>
+</ul>
+
+<p class="wordsection1" style="margin-left:15px">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Qualifications, Education and Experience</span></span></strong><span style="font-size:11.0pt">: </span></span></span></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">First level University degree</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Typically 10+ years&rsquo; experience working in Technology and Solution architecture</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Certified as an architect (or DevOps specialist) in one or more Public Cloud platforms (AWS, Azure, IBM Bluemix or Google Cloud Platform)</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Has played the role of Principal Consultant / Lead Architect / Chief Architect / Chief Technologist / CTO in complex cloud environments</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Demonstrable, deep and in-depth knowledge &amp; understanding of the Financial Services vertical</span></span></span></span></span></li>
+</ul>
+
+<p class="wordsection1" style="margin-left:15px"><span style="font-size:10pt"><span style="line-height:12.75pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Domain, to include: Retail &amp; Commercial Banking, Capital Markets, Trust, etc.</span></span></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">10+ years of experience in the some or all of the following Financial Services, like CCAR, stress testing, VAR, SOX-404, PCI, Spark, risk modeling, time series, decision science, trading analytics, regulatory reporting, capital markets, and retail banking.</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">5+ years of quality Software Development Lifecycle experience in the Financial Services vertical domain.</span></span></span></span></span></li>
+</ul>
+
+<p class="wordsection1" style="margin-left:15px"><span style="font-size:10pt"><span style="line-height:12.75pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">.</span></span></span></span></p>
+
+<p class="wordsection1" style="margin-bottom:16px"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="page-break-after:avoid"><span style="font-family:Calibri,sans-serif"><strong><span style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Knowledge and Skills</span></span></strong><span style="font-size:11.0pt">:</span></span></span></span></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="page-break-after:avoid"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Strong visionary skills, supported by technical depth and credibility.</span></span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="page-break-after:avoid"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Effective communicator with client-facing skills</span></span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Effectively collaborates, builds relationships and influences team members to work toward common objectives across functions and groups.</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Routinely exercises independent judgment in developing methods, techniques and criteria for achieving objectives</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Regularly makes strategic decisions</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Demonstrates seasoned judgment in client business matters</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Demonstrates strong, consistent business acumen and general management leadership abilities including accountability</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Recognized and highly credible technical leader with current architectural and technical skills across domains including:</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Traditional infrastructure and application technologies</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Public, Private cloud and Hybrid IT environments</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Popular application middleware stacks </span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">PaaS (e.g. Cloud Foundry, Azure, OpenShift, IBM Bluemix) </span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">IaaS (AWS,&nbsp; Azure, IBM SoftLayer, Google Cloud Platform) </span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">SaaS, XaaS and Cloud Brokerage</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Cloud Native development and architecture</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">DevOps &amp; Agile </span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="line-height:12.75pt"><span style="tab-stops:0in"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="background:#fffefe">Keeps themselves updated on latest technology trends and forms opinion on the same.</span></span></span></span></span></span></li>
+</ul>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Thanks &amp; Regards</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Rakesh</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Yochana Solutions Inc</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Direct: 818-858-0234,</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">248-213-6465 EXT:102</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Mail ID:&nbsp;</span><a href="mailto:rakesh@yochana.com" style="color:blue; text-decoration:underline" target="_blank"><span style="font-size:11.0pt">rakesh@yochana.com</span></a></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">|8&nbsp;</span><a href="http://www.yochana.com/" style="color:blue; text-decoration:underline" target="_blank"><span style="font-size:11.0pt">www.yochana.com</span></a><span style="font-size:11.0pt">|</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt">Note: This is not an unsolicited mail. If you are not interested in receiving our e-mails then please reply with subject line Remove.</span></span></span></p>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: auto;" width="100%">
+	<tbody>
+		<tr>
+			<td style="width: 100%; padding: 10px;">&nbsp;</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td style="width: 100%;" width="100%">
+			<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td style="background: rgba(46,204,113,1);" width="100%">&nbsp;</td>
+					</tr>
+					<tr>
+						<td style="width: 100%; background: #ffffff;" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td style="width: 100%; padding: 15px 10px;" width="100%">&nbsp;</td>
+								</tr>
+								<tr>
+									<td style="width: 100% !important; padding: 10px 10px 0px;" width="100%">&nbsp;</td>
+								</tr>
+								<tr>
+									<td style="width: 100%; padding: 15px 10px;" width="100%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>                                        </td>
+                                    </tr>
+                                                                       
+                                    <!-- <tr>
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; font-size: 11px; color:#6f7477; padding:10px 20px; border-top: 1px solid #6f7477;">
+                                            This emailer is addressed to and intended only for Beanhire customer and is not spam. You may reach out to Beanhire helpline to clarify any issues that you may have with regard to any information contained in this emailer. 
+                                            <br>Disclaimer: Beanhire won't be responsible for the accuracy, adequacy or completeness of any information in this emailer and is not responsible for any errors or omissions or for results obtained from the use of such information. Beanhire does not have any liability to any person on account of the use of information provided herein and the said information is provided on a best-effort basis
+                                        </td>
+                                    </tr>-->
+                                                                        <tr bgcolor="#484848">
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; width: 100%; font-size: 11px; color:#ffffff; text-align: center; padding: 10px;">
+                                            
+
+                                                                                                Copyright &copy; 2020 | Powered By   &nbsp;<a width="60" height="20" href="https://app.oorwin.com" title="Oorwin Labs Inc."> 
+
+                                                <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" title="Oorwin Labs Inc." style="max-width: 100%; vertical-align: middle;" height="20">
+
+                                                <!-- <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" style="max-width: 100%; vertical-align: middle;" height="20" /> --> </a>
+                                                                                                                                                      <br>
+                                                      To stop receiving these emails please <a style="color:#fff;" href="https://yochana.oorwin.com/unsubscribe.html?company_id=113&&message_id=47605&&to_email=josephs@linuxjobber.com">click here</a> to unsubscribe.
+                                                                                        </td>
+                                    </tr> 
+                                                                    </table>
+                            </td>                
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+       </table>
+    </center>
+<img width="1px" height="1px" alt="" src="http://email.notify.yochana.com/o/eJwVzEEOwiAQAMDXyJHsLguFAwfTxn-wlAYaLabVxP5efcDMHIP4gKJaJCAABEJPFqxGzVfjR55otHCjaaALw9ZfbTn12XNNW9K5P1SNAHlIkgIb4bSgKUUYZyCXHLpsgtrj2o_yrMdvuLft_Vm7SNn__Aus3SWf"></body>
+
+</html>

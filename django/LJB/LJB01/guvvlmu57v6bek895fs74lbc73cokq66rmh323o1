@@ -1,0 +1,165 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-153.mailgun.net (m71-153.mailgun.net [166.78.71.153])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id guvvlmu57v6bek895fs74lbc73cokq66rmh323o1
+ for josephs@linuxjobber.com;
+ Fri, 03 Jan 2020 21:52:16 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIQzNuM05oNXRLRnIxeFlqZGVnRjEzc3pZblVhWVdzMDdRc0hQKzFNc0lsUlYvbFBWTWdzTlpRTENUNVQ1VkhNQkpQRFVvT2Z4eWRjWUNXNWdkQlM3U2ZvQ1Ntb01YZzdqTlRtM3lUWGpGKzN0UTgvQlAzTlg2K0IxcGU4YVVkM3haMm11MmJ1ZkVmUTR5S2s0UzhBaTJQMExGSUtHbmhLUTFXcVF3cDBuN1l3QUsrckNTZDc0Qk5mQ29sOE1HYy8zTG00S0YwUDlJcFI3VDkrd0NMak9QVUllcHFxSUZEVGJOZU12azI2aHJka05FeS9rb2l4OTIxaG5vUlFqMnlYWHNEbzVQNVBsMUg1elRQK3JycHEwOEFmVjgrdFd1NGVDamtwNWd3eThSSzhxOHBmVlVMaTRQK2xuRGJtOVQyL1N6UGZsdmVUbXJNNVhQb1BmVlZzMm0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=ft7LhqmleAMqGri/PvIgvUnmDzTzG/INC56Dk/JvP+B4JimAz7K5pOmNJ63Z3hdkZw6wh4m/XywaHf8gk8y2hDZja5JILpaEMe2tYWe+46G4AZetXKAhcsblMgRmY82CyTRPKSFx4p3HbGX3UMWWX8NM790/DRXgEIaev3tMdgs=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578088338; v=1; bh=QyWmo1oPQrxv1AjH2eonbLEPFgxFzCLnsAhbZIBSk+I=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1578088338; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=eM2qptReTsblmYUNnehMhdzzfo+9eic3eOeVv2SbS5o=; b=ZgY3f18+mA9sqJyjPmbNRyHaNXX/kjrZL4XQgrLscQ0CiEwZVbWsHilRn4DsS9nF3FWLfE1n
+ Mdef9brjha7MQIa0seodvypUtADb3CsU1RyH9PwsAtvN/XW0VmTbGXoNu0+slv1YlxyCdVVM
+ y5viGn2YYNIgqAySx8YU7R5yPLs=
+X-Mailgun-Sending-Ip: 166.78.71.153
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e0fb78c6415ee8849751569
+Received: by luna.mailgun.net with HTTP; Fri, 03 Jan 2020 21:52:12 +0000
+Date: Fri, 03 Jan 2020 21:52:12 +0000
+Sender: s.shivam@usgrpinc.com
+Message-Id: <20200103215212.1.EE17C4917E085755@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: s.shivam@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Shivam Srivastava <s.shivam@usgrpinc.com>
+Subject: Full Time Employment II Oracle EBS Business Analyst/Functional
+ Consultant II Melville, NY
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID">
+<div><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Hi Joseph Showunmi</span></span></div>
+
+<div><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Hope you are doing great!</span></span></div>
+
+<div><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">My name is Shivam Srivastav and I am working as a Technical Recruiter with United Software Group Inc. Please go through the below mentioned job description and share you updated resume in case you feel interested.</span></span></div>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Full Time Employment<br />
+Position : Oracle EBS Business Analyst/Functional Consultant</b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Location: Melville, NY</b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Required Skills:-</b></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Very strong functional knowledge in core EBS Finance Modules (AR/AP/GL/Billing etc) and working experience in Functional Configuration &nbsp;<br />
+	Experience in Oracle EBS implementations &nbsp;<br />
+	Oracle EBS Financial &nbsp;product knowledge<br />
+	Working experience with Integration with other ERP or non-ERP products<br />
+	Excellent communication skills and customer management<br />
+	ADM support experience<br />
+	Working experience to convert Business requirement into Functional Design.<br />
+	Working experience to help Business conducting testing/clarification on Business process. </span></span></li>
+</ul>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Good to have</b>:-</span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Global implementation experience<br />
+	Corporate Finance knowledge<br />
+	Oracle Cloud Fin and/or PeopleSoft Fin experience</span></span></li>
+</ul>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">With Regards,</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b><span style="color:#404040">Shivam Srivastav | Technical Recruiter</span></b></span></span></p>
+
+<table class="Table" style="width:490.1pt; border-collapse:collapse; border:dotted #948a54 1.0pt" width="653">
+	<tbody>
+		<tr style="height:.3in">
+			<td style="border:dotted #948a54 1.0pt; width:142.55pt; padding:.05in .1in .05in .1in; height:.3in" width="190">
+			<p align="center" style="text-align:center"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><img height="40" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxaHlya1UxaGg3Y2dNVktjbk43dS9vTjB4M1B0TWdoTkV5V09qazd2a2lPOEhjSitDNTU2N2VLaUw1dTYvN2RGUXZGeU83MDFiVWtnSWJ2TEp1Y2doMjk4dnhlcG1qUDVvYWd6Y1lseGh1TVdBPT0=" width="75" /></span></span></p>
+
+			<p align="center" style="text-align:center"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b><span style="color:#404040">United Software Group, Inc.</span></b></span></span></p>
+
+			<p align="center" style="text-align:center"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">End-to-End IT Systems | Services | Solutions Provider</span></span></span></p>
+
+			<p align="center" style="text-align:center"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b><span style="color:#f79646">A Minority Business Enterprise</span></b></span></span></p>
+			</td>
+			<td style="border:dotted #948a54 1.0pt; width:107.6pt; border-left:none; padding:.05in .1in .05in .1in; height:.3in" width="143">
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">565, Metro Place South,</span></span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">Suite # 110,</span></span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">Dublin, OH 43017</span></span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><a href="http://www.usgrpinc.com/" style="color:#0563c1; text-decoration:underline">www.usgrpinc.com</a></span></span></p>
+			</td>
+			<td style="border:dotted #948a54 1.0pt; width:159.75pt; border-left:none; padding:.05in .1in .05in .1in; height:.3in" width="213">
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">Phone : (614) 495-9222 Ext:463</span></span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">Cell No: (315) 920-4052</span></span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">Fax:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 866-764-1148</span></span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><span style="color:#404040">Email:&nbsp; </span><a href="mailto:s.shivam@usgrpinc.com" style="color:#0563c1; text-decoration:underline">s.shivam@usgrpinc.com</a></span></span></p>
+			</td>
+			<td style="border:dotted #948a54 1.0pt; width:80.2pt; border-left:none; padding:0in 0in 0in 0in; height:.3in" valign="top" width="107">
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">&nbsp;&nbsp; &nbsp;<img height="90" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxZzFCeHVNNEdCU3lwTittcCtpdk4yZmpuWFMvTDhTY29jMG1DeGw1MGxoVDZia0dEQ3dkYVhVYW9BK1VjbjEzTktNWWNwSGdpajNEcXlHSi9aUER1cTZqa3pQMGN4dlRFeEwraGthUTBDMFhtYlh2Mi9nQnlObWhaTWNjY2ZTNWJ3PQ==" width="90" /></span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b><span style="color:#e36c0a">&nbsp;&nbsp;&nbsp; 2016 - 2017 - 2018</span></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="wordsection1"><span style="font-size:14px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>&nbsp;</b><img height="38" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxamxjbGJwcHF0bzVibDgyZGUyQkIzSytrZ1d1Vll3Wm83OU5WemlDaTNGNHkrM01iSGgzVlp2ampCQUh4UmFDRHd2RTVuZVhuUHFkdEx5NGFCT0gzMUo4Mys4QWUvWWFPbE9KY1pmaUNOaXdjVHdYa0g5dmFObTNYM3E0blVSeThNPQ==" width="168" /><br />
+<span style="background:white"><span style="color:#4a442a">To unsubscribe from this mailing, please reply to this email with the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or click here&nbsp;</span></span><a href="mailto:techsupport@usgrpinc.com?subject=UNSUBSCRIBE" style="color:#0563c1; text-decoration:underline" target="_blank"><span style="background:white"><span style="color:#1f497d">UNSUBSCRIBE</span></span></a><span style="background:white"><span style="color:#4a442a">.</span></span><br />
+<b><span style="color:#4a442a">USG is an Equal Opportunity Employer. Qualified applicants will receive consideration for employment without regard to race, color, religion, gender, age, disability, military status, national origin or any other characteristic protected under federal, state, or applicable local law.</span></b> </span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1">&nbsp;</p>
+</div>
+
+<div id="EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/23f5d8262aa71c0594dc1889c5c6f81f5a98d570/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEsOgyAQANDTlCWZGRk-C1YN5zDyq5hWDcSkx6_dvdXLHgssAKJ5AgJAmAiZkCTKENA8lUMTwLJhfii4xqufbU8yHR-xesPaUWZGl3SubMny4pyuKqakrbKilzq37GmC2347RjnXcT_vtl_f7Yix9H_1Ay7uJk0"></body>
+</html>

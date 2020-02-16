@@ -1,0 +1,214 @@
+Return-Path: <bounce+0f68bf.665b17-josephs=linuxjobber.com@mg.fstonetechnologies.com>
+Received: from m43.email.mailgun.net (m43.email.mailgun.net [146.20.191.43])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id f5ig2ab5mfcqkd2g4582048hu89k0a0l5671q8o1
+ for josephs@linuxjobber.com;
+ Mon, 27 Jan 2020 17:04:27 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.fstonetechnologies.com designates 146.20.191.43 as permitted sender) client-ip=146.20.191.43; envelope-from=bounce+0f68bf.665b17-josephs=linuxjobber.com@mg.fstonetechnologies.com; helo=m43.email.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.fstonetechnologies.com designates 146.20.191.43 as permitted sender) client-ip=146.20.191.43; envelope-from=bounce+0f68bf.665b17-josephs=linuxjobber.com@mg.fstonetechnologies.com; helo=m43.email.mailgun.net;
+ dkim=pass header.i=@mg.fstonetechnologies.com;
+ dmarc=none header.from=fstonetechnologies.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGakZoa2pRZ1R3anV6dkUwMzZWeFhqQUIva01VbWxWY1RUZ2s4UWVDWkdYY0J0a0FXTkVTUTk3a214SmxUVy8wRVI3dUlHQ3NzUVVHZDJtMjRJMnBhMlYrd0d3a3FIWHZQVmEwLzFDYU85U3dkVUZXL3ZXcENxZi9ZUTRGTVcxL1h6bkUrcHJjRkoxWlNqa0gycHhhQ2kyNWlFMTlqMG1CMXR2Q3lWc2JFTjBLMmtzTWsrQitCRHFrRERFSTk0NHZmQkhsU2wwOGtWcUIwVEFIRkxMWHBSa1JYbENzVXlya1RUUVVoV1lQd2JNT3ZldTR3Z2Q1N2dITkpQL2thRVlxVGtSdlhub1F4YUt2cTVqQUxJK3VMK0ZaUE1LdVpjK093Zm5xYTJxVU1SMXZiWEIzUzJWTG5zSEJ2dmhkSkZiWmNTN3NqK2ZQUW9NVHNDNmtDZlFWRVZjcGlQdVdtV2VMQ1FBa2dxd2VNbFNRPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=JfDzw2008nnT6+CBqpeKw1bZ/vfrU79I+9P2UhTwG5DPNNfAeOsoEaIi4omdLAZ97rMVA/z5a6vWAt67kQScGO+/S1a39BUaJHTkgFLPlQLSJSNoNAfbIiI7n9cqmEhmSXLkaLNFqw0UQauLwIMsf6QiqioQ+WdxVUSLllz1HWY=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580144670; v=1; bh=IlCpyWGamlfI9RLbMPI4u3of+AECDEkyFKRQ8h0MHgg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.fstonetechnologies.com;
+ q=dns/txt; s=pic; t=1580144670; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=aNYBOAAEvtaaNVtNjZAMqcLXWYjiNofb2VmNNqg6fCg=; b=feR3648AQ4EViqRtZ4Ko6ygjYbbxQxc15yMYR2MEK/Ux2AIqQLaP0Ik9YzEPbO8hN8mZPaMD
+ B5oOwdbhV+fwYA3XxmNPU7wEtxwvFN6+cmsmkWygT6pg3UL22nmkub4muJG9cvS6SeluYCRp
+ f9w7jOYuCF41xZOW3HRjZulUInI=
+X-Mailgun-Sending-Ip: 146.20.191.43
+X-Mailgun-Sid: WyIzNzA2OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI2NjViMTciXQ==
+X-Mailgun-Batch-Id: 5e2f179446ce1cc292c3f620
+Received: by luna.mailgun.net with HTTP; Mon, 27 Jan 2020 17:02:12 +0000
+Date: Mon, 27 Jan 2020 17:02:12 +0000
+Sender: manesh=fstonetechnologies.com@mg.fstonetechnologies.com
+Message-Id: <20200127170212.1.DB91916594EAE95D@mg.fstonetechnologies.com>
+X-Mailgun-Variables: {"ref_id": "8526"}
+Reply-To: manesh@fstonetechnologies.com
+To: josephs@linuxjobber.com
+From: Manesh Jha <manesh@fstonetechnologies.com>
+Subject: DevOps Tech Lead in Bethesda, MD : 12+ Months
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph o&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">***Our Direct Client has an urgent opening for <b>DevOps Tech Lead </b>f=
+or their Long-Term project in <b>Bethesda, MD.</b> Please review the detail=
+s & share your updated resume ASAP. **</span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">Here are the job details:</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">Role: -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;DevOps Tech Lead</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">Location: -&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Bethesda, MD=
+</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">Duration: -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12 Mon=
+ths + Extendable further. </span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"bac=
+kground:white"><span style=3D"font-family:Calibri,sans-serif"><span style=
+=3D"font-family:"Arial","sans-serif"">Job Description</span></span></span><=
+/span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial"=
+,"sans-serif"">Experienced or background in <b>Linux Engineering, Bash Scri=
+pting and Cloud Infrastructure (AWS, Azure etc..), Docker, CI/CD, Kubernete=
+s</b></span></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial"=
+,"sans-serif"">Implementing the pipeline and setting up the required tools.=
+</span></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial"=
+,"sans-serif"">DevOps pipeline design and implementation of the same</span>=
+</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial"=
+,"sans-serif"">Integration of infra automation if needed</span></span></spa=
+n></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial"=
+,"sans-serif"">Owns the creation and execution of DevOps pipeline</span></s=
+pan></span></span></li>
+</ul>
+
+<p><br />
+&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><a name=3D"_MailAutoSig"><b><span style=3D"font-family:"Garamond","se=
+rif""><span style=3D"color:#1f497d">Warm Regards.</span></span></b></a></sp=
+an></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-family:"Garamond","serif""><span style=3D"colo=
+r:#1f497d">Manesh Jha</span></span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-family:"Garamond","serif""><span style=3D"colo=
+r:#1f497d">FSTONE Technologies.</span></span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Garamond=
+","serif""><span style=3D"color:#8064a2">3084, Congressional Office Park, R=
+oute &ndash; 27, </span></span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Garamond=
+","serif""><span style=3D"color:#8064a2">Suite # 3, Kendall Park, New Jerse=
+y &ndash; 08824 |<br />
+<b>Phone#(732) 328-2285</b> <b>| </b>| Fax: (732) 398-0506</span></span></s=
+pan></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Garam=
+ond","serif""><span style=3D"color:#8064a2">Email ID # </span></span></span=
+></b><a href=3D"mailto:manesh@fstonetechnologies.com"><b><span style=3D"fon=
+t-size:10.0pt"><span style=3D"font-family:"Garamond","serif""><span style=
+=3D"color:blue">manesh@fstonetechnologies.com</span></span></span></b></a><=
+/span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Garam=
+ond","serif""><span style=3D"color:#8064a2">LinkedIn Id # </span></span></s=
+pan></b><a href=3D"http://clicks.mg.fstonetechnologies.com/c/eJwVjssOwiAUBb=
+-m7CRw5blgoVF_wwC9CrUFU2rq54vJyVnMYjKjU0oGrkl2wIAxDpprBhwop5ez5ZYracX1dLXyM=
+gi2POmjbbXghjGVOtdnxkZjXUhyPnotwSguR4M2mihRm2MQGJgQ4A2ZXdq2dxuOpwFuffu-0zmX=
+F465_B0d5dJv8QVbOkzJHzQXPcjbTsmKj3senZGgyOqm2vCdWm_qis93qiHg-rf8ALl5P6c"><b=
+><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Garamond","se=
+rif""><span style=3D"color:blue">https://www.linkedin.com/in/manesh-jha-714=
+271a9/</span></span></span></b></a></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><a href=3D"http://clicks.mg.fstonetechnologies.com/c/eJx1jk0OgyAYBU8j=
+S8IHArJgYaO9RiM_CkbFCI09fukBmrzdTCbPaSG4AYmipoQSAlSCJBQoBjw8FCgQXLVjPyo-NC3=
+ZFzznkg5fvA1H2tISfcY27Shob4FJMFTwSTiAWdWMFbZjk2O8sxxtOpRyNqxv6LPuvu8_sQrR5e=
+dXdLrjVKBLryn7M-T6YIvH-7MmY_z1U7-pvjtK"><span style=3D"font-size:10.0pt"><s=
+pan style=3D"font-family:"Garamond","serif""><span style=3D"color:#8064a2">=
+www.fstonetechnologies.com</span></span></span></a><u><span style=3D"font-s=
+ize:10.0pt"><span style=3D"font-family:"Garamond","serif""><span style=3D"c=
+olor:#8064a2"> |</span></span></span></u></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://clicks.mg.fstonetechnolog=
+ies.com/c/eJwVkEtrwzAQhH-NfTR6Pw4-JNhtKTiQ0qZpLsWSVrESxzaWTZv--iqwsMzwMcusK=
+4XgBss8lAQRhDCRWCKCSYGLaquxxoJrVm9qzauModu58HEZB1jAdsPYj-cAsbDjLe9KxDhYS7g0=
+WIM0UlFksHBSUIIZcZD3ZbcsU8zoJiNPaZa2h2HpwgyFhTC1_SMo-WuEOT72EFcT7RwMJCURCE8=
+paCVSpDWMS4cJUMVoawXx2qp0WuqEeqUdspoiBQCeCCqUtUJSLsAo3ypMBXdMqYTauv9pnt--Tn=
+i6N5_1_XCdTvvjrtofr7R5377s-4_74bhd2_pUNXS32ppjV3Wv7R_KaJXP4L-DKxUnIp_Lyxhh6=
+mL6Ux-G9fcyGgPzo9Q_PnxsSg" style=3D"color:#0077c5; text-decoration:underlin=
+e"><b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.fstonete=
+chnologies.com/o/eJwVzEsOgjAQANDT2GUzM_RjF11o4BzGoR0oAWooJh5ffQd4KTpnGb0qkY=
+AAkDx6ICSNur8HDOhsMMNtCLa_GNgmLe2sez7zOO91rVPJTY91U3M0HT3taIIIc_LcoUAyIMkJs=
+HDn1ZHlUVK8WnLqiEtt-TW3X7qW_f1ZKnM-_tUX3D0sqg"></body>
+</html>

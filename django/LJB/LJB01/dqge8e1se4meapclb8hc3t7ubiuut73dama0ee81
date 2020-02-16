@@ -1,0 +1,273 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m43-210.mailgun.net (m43-210.mailgun.net [69.72.43.210])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id dqge8e1se4meapclb8hc3t7ubiuut73dama0ee81
+ for josephs@linuxjobber.com;
+ Fri, 31 Jan 2020 20:10:44 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 69.72.43.210 as permitted sender) client-ip=69.72.43.210; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m43-210.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 69.72.43.210 as permitted sender) client-ip=69.72.43.210; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m43-210.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIejhlRzJhMGpLSnJaZDlqdGxVUzlPZHhHUkMxRFZtWkdBKzlFSVVBc2lXVm8wVWlINFhQSFUzcjJLZk5RMGxwSmN4UnVVUC83clpxcTg4Y3pzbVpVWGRxQVo5bjJCM0xrLzB6eGRCbkxPczJkSmYwWTBkbVFCK0ZDOWpYSUR3UEJtSU01NlhvK3hZenRXL3VsS3VieUxRczl2NWUrYk5mdFVVdjVQaXBTSjg5aG52RC9WeTRzYUZKK1RNUU1WVklzdW9VbWwxNW5kRGtxUGJhc0VWU3pHdUNET1UrQStTczFnRHcwaTJhK1RBL1BlemNXelBIT1Y5MUNwT1NVYlpOcW9SWlVKcTREVFM3dUFHcEkrQ3J5V3pBaGFuQVFic2diRkNmakthaTM2QnhkdzNBNkRUYk9QdXJDb0dORmV0YjJKSVcvcFVKc0NIZXpFeURpN2l6aVU=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=fDXpOW0maGzT4BzRKy+PgZaOHMM4d7L36AZxrH5Z9FUxBwfm48P8jJjgnZ4xlb6iDgrIvbVact+Ily4vOw7H/B6FW5EYmdtiq9JKuGrZ7HqerdGlxAMKWjOITFgEHnzUUoWtFkrKzfRvwLxFY2pDPqPjI3fseVLWc4yziB00EEM=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580501446; v=1; bh=rBWlHbEvXHHWY6HZWb89vjZ1WkxmmD3L0LSNdNMVR1Y=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1580501444; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Date;
+ bh=lTQ2XTJWwkgd8/CkGgoBQKhh6VhcN2qElNH6Wcmo1cc=; b=oLH2T21/8Az4qMcf7Yj1wwc+Gl8L0sf9fpiZIJcoRkmCuVAnGqwsOR26utCys9wbxf3Py+Yq
+ kflCf6S7xye/KtxbfRw86j0m66dMlqlQPTD2FQ13gytOBUJreKn67FuIxllxLD8yTbg2uje5
+ xD2khlHgCffpZ4PsmBPPxrdwrLQ=
+X-Mailgun-Sending-Ip: 69.72.43.210
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e3489c2e393d98f845e3401
+Received: by luna.mailgun.net with HTTP; Fri, 31 Jan 2020 20:10:42 +0000
+Date: Fri, 31 Jan 2020 20:10:42 +0000
+Message-Id: <20200131201042.1.E98412A9BD59AC2C@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: Ankit.kb@usgrpinc.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Ankit Kumar <Ankit.kb@usgrpinc.com>
+Subject: Urgent position: AWS Test Engineer at New York City OR Los Angeles,
+ CA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div id=3D"EditorSalutationID">Hi Joseph Sh=
+owunmi
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.5pt"><span style=3D"background:white"><sp=
+an style=3D"font-family:72"><span style=3D"color:#32363a">Role: AWS Test En=
+gineer / Developer</span></span></span></span><br />
+<span style=3D"font-size:10.5pt"><span style=3D"font-family:72"><span style=
+=3D"color:#32363a"><span style=3D"background:white">Start Date: Immediate a=
+vailability</span><br />
+<span style=3D"background:white">Work Location: 1 position for New York Cit=
+y / 1 position for Los Angeles, CA</span></span></span></span></span></span=
+></p>
+
+<p><span style=3D"font-family: Calibri, sans-serif;"><font color=3D"#32363a=
+"><span style=3D"font-size: 14px;">Contract (12+ Months)</span></font><br /=
+>
+<br />
+<br />
+<span style=3D"font-size: 10.5pt;"><span style=3D"font-family:72"><span sty=
+le=3D"color:#32363a"><span style=3D"background:white">JOB DESCRIPTION:</spa=
+n><br />
+<br />
+<br />
+<span style=3D"background:white">Job requirements :</span><br />
+<br />
+<strong><span style=3D"background:white">- 4+ years work experience as a Te=
+st Engineer or similar role</span><br />
+<span style=3D"background:white">- 2+ years of hands-on testing experience =
+in AWS</span></strong><br />
+<span style=3D"background:white">- Advanced working SQL knowledge and exper=
+ience working with relational databases, query authoring (SQL) as well as w=
+orking familiarity with a variety of databases.</span><br />
+<span style=3D"background:white">- Experience testing and optimizing &lsquo=
+;big data&rsquo; data pipelines, architectures and data sets.</span><br />
+<span style=3D"background:white">- Strong analytic skills related to workin=
+g with unstructured datasets.</span><br />
+<span style=3D"background:white">- Test processes supporting data transform=
+ation, data structures, metadata, dependency and workload management.</span=
+><br />
+<span style=3D"background:white">- Hands-on experience in manipulating, pro=
+cessing and extracting value from large disconnected datasets.</span><br />
+<span style=3D"background:white">- Working knowledge of message queuing, st=
+ream processing, and highly scalable &lsquo;big data&rsquo; data stores.</s=
+pan><br />
+<span style=3D"background:white">- Experience with Dev/OPS architecture, im=
+plementation and operation</span><br />
+<br />
+<span style=3D"background:white">Technical skills :</span><br />
+<span style=3D"background:white">- 3+ years software testing experience wit=
+h object-oriented programming languages, preferably Python</span><br />
+<span style=3D"background:white">- Knowledge of version control systems: Gi=
+t, Azure Devops, Bitbucket</span><br />
+<span style=3D"background:white">- Knowledge of AWS cloud services: EC2, EM=
+R, S3, RDS, Glue</span><br />
+<span style=3D"background:white">- Knowledge of data pipeline management to=
+ols: Airflow, Luigi, Tidal</span><br />
+<span style=3D"background:white">- Knowledge of data blending tools: Altery=
+x, Matillion, Attunity</span><br />
+<span style=3D"background:white">- Previous experience with the Snowflake d=
+atabase management system</span><br />
+<span style=3D"background:white">- Experience with big data tools: Hadoop, =
+Spark, Kafka, etc.</span><br />
+<span style=3D"background:white">- Experience with stream-processing system=
+s: Storm, Spark-Streaming, etc.</span></span></span></span></span></p>
+</div>
+
+<div id=3D"EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id=3D"EditorMessageBodyID">&nbsp;</div>
+
+<div id=3D"EditorSignatureID">
+<p><strong><font color=3D"#404040" face=3D"Calibri, sans-serif"><span style=
+=3D"font-size: 16px;">With Regards</span></font></strong></p>
+
+<p style=3D"margin-bottom:8px"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span style=3D"font-size:12.0pt"><sp=
+an style=3D"color:#404040">Ankit Bansala </span></span></b><span style=3D"f=
+ont-size:12.0pt"><span style=3D"color:#404040">| Sr. Technical Recruiter</s=
+pan></span></span></span></p>
+
+<table class=3D"Table" style=3D"width:571.1pt; border-collapse:collapse; bo=
+rder:dotted #948a54 1.0pt" width=3D"761">
+	<tbody>
+		<tr style=3D"height:.3in">
+			<td style=3D"border:dotted #948a54 1.0pt; width:197.6pt; padding:.05in .=
+1in .05in .1in; height:.3in" width=3D"263">
+			<p align=3D"center" style=3D"text-align:center"><img height=3D"40" src=
+=3D"https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBj=
+QnYzSU5URUcyN28rUXVkUU5BcXIxZ3R6MWVLNnZFWmhjbnFjMXpFTW9JMTJrRzhZdm1ORGFqVjV=
+lTFRFblB1b3hwT3c1TTBONkRUcHh3RThHWHF4cDZ0Z21mMFVTVldrTGpsbWpodThva0U5QTlCQ0=
+NWcWN3VUJxay83ZkZXdnNsbGhLVFcrTjFiWEFqaE9EY1BudUk0PQ=3D=3D" width=3D"75" />=
+</p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"col=
+or:#404040">United Software Group, Inc.</span></b></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"font-s=
+ize:7.0pt"><span style=3D"color:#404040">End-to-End IT Systems | Services |=
+ Solutions Provider</span></span></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"fon=
+t-size:9.0pt"><span style=3D"color:#f79646">A Minority Business Enterprise<=
+/span></span></b></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:121.5pt; border-left:non=
+e; padding:.05in .1in .05in .1in; height:.3in" width=3D"162">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">565=
+, Metro Place South,</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Sui=
+te # 110,</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Dub=
+lin, OH 43017</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><a href=3D"http://www.usgrpinc.com/"><span style=3D"font-size:10.0=
+pt"><span style=3D"color:#0563c1">www.usgrpinc.com</span></span></a></span>=
+</span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:2.5in; border-left:none;=
+ padding:.05in .1in .05in .1in; height:.3in" width=3D"240">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Pho=
+ne: 614-495-9222 Ext.484</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Fax=
+:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 866-764-1148</span></span></span></span></=
+p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Ema=
+il:&nbsp; </span></span><a href=3D"mailto:ankit.kb@usgrpinc.com"><span styl=
+e=3D"font-size:10.0pt"><span style=3D"color:#0563c1">ankit.kb@usgrpinc.com<=
+/span></span></a></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:1.0in; border-left:none;=
+ padding:0in 0in 0in 0in; height:.3in" valign=3D"top" width=3D"96">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif">&nbsp;&nbsp; &nbsp;</span></span><img height=3D"90" src=3D"https:/=
+/talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUc=
+yN28rUXVkUU5BcXIxaDk2bXFYWjlKYytqRldtaGpxZ0x3SFR4QndtaENodG9sMjJ1bTBXbk9qVT=
+RJUDhJQmZ5TkpkL1BLU1RhMXZSOXlGWlJJT051aExTSFJaK3VuS2hxeTNXVVZ6c0hIeVhPSm50b=
+1A0czNBNHFuODZuTHJ6dnl5WEpndS9rMG9wKzBJPQ=3D=3D" width=3D"90" /></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><b><span style=3D"font-size:8.0pt"><span arial=3D"" narrow=3D"" st=
+yle=3D"font-family:"><span style=3D"color:#e36c0a">&nbsp;&nbsp;&nbsp; 2016 =
+- 2017 - 2018</span></span></span></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b>&nbsp;</b></span></span></p>
+
+<p><img height=3D"51" src=3D"https://talenthirecls3.ceipal.com/articles/Nzl=
+6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxanZOV0dwTStQMTVMdEMwTT=
+UyalNqS09EUjBodEZZODQrdkxUWktzWDlGeWEzTlcxUGZxQlk3c0xNSW1peVFKSU9kV1BLVFMxN=
+m1jRjIrMnR3ZWx2ZTF4QkZyQWhvWCtDUUJNYWxhVEU1TDVuV3BoSjYwTkVzbTIyK0QxNHRUSEtv=
+PQ=3D=3D" width=3D"216" /></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:8.0pt"><span style=3D"background:white"><spa=
+n style=3D"color:#4a442a">To unsubscribe from this mailing, please reply to=
+ this email with the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line,=
+ or click here&nbsp;</span></span></span><a href=3D"mailto:techsupport@usgr=
+pinc.com?subject=3DUNSUBSCRIBE" target=3D"_blank"><span style=3D"font-size:=
+8.0pt"><span style=3D"background:white"><span style=3D"color:#1f497d">UNSUB=
+SCRIBE</span></span></span></a><span style=3D"font-size:8.0pt"><span style=
+=3D"background:white"><span style=3D"color:#4a442a">.</span></span></span><=
+/span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-size:8.0pt"><span style=3D"color:#4a442a">USG =
+is an Equal Opportunity Employer. Qualified applicants will receive conside=
+ration for employment without regard to race, color, religion, gender, age,=
+ disability, military status, national origin or any other characteristic p=
+rotected under federal, state, or applicable local law</span></span></b></s=
+pan></span></p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/81e321d2=
+b030162c4d6092a7453b9318215debe7/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D/" style=3D"color:#0077c5; text-decoration:underline"><=
+b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEsOwiAQANDTyLKZGcAyCxa1eg7D19LY0kCaeHz1HeBFiwkcgCiWgABQIgGCogGHBxuF=
+NPHtrnmaab4oOPurHWUPQ6ibWGwcRwnaZ0eSsnLIhFonyYHxqpKJoqX8LNGSBCOaXWtPx9J_z7v=
+s52et3qf2r75BzyZ9"></body>
+</html>

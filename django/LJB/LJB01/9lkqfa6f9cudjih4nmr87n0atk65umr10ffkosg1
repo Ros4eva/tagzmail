@@ -1,0 +1,224 @@
+Return-Path: <bounce+521a2a.ee4493-josephs=linuxjobber.com@ceipal.com>
+Received: from m250.email.mailgun.net (m250.email.mailgun.net [146.20.191.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 9lkqfa6f9cudjih4nmr87n0atk65umr10ffkosg1
+ for josephs@linuxjobber.com;
+ Thu, 09 Jan 2020 20:14:14 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: permerror (spfCheck: Error in processing SPF Record) client-ip=146.20.191.250; envelope-from=bounce+521a2a.ee4493-josephs=linuxjobber.com@ceipal.com; helo=m250.email.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=permerror (spfCheck: Error in processing SPF Record) client-ip=146.20.191.250; envelope-from=bounce+521a2a.ee4493-josephs=linuxjobber.com@ceipal.com; helo=m250.email.mailgun.net;
+ dkim=pass header.i=@ceipal.com;
+ dmarc=none header.from=tricascadetech.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFYTdSaEhEc2RJMXU4QkVXRkNsQlFSait3Y0w5Q0RjeFVHWk14NHVZWkJzNW9BRzNzTHIzL1ZOVmIrZHUwSGNYeXlEVHIwTW1VcHVqcTJqZHJRZ0x6ZWlBZWtmSkJjTjdhZlFPSEw1QXJqayttRGhCS2psUzFacWpZQzVTcGtpZkkzUStkMXF4NC9YOCs1dW8zR3oyNTBndXhXdERMUFFhU2pzUThPOHBTL3dKeGxtQWtSWlU1ZzNTMW9ZUm5VbU1rVjd1QWM4L2l2RGg2dExDb1JUR0lyajREZnp4TUsyS2I4WjV5b1pONjN0SGYvaUU2RWVRT0FwVE90NHVhNEFQeGgvOVJQOXRWNE5KcE5zZ0N3M0ViYnR0eHYzVC9MY3EwTy84MlVaUXB0Z3pIZUxRYyt2L2dpbkZ6cU5Za0xiTTlVak5SZ0JxK2ZnSGdSNWN6aE9YMDk=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=TxuOhq2Y+TCMV8vmrnEkXLxuUJpIjphpELPzNUORNjWgRVZoZoUkplr4QzM/YGPJAnSb6JrQZVT4USKBeNJ2bOdObBPmfeF+ePSGT5XkFssLCI9Qqo1HUCcXyC98qBVukVq0oilJugt8khsAOJ0TmJxE0uHUC2CDp0IwTBWForc=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578600854; v=1; bh=wV2rl+mfq+HowLlTaYJOJCRiUAliDZT0YpNfhWqqIGg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=ceipal.com; q=dns/txt; s=krs;
+ t=1578600854; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=8SuaOfIYWxSnwRz7lPuUjPqzGOKxqyppt/lL5pZoHAI=; b=Li5U69klvQ6QszUwn83aaEOr+prDKnPf+NVtubhCKIYVLWwZs6lAGvA789pS866kz3GjESlS
+ L7Zp+QiZGOzjtnszN8257aK5ULn17mIkqgZzB2XUw7FmZGBxB0nHptz7ktOqEmpNexcbIEHf
+ nFa4roD7VYbEuiSsGT+BtecE/d8=
+X-Mailgun-Sending-Ip: 146.20.191.250
+X-Mailgun-Sid: WyIyYjIzNSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJlZTQ0OTMiXQ==
+X-Mailgun-Batch-Id: 5e178994ff1a553947fc548e
+Received: by luna.mailgun.net with HTTP; Thu, 09 Jan 2020 20:14:12 +0000
+Date: Thu, 09 Jan 2020 20:14:12 +0000
+Sender: kishan.k=tricascadetech.com@ceipal.com
+Message-Id: <20200109201412.1.FC07F116B5833927@3835.ceipal.com>
+X-Mailgun-Variables: {"ref_id": "3835"}
+Reply-To: kishan.k@tricascadetech.com
+To: josephs@linuxjobber.com
+From: Kishan <kishan.k@tricascadetech.com>
+Subject: Urgent Requirement - Network Engineer - Pensacola, FL
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p class=3D"gmail-m4829673876508853021m1777=
+591375135072136gmail-m7946380584337821649wordsection1"><span style=3D"font-=
+size:12pt"><span style=3D"line-height:16.5pt"><span style=3D"tab-stops:42.2=
+5pt 106.6pt"><span style=3D"font-family:"Times New Roman",serif"><span lang=
+=3D"EN-IN" style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sa=
+ns-serif"><span style=3D"color:black">Hello , &nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span></span=
+></span></span></p>
+
+<p class=3D"gmail-m4829673876508853021m-6455578546107611136m-85127362156588=
+80760gmail-wordsection1"><span style=3D"font-size:12pt"><span style=3D"line=
+-height:16.5pt"><span style=3D"font-family:"Times New Roman",serif"><strong=
+><span style=3D"font-size:10.0pt"><span style=3D"background:white"><span st=
+yle=3D"font-family:"Arial",sans-serif"><span style=3D"color:black"><span st=
+yle=3D"font-weight:normal">This is </span></span></span></span></span></str=
+ong><strong><span style=3D"font-size:10.0pt"><span style=3D"background:whit=
+e"><span style=3D"font-family:"Arial",sans-serif"><span style=3D"color:blac=
+k">Kishan </span></span></span></span></strong><strong><span style=3D"font-=
+size:10.0pt"><span style=3D"background:white"><span style=3D"font-family:"A=
+rial",sans-serif"><span style=3D"color:black"><span style=3D"font-weight:no=
+rmal">from </span></span></span></span></span></strong><b><span style=3D"fo=
+nt-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span style=
+=3D"color:black">Tricascadetech</span></span></span></b><strong><span style=
+=3D"font-size:10.0pt"><span style=3D"background:white"><span style=3D"font-=
+family:"Arial",sans-serif"><span style=3D"color:black"><span style=3D"font-=
+weight:normal">, if you are looking for job change or available in the job =
+market so please send me your updated resume at</span></span></span></span>=
+</span></strong><b>&nbsp;</b><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif"><span style=3D"color:black"><a href=3D"=
+mailto:kishan.k@tricascadetech.com" style=3D"color:#0563c1; text-decoration=
+:underline" target=3D"_blank"><b>kishan.k@tricascadetech.com</b></a><span s=
+tyle=3D"background:white"> <strong><span style=3D"font-family:"Arial",sans-=
+serif"><span style=3D"font-weight:normal">or call me at</span></span></stro=
+ng>&nbsp;<b>972-362-2459.</b></span></span></span></span></span></span></sp=
+an><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style=3D"f=
+ont-size:12pt"><span style=3D"line-height:16.5pt"><span style=3D"font-famil=
+y:"Times New Roman",serif">&nbsp;</span></span></span></p>
+
+<p class=3D"gmail-m4829673876508853021m1777591375135072136gmail-m7946380584=
+337821649wordsection1"><span style=3D"font-size:12pt"><span style=3D"line-h=
+eight:16.5pt"><span style=3D"font-family:"Times New Roman",serif"><b><span =
+style=3D"font-size:10.0pt"><span style=3D"background:yellow"><span style=3D=
+"font-family:"Arial",sans-serif"><span style=3D"color:black">Job Title &nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Network Engineer</span></span></span></s=
+pan></b></span></span></span></p>
+
+<p class=3D"gmail-m4829673876508853021m1777591375135072136gmail-m7946380584=
+337821649wordsection1"><span style=3D"font-size:12pt"><span style=3D"line-h=
+eight:16.5pt"><span style=3D"font-family:"Times New Roman",serif"><b><span =
+style=3D"font-size:10.0pt"><span style=3D"background:yellow"><span style=3D=
+"font-family:"Arial",sans-serif"><span style=3D"color:black">Location &nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pensacola, FL</span></span></span></span>=
+</b></span></span></span></p>
+
+<p class=3D"gmail-m4829673876508853021m1777591375135072136gmail-m7946380584=
+337821649wordsection1"><span style=3D"font-size:12pt"><span style=3D"line-h=
+eight:16.5pt"><span style=3D"font-family:"Times New Roman",serif"><b><span =
+style=3D"font-size:10.0pt"><span style=3D"background:yellow"><span style=3D=
+"font-family:"Arial",sans-serif"><span style=3D"color:black">Duration &nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; &nbsp;6+ Months Contract</span></span></span></span>=
+</b></span></span></span></p>
+
+<p class=3D"gmail-m4829673876508853021m1777591375135072136gmail-m7946380584=
+337821649wordsection1"><span style=3D"font-size:12pt"><span style=3D"line-h=
+eight:16.5pt"><span style=3D"font-family:"Times New Roman",serif"><b><span =
+style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><=
+span style=3D"color:black">Job Description:</span></span></span></b></span>=
+</span></span><span style=3D"font-size:12pt"><span style=3D"line-height:16.=
+5pt"><span style=3D"font-family:"Times New Roman",serif">&nbsp;</span></spa=
+n></span></p>
+
+<p class=3D"gmail-m4829673876508853021wordsection1"><span style=3D"font-siz=
+e:12pt"><span style=3D"line-height:16.5pt"><span style=3D"font-family:"Time=
+s New Roman",serif"><b><span style=3D"font-size:10.0pt"><span style=3D"font=
+-family:"Arial",sans-serif"><span style=3D"color:black">Required Skills</sp=
+an></span></span></b></span></span></span></p>
+
+<ul>
+	<li class=3D"gmail-m-8373794954126766516wordsection1"><span style=3D"font-=
+size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"color:black">Must have ACI- Application Centric Infrastructure </s=
+pan></span></span></span></span></li>
+	<li class=3D"gmail-m-8373794954126766516wordsection1"><span style=3D"font-=
+size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"color:black">LAN Knowledge</span></span></span></span></span></li>
+	<li class=3D"gmail-m-8373794954126766516wordsection1"><span style=3D"font-=
+size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"color:black">Network Design and Implementation</span></span></span=
+></span></span></li>
+	<li class=3D"gmail-m-8373794954126766516wordsection1"><span style=3D"font-=
+size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"color:black">Network Troubleshooting</span></span></span></span></=
+span></li>
+	<li class=3D"gmail-m-8373794954126766516wordsection1"><span style=3D"font-=
+size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"color:black">Network Hardware Configuration</span></span></span></=
+span></span></li>
+	<li class=3D"gmail-m-8373794954126766516wordsection1"><span style=3D"font-=
+size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"color:black">Network Performance Tuning</span></span></span></span=
+></span></li>
+</ul>
+
+<p class=3D"gmail-m-8373794954126766516wordsection1"><span style=3D"font-si=
+ze:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"color:black">Thanks and Regards</span></span></span></b></span></s=
+pan></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"color:black"><b><span style=3D"=
+font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif">Kishan<br =
+/>
+Technical Recruiter<br />
+Tricascadetech<br />
+Office:&nbsp;972-550-9346&nbsp;Extn- 322<br />
+Direct:&nbsp; 972-362-2459<br />
+1320 Greenway Drive, Suite #660, Irving, TX</span></span></b><br />
+<span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-se=
+rif">w: <a href=3D"http://www.tricascadetech.com.com" style=3D"color:#0563c=
+1; text-decoration:underline" target=3D"_blank"><b>www.tricascadetech.com.c=
+om</b></a><b>&nbsp;&nbsp;</b>e: <a href=3D"mailto:kishan.k@tricascadetech.c=
+om" style=3D"color:#0563c1; text-decoration:underline" target=3D"_blank"><b=
+>kishan.k@tricascadetech.com</b></a><br />
+&nbsp;&nbsp;</span></span></span></span></span><img height=3D"75" src=3D"ht=
+tps://talenthirecls4.ceipal.com/articles/QjljMVVrSjAvL2Z4cFdyWEJvRndZOVI5cG=
+t1aTZsQkNjdmkzQ3B1Rmh1RzF1OUlrQzNlcHI0Qlh0dUtUY0NIVEhiWThNZ1ZhVlViL3JhSFRnT=
+mpjVE5zdHduYmEvRklnZ0FVUXBRZ3pYNnpVT2lvak9XaUQzTTc0WUlLdGtaUWRqQnZIZFZVbmpN=
+RDI1elBpRUtKT0pGc0Z5VWJta2h0aHNUMjU3UUY1VFAwPQ=3D=3D" width=3D"295" /></p>
+
+<p>&nbsp;</p>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"https://talenthirecls4.ceipal.co=
+m/users/unsubscribe/3311ca137a4679956b7c7da691b850c9ae975f1f/b7e19e102fea0f=
+a13fe792982694db39e02932a5/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3Nu=
+cE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>click=
+ here </b></a>.</p>    </div>
+</body>
+</html>

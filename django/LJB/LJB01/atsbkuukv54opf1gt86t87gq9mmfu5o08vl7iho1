@@ -1,0 +1,180 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-153.mailgun.net (m71-153.mailgun.net [166.78.71.153])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id atsbkuukv54opf1gt86t87gq9mmfu5o08vl7iho1
+ for josephs@linuxjobber.com;
+ Thu, 02 Jan 2020 20:04:51 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGRlRhVEd6QUpkQnpDSSt0bnZhZVJxVjBOcEx5WkY2VGNqSHR0TE96b0RSS2VjbzdlTWVFd2RMdUY3cmcrNi8vc0pSZWp3V0RJZFhuS01iNHBTdDZuY1F5R052Sm9xWHdITmFlR1htTU4xc1J0ZlpaaWpZS2hMSGdMUjNBV1krcHN4RmxOai90eWNBUmZMQ3BKbi91SDZBQ08yM2hyV0tyaW13SEloZndVYVNEQ3NyVVcwd0FVdHVLTjlqTWhKdWVZY1dVTWZhQnNxa2JoWlBjNGRJWkhrQUMwbFQvRitTYzdSQ0pwMGhLUlp0a25WSU9pM2N1c2xvSWdIUzdRM3RlNFJwV1UyTlJlSk5YTWJCZElxSjFrMWd5bVhiVHJkQWpybnN0YkV2K09YUW5UZlI3RzlpcnF0cFVyOWc4amdMWlRPZEEwWStoenZUcXovTFluQU5QWVo=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=OVIZeYpUUuXOCHWLn/zjsGGqB9IOMpUWYwFwsMZdqRKD7pteurpvlZPLFJ/NVxkIwzaExSo+L5OiTfSMum/u8KQAfo/z6PS7pjZZzyKeonOU5pPtJ/ajreUC465dEcejXeZoycRksZsE+Zd6WiMEhTsPglwv244VfqpTbjgYp88=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577995495; v=1; bh=xiee8TfPIi96tkqLwepY4WmkzX1qU82Vn3ipHmzcwLU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1577995494; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=2o0fU0XPPz2YQhrCoJQKQfl7FDvvK5SGnAA4XIXcw3Q=; b=ba45O/+5JYSMBA3KCkTXJWrefI3k01jQawlUNESIhb9QwsrxcyzZUiORHU6NP/b0c0Dm7cMx
+ 5JMf9bixO9FINsZGCcN35dXolXuW5tHxRvBjWXwfsGYnCnEKdOPoLiFzBUcnG+wHmdxKwJUk
+ UcDLG1t/Crc6y7wNNShUnV5oIl0=
+X-Mailgun-Sending-Ip: 166.78.71.153
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e0e4cdfa60e68e25bb5b8b8
+Received: by luna.mailgun.net with HTTP; Thu, 02 Jan 2020 20:04:47 +0000
+Date: Thu, 02 Jan 2020 20:04:47 +0000
+Sender: alisha.v@usgrpinc.com
+Message-Id: <20200102200447.1.724E12D19AA268DE@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: alisha.v@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Alisha Vaish <alisha.v@usgrpinc.com>
+Subject: Senior Backend Web Developer with AWS || Philadelphia , PA ||
+ fulltime onsite
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID">
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">This is Alisha Vaish from united software group. I have opening for this job opportunity , please let me know if you are interested you can give me a call on 614-495-9222 Ext:4<span style="color:#1f497d">48</span> or 408-708-3612 / text or revert me back with your updated resume</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Job Title - Senior Backend Web Developer with AWS</b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Work Location &ndash; </b><b>Philadelphia , PA</b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>fulltime onsite</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Senior Backend Web Developer with AWS Experience</b></span></span></p>
+
+<p><br />
+<span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">6+ Years of experience developing dynamic, scalable web applications and Web Services in AWS Cloud with Python, Java or similar programming languages.<br />
+We are looking for someone who has proven practical experience in Developing Scalable Web Applications and Web Services.<br />
+This person will be working on the middleware platform soon to be migrated to AWS.</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">The candidate should have expertise in processing, visualizing <b>high volume</b> data and design <b>low latency web services</b>.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Must have expertise in:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Must have had experience with backend web application and web services development in AWS</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Experience in Python programming language.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Must have experience with containerizing traditional web applications and services using technologies such as Docker, Kubernetes, EKS, ECS, Fargate etc.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Candidate is expected to have in depth knowledge of containers, networking, provisioning of containerized infrastructure and inter container communication.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Extensive experience required in automated container deployments, auto scaling, basic security practices.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Discipline and experienced with highly secure environments in public cloud.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Experience with migrating on - premise applications and systems to AWS.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Experience with automation and configuration tools such as Terraform, CloudFormation, Ansible etc. </span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Experience developing and maintaining Scalable RESTful Web Services.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Developing High Volume, Low Latency Services. This is very critical requirement for this role. We are not looking for someone who has only high level knowledge of RESTful web services but who has proven practical experience in optimizations and has implemented robust design patterns for this requirement.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Web Application Security Practices, Authentication Mechanisms, Session Management</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">NoSQL, RDBMS and Object Relational Mapping</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Experience with CICD processes in on- premise and AWS environments</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">OOPS & OOAD</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Deep understanding of Data Structures and ability to quickly architect technical solutions in Big Data Environment.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Proficient in AWS CLI, Linux, Command Line, Shell Scripting, Web Server Administration and good hand installing software on Linux Platform</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Proficient Deploying and maintaining applications in Cloud, Auto scaled environments.</span></span></span></li>
+	<li style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Expert Programming skills in Python and Practical experience in enterprise web application delivery using Python is a must have for a candidate to be successful in this role.</span></span></span></li>
+</ul>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Must be well experienced in:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Leading Web Development Frameworks</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Distributed application and micro services development</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Critical Application Security Measures and Practices</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Proficiency in Authentication mechanisms</span></span></span></li>
+</ul>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Configure and Deploy applications with Leading Web Servers</span></span></span></li>
+</ul>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Caching mechanisms, Static Content Delivery Mechanisms, Performance Tuning of Web Applications and Services</span></span></span></li>
+</ul>
+
+<p style="margin-bottom:11px; margin-left:48px">&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Good to have:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Multiple AWS Certifications. Developer professional certification preferred.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Latest UI Development Technologies</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">AngularJS/ReactJS</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Frontend MVC Frameworks and Libraries such as Bootstrap, JQuery etc.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Deploying applications with one or more these of these: Ansible/chef/fabric</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Experience with Continuous Integration/Continuous Delivery Environment</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Behavior Driven Development with Robot Framework, Cucumber/Gherkin etc.</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Jupyter Notebook</span></span></span></li>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Jenkins, RabbitMq, MySQL cluster</span></span></span></li>
+	<li style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">NoSQL such as Redis Cluster, Hbase, Elastic Search</span></span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Non-Technical Requirements:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Team Player, effective communicator</span></span></span></li>
+	<li style="margin-bottom:11px"><span style="font-size:11pt"><span style="line-height:105%"><span style="font-family:Calibri,sans-serif">Ability and readiness to quickly learn new technologies, multitask and delivery solutions in quick time frame</span></span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:12.0pt"><span style="color:#002060">Alisha Vaish</span></span><br />
+<b><u><span style="font-family:"Calibri Light",sans-serif"><span style="color:#002060">United Software Group Inc.</span></span></u></b><br />
+<span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:#002060">565 Metro Place S. Suite # 110</span></span></span><br />
+<span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:#002060">Dublin, OH 43017</span></span></span><br />
+<span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:#002060">Phone - 614-495-9222 Ext:448</span></span></span></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:#002060">Cell: 408-708-3612</span></span></span></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:#002060">Email: </span></span></span><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><a href="mailto:alisha.v@usgrpinc.com" style="color:#0563c1; text-decoration:underline"><span style="color:blue">alisha.v@usgrpinc.com</span></a></span></span><br />
+<a href="http://www.usgrpinc.com/" style="color:#0563c1; text-decoration:underline"><b><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:#002060">www.usgrpinc.com</span></span></span></b></a> </span></span></p>
+<br />
+<br />
+&nbsp;</div>
+
+<div id="EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/848d606a3309fe0dfdb71693d3f8031b0b7b505d/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzDkOgzAQAMDXxKW1u_gsXCDBOyKfwSjByBZSnh_STDnJYQYPwKojIAAEuhVCc-SaxIq0oJ1nUmZZHwKu8epnPSKP7cM2F2PQ4I0vqiDaINEEBdJPmpIWMljWc3nW5GgCw7rb28jnNu7nXY_ru7cQcv9XP1blJsc"></body>
+</html>

@@ -1,0 +1,735 @@
+Return-Path: <bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com>
+Received: from a4.mail.joinhandshake.com (a4.mail.joinhandshake.com [192.237.159.133])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id bi1604fdcpb523rfskalbhlk8ehf339r5l8s5v01
+ for jeff.adekunbi@ideabakr.org;
+ Wed, 29 Jan 2020 22:47:34 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+ dkim=pass header.i=@mail.joinhandshake.com;
+ dmarc=pass header.from=mail.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGamkzTmloOW5sMzhsVDREZm4wQWtDWC9PSmNFVGVJN25MODlYZXRNMUdyUGtNdzhWZldkUkxHeWlqR3h6VTAwT0RGUUxFbUJyWUIwbzI5Wk1CWXhhVy80Z3VWMGZZb1hmUlI5YklHRDA0UkM0MFh5SVlXQ0ZlRHZEMHhIT0xIYnl5TFZNWlJ5dExxR2lScHY5azB5M0NoRnpSSGZxNHYzL0dLTkZMRFdLblAxeStMTDlVdittdVRwQXV1SlVLUm94SElTQTBmVHJSazNWLzdhWVYrRnNCN3oyUlRzTXpBdDlGMGF0YVV4VWNBTFJRYXNDbzZaNk1xVFdSSmNuTU9SSnFRcDlzNFF4Vk9OdnFVcXNjSDl2VkhiNUE4WFhuTEw4RjBwRDI0aHFDa2VvTVJGK2gwbCthb2E2VDB0OU1tTzB0emdUTjhDQncrUlB6QjQydG5GZkxGc3pxR21ESDludjRrRXBOZGZqWjhnPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=IUSilGua/AZS8wbrEDCYpnq5OGbJXY+JKJ4Phs8YO8+WTn+QzWl7dSIuen2s04eWqx6p/5NxUWEzw3cHLD/cOGQYWI/d0LN1ctBQIpfITM+WCM2uuKKj0LsQd9PqtCtur82bVefoJtKT0/Z2Md7ZL/mx7gUmbHr+zM2hwagjBKw=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580338056; v=1; bh=zlZ/KgqkGnW6BqsVtmPzvP6AUD42/XZb1+Wbt+viX2U=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1580338055; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe;
+ bh=Z2XztxGpi871BsULRa+rWEXMvSgjc/HJDrEIUHpYHY4=; b=UsfzORzd2RboL39Dd2lGPJl/2Glwvv5j/jhTaWlTBx0O6eR0ZJ3BpH7vcmbM8ZNBANWAwHhE
+ ADx6MHwbJTE5F5XP7QO61l3cEuc4JoqgkN/yR8cnN/Uic2ww13YLvJ5UljusFQHSV91QOFAl
+ LcS+Jqg0dYLL4ldN8Mom2ieFnJM=
+X-Mailgun-Sending-Ip: 192.237.159.133
+X-Mailgun-Sid: WyIyNGNhOCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICI4OGNiOCJd
+List-Unsubscribe: <mailto:u+mq6tqoddmi4cm2j5giydembqgezdsmrsgq3tenbogexdknrzhe4domkbgyytkmsdgmztqjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihu3timdegnsdgmjrgvtdsmzugqzggy3cgizdmmjugnrtamtcmi4dcjtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6tqmrnknrwq33pnqtgqylomrzwqyllmvpw2yltonpwk3lbnfwf62lehu2tcnrzgu3a@mail.joinhandshake.com>
+X-Mailgun-Batch-Id: 5e320b7c0e778e97c079ce6d
+Received: by luna.mailgun.net with HTTP; Wed, 29 Jan 2020 22:47:24 +0000
+Date: Wed, 29 Jan 2020 22:47:24 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20200129224724.1.5699871A6152C338@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "516956"}
+Reply-To: career@boisestate.edu
+X-Mailgun-Tag: 82-School
+To: jeff.adekunbi@ideabakr.org
+From: Boise State Career Services via joinhandshake.com
+ <handshake@mail.joinhandshake.com>
+Subject: 2020 Boise State Spring Career Fair Invite
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="a30e989df53f41a3907e774848522b0e"
+
+--a30e989df53f41a3907e774848522b0e
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+table.button table td {
+  background: #003580;
+  border-color: #003580;
+  color: white;
+}
+table.button table td a {
+  border-color: #003580;
+  color: white;
+}
+a { color: #003580; }
+a:hover { color: #19498c; }
+a:active { color: #19498c; }
+a:visited { color: #003580; }
+table.menu th.menu-item a { color: #003580; }
+=2Ewrapper.banner { background: #003580; }
+table.button:hover table tr td a,
+table.button:active table tr td a,
+table.button table tr td a:visited,
+table.button.large:hover table tr td a,
+table.button.large:active table tr td a,
+table.button.large table tr td a:visited {
+  color: white;
+}
+table.button:hover table td,
+table.button:visited table td,
+table.button:active table td {
+  background: #19498c;
+  color: white;
+}
+table.button:hover table a,
+table.button:visited table a,
+table.button:active table a {
+  border-color: #19498c;
+}
+p.hs-content-type,
+span.colorize-high-contrast {
+  color: #003580;
+}
+img.masked {
+  background: #003580;
+}
+
+
+
+=C2=A0
+
+ =20
+
+    Registration is open for the 2020 Boise State Spring Career Fair!
+ =20
+
+
+
+=C2=A0
+
+ =20
+
+    Dear Recruiter:=C2=A0
+=C2=A0
+Registration is open until February 12th for=C2=A0the=C2=A0Boise State Univ=
+ersity Career Fair on=C2=A0Wednesday, February 19 from 10=C2=A0a.m.=C2=A0-=
+=C2=A03=C2=A0p.m.=C2=A0If you're=C2=A0looking to hire=C2=A0full-time positi=
+ons or internships, this event is a great opportunity to meet our amazing s=
+tudents!
+=C2=A0
+All registrations include:
+
+One 6-foot table and two chairs
+Complimentary campus parking
+Complimentary continental breakfast, hot/cold beverages and lunch for=C2=A0=
+up to three representatives=C2=A0(if you plan=C2=A0to have more than three =
+representatives, please purchase an additional table)
+Optional interviewing space after the fair, if requested
+
+=C2=A0
+Registrant pricing options:=C2=A0
+
+
+$1,000 for Premier Sponsors (only 6=C2=A0spots=C2=A0available - registratio=
+n deadline is January 31st)
+$400 for Corporate Companies
+$250 for Non-Profit=C2=A0and=C2=A0Government
+$125 for Graduate Schools
+
+
+
+Register here=C2=A0before February 12 to secure your spot.
+=C2=A0
+Find more information about the=C2=A0Career=C2=A0Fair here.
+=C2=A0
+If you have questions, please don't hesitate to ask. We look forward to see=
+ing you=C2=A0on campus in=C2=A0February!
+=C2=A0
+Sincerely,
+Kennedy Gelnette
+Employer Relations Coordinator
+Career Center, Boise State University
+
+kennedygelnette@boisestate.edu=C2=A0| (208) 426-2157
+ =20
+
+
+
+=C2=A0
+=C2=A0
+=C2=A0
+
+ =20
+
+   =20
+      Career Fair
+   =20
+    =C2=A0
+    Boise State University Spring 2020 Career Fair
+   =20
+      Wed, Feb 19 10:00 am MST - 3:00 pm MST
+      Boise State Student Union Building, Jordan Ballroom
+   =20
+    =C2=A0
+
+  =E2=97=8F
+  =C2=A092 employers attending
+
+
+    =C2=A0
+   =20
+     =20
+       =20
+          Register
+          See Details
+       =20
+     =20
+   =20
+ =20
+
+
+
+=C2=A0
+
+
+  =C2=A0
+ =20
+   =20
+ =20
+    This email was sent to Jeff Adekunbi from Boise State University.
+   =20
+    Unsubscribe from Boise State University =E2=80=A2
+    Unsubscribe from all Career Centers
+   =20
+    P.O. Box 40770, San Francisco, CA 94140
+--a30e989df53f41a3907e774848522b0e
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"min-height:100%;backg=
+round:#f5f5f5">
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+
+<style>@media only screen and (max-width: 664px) {
+=2Esmall-float-center{margin:0 auto !impo=
+rtant;float:none !important;text-ali=
+gn:center !important}
+=2Esmall-text-center{text-align:center !important}
+=2Esmall-text-left{text-align:left !important}
+=2Esmall-text-right{text-align:right !important}
+=2Ehide-for-large{display:block !importan=
+t;width:auto !important;overflow:vis=
+ible !important;max-height:none !important;font-size:inherit !important;lin=
+e-height:inherit !important}
+table.body table.container .hide-for-large{display:table !important;width:1=
+00% !important}
+table.body table.container .row.hide-for-large{display:table !important;wid=
+th:100% !important}
+table.body table.container .callout-inner.hide-for-large{display:table-cell=
+ !important;width:100% !important}
+table.body table.container .show-for-large{display:none !important;width:0;=
+mso-hide:all;overflow:hidden}
+table.body img{width:auto;height:auto}
+table.body center{min-width:0 !important}
+table.body .container{width:95% !important}
+table.body .columns{height:auto !important;-moz-box-sizing:border-box;-webk=
+it-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important=
+;padding-right:64px !important}
+table.body .column{height:auto !important;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important;=
+padding-right:64px !important}
+table.body .columns .column{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .columns .columns{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+table.body .column .column{padding-left:0 !important;padding-right:0 !impor=
+tant}
+table.body .column .columns{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .collapse .columns{padding-left:0 !important;padding-right:0 !im=
+portant}
+table.body .collapse .column{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+td.small-1{display:inline-block !important;width:8.33333% !important}
+th.small-1{display:inline-block !important;width:8.33333% !important}
+td.small-2{display:inline-block !important;width:16.66667% !important}
+th.small-2{display:inline-block !important;width:16.66667% !important}
+td.small-3{display:inline-block !important;width:25% !important}
+th.small-3{display:inline-block !important;width:25% !important}
+td.small-4{display:inline-block !important;width:33.33333% !important}
+th.small-4{display:inline-block !important;width:33.33333% !important}
+td.small-5{display:inline-block !important;width:41.66667% !important}
+th.small-5{display:inline-block !important;width:41.66667% !important}
+td.small-6{display:inline-block !important;width:50% !important}
+th.small-6{display:inline-block !important;width:50% !important}
+td.small-7{display:inline-block !important;width:58.33333% !important}
+th.small-7{display:inline-block !important;width:58.33333% !important}
+td.small-8{display:inline-block !important;width:66.66667% !important}
+th.small-8{display:inline-block !important;width:66.66667% !important}
+td.small-9{display:inline-block !important;width:75% !important}
+th.small-9{display:inline-block !important;width:75% !important}
+td.small-10{display:inline-block !important;width:83.33333% !important}
+th.small-10{display:inline-block !important;width:83.33333% !important}
+td.small-11{display:inline-block !important;width:91.66667% !important}
+th.small-11{display:inline-block !important;width:91.66667% !important}
+td.small-12{display:inline-block !important;width:100% !important}
+th.small-12{display:inline-block !important;width:100% !important}
+=2Ecolumns td.small-12{display:block !important;width:100% !important}
+=2Ecolumn td.small-12{display:block !important;width:100% !important}
+=2Ecolumns th.small-12{display:block !important;width:100% !important}
+=2Ecolumn th.small-12{display:block !important;width:100% !important}
+table.body td.small-offset-1{margin-left:8.33333% !important}
+table.body th.small-offset-1{margin-left:8.33333% !important}
+table.body td.small-offset-2{margin-left:16.66667% !important}
+table.body th.small-offset-2{margin-left:16.66667% !important}
+table.body td.small-offset-3{margin-left:25% !important}
+table.body th.small-offset-3{margin-left:25% !important}
+table.body td.small-offset-4{margin-left:33.33333% !important}
+table.body th.small-offset-4{margin-left:33.33333% !important}
+table.body td.small-offset-5{margin-left:41.66667% !important}
+table.body th.small-offset-5{margin-left:41.66667% !important}
+table.body td.small-offset-6{margin-left:50% !important}
+table.body th.small-offset-6{margin-left:50% !important}
+table.body td.small-offset-7{margin-left:58.33333% !important}
+table.body th.small-offset-7{margin-left:58.33333% !important}
+table.body td.small-offset-8{margin-left:66.66667% !important}
+table.body th.small-offset-8{margin-left:66.66667% !important}
+table.body td.small-offset-9{margin-left:75% !important}
+table.body th.small-offset-9{margin-left:75% !important}
+table.body td.small-offset-10{margin-left:83.33333% !important}
+table.body th.small-offset-10{margin-left:83.33333% !important}
+table.body td.small-offset-11{margin-left:91.66667% !important}
+table.body th.small-offset-11{margin-left:91.66667% !important}
+table.body table.columns td.expander{display:none !important}
+table.body table.columns th.expander{display:none !important}
+table.body .right-text-pad{padding-left:10px !important}
+table.body .text-pad-right{padding-left:10px !important}
+table.body .left-text-pad{padding-right:10px !important}
+table.body .text-pad-left{padding-right:10px !important}
+table.menu{width:100% !important}
+table.menu td{width:auto !important;display:inline-block !important}
+table.menu th{width:auto !important;display:inline-block !important}
+table.menu.vertical td{display:block !important}
+table.menu.vertical th{display:block !important}
+table.menu.small-vertical td{display:block !important}
+table.menu.small-vertical th{display:block !important}
+table.menu[align=3D"center"]{width:auto !important}
+table.button.small-expand{width:100% !important}
+table.button.small-expanded{width:100% !important}
+table.button.small-expand table{width:100%}
+table.button.small-expanded table{width:100%}
+table.button.small-expand table a{text-align:center !important;width:100% !=
+important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expanded table a{text-align:center !important;width:100%=
+ !important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expand center{min-width:0}
+table.button.small-expanded center{min-width:0}
+th.columns.first.small-12{padding-left:16px !important}
+th.columns.last.small-12{padding-right:16px !important}
+table.body img.icon-20{width:20px;height:20px}
+}
+table.button:hover table tr td a{color:#ffffff}
+table.button:active table tr td a{color:#ffffff}
+table.button table tr td a:visited{color:#ffffff}
+table.button.tiny:hover table tr td a{color:#ffffff}
+table.button.tiny:active table tr td a{color:#ffffff}
+table.button.tiny table tr td a:visited{color:#ffffff}
+table.button.small:hover table tr td a{color:#ffffff}
+table.button.small:active table tr td a{color:#ffffff}
+table.button.small table tr td a:visited{color:#ffffff}
+table.button.large:hover table tr td a{color:#ffffff}
+table.button.large:active table tr td a{color:#ffffff}
+table.button.large table tr td a:visited{color:#ffffff}
+table.button:hover table td{background:#f73b33;color:#ffffff}
+table.button:visited table td{background:#f73b33;color:#ffffff}
+table.button:active table td{background:#f73b33;color:#ffffff}
+table.button:hover table a{border:0 solid #f73b33}
+table.button:visited table a{border:0 solid #f73b33}
+table.button:active table a{border:0 solid #f73b33}
+table.button.secondary:hover table td{background:#919191;color:#ffffff}
+table.button.secondary:hover table a{border:0 solid #919191}
+table.button.secondary:hover table td a{color:#ffffff}
+table.button.secondary:active table td a{color:#ffffff}
+table.button.secondary table td a:visited{color:#ffffff}
+table.button.success:hover table td{background:#004d33}
+table.button.success:hover table a{border:0 solid #004d33}
+table.button.alert:hover table td{background:#99000d}
+table.button.alert:hover table a{border:0 solid #99000d}
+table.button.warning:hover table td{background:#cc8800}
+table.button.warning:hover table a{border:0px solid #cc8800}
+=2Ethumbnail:hover{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+=2Ethumbnail:focus{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+table.button.secondary:hover table td{background:#dcdcdc;border-color:#dcdc=
+dc;color:rgba(8,8,8,0.79)}
+table.button.secondary table tr td a:visited{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a:visited{color:rgba(8,8,8,0.79)}
+a:hover{color:#19498c}
+a:active{color:#19498c}
+a:visited{color:#003580}
+table.button:hover table tr td a{color:white}
+table.button:active table tr td a{color:white}
+table.button table tr td a:visited{color:white}
+table.button.large:hover table tr td a{color:white}
+table.button.large:active table tr td a{color:white}
+table.button.large table tr td a:visited{color:white}
+table.button:hover table td{background:#19498c;color:white}
+table.button:visited table td{background:#19498c;color:white}
+table.button:active table td{background:#19498c;color:white}
+table.button:hover table a{border-color:#19498c}
+table.button:visited table a{border-color:#19498c}
+table.button:active table a{border-color:#19498c}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:10=
+0%;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-=
+box;box-sizing:border-box;width:100% !important">
+<table class=3D"body" data-made-with-foundation=3D"" style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;b=
+ackground:#f5f5f5;height:100%;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left">
+<td align=3D"center" class=3D"center" valign=3D"top" style=3D"font-family:&=
+quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertical-al=
+ign:top;text-align:left">
+
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <h2 class=3D"text-center no-margin" style=3D"margin-top:0;margin-bottom=
+:0;margin-left:0;margin-right:0;text-align:center">Registration is open for=
+ the 2020 Boise State Spring Career Fair!</h2>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>Dear Recruiter:&nbsp;</div>
+<div>&nbsp;</div>
+<div>Registration is open until February 12th for&nbsp;the&nbsp;Boise State=
+ University Career Fair on&nbsp;<strong>Wednesday, February 19 from 10&nbsp=
+;a.m.&nbsp;-&nbsp;3&nbsp;p.m</strong>.&nbsp;If you're&nbsp;looking to hire&=
+nbsp;full-time positions or internships, this event is a great opportunity =
+to meet our amazing students!</div>
+<div>&nbsp;</div>
+<div>All registrations include:</div>
+<ul>
+<li>One 6-foot table and two chairs</li>
+<li>Complimentary campus parking</li>
+<li>Complimentary continental breakfast, hot/cold beverages and lunch for&n=
+bsp;up to three representatives<strong>&nbsp;</strong>(if you plan&nbsp;to =
+have more than three representatives, please purchase an additional table)<=
+/li>
+<li>Optional interviewing space after the fair, if requested</li>
+</ul>
+<div>&nbsp;</div>
+<div>Registrant pricing options:<strong>&nbsp;</strong>
+</div>
+<ul>
+<li>$1,000 for Premier Sponsors (only 6&nbsp;spots&nbsp;available - registr=
+ation deadline is January 31st)</li>
+<li>$400 for Corporate Companies</li>
+<li>$250 for Non-Profit&nbsp;and&nbsp;Government</li>
+<li>$125 for Graduate Schools</li>
+</ul>
+<div><br></div>
+<div>
+<a href=3D"http://email.mail.joinhandshake.com/c/eJxlkE9PhDAQxT8N3CT9AwUOHN=
+Y1a4waNRqNXppCB-hCaS1lzX57y7p6MWky7e9lXt-MrIqiqYtYVQQRhDApCUlzkiY4yVhZFjneM=
+JyRLaVFlCIt1JjsjZp6Mcm5FwMkjdFxX1HGZFNg0uJSpoDqHEtSU0gJyVPKUBaPVe-9nSO6icgu=
+HGHtf6PAG-EAHG-FcnN44hQjFipoO5pjEKyDg4KviO68GWCK6JX-8E9d-XmXk5cCX9qjfdC7sn1=
+D79tbdsxucizYtealdTUHd0Cv6N495iEFG40L7SjcFq_5bBbXwOon5pmvg4I7SxqkWnSQYMVn2J=
+jJw-QDzTArM_aLhbZCdWuwZVLcC9eBB8lPrXPsqj20bSIkDMtUq7BSJUHUYnCJcV3sq4JcPDe9M=
+WP8txl-SnQy4EpWP999A_YujuI" target=3D"_blank" style=3D"color:#003580">Regis=
+ter here&nbsp;before February 12 to secure your spot</a>.</div>
+<div>&nbsp;</div>
+<div><a href=3D"http://email.mail.joinhandshake.com/c/eJxFkEFuwyAQRU9j74IMN=
+hgvWEStcoEewBrDOCYxEAFu1NsXu20qjdDwvubP1xglpZ5kbRVrWNNQNjDW9awjlHAxDLKnZ0E5=
+e2tbWXWNA7uSW7B-AW_SAnckOrh6UdRMneSiZ5yXdhDIZ9kbNnGqyyt1vaol50eq2nPFLqWezye=
+Zgk2YMmQkaLYCNUTE-GpO-Ik-p___DHZXq_ayhli177RiYstuTGGLGgtwkNK4h9xdDsmhsZsrEu=
+74F-rgc3EulFMxcPGHwT3AXn3hm7djhnjFjGY8RkuMdg4lk3us4QtjqqO64TwTMHjf_GTLeaxBm=
+OAeSYjXOivJTh96CWGtX-caj4SH4WiN-ln_DdWLf40" target=3D"_blank" style=3D"colo=
+r:#003580">Find more information about the&nbsp;Career&nbsp;Fair here.</a><=
+/div>
+<div>&nbsp;</div>
+<div>If you have questions, please don't hesitate to ask. We look forward t=
+o seeing you&nbsp;on campus in&nbsp;February!</div>
+<div>&nbsp;</div>
+<div>Sincerely,</div>
+<div>Kennedy Gelnette</div>
+<div>Employer Relations Coordinator</div>
+<div>Career Center, Boise State University</div>
+<div>
+<a href=3D"http://email.mail.joinhandshake.com/c/eJw9jkEOwiAQAF8jNwlsgcKBg_=
+EJPqBZYGuxLSQFD_7eevEyp8lkkrc2BsuyBwFCSHAAagTFJdfGOTvKm5Ea7sNgL0rsmDf-qrksW=
+FJbcCUe684WrwzNyQ4wgguRrNMoQWFyFhECRWSbX6kUSp8nbYV6p7MWam7UOnbilN4X0Hc4cRPs=
+8C-aZ46J1ncJ-VRzIgy4HrweT9a9hesjLrVu7D8y7djaRL_DKSevpXHafAGYw0Xs" target=3D=
+"_blank" style=3D"color:#003580">kennedygelnette@boisestate.edu&nbsp;</a>| =
+(208) 426-2157</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D"divider spacer " style=3D"border-spacing:0;border-collapse:=
+collapse;padding:0;vertical-align:top;text-align:left;width:100%;background=
+:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td he=
+ight=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;mso=
+-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></tr=
+></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <p class=3D"hs-content-type no-margin" style=3D"margin-top:0;margin-bot=
+tom:0;margin-left:0;margin-right:0;color:#0055cc;font-size:14px;line-height=
+:20px;font-weight:500;color:#003580">
+      <img src=3D"https://handshake-production-cdn.joinhandshake.com/assets=
+/mass-email-icons/icon-fair-mask-7c79042c54f6d0d341b196de9f1f1939e36470b566=
+e6bc3fb9086215d8b98eed.png" class=3D"masked inline valign-bottom icon-20" w=
+idth=3D"20" height=3D"20" style=3D"outline:none;text-decoration:none;-ms-in=
+terpolation-mode:bicubic;width:auto;max-width:100%;clear:both;display:block=
+;background:#0055cc;display:inline;vertical-align:bottom;background:#003580=
+;margin-right:6px;">Career Fair
+    </p>
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td height=3D"16px" style=3D=
+"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding=
+:0;vertical-align:top;text-align:left;height:36px;mso-line-height-rule:exac=
+tly;font-size:16px;line-height:16px;">&nbsp;</td></tr></table>
+    <p class=3D"title" style=3D"font-size:16px;font-weight:bold;line-height=
+:22px;margin-bottom:4px">Boise State University Spring 2020 Career Fair</p>
+    <p class=3D"medium no-margin" style=3D"margin-top:0;margin-bottom:0;mar=
+gin-left:0;margin-right:0;font-size:14px;line-height:20px">
+      Wed, Feb 19 10:00 am MST - 3:00 pm MST<br><br>
+      Boise State Student Union Building, Jordan Ballroom
+    </p>
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td height=3D"16px" style=3D=
+"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding=
+:0;vertical-align:top;text-align:left;height:36px;mso-line-height-rule:exac=
+tly;font-size:16px;line-height:16px;">&nbsp;</td></tr></table>
+<p class=3D"medium no-margin" style=3D"margin-top:0;margin-bottom:0;margin-=
+left:0;margin-right:0;font-size:14px;line-height:20px">
+  <span class=3D"colorize-high-contrast" style=3D"color:#0055cc;color:#0035=
+80">=E2=97=8F</span>
+  &nbsp;92 employers attending
+</p>
+
+    <table class=3D" spacer " style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td height=3D"20px" style=3D=
+"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &=
+quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding=
+:0;vertical-align:top;text-align:left;height:36px;mso-line-height-rule:exac=
+tly;font-size:20px;line-height:20px;">&nbsp;</td></tr></table>
+    <table class=3D"inline-button-container" style=3D"border-spacing:0;bord=
+er-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:100=
+%;width: 220px;">
+     =20
+        <tr style=3D"padding:0;vertical-align:top;text-align:left">
+          <td style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;border:none !im=
+portant"><table class=3D"small radius button" style=3D"border-spacing:0;bor=
+der-collapse:collapse;padding:0;vertical-align:top;text-align:left;width:au=
+to;margin:0 0 16px 0;margin:0 auto"><tr style=3D"padding:0;vertical-align:t=
+op;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -app=
+le-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetic=
+a Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left;borde=
+r:none !important"><table style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td style=3D"font-family:&quot;S=
+uisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;,=
+ Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertical-align:to=
+p;text-align:left;color:#ffffff;background:#f73b33;border:2px solid #f73b33=
+;background:#003580;border-color:#003580;color:white;border-radius:3px;bord=
+er:none;padding:5px 10px 5px 10px;font-size:12px;border:none !important"><a=
+ href=3D"http://email.mail.joinhandshake.com/c/eJxlkFFuwyAMhk-TvC0KEBJ44KHa=
+1AvsAJEDTkIbIAKiXX80raZNkyxhf_7128YoIfQkaqtoS9uWUElpN9CuIQ3vpRQDufSE03fGRNW=
+1DuzW3IL1K3iTVrhjo4OrV0WkhK4HYMgZDK0cNAfBOjZLnA3jrN7UmvOeKnap6LUE7Pt_o8I1RM=
+Q4zmBjKiXpSNuXN-JiU46QbfAP7vGrYlcHKY34WGq0pmIfnPSSF3m_hVhKVrIjuzGFI2os4NQ_5=
+BhfLYfGHq60TpcX1MFn9Pm34YnB7WAXX_jh7ZghLpjRPBdIdVQ3nOcGDN4PP9nyW9YgTHCPTYhL=
+nZWgb596DWGrf44e_1ygnuO-ARkegwc" style=3D"color:#003580;font-family:&quot;S=
+uisse Int'l&quot;, Helvetica, Arial, sans-serif;font-size:15px;font-weight:=
+bold;color:#ffffff;text-decoration:none;display:inline-block;padding:10px 2=
+0px 10px 20px;border:0 solid #254fa5;border-radius:3px;border-color:#003580=
+;color:white;padding:5px 10px 5px 10px;font-size:12px">Register</a></td></t=
+r></table></td></tr></table></td>
+          <td style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system,=
+ BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quo=
+t;, sans-serif;padding:0;vertical-align:top;text-align:left;border:none !im=
+portant"><table class=3D"small radius secondary button" style=3D"border-spa=
+cing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:lef=
+t;width:auto;margin:0 0 16px 0;margin:0 auto"><tr style=3D"padding:0;vertic=
+al-align:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&q=
+uot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quo=
+t;Helvetica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:=
+left;border:none !important"><table style=3D"border-spacing:0;border-collap=
+se:collapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr st=
+yle=3D"padding:0;vertical-align:top;text-align:left"><td style=3D"font-fami=
+ly:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe=
+ UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertica=
+l-align:top;text-align:left;background:#f73b33;border:2px solid #f73b33;bac=
+kground:#003580;border-color:#003580;color:white;border-radius:3px;border:n=
+one;padding:5px 10px 5px 10px;font-size:12px;background:#777777;color:#ffff=
+ff;border:0px solid #777777;background:#e6e6e6;color:rgba(8,8,8,0.79);borde=
+r-color:#e6e6e6;border:none !important"><a href=3D"http://email.mail.joinha=
+ndshake.com/c/eJxlkE1uhDAMhU8Du6L8QAiLLEZTzQV6AGQSM2QgCUrC_ZthRlWrSl7Yn633b=
+BslpZ5kbRUjjBDKBsbanrUNbToxDLKnF0E7duVcVi1xYLfmEaxfwJu0wIqNDq5eFKd8Jga5YVOv=
+yaA1HwzvpIBZ9lNrunpTS857qvilYrcSsO__hQrXEBHjOIONqZS0pURU_OYgpRGf9qM1Ff_sqBg=
+6UTGxhVjKtmRHdmMKR9RYwDn_HMf4bjk09nCldaq8oQ4-o8-_BU8Mbgd794Uf3o4Z4h0zmtcCqY=
+7qgfPcgMH18JMtf7EGYYI1NiHe66wk-_jSSwhb_XPe-OcC9bL7BilBe08" style=3D"color:#=
+003580;font-family:&quot;Suisse Int'l&quot;, Helvetica, Arial, sans-serif;f=
+ont-size:15px;font-weight:bold;text-decoration:none;display:inline-block;pa=
+dding:10px 20px 10px 20px;border:0 solid #254fa5;border-radius:3px;border-c=
+olor:#003580;color:white;padding:5px 10px 5px 10px;font-size:12px;color:#ff=
+ffff;border:0 solid #777777;border-color:#e6e6e6;color:rgba(8,8,8,0.79)">Se=
+e Details</a></td></tr></table></td></tr></table></td>
+        </tr>
+     =20
+    </table>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+</td></tr></table>
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+  <table class=3D"divider spacer " style=3D"border-spacing:0;border-collaps=
+e:collapse;padding:0;vertical-align:top;text-align:left;width:100%;backgrou=
+nd:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td =
+height=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-syste=
+m, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&q=
+uot;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;m=
+so-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></=
+tr></table>
+  <table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative;d=
+isplay:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" =
+style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSyste=
+mFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif=
+;padding:0;vertical-align:top;text-align:left">
+  <p class=3D"text-center footer" style=3D"text-align:center;margin:12px au=
+to 24px;font-size:12px;line-height:20px;width:80%;color:rgba(8,8,8,0.79);hy=
+phens:none;margin:12px auto 12px">
+    This email was sent to Jeff Adekunbi from Boise State University.
+    <br>
+    <a href=3D"http://email.mail.joinhandshake.com/u/eJw9zcsRwiAQANBq5CbDLg=
+tZDhwcS7CADL8I-TGTaP_qxQbey545RRbNo0KlAB0iDUgSpLHO8QA3CwbvWvOF1BbaKufe9hr2f=
+NawFJn6JqofSGWdNYCZnCbClCKiBdJJYYwM4vBzmSYZclnee2xfq-USYlgO2Y-neHnG6yPV3lfx=
+t8ctnOdYfunYsjdgnbEfOaU1dA" style=3D"color:#003580">Unsubscribe from Boise =
+State University</a> =E2=80=A2
+    <a href=3D"http://email.mail.joinhandshake.com/u/eJw9zUEOgyAQAMDXyJEsi8=
+By4GB8iNkVqGjVRNv_t730AzM5Ec1CqiUEBDAYEfuAvTba-RgpmMEbh6O11PWwc3vq9WzHwke-F=
+96Kns9dLck7MjbWQFEcSIAM0dmaBZFFgIK60lpq1ZzL9j6kfa2WCwtvlz6vh3qlDgf1V6ed73sq=
+v25qOTnjo_MfDAwzXA" style=3D"color:#003580">Unsubscribe from all Career Cen=
+ters</a>
+    <br>
+    P.O. Box 40770, San Francisco, CA 94140
+  </p>
+</td></tr></table>
+
+  </tr></table>
+</td></tr></table>
+
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mail.joinhan=
+dshake.com/o/eJw9zcsRwiAQANBq5CbDLgtZDhwcS7CADL8I-TGTaP_qxQbey545RRbNo0KlAB=
+0iDUgSpLHO8QA3CwbvWvOF1BbaKufe9hr2fNawFJn6JqofSGWdNYCZnCbClCKiBdJJYYwM4vBzm=
+SYZclnee2xfq-USYlgO2Y-neHnG6yPV3lfxt8ctnOdYfunYsjdgnbEfOaU1dA"></body>
+</html>
+
+--a30e989df53f41a3907e774848522b0e--

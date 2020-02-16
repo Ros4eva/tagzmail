@@ -1,0 +1,440 @@
+Return-Path: <DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com>
+Received: from Ser1.Technicalcenter.in:9998 ([192.155.241.216])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id fm8lnefa56ua04ur8psvq7h54b1p1pvj0261u881
+ for josephs@linuxjobber.com;
+ Thu, 30 Jan 2020 23:53:40 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+ dkim=permerror header.i=@nytpinc.com;
+ dmarc=none header.from=nytpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIL1pwVXNjMDBlN0UyVk5MaG04bTRDcW0wUlpJR3R3T1p5cVRnYWFITjkyZ1NPay9xZFMySFkxVmgwcWJIRm9VTjVER3BWT2wxTjMzMjVad0JjcnN5eTZZTUZwcmdhaGVnOVQya2tTKzhhZXNYckFqcGp1QlVpbDAvUGRRY3hPbFkwaTdkSUlyTlE5b01rdEJ2KysyNkZKcktGZnY4TVJMeEVHZUhrdkxHaWE3eDZWOG5mQzI3M29ydUU5TW56VkJDL3dpYWM4cXFpODlPZnorRXNkTUdPcFJ0a0JpMmNsdmdMV1VuU0tSUytTVGtsNzE5YUthS1hCU1V3LytkOFpKQ3Z6ZFlkZjQ1OUxoTXpKOHY2SUN1dnVsS1h4RnIybVpDRXYxSVNnaDdTSXpUcVgyaXZ0Nko4bjRpM21pNnQ3WUwzK2RCeldxQk80bXNEeWxoSFB1UjRaRkZvdzNONEhBTGVmYTNzNko2M25RPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=S72jfnJ157TtycS8u9SFwZLWDDM8oaQPlSeHJf5l4413K5Q3wbKJsHZTCm/y19inr9tU/qid0XGELSUdYuYegsFoxiVTruhZC0DqYDN9durpg50VfmWh1CPaB/zvHu2PqKdXit7Ris3OBDYMhohmDj2yzTfGJVs/vtP9BFcpt9o=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580428420; v=1; bh=JNxf5h30IeZtQxcW0gsJM1gzx+fcDLjXsK9Ed26d51k=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+X-SmarterMail-Authenticated-As: Bhavesh@nytpinc.com
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns;
+        d=nytpinc.com; s=key;
+        h=received:from:to:subject:date:message-id:mime-version
+          :content-type:x-mailer:thread-index:content-language:list-id
+          :x-mailing-list:reply-to:precedence:sender:cc;
+        b=l5xJCw5c7GuJAE8k/KUM+EjCsafpC+FBrg3tBpdtPB6vmo/scQVA8ypqeWdy2ZCOc
+          FKUgNvY1FDyqa6IF18KmQNlsPs1ugec8i4CXekjxP2tjFhYWn02Mm633w4u1O7Aur
+          P4DS8nijGxBAoGSC593uNef+DzdVmylNjjR1YxO3Tg2pQ1ymjT5PNbn+1Z6iWfqrd
+          +07XzOIQr1VZNjmslNcYs193GvGL2LADawTHaWyyEBrgfXIcNCI5mWmboGh96Br48
+          btWn/oLJGxaVjPgMOHtFB3MVFy0QPaC7rxiJOUtMyzcVZ3YtqH9qgPXvbPhBCeRV7
+          0G+gAHgTO5MaAcIXA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=nytpinc.com; s=key;
+        h=cc:sender:precedence:reply-to:x-mailing-list:list-id
+          :content-language:thread-index:x-mailer:content-type:mime-version
+          :message-id:date:subject:to:from;
+        bh=dzcznBzsQlSmByRfGDO4ilSKh1/B/+1W3Mo4mki/uOk=;
+        b=QeIiJ8cn9anPJwghzF0tzAapGNReN6koY3PS7krJxHlttOMdU7J8W00yvRp5wj+a3
+          NkQJgkGZ33JLWerihKI4D90zrwA3q3Kubu/iXtK2VHPaBS770d9WkPvP5JgQ8DTLf
+          SPnTVY3Xk0Qo32QaGoVVJdbcbKywfGbF8GgfDypatL4qVW9IqpWcEo4Bpk3iW6Nb8
+          So+tP6azSEWYttDOsdW3xJEKIete+e8AJ6e37/UJOATHX1Z8LcuEv+bqJan2xb2os
+          UAszvJQ987tJU6j/nZbASNPp29d3TV2cyzqLPt3zRXou3aefgTRU4zJ+B4iVz9P3X
+          EdUDDMLMCdEBFw1wA==
+Received: from nytppc31 (cpe-70-121-27-82.tx.res.rr.com [70.121.27.82]) by Ser1.Technicalcenter.in:9998 with SMTP;
+   Thu, 30 Jan 2020 17:47:13 -0600
+From: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+To: josephs@linuxjobber.com
+Subject: Implementation Partners need - AWS cloud Architect for Charlotte, NC
+Date: Thu, 30 Jan 2020 18:50:18 -0500
+Message-ID: <206734312_630869554@nytpinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0021_01D5D79E.1E0730D0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdXXx9sV2aZ/+H5USK+mP7x1hqkAWg==
+Content-Language: en-us
+List-Id: <listid.DevOps.630869554.nytpinc.com>
+X-Mailing-List: DevOps@nytpinc.com
+Reply-to: "bhavesh@nytpinc.com" <Bhavesh@Nytpinc.com>
+Precedence: list
+Sender: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+CC: 
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_000_0021_01D5D79E.1E0730D0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0022_01D5D79E.1E0730D0"
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_001_0022_01D5D79E.1E0730D0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Implementation Partners need. 
+
+100% onsite role 
+
+Remote is not an option. 
+
+ 
+
+Mode of Interview - Skype
+
+ 
+
+Job description: Cloud Architect
+Location: Charlotte, NC
+
+ 
+
+Duration - 6 months+ extension. 
+
+Essential Duties and Responsibilities:
+
+. Act as subject matter expert on AWS and other cloud providers.
+. Work with business units, application team, security, and IT to design an=
+d
+build applications and services within AWS and/or other cloud providers.
+. Provide end-to-end solution expertise to determine best architecture and
+cloud services to meet the business requirements.
+. Implementing DevOps practices such as infrastructure as code, continuous
+integration and automated deployment.
+. Document processes and procedures in managing and securing infrastructure
+making sure best practices are always followed.
+. Collaborate with other architects both at the division and the enterprise
+level to implement an effective CI/CD pipeline.
+. Contribute to the refinement/execution of a Cloud Migration framework
+which can be consumed by various Application teams.
+. Work with in-house cloud security experts to implement a security
+framework that satisfies Industry & Complaince standards for implementing
+cloud solutions in public clouds.
+
+Required Qualifications
+
+1. AWS Certifiied - Solution Architect Professional.
+2. Extensive experience architecting, designing and programming application=
+s
+in an AWS Cloud environment.
+3. Knowledge of the primary AWS services (VPC,EC2, ELB, RDS,IAM,CloudWatch,
+Route53 & S3)
+4. Strong track record of implementing AWS services in a variety of
+distributed computing environments.
+5. Experience leading highly-available and fault-tolerant enterprise and
+web-scale software deployments.
+6. Extensive experience interacting with an infrastructure via the AWS CLI.
+7. Experience with deployment orchestration, automation, and security
+configuration management (Jenkins, Terraform, Ansible, Puppet, Chef, etc)
+preferred.
+8. Strong scripting skills (e.g. Powershell, Python, Bash, Ruby, Perl, etc.=
+)
+9. Experience with service-oriented architecture for cloud-based services.
+1. Experience working with cloud security and governance tools
+11. Good understanding of enterprise architecture and operational procedure=
+s
+such as availability, recovery, archiving etc.
+12. Excellent communication and presentation skills.
+
+Strong Pluses:
+
+1. Containerization experience.
+2. Microservices experience.
+3. Other Cloud Certifications (DevOps, Specialty cetrifications).
+4. Demonstrated ability to think strategically about business, product, and
+technical challe
+
+ 
+
+Thanks
+
+_____________________________________
+
+Bhavesh Khatri | New York Technology Partners 
+
+120 Wood Ave S, suite 504. Iselin NJ 08830
+
+Direct: 201.448.8157 | Fax: 201.521.0400 |  <http://www.nytp.com/>
+www.nytp.com
+
+ <https://www.linkedin.com/in/khatribhavesh> 
+
+
+Hi, just a reminder that you're receiving this email because you have
+expressed an interest in New York Technology Partners. Don't forget to add
+<mailto:bhavesh@nytpinc.com> bhavesh@nytpinc.com to your address book so
+we'll be sure to land in your inbox! 
+
+ 
+
+If you wish to unsubscribe from this mailing list then please email me back
+with the word REMOVE in the subject line. 
+
+ 
+
+
+
+
+
+Click here to http://Ser1.Technicalcenter.in:9998/public/list.aspx?action=
+=3Dunsubscribe&email=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3D=
+devops@nytpinc.com
+
+Looking for Bulk Email Service Provider ? mail to Info@TechnicalCenter.in
+
+ 
+
+ 
+
+
+
+------=_NextPart_001_0022_01D5D79E.1E0730D0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 15 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#def=
+ault#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3D"#0563C1=
+" vlink=3D"#954F72"><div class=3DWordSection1><p class=3DMsoNormal><span st=
+yle=3D'font-family:"Times New Roman",serif;background:white'>Implementation=
+ Partners need. <o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'f=
+ont-family:"Times New Roman",serif;background:white'>100% onsite role <o:p>=
+</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times New=
+ Roman",serif;background:white'>Remote is not an option. <o:p></o:p></span>=
+</p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif=
+;background:white'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span s=
+tyle=3D'font-family:"Times New Roman",serif;background:white'>Mode of Inter=
+view &#8211; Skype<o:p></o:p></span></p><p class=3DMsoNormal><span style=3D=
+'font-family:"Times New Roman",serif;background:white'><o:p>&nbsp;</o:p></s=
+pan></p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roman",s=
+erif;background:white'>Job description: Cloud Architect</span><span style=
+=3D'font-family:"Times New Roman",serif'><br><span style=3D'background:whit=
+e'>Location: Charlotte, NC<o:p></o:p></span></span></p><p class=3DMsoNormal=
+><span style=3D'font-family:"Times New Roman",serif;background:white'><o:p>=
+&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Tim=
+es New Roman",serif;background:white'>Duration &#8211; 6 months+ extension.=
+ </span><span style=3D'font-family:"Times New Roman",serif'><br><br><span s=
+tyle=3D'background:white'>Essential Duties and Responsibilities:</span><br>=
+<br><span style=3D'background:white'>&#8226; Act as subject matter expert o=
+n AWS and other cloud providers.</span><br><span style=3D'background:white'=
+>&#8226; Work with business units, application team, security, and IT to de=
+sign and build applications and services within AWS and/or other cloud prov=
+iders.</span><br><span style=3D'background:white'>&#8226; Provide end-to-en=
+d solution expertise to determine best architecture and cloud services to m=
+eet the business requirements.</span><br><span style=3D'background:white'>&=
+#8226; Implementing DevOps practices such as infrastructure as code, contin=
+uous integration and automated deployment.</span><br><span style=3D'backgro=
+und:white'>&#8226; Document processes and procedures in managing and securi=
+ng infrastructure making sure best practices are always followed.</span><br=
+><span style=3D'background:white'>&#8226; Collaborate with other architects=
+ both at the division and the enterprise level to implement an effective CI=
+/CD pipeline.</span><br><span style=3D'background:white'>&#8226; Contribute=
+ to the refinement/execution of a Cloud Migration framework which can be co=
+nsumed by various Application teams.</span><br><span style=3D'background:wh=
+ite'>&#8226; Work with in-house cloud security experts to implement a secur=
+ity framework that satisfies Industry &amp; Complaince standards for implem=
+enting cloud solutions in public clouds.</span><br><br><span style=3D'backg=
+round:white'>Required Qualifications</span><br><br><span style=3D'backgroun=
+d:white'>1. AWS Certifiied &#8211; Solution Architect Professional.</span><=
+br><span style=3D'background:white'>2. Extensive experience architecting, d=
+esigning and programming applications in an AWS Cloud environment.</span><b=
+r><span style=3D'background:white'>3. Knowledge of the primary AWS services=
+ (VPC,EC2, ELB, RDS,IAM,CloudWatch, Route53 &amp; S3)</span><br><span style=
+=3D'background:white'>4. Strong track record of implementing AWS services i=
+n a variety of distributed computing environments.</span><br><span style=3D=
+'background:white'>5. Experience leading highly-available and fault-toleran=
+t enterprise and web-scale software deployments.</span><br><span style=3D'b=
+ackground:white'>6. Extensive experience interacting with an infrastructure=
+ via the AWS CLI.</span><br><span style=3D'background:white'>7. Experience =
+with deployment orchestration, automation, and security configuration manag=
+ement (Jenkins, Terraform, Ansible, Puppet, Chef, etc) preferred.</span><br=
+><span style=3D'background:white'>8. Strong scripting skills (e.g. Powershe=
+ll, Python, Bash, Ruby, Perl, etc.)</span><br><span style=3D'background:whi=
+te'>9. Experience with service-oriented architecture for cloud-based servic=
+es.</span><br><span style=3D'background:white'>1. Experience working with c=
+loud security and governance tools</span><br><span style=3D'background:whit=
+e'>11. Good understanding of enterprise architecture and operational proced=
+ures such as availability, recovery, archiving etc.</span><br><span style=
+=3D'background:white'>12. Excellent communication and presentation skills.<=
+/span><br><br><span style=3D'background:white'>Strong Pluses:</span><br><br=
+><span style=3D'background:white'>1. Containerization experience.</span><br=
+><span style=3D'background:white'>2. Microservices experience.</span><br><s=
+pan style=3D'background:white'>3. Other Cloud Certifications (DevOps, Speci=
+alty cetrifications).</span><br><span style=3D'background:white'>4. Demonst=
+rated ability to think strategically about business, product, and technical=
+ challe</span></span><span style=3D'font-family:"Times New Roman",serif'><o=
+:p></o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times =
+New Roman",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span st=
+yle=3D'font-family:"Times New Roman",serif'>Thanks<o:p></o:p></span></p><p =
+class=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>_____=
+________________________________<o:p></o:p></span></p><p class=3DMsoNormal>=
+<span style=3D'font-family:"Times New Roman",serif'>Bhavesh Khatri&nbsp;|&n=
+bsp;New York Technology Partners <o:p></o:p></span></p><p class=3DMsoNormal=
+><span style=3D'font-family:"Times New Roman",serif'>120 Wood Ave S, suite =
+504. Iselin NJ 08830<o:p></o:p></span></p><p class=3DMsoNormal><span style=
+=3D'font-family:"Times New Roman",serif'>Direct: 201.448.8157 | Fax: 201.52=
+1.0400 | <a href=3D"http://www.nytp.com/"><span style=3D'color:windowtext'>=
+www.nytp.com</span></a><o:p></o:p></span></p><p class=3DMsoNormal style=3D'=
+background:white'><a href=3D"https://www.linkedin.com/in/khatribhavesh"><sp=
+an style=3D'font-family:"Times New Roman",serif;color:windowtext;text-decor=
+ation:none'><img border=3D0 width=3D160 height=3D33 style=3D'width:1.6666in=
+;height:.3437in' id=3D"Picture_x0020_1" src=3D"cid:image001.gif@01D5D79E.1D=
+7F1510" alt=3DLinkedin></span></a><span style=3D'font-family:"Times New Rom=
+an",serif'><o:p></o:p></span></p><p class=3DMsoNormal style=3D'background:w=
+hite'><span style=3D'font-family:"Times New Roman",serif'><br>Hi, just a re=
+minder that you're receiving this email because you have expressed an inter=
+est in New York Technology Partners. Don't forget to add <a href=3D"mailto:=
+bhavesh@nytpinc.com"><span style=3D'color:windowtext'>bhavesh@nytpinc.com</=
+span></a> to your address book so we'll be sure to land in your inbox! <o:p=
+></o:p></span></p><p class=3DMsoNormal style=3D'background:white'><span sty=
+le=3D'font-family:"Times New Roman",serif'>&nbsp;<o:p></o:p></span></p><p c=
+lass=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>If you=
+ wish to unsubscribe from this mailing list then please email me back with =
+the word REMOVE in the subject line. <o:p></o:p></span></p><p class=3DMsoNo=
+rmal><span style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p><=
+/span></p></div></body></html>
+<br /><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style=3D"font-size:12px;">Click here to </span><a href=3D"http:/=
+/Ser1.Technicalcenter.in:9998/public/list.aspx?action=3Dunsubscribe&email=
+=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3Ddevops@nytpinc.com">=
+Unsubscribe</a></div>
+
+<div><span style=3D"font-size:12px;">Looking for Bulk Email Service Provide=
+r ? mail to <a href=3D"mailto:Info@TechnicalCenter.in?subject=3DBulk%20Emai=
+l%20Service%20Enquiry%2C%20&amp;body=3DClick%20Send%20Button%20to%20submit%=
+20the%20inquiry.%20">Info@TechnicalCenter.in</a></span></div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+
+
+------=_NextPart_001_0022_01D5D79E.1E0730D0--
+
+------=_NextPart_000_0021_01D5D79E.1E0730D0
+Content-Type: image/gif;
+	name="image001.gif"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.gif@01D5D79E.1D7F1510>
+
+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
+
+
+------=_NextPart_000_0021_01D5D79E.1E0730D0--
+

@@ -1,0 +1,567 @@
+Return-Path: <bounce+c0e0b0.5a8d87-josephs=linuxjobber.com@ceipal.com>
+Received: from mail.a15.static.mgsend.net (mail.a15.static.mgsend.net [104.130.123.15])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id q3dilvp6af0eokimt80bb21s8qjv9vnb2f55ipo1
+ for josephs@linuxjobber.com;
+ Wed, 08 Jan 2020 15:56:15 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: permerror (spfCheck: Error in processing SPF Record) client-ip=104.130.123.15; envelope-from=bounce+c0e0b0.5a8d87-josephs=linuxjobber.com@ceipal.com; helo=mail.a15.static.mgsend.net;
+Authentication-Results: amazonses.com;
+ spf=permerror (spfCheck: Error in processing SPF Record) client-ip=104.130.123.15; envelope-from=bounce+c0e0b0.5a8d87-josephs=linuxjobber.com@ceipal.com; helo=mail.a15.static.mgsend.net;
+ dkim=pass header.i=@ceipal.com;
+ dmarc=fail header.from=aalgorithm.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIUnhKaVRoV0UweFNDdmdneFRyUjFXQm9zRDFSREE0UUNuYm01TUVNcjFvaGJHRVpnM1pyWUZSeVlMTmpISlFTY3Ria2tKQmFmWXZ4Vkc3M0N4QTFSMUx6MFBXY2JHRW9qTGVEZ2h6cVpzeElZenRsNG5oTXR2eVY4SjdZRXAvQmQ5RXVydEljT2V4TlNnZmUvR1FXdktmOGhmTjhBUUxpWi9RT0JBdDlsTW9yREdQMHE5UVlQalQrWFRoWjlrT2p1ejNxTkRsRy95dDdjakNwSzJiRWl6dllXVUpSYVhPeG1lWkhyOElyZnNTNGMwclNVODJXZTJWRU1sWmdDQW1qR0RTcWRmdXFHdzQvK3hFZXNncXNNU0pTT293TEg5Z241Q1diSzZrdWMrSHozMmFBYU90Q3l4djF3ek11a0FlKzFST1FTWWc4OXZ2VjUvZ09FMzdLVWI=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=V4HrnqbVrbbgeuQMMm8IoA3X6QyFwoq1OOVemo8u+fg8so/UuTZiWfQ+cFPLHKKmRy2TzNiLBoB1rR8vJ+tjl3GeFPuZdiA37qFCc4CbtUZIZgUBMokKuk+KoqUKeK1aKC2GE9GN6J2fyK7bWhyg8yNJpYKk7M1tbhKbBKkxWfk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578498977; v=1; bh=FhFTl18P27YyTc+iOxvoZrDjIqTuMtoehCeof4FedeY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=ceipal.com; q=dns/txt; s=krs;
+ t=1578498976; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=KShWcO8I+9SRMIeThXLX9rgRs26tv1EL0rHdPIHVnYQ=; b=TlSvyT9qVQG+VNIWLVTZiKz+JpJ3Yfe/sT90lkh51LMzEMmXV5Jj4HxRybr+F2lLIMhZ0YoI
+ uFOzXry2YqPEotHhFM6Rkh4e2KHZMkdOVvf4O5PaIA3Cf7IgQvm2KLYiFVUiEFHvxq+mcJhE
+ BTld09GNdrtlb+33k6F+zqO6SAE=
+X-Mailgun-Sending-Ip: 104.130.123.15
+X-Mailgun-Sid: WyI4MzA2NiIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI1YThkODciXQ==
+X-Mailgun-Batch-Id: 5e15fb9cbce17d4b8b678a8e
+Received: by luna.mailgun.net with HTTP; Wed, 08 Jan 2020 15:56:11 +0000
+Date: Wed, 08 Jan 2020 15:56:11 +0000
+Sender: sainadh.kalakoti=aalgorithm.com@ceipal.com
+Message-Id: <20200108155611.1.EEB75CE625EB5980@4086.ceipal.com>
+X-Mailgun-Variables: {"ref_id": "4086"}
+Reply-To: sainadh.kalakoti@aalgorithm.com
+To: josephs@linuxjobber.com
+From: Sainadh Kalakoti <sainadh.kalakoti@aalgorithm.com>
+Subject: Job Java Developer is shared with you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p><span style=3D"font-size:11pt"><span sty=
+le=3D"background:white"><span style=3D"line-height:normal"><span style=3D"f=
+ont-family:Calibri,sans-serif"><span style=3D"color:black">Hi,</span></span=
+></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Greetings,<br />
+Please go through the job description if you are interested please respond =
+back with your updated resume.</span></span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+b><span style=3D"color:black">JOB DESCRIPTION:</span></b></span></span></sp=
+an></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"tab-stops:273.0pt"><span style=3D=
+"font-family:Calibri,sans-serif"><span style=3D"color:black">Position: Java=
+ Developer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span></span></span><=
+/p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Location: <strong><span style=3D"background-colo=
+r:#f1c40f;">Austin/TX,AZ and also CA</span></strong></span></span></span></=
+span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Duration: Long Term Contract</span></span></span=
+></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"background:yellow"><span style=3D"color:black">Client : State=
+ Client of Texas(HHSC)</span></span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+b><span style=3D"color:black">SKILLS REQUIRED:</span></b></span></span></sp=
+an></span></p>
+
+<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><spa=
+n style=3D"color:black">&nbsp;&nbsp; <b>II. WORKER SKILLS AND QUALIFICATION=
+S</b></span></span></span></span></p>
+
+<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif">&nbs=
+p;</span></span></span></p>
+
+<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><b><=
+span style=3D"color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minimum Requirements:</span></b></span=
+></span></span></p>
+
+<table class=3D"Table" style=3D"width:477.0pt; margin-left:55px; border:sol=
+id windowtext 1.0pt" width=3D"636">
+	<tbody>
+		<tr>
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; padding:0in 5.=
+4pt 0in 5.4pt" valign=3D"top" width=3D"100">
+			<p align=3D"center" style=3D"margin-top:8px; margin-left:1px; text-align=
+:center"><span style=3D"font-size:11pt"><span style=3D"line-height:normal">=
+<span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">=
+Years</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; border-left:n=
+one; padding:0in 5.4pt 0in 5.4pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-top:8px; margin-right:13px; margin-left:1px"><span st=
+yle=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=3D"fo=
+nt-family:Calibri,sans-serif"><span style=3D"color:black">Skills/Experience=
+</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">7</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Professiona=
+l experience in software engineering</span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">6</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Expert in J=
+ava development using JEE platforms</span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">6</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Experience =
+in Oracle SQL & PL/SQL</span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">5</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Experience =
+in SOAP or RESTful Web Services</span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">5</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Technical D=
+ocumentation including Design Documents, Standards, and Configuration Plans=
+</span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">4</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Expert in S=
+pring Framework</span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">4</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Experience =
+in writing meaningful unit test and integration test including Spring test =
+framework, Junit, Mockito framework or equivalent</span></span></span></spa=
+n></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">3</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Experience =
+in Hibernate ORM</span></span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">2</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Expert in W=
+eb Application Development, preferably using Angular Framework</span></span=
+></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:16.35pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:75.2pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"100=
+">
+			<p align=3D"center" style=3D"text-align:center; margin-bottom:13px"><spa=
+n style=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">2</span></s=
+pan></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:401.8pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:16.35pt" valign=3D"top" width=3D"536">
+			<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span sty=
+le=3D"line-height:normal"><span style=3D"text-autospace:none"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">Working kno=
+wledge of Continuous Integration, Jenkins or equivalent</span></span></span=
+></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><b>&=
+nbsp;&nbsp;&nbsp; </b></span></span></span></p>
+
+<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><b><=
+span style=3D"color:black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Preferences:</span></b></span></span><=
+/span></p>
+
+<table class=3D"Table" style=3D"width:475.5pt; margin-left:55px; border:sol=
+id windowtext 1.0pt" width=3D"634">
+	<tbody>
+		<tr>
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; padding:0in 5.=
+4pt 0in 5.4pt" valign=3D"top" width=3D"94">
+			<p align=3D"center" style=3D"margin-top:8px; margin-left:1px; text-align=
+:center"><span style=3D"font-size:11pt"><span style=3D"line-height:normal">=
+<span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">=
+Years</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; border-left:n=
+one; padding:0in 5.4pt 0in 5.4pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-top:8px; margin-right:13px; margin-left:28px; text-in=
+dent:-.25in"><span style=3D"font-size:11pt"><span style=3D"line-height:norm=
+al"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bla=
+ck">Skills/Experience</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">5</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Working knowledge of code Vers=
+ion Control using SVN or Git</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">3</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Experience as a participant in=
+ agile software development teams</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">3</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Working knowledge of Test Auto=
+mation (Selenium, LoadRunner, Accessibility testing) and the ability to tro=
+ubleshoot integrations with HP ALM</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">3</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Experience in IBM WebSphere Se=
+rver deployments</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">3</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Experience in Weblogic Applica=
+tion Server deployments</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">3</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Working knowledge of Responsiv=
+e / Mobile Development</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">2</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Experience in Static Coding An=
+alysis using SonarQube or similar product</span></span></span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">2</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Working knowledge of Identity =
+& Access Management, Single Sign-on, SAML, OAuth, or JWT</span></span></spa=
+n></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:12.75pt">
+			<td style=3D"border:solid windowtext 1.0pt; width:70.7pt; border-top:non=
+e; padding:0in 5.4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"94"=
+>
+			<p align=3D"center" style=3D"margin-left:-1px; text-align:center; margin=
+-bottom:13px"><span style=3D"font-size:11pt"><span style=3D"line-height:nor=
+mal"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"color:bl=
+ack">2</span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid windowtext 1.0pt; width:405.0pt; padding:0in 5=
+=2E4pt 0in 5.4pt; height:12.75pt" valign=3D"top" width=3D"540">
+			<p style=3D"margin-right:12px; margin-bottom:13px"><span style=3D"font-s=
+ize:11pt"><span style=3D"line-height:normal"><span style=3D"font-family:Cal=
+ibri,sans-serif"><span style=3D"color:black">Working knowledge of Web Conte=
+nt Accessibility Guidelines (WCAG) 2.0 / Sec 508</span></span></span></span=
+></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style=3D"margin-bottom:13px">&nbsp;</p>
+
+<p style=3D"margin-bottom:13px">&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Thanks Regards,</span></span></span></span></spa=
+n></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Sainadh, Sr.US IT Recruiter,</span></span></span=
+></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Adwait Algorithm,</span></span></span></span></s=
+pan></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Ph.: +1 (832) 558 7317</span></span></span></spa=
+n></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"background:white"><span st=
+yle=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><=
+span style=3D"color:black">Email: <a href=3D"mailto:sainadh.kalakoti@aalgor=
+ithm.com"><span style=3D"text-decoration:none"><span style=3D"text-underlin=
+e:none">sainadh.kalakoti@aalgorithm.com</span></span></a></span></span></sp=
+an></span></span></p>
+
+<p style=3D"margin-bottom:13px">&nbsp;</p>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"https://talenthirecls4.ceipal.co=
+m/users/unsubscribe/3158e5f03a0a49527162d2089c27901dd431203b/7c4bb03a38f819=
+5af19e6faa0998ea4a086a32f2/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3Nu=
+cE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>click=
+ here </b></a>.</p>    </div>
+</body>
+</html>

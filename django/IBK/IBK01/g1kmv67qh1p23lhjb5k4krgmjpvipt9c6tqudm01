@@ -1,0 +1,101 @@
+Return-Path: <reid.bc@lynchburg.edu>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id g1kmv67qh1p23lhjb5k4krgmjpvipt9c6tqudm01
+ for jeff.adekunbi@ideabakr.org;
+ Mon, 30 Dec 2019 09:10:20 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of lynchburg.edu does not designate 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=reid.bc@lynchburg.edu; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of lynchburg.edu does not designate 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=reid.bc@lynchburg.edu; helo=us-east-mail1.symplicity.com;
+ dmarc=none header.from=lynchburg.edu;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFbnFqN2hXUGpPWS80NWo4TWdXYXgreEd3eXQ3R1BMUGs2WlErRUhPSFlOeEY1K1hoUU4rWkxzOWVCQVB1cHBlSHh2cWRSeHNUOGsvS1dQNG1XM1ppTW43Ky84MjNFaEhOVDgxZ1RPSTZ3Y3FobnlQYjlUUHVwVzZRU1NFWFJQYjMzQUlUNW5VaTdITGZVNWFBQkloNHdhWmhpY3pHUzJRVHhkZ0ZsYmR6dnBKWWRVRjRsbGxsbk5XbUEyQTkyRWYvSFdJSFE1akQrYytET1FNSXBsYms1RjRjc3lUMnVnSnRkQmRyZXJKNWJTRVUzdkxuTmFpMEEwcGF4T1NiZ1F6cENQUnduMDQrVXlwL2tHemJXR29zdjRCNVlMZVkvQzdTZzlUYmlyMjNBcVE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=CRhYsHqkKV4uF5u9I9fajruKfD7IcJmZwyoRL5hwcRD15z65jekEwatLzbPBbEKYh66eQ+5UP6Uuw78czo9eHuHJZBZ3vmzD96SFxW5qua3g6WOgKI0v9gBmGT5dVUoYm5CbWyCQ2sPk28YC+dUEPX3KOQdh4oBxuWaIYay7ic4=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577697021; v=1; bh=6ihGHw6zyABOZpKNJ3QYC5NuFgSb7rQHfEVBR9oiqHo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from ip-172-30-12-77 (ip-172-30-12-77.ec2.internal [172.30.12.77])
+	by mail.symplicity.com (Postfix) with ESMTP id B8A79615FA
+	for <jeff.adekunbi@ideabakr.org>; Mon, 30 Dec 2019 09:10:19 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com B8A79615FA
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_69f7a0290af8e933a7985a693a21eea6"
+From: reid.bc@lynchburg.edu
+To: jeff.adekunbi@ideabakr.org
+Subject: Career Services: Remote Part-Time Developer is expiring  
+Message-ID: <f6cd60ab3f503d44d54ddff4a94ffa6a@lc-csm.symplicity.com>
+Date: Mon, 30 Dec 2019 04:10:19 -0500
+
+--=_69f7a0290af8e933a7985a693a21eea6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Dec 30, 2019, 4:10 AM
+
+Dear Mr Jeff Adekunbi:=20
+
+This is a reminder that the Job Posting for Remote Part-Time Developer is e=
+xpiring on Tuesday December 31, 2019.
+
+If you wish to extend your posting, you can do so by logging into your acco=
+unt ( <a href=3D"https://lc-csm.symplicity.com/" target=3D"_blank">https://=
+lc-csm.symplicity.com/</a> ) and follow the instructions below:
+
+1 - Go to   <a href=3D"https://lc-csm.symplicity.com//employers" target=3D"=
+_blank">https://lc-csm.symplicity.com//employers</a>=20
+2- Enter your username (email) & password on (Login screen page)
+3- You are now on your HOME PAGE=20
+4- Click "jobs" on the top menu bar=20
+5- Select the job position you wish to EXTEND (click the job title)=20
+6-Change the 'Expiration Date' to a future date
+7- Click SUBMIT!
+
+If your job posting has expired, below are instructions on how to access th=
+e job posting to extend it:      =20
+
+1 - Go to  <a href=3D"https://lc-csm.symplicity.com//employers" target=3D"_=
+blank">https://lc-csm.symplicity.com//employers</a>=20
+2- Enter your username (email) & password on (Login screen page)
+3- You are now on your HOME PAGE=20
+4- Click "jobs" on the top menu bar=20
+5- Click on ADD NEW button
+6-Click on SHOW ARCHIVED button
+7-Select the "archived" job posting by clicking on the down arrow =20
+8-Change the Expiration Date to a future date
+9-Click SUBMIT button!
+
+If you do not have a password to access the position, please contact Beverl=
+y Reid at reid.bc@lynchburg.edu=0A=0APowered By Symplicity  
+--=_69f7a0290af8e933a7985a693a21eea6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />=
+<p>Dec 30, 2019, 4:10 AM</p>
+<p>Dear Mr Jeff Adekunbi:</p>
+<p>This is a reminder that the Job Posting for Remote Part-Time Developer i=
+s expiring on Tuesday December 31, 2019.</p>
+<p>If you wish to extend your posting, you can do so by logging into your a=
+ccount ( <a href=3D"https://lc-csm.symplicity.com/" target=3D"_blank">https=
+://lc-csm.symplicity.com/</a> ) and follow the instructions below:</p>
+<p>1 - Go to&nbsp;  <a href=3D"https://lc-csm.symplicity.com//employers" ta=
+rget=3D"_blank">https://lc-csm.symplicity.com//employers</a> <br>=0A2- Ente=
+r your username (email) &amp; password on (Login screen page)<br>=0A3- You =
+are now on your HOME PAGE <br>=0A4- Click "jobs" on the top menu bar <br>=
+=0A5- Select the job position you wish to EXTEND (click the job title) <br>=
+=0A6-Change the 'Expiration Date' to a future date<br>=0A7- Click SUBMIT!</=
+p>
+<p>If your job posting has expired, below are instructions on how to access=
+ the job posting to extend it:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>1 - Go to  <a href=3D"https://lc-csm.symplicity.com//employers" target=
+=3D"_blank">https://lc-csm.symplicity.com//employers</a> <br>=0A2- Enter yo=
+ur username (email) &amp; password on (Login screen page)<br>=0A3- You are =
+now on your HOME PAGE <br>=0A4- Click "jobs" on the top menu bar <br>=0A5- =
+Click on ADD NEW button<br>=0A6-Click on SHOW ARCHIVED button<br>=0A7-Selec=
+t the "archived" job posting by clicking on the down arrow&nbsp; <br>=0A8-C=
+hange the Expiration Date to a future date<br>=0A9-Click SUBMIT button!</p>
+<p>If you do not have a password to access the position, please contact Bev=
+erly Reid at reid.bc@lynchburg.edu</p><br>=0A<a href=3D"https://symplicity.=
+com/career_services_manager_csm" target=3D"_blank" title=3D"Powered By Symp=
+licity"><img src=3D"http://static.symplicity.com/images/powered-by-symplici=
+ty.png"></a>  
+--=_69f7a0290af8e933a7985a693a21eea6--
+

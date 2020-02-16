@@ -1,0 +1,131 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m45-14.mailgun.net (m45-14.mailgun.net [69.72.45.14])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id eri7950vv7mecjgj1qom1vpk92kuaobqqa21ea81
+ for josephs@linuxjobber.com;
+ Mon, 03 Feb 2020 16:09:52 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m45-14.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m45-14.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFQVN2V3pJRHE3a3dqRitPbWdGc1JlbUtwNk1LbURVTTQ2VFFLdlc0eisreHhqS1hhT3E0OTFzN3d0MG1reWZwbDc2dHM5eWp1bDBCTFYzZDJESnFTbE9FSVlUcERsSFUzcWpDeHZLOHhVbjBJcUtzQWd4ZTZYeHBaNE8xaEJ5SVcwUEpzcHAraHFBQVFLNHNtMWE2QWRFcUNUdm9oVmx6SmVRQ29kSGNoVVZnbFZpYkVDMTgyWEZibkVQZnpWOEx2UFpkTjBKVEJvMWpCbHVlYjhxTmxCK1hVRlExV05kemE4amhXZlBoT1hyTkgyNUpNZG0vS3lFYnVEL3B3NkIrOGY5RkUwZjNvWllwa2Ruem5JVUY4UU9uSWN2OFFjR2ErYkxKRjB5ZU1VVkdLYjVRUFdNQVprOGVRR1RqZ2JDWUhZNEd4OWFvMU1PZThZNzNYQ3VMSDg=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=E8SbFeA3mCXGd0f0kq1qxh/ECCmMwYSlGDzsLKxr0C7NWfvk6o4oSi75KuyzDbpNeLSeK2yPUGD25FaGxQsYqERwl/0k4mleeob/pPAHfwI+N7wEsDEEhkV+FuYAIOpFuufiKS8gHKrSmhlXG5TEr+dnbUbq9v/sott1yrlaN6E=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580746193; v=1; bh=c8RjNTZyBoQsZfkS3+vMmgP5rugu1+MNJkDYzjRZuXY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1580746193; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=ejnsCgDIq0mRVqWaGU5ZDgZ150pnxkKRTG08/22xG4w=; b=HUKm5QjH3/ogZjRK83ytkT31K0grwAckRUHWVFdbFgj2YeTkij5Qn3s5BnpoZZEB2nzAyR5d
+ Dx+WRSMvCggCDW3LUQfgDPH1kO2hL0XBkq9xKLd7PKbxIDFaxR68HZKysAwTdJ6V4KXCiR6A
+ JxNfroX/jV2ksLtY2ylwYGEXDsY=
+X-Mailgun-Sending-Ip: 69.72.45.14
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5e3845cf2398035c249a17ff
+Received: by luna.mailgun.net with HTTP; Mon, 03 Feb 2020 16:09:51 +0000
+Date: Mon, 03 Feb 2020 16:09:51 +0000
+Message-Id: <20200203160951.1.E15B8831196F7B66@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: abhishek.yadav@tryfacta.ai
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Abhishek Yadav <abhishek.yadav@tryfacta.ai>
+Subject: AWS Cloud Software Solution Architect :: Merrimack, NH :: Contract
+ W2 
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div>
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Arial","sans-serif"">Title</span></span></b><span style="font-size:10.0pt"><span style="font-family:"Arial","sans-serif"">: AWS Cloud Software Solution Architect<br />
+<b>Start Date</b>: 02/24/2020<br />
+<b>End Date</b>: 12/31/2020 (EXTENDABLE)<br />
+<b># of Openings</b>: 1<br />
+<b>Position Type</b>: Contract (W2 only)<br />
+<b>Location</b>: Merrimack, NH<br />
+<b>Description</b>:<br />
+Client currently seeks a AWS Cloud Software Solution Architect to join our team in Merrimack, New Hampshire (US-NH), United States (US).<br />
+<br />
+<b>Job Description:<br />
+Responsibilities:</b><br />
+Provide Consultancy and architecture support for Application migration to AWS cloud - Migrate on premise applications to target cloud (public/private)<br />
+Produce high-quality, testable and optimally deployed code for complex trading products and components on AWS.<br />
+Apply the deep Understanding of Cloud technologies and AWS cloud services like EC, Lambda, S3, CloudFront, RDS, DynamoDB to architect solution for application modernization.<br />
+Design & Develops web applications using SOA, Micro services and container technologies.<br />
+Develop applications in cloud using Java, spring boot, Hibernate, and related cloud platform services.<br />
+<b>Minimal Qualifications:</b><br />
+Minimum 5-years of experience with cloud platforms including AWS, MS Azure, or Openstack<br />
+Minimum 10- years&rsquo; experience with building enterprise applications (Full-stack development across distributed applications and services using Java/J2EE, Spring, Spring-boot, RESTful services and have deep knowledge of middleware Java stack, messaging technologies, containerization, web containers and test automation)<br />
+Minimum of 3-years AWS Cloud experience including key infrastructure components: EC2, S3, EBS, ELB, VPC, Route 53<br />
+<b>Preferred Skills:</b><br />
+AWS Solutions Architect professional level certification<br />
+You have an awareness of event-based systems, functional programming, and messaging frameworks such as Kafka and EMS<br />
+Experience with stock trading business functionality<br />
+The person is expected to have credible experience in understanding the entire project context, and able to demonstrate the knowledge of end-to-end application architecture in Cloud environment. Ideal candidate will have extensive experience in various AWS Cloud services, Cloud management and monitoring technologies and Java programming technologies (Core Java, C, JMS, Spring/Spring Boot, Web Services, Hibernate/DAO frameworks and advanced messaging and microservices framework</span></span></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Arial","sans-serif"">Remarks</span></span></b><span style="font-size:10.0pt"><span style="font-family:"Arial","sans-serif"">: Scope: Accelerate the migration of the Money Market Trading applications to the Cloud | must have: Architect - Cloud - AWS Services ; 5 years </span></span></span></span></p>
+</div>
+
+<div><span style="font-size:12px;">Should you be interested, please send me a copy of your resume in word format along with the following details ASAP.</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:12px;">Full Name:<br />
+Current Location:<br />
+Hourly rate on C2C/W2:<br />
+Work Authorization:<br />
+Earliest Available date to start:<br />
+Date and times available to interview:<br />
+Two Professional References:(Preferably Supervisory references):</span></div>
+
+<div>&nbsp;</div>
+<br />
+<br />
+&nbsp;
+<div id="EditorSignatureID">
+<div>
+<p style="margin:0in 0in 0.0001pt"><span style="font-size:12px;"><span style="background:white"><span style="font-family:Calibri,sans-serif"><b><span lang="EN-IN"><span style="font-family:"Arial","sans-serif""><span style="color:#8064a2">Unfeigned Regards,</span></span></span></b></span></span></span></p>
+
+<p style="margin:0in 0in 0.0001pt">&nbsp;</p>
+
+<p style="margin:0in 0in 0.0001pt"><span style="font-size:12px;"><span style="font-family:Calibri,sans-serif"><b><span style="font-family:"Arial","sans-serif""><span style="color:#01b5f2">Abhishek Yadav</span></span></b></span></span></p>
+
+<p style="margin:0in 0in 0.0001pt"><span style="font-size:12px;"><span style="font-family:Calibri,sans-serif"><b><span style="font-family:"Arial","sans-serif""><span style="color:#1f497d">Talent Acquisition Consultant</span></span></b></span></span></p>
+
+<p style="margin:0in 0in 0.0001pt"><span style="font-size:12px;"><span style="font-family:Calibri,sans-serif"><b><span style="font-family:"Arial","sans-serif""><span style="color:#1f497d">+1 732- 737 -6071</span></span></b></span></span></p>
+
+<p style="margin:0in 0in 0.0001pt"><span style="font-size:12px;"><span style="font-family:Calibri,sans-serif"><a href="mailto:Abhishek.yadav@tryfacta.ai" style="color:blue; text-decoration:underline"><b><span style="font-family:"Arial","sans-serif""><span style="color:#1f497d">Abhishek.yadav@tryfacta.ai</span></span></b></a></span></span></p>
+<span style="font-size:12px;"><b><span style="font-family:"Arial","sans-serif""><span style="color:#1f497d">Skype/hangout: abhishekcrimson066@gmail.com</span></span></b></span></div>
+
+<div>&nbsp;</div>
+
+<div><img alt="" height="59" src="https://talenthirecls1.ceipal.com/articles/WjdjeEZuelpSMm5KZEVIakllcmJKM2t0L25kc3p2MHo2eHBVNmRnWFpYUGw0dE05NUdhT1VQMHA3UnR4c2FXdFZXNmZrNjVGWEg1ZitqamtCbWYwbjQyK1o2SWtibjF5eEM0dUN0cGU1cFU9" width="209" /></div>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.tryfacta.ai/users/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/2aaba4a67e7b0803b65e74cfd7555d17b2e1796f/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://clicks.mg1.ceipalmm.com/o/eJwVzEsKwyAQANDT1KU4jpnowk2gvUbxMzaGWIOh0OM3hbd-2SPniEZUr5VWFwRSbgIJ8g7TYi0COHrMC9HNqPYCmbgeYW9Npt7E6p2zUanIRNmWEhIj6qAduciF0IAYXJ41e5q1EcNv_eRjPa9rr-_Pd-sx8vhXPwaeKE8"></body>
+</html>

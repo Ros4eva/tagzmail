@@ -1,0 +1,331 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m68-80.mailgun.net (m68-80.mailgun.net [166.78.68.80])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id vmfspltibaoeb0fmun9n6afnr4s6mk79udtuhlg1
+ for josephs@linuxjobber.com;
+ Fri, 17 Jan 2020 16:59:30 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m68-80.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m68-80.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFWXA1Wlc0b2JENUtNeGUxbHhWbS8xSzFaN0gxWkRkT1lPdVhGVmlmUTUxZE5CYmxUS2VNZjkzQzluSkJjdXVwNHBmdGN3Zmh5NzZpZ003aXdYcFhMY1N6UHEyVlpYWEI1Qk1EbThGMDFTWXRBaHVGS1MzRTd6OUN1cjZuMGFJKzJFMmMwVy9EUmdHMFhSMTgxTXN2R0J5L05kYnVHVWdVdmxCUWF5K0R0NVhobVA2WjlQUVRsdENTVWxOYzRhZyt6Vkhpb3JqcWFVWUlieWpGUk5EZm1uY0NVb0p6OUlsZVdUdVNybE1aS215bEpaWUl0ZC9MTExaeHZGUTI3dUZqVWhUZ1IycEZnWGtFWG51aFc1aEIyT3pwOFM1d1V3MTJXNTVnZExKTkhCem9VT0dIRDZIRWV6UG5sck1UVHdQZlhoSWd2UVFMNFFDWnl3TXFJOVR1T3VPUktwUUxvWWgzbXk0S1JYdEhHZFpRPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=WL0jGakjFRdD3E9MUBEWYPnU36bOZ3SGM5biAf98M/UsgdReKVhA464IcvrGSGeTQvGJG6Vz8reFoGAoX7CPGC5HFBXki/0aPbkoHVT5E98HXD4Has/WG1jdklsbJ36Sq3girPW5QfbJ2Zx4SfuAkQVrFKdjg+ufnBkp/512ZZs=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579280373; v=1; bh=1W4u95ZIl5U0Tp+oDWje/eBaJ5ik4RfriUiPjMbm78g=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1579280373; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=WdBjHge4Tq6OCqA7xRpPYCZRKyXeebZwDLHgJKdDS0M=; b=RUPS249q81cPo+aWLldGCmKBlp7Y3iXdAqcoVugHRkj239SUA/RK4BkcLUSwYbiWlKto+Pnc
+ 5Tx6gvtzQhsWmvi/ojbwb7fKUsn13SW9Zx/Bf0tqYOcqPEKL5U/Nm9Sp7lLWmyN525LH9Fd8
+ ZHdnUpGHCT6GRM+RDAHlYML/wdY=
+X-Mailgun-Sending-Ip: 166.78.68.80
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e21e7ede664e49625b6679c
+Received: by luna.mailgun.net with HTTP; Fri, 17 Jan 2020 16:59:25 +0000
+Date: Fri, 17 Jan 2020 16:59:25 +0000
+Sender: bhupesh.k=e-solutionsinc.com@mg.e-solutionsinc.com
+Message-Id: <20200117165925.1.4A34CBD4691FAC05@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: bhupesh.k@e-solutionsinc.com
+To: josephs@linuxjobber.com
+From: Bhupesh kumar <bhupesh.k@e-solutionsinc.com>
+Subject: Job "QA with Tosca Test Suite || Cedar Rapids, IA" is shared with
+ you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/1b31ff=
+2ffc3fec61fb1b9659377a77556d9597a0/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Hi,</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Hope you are doing good today!!</span></sp=
+an></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">I got your contact details from one of the=
+ JOB Portal and we do have <b>Full-Time Job</b> with "<b>Atos-Syntel</b>" c=
+lient and if Interested, send me your updated resume as soon as possible.</=
+span></span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt"><span styl=
+e=3D"font-family:"Cambria",serif">Client : Atos-Syntel (</span></span></b><=
+span style=3D"font-size:11.0pt"><span style=3D"background:white"><span styl=
+e=3D"font-family:"Cambria",serif"><a href=3D"http://www.atos-syntel.net" st=
+yle=3D"color:#0563c1; text-decoration:underline">www.atos-syntel.net</a></s=
+pan></span></span><b><span style=3D"font-size:11.0pt"><span style=3D"font-f=
+amily:"Cambria",serif">)</span></span></b></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"lin=
+e-height:12.0pt"><span style=3D"font-family:Calibri,sans-serif"><b><span st=
+yle=3D"font-size:11.0pt"><span style=3D"background:yellow"><span style=3D"f=
+ont-family:"Cambria",serif">Title : &nbsp;</span></span></span></b><b><span=
+ lang=3D"EN-IN" style=3D"font-size:11.0pt"><span style=3D"background:yellow=
+"><span style=3D"font-family:"Cambria",serif">Devops Consultant with Docker=
+, Kubernetes, Java experience</span></span></span></b></span></span></span>=
+</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt"><span styl=
+e=3D"background:yellow"><span style=3D"font-family:"Cambria",serif">Locatio=
+n : </span></span></span></b><b><span lang=3D"EN-IN" style=3D"font-size:11.=
+0pt"><span style=3D"background:yellow"><span style=3D"font-family:"Cambria"=
+,serif">Toronto, ON </span></span></span></b><b><span style=3D"font-size:11=
+=2E0pt"><span style=3D"background:yellow"=
+><span style=3D"font-family:"Cambria=
+",serif">(100% Onsite Position)</span></span></span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Start Date : ASAP</span></span></span></sp=
+an></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt"><span styl=
+e=3D"font-family:"Cambria",serif">Type of hire : Full-Time Opportunity</spa=
+n></span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">No of position : 1+</span></span></span></=
+span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span lang=3D"EN-IN" style=3D"font-size:11.=
+0pt"><span style=3D"font-family:"Cambria",serif">MUST Have : k8s Architectu=
+re (Kubernetes) and containerization (Docker) &nbsp;is compulsory</span></s=
+pan></b></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">1. &nbsp; Application contain=
+erization (Proficient)</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">2. &nbsp; k8s Architecture, C=
+onfiguration, setup (Proficient)</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">2 &nbsp; &nbsp;Java Web app p=
+ackaging, distribution, and configuration. (Knowledgeable)</span></span></s=
+pan></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">3. &nbsp; Linux O/S and scrip=
+ting skills (Proficient)</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">4. &nbsp; &nbsp;Distributed s=
+ystem design and implementation; (Knowledgeable)</span></span></span></span=
+></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">5. &nbsp; &nbsp; Azure or VMw=
+are knowledge; (Proficient)</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">6. &nbsp; &nbsp; DevOps with =
+Jenkins; (bonus)</span></span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span lang=3D"EN-IN" style=3D"font-family:"=
+Cambria",serif">Also please provide me below details to submit your resume-=
+</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">Your Work authorization : </s=
+pan></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">Present location (city, state):</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">Skype ID:</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">How soon you can join</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">Availability for Interview (Time & Date):</span></span></span>=
+</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">Total Experience (in Years):</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">DOB (only DD/MM):</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">Highest Education & Passing Year:</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-family:"Cam=
+bria",serif">Your Best reachable time :</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Last 4 digit SSN :</span></span></span></s=
+pan></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Salary expectation :</span></span></span><=
+/span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Warm Regards,</span></span></span></span><=
+/p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt"><span styl=
+e=3D"font-family:"Cambria",serif">Bhupesh Kumar</span></span></b></span></s=
+pan></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Lead Recruiter</span></span></span></span>=
+</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">Tel: 732-200-1986</span></span></span></sp=
+an></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt"><span style=
+=3D"font-family:"Cambria",serif">email : </span></span><a href=3D"mailto:bh=
+upesh.k@e-solutionsinc.com" style=3D"color:#0563c1; text-decoration:underli=
+ne"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",s=
+erif">bhupesh.k@e-solutionsinc.com</span></span></a></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt"><span styl=
+e=3D"font-family:"Cambria",serif">e-Solutions Inc. is a 15 year old company=
+ having 15 Global Offices across 5 Nations and with more than 1000+ IT & So=
+ftware professionals. Working on cutting edge technologies, we are serving =
+100+ Fortune2000 companies globally. </span></span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Cambria",serif">Disclaimer:</span></span><b><=
+span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif"=
+>E-Solutions Inc.</span></span></b><span style=3D"font-size:11.0pt"><span s=
+tyle=3D"font-family:"Cambria",serif">&nbsp;provides equal employment opport=
+unities (EEO) to all employees and applicants for employment without regard=
+ to race, color, religion, gender, sexual orientation, gender identity or e=
+xpression, national origin, age, disability, genetic information, marital s=
+tatus, amnesty, or status as a covered veteran in accordance with applicabl=
+e federal, state and local laws. We especially invite women, minorities, ve=
+terans, and individuals with disabilities to apply. EEO/AA/M/F/Vet/Disabili=
+ty.</span></span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEEOwiAQAMDXyE0CuNuFA4e2xm8YC4ulacEUm_h8dR4w0adgoRPZG2WU0p=
+p0h86g1BL6C4zDFTqnb_2o8ARqe0o-t7oe71xLyyXIUDcxe5cCWWB0aA1BipYoYmAXUnpEiix2T=
+vccPTqyYvdLbfya2y9cczk-S50m3v_VF_03Kuo"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

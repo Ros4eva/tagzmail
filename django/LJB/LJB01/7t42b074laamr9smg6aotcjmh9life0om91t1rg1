@@ -1,0 +1,117 @@
+Return-Path: <alex.hakim@iquasar.com>
+Received: from mail2.joboppforyou.com (mail2.joboppforyou.com [216.200.152.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 7t42b074laamr9smg6aotcjmh9life0om91t1rg1
+ for josephs@linuxjobber.com;
+ Tue, 04 Feb 2020 13:37:40 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=alex.hakim@iquasar.com; helo=mail2.joboppforyou.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=alex.hakim@iquasar.com; helo=mail2.joboppforyou.com;
+ dkim=pass header.i=@joboppforyou.com;
+ dmarc=pass header.from=iquasar.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFINlFzVzZuMnJsREVPRkxiV3NHeWFpZ2ZIV2dDRjdzM1MwNHN3ejFoN3ZFNXFua2FRWlRjWjNpbTJ3L1V4QWNTL0F4LzA5OUxMdFhWbjdKZXdjcjlBTXVWMkdNU09Oa1paeC90ZFpaSVBudzBubkx1M3FjKzIwelJDTXpiVzlFM2JzZXVUWHJjRzgvQmgyY0EvMlV6V0p6bHhaSVE0TWVrTjlBblE4b0VvQ2QrN1Ria1dGYWo3UDdEK3R3WnMvMUNuTDdldzA5dWVSNUFDTTlXQVdxNHBKZVNSZUp3bmVKS0dBbFlkN2tESzNzMlI4WDR2QS9GZkh2RXRtOXVWWkdwLzVlSHJRT203YTdPWmNveGNTVmdtYnh3bmg2aTNFL1I4cnh1YkN5dWxZd1E9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=YUD5TJmL7WtXZg5xm25apXr1D8ZYkSOzyKjkiOdC2801J1ePcwm9ZZEtRCpWgNCzRs7kKlVC8hFSesPo0NxmplZV3F3b8I0zGOfx3IG0ofDEnb+JqqQdeAjrVKJsL8z9AUy8Sa14+lw2/WAuhIud56mZwYbH0mFT+Sn7fKHeFGY=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580823461; v=1; bh=/719n68kJCKkGX8pQWAZRFJuMJ8ESHmrJS43BlkSLYU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=key8; d=joboppforyou.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=3XvbOyB0fLemI/Qh3SKr7f0gepk=;
+ b=Pta+Uc5yUZKPI2rezW75yr4BR7VGeMr/3zPT013MPSWThDdMVM/SR488GAFGGU6lgb9vr8BEP6XI
+   MvTLqz26hZySGUCALhuhvhHXxnf50oTbKlSKMGCunQrYSBoVy9+cPdIqevMeJ1hcS2JhsJlDwYam
+   zLUDaVzQlilBkfKSxGsL+ZKJACDMZ8cFz04GzaiWXX+Vf8GiyJq1GuxHp4nKqg+9F9uv31Gom9hR
+   V+8cxXXoWWrctMKWJM+ivwh692raT4ObkQ12wFJRUy7WkagGKV4OiilnHTboPKBEG+5fOB5PPeB6
+   8xyeSkp/Pk5asXnEzfaHNy2kWaHcamBhPMjGBg==
+Received: by joboppforyou.com id h75nua1ph64r for <josephs@linuxjobber.com>; Tue, 4 Feb 2020 08:21:37 -0500 (envelope-from <alex.hakim@iquasar.com>)
+Date: Tue, 4 Feb 2020 08:37:35 -0500 (EST)
+From: "Aamir (Alex) Hakim" <alex.hakim@iquasar.com>
+To: josephs@linuxjobber.com
+Message-ID: <483450121.389081580823455565.JavaMail.admin@emailmerge22.jobdiva.com>
+Subject: Urgent Requirement // Linux Systems Administrator // Linthicum
+ Maryland
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_38932_1273949825.1580823455563"
+
+------=_Part_38932_1273949825.1580823455563
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div>
+<div><span style="font-size:14pt"><span style="font-family:Times New Roman,Times,serif"><span style="color:#222222">HI,<br />
+<br />
+My name is&nbsp;<strong>Alex</strong>&nbsp;and I represent&nbsp;<strong>Defense Engineering Inc</strong>., headquartered in Warrenton, VA. DEI is an ISO 9001:2008-certified, process-oriented company that works with the Federal Government<br />
+&nbsp;</span><br />
+<strong><span style="color:black">Title:&nbsp;</span></strong><strong><span style="color:#222222">Linux&nbsp;</span></strong><span style="color:#222222">Systems Administrator</span><br />
+<strong><span style="color:black">Location:&nbsp;</span></strong><strong><span style="color:#222222">Linthicum Maryland.</span></strong><br />
+<strong><span style="color:black">Clearance:</span></strong><span style="color:#222222">Secret clearance to start with the ability to obtain a Top Secret Clearance</span><br />
+<br />
+<span style="color:#222222">&nbsp;<strong>RESPONSIBILITIES</strong><br />
+&nbsp;</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Provide Linux systems administration maintaining, upgrading and supporting a number of mission critical applications, and physical and virtual servers on RedHat operating systems.&nbsp;</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Ensure system reliability, application interoperability and performance of Linux servers.&nbsp;</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Perform integration activities, working with different technologies and troubleshooting and resolving technical problems.</span><br />
+&nbsp;<br />
+<strong><span style="color:#222222">Required Skills</span></strong><br />
+&nbsp;<br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience in Linux System Administration to include maintaining and troubleshooting RedHat Linux 7, backups and application installs/upgrades</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience providing support, maintenance and security for Red Hat (RHEL) Linux</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Patching and upgrading Linux servers</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Command line skills and bash scripting, including Kickstart and startup scripts and regular expressions</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Strong troubleshooting skills and interpersonal skills a must</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Secret clearance to start with the ability to obtain a Top Secret Clearance</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">DoD 8570 Compliant (Security + cert)</span><br />
+&nbsp;<br />
+<strong><span style="color:black">Desired Skills:</span></strong><br />
+&nbsp;<br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience supporting Oracle or Postgres databases on Linux</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience utilizing NAS/SAN on Linux servers</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Familiarity with NS, Apache, SVM, IPTables, Firewalld, SELinux, Cron, Splunk and TomCat</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience with configuring and maintaining VMWare clusters, hosts and guests</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience with installing, upgrading and maintaining GitLab</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Monitor and track trouble tickets and change requests to ensure high quality customer service</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Understanding of DNSSEC; ability to maintain and troubleshoot</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience implementing PKE/PKI on web servers</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience with Puppet or similar operations managements softwares</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Experience with DOD STIGs</span><br />
+<span style="color:#222222">&middot;&nbsp;</span><span style="color:#222222">Backup, recover and restoration experience</span></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<div><span style="font-size:12pt"><span style="font-family:Times New Roman,Times,serif">If you are available and&nbsp;interested in this position,&nbsp;please call me at <strong><span style="color:#0070c0">703-936-0057</span></strong>&nbsp;or&nbsp;reply to my&nbsp;e-mail&nbsp;at&nbsp;<strong>alex.hakim@iquasar.com</strong>&nbsp;with a latest copy of your resume, contact number, and the best time to call you. In considering candidates, time is of essence, so please respond ASAP. Thank you.</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:12pt"><span style="font-family:Times New Roman,Times,serif">If you are not looking for new opportunities at this time but know of&nbsp;a friend&nbsp;who might have the required qualifications and interest, please&nbsp;forward this e-mail to them ASAP and/or send their information to me.</span></span></div>
+
+<div><br />
+<span style="font-size:12pt"><span style="font-family:Times New Roman,Times,serif">Please don&rsquo;t hesitate to contact me should you have any question(s).</span></span></div>
+</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:14pt"><span style="font-family:Times New Roman,Times,serif">Sincerely yours,</span></span><br />
+&nbsp;</div>
+
+<div><span style="font-size:14pt"><span style="font-family:Times New Roman,Times,serif"><span style="color:#0070c0">Alex Hakim</span><br />
+<span style="color:#0070c0">Senior Recruitment Professional</span><br />
+<strong><em><span style="color:#0070c0">DEI -</span></em></strong>&nbsp;<strong><em><span style="color:#ff3b5b">Partnering Technology with Business Needs</span></em></strong><br />
+<span style="color:#0070c0">O:703 962 6001 x 519</span><br />
+<span style="color:#0070c0">Direct: 703-936-0057</span><br />
+<u><span style="color:#0070c0"><a href="http://www.dei.net/" target="_blank"><span style="color:blue">www.dei.net</span></a></span></u></span></span><br />
+&nbsp;</div>
+
+<div><br />
+<span style="font-size:12pt"><span style="font-family:Times New Roman,Times,serif">Note: <em>This email is sent to you in response to your resume posting on Internet/Online Databases or your recent interest in our jobs. If you received this email in error, we apologize. Sorry for any inconvenience this may have caused. If you do not wish to receive future e-mails with information on current iQuasar job openings, please reply with &ldquo;UNSUBSCRIBE&rdquo; in the subject line of your reply and we will update our database accordingly. If you are not currently seeking employment, or if you would prefer I contact you at some later date, please indicate your date of availability so that I may honor your request. In any event, I respectfully recommend you continue to avail yourself to the employment options and job market information we provide with our e-mail notices.</em></span></span></div>
+
+<div><br />
+<span style="font-size:12pt"><span style="font-family:Times New Roman,Times,serif">Thanks again!</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:12pt"><span style="font-family:Times New Roman,Times,serif">Aamir (Alex)</span></span></div>
+</div>
+
+<div>&nbsp;</div>
+<br><br>If you would like to unsubscribe from iQuasar, LLC, please click <a href='http://jobs.iquasar.com/optout.jsp?d=3439305f6a6f7365706873406c696e75786a6f626265722e636f6d&e=161&t11=1580823455563'>here</a>.<img id='logo' src='http://www1.jobdiva.com/servlets-examples/servlet/trackEmailMerge?a=01bEAlQBhNWNlQBAANZAzsWXlRCAzBXXQZbVVtB' />
+------=_Part_38932_1273949825.1580823455563--
+

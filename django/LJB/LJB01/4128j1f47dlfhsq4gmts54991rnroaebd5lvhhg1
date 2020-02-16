@@ -1,0 +1,135 @@
+Return-Path: <alex.hakim@iquasar.com>
+Received: from mail2.joboppforyou.com (mail2.joboppforyou.com [216.200.152.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 4128j1f47dlfhsq4gmts54991rnroaebd5lvhhg1
+ for josephs@linuxjobber.com;
+ Wed, 18 Dec 2019 17:58:57 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=alex.hakim@iquasar.com; helo=mail2.joboppforyou.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=alex.hakim@iquasar.com; helo=mail2.joboppforyou.com;
+ dkim=pass header.i=@joboppforyou.com;
+ dmarc=pass header.from=iquasar.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGeCtmalpqR1dMQWQxeVNqa2ErK2FUZ3lkbWZQeTFqcEtkMzVQMFpKZVVwbDA2QXoxS1pFSTNaS1Qybjh3RkxsVDRlY2Y5bXo0ejlvVnNIajJ3NGdSSExXNDEwVjNPNnFxNm1Gdkg1K0RMNlAyMUowY3VVb3hYL1VxUk1uUU1MY0hleFkrWitmUGFDVzgvNmdnRzF2algyaTErc2JJNEtwOXc1T2ZyVkF3WVoxMHU4U2Fnb2ljeVFaOXB4cU5KbFVGc3hTaDFDM2ora3dhT3cxdjIwU0xETkVIeDJkckJNdmYyR1hBN3JTaXhFZjc1Z0hzV2o0TmVVcDRBdTEvaXp1L0M0QzJiQjV3d0Fuclk3ekYyTlFMVkRONjVwcDkrSjc4Y1RmdWoxYTJRVHc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=V+EdgnEcx21AO4BW4t6Kbg5ysJws8Cp+v8K6WDah86bISwYr1HAorlfnLCDeXiG6nplBy5Y7WBJ6kN0mE6TMordCG+Tu2Ya6JyFPu19hbUezEIXE1bKsjSNURgdlQ9Fi01f/hYrBO8FczLUcyPljVGn2IDkLvg4P/7pVCJhWTnc=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576691938; v=1; bh=qbN90fddiD70R6iOiXNlThIJYZQcS4KjgiEjnrEtYfs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=key8; d=joboppforyou.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=VvTHVXeRcuB11peKTUhp7E5PLjs=;
+ b=W/qyS+kLij4JOIl+twODUC8ZDUWjZLdZUhrennW4kEYOSY2FAVpSUB1vkeZn8xO3G/4DPfoBTTge
+   YhZeTMTCIDnaTCtT3jbCDHyM4/5+1v09SQNyCwGhRJ/VrNAF8BLBRMWky3zY9OTWRMii7iJbhcCW
+   kqnXrIZfqdP/2vhAgbRk6osZe+OpRJZ7C5bCDOyCUTaHds2zggepsRRj7X+hNDJiEKd5516l25vp
+   PNzjYoMQOmDd7GZ1BcoFJNTGUQIqr8puBjtym7/Dt+3oSeXy7kN5d/UOQbgkne+tz+ohdScnlFaI
+   CIsZ+AHwDgbaUOXtgx1mioSE7AYFZNbIAeoipQ==
+Received: by joboppforyou.com id hv9ing1ph64p for <josephs@linuxjobber.com>; Wed, 18 Dec 2019 12:44:23 -0500 (envelope-from <alex.hakim@iquasar.com>)
+Date: Wed, 18 Dec 2019 13:18:42 -0500 (EST)
+From: "Aamir (Alex) Hakim" <alex.hakim@iquasar.com>
+To: josephs@linuxjobber.com
+Message-ID: <1391191022.2374441576693122477.JavaMail.admin@emailmerge26>
+Subject: Urgent Requirement // System Administrator // Linthicum, MD
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_237524_951388779.1576693122471"
+
+------=_Part_237524_951388779.1576693122471
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div>
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif"><span style="color:#222222">Hi,</span><br />
+&nbsp;<br />
+<span style="color:#222222">My name is&nbsp;<strong>Alex&nbsp;</strong>and I represent&nbsp;<strong>Defense Engineering INC</strong>. We are seeking a&nbsp;<strong>System Administrator</strong>&nbsp;for one of our client positions in&nbsp;<strong>Linthicum, MD.&nbsp;</strong>Please review detailed job description given below:</span><br />
+&nbsp;<br />
+<strong><span style="color:#222222">Job Description</span></strong><span style="color:#222222">:</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+<span style="color:#222222">Windows System Administration - building, deploying, upgrading and maintaining Windows 2016 servers on multiple virtual and physical servers. Includes supporting multiple applications and services, providing tier 3 troubleshooting and issue resolution, and integrating technologies using VMWare ESXi, NetApp SANs, Cisco UCS and HP servers.</span><br />
+&nbsp;<br />
+<strong><span style="color:#222222">Required Skills:</span></strong><br />
+&nbsp;</span></span>
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Backup and Recovery with Backup Exec</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Windows server 2016 configuration and administration</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Domain and LAN administration</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Active Directory administration, GPO configuration and troubleshooting</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">-Share and NTFS permission configuration and DFS deployments</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Familiarity with DNS, DHCP, SQL administration,</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Exchange, Lync, SharePoint, SCCM and file server migrations</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Monitoring and tracking trouble tickets and change requests to ensure high quality customer service.</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Ability to obtain a Top Secret Clearance (Secret to start)</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">DoD 8570 Compliant (Security + cert)</span></span></li>
+</ul>
+<span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">&nbsp;<br />
+<strong><span style="color:#222222">Desired skills:</span></strong><br />
+&nbsp;</span></span>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Ability to present complicated technical issues with clear easy-to-follow solutions and path forward</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Demonstrated excellent written and oral communication skills</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Familiarity with Windows 10 workstation OS and ability to image a workstation.</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Ability to provide technical software, hardware and network problem resolution, making independent decisions by performing question/problem diagnosis in a Help Desk environment.</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Strong customer service experience.</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Supporting Outlook messaging issues.</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">HP and Cisco server hardware and blades, including, their associated interconnects (SAS, FC, TCP/IP).</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">VMware design, configuration, administration and troubleshooting experience in clusters larger than 6 nodes</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">NetApp FAS design, configuration, administration and troubleshooting experience with 7-mode and cDOT</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Cisco UCS configuration, and troubleshooting experience</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Monitoring system resource usage and ensuring adequate resources using common industry tools</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Experience maintaining Configuration Management systems and package deployment</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Installation and configuration of MS SQL server</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Experience applying STIG&rsquo;s and enforcing DoD compliance</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Ability to create PowerShell script to automate redundant tasks</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Experience with Splunk</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Ability to work with limited guidance and as part of a team</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Microsoft and/or NetApp certified</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Understanding of PowerShell and PowerCLI commands and scripting</span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Configuring and maintaining WSUS and/or SCCM server</span></span></li>
+</ul>
+</div>
+
+<div>&nbsp;</div>
+
+<div>
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">If you are available and&nbsp;interested in this position,&nbsp;please call me at <strong>(703) 936-0057</strong>&nbsp;or&nbsp;reply to my&nbsp;e-mail&nbsp;at&nbsp;<strong>alex.hakim@iquasar.com</strong>&nbsp;with a latest copy of your resume, contact number, and the best time to call you. In considering candidates, time is of essence, so please respond ASAP. Thank you.</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">If you are not looking for new opportunities at this time but know of&nbsp;a friend&nbsp;who might have the required qualifications and interest, please&nbsp;forward this e-mail to them ASAP and/or send their information to me.</span></span></div>
+
+<div><br />
+<span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Please don&rsquo;t hesitate to contact me should you have any question(s).</span></span></div>
+</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Sincerely yours,</span></span><br />
+&nbsp;</div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Aamir (Alex) Hakim</span></span></div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Recruitment Professional</span></span></div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">iQuasar - Solutions and Value for You</span></span></div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif"><a href="http://www.iquasar.com">www.iquasar.com</a><br />
+6 Pidgeon Hill Drive Suite 305<br />
+Sterling, VA 20165<br />
+<strong>Phone:</strong> (703) 936-0057</span></span></div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif"><strong>Fax:</strong> 703-773-6970<br />
+<strong>e-mail:</strong> alex.hakim@iquasar.com</span></span><br />
+&nbsp;</div>
+
+<div><br />
+<span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Note: <em>This email is sent to you in response to your resume posting on Internet/Online Databases or your recent interest in our jobs. If you received this email in error, we apologize. Sorry for any inconvenience this may have caused. If you do not wish to receive future e-mails with information on current iQuasar job openings, please reply with &ldquo;UNSUBSCRIBE&rdquo; in the subject line of your reply and we will update our database accordingly. If you are not currently seeking employment, or if you would prefer I contact you at some later date, please indicate your date of availability so that I may honor your request. In any event, I respectfully recommend you continue to avail yourself to the employment options and job market information we provide with our e-mail notices.</em></span></span></div>
+
+<div><br />
+<span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Thanks again!</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:11pt"><span style="font-family:Times New Roman,Times,serif">Aamir (Alex)</span></span></div>
+</div>
+
+<div>&nbsp;</div>
+<br><br>If you would like to unsubscribe from iQuasar, LLC, please click <a href='http://jobs.iquasar.com/optout.jsp?d=3439305f6a6f7365706873406c696e75786a6f626265722e636f6d&e=161&t11=1576693122470'>here</a>.<img id='logo' src='http://www1.jobdiva.com/servlets-examples/servlet/trackEmailMerge?a=01bEAlQBhNWNlQIAAJZAzsWXlRCAzBXXQVYWFxH' />
+------=_Part_237524_951388779.1576693122471--
+

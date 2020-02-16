@@ -1,0 +1,330 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m43-210.mailgun.net (m43-210.mailgun.net [69.72.43.210])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id e35eke5d01cb8l11chv550omfiest3hds4tqh5g1
+ for josephs@linuxjobber.com;
+ Wed, 22 Jan 2020 22:39:13 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 69.72.43.210 as permitted sender) client-ip=69.72.43.210; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m43-210.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 69.72.43.210 as permitted sender) client-ip=69.72.43.210; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m43-210.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGRVo0TDRmT2U4OFhVZEg1TW5sTWhueWpSQ0w3dWdkSXkvdXJNemJaQTdzRk1aMEZxa2pTSkduNFp3elZ0YU1iRjg2Mk1KQWs4SUFwRDhCQy9GSS83TXhmV2tiM1JKaDRDZDAyblFqa1k4bDJjM1IxN3dueGszV0dNVHl5Njd2WG9jbnRwd09lUFVGS0VpVW5qQzdzcEg5SEYzMjdKcUExeDdCeDBkL3VBMG5aZXY3Z2JCL1hwbjJxc3Y3R2d4K29QSmZNU3VYMWxQT0IvZEwrQ3FiYjhBdnp1bFlmN1dOaC9oSmdZV2VZVmp1M2V6RzFrT2U5SGlHd0N5ZUlmMGlHWkoxVjFSL1Z2S29BeE51aEtmdlAwT3VPQndOV01YZmhQdk0wS0FHTjB6Z0tBdDdFUHdJQ3prOHhtWTJlUGRGc1FabEtlbXBGL1Y0Y2N0TXRHNDBNbVQ=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=WEIjx2tDN8y7TxhYKRL1HYL2Rye5BQPVS8hCcx0j5cJv9ioKQSqQ4nfI8pQr1XDeNr6flv5X4d/LahJGqQpjjUmF14vR1/0QVeiDVEhcengRPtmlQUdIMPHZFcbmpQ1V72uw/BPNg3axwa3LBJr5OjLVTDxlb9vaFY9zYVy5R4U=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579732756; v=1; bh=dMsmAh61UoJk6TwhUBD7t7umO/svAyj4UHRCnSxtByk=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1579732755; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=f4BBfgKSXluOpPidyYMtdw0pEBHFLZSdTq7jfcY35A8=; b=pi1a1nltciYLwmfOCaP2NzGKWBkuTukrX3Obs1FSH9z6Xj8SDljYP5ehp3f9ssz0UQ6jJXUP
+ nulUr9YaKBkiXMRwsqxKbNUGg80d+mc1iTLnv4MQsDtIOrqFZ8xMwHnxbtVHCXSUE79HcFb6
+ sosjktwQ/1p57musEw42UePqv0U=
+X-Mailgun-Sending-Ip: 69.72.43.210
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e28cf08c46aff9f4a537f75
+Received: by luna.mailgun.net with HTTP; Wed, 22 Jan 2020 22:39:04 +0000
+Date: Wed, 22 Jan 2020 22:39:04 +0000
+Sender: anjali.k@usgrpinc.com
+Message-Id: <20200122223904.1.7D043BBF69053684@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: anjali.k@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Anjali Kanojiya <anjali.k@usgrpinc.com>
+Subject: Urgent Position || DevOps Engineer  in San Jose, CA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div id=3D"EditorSalutationID">
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><a name=3D"m_4576049754713962935_m_-209432298475579"></a><span s=
+tyle=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif">=
+<span style=3D"color:black">Hello,</span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cal=
+ibri",sans-serif"><span style=3D"color:black">Please go through the job des=
+cription and let me know if interested.</span></span></span></span></span><=
+/p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"background:ye=
+llow"><span style=3D"font-family:"Calibri",sans-serif"><span style=3D"color=
+:black">Role : DevOps Engineer</span></span></span></span></b></span></span=
+></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"background:ye=
+llow"><span style=3D"font-family:"Calibri",sans-serif"><span style=3D"color=
+:black">Work location: San Jose, CA</span></span></span></span></b><b> </b>=
+</span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"background:ye=
+llow"><span style=3D"font-family:"Calibri",sans-serif"><span style=3D"color=
+:black">Long term Position</span></span></span></span></b></span></span></p=
+>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cal=
+ibri",sans-serif"><span style=3D"color:black">&nbsp;<strong><span style=3D"=
+font-family:"Calibri",sans-serif">Job Description:</span></strong></span></=
+span></span></span></span></p>
+
+<p style=3D"margin-bottom:16px"><span style=3D"font-size:12pt"><span style=
+=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.0pt"><=
+span style=3D"background:white"><span style=3D"font-family:"Calibri",sans-s=
+erif"><span style=3D"color:black">DevOps Engineer Responsibilities:</span><=
+/span></span></span><br />
+<br />
+<span style=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-=
+serif"><span style=3D"color:black"><span style=3D"background:white">Design =
+and implement build, deployment, and configuration management.</span><br />
+<span style=3D"background:white">Deploy and maintain critical applications =
+on cloud-native micro-services architecture.</span><br />
+<span style=3D"background:white">Deploy and maintain CI/CD pipelines across=
+ multiple environments.</span><br />
+<span style=3D"background:white">Monitor metrics and develop ways to improv=
+e.</span><br />
+<span style=3D"background:white">Provide technical guidance and educate tea=
+m members and coworkers on development and operations.</span><br />
+<span style=3D"background:white">Brainstorm for new ideas and ways to impro=
+ve development delivery.</span><br />
+<span style=3D"background:white">Consult with peers for feedback during tes=
+ting stages.</span><br />
+<span style=3D"background:white">Build, maintain, and monitor configuration=
+ standards.</span><br />
+<span style=3D"background:white">Maintain day-to-day management and adminis=
+tration of projects.</span><br />
+<span style=3D"background:white">Document and design various processes; upd=
+ate existing processes.</span><br />
+<span style=3D"background:white">Improve infrastructure development and app=
+lication development.</span><br />
+<span style=3D"background:white">Iterate on best practices to increase the =
+quality & velocity of deployments.</span><br />
+<br />
+<span style=3D"background:white">Must have qualification:</span><br />
+<span style=3D"background:white">Minimum of seven (7) years of DevOps and C=
+loud Computing experience in highly complex environments.</span><br />
+<span style=3D"background:white">Hands on managing cloud native application=
+s</span><br />
+<span style=3D"background:white">Software development experience, ideally i=
+n Python or Java.</span><br />
+<span style=3D"background:white">Container Workflows: Kubernetes, Docker Sw=
+arm</span><br />
+<span style=3D"background:white">Virtualization: AMI, Vagrant, VirtualBox, =
+VMware</span><br />
+<span style=3D"background:white">Cloud computing: Openstack, AWS,GCP</span>=
+<br />
+<span style=3D"background:white">Configuration management: Ansible, Puppet<=
+/span><br />
+<span style=3D"background:white">Provisioning: Terraform, CloudFormation, K=
+ickstart</span><br />
+<span style=3D"background:white">Continuous integration tools: Jenkins 2.0,=
+ Circle CI</span><br />
+<span style=3D"background:white">SCM tools: Git</span><br />
+<span style=3D"background:white">Scripting languages: Shell, Perl, Python</=
+span><br />
+<span style=3D"background:white">Experience with MySQL, Postgres, Casandra,=
+ Redis, OracleDB or MongoDB</span></span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p style=3D"margin-bottom:8px"><span style=3D"font-size:12pt"><span style=
+=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri",sans-serif"><span style=3D"color:bla=
+ck">Anjali Kanojiya</span></span></span></b><span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri",sans-serif"><span style=3D"color:bla=
+ck">| IT Recruiter</span></span></span></span></span></p>
+
+<table class=3D"Table" style=3D"width:571.1pt; border-collapse:collapse; bo=
+rder:dotted #948a54 1.0pt" width=3D"761">
+	<tbody>
+		<tr style=3D"height:.3in">
+			<td style=3D"border:dotted #948a54 1.0pt; width:197.6pt; padding:.05in .=
+1in .05in .1in; height:.3in" width=3D"263">
+			<p align=3D"center" style=3D"text-align:center"><img height=3D"40" src=
+=3D"https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBj=
+QnYzSU5URUcyN28rUXVkUU5BcXIxaE1GM1VHcnJLT1BCV1ZBaVpTaUdMV1N4NDlsblpESUtFTDh=
+mOUU4SmE0T1R5cFhYYzJsRFVHNTRCQ2YzOUE1U2ljTG4zMDN4dVJzaEFQbXFFY1crZUxRSmxVVz=
+VwTnpxSS9DckMyTDhDUFdDaU02aWc0bHh3OWNseStXZ0ZCUmJ3PQ=3D=3D" width=3D"75" />=
+</p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><span style=
+=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif"><spa=
+n style=3D"color:black">United Software Group, Inc.</span></span></span></b=
+></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:12pt"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"f=
+ont-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif"><span sty=
+le=3D"color:black">End-to-End IT Systems | Services | Solutions Provider</s=
+pan></span></span></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><span style=
+=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif"><spa=
+n style=3D"color:black">A Minority Business Enterprise</span></span></span>=
+</b></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:121.5pt; border-left:non=
+e; padding:.05in .1in .05in .1in; height:.3in" width=3D"162">
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black"><a href=3D"https://www.goo=
+gle.com/maps/search/565,+Metro+Place+South,+%0D%0A%0D%0A%09%09%09+Suite+%23=
++110,+%0D%0A%0D%0A%09%09%09+Dublin,+OH+43017?entry=3Dgmail&source=3Dg" styl=
+e=3D"color:blue; text-decoration:underline" target=3D"_blank"><span style=
+=3D"color:black">565, Metro Place South,</span></a></span></span></span></s=
+pan></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black"><a href=3D"https://www.goo=
+gle.com/maps/search/565,+Metro+Place+South,+%0D%0A%0D%0A%09%09%09+Suite+%23=
++110,+%0D%0A%0D%0A%09%09%09+Dublin,+OH+43017?entry=3Dgmail&source=3Dg" styl=
+e=3D"color:blue; text-decoration:underline" target=3D"_blank"><span style=
+=3D"color:black">Suite # 110,</span></a></span></span></span></span></span>=
+</p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black"><a href=3D"https://www.goo=
+gle.com/maps/search/565,+Metro+Place+South,+%0D%0A%0D%0A%09%09%09+Suite+%23=
++110,+%0D%0A%0D%0A%09%09%09+Dublin,+OH+43017?entry=3Dgmail&source=3Dg" styl=
+e=3D"color:blue; text-decoration:underline" target=3D"_blank"><span style=
+=3D"color:black">Dublin, OH 43017</span></a></span></span></span></span></s=
+pan></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black"><a href=3D"http://www.usgr=
+pinc.com/" style=3D"color:blue; text-decoration:underline" target=3D"_blank=
+"><span style=3D"color:black">www.usgrpinc.com</span></a></span></span></sp=
+an></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:2.5in; border-left:none;=
+ padding:.05in .1in .05in .1in; height:.3in" width=3D"240">
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black">Phone: 614-495-9222 Ext.64=
+4</span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black">Email:&nbsp; <a href=3D"ma=
+ilto:anjali.k@usgrpinc.com" style=3D"color:blue; text-decoration:underline"=
+ target=3D"_blank"><span style=3D"color:black">anjali.k@usgrpinc.com</span>=
+</a></span></span></span></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:1.0in; border-left:none;=
+ padding:0in 0in 0in 0in; height:.3in" valign=3D"top" width=3D"96">
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black">&nbsp;&nbsp; &nbsp;</span>=
+</span></span></span></span><img height=3D"90" src=3D"https://talenthirecls=
+3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5Bc=
+XIxanpGaXFkYWxpaWRlSDg1NExIRDR0TlRyTExJMHpFbW1HYlB4T2xrODFqbDhuM0dTb0wzVUls=
+VnBENzJmSTlacHVEWERxcldubHZNNTVqb0p2KzhNOENkZlJNelB3RHFHNTJvNlk5dTJqWFdCSEh=
+tbUpTdmU5QnJZa0kvTmx0eE1rPQ=3D=3D" width=3D"90" /></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-famil=
+y:"Calibri",sans-serif"><span style=3D"color:black">&nbsp;&nbsp;&nbsp; 2016=
+ - 2017 - 2018</span></span></span></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b>&nbsp;</b></span></span></p>
+
+<p><img height=3D"51" src=3D"https://talenthirecls3.ceipal.com/articles/Nzl=
+6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxaUMrSUdBd3d6MndMME5DQV=
+dTRnlHYXM3OFB2NmxHOVpjY2JZd29vbmRRRnluUFphcXFNV2ZPSnNtOTZQSTAzTVRrYnpocUFhY=
+WpCMlpFSnBMaFJRT2hIdjdOUzFDQ2JNSEN2U1RtY2NxVWlqTHAzVkZtME5yM1p5RXhTUVJpL3JJ=
+PQ=3D=3D" width=3D"216" /></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><span style=3D"font-size:11.0pt"><span style=3D"background:white=
+"><span style=3D"font-family:"Calibri",sans-serif"><span style=3D"color:bla=
+ck">To unsubscribe from this mailing, please reply to this email with the w=
+ord&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or click here&nbsp;</=
+span></span></span></span><span style=3D"font-size:11.0pt"><span style=3D"f=
+ont-family:"Calibri",sans-serif"><span style=3D"color:black"><a href=3D"mai=
+lto:techsupport@usgrpinc.com?subject=3DUNSUBSCRIBE" style=3D"color:blue; te=
+xt-decoration:underline" target=3D"_blank"><span style=3D"background:white"=
+><span style=3D"color:black">UNSUBSCRIBE</span></span></a><span style=3D"ba=
+ckground:white">.</span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri",sans-serif"><span style=3D"color:black">USG is an Equal Opportunit=
+y Employer. Qualified applicants will receive consideration for employment =
+without regard to race, color, religion, gender, age, disability, military =
+status, national origin or any other characteristic protected under federal=
+, state, or applicable local law</span></span></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+</div>
+
+<div id=3D"EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id=3D"EditorMessageBodyID">&nbsp;</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/dde51a91=
+817a6b02b2622e8b6d16403cbbd5d497/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D/" style=3D"color:#0077c5; text-decoration:underline"><=
+b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEEOgyAQAMDXlKNZWAQ8cDGm32hgd1sxrRiISZ9fOw8YjlogAagSDRgAbS44gR304Bew=
+OM93N8GILtibhbO_2lF2Gqh-1BpH8ug8B88JhISs40QOmbLNTiOqJs9H4WgQgmpxq12OtV_Pu-z=
+nd6s5S_tXP2kaJ0I"></body>
+</html>

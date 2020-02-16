@@ -1,0 +1,368 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-156.mailgun.net (m71-156.mailgun.net [166.78.71.156])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id tk4lj8kp3sa6u9lh503n2oi6hhmjsc9c3s983fo1
+ for josephs@linuxjobber.com;
+ Tue, 07 Jan 2020 16:28:35 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.156 as permitted sender) client-ip=166.78.71.156; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-156.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.156 as permitted sender) client-ip=166.78.71.156; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-156.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGcCt3K3pBbFJ5M1F0R3hHQ1BjQ1AwWGdubVRoaXhxRlhvS3I4SXVDQUliRVFzTlNTbFp1eEc2WTBJY3ludFVFZk9vUEhhbEJtekRVM3g0YWg5NERWd3IxbUxFY0lCY09UMFlVUEtEbitwQWNrQnFNWGNEM1dqbDBEaTlDQU9nVVN1OHc4akMvS1kwRVArUjBDNE45QWU3aXQ3QlZsTW5EZDFqei9IR2xyUi9aVDFWZjIxWkN2Z3hFVU5UTHM4VVlpQ2JXM1RhSDBXQTlxK1k5eTVjdm5jVFVTQ1g3RmFCLzJuTXcySmNoZW9uWDhPaUJoTUhSY0JZQzBhcDlYOUE2bUdKb1MvRmVwY0dmSW04M0RVTmtScmEvRWo5MDFBSDRvODRicWdkOFJVcHdoOC9iRDVEdjljNGplYWlOYm1Qakhadi9DN2pqbmZ4U2hJbHFERVJJVzY=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=RE+YxvZf8O45II33ba2jg2rwHsppEAvYeODKYYdkD5Dn3b5KX9moCxXsFaVpTRCB4ewDR8D7w17DcJC1nPZMWTXL+oJv1wWsEqQfhCno8nrxwiXkwLpo2KvRVJpBHOo5+uTf0A+67SkFUn4/dvQztc42OgjJHs/jtG1KqaKWuVk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578414518; v=1; bh=6zq09dU2NkkU2wS5dU96ckG3iN3H1PFwV0iJndswQd8=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1578414518; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=fx5mPR1bcR1KIL0Qj5ZWx2SvUKEpzTWxEKHm9Q5fVX4=; b=XfKNmHAdax9coOU6AIvSCsSPutzasqkHTIWTBkBhbKK/ONgLjzECKjOLLZ9Gidjzw9dyqHp2
+ rWn1vVANYk2r/ulNjoW8ZxxO24jHvxTsWRh17Z4x/YekHcKbEX7L2ZUNJcR+xAF5++QAfHE2
+ au5aAdKq7vdgszrJhjajQ1WfarA=
+X-Mailgun-Sending-Ip: 166.78.71.156
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e14b1a60102231acbd33ff3
+Received: by luna.mailgun.net with HTTP; Tue, 07 Jan 2020 16:28:22 +0000
+Date: Tue, 07 Jan 2020 16:28:22 +0000
+Sender: kamlesh.k@usgrpinc.com
+Message-Id: <20200107162822.1.F600B8327EF7AB42@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: kamlesh.k@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Kamlesh Kumar <kamlesh.k@usgrpinc.com>
+Subject: Site Reliability Engineer- Ecommerce :: Atlanta, GA :: Full Time ::
+ Onsite
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div id=3D"EditorSalutationID">
+<div>Hi Joseph Showunmi</div>
+
+<div><span style=3D"color: black; font-family: Cambria, serif; font-size: 1=
+1pt;">Hope this email find you well!!</span></div>
+
+<div><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+ambria",serif"><span style=3D"color:black">I have an opening that might be =
+a great next step for you. The job description is given below and let me kn=
+ow if you are interested. You can contact me on Landline: <b>+1-<span style=
+=3D"background:white">614-495-9222&nbsp; </span></b>Ext.-<b> 671 </b>and Em=
+ail: - <a href=3D"mailto:kamlesh.k@usgrpinc.com" style=3D"color:blue; text-=
+decoration:underline" target=3D"_blank"><b><span style=3D"background:white"=
+><span style=3D"color:black">kamlesh.k@usgrpinc.com</span></span></b></a></=
+span></span></span></span></span></div>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"background:ye=
+llow"><span style=3D"font-family:"Cambria",serif">Job Title- Site Reliabili=
+ty Engineer- Ecommerce</span></span></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"background:ye=
+llow"><span style=3D"font-family:"Cambria",serif">Location- Atlanta, GA</sp=
+an></span></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"background:ye=
+llow"><span style=3D"font-family:"Cambria",serif">Duration- Full Time</span=
+></span></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Cambria",serif">Relevant Experience</span></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cam=
+bria",serif"><span style=3D"color:black">Total 5+ years. </span></span></sp=
+an></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cam=
+bria",serif"><span style=3D"color:black">Experienced in <b>Ecommerce</b> Pr=
+oduction support / DevOps / Engineering with service improvement records in=
+ Infrastructure reliability process with more than 5 years of IT experience=
+=2E ecomm website experience is a must&nb=
+sp;</span></span></span></span></spa=
+n></p>
+
+<p class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D"f=
+ont-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><span=
+ style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif"><sp=
+an style=3D"color:black">Technical/Functional Skills</span></span></span></=
+b></span></span></p>
+
+<ul>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Linu=
+x Systems Administration</span></span></span></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Clou=
+d Expertise &ndash; Google preferred. AWS / Pivotal should also be fine.</s=
+pan></span></span></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Pyth=
+on and Unix shell scripting</span></span></span></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Expo=
+sure on monitoring tools &ndash; IBM Core Metrics, mPulse, Tealeaf, Adobe a=
+nalytics</span></span></span></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Appl=
+ication Performance Monitoring tools- Splunk, Dynatrace</span></span></span=
+></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">CI/C=
+D tool chain- Git, Jenkins, Google CDM, Docker</span></span></span></span><=
+/li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Web =
+server technologies- JBoss, IBM Softlayer,</span></span></span></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Full=
+ stack website reliability engineering</span></span></span></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Basi=
+c to moderate application programming experience- Java</span></span></span>=
+</span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Mani=
+acal about site availability</span></span></span></span></li>
+	<li class=3D"m-7395252229997797069ydpab37c264yiv8894997401"><span style=3D=
+"font-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif">Larg=
+e scale, multi-data center, cloud hosted web administration</span></span></=
+span></span></li>
+</ul>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><span=
+ style=3D"text-autospace:none"><span style=3D"font-family:"Times New Roman"=
+,serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font-fa=
+mily:"Cambria",serif"><span style=3D"color:#404040">With Regards,</span></s=
+pan></span></span></span></span></span></p>
+
+<p style=3D"margin-bottom:8px"><span style=3D"font-size:12pt"><span style=
+=3D"line-height:12.95pt"><span style=3D"text-autospace:none"><span style=3D=
+"font-family:"Times New Roman",serif"><b><span lang=3D"EN" style=3D"font-si=
+ze:11.0pt"><span style=3D"font-family:"Cambria",serif"><span style=3D"color=
+:#404040">Kamlesh Kumar </span></span></span></b><span lang=3D"EN" style=3D=
+"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif"><span style=
+=3D"color:#404040">| Technical Recruiter</span></span></span></span></span>=
+</span></span></p>
+
+<table class=3D"Table" style=3D"margin-left:0px; border-collapse:collapse; =
+border:solid #948a54 1.0pt">
+	<tbody>
+		<tr style=3D"height:.3in">
+			<td style=3D"border:solid #948a54 1.0pt; background:white; width:73.7pt;=
+ padding:0in .5pt 0in .5pt; height:.3in" width=3D"98">
+			<p align=3D"center" style=3D"text-align:center"><img height=3D"40" src=
+=3D"https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBj=
+QnYzSU5URUcyN28rUXVkUU5BcXIxamE2ZUZzb2dYU1BaV3BuR1UzN2o5S2pLYjJjQSsrbHB4bTV=
+TNzB3SXA2ZTNaeWFFc0o4UXh1UlhNZVl1dFRma0hNNEIyQkd6bzdOT2t4QVpOYVlpTHI0L2RuOE=
+dZV1p3R1Z0ODNKNE5mSXhBPT0=3D" width=3D"75" /></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:12pt"><span style=3D"line-height:12.95pt"><span style=3D"text-autospace:no=
+ne"><span style=3D"font-family:"Times New Roman",serif"><b><span lang=3D"EN=
+" style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif"><s=
+pan style=3D"color:#404040">United Software Group, Inc.</span></span></span=
+></b></span></span></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:12pt"><span style=3D"line-height:12.95pt"><span style=3D"text-autospace:no=
+ne"><span style=3D"font-family:"Times New Roman",serif"><span lang=3D"EN" s=
+tyle=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif"><span=
+ style=3D"color:#404040">End-to-End IT Systems | Services | Solutions Provi=
+der</span></span></span></span></span></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:12pt"><span style=3D"line-height:12.95pt"><span style=3D"text-autospace:no=
+ne"><span style=3D"font-family:"Times New Roman",serif"><b><span lang=3D"EN=
+" style=3D"font-size:11.0pt"><span style=3D"font-family:"Cambria",serif"><s=
+pan style=3D"color:#f79646">A Minority Business Enterprise</span></span></s=
+pan></b></span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid #948a54 1.0pt; background:white; width:93.5pt;=
+ border-left:none; padding:0in .5pt 0in .5pt; height:.3in" width=3D"125">
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">565, Metro Place Sou=
+th,</span></span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">Suite # 110,</span><=
+/span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">Dublin, OH 43017</sp=
+an></span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cam=
+bria",serif"><a href=3D"http://www.usgrpinc.com/" style=3D"color:blue; text=
+-decoration:underline"><span lang=3D"EN" style=3D"color:#0563c1">www.usgrpi=
+nc.com</span></a></span></span></span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid #948a54 1.0pt; background:white; width:218.85p=
+t; border-left:none; padding:0in .5pt 0in .5pt; height:.3in" width=3D"292">
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">Phone: 614-495-9222 =
+Ext. 671</span></span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">Direct: &nbsp;<b>410=
+-424-6508</b></span></span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">Fax:&nbsp; &nbsp;&nb=
+sp;&nbsp;&nbsp; 866-764-1148</span></span></span></span></span></span></spa=
+n></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">Email:&nbsp; kamlesh=
+=2Ek@usgrpinc.com</span></span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">LinkedIn: </span></s=
+pan></span><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Cam=
+bria",serif"><a href=3D"https://www.linkedin.com/in/kamlesh-kumar-yadav-884=
+813bb/" style=3D"color:blue; text-decoration:underline"><b><span lang=3D"EN=
+" style=3D"text-decoration:none"><span style=3D"text-underline:none">https:=
+//www.linkedin.com/in/kamlesh-kumar-yadav-884813bb/</span></span></b></a></=
+span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#404040">Hangout: connect.kam=
+leshkumaryadav</span></span></span></span></span></span></span></p>
+			</td>
+			<td style=3D"border:solid #948a54 1.0pt; background:white; width:80.45pt=
+; border-left:none; padding:0in .5pt 0in .5pt; height:.3in" valign=3D"top" =
+width=3D"107">
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;&nbsp; &nbsp;</span></span></span></span><img height=3D"90=
+" src=3D"https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2M=
+vNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxajBuSTRhNVZZamQ3M1pSWU5JYWVkNTNlVDdCY2tBcE=
+ZLOVZKcFhpSEtZdm01cnAxWlBPM3A1cFBZUzcwell1WU1xNHhJS0tjaHIvNGRaVlVMZ2c5TXhvT=
+FdKT21PUmdHZEFPdDFmb01NNU55Wk9LdDFBOVZ5RzZVVWJRRmJleS93PQ=3D=3D" width=3D"9=
+0" /></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><s=
+pan style=3D"text-autospace:none"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"f=
+ont-family:"Cambria",serif"><span style=3D"color:#e36c0a">&nbsp;&nbsp;&nbsp=
+; 2016 - 2017 - 2018</span></span></span></b></span></span></span></span></=
+p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><span=
+ style=3D"text-autospace:none"><span style=3D"font-family:"Times New Roman"=
+,serif"><b>&nbsp;</b></span></span></span></span></p>
+
+<p><img height=3D"51" src=3D"https://talenthirecls3.ceipal.com/articles/Nzl=
+6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxZ2JKb1QyeDJYVkZNWVY2dm=
+1HUTZweS94a3NOclpuWUpOYXordzFkRWJqRTJRTlpuNWd1N0xXczVXYkVXbWc5L1ZiaDh5WGxKd=
+WpuUGtqWmxCMy9ZMC8yZHVteUFabWxqVS9FS1UxVXg4RGdVYitJcFE4TzF2b01XaFNMNFBIY3JJ=
+PQ=3D=3D" width=3D"216" /></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><span=
+ style=3D"text-autospace:none"><span style=3D"font-family:"Times New Roman"=
+,serif"><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"backgro=
+und:white"><span style=3D"font-family:"Cambria",serif"><span style=3D"color=
+:#4a442a">To unsubscribe from this mailing, please reply to this email with=
+ the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or click here&n=
+bsp;</span></span></span></span><span style=3D"font-size:11.0pt"><span styl=
+e=3D"font-family:"Cambria",serif"><a href=3D"mailto:techsupport@usgrpinc.co=
+m?subject=3DUNSUBSCRIBE" style=3D"color:blue; text-decoration:underline"><s=
+pan lang=3D"EN" style=3D"background:white">UNSUBSCRIBE</span></a></span></s=
+pan><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"background:=
+white"><span style=3D"font-family:"Cambria",serif"><span style=3D"color:#4a=
+442a">.</span></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:12.95pt"><span=
+ style=3D"text-autospace:none"><span style=3D"font-family:"Times New Roman"=
+,serif"><b><span lang=3D"EN" style=3D"font-size:11.0pt"><span style=3D"font=
+-family:"Cambria",serif"><span style=3D"color:#4a442a">USG is an Equal Oppo=
+rtunity Employer. Qualified applicants will receive consideration for emplo=
+yment without regard to race, color, religion, gender, age, disability, mil=
+itary status, national origin or any other characteristic protected under f=
+ederal, state, or applicable local law.</span></span></span></b></span></sp=
+an></span></span></p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/00f66f7c=
+1fdb82d0fde2f49460c2b349fc57bf9a/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D/" style=3D"color:#0077c5; text-decoration:underline"><=
+b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEsOgjAQANDT2CWZTj8zLrqQBK5h6E9KlJI2JB5f3L3Vi04mWABEcQgIIIGkRUYc5DBb=
+gJEV0jTTY9R403D2VzvKHoZQP2J1Bu1yz8FaT_qyQTKk2BtWkSPGLFrKzxIdKmDR3FZ7OtZ-Pe-=
+yn9-tep_av_oBNcomWQ"></body>
+</html>

@@ -1,0 +1,521 @@
+Return-Path: <postmaster@notify.yochana.com>
+Received: from m237-55.mailgun.net (m237-55.mailgun.net [159.135.237.55])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id qpere46c4r8ahv8gf8obljjlvke4u3isu9dcjto1
+ for josephs@linuxjobber.com;
+ Wed, 22 Jan 2020 18:53:00 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notify.yochana.com designates 159.135.237.55 as permitted sender) client-ip=159.135.237.55; envelope-from=postmaster@notify.yochana.com; helo=m237-55.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notify.yochana.com designates 159.135.237.55 as permitted sender) client-ip=159.135.237.55; envelope-from=postmaster@notify.yochana.com; helo=m237-55.mailgun.net;
+ dkim=pass header.i=@notify.yochana.com;
+ dmarc=none header.from=yochana.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIUHRPeVNHTHJJVWF4NGJGMlNPVXVqMTJVYThDajZCamt1OW0wNGZoaXIrZmFwcXl4Uzd3UXB5L0oxdXFWT2NGakN0ajY1WXVQTlFPaDJYODVRUnRBcXFKL2lNdk1MTC9rKzViQ3p5eHB0cHN4dXVsdmxnd3F0eGNjM0lpeHJxdEFVS2tSdm9DbjhKTzVWSU9wcDJFelY3MTNjZ1I4YW1ibDRWTXUrc3hnOE1ubmEvbWN1NzlHQThEb3g5N1ozMTVSaDAvNE1hVi9kT3BtTGxHWjBWWjdSWGdKd2ZmMjA5Z3lXNUNDSkhCVHZWczdFRnNISnQ5SW84NW11SWdnM0Y5UEZWK0V0YWUwdzNjWFN4NGp1NzZleGpqZXFXKzQ3Q3hmSWNGUGxMcnVoRGc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=bdfHPUClTIspFXbT0VH8hfgbA889EEURkiq2OC343zLMwumJS27PZG9ElT4Ug77sLgD8FXtGEyo9GJsa8AN6MRRHzJG7R9CXUEBJRRb72Ctbbxp79duJx2gA3ADcPTTcZfBnuMMaCHkI/KPMRJFDgrjYxM+uN+MoIqQHeE080jk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579719184; v=1; bh=J3VjgectU2TEVIOo7uVW/2ZvKhUxwQJedevciwGaei4=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=notify.yochana.com; q=dns/txt;
+ s=pic; t=1579719183; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=if+0Uhf1AWPu0nVVEVMjFby2XZrFussWdVaJlGjVKT4=; b=iT0W9NUFjBZsdizI5njBs94aLcl3kfHJ0jDbbUmj7FOc6gsPw3Goof9iWBZYtHpvZdkqUoWh
+ AoGlazre5rEeYqh+NgNGxazVhe5IxH18OQBtSYi3Y2yln8Ta6F6/ocWEhvHXSNnnmucXY1ly
+ ZTibebxzmpJI7N4RYq2+HwR8oNs=
+X-Mailgun-Sending-Ip: 159.135.237.55
+X-Mailgun-Sid: WyI3OGZiMyIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI5Yjg5MWIiXQ==
+X-Mailgun-Batch-Id: 5e2899ec425389d74a5b359f
+Received: by luna.mailgun.net with HTTP; Wed, 22 Jan 2020 18:52:28 +0000
+Date: Wed, 22 Jan 2020 18:52:28 +0000
+Message-Id: <20200122185228.1.6B020C20D8FC5D3B@notify.yochana.com>
+X-Mailgun-Native-Send: true
+Reply-To: ahmed@yochana.com
+To: josephs@linuxjobber.com
+From: Ahmed Md <ahmed@yochana.com>
+Subject: OOJ - 8949 C++, Irving,Texas
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:sch=
+emas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"=
+>
+
+<head>
+    <meta charset=3D"utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Oorwin Email</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely r=
+emoved. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Time=
+s New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the =
+font and others will silently fail to the fallbacks. More on that here: htt=
+p://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href=3D'https://fonts.googlea=
+pis.com/css?family=3DRoboto:400,700' rel=3D'stylesheet' type=3D'text/css'> =
+-->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+        /* What it does: Remove spaces around the email design added by som=
+e email clients. */
+        /* Beware: It can remove the padding / margin and add a background =
+color to the compose a reply window. */
+       =20
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+       =20
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+       =20
+        div[style*=3D"margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables.=
+ */
+       =20
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail tab=
+le alignment bug. Applies table-layout to the first 2 tables then removes f=
+or anything nested deeper. */
+       =20
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            /*table-layout: fixed !important;*/
+            margin: initial;
+        }
+       =20
+        table table table {
+            table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing image=
+s in IE. */
+       =20
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* What it does: A work-around for email clients meddling in trigge=
+red links. */
+       =20
+        *[x-apple-data-detectors],
+        /* iOS */
+       =20
+        .x-gmail-data-detectors,
+        /* Gmail */
+       =20
+        .x-gmail-data-detectors *,
+        .aBn1 {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        img[Attributes Style] {
+            width: auto;
+        }
+
+
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at c=
+orrect size. -->
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head>
+
+<body style=3D"background: #ffffff; min-width: 100%; max-width: 620px;">
+    <center>
+       <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cen=
+ter" style=3D"width: 620px;">
+           <tr>
+                <td style=3D"padding: 20px 0px">
+
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center" width=3D"100%" bgcolor=3D"#ffffff" style=3D"margin: 0;">
+                        <tr>
+                            <td width=3D"100%">
+                                                                           =
+                     <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" width=3D"100%">
+                                                                        <tr=
+>
+                                        <td style=3D"padding: 0px 0px; font=
+-family:calibri, Arial, Helvetica, sans-serif; font-size: 14px; color:#6f74=
+77; line-height: 1; word-break: break-word">
+                                            <!--this comment line is requir=
+ed by mohan -->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" st=
+yle=3D"margin: auto;" width=3D"100%">
+	<tbody>
+		<tr>
+			<td style=3D"width: 100%; padding: 10px;">&nbsp;</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td style=3D"width: 100%;" width=3D"100%">
+			<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%">
+				<tbody>
+					<tr>
+						<td style=3D"background: rgba(46,204,113,1);" width=3D"100%">
+						<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+">
+							<tbody>
+								<tr>
+									<td style=3D"padding:10px 10px; font-family:calibri,Arial,Helvetic=
+a,sans-serif; color: #ffffff; font-size: 18px; text-transform: uppercase; f=
+ont-weight: 400;" width=3D"100%">Job Share</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td style=3D"width: 100%; background: #ffffff;" width=3D"100%">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+">
+							<tbody>
+								<tr>
+									<td style=3D"width: 100%; padding: 15px 10px;" width=3D"100%">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%">
+										<tbody>
+											<tr>
+												<td style=3D"width: 120px" width=3D"120"><img src=3D"https://re=
+s.cloudinary.com/demo/image/fetch/w_100/https://oorwin-hcm.s3.ap-south-1.am=
+azonaws.com/company_113/logo/YrFUifgroLO7fSIyxW4QJc71ESPwLirvMXlXrU7B.png" =
+style=3D"max-width: 100px;" width=3D"100px" /></td>
+												<td style=3D"width: 350px;" width=3D"350">
+												<table border=3D"0" cellspacing=3D"0" width=3D"100%">
+													<tbody>
+														<tr>
+															<td style=3D" font-family:calibri,Arial,Helvetica,sans-serif=
+; font-size: 14px; color: #000000; line-height: 18px;">C++</td>
+														</tr>
+														<tr>
+															<td style=3D" font-family:calibri,Arial,Helvetica,sans-serif=
+; font-size: 14px; color: #4d98b3; line-height: 18px;">Contractual | Texas<=
+/td>
+														</tr>
+														<tr>
+															<td style=3D" font-family:calibri,Arial,Helvetica,sans-serif=
+; font-size: 14px; color: #4d98b3; line-height: 18px;">Posted on 01/22/2020=
+</td>
+														</tr>
+														<tr>
+															<td style=3D"width: 110px; padding-top: 10px; text-align: le=
+ft;" width=3D"110">
+															<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" style=3D"width: 110px;" width=3D"110">
+																<tbody>
+																	<tr>
+																		<td align=3D"left" style=3D"width: 110px; background: rgb=
+a(46,204,113,1); border-radius: 4px; padding:5px 10px; text-align: center;"=
+ width=3D"110"><a href=3D"https://yochana.oorwin.com/careers/index.html#/jo=
+b/eda965b2ae257c6554c87582ac4c6598ee6db676?share=3D142" style=3D" font-fami=
+ly:calibri,Arial,Helvetica,sans-serif;font-size: 14px; text-transform: uppe=
+rcase; font-weight: 400; text-decoration: none; white-space: nowrap;color:#=
+ffffff">APPLY NOW </a></td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td style=3D"width: 100% !important; padding: 10px 10px 0px;" widt=
+h=3D"100%">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"w=
+idth: 100% !important" width=3D"100%">
+										<tbody>
+											<tr>
+												<td style=3D"border: 1px solid #cfcfcf; border-right: 0px; back=
+ground: #eaeaea; font-family:calibri,Arial,Helvetica,sans-serif; font-size:=
+ 14px; color: #000000; padding:4px 10px;" valign=3D"top" width=3D"100">Job =
+ID</td>
+												<td style=3D"border-top: 1px solid #cfcfcf; border-right: 1px s=
+olid #cfcfcf; border-bottom:1px solid #cfcfcf; border-left: 1px solid #cfcf=
+cf; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color:=
+ #838282; padding:4px 10px" valign=3D"top">OOJ - 8949</td>
+											</tr>
+											<tr>
+												<td style=3D"border: 1px solid #cfcfcf; border-right: 0px; bord=
+er-top: 0px; background: #eaeaea; padding:4px 10px; font-family:calibri,Ari=
+al,Helvetica,sans-serif; font-size: 14px; color: #000000;" valign=3D"top" w=
+idth=3D"100">Job Title</td>
+												<td style=3D"border-right: 1px solid #cfcfcf; border-bottom:1px=
+ solid #cfcfcf; border-left: 1px solid #cfcfcf; font-family:calibri,Arial,H=
+elvetica,sans-serif; font-size: 14px; color: #838282; padding:4px 10px" val=
+ign=3D"top">C++</td>
+											</tr>
+											<tr>
+												<td style=3D"border: 1px solid #cfcfcf; border-right: 0px; bord=
+er-top: 0px; background: #eaeaea; padding:4px 10px; font-family:calibri,Ari=
+al,Helvetica,sans-serif; font-size: 14px; color: #000000;" valign=3D"top" w=
+idth=3D"100">Location</td>
+												<td style=3D"border-right: 1px solid #cfcfcf; border-bottom:1px=
+ solid #cfcfcf; border-left: 1px solid #cfcfcf; font-family:calibri,Arial,H=
+elvetica,sans-serif; font-size: 14px; color: #838282; padding:4px 10px" val=
+ign=3D"top">Irving, Texas USA</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td style=3D"width: 100%; padding: 15px 10px;" width=3D"100%">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%">
+										<tbody>
+											<tr>
+												<td style=3D"width: 100%; padding-bottom: 10px;" width=3D"100%"=
+>
+												<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%">
+													<tbody>
+														<tr>
+															<td style=3D"width: 100%; color: #000000; font-family:calibr=
+i,Arial,Helvetica,sans-serif; font-size: 18px; font-weight: bold; line-heig=
+ht: 30px;">Job Description</td>
+														</tr>
+														<tr>
+															<td style=3D"width: 100%; color: #525252; font-size: 14px; f=
+ont-family:calibri,Arial,Helvetica,sans-serif; line-height: 18px;" width=3D=
+"100%">
+															<p class=3D"wordsection1"><span style=3D"font-size:10pt"><sp=
+an style=3D"font-family:Calibri,sans-serif">Hi,</span></span></p>
+
+															<p class=3D"wordsection1" style=3D"margin-left:144px">&nbsp;=
+</p>
+
+															<p class=3D"xxwordsection1"><span style=3D"font-size:11pt"><=
+span style=3D"line-height:115%"><span style=3D"font-family:Calibri,sans-ser=
+if">This is AHMED from Yochana IT. I hope you are doing great. We have urge=
+nt requirement with one of our client for&nbsp;&nbsp; <b><span style=3D"bac=
+kground:yellow">Technical Lead &ndash; C++</span></b>. Kindly go through th=
+e requirement below and let me know your interest.</span></span></span></p>
+
+															<p class=3D"wordsection1" style=3D"margin-left:144px">&nbsp;=
+</p>
+
+															<p class=3D"wordsection1" style=3D"margin-left:144px">&nbsp;=
+</p>
+
+															<p class=3D"xxwordsection1"><span style=3D"font-size:11pt"><=
+span style=3D"line-height:115%"><span style=3D"font-family:Calibri,sans-ser=
+if"><strong style=3D"font-family:&quot;Times New Roman&quot;,serif">Job Tit=
+le: </strong><b><span style=3D"background:yellow">Technical Lead &ndash; C+=
++</span></b></span></span></span></p>
+
+															<p class=3D"xxwordsection1"><span style=3D"font-size:11pt"><=
+span style=3D"line-height:115%"><span style=3D"font-family:Calibri,sans-ser=
+if"><strong style=3D"font-family:&quot;Times New Roman&quot;,serif">Locatio=
+n:</strong>&nbsp; Irving, TX</span></span></span></p>
+
+															<p class=3D"xxwordsection1"><span style=3D"font-size:11pt"><=
+span style=3D"line-height:115%"><span style=3D"font-family:Calibri,sans-ser=
+if">VISA :&nbsp; NO OPTS</span></span></span></p>
+
+															<p class=3D"xxwordsection1"><span style=3D"font-size:11pt"><=
+span style=3D"line-height:115%"><span style=3D"font-family:Calibri,sans-ser=
+if"><strong style=3D"font-family:&quot;Times New Roman&quot;,serif">Duratio=
+n: Contract </strong></span></span></span></p>
+
+															<p class=3D"xxwordsection1"><span style=3D"font-size:11pt"><=
+span style=3D"line-height:115%"><span style=3D"font-family:Calibri,sans-ser=
+if"><strong style=3D"font-family:&quot;Times New Roman&quot;,serif">Intervi=
+ew: Skype followed by Web-EX</strong></span></span></span></p>
+
+															<p class=3D"xxwordsection1">&nbsp;</p>
+
+															<p class=3D"xxwordsection1">&nbsp;</p>
+
+															<p class=3D"wordsection1"><span style=3D"font-size:10pt"><sp=
+an style=3D"font-family:Calibri,sans-serif">MANIDATORY SKILLS : <span style=
+=3D"background:yellow">C/C++/Pro*C</span></span></span></p>
+
+															<p class=3D"wordsection1">&nbsp;</p>
+
+															<p class=3D"wordsection1"><span style=3D"font-size:10pt"><sp=
+an style=3D"font-family:Calibri,sans-serif">Job Description</span></span></=
+p>
+
+															<p class=3D"x">&nbsp;</p>
+
+															<p><span style=3D"font-size:11.0pt"><span style=3D"font-fami=
+ly:&quot;Calibri&quot;,&quot;sans-serif&quot;">&nbsp;We are looking for a s=
+trong technical hands-on Modernization Engineer that is adverse in C/C++ an=
+d ProC. The candidate will be working together with the client&rsquo;s Appl=
+ication and Business teams to build, enhance and modernize legacy applicati=
+ons. The candidate will be responsible for design, development, documentati=
+on and testing of developed components. The candidate will collaborate with=
+ project management, development and testing resources throughout all of th=
+e SDLC. The ideal candidate has a strong and proven track record of buildin=
+g and modernizing applications built on legacy technologies such as C/C++ a=
+nd ProC. Lastly, the candidate must have excellent communication skills and=
+ must be able to work independently as well as in a team structure in an ef=
+fective manner</span></span></p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td style=3D"width:100%; color: #6f7477; font-family:calibri, A=
+rial, Helvetica, sans-serif; font-size: 12px; background-color: #fafafa; pa=
+dding: 5px;" width=3D"100%">
+												<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" valign=3D"middle" width=3D"100%">
+													<tbody>
+														<tr>
+															<td style=3D"width: 90px; vertical-align: middle;"><img alt=
+=3D"logo" src=3D"https://res.cloudinary.com/demo/image/fetch/w_100/https://=
+oorwin-hcm.s3.ap-south-1.amazonaws.com/company_113/logo/YrFUifgroLO7fSIyxW4=
+QJc71ESPwLirvMXlXrU7B.png" /></td>
+															<td style=3D"color: #6f7477; font-family:calibri, Arial, Hel=
+vetica, sans-serif; font-size: 12px; padding-left: 10px; vertical-align: mi=
+ddle; word-break: break-word;">
+															<p>Yochana Challenges the Status Quo! We believe in taking a=
+ different approach to recruiting. We provide quality candidates to our cli=
+ents at reasonable rates. We take pride in our process and have a passion f=
+or helping candidates land a new role and assisting clients in finding a pe=
+rfect resource! We specialize in Direct Hire, Contract and Contract to Hire=
+ roles.</p>
+															</td>
+														</tr>
+														<tr>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>                                        </td>
+                                    </tr>
+                                                                      =20
+                                    <!-- <tr>
+                                        <td style=3D"font-family:calibri, A=
+rial, Helvetica, sans-serif; font-size: 11px; color:#6f7477; padding:10px 2=
+0px; border-top: 1px solid #6f7477;">
+                                            This emailer is addressed to an=
+d intended only for Beanhire customer and is not spam. You may reach out to=
+ Beanhire helpline to clarify any issues that you may have with regard to a=
+ny information contained in this emailer.=20
+                                            <br>Disclaimer: Beanhire won't =
+be responsible for the accuracy, adequacy or completeness of any informatio=
+n in this emailer and is not responsible for any errors or omissions or for=
+ results obtained from the use of such information. Beanhire does not have =
+any liability to any person on account of the use of information provided h=
+erein and the said information is provided on a best-effort basis
+                                        </td>
+                                    </tr>-->
+                                                                        <tr=
+ bgcolor=3D"#484848">
+                                        <td style=3D"font-family:calibri, A=
+rial, Helvetica, sans-serif; width: 100%; font-size: 11px; color:#ffffff; t=
+ext-align: center; padding: 10px;">
+                                           =20
+
+                                                                           =
+                     Copyright &copy; 2020 | Powered By   &nbsp;<a width=3D=
+"60" height=3D"20" href=3D"https://app.oorwin.com" title=3D"Oorwin Labs Inc=
+=2E">=20
+
+                                                <img src=3D"https://api.oor=
+win.com/api/v2/public/images/oorwin_logo.png" title=3D"Oorwin Labs Inc." st=
+yle=3D"max-width: 100%; vertical-align: middle;" height=3D"20">
+
+                                                <!-- <img src=3D"https://ap=
+i.oorwin.com/api/v2/public/images/oorwin_logo.png" style=3D"max-width: 100%=
+; vertical-align: middle;" height=3D"20" /> --> </a>
+                                                                           =
+                                                                           =
+<br>
+                                                      To stop receiving the=
+se emails please <a style=3D"color:#fff;" href=3D"https://yochana.oorwin.co=
+m/unsubscribe.html?company_id=3D113&&message_id=3D53418&&to_email=3Djosephs=
+@linuxjobber.com">click here</a> to unsubscribe.
+                                                                           =
+             </td>
+                                    </tr>=20
+                                                                    </table=
+>
+                            </td>               =20
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+       </table>
+    </center>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.notify.yocha=
+na.com/o/eJwVzEEOgyAQQNHTlCWZGQRhwUZN7-FQJmBaMdom9fa125-8_4iBfUBWNRIQABKht0=
+Reo3bDVUaCyd9HO5nh1sHa3lVOfbZU5nXWqb1UiYlBXM_Sh44FHbpAxnsjQTKxTVbtcWlH3spxH=
+Z51_XyXxpz3P_8Br9Mlqw"></body>
+
+</html>

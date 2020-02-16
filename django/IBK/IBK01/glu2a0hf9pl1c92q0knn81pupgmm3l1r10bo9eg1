@@ -1,0 +1,255 @@
+Return-Path: <morgan@csm.symplicity.com>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id glu2a0hf9pl1c92q0knn81pupgmm3l1r10bo9eg1
+ for jeff.adekunbi@ideabakr.org;
+ Wed, 12 Feb 2020 16:03:31 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: none (spfCheck: 34.194.230.233 is neither permitted nor denied by domain of csm.symplicity.com) client-ip=34.194.230.233; envelope-from=morgan@csm.symplicity.com; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=none (spfCheck: 34.194.230.233 is neither permitted nor denied by domain of csm.symplicity.com) client-ip=34.194.230.233; envelope-from=morgan@csm.symplicity.com; helo=us-east-mail1.symplicity.com;
+ dmarc=none header.from=csm.symplicity.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGZVJaYnluM213YS94UDBXWGlnUFovSDkvYlNrVHVoN0EwaUtTWkh0ZWIwK0ZtZXh6bHJXZkJuSnNQcDE2QldGWUtEY3RHYlprNGtxcU9QZ0h2UDJnU3dhR0JzU1RnWER2MXBRL0J1OU1zWStiTzNUZmNiZzkrNk04VjVLb2J1STNiWUdSbUllZC9sb2NZMTFyN2RKdEhiekJ3ZnkzYVp5T01xZEIrQ3dxdTZtK2I2RkV5ZExwK3dTN1FCTmc1QTlYMVUzOGxPUGtWTS8xWWM3eHlUWGkvUTZBcXV5dTJRemx5RDlJZm9FL3VIM21oN0lTUDlybmxKVVVnM2tMQmlyWVlTQ0ZuN21odXpVaXBYVGVvM3VUTUJNelppOGg3WUpzOXdQaVpBbDRicWc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=TW4M+fMJNcQJCFQ+1mGeIjcPF7Gitu0RXTRThcqKZFPt/tRC1ORLCDOxWKeYBcPE9EOAfAnhiIGbZtLmS7BH/1rkuNjTcNIg4LPxtBs0ulsnJIWaZYj8JW77J2YkMAhQNCL4r1gqm6TyETMuWNZeKxbRXFhUrMIz1RbaDRbI3wI=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581523412; v=1; bh=tx9aNORVwr6Ax3cSc4tPWdkf9Q3Qi7YfeU0SYfjPrSU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from ip-172-30-13-36 (ip-172-30-13-36.ec2.internal [172.30.13.36])
+	by mail.symplicity.com (Postfix) with ESMTP id AC85B628C1
+	for <jeff.adekunbi@ideabakr.org>; Wed, 12 Feb 2020 16:03:30 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com AC85B628C1
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_618656a8aa169309cb3bd5e23f2efc6f"
+From: morgan@csm.symplicity.com
+Reply-To: careers@morgan.edu
+To: jeff.adekunbi@ideabakr.org
+Subject: MSU: Spring Job Fair Invitation, 4/9/2020  
+Message-ID: <913e8d0bda455286331a074f419a2a58@morgan-csm.symplicity.com>
+Date: Wed, 12 Feb 2020 11:03:30 -0500
+
+--=_618656a8aa169309cb3bd5e23f2efc6f
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Feb 12, 2020, 11:03 AM
+
+
+Dear Jeff Adekunbi:
+The Center for Career Development at Morgan State University cordially invi=
+tes you to participate in our Spring Job Fair on Thursday, April 9, 2020, 1=
+0:00 a.m. to 4:00 p.m., in the University Student Center-Calvin & Tina Tyle=
+r Ballroom, 1700 East Cold Spring Lane, Baltimore, MD  21251.
+
+Please mark your calendar now to join us for this premier opportunity to re=
+cruit leading candidates in all fields=E2=80=94to promote summer jobs, inte=
+rnships, full-time positions, and graduate school programs to our current s=
+tudents and alumni. This one-day event provides employers with the opportun=
+ity to greet students and review resumes in the morning and set appointment=
+s for on-site interviews in the afternoon.
+
+Spring Job Fair Schedule-Thursday, April 9, 2020
+
+9:00 a.m. -10:00 a.m.=E2=80=94Check-In and Set-Up (Continental Breakfast)
+10:00 a.m.-1:00 p.m.=E2=80=94Career Fair
+1:00 p.m.-1:30 p.m.=E2=80=94Lunch
+1:30 p.m. -4:00 p.m. =E2=80=94 *On-Site Interviews
+        *Optional-Employers who wish to offer one-on-one interviews during =
+this split day event typically identify and invite students during career f=
+air
+
+We expect this to be a very popular event again this year.  Registration is=
+ limited to 80 employers, with two representatives each. To register, pleas=
+e log in to your eBear account powered by Symplicity (or create a new accou=
+nt)  <a href=3D"https://morgan-csm.symplicity.com/employers/" target=3D"_bl=
+ank">https://morgan-csm.symplicity.com/employers/</a>   then click on =E2=
+=80=9CSpring Job Fair=E2=80=9D which will be listed under the Events Tab, a=
+s well as the Quick tab link on the right.
+
+
+Registration fees:=20
+Profit/Corporate $350.00=20
+Government, Colleges/Universities $300.00=20
+Non-Profit $250.00=20
+
+Extra Representative ($25.00) each
+Electrical Hookup ($50.00)
+
+
+Late Fee ($25.00) Registrations received after 3/20/20
+
+=20
+Fee Includes: 6=E2=80=99 draped table, 2 chairs, continental breakfast and =
+lunch for two (2) representatives.
+
+If space permits, we will accept registrations after the deadline; however,=
+ due to the deadlines for printing, we can not guarantee that your company =
+information will be available in the booklet/directory.
+
+Cancellations must be received in writing prior to March 20, 2020, and will=
+ receive a credit towards our next career fair. No credits will be issued a=
+fter March  20, 2020.
+
+If you are not the person to make the decision to attend this event, please=
+ forward this email to the appropriate individual or department. If your or=
+ganization is unable to participate but would like to explore other recruit=
+ment opportunities, please visit our web site.
+
+We look forward to hosting you on our campus for the Spring Job Fair.  If y=
+ou have any questions, please contact our office at 443.885.3110.
+
+=20
+
+Sincerely,
+
+Center for Career Development=20
+Morgan State University=20
+C-224 Montebello Complex
+1700 E. Cold Spring Lane=20
+Baltimore, MD 21251-0001=20
+p: 443-885-3110=20
+f: 443-885-8267
+
+=20
+
+Morgan State University is committed to making its events and facilities ac=
+cessible to all of our guests. If you have questions, need assistance, or a=
+n accommodation, please contact the Center for Career Development at 443-88=
+5-3110 at least two weeks prior to the event.=0A=0APowered By Symplicity  
+--=_618656a8aa169309cb3bd5e23f2efc6f
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+=0A<head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8"></head><p><span style=3D"font-family: georgia, palatino; font-size: =
+12pt;"><img style=3D"display: block; margin-left: auto; margin-right: auto;=
+" src=3D"http://morgan-csm.symplicity.com/tinyfiles/CCD.jpg" alt=3D"" width=
+=3D"388" height=3D"236"><br></span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Feb 12,=
+ 2020, 11:03 AM</span></p>
+<p>=C2=A0</p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Dear Je=
+ff Adekunbi:</span><br><br><span style=3D"font-family: georgia, palatino; f=
+ont-size: 12pt;">The Center for Career Development at Morgan State Universi=
+ty cordially invites you to participate in our <strong>Spring Job Fair</str=
+ong> on <strong><em>Thursday, April 9, 2020, 10:00 a.m. to 4:00 p.m</em></s=
+trong>., in the <a href=3D"https://morgan-csm.symplicity.com/track/f4a402c7=
+945fc6f273ded930d3b03ce9/1644097870/realurl=3Dhttp://www.morgan.edu/Documen=
+ts/ADMISSIONS/Campus%20Map%20KIIK%209-19-11%20update.pdf">University Studen=
+t Center-Calvin &amp; Tina Tyler Ballroom</a>, 1700 East Cold Spring Lane, =
+Baltimore, MD=C2=A0 21251.</span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Please =
+mark your calendar now to join us for this premier opportunity to recruit l=
+eading candidates in <a href=3D"https://morgan-csm.symplicity.com/track/f4a=
+402c7945fc6f273ded930d3b03ce9/1644097870/realurl=3Dhttp://www.morgan.edu/ac=
+ademics/academic_programs.html">all fields</a>=E2=80=94to promote <strong>s=
+ummer jobs</strong>, <strong>internships</strong>, </span><span style=3D"fo=
+nt-size: 12pt;"><span style=3D"font-family: georgia, palatino;"><strong>ful=
+l-time</strong> positions, and <strong>graduate school programs</strong> to=
+ our current students and alumni. This one-day event provides employers wit=
+h the opportunity to greet students and review resumes in the morning=C2=A0=
+</span></span><span style=3D"font-family: georgia, palatino; font-size: 12p=
+t;">and set appointments for on-site interviews in the afternoon.</span></p=
+>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Spring =
+Job Fair Schedule-<strong>Thursday, April 9, 2020</strong></span></p>
+<ul><li><span style=3D"font-family: georgia, palatino; font-size: 12pt;">9:=
+00 a.m. -10:00 a.m.=E2=80=94Check-In and Set-Up (Continental Breakfast)</sp=
+an></li>
+<li><span style=3D"font-family: georgia, palatino; font-size: 12pt;">10:00 =
+a.m.-1:00 p.m.=E2=80=94Career Fair</span></li>
+<li><span style=3D"font-family: georgia, palatino; font-size: 12pt;">1:00 p=
+.m.-1:30 p.m.=E2=80=94Lunch</span></li>
+<li><span style=3D"font-family: georgia, palatino; font-size: 12pt;">1:30 p=
+.m. -4:00 p.m. =E2=80=94 *On-Site Interviews</span></li>
+</ul><p><span style=3D"font-family: georgia, palatino; font-size: 8pt;">=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 *Optional-Employers who wish to offer one-on-one i=
+nterviews during this split day event typically identify and invite student=
+s during career fair</span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">We expe=
+ct this to be a very popular event again this year.=C2=A0 Registration is l=
+imited to 80</span> <span style=3D"font-family: georgia, palatino; font-siz=
+e: 12pt;">employers, with two representatives each. To register, please</sp=
+an> <span style=3D"font-family: georgia, palatino; font-size: 12pt;">log in=
+ to your <a href=3D"https://morgan-csm.symplicity.com/track/f4a402c7945fc6f=
+273ded930d3b03ce9/1644097870/realurl=3Dhttps://morgan-csm.symplicity.com/em=
+ployers/">eBear</a> account <em>powered by Symplicity</em> (or create a new=
+ account) <a href=3D"https://morgan-csm.symplicity.com/track/f4a402c7945fc6=
+f273ded930d3b03ce9/1644097870/realurl=3Dhttps://morgan-csm.symplicity.com/e=
+mployers/"> </a><a href=3D"https://morgan-csm.symplicity.com/track/f4a402c7=
+945fc6f273ded930d3b03ce9/1644097870/realurl=3Dhttps://morgan-csm.symplicity=
+.com/employers/" target=3D"_blank">https://morgan-csm.symplicity.com/employ=
+ers/</a>  =C2=A0then click on =E2=80=9CSpring Job Fair=E2=80=9D which will =
+be listed under the <em>Events</em> Tab, as well as the Quick tab link on t=
+he right.</span></p>
+<p style=3D"text-align: center;"><span style=3D"font-family: georgia, palat=
+ino; font-size: 12pt;">Registration fees:=C2=A0</span><br><span style=3D"fo=
+nt-family: georgia, palatino; font-size: 12pt;">Profit/Corporate $350.00=C2=
+=A0</span><br><span style=3D"font-family: georgia, palatino; font-size: 12p=
+t;">Government, Colleges/Universities $300.00=C2=A0</span></p>
+<p style=3D"text-align: center;"><span style=3D"font-family: georgia, palat=
+ino; font-size: 12pt;">Non-Profit $250.00</span>=C2=A0</p>
+<p style=3D"text-align: center;"><br><span style=3D"font-family: georgia, p=
+alatino; font-size: 12pt;">Extra Representative ($25.00) each</span><br><sp=
+an style=3D"font-family: georgia, palatino; font-size: 12pt;">Electrical Ho=
+okup ($50.00)</span></p>
+<p style=3D"text-align: center;">=C2=A0</p>
+<p style=3D"text-align: center;"><span style=3D"font-family: georgia, palat=
+ino; font-size: 12pt; color: #ff0000;">Late Fee ($25.00) Registrations rece=
+ived after 3/20/20</span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">=C2=A0<=
+/span>=C2=A0</p>
+<ul><li><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Fe=
+e</span> <span style=3D"font-family: georgia, palatino; font-size: 12pt;">I=
+ncludes: 6=E2=80=99 draped table, 2 chairs, continental breakfast and lunch=
+ for two (2) representatives.</span></li>
+<li><span style=3D"font-family: georgia, palatino; font-size: 12pt;">If spa=
+ce permits, we will accept registrations after the deadline; however, due t=
+o the deadlines for printing, we can not guarantee that your company inform=
+ation will be available in the booklet/directory.</span></li>
+<li><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Cancel=
+lations must be received in writing prior to March 20, 2020, and will recei=
+ve a credit towards our next career fair. No credits will be issued after M=
+arch 20, 2020.</span></li>
+</ul><p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">If=
+ you are not the person to make the decision to attend this event, please f=
+orward this email to the appropriate individual or department. If your orga=
+nization is unable to participate=C2=A0but would like to explore other recr=
+uitment opportunities, please visit our <a href=3D"https://morgan-csm.sympl=
+icity.com/track/f4a402c7945fc6f273ded930d3b03ce9/1644097870/realurl=3Dhttp:=
+//www.morgan.edu/student_affairs/center_for_career_development/for_employer=
+s.html">web site</a>.</span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">We look=
+ forward to hosting you on our campus for the Spring Job Fair.=C2=A0 If you=
+ have any questions, please contact our office at 443.885.3110 .</span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">=C2=A0<=
+/span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Sincere=
+ly,</span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">Center =
+for Career Development=C2=A0</span><br><span style=3D"font-family: georgia,=
+ palatino; font-size: 12pt;">Morgan State University=C2=A0</span><br><span =
+style=3D"font-family: georgia, palatino; font-size: 12pt;">C-224 Montebello=
+ Complex</span><br><span style=3D"font-family: georgia, palatino; font-size=
+: 12pt;">1700 E. Cold Spring Lane=C2=A0</span><br><span style=3D"font-famil=
+y: georgia, palatino; font-size: 12pt;">Baltimore, MD 21251-0001=C2=A0</spa=
+n><br><span style=3D"font-family: georgia, palatino; font-size: 12pt;">p:=
+=C2=A0<a href=3D"https://morgan-csm.symplicity.com/track/f4a402c7945fc6f273=
+ded930d3b03ce9/1644097870/realurl=3Dtel:443-885-3110">443-885-3110</a>=C2=
+=A0</span><br><span style=3D"font-family: georgia, palatino; font-size: 12p=
+t;">f:=C2=A0<a href=3D"https://morgan-csm.symplicity.com/track/f4a402c7945f=
+c6f273ded930d3b03ce9/1644097870/realurl=3Dtel:443-885-8267">443-885-8267</a=
+></span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;">=C2=A0<=
+/span></p>
+<p><span style=3D"font-family: georgia, palatino; font-size: 12pt;"><em>Mor=
+gan State University is committed to making its events and facilities acces=
+sible to all of our guests. If you have questions, need assistance, or an a=
+ccommodation, please contact the Center for Career Development at=C2=A0</em=
+><a href=3D"mailto:443-885-3110"><em>443-885-3110</em></a><em>=C2=A0</em><e=
+m>at least two weeks prior to the event.</em></span></p><br><a href=3D"http=
+s://morgan-csm.symplicity.com/track/f4a402c7945fc6f273ded930d3b03ce9/164409=
+7870/realurl=3Dhttps://symplicity.com/career_services_manager_csm" target=
+=3D"_blank" title=3D"Powered By Symplicity"><img src=3D"http://static.sympl=
+icity.com/images/powered-by-symplicity.png"></a>  <img src=3D"https://morga=
+n-csm.symplicity.com/track/f4a402c7945fc6f273ded930d3b03ce9/1644097870/emai=
+l.gif" border=3D"0" alt=3D"">=0A
+--=_618656a8aa169309cb3bd5e23f2efc6f--
+

@@ -1,0 +1,256 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m40-235.mailgun.net (m40-235.mailgun.net [69.72.40.235])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id qidcpb0ktvdidocdgn1ff70nh9ljga1t2vpm0ng1
+ for josephs@linuxjobber.com;
+ Mon, 13 Jan 2020 17:05:38 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.235 as permitted sender) client-ip=69.72.40.235; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-235.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.235 as permitted sender) client-ip=69.72.40.235; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-235.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHYnNEQWNIKy9UbzQycldHQzJtUFgzQjJhNnFVNGVhUGdVMFZwVEQ5VDJXODcrZmZ6Y0V6Qnpvbjh2dFNrWVRHVlR5andFMkJmSnlUUmRZODlvVjU1UVdobGFMVm5iS2xCTjFjcGwwQ0djOWFFTzNjeUtkY0JaZTBkTTlpUldmai9ZU2lqbHNSWnZ6NnMvSnU4U3RBY3VreFl5bVdlWUl3bkQ4MVpQMW9yTWJhSHl6czNXY2Z3Mk15SW90aldBckJwWnpMYzl0QjM0NzNEcDQ1UEdaUFpKMXlBM3orckNmai9XSENWMk9TdUpkTGFiYVVEYzcwMXZ3Y3QrZHZhVEtqcWhpUUpDZlloZzRYYk1FOHVIZVQ0MStURnB3SlJjamF1YW5PUEZjVXFoK3NJTHRSWWdUaGNpUCtqcXA3KzRtNmFmK3RkZWVXUkNXMzlKdG9mUHNDeHo=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=JLuLpJJvggMk/UUJGY7NDqIRau0i3ZHcyonI97tcwqygkI5UkhDetDS0z6ZCJQp35rqPvTNx2eppMmL8rq+qWEJDVPfXSXye5DLQU0xf59o/jLN47hXtuLhd8iFW3ibR6GoQJ5uU//RX6d2ofRxB6N/8NZVbbs1iSNT0oZ3jfKk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578935141; v=1; bh=ZslhL3Z7x70KPcWiRsnBFkVsBdrb54RQBTpAM6d51gw=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1578935141; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=/tUgipQKa6rULF5OSEkKpPGhsLU1+czZXRgWoeHseKs=; b=aN0JzQLVxu70QbInmLVbmZswmXemotKoj1+ivCAquQXn8Bkwv/jclVraHhHrnniiYwK3YwTY
+ gQq9RS12mHYDHO7n7nOBt+Wd19wN4QDHTN170a+TnpZy5aCAG7PDUDd0JPBKCGpKlKybBalv
+ k+KtONp5OJt3fMT7v7u0At54b4s=
+X-Mailgun-Sending-Ip: 69.72.40.235
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5e1ca34b502e4ddc75a808eb
+Received: by luna.mailgun.net with HTTP; Mon, 13 Jan 2020 17:05:15 +0000
+Date: Mon, 13 Jan 2020 17:05:15 +0000
+Sender: gaurav.g=tryfacta.ai@mg1.ceipalmm.com
+Message-Id: <20200113170515.1.C60A5F37D4671903@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: gaurav.g@tryfacta.ai
+To: josephs@linuxjobber.com
+From: Gaurav Gupta <gaurav.g@tryfacta.ai>
+Subject: Job AWS Solution Engineer is shared with you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">Hi,</span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">Hope you are doing great!<br />
+&nbsp;<br />
+We have an opportunity for&nbsp;<strong><span style=3D"font-family:"Calibri=
+","sans-serif"">AWS Solution Engineer</span></strong><b> </b>with one of ou=
+r clients in&nbsp;<strong><span style=3D"font-family:"Calibri","sans-serif"=
+">Carlsbad, CA</span></strong></span></span></span></span></span></span></p=
+>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">If interested, please send me a copy of resume, contact details, =
+availability and a good time to connect with you.<br />
+&nbsp;<br />
+<b>Role: <strong><span style=3D"font-family:"Calibri","sans-serif"">AWS Sol=
+ution Engineer</span></strong></b><br />
+<b>Location:&nbsp;<strong><span style=3D"font-family:"Calibri","sans-serif"=
+">Carlsbad, CA</span></strong></b><br />
+<b>Duration: Long Term</b></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"co=
+lor:#333333">Project Overview:</span></span></span></b><span style=3D"font-=
+size:11.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=
+=3D"color:#333333"> The resource will be part of Platform team helping deve=
+lop/support cloud-based applications on AWS and perform system admin work f=
+or the Platform to enable Data Science related use cases</span></span></spa=
+n></span></span></span><br />
+&nbsp;</p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333"><b>Role Scope / Deliverables:</b></span></span></span></span></sp=
+an></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">&bull; Design, develop, test, deploy, support, and enhance cloud-=
+based applications using AWS<br />
+&bull; Assist with requirement gathering, capturing of technical designs, a=
+nd creation of test cases<br />
+&bull; Assist with troubleshoot and resolution of production application is=
+sues<br />
+&bull; Research new technologies with hands-on experiments, PoC implementat=
+ions, and technology evaluation presentations for sharing with stakeholders=
+<br />
+&bull; Assist with AWS cloud administration tasks to support / enable the u=
+ser community<br />
+&bull; Assist with developing Wiki content such as cloud solution architect=
+ure / design, usage best practices of AWS components and services for shari=
+ng with the development community<br />
+&bull; Assist with developing and enhancing standard operating procedures t=
+o improve process efficiency and effectiveness<br />
+&bull; Help drive continual improvement in systems operations through tools=
+ and automation<br />
+&bull; Participate in collaboration with Cloud Engineering, Networking, Sto=
+rage, and other teams to ensure cloud deployments are performant and reliab=
+le<br />
+&bull; Participate in working with IT Security to ensure the solutions meet=
+ data security and compliance requirements</span></span></span></span></spa=
+n></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"co=
+lor:#333333">Key Skills:</span></span></span></b></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">Minimum Requirements/Qualifications:<br />
+&bull; Bachelor&rsquo;s Degree required<br />
+&bull; 5+ years&rsquo; IT experience, 2 years of which in application devel=
+opment using Java or Python<br />
+&bull; A minimum of 1-2 years&rsquo; experience in developing cloud-based a=
+pplications on AWS<br />
+&bull; Hands-on experience with AWS IAM, EC2, Lambda, S3, DynamoDB, RDS, Cl=
+oudFormation, and CloudWatch<br />
+&bull; Strong Experience with building back-end solutions in Java or Python=
+ on AWS<br />
+&bull; Experience with IDE tools such as Eclipse, source control tools such=
+ as GitHub<br />
+&bull; Ability to troubleshoot code, debug root cause of application issues=
+<br />
+&bull; Experience with database technologies and SQL<br />
+&bull; Experience with Agile / Scrum software development<br />
+&bull; Experience with Linux environments<br />
+&bull; Understanding of security concepts with experience in implementing s=
+ecurity controls and compliance requirements<br />
+&bull; Must be self-starter, detail oriented, and highly motivated individu=
+al<br />
+&bull; Ability to take ownership of work assignments and manages them to co=
+mpletion<br />
+&bull; Ability to work as part of a large cross-functional, geographically =
+distributed team as well as function independently<br />
+&bull; Strong problem solving skills<br />
+&bull; Ability to convey complex information in both written and oral form =
+to both technical and non-technical audiences<br />
+<br />
+Preferred Qualifications:<br />
+&bull; BS in Computer Science or Mathematics preferred<br />
+&bull; Experience with Databricks or Apache Spark a plus<br />
+&bull; AWS Certification such as &ldquo;AWS Certified Developer - Associate=
+&rdquo;, or &ldquo;AWS Certified Solutions Architect - Associate&ldquo; a p=
+lus</span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></span></=
+p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></span></=
+p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></span></=
+p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"co=
+lor:#333333">Thanks & Regards</span></span></span></b><span style=3D"font-s=
+ize:11.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=
+=3D"color:#333333">,</span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"co=
+lor:#333333">Gaurav Gupta</span></span></span></b></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"co=
+lor:#333333">Sr.&nbsp;Talent Acquisition</span></span></span></b></span></s=
+pan></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><b><span style=3D"font-size:1=
+1.5pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"co=
+lor:#333333">Tryfacta, Inc</span></span></span></b></span></span></span></p=
+>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">Direct: (732) 639-5781</span></span></span></span></span></span><=
+/p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">E- Mail:&nbsp;<a href=3D"mailto:gaurav.g@tryfacta.ai" style=3D"co=
+lor:blue; text-decoration:underline" target=3D"_blank">gaurav.g@tryfacta.ai=
+</a></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:11.5=
+pt"><span style=3D"font-family:"Calibri","sans-serif""><span style=3D"color=
+:#333333">Google Hangout:&nbsp;<a href=3D"mailto:guptagaurav56@gmail.com" s=
+tyle=3D"color:blue; text-decoration:underline" target=3D"_blank">guptagaura=
+v56@gmail.com</a></span></span></span></span></span></span></p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.tryfacta.ai/u=
+sers/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/399bc2602=
+22f6b129cdc534cd128b621763a7a22/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZ=
+DM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>=
+click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg1.ceipalm=
+m.com/o/eJwVzEsOwiAQANDTyJLMwADtgoXReA3DZ7A0RRoaE49vXbzty15zjppE9QoUAKJGBwa=
+NRHmzcDUP7e5kHc6gLwTthTJx3cPWmky9icVHoEI522CioumUMVieIFGZS4hBDC7Pmr11isTwaz=
+94X47z2ur78117jDz-1Q8VmSi4"></body>
+</html>

@@ -1,0 +1,175 @@
+Return-Path: <handshake@notifications.joinhandshake.com>
+Received: from a3.mail.joinhandshake.com (a3.mail.joinhandshake.com [192.237.158.52])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id p1rkrhjtfquv616hj5p4mfprj9tihqba3p6tto01
+ for jeff.adekunbi@ideabakr.org;
+ Sat, 28 Dec 2019 20:52:44 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notifications.joinhandshake.com designates 192.237.158.52 as permitted sender) client-ip=192.237.158.52; envelope-from=handshake@notifications.joinhandshake.com; helo=a3.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notifications.joinhandshake.com designates 192.237.158.52 as permitted sender) client-ip=192.237.158.52; envelope-from=handshake@notifications.joinhandshake.com; helo=a3.mail.joinhandshake.com;
+ dkim=pass header.i=@notifications.joinhandshake.com;
+ dmarc=pass header.from=notifications.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFITWYvR2hodDJxb2Y3ZDN5YktHUTBETHduNWhuZ3ovZU44N1lsMVBESlVaQ01Bcy9kNzN4MWdnZGZkMk5pQUUvL3BnbmlJOWZlZ2VuVjBrb1AySFp2VXNzdVA5UXA2MnBVN0xteVhXK1lHaWhJY3JXT3Zpd3VzNlNEcjJZK0cxUldvYzJZdTl4bWJJNW9UbngzUnB6UzBVdjZjak5hWjhUZ0podjVlRk1aUU9LbkppVHA3alcvMldvUjBCN3ZoaHdnUHJVd3BaUFcrN1BsemFaU0Z0MFlIanJ4QUFUYUgvK0dZWXdNczZPQTBrSVlEVWI2SUUwbDhtUTJLYlpHVWVIb0Q0Z0oxNFd2WnNQWGllZHllUWZ0RnZEZ3Npa0MzLy9EVlc5blhZcUdxMy9YTXNlUTYxOFVkUnhsMy9lYmNQL2s9
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=FxDdkJHGLOb9253QcLC+qFB1fhy1vQmGUBIjhv62FloADxFVVJweNyEGpaapp2GFzdU+/a7jb7bEAQUrRufnJbuYOScE05lcHpQnzWTcU8RyIG2Uf6cnmcXQU8IAMgt4NDo0Q8Vr42uHaKpJsQDi7A/jPFwoq9STLfhLBftNyho=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577566365; v=1; bh=5oUBGTd8y8b+mB/5BaiSMxP0lGhIFj5CKsXeVlXy/1o=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed;
+ d=notifications.joinhandshake.com; q=dns/txt; s=pic; t=1577566364;
+ h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date:
+ List-Unsubscribe; bh=5oUBGTd8y8b+mB/5BaiSMxP0lGhIFj5CKsXeVlXy/1o=; b=FXr1opdPJ418jwvYO7P3Qax6K5nMWwJlERqdWA9ztWuM0HufqthDgdqnJM5hg8dpwnWh6I4/
+ MQxXzuM67MxGknfsVeTSoFioXFAG5khvuDyC59xkZSgn5HlvwElwnlivc1+wfWyw4qVdqDMY
+ 0CZ5pDeGrtzqOJjtpscFyaQPzss=
+X-Mailgun-Sending-Ip: 192.237.158.52
+X-Mailgun-Sid: WyJhMjA3OCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICIyZDk2NyJd
+List-Unsubscribe: <mailto:u+mq6tezbzgy3sm2j5giydcojrgizdqmrqguzdimrogexeerbsii3ekmzxim3tqnjrgi2eejjugbxg65djmzuwgylunfxw44zonjxws3timfxgi43imfvwkltdn5wsm2b5mzstgnrsgftdgzddmq3wmyzymnrwgmbvgu2wkndggvswkzbqga3sm2dbnzshg2dbnnsv63tporuwm2ldmf2gs33ol5uwipjvg43demjugi3tojtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6w433unftgsy3boruw63s7mvwwc2lmez2d22tpmjpwk6dqnfzgc5djn5xf64tfnvuw4zdfoi@notifications.joinhandshake.com>
+Received: by luna.mailgun.net with HTTP; Sat, 28 Dec 2019 20:52:42 +0000
+Date: Sat, 28 Dec 2019 20:52:42 +0000
+Message-Id: <20191228205242.1.BD2B6E37C785124B@notifications.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_notification_id": "576214277"}
+X-Mailgun-Native-Send: true
+X-Mailgun-Tag: notification_email
+X-Mailgun-Tag: job_expiration_reminder
+To: jeff.adekunbi@ideabakr.org
+From: Handshake <handshake@notifications.joinhandshake.com>
+Subject: Your job Remote Teaching Assistant is about expire on Handshake
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="eb449c9c29064832a697fa7ef90dc4ae"
+
+--eb449c9c29064832a697fa7ef90dc4ae
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="ascii"
+Mime-Version: 1.0
+
+You have a new notification
+
+Hello Jeff,
+
+
+
+
+
+Your job
+Remote Teaching Assistant,
+posted at
+1 school,
+will expire in 3 days.
+
+
+Want to keep it longer?
+Update its expiration date.
+--eb449c9c29064832a697fa7ef90dc4ae
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html style="background-color:transparent">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="width=device-width" name="viewport">
+<title>Handshake</title>
+
+
+
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+.primary-button a:hover{color:inherit}
+.outline-button a:hover{color:inherit}
+.button a:hover{color:inherit}
+.primary-button a:active{color:inherit}
+.outline-button a:active{color:inherit}
+.button a:active{color:inherit}
+.primary-button:hover{color:#fff;background-color:#ff6860;border-color:1px solid #ff6860}
+.primary-button:active{color:#fff;background-color:#e21d17;border-color:1px solid #ff6860}
+.outline-button:hover{color:#ff6860;border-color:#ff6860}
+.outline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+.primary-button a:hover{color:inherit}
+.outline-button a:hover{color:inherit}
+.button a:hover{color:inherit}
+.primary-button a:active{color:inherit}
+.outline-button a:active{color:inherit}
+.button a:active{color:inherit}
+.primary-button:hover{color:#fff;background-color:#ff6860;border-color:1px solid #ff6860}
+.primary-button:active{color:#fff;background-color:#e21d17;border-color:1px solid #ff6860}
+.outline-button:hover{color:#ff6860;border-color:#ff6860}
+.outline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+@media (max-width: 767px) {
+.avatar--mobile-md{max-width:56px}
+.avatar--mobile-md{max-width:56px}
+}</style></head>
+<body style="font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;color:#231f20;font-size:16px;line-height:20px;-webkit-print-color-adjust:exact">
+<table class="email-layout" style="max-width:580px;table-layout:fixed;border:0;border-collapse:collapse;width:100%;text-align:inherit;margin:auto;padding:0">
+<tr>
+<td class="email-header">
+<table style="border-collapse:collapse;width:100%;width: 100%">
+<tr>
+<td>
+<img alt="Handshake" class="handshake-logo" src="https://handshake-production-cdn.joinhandshake.com/static_assets/hs-logo-black-lg.png" style="margin-top:24px;margin-bottom:16px;width: 159px; height: 24px" title="Handshake">
+</td>
+<td class="branding" style="width:40px;height:40px">
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td class="email-content">
+<h1 style="font-weight:700;word-break:break-word;font-size:46px;line-height:52px">
+You have a new notification
+</h1>
+<p style="font-size:18px;line-height:28px">Hello Jeff,</p>
+<div class="feed">
+<div class="row list-item">
+<div class="col-md-12">
+<div class="content">
+<p style="font-size:18px;line-height:28px">
+Your job
+<a href="http://email.notifications.joinhandshake.com/c/eJxtkN1OwzAMhZ-mvawSN_3JRS7oxl6jcpN09bokVZoieHsyQAgEkiVL3_Gxj2wUGNl2JSlgXHKAHlgDAipeDWcY2ue6O3V9w0EMhWA-JJpJY6Lg9-oWyC_ozb7gaisdXLkowZnhZtJykr2YmayZbdoaOZs5tnMjym_D-HPZSEY1XQtcQNeVd7WktO1F_VTAJRdu299jmd_CtOcGICX0sqgvR3LjHo6obVGfUSd6ofQ2OqS7jQW0D9lZQ4fLsn3gL6jRbUhXn_GvVB8zZVQ3O88VGrsefqL8BzIWJ1xjFeK1TOofT1I53GhfN4qfOFpH3tj4DsKQfD0" style="color:#254fa5;font-weight:inherit">Remote Teaching Assistant</a>,
+posted at
+<b>1 school</b>,
+will expire in 3 days.
+</p>
+<p style="font-size:18px;line-height:28px">
+Want to keep it longer?
+<a href="http://email.notifications.joinhandshake.com/c/eJxtkNFugzAMRb8GHlEwgZCHPIx1_Q1kkgBumwSFMG1_v3Srpk2bZMnWsa99ZaPAyE6UpIDVsgbogbXAoaqr4QRD99KIZ9G3NfCh4MyHRDNpTBT8Xl0C-RW92Ve82koHV67KMgaTER0ywae6bRmXXGvWg5kFyKYtvwXjz2UjGdWKDmoOQpQ3taa07UXzVMA5B27b32OZX8K05wQgJfQyV9ZQKpozeUqEt3HDxRbNqSmgO5Ib93BEfQeoE71Seh8d0s3GR9tl9eFy297xA2p0G9LiM_7l93OmjOpi57lCY6-Hnyh_iIzFCa-xCnEpk_pHk1S2Pdq3jeIXjtaRNzZ-AJUMhGM" style="color:#254fa5;font-weight:inherit">Update its expiration date</a>.
+</p>
+</div>
+<div class="top-right-btn">
+<div class="hs-jobs"></div>
+</div>
+
+</div>
+</div>
+</div>
+
+</td>
+</tr>
+<tr>
+<td class="email-footer" style="padding-top:16px">
+<hr class="divider" style="display:block;height:0;width:100%;border:0;border-top:1px solid #e0e0e0;margin:8px 0">
+<p class="muted extra-small" style="font-size:18px;line-height:28px;color:#7a7a7a;font-size:14px;line-height:20px">
+If you'd no longer like to receive emails like this you can
+<a href="http://email.notifications.joinhandshake.com/c/eJxtkNFugzAMRb8GHhExkISHPIx1_Q0UElNcmgSFMG1_v3SbplWbZMnW8b3Xkq0C23NRkoKa9QxAQt1BCxWrhhMM_KURz0J2DNqhaGsfEs1kdKLg9-oayC_a233RK1YmuHJR2GaxsVoiB9HJueacsV4aKdq-aUxf_hjG32EjWdUJDqwFIcqbWlLa9qJ5KuCcS2_b32OZHzvGPXfGO85lx_P4ELpFnDGiN5izzkdy4x6OaLBoTtokeqX0PjpNN4wF8PvaoaXD5TXe8Tc02m2aLj7jh_RPTRnVFee50hbXw0-Un0QW9aTXWIV4KZP6x5PUNUwjvm0Uv3BER95i_ABBlocf" style="color:#254fa5;font-weight:inherit">sign in</a>
+to manage your notification preferences or
+<a href="http://email.notifications.joinhandshake.com/u/eJxVzUEOwiAQheHTyJLAFEpdsKl6joYyg53WgsGaeHybmBjd_sn3HnrAY-sEe1D6qAE6UBYMSC37M_TtpXEn11kNpj8YlcvGiWPYuOSHnAvnKWR8TGEhGcsqJp-oaUGnBiO6FLsYo7LWkkmWCJVy4guG37GB0Vu3SwPOiepnSkkGpOWZR96PGSmMYamy1KvY_B-lNfBtj3MZB3rduX5ypZUzUn0Dp95LGA" style="color:#254fa5;font-weight:inherit">unsubscribe</a>.
+</p>
+<img alt="Handshake" class="handshake-logo" src="https://handshake-production-cdn.joinhandshake.com/static_assets/hs-logo-black-lg.png" style="margin-top:16px;width: 159px; height: 24px" title="Handshake">
+<p class="muted extra-small" style="font-size:18px;line-height:28px;color:#7a7a7a;font-size:14px;line-height:20px">P.O. Box 40770, San Francisco, CA 94140</p>
+
+</td>
+</tr>
+</table>
+<img width="1px" height="1px" alt="" src="http://email.notifications.joinhandshake.com/o/eJxVzUEOwiAQheHTyJLAFEpdsKl6joYyg53WgsGaeHybmBjd_sn3HnrAY-sEe1D6qAE6UBYMSC37M_TtpXEn11kNpj8YlcvGiWPYuOSHnAvnKWR8TGEhGcsqJp-oaUGnBiO6FLsYo7LWkkmWCJVy4guG37GB0Vu3SwPOiepnSkkGpOWZR96PGSmMYamy1KvY_B-lNfBtj3MZB3rduX5ypZUzUn0Dp95LGA"></body>
+</html>
+
+--eb449c9c29064832a697fa7ef90dc4ae--

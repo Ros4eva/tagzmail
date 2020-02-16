@@ -1,0 +1,164 @@
+Return-Path: <bounce+c0e0b0.5a8d87-josephs=linuxjobber.com@ceipal.com>
+Received: from m250.email.mailgun.net (m250.email.mailgun.net [146.20.191.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 43g9hpd8rujl1qjihopikv6bdi6tssititou5n01
+ for josephs@linuxjobber.com;
+ Fri, 20 Dec 2019 15:19:58 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: permerror (spfCheck: Error in processing SPF Record) client-ip=146.20.191.250; envelope-from=bounce+c0e0b0.5a8d87-josephs=linuxjobber.com@ceipal.com; helo=m250.email.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=permerror (spfCheck: Error in processing SPF Record) client-ip=146.20.191.250; envelope-from=bounce+c0e0b0.5a8d87-josephs=linuxjobber.com@ceipal.com; helo=m250.email.mailgun.net;
+ dkim=pass header.i=@ceipal.com;
+ dmarc=fail header.from=aalgorithm.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGQjUwUEQxSzJGZzVsVy9xK2FVOVRXVGRQenZrcHNGNS90dkZoVjl5b1h1R1RZenl2azFCV3Z0Mkx5SFZsRm92aGxySDB4eUc1TVZkZVJYRmNraC9YNVRuNC9BTFh1Tk9RSi8yUGJGNGdFc1NxTk1pSXBhTDQ1YWNTeEsvZFpSNkwzVmtidkVpamg0bDZndjhnekhZNGdwUXdIR01yZm1rTU5pZjRQcjdxRjdoOEVjTE5tZVVINzJZbldLVS9OdzkrYlJwWHlCNHZXRit2VEFVZE9sVlBxUm5vcWVZbGFlcWVFcFlLSVU1MzFDdFh4dEV2RzlFczk5ZVJ0b0VUNys5Q0ZCQ2NTaFIzMEh2UWdYL3hvNFJORDA3QjlEcERMbFRFUFZmd1Z4SWF0ck93a0FXTTBRbG1FRVhlSVJFTEJVODJ0Z2t4TSt4YlhpYStiR2Zpd09qc2g=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=g5ooRsRMy1rlXtY1xAsV3nYxYzd8F5v+Dum0G1riw0GhTYhJlDO1gkjyjI66ttelA4YGZGB18ym1cg/Gd/ndOHtMsGI3Qr2+LtVlL8KfYOAFp7bTcI7+lvcVVS4M1ncy9X1ElRlJSYS2vPoK/BTVCkbQYgjGdv0Nn1u18Yxu2Uk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576855202; v=1; bh=nQz4MZ5ip5n8LCJ72OmaRu+jHYfkeyNBTn0G8Fn28Qk=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=ceipal.com; q=dns/txt; s=krs;
+ t=1576855201; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=pzwIn86w8xdv+ld7PHqIFZwucmVT6b61s7tjCdlo1uY=; b=RVyRm4JJyuFWaks+tMOnddcQKE98Jzh80yr1xDdvJASLoyGswbUQuqHBlX7AVF6umNdij+eH
+ wzSjK5XQi43FMhrP9/3eSA53bl+78N6YMOviXP7sSwchn51Mgv3vMN1lGUJbSUcUqA785/VU
+ xpoUrsqOrJFG10ExSYo65KGSXjQ=
+X-Mailgun-Sending-Ip: 146.20.191.250
+X-Mailgun-Sid: WyI4MzA2NiIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI1YThkODciXQ==
+X-Mailgun-Batch-Id: 5dfce491dedcfb4299193823
+Received: by luna.mailgun.net with HTTP; Fri, 20 Dec 2019 15:11:12 +0000
+Date: Fri, 20 Dec 2019 15:11:12 +0000
+Sender: vinay.bhumireddy=aalgorithm.com@ceipal.com
+Message-Id: <20191220151112.1.184CDFC51B06017C@4086.ceipal.com>
+X-Mailgun-Variables: {"ref_id": "4086"}
+Reply-To: vinay.bhumireddy@aalgorithm.com
+To: josephs@linuxjobber.com
+From: Vinay Kumar Bhumireddy <vinay.bhumireddy@aalgorithm.com>
+Subject: Job AWS Architect is shared with you
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p style=3D"margin-bottom:13px"><span style=
+=3D"font-size:11pt"><span style=3D"line-height:normal"><span style=3D"font-=
+family:Calibri,sans-serif"><span style=3D"font-size:12.0pt">Hi,</span></spa=
+n></span></span></p>
+
+<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><spa=
+n style=3D"font-size:12.0pt">Hope you are doing great.</span></span></span>=
+</span></p>
+
+<p style=3D"margin-bottom:13px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><spa=
+n style=3D"font-size:12.0pt">We have openings on immediate requirement&nbsp=
+;<b>AWS Architect"&nbsp;</b>in&nbsp;<b>Boston, MA</b>. Please see below JD =
+and let me know if you are interested to apply for this position.</span></s=
+pan></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt">J=
+ob Title:&nbsp; Technology Lead | Data on Cloud - Platform | AWS</span></sp=
+an></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt">L=
+ocation:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boston MA 2108</span></=
+span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt">C=
+ontract duration:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6</span></span></span></spa=
+n></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt"><=
+span style=3D"background-color:#f1c40f;">Must Have Skills</span></span></sp=
+an></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt"><=
+span style=3D"background-color:#f1c40f;">=E2=97=8F&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AWS</span></span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt"><=
+span style=3D"background-color:#f1c40f;">=E2=97=8F&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Python</span></span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt"><=
+span style=3D"background-color:#f1c40f;">Nice to have skills</span></span><=
+/span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt"><=
+span style=3D"background-color:#f1c40f;">Java</span></span></span></span></=
+span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt">D=
+etailed Job Description</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt">S=
+killed resources in AWS, Python and JAVA for an assignment with analytics f=
+irm in Boston area in MA USA. The person should be self-motivated and fully=
+ own the technical deliverables assigned by the customer.</span></span></sp=
+an></span></p>
+
+<div>&nbsp;</div>
+
+<div><strong><span style=3D"color:#3498db;">Please reach me on vinay.bhumir=
+eddy@aalgorithm.com || +1832-838-7203</span></strong></div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>Awaiting for your quick response.</div>
+
+<div>&nbsp;</div>
+
+<div>Thanks in advance :)<br />
+&nbsp;</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"https://talenthirecls4.ceipal.co=
+m/users/unsubscribe/3158e5f03a0a49527162d2089c27901dd431203b/adae9b50b43c9d=
+8bc948250631d15431bc16cac2/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3Nu=
+cE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>click=
+ here </b></a>.</p>    </div>
+</body>
+</html>

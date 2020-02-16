@@ -1,0 +1,298 @@
+Return-Path: <bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com>
+Received: from a4.mail.joinhandshake.com (a4.mail.joinhandshake.com [192.237.159.133])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 181qbb521sdgc24n63lfmsrpo0gn4vddg1gf7j81
+ for jeff.adekunbi@ideabakr.org;
+ Tue, 07 Jan 2020 13:04:26 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+ dkim=pass header.i=@mail.joinhandshake.com;
+ dmarc=pass header.from=mail.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFN1pyZVRSb0tKOHhaQ04vZWE2eTltTDdZRjNhSWVURWFaT1B3MFlPbm1GYXV4K3FSem5vSjA2WUd0Y3lsMFhPS0tWZTNyMDdqVmgrZHdua29Oc1JqemFtOUpDQTJzc3pMaWQ3VlhZTkxmR25ocUdGamlRb05Vb2RzR0FZazZYYU9ITUZ0dlhqM2RmdFVjOGdLMGNURkd2bmpMaHFzUVR1ZklqWjNWVjNXY2lPOVdXZFN3c1NHamdlWU04dERpQUFHVlpSYVVwN2JKMzNEbVpUMFdnclNEcmRVOTYzcUVRclk3Nm94OTUrN2JLMjN5Wmp5bEl2Rm1aVmVZMUFXeFlWaExhblpBOFBCaGduZTN1RFFSTmFpbG1WZGx0S1BsRmEyNlF4WXQ3b3dLdlg1Z2FMMVhwMU9la1BQRjJPY3gzQVdIL3FuZ0lYTnp3eVN0Qmd5MFREWHBtNkhkVDdkeTBoWDNCeXhUSFhSdXJ3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=VSVo4JQcdKNx5bqVKmVbSRiu6/3+VZNfREpRSqAGLmH03ZA1GN0c9dNFuW/KdWNz5zXPdm0AxEOkB7zSkyt4fgonN3+sUSwGECx3ECDAJHzPbyK/dxaARYYsY7dgnPW1Rj1qkD+c+O+/kWpCPTYVTgRKFEm/3Oxgngi/lLPyQtc=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578402268; v=1; bh=nYCsVbOYeTcYGVHedhFksh03sjURbh1FhZOey1VmsYk=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1578402267; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe;
+ bh=snEfcZNbH/oi4HvUK4jNzOzoL3SE0GZIl4VMQU4y8mU=; b=gZlZubzHd+w3Z8L3Z6rdmM104AVjiF/3oKA4cn2YCEy1W35rZHWWLT3cJrkdonZ4f2WqDiWP
+ IPovws/I6jKqrZwdKcRPPaTZcof1yyY8A/EBnZak5qTJDYCfWsaSsDPxYdRLZ/bn56wDXfrl
+ JRmPyCBDS8ZwIg6EivfnVlhfq1M=
+X-Mailgun-Sending-Ip: 192.237.159.133
+X-Mailgun-Sid: WyIyNGNhOCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICI4OGNiOCJd
+List-Unsubscribe: <mailto:u+mq6tqoddmi4cm2j5giydembqgeydomjtga2danbogexdgmzwgq3umnkggvcemocdgu2uijjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihvqtiyjumyzdcmrrme3gkmdbgrsgmmbtgrrdmzrugvrdmzldmu3wejtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6timbnknrwq33pnqtgqylomrzwqyllmvpw2yltonpwk3lbnfwf62lehu2tambyga3q@mail.joinhandshake.com>
+X-Mailgun-Batch-Id: 5e1481c4169c1f5b102f6e24
+Received: by luna.mailgun.net with HTTP; Tue, 07 Jan 2020 13:04:04 +0000
+Date: Tue, 07 Jan 2020 13:04:04 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20200107130404.1.33647F5F5DF8C55D@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "500807"}
+Reply-To: jghouse@uidaho.edu
+X-Mailgun-Tag: 40-School
+To: jeff.adekunbi@ideabakr.org
+From: "Career Services, University of Idaho via joinhandshake.com"
+ <handshake@mail.joinhandshake.com>
+Subject: Univ. of Idaho Spring 2020 Career Fair Reminders
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="f4ca45bd3e8d4c62a48a762a809fd1d8"
+
+--f4ca45bd3e8d4c62a48a762a809fd1d8
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+University of Idaho
+Dear Recruiter: Our Spring Career Fair is less than a month away. Thank you=
+ to the 78 employers already registered, including six Premier Sponsors! Th=
+ose of you not yet registered may take advantage of early registration rate=
+s, which are available through close of business on Friday, January 17th.  =
+After that date, rates will increase by $100. As a reminder, the fair is on=
+ Wednesday, February 5th from 2-6pm PST in the ASUI-Kibbie Dome and registr=
+ation is handled through Handshake: http://email.mail.joinhandshake.com/c/e=
+JxlT8tuxCAQ-xq4FU14bNgDh023-YF-QDSBScPmASJpq_592UsvlXyxZc_YwVnrR8ujkyABGmgb=
+BRq0aIRSF932pjf33r4ac2caNoyreKS4z7iHY8aFhE8bn520amxAB_Aj2eCv1gep2wmkgauVdOG=
+rm88zH0zdmOwrMOf_h6rusRCVYcJYjkobZaRibz3rOtY9c7TlNf1URy70Felb8OIeNE0CAy2f-x=
+hryxgIR1yKSOWDn07Dy7ufU1r537Nhw-MY6DlniMEZAAvtL094U9Y For additional conven=
+ience, consider selecting our Executive Pass registration option with the f=
+ollowing added benefits:
+=C2=A0 =C2=A0 =C2=A0=E2=80=A2	One reserved front row parking space
+=C2=A0 =C2=A0 =C2=A0=E2=80=A2	Choose your booth location (after Premier Spo=
+nsors)
+=C2=A0 =C2=A0 =C2=A0=E2=80=A2	No late registration fee
+
+When registering, increase your brand presence on campus and select an adve=
+rtisement for the special fair insert published in The Argonaut student new=
+spaper. The insert will run the week before the fair on Jan. 30th. Options =
+are detailed on the rate card attached below. Fair registration instruction=
+s as well as rate offers from two of our hotel partners in Moscow are attac=
+hed below.  Additional fair details and instructions will be sent Monday, J=
+an. 27th to all Career Fair registrants.
+We look forward to seeing you next month, and Go Vandals!
+Sincerely,Jamie GarlinghouseManager, Employer Relations and EventsCareer Se=
+rvices, University of Idahojghouse@uidaho.edu | (208) 885-6122
+
+
+
+
+Registration_Instructions_for_Employers.pdf
+PDF
+(152 KB)
+
+
+
+Career_Fair_Argonaut_Special_Insert_Rate_Card_2019-20.pdf
+PDF
+(268 KB)
+
+
+
+Moscow_Hotel_Offers_Spring_2020_Career_Fair.pdf
+PDF
+(272 KB)
+
+
+
+
+
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+University of Idaho
+
+If you do not want to receive these emails, you can
+unsubscribe
+from emails from
+University of Idaho
+
+If you do not want to receive any mass emails from Handshake, you can
+unsubscribe
+from all Handshake emails
+
+P.O. Box 40770, San Francisco, CA 94140
+--f4ca45bd3e8d4c62a48a762a809fd1d8
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<title>Handshake</title>
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+=2Eprimary-button a:hover{color:inherit}
+=2Eoutline-button a:hover{color:inherit}
+=2Ebutton a:hover{color:inherit}
+=2Eprimary-button a:active{color:inherit}
+=2Eoutline-button a:active{color:inherit}
+=2Ebutton a:active{color:inherit}
+=2Eprimary-button:hover{color:#fff;backgr=
+ound-color:#ff6860;border-color:1px =
+solid #ff6860}
+=2Eprimary-button:active{color:#fff;backg=
+round-color:#e21d17;border-color:1px=
+ solid #ff6860}
+=2Eoutline-button:hover{color:#ff6860;border-color:#ff6860}
+=2Eoutline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+@media (max-width: 767px) {
+=2Eavatar--mobile-md{max-width:56px}
+}</style></head>
+</html><html><body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-sy=
+stem, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neu=
+e&quot;, sans-serif;color:#231f20;font-size:16px;line-height:20px;-webkit-p=
+rint-color-adjust:exact">
+<div class=3D"email-content" style=3D"width: 800px; margin: 0 auto;">
+<div class=3D"tile" style=3D"position:relative;margin-bottom:12px;padding:6=
+px;border:1px solid #e6e6e6;background-color:#fff;border-radius:3px;box-sha=
+dow:0 0 4px 1px rgba(0,0,0,0.05),2px 2px 2px 1px rgba(0,0,0,0.05);padding-r=
+ight:6px;padding: 8px;">
+<div>
+<div class=3D"mass-email-body">
+<img src=3D"https://s3.amazonaws.com/handshake.production/app/public/assets=
+/schools/40/original/hs-school-logo-data.?1523890652" alt=3D"logo" width=3D=
+"50" height=3D"50">
+<h1 class=3D"no-margin-top margin-left" style=3D"font-weight:700;word-break=
+:break-word;font-size:46px;line-height:52px;display: inline;">University of=
+ Idaho</h1>
+<p class=3D"margin-top" style=3D"font-size:18px;line-height:28px"></p>
+<div>Dear Recruiter: </div>
+<div><br></div>
+<div>Our Spring Career Fair is less than a month away. Thank you to the <b>=
+78 employers</b> already registered, including <b>six Premier Sponsors! </b=
+>Those of you not yet registered may take advantage of early registration r=
+ates, which are available through close of business on Friday, January 17th=
+=2E  After that date, rates will increase by $100. </div>
+<div><br></div>
+<div>As a reminder, the fair is on Wednesday, February 5th from 2-6pm PST i=
+n the ASUI-Kibbie Dome and registration is handled through Handshake: <a ta=
+rget=3D"_blank" href=3D"http://email.mail.joinhandshake.com/c/eJxlkE1uxCAMh=
+U-T7Bo5ASZkwWLUUS7QAyAnOBNmAkRAWvX2ZaY_m0qWLH9Ptp9tlJTzJGurOugAWuhbBhx40zaM=
+nXg_ilFcRvkqxKXi4NBuzS1Yv6I3acU7NXNw9aoGxImzRYIAfpIoAZdOMjP0w9AJydt6U2vOe6r=
+YuerGErjv_wcVPmMkinpBG1MpWyY6VjK5fQufRdgjvVv6qNh4ZKdTOOJMFbs4TEk_3FGsutNDcm=
+Ts4YpED_wD5-Az-VyoAJDQ_2J0O9qrL_zwVmeMV8pk9LM11VHdaFkaNHQ__GTLH6whnPAemxCvd=
+VYcXt7mNYSt_jtHPx09B2hr1Pe6L9K0d5U" style=3D"color:#254fa5;font-weight:inhe=
+rit">https://app.joinhandshake.com/career_fairs/13523=EF=BB=BF/employer_pre=
+view</a>. For additional convenience, consider selecting our <b>Executive P=
+ass</b> registration option with the following added benefits:</div>
+<div>
+<div>&nbsp; &nbsp; &nbsp;=E2=80=A2	One reserved front row parking space</di=
+v>
+<div>&nbsp; &nbsp; &nbsp;=E2=80=A2	Choose your booth location (after Premie=
+r Sponsors)</div>
+<div>&nbsp; &nbsp; &nbsp;=E2=80=A2	No late registration fee</div>
+</div>
+<div>
+<br>When registering, <b>increase your brand presence</b> on campus and sel=
+ect an advertisement for the special fair insert published in <i>The Argona=
+ut</i> student newspaper. The insert will run the week before the fair on J=
+an. 30th. Options are detailed on the rate card attached below. </div>
+<div><br></div>
+<div>Fair registration instructions as well as rate offers from two of our =
+hotel partners in Moscow are attached below.  Additional fair details and i=
+nstructions will be sent Monday, Jan. 27th to all Career Fair registrants.<=
+br>
+</div>
+<div><br></div>
+<div>We look forward to seeing you next month, and <i>Go Vandals!</i>
+</div>
+<div><br></div>
+<div>Sincerely,</div>
+<div><br></div>
+<div>Jamie Garlinghouse</div>
+<div>Manager, Employer Relations and Events</div>
+<div>Career Services, University of Idaho</div>
+<div>jghouse@uidaho.edu | (208) 885-6122</div>
+
+</div>
+</div>
+<div class=3D"tile" style=3D"position:relative;margin-bottom:12px;padding:6=
+px;border:1px solid #e6e6e6;background-color:#fff;border-radius:3px;box-sha=
+dow:0 0 4px 1px rgba(0,0,0,0.05),2px 2px 2px 1px rgba(0,0,0,0.05);padding-r=
+ight:6px">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJxlkMFOhDAQhp8GbpLSUqgHDs=
+YV14NGVmPWExnasnShLUtLNr69ZV29mMxh5pvMP_-MKBnjLYtViRFGKEVFSlCGsiRNCMmzoqIV3=
+VTsntJNlCENakyOVpkejHA9DDLhVsd9yaHgCLo25ziljHcYyY4RSlokc9RhEY9l7_3kInIX4SoE=
+TNN_oZV7D7zX0ngXKkpxcZuFRNizGS2IiFTeDtJEZPMEe4TfNWOmdmZn6LM9fX3Wd6eXB__6qGS=
+dz-fuuB-yfgdk-7HXW50zqCOcL143zi4zl0FFg3PNepacry0thVp0aMkVXyG3xgdPgVKEGCp-Me=
+gJ1GG1sxjVeJgP0kvRXEZdPJdH2XUJCDksplXhgUpIaGGYEzsfYl9m6OaN99aO8d8fmouji0CjR=
+Pmz7huDBIro" style=3D"color:#254fa5;font-weight:inherit">Registration_Instr=
+uctions_for_Employers.pdf</a>
+<span>PDF</span>
+<span>(152 KB)</span>
+</div>
+
+<div class=3D"tile" style=3D"position:relative;margin-bottom:12px;padding:6=
+px;border:1px solid #e6e6e6;background-color:#fff;border-radius:3px;box-sha=
+dow:0 0 4px 1px rgba(0,0,0,0.05),2px 2px 2px 1px rgba(0,0,0,0.05);padding-r=
+ight:6px">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJxlkE1vwyAMhn9NclsEIQRyyK=
+FblFWapmqqtE29RARooAkQBbKvXz_adbtM8sF-LL9-bVFTynua6joHOQAQEIhAAYoMZgiVBWlxi=
+5uW3mHcJAUwTE_ZyWmrmBVesVFm3JlU1RWgJcYlRIwiwkVfQQ5zeESoKlGPAU2nWoUw-wRtkryN=
+web5v9CZh8C4MtIGHyuMc0LLmAj3bifHRILa4EZpE9Tol3bcvRZh2Quitt3Bbz-1fnyQ5F7d7qB=
+ons3bZq36xpB1F76qQR6ePvK4vVyD6bxbFy6jimHed-ez5HJtGSn0amJLnvEVcmdD9BQpBoAC8o=
+uZmZkeznZWq7vAlkEGKbrLqE-X-iSPx4wJOa621_GBWkjWs3HJ3DKkoS7AzZ4r56b07w_dxdFFo=
+NOi_ln3DdwCicI" style=3D"color:#254fa5;font-weight:inherit">Career_Fair_Arg=
+onaut_Special_Insert_Rate_Card_2019-20.pdf</a>
+<span>PDF</span>
+<span>(268 KB)</span>
+</div>
+
+<div class=3D"tile" style=3D"position:relative;margin-bottom:12px;padding:6=
+px;border:1px solid #e6e6e6;background-color:#fff;border-radius:3px;box-sha=
+dow:0 0 4px 1px rgba(0,0,0,0.05),2px 2px 2px 1px rgba(0,0,0,0.05);padding-r=
+ight:6px">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJxlkMFugzAMhp8GbkMBEkgPHN=
+YiOKyTNvWyWxQSAykkYSG069sPum6XST7Yn-Xfvy0LSkVDQ1UkKEEoRnmcIoxwFEdpmuG8IhUpK=
+3ogpAww0lyN0dkq03Mj554PEAmrw76gbZaTpKECsKB0h1FMMkF3bZNIQVFGw7HovZ_mIH0OkmoN=
+Pk3_hTbuPRe9BuPntSIkySlZE2mvZrRcBmnl7QAmSMvPbjgv1l-_bgoYfnN1fLi0H0dZTrcasH5=
+lx56BEY5cXup97d3T_nRs34MkW7xms12cgFVF83lm21ngHi0NUi16bcGGH1BY41dPKyUIUZT_Yq=
+4nrrrNzmIU89x14EGy--gcuuIMbRtxCcNiGrU-UEngDR9cZF0X-gKjp5PorR3Dvz-wu6O7AFOy-=
+Fn3DY3Si1E" style=3D"color:#254fa5;font-weight:inherit">Moscow_Hotel_Offers=
+_Spring_2020_Career_Fair.pdf</a>
+<span>PDF</span>
+<span>(272 KB)</span>
+</div>
+
+
+<div class=3D"mass-email-footer">
+<p class=3D"text-muted" style=3D"font-size:18px;line-height:28px;color:#7a7=
+a7a;font-size:11px;margin:2px;text-align:center">
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+University of Idaho
+<br>
+If you do not want to receive these emails, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9zcsRwiAQANBq5CazhOVz4W=
+QmDVhAZoFFSEyYSbR_9WID7-XgfYpetDDAAKDAKQ0IKJXU2qKbzGTGyd-MGS8IG7WnXHrbK-35r=
+LSyTH0TNRASlkENiiwDYS6gMdqCJlpO7KI4wsKlSMq8vvfYvlbLTJHWQ_bjIV4B4XpPtfen-Nvz=
+Ruc58y-dWw4GwIP7ALmxNr0" style=3D"color:#254fa5;font-weight:inherit">unsubs=
+cribe</a>
+from emails from
+University of Idaho
+<br>
+If you do not want to receive any mass emails from Handshake, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9zUEOgyAQAMDXyJHsIit44N=
+DU-A2zwFLRqom2_2976QdmcvA-Ra9qMGAAEBy2YMFq1G3bWTfSSMPo70RDY2Hj-tTLUfeZ93zNv=
+IpOx6bmIL2zUpATkscudugLGdOXPgrm5Kw6wyKlaM6yvvdYv1bNwpHXUx_nQ71CY27qr04bX9ck=
+v26qORCAB_cBT4Uz7w" style=3D"color:#254fa5;font-weight:inherit">unsubscribe=
+</a>
+from all Handshake emails
+<br>
+P.O. Box 40770, San Francisco, CA 94140
+</p>
+</div>
+
+
+</div>
+</div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mail.joinhan=
+dshake.com/o/eJw9zcsRwiAQANBq5CazhOVz4WQmDVhAZoFFSEyYSbR_9WID7-XgfYpetDDAAK=
+DAKQ0IKJXU2qKbzGTGyd-MGS8IG7WnXHrbK-35rLSyTH0TNRASlkENiiwDYS6gMdqCJlpO7KI4w=
+sKlSMq8vvfYvlbLTJHWQ_bjIV4B4XpPtfen-NvzRuc58y-dWw4GwIP7ALmxNr0"></body></ht=
+ml>
+
+--f4ca45bd3e8d4c62a48a762a809fd1d8--

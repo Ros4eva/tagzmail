@@ -1,0 +1,75 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-153.mailgun.net (m71-153.mailgun.net [166.78.71.153])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id dc34qkf6j2e9lnm04hdpuheu33sqlio7kccold01
+ for josephs@linuxjobber.com;
+ Tue, 28 Jan 2020 21:21:20 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHS3RzYnZSUDBwODQ4TjRvQzI0QnYwMXFGMDFHQTRDa3puaE9kWStPckIyYm9Pd2JISjE0MTQvSlUzSDdRVDl1eFVxZ08ybnZxSi81SmhOcUZjTmpNZTYyeUpRd3VrVmt2aTNyb29wY2JSQ2FxUXJYL3dsK3JDMHJjaGluYzlPYVlETDl0Z3hmZGd5NVRPNlNBak1kcDNEVURiaTErM2xKbUsrSjVnVUdhRTcvQ2dzL3J2aE40TTN4QWhFY1d5T2t0WVNSMTRUMGUzSzkyRE8vQmdrV3pvQUF1bm9iVXBGUDlFYWJhRzBLQ2pqYUJDTVRDaFdlNVh2WmV3Qk5WVE9rSG1NUW9id3FOVkoxc1AveFNKb25lUGU4Z3ZmQ1lQcy9JOHZtbFFaSE5KWHVqTlRScjgvNGJZdmNiN0NEcCtDRWZJaG1ZUzR5YjFsSUhVTTNSNnlseDI=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=YoJSQbzwdnoTf9Tn9BZ5Ql3LNcxn9LEEMoj44gDgA41q8mNgdas2ZE32m+XhUyWAv22iKfafzknqdUkDdjhnSkJmVF3QbZPR0yPsW8W/f2qqUTHmCI0DxYPIljp1ZWRFykYLplY959it6ZDIskkp7sKT6iBvHw4fSjTHr0Sy+GQ=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580246480; v=1; bh=D8wx2qzZgBMu+si3kumEHSXRCwddGmjtZIGewUizBbw=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1580246479; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Message-Id: Sender: Date;
+ bh=h0OhSSUlSBTMk+Yeo6o1eX5dEYm1/Mb8OD8RUMvvrtU=; b=L8LwbkHdttB602GGqxUY9/ut0qa8o/GncxVzMr33Y2Z85lLtzKKgzpWo7InRSuWO6E0zapLw
+ b4QPKkWBZvIHsJ/TzdFOjQmIi1VIPPggYf6jTM7CLQzO4Qv8BIjPA8oHd+TSsQfaryjSPF0M
+ pE2/qNkL2/DMM6DWVRcQEBxJ+B8=
+X-Mailgun-Sending-Ip: 166.78.71.153
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e30a5cedba96f1601fb67fa
+Received: by luna.mailgun.net with HTTP; Tue, 28 Jan 2020 21:21:18 +0000
+Date: Tue, 28 Jan 2020 21:21:18 +0000
+Sender: reuben.d@usgrpinc.com
+Message-Id: <20200128212118.1.3139D41DC86361B3@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+To: josephs@linuxjobber.com
+From: Reuben david <reuben.d@usgrpinc.com>
+Subject: System Admin - Urgent Requirement
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <p>Hi,</p>
+
+<p>&nbsp;</p>
+
+<p>I am looking for a System Admin. If you are interested please send me your resume to <a href="mailto:reuben.d@usgrpinc.com" target="_blank">reuben.d@usgrpinc.com</a></p>
+
+<p>&nbsp;</p>
+
+<p>Regards</p>
+
+<p>Reuben</p>
+614 495 9222 Ext 753 / 754                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/3ba3ffec63ddf9c53d5afc641554250ea2a5736c/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEEOgyAQBdDTlCWZP0wQFmxa79EIYsW0YiAmPX7tAd6bAzJNRKoEJiYCOwYDTkMbGD8KxoezxuJubkJnf7Wj7Emn-lFryOI9MSwEXiDDlOCjtUOWhfnSquXlWebAhpxqYas9H2u_nnfZz-9WY8ztX_0ABjIlkw"></body>
+</html>

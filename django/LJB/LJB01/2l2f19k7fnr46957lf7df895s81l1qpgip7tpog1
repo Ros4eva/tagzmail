@@ -1,0 +1,323 @@
+Return-Path: <bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com>
+Received: from o1.email.bullhornmail.com (o1.email.bullhornmail.com [198.37.153.11])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 2l2f19k7fnr46957lf7df895s81l1qpgip7tpog1
+ for josephs@linuxjobber.com;
+ Mon, 23 Dec 2019 18:41:48 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+ dkim=pass header.i=@bullhornmail.com;
+ dmarc=none header.from=tanishasystems.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGb0xlN0ltMW9VSFVnOThhNFNHSzRCem83MVQ1ZU0rQkdUUkVqRzRrMnZnck5LemczRXBoOVJWSWRJOWViU0JzN1ROM2lrWFZjV2hiMXUrSlgvMktvdElVK0JJaGNUcGVZWXhFRkJYeGJQTHZtMkNybGlpZ20zMzlOYVhXRFRTVEgrOVBhREZ4ZmJuYTRsZ3MwWXJLVEV2Qm5ScVNSUlJINHd6ekROSktPUzIrL3pSNCs1SXR6V1JtM0VuZ3FORGE1WmtUOXg5RU9pKzBRWS9ITTJGb2xZa2F1UzhsVlM3WFJaK0Q5Yk1XVHRiSDZEaStUYmo1VXZLNmhBZnRwS2tObkg3dmd3QTlQTWJhenE5WVlEWkMwMkpBSFdUYkEya0JKeThsdFp0dng4ck5kTUppUGF4L2RsY0FIazJTN1NibFRZN0pjb2grMUlqQlFhdjlUcVZweDJUdVdtVnpHVVBxOGJoeno5eURZblJ3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=FvwUfXGs09ivjPTfOPMsZw8iIq0puckHwZ7LJC1+IeyiKMG9hLGre61qYnL4yLTC2P+E3IRXWpUyUEkeA8izbIkoI/k7ngkuvCOXv16RaDSNX6Ac6bkfErc6YA8PYXu/XASawe5U7UW68W7IjVbaVzkAgJOhQbgNnejlJl3wMWE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577126508; v=1; bh=jCpkPhvrn+Ei2M0ND/+t9mVsumJs5mMO6gHUUXC6/s4=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=bullhornmail.com; h=from:to:subject:mime-version:content-type; 
+	s=m1; bh=5JyxZw/5gjwXUXsppdk9GjJQlSPDz8cxvzfu/9G5sEQ=; b=PC4h/45
+	BkMJX8qr98Mcus6j9k2JZovmMVyq0V036PedlLznrpx7NSW8sGkb0ArTeSieExcn
+	iTcLJShRK8rb3pVrHzMeUL+raWHciY/szAnWZUhwu2e/BvykfQ+krMteyY7yGogw
+	HIHex6/nxb9HeDSJXslwXg0zE+KOO4luWI/Q=
+Received: by filter1159p1las1.sendgrid.net with SMTP id filter1159p1las1-12439-5E010A6B-1C
+        2019-12-23 18:41:47.578300327 +0000 UTC m=+514467.066704373
+Received: from outbound2.bullhorn.com (outbound2.bullhorn.com [52.129.17.4])
+	by ismtpd0012p1iad1.sendgrid.net (SG) with ESMTP id bbhkvD4WQkq_KPkNpC84qQ
+	for <josephs@linuxjobber.com>; Mon, 23 Dec 2019 18:41:47.416 +0000 (UTC)
+Received: from MassMailing (sl131app3.bos.bullhorn.com [10.77.2.62])
+	by outbound2.bullhorn.com (Postfix) with ESMTP id E484F1C0387
+	for <josephs@linuxjobber.com>; Mon, 23 Dec 2019 13:41:46 -0500 (EST)
+Received: from mail pickup service by MassMailing with Microsoft SMTPSVC;
+	 Mon, 23 Dec 2019 13:41:46 -0500
+Message-ID: <2008065755.1577126506585.JavaMail.cfservice@sl131app3>
+From: Wipro Team <wiproteam1@tanishasystems.com>
+To: josephs@linuxjobber.com
+Subject: Urgent Requirement for Security Architect in Philadelphia, PA
+Mime-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_40360_2064354280.1577126506582"
+X-Priority: 1
+X-Charset: UTF-8
+X-messageUUID: 3410B056-BC29-6297-367CF591F6294920
+X-OriginalArrivalTime: 23 Dec 2019 18:41:46.0589 (UTC) FILETIME=[A127B0D0:01D5B9C0]
+Date: Mon, 23 Dec 2019 18:41:47 +0000 (UTC)
+X-SG-EID: 0yz/L0x4SOtxmT5Q2ZIaRuB3YhbCNPbHhve+IF+xP0o4hLaVibBeX0A0JA+bGZP9aOfA9l+PkMCsKo
+ XM4Ihd5Dcw6ubyO1TSg3kXQ+QGj5MsTYxRRXvyOoINbJfu6KMI5WPIjICrRJ1GvOvFQ1BN8UheB1OO
+ aiVO5AUTnp0wryGnkrAit1MApU7o09WdpCBqPR0D1OfjV78tFg8VRtCQuGWEznV3vMMAozpYx34NQ0
+ c=
+
+------=_Part_40360_2064354280.1577126506582
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_40361_856583028.1577126506582"
+
+------=_Part_40361_856583028.1577126506582
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+
+Greetings,
+
+
+
+My name is Rajat Singh from Tanisha Systems. I saw your profile in one the job boards and feel that your skills and professional experience would be a good fit for a position with one of our premier clients. Please review the job description below. if you are interested in this position please forward your update resume for immediate consideration.
+
+
+
+ 
+
+
+Titl
+
+
+e: 
+
+Security Architect
+
+
+
+Location: 
+
+
+Philadelphia, 
+PA
+
+
+
+Type: Contract (Long Term)
+
+
+
+
+
+ 
+
+
+JOB DESCRIPTION:
+
+
+
+ 
+
+
+What the client is looking for in this role is a seasoned security architect with experience in cloud deployments, secure coding, and working in a fast passed agile Dev-Sec-Ops environment who can be the security technical lead on a number of projects.
+
+
+
+
+
+ 
+
+
+ 
+
+
+The Security Architect and Engineer, is responsible for developing architecture designs, detailed engineering designs, use cases, technical flows and operations plans based upon the business, functional and security requirements. The candidate for this role will work closely with other security architects, developers and other security and non-security stakeholders to help transform the technical vision to implementable security solutions. This individual will assist Comcast by supporting the strategic technical leadership across multiple projects that seek to improve or innovate cyber security capability across Comcast. In this role the ideal candidate will help identify, design and vet new or emerging technologies necessary to assure success and security of Comcast services and products. 
+
+
+
+
+ 
+
+
+Core Responsibilities:
+
+
+
+
+&bull; Create security architecture designs working with the senior and lead architects.
+
+
+
+
+&bull; Develop and provide written detailed design in the form of user stories, sequence flows, flow diagrams, etc. to create an implementable solutions
+
+
+
+
+&bull; Leads technical conversations with the development team to resolve technical issues.
+
+
+
+
+&bull; Work to create security data protection controls. (Securing Data)
+
+
+
+
+&bull; Understand and design CI/CD pipelines that incorporate the security standards and controls
+
+
+
+
+&bull; Design and initiate technical security standards and controls which demonstrate implementable configurations (applying security controls and building security into systems)
+
+
+
+
+&bull; Act as a thought leader to assist Security DevOps teams in designing practical solutions
+
+
+
+
+&bull; Identify security solution technical requirements and specifications that align with business and leadership requirements and goals
+
+
+
+
+&bull; Transform security architecture frameworks and referential implementations into working prototypes or designs which are transitioned into next generation security standards
+
+
+
+
+Applies complex technical and security solutions to business problems. (Experience working with cross-functional technology teams to understand technology stacks, and providing recommendations of security improvements or architecture annotations)
+
+
+
+
+&bull; Presents and communicates complex concepts to a variety of technical and non-technical stakeholders.
+
+
+
+
+&bull; Assists with the rationalization of incumbent and new architectures and technical solutions.
+
+
+
+
+&bull; Assists stakeholders with facilitation of security technology planning activities, documentation of implementations, innovation and security tool rationalization.
+
+
+
+
+ 
+
+
+Best Regards
+
+
+
+Rajat Singh
+
+
+
+Technical Recruiter
+
+
+
+Tanisha Systems Inc.
+
+
+
+Tel: 212-729-6543 Ext 523
+
+
+
+99 Wood Ave South Suite # 308 Iselin, NJ 08830
+
+
+
+Email : rajat@tanishasystems.com | Web: www.tanishasystems.com
+
+
+
+E-Verify, Certified Minority Business Enterprise MBE, Dun & Bradstreet CREDIBILITY CORP Certified
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+This email was sent to josephs@linuxjobber.com, by Wipro Team<wiproteam1@tanishasystems.com>
+To remove your email address permanently from future mailings, please go to the following URL:
+http://email.bullhorn.com/wf/click?upn=9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwthXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYeN-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtMumGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr-2FJERWl24BuW5GQrzYZ3moTOczpB0erKPK0aRs-2F5geyrJ3E6YB7qbtoVmZrRSgnrfPIqo4NBstHxstkfdKCLLcgdfxmzvyg-2FHVN8-2Fp4gb9zuwcxOQT2BjzYXfXZ4bDrDRlUQOpWMGtNl1LTS757JcHfqYsY28mPlwm-2FzBYNIP4Mj99AuLIVlsvXDd2YSCsJgs-3D
+------=_Part_40361_856583028.1577126506582
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<div>
+<p class="wordsection1" style="margin-bottom:.0001pt"><span style="font-size:12.0pt">Greetings,</span></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><span style="font-size:12.0pt">My name is <strong>Rajat Singh</strong> from <strong>Tanisha Systems</strong>. I saw your profile in one the job boards and feel that your skills and professional experience would be a good fit for a position with one of our premier clients. Please review the job description below. if you are interested in this position please forward your update resume for immediate consideration.</span></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="wordsection1"><strong><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#26282a">Titl</span></span></span></strong><span style="font-size:12.0pt"><span style="color:#26282a">e: </span></span><strong><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Security Architect</span></span></strong><br />
+<span style="font-size:12.0pt"><span style="color:#26282a"><strong><span style="font-family:&quot;Calibri&quot;,sans-serif">Location: </span></strong></span></span><strong><span style="font-size:12.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Philadelphia<span style="color:#26282a">, </span>PA</span></span></strong><br />
+<span style="font-size:12.0pt"><span style="color:#26282a"><strong><span style="font-family:&quot;Calibri&quot;,sans-serif">Type: Contract (Long Term)</span></strong></span></span></p>
+
+<p class="x">&nbsp;</p>
+
+<p class="x"><strong><u><span style="font-family:&quot;Calibri&quot;,sans-serif">JOB DESCRIPTION:</span></u></strong></p>
+
+<p class="x">&nbsp;</p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><span style="font-size:12.0pt"><span style="background-color:yellow"><span style="color:#1f497d">What the client is looking for in this role is a seasoned security architect with experience in cloud deployments, secure coding, and working in a fast passed agile Dev-Sec-Ops environment who can be the security technical lead on a number of projects.</span></span></span></p>
+
+<p class="xx">&nbsp;</p>
+
+<p class="xx">&nbsp;</p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">The Security Architect and Engineer, is responsible for developing architecture designs, detailed engineering designs, use cases, technical flows and operations plans based upon the business, functional and security requirements. The candidate for this role will work closely with other security architects, developers and other security and non-security stakeholders to help transform the technical vision to implementable security solutions. This individual will assist Comcast by supporting the strategic technical leadership across multiple projects that seek to improve or innovate cyber security capability across Comcast. In this role the ideal candidate will help identify, design and vet new or emerging technologies necessary to assure success and security of Comcast services and products. </span></span></p>
+
+<p class="xx">&nbsp;</p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">Core Responsibilities:</span></span></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; <strong>Create security architecture designs working with the senior and lead architects.</strong></span></span></p>
+
+<p class="xx"><strong><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Develop and provide written detailed design in the form of user stories, sequence flows, flow diagrams, etc. to create an implementable solutions</span></span></strong></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Leads technical conversations with the development team to resolve technical issues.</span></span></p>
+
+<p class="xx"><strong><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Work to create security data protection controls. (Securing Data)</span></span></strong></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Understand and design CI/CD pipelines that incorporate the security standards and controls</span></span></p>
+
+<p class="xx"><strong><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Design and initiate technical security standards and controls which demonstrate implementable configurations (applying security controls and building security into systems)</span></span></strong></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Act as a thought leader to assist Security DevOps teams in designing practical solutions</span></span></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Identify security solution technical requirements and specifications that align with business and leadership requirements and goals</span></span></p>
+
+<p class="xx"><strong><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Transform security architecture frameworks and referential implementations into working prototypes or designs which are transitioned into next generation security standards</span></span></strong></p>
+
+<p class="xx"><strong><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">Applies complex technical and security solutions to business problems. (Experience working with cross-functional technology teams to understand technology stacks, and providing recommendations of security improvements or architecture annotations)</span></span></strong></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Presents and communicates complex concepts to a variety of technical and non-technical stakeholders.</span></span></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Assists with the rationalization of incumbent and new architectures and technical solutions.</span></span></p>
+
+<p class="xx"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:black">&bull; Assists stakeholders with facilitation of security technology planning activities, documentation of implementations, innovation and security tool rationalization.</span></span></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">Best Regards</span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">Rajat Singh</span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">Technical Recruiter</span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">Tanisha Systems Inc.</span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">Tel: 212-729-6543 Ext 523</span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">99 Wood Ave South Suite # 308 Iselin, NJ 08830</span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">Email : <a href="mailto:rajat@tanishasystems.com">rajat@tanishasystems.com</a> | Web: <a href="http://email.bullhorn.com/wf/click?upn=rzKdQ51uZboFy3cCqn2pFQj5BhuHHDjtVOwtzQsd4AlZEV1OPucDbkFEn789AxTn_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr-2FJERWl24BuW5GQrzYZ3mo9vAfEFE6Bj5hYbcUoB6TecjMgPbwa5lRvr4O5nVRJwmvtxfoKllKGa2AUrOHK7oGTGS7WoaJ5E2zliS7KTispcD6AYdDpr3aBUCKTPnBdGs8-2BwhZ3YtV13FRUIhvpMbQ0qFiqhZcF9H9MQVx1HvdssyOsaN1NYD0baMcGHs9wDk-3D">www.tanishasystems.com</a></span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt"><strong><span style="font-size:12.0pt">E-Verify, Certified Minority Business Enterprise MBE, Dun &amp; Bradstreet CREDIBILITY CORP Certified</span></strong></p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt">&nbsp;</p>
+
+<p class="wordsection1" style="margin-bottom:.0001pt">&nbsp;</p>
+</div>
+<br><div style='color:#999999; font-size:8pt; font-family:arial;'>This email was sent to <a style='color:#848484' href='mailto:josephs@linuxjobber.com'>josephs@linuxjobber.com</a>, by Wipro Team<wiproteam1@tanishasystems.com>.<br>To remove your email address permanently from future mailings, please <a style='color:#848484' href="http://email.bullhorn.com/wf/click?upn=9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwthXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYeN-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtMumGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr-2FJERWl24BuW5GQrzYZ3mo9vAfEFE6Bj5hYbcUoB6Tedp-2Fhj1E-2FjDRQ3yv6TFcs-2B6P5inHRzpMtFOH-2BE4w0IJT-2B-2BXov0cndgXPo6Ol979hMty9meGB2rpGj7KiapHX9Duw2pryL5QSTSlOezMqGesko77bB3-2FJjVHnCgkM2-2FclEQejMKonvqO1tq4vzT3ooro-3D" target=_blank>click here</a>.</div><img src="http://email.bullhorn.com/wf/open?upn=xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr-2FJERWl24BuW5GQrzYZ3mo9vAfEFE6Bj5hYbcUoB6TeTZQs9WmDhYpGD7q7IoACZcEUDji6J6PRY4wd5zuguLmscujUglLgROaSq0ZVm3KblEaOw9exq-2FcqDqacpymkpgFvWEkAZJ-2F-2B5vzK-2BnH5-2FqdVFHOmHnRIzcxUk0pOtYWABduLkAxHSjDr2hkWfgmJaM-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+
+------=_Part_40361_856583028.1577126506582--
+
+------=_Part_40360_2064354280.1577126506582--

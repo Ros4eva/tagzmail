@@ -1,0 +1,472 @@
+Return-Path: <bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com>
+Received: from a1.mail.joinhandshake.com (a1.mail.joinhandshake.com [192.237.159.131])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 2c1hkevida0vfdb8ljv7g40hj9tige7kgib0aeo1
+ for jeff.adekunbi@ideabakr.org;
+ Mon, 13 Jan 2020 13:10:58 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.131 as permitted sender) client-ip=192.237.159.131; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a1.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.131 as permitted sender) client-ip=192.237.159.131; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a1.mail.joinhandshake.com;
+ dkim=pass header.i=@mail.joinhandshake.com;
+ dmarc=pass header.from=mail.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGUGU3TEVPWTFKcUpOdStvaGJFV25lckJxMlpmYjRNd2UyWUVEZTZVWXpRQm4vU0lqdmFCOUxDNWdpT2FsUkZwcnhYYVZCc0tRSTRrOCtvYjhSZkdURmc3WTZqdlBRTENEVVpmZCsxTmNKTlRqNDMwSHNCZm91N3BDYkFKbnQyM3hTM085R2llYTBYVzIvU0tFbFZQR3hIWXYxbWNNSUhtV2xjSkh3NnFaNklWWXBTL2dNRjFtdkwvUGZoZ3ZRNUcydDBBMWRET0M5VUd3dXpPVzFXSzJ3MFdCNWJTUFNzNlpZQURYamRDajVRVHhiNlhINUFTZWJ2L3JJZmpZWGNFTkRzdmF5RDh2ZXdLYjE5K25rdGtud0E0cjBYb1FMYitIb0RKaUtnalJ5emJTWjR2Vms4cE94SFovQUJIN3B2RnVmaXlrZU1rVGdlYWk1VXI1KzZ3QXFiZEhEamNpSW1ON0gyUmwzdWdtaXJ3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=K7HN758SMZkmq/Gogc+CXfi9ZhjKAcvhdDzaBdHOANl6PzXJMmCGyfjZWmUccAdQsWSQ9nBv/cVw9w96+5IbNpNkgrwoe2RcNGWQGVbxBSulI4lwVQbvTOoCJVdccfOpcEt2PylOpmuUzqe9qI2JhdvoxdjiNWfpUQ7+SMmuTuI=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578921058; v=1; bh=JmXlHwpnSKj0cPOTVbtpelfzHX4phSvEPCQxvs8jBG8=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1578921058; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe;
+ bh=LiQoEU7aF3iU5vWMq2EapLCcIZaMU0j0Xgp2gQcnKHg=; b=DKYHpeGSAU4QJPAlnq0RYXky1pJHe6HIAyphz+wQ0vRGPCX46GGN1/52GE+E8rIm43Uxm2p/
+ H3P2bCcqhsgpAmTqUqF407l5x60Q1F2JCUINqCdrmvXsUawyNmy8qY5k/GD06/DR7v7IHr19
+ II3jkj6MxMVKOnXJrTSemf8vZq4=
+X-Mailgun-Sending-Ip: 192.237.159.131
+X-Mailgun-Sid: WyIyNGNhOCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICI4OGNiOCJd
+List-Unsubscribe: <mailto:u+mq6tqoddmi4cm2j5giydembqgeytgmjtgeydgnjogexdaqrwgq4ucmrxg4zukmcbgqzdkjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihvqtkyzzgfsdkzbzmzsdaobrme2ggojqmvrtqmzzgq3wcyzumfqwgjtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6tknzxfvjwg2dpn5wcm2dbnzshg2dbnnsv63lbonzv6zlnmfuwyx3jmq6tkmbtgayde@mail.joinhandshake.com>
+X-Mailgun-Batch-Id: 5e1c6c4b8431be4342f42edb
+Received: by luna.mailgun.net with HTTP; Mon, 13 Jan 2020 13:10:35 +0000
+Date: Mon, 13 Jan 2020 13:10:35 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20200113131035.1.0B649A2773E0A425@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "503002"}
+Reply-To: handshake@mail.joinhandshake.com
+X-Mailgun-Tag: 577-School
+To: jeff.adekunbi@ideabakr.org
+From: Career and Leadership Development Center via joinhandshake.com
+ <handshake@mail.joinhandshake.com>
+Subject: Build your brand familiarity and hire highly involved Bobcats at
+ the spring Career and Internship Fair
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="6eca532cb3da4de4a7374c22c6d20e9d"
+
+--6eca532cb3da4de4a7374c22c6d20e9d
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+table.button table td {
+  background: #4a90e2;
+  border-color: #4a90e2;
+  color: black;
+}
+table.button table td a {
+  border-color: #4a90e2;
+  color: black;
+}
+a { color: #4a90e2; }
+a:hover { color: #4281cb; }
+a:active { color: #4281cb; }
+a:visited { color: #4a90e2; }
+table.menu th.menu-item a { color: #4a90e2; }
+=2Ewrapper.banner { background: #4a90e2; }
+table.button:hover table tr td a,
+table.button:active table tr td a,
+table.button table tr td a:visited,
+table.button.large:hover table tr td a,
+table.button.large:active table tr td a,
+table.button.large table tr td a:visited {
+  color: black;
+}
+table.button:hover table td,
+table.button:visited table td,
+table.button:active table td {
+  background: #4281cb;
+  color: black;
+}
+table.button:hover table a,
+table.button:visited table a,
+table.button:active table a {
+  border-color: #4281cb;
+}
+p.hs-content-type,
+span.colorize-high-contrast {
+  color: black;
+}
+img.masked {
+  background: black;
+}
+
+
+
+
+ =20
+
+=C2=A0
+
+ =20
+
+    Come table at the Career and Internship Fair this February, and don=E2=
+=80=99t miss your chance to hire highly involved and hard-working students =
+who appreciate the importance of professional development. Build your brand=
+ familiarity by scheduling on-campus interviews through the Career and Lead=
+ership Development Center (CLDC) on Handshake. Register today and connect w=
+ith our students easily through Handshake. More information is as followed:
+
+Event: Spring Career and Internship Fair
+Location: Baker University Center, 4th Floor, Ballroom
+Date: February 12
+Time: 1=E2=80=935 p.m.
+Fee to register:
+=C2=B7=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0$400 for-profit organizations
+=C2=B7=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0$200 non-profit/government
+
+On behalf of the CLDC, we hope to see you there!
+
+
+Aaron Sturgill
+Associate Director for Employer Relations
+Career and Leadership Development Center
+ =20
+
+
+
+=C2=A0
+
+
+  =C2=A0
+ =20
+   =20
+ =20
+    This email was sent to Jeff Adekunbi from Ohio University.
+   =20
+    Unsubscribe from Ohio University =E2=80=A2
+    Unsubscribe from all Career Centers
+   =20
+    P.O. Box 40770, San Francisco, CA 94140
+--6eca532cb3da4de4a7374c22c6d20e9d
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"min-height:100%;backg=
+round:#f5f5f5">
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width" name=3D"viewport">
+
+<style>@media only screen and (max-width: 664px) {
+=2Esmall-float-center{margin:0 auto !impo=
+rtant;float:none !important;text-ali=
+gn:center !important}
+=2Esmall-text-center{text-align:center !important}
+=2Esmall-text-left{text-align:left !important}
+=2Esmall-text-right{text-align:right !important}
+=2Ehide-for-large{display:block !importan=
+t;width:auto !important;overflow:vis=
+ible !important;max-height:none !important;font-size:inherit !important;lin=
+e-height:inherit !important}
+table.body table.container .hide-for-large{display:table !important;width:1=
+00% !important}
+table.body table.container .row.hide-for-large{display:table !important;wid=
+th:100% !important}
+table.body table.container .callout-inner.hide-for-large{display:table-cell=
+ !important;width:100% !important}
+table.body table.container .show-for-large{display:none !important;width:0;=
+mso-hide:all;overflow:hidden}
+table.body img{width:auto;height:auto}
+table.body center{min-width:0 !important}
+table.body .container{width:95% !important}
+table.body .columns{height:auto !important;-moz-box-sizing:border-box;-webk=
+it-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important=
+;padding-right:64px !important}
+table.body .column{height:auto !important;-moz-box-sizing:border-box;-webki=
+t-box-sizing:border-box;box-sizing:border-box;padding-left:64px !important;=
+padding-right:64px !important}
+table.body .columns .column{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .columns .columns{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+table.body .column .column{padding-left:0 !important;padding-right:0 !impor=
+tant}
+table.body .column .columns{padding-left:0 !important;padding-right:0 !impo=
+rtant}
+table.body .collapse .columns{padding-left:0 !important;padding-right:0 !im=
+portant}
+table.body .collapse .column{padding-left:0 !important;padding-right:0 !imp=
+ortant}
+td.small-1{display:inline-block !important;width:8.33333% !important}
+th.small-1{display:inline-block !important;width:8.33333% !important}
+td.small-2{display:inline-block !important;width:16.66667% !important}
+th.small-2{display:inline-block !important;width:16.66667% !important}
+td.small-3{display:inline-block !important;width:25% !important}
+th.small-3{display:inline-block !important;width:25% !important}
+td.small-4{display:inline-block !important;width:33.33333% !important}
+th.small-4{display:inline-block !important;width:33.33333% !important}
+td.small-5{display:inline-block !important;width:41.66667% !important}
+th.small-5{display:inline-block !important;width:41.66667% !important}
+td.small-6{display:inline-block !important;width:50% !important}
+th.small-6{display:inline-block !important;width:50% !important}
+td.small-7{display:inline-block !important;width:58.33333% !important}
+th.small-7{display:inline-block !important;width:58.33333% !important}
+td.small-8{display:inline-block !important;width:66.66667% !important}
+th.small-8{display:inline-block !important;width:66.66667% !important}
+td.small-9{display:inline-block !important;width:75% !important}
+th.small-9{display:inline-block !important;width:75% !important}
+td.small-10{display:inline-block !important;width:83.33333% !important}
+th.small-10{display:inline-block !important;width:83.33333% !important}
+td.small-11{display:inline-block !important;width:91.66667% !important}
+th.small-11{display:inline-block !important;width:91.66667% !important}
+td.small-12{display:inline-block !important;width:100% !important}
+th.small-12{display:inline-block !important;width:100% !important}
+=2Ecolumns td.small-12{display:block !important;width:100% !important}
+=2Ecolumn td.small-12{display:block !important;width:100% !important}
+=2Ecolumns th.small-12{display:block !important;width:100% !important}
+=2Ecolumn th.small-12{display:block !important;width:100% !important}
+table.body td.small-offset-1{margin-left:8.33333% !important}
+table.body th.small-offset-1{margin-left:8.33333% !important}
+table.body td.small-offset-2{margin-left:16.66667% !important}
+table.body th.small-offset-2{margin-left:16.66667% !important}
+table.body td.small-offset-3{margin-left:25% !important}
+table.body th.small-offset-3{margin-left:25% !important}
+table.body td.small-offset-4{margin-left:33.33333% !important}
+table.body th.small-offset-4{margin-left:33.33333% !important}
+table.body td.small-offset-5{margin-left:41.66667% !important}
+table.body th.small-offset-5{margin-left:41.66667% !important}
+table.body td.small-offset-6{margin-left:50% !important}
+table.body th.small-offset-6{margin-left:50% !important}
+table.body td.small-offset-7{margin-left:58.33333% !important}
+table.body th.small-offset-7{margin-left:58.33333% !important}
+table.body td.small-offset-8{margin-left:66.66667% !important}
+table.body th.small-offset-8{margin-left:66.66667% !important}
+table.body td.small-offset-9{margin-left:75% !important}
+table.body th.small-offset-9{margin-left:75% !important}
+table.body td.small-offset-10{margin-left:83.33333% !important}
+table.body th.small-offset-10{margin-left:83.33333% !important}
+table.body td.small-offset-11{margin-left:91.66667% !important}
+table.body th.small-offset-11{margin-left:91.66667% !important}
+table.body table.columns td.expander{display:none !important}
+table.body table.columns th.expander{display:none !important}
+table.body .right-text-pad{padding-left:10px !important}
+table.body .text-pad-right{padding-left:10px !important}
+table.body .left-text-pad{padding-right:10px !important}
+table.body .text-pad-left{padding-right:10px !important}
+table.menu{width:100% !important}
+table.menu td{width:auto !important;display:inline-block !important}
+table.menu th{width:auto !important;display:inline-block !important}
+table.menu.vertical td{display:block !important}
+table.menu.vertical th{display:block !important}
+table.menu.small-vertical td{display:block !important}
+table.menu.small-vertical th{display:block !important}
+table.menu[align=3D"center"]{width:auto !important}
+table.button.small-expand{width:100% !important}
+table.button.small-expanded{width:100% !important}
+table.button.small-expand table{width:100%}
+table.button.small-expanded table{width:100%}
+table.button.small-expand table a{text-align:center !important;width:100% !=
+important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expanded table a{text-align:center !important;width:100%=
+ !important;padding-left:0 !important;padding-right:0 !important}
+table.button.small-expand center{min-width:0}
+table.button.small-expanded center{min-width:0}
+th.columns.first.small-12{padding-left:16px !important}
+th.columns.last.small-12{padding-right:16px !important}
+table.body img.icon-20{width:20px;height:20px}
+}
+table.button:hover table tr td a{color:#ffffff}
+table.button:active table tr td a{color:#ffffff}
+table.button table tr td a:visited{color:#ffffff}
+table.button.tiny:hover table tr td a{color:#ffffff}
+table.button.tiny:active table tr td a{color:#ffffff}
+table.button.tiny table tr td a:visited{color:#ffffff}
+table.button.small:hover table tr td a{color:#ffffff}
+table.button.small:active table tr td a{color:#ffffff}
+table.button.small table tr td a:visited{color:#ffffff}
+table.button.large:hover table tr td a{color:#ffffff}
+table.button.large:active table tr td a{color:#ffffff}
+table.button.large table tr td a:visited{color:#ffffff}
+table.button:hover table td{background:#f73b33;color:#ffffff}
+table.button:visited table td{background:#f73b33;color:#ffffff}
+table.button:active table td{background:#f73b33;color:#ffffff}
+table.button:hover table a{border:0 solid #f73b33}
+table.button:visited table a{border:0 solid #f73b33}
+table.button:active table a{border:0 solid #f73b33}
+table.button.secondary:hover table td{background:#919191;color:#ffffff}
+table.button.secondary:hover table a{border:0 solid #919191}
+table.button.secondary:hover table td a{color:#ffffff}
+table.button.secondary:active table td a{color:#ffffff}
+table.button.secondary table td a:visited{color:#ffffff}
+table.button.success:hover table td{background:#004d33}
+table.button.success:hover table a{border:0 solid #004d33}
+table.button.alert:hover table td{background:#99000d}
+table.button.alert:hover table a{border:0 solid #99000d}
+table.button.warning:hover table td{background:#cc8800}
+table.button.warning:hover table a{border:0px solid #cc8800}
+=2Ethumbnail:hover{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+=2Ethumbnail:focus{box-shadow:0 0 6px 1px rgba(0,85,204,0.5)}
+table.button.secondary:hover table td{background:#dcdcdc;border-color:#dcdc=
+dc;color:rgba(8,8,8,0.79)}
+table.button.secondary table tr td a:visited{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a{color:rgba(8,8,8,0.79)}
+table.button.secondary:hover table tr td a:visited{color:rgba(8,8,8,0.79)}
+a:hover{color:#4281cb}
+a:active{color:#4281cb}
+a:visited{color:#4a90e2}
+table.button:hover table tr td a{color:black}
+table.button:active table tr td a{color:black}
+table.button table tr td a:visited{color:black}
+table.button.large:hover table tr td a{color:black}
+table.button.large:active table tr td a{color:black}
+table.button.large table tr td a:visited{color:black}
+table.button:hover table td{background:#4281cb;color:black}
+table.button:visited table td{background:#4281cb;color:black}
+table.button:active table td{background:#4281cb;color:black}
+table.button:hover table a{border-color:#4281cb}
+table.button:visited table a{border-color:#4281cb}
+table.button:active table a{border-color:#4281cb}</style></head>
+<body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMa=
+cSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans=
+-serif;min-width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:10=
+0%;margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-=
+box;box-sizing:border-box;width:100% !important">
+<table class=3D"body" data-made-with-foundation=3D"" style=3D"border-spacin=
+g:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;b=
+ackground:#f5f5f5;height:100%;width:100%">
+<tr style=3D"padding:0;vertical-align:top;text-align:left">
+<td align=3D"center" class=3D"center" valign=3D"top" style=3D"font-family:&=
+quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&=
+quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;vertical-al=
+ign:top;text-align:left">
+
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+<table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" styl=
+e=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFon=
+t, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;pad=
+ding:0;vertical-align:top;text-align:left">
+  <div style=3D"text-align:center;" class=3D" float-center"><img src=3D"htt=
+ps://s3.amazonaws.com/handshake.production/app/public/assets/user_images/13=
+43678/original/data.?1578677970" alt=3D"Career and Internship Fair 2020 ban=
+ner." style=3D"outline:none;text-decoration:none;-ms-interpolation-mode:bic=
+ubic;width:auto;max-width:100%;clear:both;display:block;margin:0 auto;float=
+:none;text-align:center;width: 600px;" width=3D"600" class=3D"float-center"=
+></div>
+</td></tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+<table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;ve=
+rtical-align:top;text-align:left;padding:0;width:100%;position:relative;dis=
+play:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+  <th class=3D" small-12 large-12 columns first last" style=3D"font-family:=
+&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;text-align:left;font=
+-weight:normal;margin:0 auto;padding-bottom:16px;width:536px;padding-left:3=
+2px;padding-right:32px;padding-bottom:0px;padding-left:64px;padding-right:6=
+4px"><table style=3D"border-spacing:0;border-collapse:collapse;padding:0;ve=
+rtical-align:top;text-align:left;width:100%"><tr style=3D"padding:0;vertica=
+l-align:top;text-align:left">
+<th style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacS=
+ystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-s=
+erif;text-align:left;font-weight:normal">
+    <div>Come table at the Career and Internship Fair this February, and do=
+n=E2=80=99t miss your chance to hire highly involved and hard-working stude=
+nts who appreciate the importance of professional development. Build your b=
+rand familiarity by scheduling on-campus interviews through the Career and =
+Leadership Development Center (CLDC) on Handshake. <a href=3D"http://email.=
+mail.joinhandshake.com/c/eJxlkMtugzAQRb8GdkV-YBwWLFI1SasqbdRUSdUNMmYAh4fBmE=
+b8fZ007aYaSzM-V3c8njxZLGS28FVCEEEIY-oCURbgAN1HYbwknNMVWoaEeSFqhWqCk1ZdJbp8r=
+EQNgdStXyU0yzMWM-CIURRFIotkTKWkuIiiOObYb5LK2n706NIja3dE3_9v5LgUBsCkhVBmdFdM=
+GeEuQ9s3enZCb-BLwdmja6tr6Dz6MA9POjTz4w4dz6vNcdg_v6zQ4cwO23LzOZzwK0-Hxm7xnNU=
+ffNx97N_CzfvZI1GjjbMjV022TUc9GQkOtGIc08tHwdykFnI1tU6CC75BqTsLnXWUIYoQ-cWi7Y=
+UqL4NNnUqtMCVYyNOrdfRNcoKiCEQO9dRlyq1U5SAyUZtAm9K3CeP8bi8rrRv_bzXpdaRrh1Tly=
+c9736jskCw" target=3D"_blank" style=3D"color:#4a90e2">Register today</a> an=
+d connect with our students easily through Handshake. More information is a=
+s followed:</div>
+<div><br></div>
+<div>Event: Spring Career and Internship Fair</div>
+<div>Location: Baker University Center, 4th Floor, Ballroom</div>
+<div>Date: February 12</div>
+<div>Time: 1=E2=80=935 p.m.</div>
+<div>Fee to register:</div>
+<div>=C2=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$400 for-profit organization=
+s</div>
+<div>=C2=B7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200 non-profit/government</=
+div>
+<div><br></div>
+<div>On behalf of the CLDC, we hope to see you there!</div>
+<div><br></div>
+<div><br></div>
+<div>Aaron Sturgill</div>
+<div>Associate Director for Employer Relations</div>
+<div>Career and Leadership Development Center</div>
+  </th>
+<th class=3D"expander" style=3D"font-family:&quot;Suisse Int'l&quot;, -appl=
+e-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica=
+ Neue&quot;, sans-serif;text-align:left;font-weight:normal;visibility:hidde=
+n;width:0;padding:0 !important"></th>
+</tr></table></th>
+</tr></table>
+<table class=3D" spacer " style=3D"border-spacing:0;border-collapse:collaps=
+e;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D"pad=
+ding:0;vertical-align:top;text-align:left"><td height=3D"36px" style=3D"fon=
+t-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot=
+;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;padding:0;v=
+ertical-align:top;text-align:left;height:36px;mso-line-height-rule:exactly;=
+font-size:36px;line-height:36px;">&nbsp;</td></tr></table>
+</td></tr></table>
+<table class=3D" container" style=3D"border-spacing:0;border-collapse:colla=
+pse;padding:0;vertical-align:top;text-align:left;background:#ffffff;width:6=
+00px;margin:0 auto;text-align:inherit"><tr style=3D"padding:0;vertical-alig=
+n:top;text-align:left"><td style=3D"font-family:&quot;Suisse Int'l&quot;, -=
+apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helve=
+tica Neue&quot;, sans-serif;padding:0;vertical-align:top;text-align:left">
+  <table class=3D"divider spacer " style=3D"border-spacing:0;border-collaps=
+e:collapse;padding:0;vertical-align:top;text-align:left;width:100%;backgrou=
+nd:#f5f5f5"><tr style=3D"padding:0;vertical-align:top;text-align:left"><td =
+height=3D"12px" style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-syste=
+m, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&q=
+uot;, sans-serif;padding:0;vertical-align:top;text-align:left;height:36px;m=
+so-line-height-rule:exactly;font-size:12px;line-height:12px;">&nbsp;</td></=
+tr></table>
+  <table class=3D" row" style=3D"border-spacing:0;border-collapse:collapse;=
+vertical-align:top;text-align:left;padding:0;width:100%;position:relative;d=
+isplay:table"><tr style=3D"padding:0;vertical-align:top;text-align:left">
+    <table class=3D" wrapper" style=3D"border-spacing:0;border-collapse:col=
+lapse;padding:0;vertical-align:top;text-align:left;width:100%"><tr style=3D=
+"padding:0;vertical-align:top;text-align:left"><td class=3D"wrapper-inner" =
+style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSyste=
+mFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif=
+;padding:0;vertical-align:top;text-align:left">
+  <p class=3D"text-center footer" style=3D"text-align:center;margin:12px au=
+to 24px;font-size:12px;line-height:20px;width:80%;color:rgba(8,8,8,0.79);hy=
+phens:none;margin:12px auto 12px">
+    This email was sent to Jeff Adekunbi from Ohio University.
+    <br>
+    <a href=3D"http://email.mail.joinhandshake.com/u/eJw9zUsOwiAQgOHTyE4yvA=
+QWLGriCTxAM52hQl8krd7fujH__vs5hUBDEDVp0ABKmTMwTioJ95uNnfbePKCz2l0srFgXObW6F=
+dz4KDhnSW0VJaGjqNhxHBmCQksRMgUTrUeyiCT2NOVxlMh5_mxDPa3KGQecd9n2l3gn5_31SaW1=
+RfzxfsXj6PPv2ldODgyA_gLXqjbO" style=3D"color:#4a90e2">Unsubscribe from Ohio=
+ University</a> =E2=80=A2
+    <a href=3D"http://email.mail.joinhandshake.com/u/eJw9zT0OgzAMQOHTkDEyiU=
+3CkAGkngPZ-SmBAhK09y9dqrd_LwXvo3hVgwED0Lb2DizpVsPYYT8Y5-wDBjTUIGxcX3o56j7zn=
+q6Z16zjsak5RCy9OBuBeoLOk82CQoXEJIcFozrDkkvRnPL62aXeVk2ZhddTH-dTvUNjBvVXp42v=
+a8q_3VRTILAA5gsucDOo" style=3D"color:#4a90e2">Unsubscribe from all Career C=
+enters</a>
+    <br>
+    P.O. Box 40770, San Francisco, CA 94140
+  </p>
+</td></tr></table>
+
+  </tr></table>
+</td></tr></table>
+
+
+</td>
+</tr>
+</table>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mail.joinhan=
+dshake.com/o/eJw9zUsOwiAQgOHTyE4yvAQWLGriCTxAM52hQl8krd7fujH__vs5hUBDEDVp0A=
+BKmTMwTioJ95uNnfbePKCz2l0srFgXObW6Fdz4KDhnSW0VJaGjqNhxHBmCQksRMgUTrUeyiCT2N=
+OVxlMh5_mxDPa3KGQecd9n2l3gn5_31SaW1RfzxfsXj6PPv2ldODgyA_gLXqjbO"></body>
+</html>
+
+--6eca532cb3da4de4a7374c22c6d20e9d--

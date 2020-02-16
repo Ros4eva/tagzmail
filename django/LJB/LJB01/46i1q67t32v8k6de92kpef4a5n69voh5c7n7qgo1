@@ -1,0 +1,233 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m232-78.mailgun.net (m232-78.mailgun.net [159.135.232.78])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 46i1q67t32v8k6de92kpef4a5n69voh5c7n7qgo1
+ for josephs@linuxjobber.com;
+ Wed, 29 Jan 2020 16:04:52 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m232-78.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m232-78.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGWUNybXA0Z0VNRURtVFFvcnA5TjlmTGhOdWNRamFtc2FUN2hDZXBNNGUwT3F6S0I4ZWVSU1FrOFZhQ0oyM0lLRG54UDFGMW1vT3hNOHc2d3pKZWVMbXI4dG8xYmJaa1Q1Qi9qU3plalF0QVdFOWZTUE5KOWd3R3RKU3FFRVlrb3Z1Skk4YnRlMGt3UCtzb3VhMVNsZjhTdUhDMkFQQnhiRkRTSkRySjFKM01zMURsU1dXYTlRVVVtTkZ0TS9uQUZFRTZXekVTYmhTM2VTTmxFZjdzRG90MWtYVGZwWCtObjgvZ2JPVTdSeldzQng3d0g0elU3bWh5MWt3cjJaSWtYUUtPc0NzN3g0VDI2UTRzVFZ0dGxoMytDUWZudlppMnhmMms1RThjdDRmZk5pWk1RYVRrOU9aekJhS3JUSWZYdDNlamtXL3NVUEhveGM5MEE0aklzZ0w=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Y2gAiRPkVWRzAgo6OA/71UcTGk5M+0kCYXboqzIetUyS3kh9OLUf46gHQvvPBHX0YQHOHtPLFuGLur7iim0o72A610WS6qSIkIrrY6ik/ENT60csPseqbUCOeZV3Qq0IJtZSB0gWkBwskBXVFyZGenHXFik/M6/l3p6qrYi0iss=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580313892; v=1; bh=rHysgkchDCs4im8YzEszCU2EekWySj+Y8Gr5gE/DRps=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1580313891; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=PcFpxq84OTiwomoo3J20fwRJ3MQbpJ2p1ZMDS/EvKM8=; b=Qn7QTBSsWKIyIUlDbDY8s7i4q//R+dn9/fEvQkLoFVekV2kwWPL5xRZeg13gdWdQIWubtJU0
+ h2ZcsAc6MvCjpIoSXcV7WuslF5teyu6lWLzMr8htC3CSUE0T9x63/EFc+mLirXvyFgNRzuxO
+ vWXQrcMrlzH1tfJvTanE2Rt5uYg=
+X-Mailgun-Sending-Ip: 159.135.232.78
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e31ad235fe2c173c458e913
+Received: by luna.mailgun.net with HTTP; Wed, 29 Jan 2020 16:04:50 +0000
+Date: Wed, 29 Jan 2020 16:04:50 +0000
+Sender: devendra.y@usgrpinc.com
+Message-Id: <20200129160450.1.1F64CF175782FBB8@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: devendra.y@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Devendra Yadav <devendra.y@usgrpinc.com>
+Subject: Automation Tester With selenium at Columbus IN
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"https://apply.ceipal.com/JobApplication/easy_apply/468173124a9ae=
+c55ff5b4c3bf65d2a26/e58aea67b01fa747687f038dfde066f6/5ff21d527429968e1ac51f=
+8304ed4480/cbca7635077d4074f8d30094a3176972/eb2b85e81c5f6d914b913ce4728621f=
+c" style=3D"background:#4285f4; padding:5px 10px; color:#fff; font-size:13p=
+x; font-weight:bold; border-radius:4px;text-decoration:none;float:left;" ta=
+rget=3D"_blank">Apply for this job</a><!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p class=3D"wordsection1"><span style=3D"fo=
+nt-size:10pt"><span style=3D"font-family:"Times New Roman",serif"><span sty=
+le=3D"font-family:"Arial",sans-serif">Hello,</span></span></span></p>
+
+<p class=3D"wordsection1"><br />
+<span style=3D"font-size:10pt"><span style=3D"font-family:"Times New Roman"=
+,serif"><span style=3D"font-family:"Arial",sans-serif">This is <b>Devendra<=
+/b> from United Software Group. Hope you&rsquo;re doing good.</span></span>=
+</span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:"Times New Roman",serif"><span style=3D"font-family:"Arial",sans-s=
+erif">I was trying to reach you for the role of an</span> <b><span lang=3D"=
+EN-IN" style=3D"font-size:12.0pt">Automation Tester With selenium</span></b=
+><b> at </b><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt">Columbus IN<=
+/span></b> <span style=3D"font-family:"Arial",sans-serif">for </span><b><sp=
+an style=3D"font-size:12.0pt"><span style=3D"font-family:"Arial",sans-serif=
+">Contract/Fulltime.</span></span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:"Times New Roman",serif"><span style=3D"font-family:"Arial",sans-s=
+erif">Please have a look at the description and reply to this email to get =
+in touch with me, or you may call me directly on my number.</span></span></=
+span></p>
+
+<p class=3D"wordsection1"><br />
+<span style=3D"font-size:10pt"><span style=3D"font-family:"Times New Roman"=
+,serif"><b><span style=3D"font-size:12.0pt"><span style=3D"font-family:"Ari=
+al",sans-serif">Job Title:</span></span></b> <b><span lang=3D"EN-IN" style=
+=3D"font-size:12.0pt">Automation Tester With selenium</span></b><br />
+<b><span style=3D"font-size:12.0pt"><span style=3D"font-family:"Arial",sans=
+-serif">Location:</span></span></b> <b><span lang=3D"EN-IN" style=3D"font-s=
+ize:12.0pt">Columbus IN</span></b></span></span></p>
+
+<p class=3D"wordsection1" style=3D"margin-bottom:16px"><span style=3D"font-=
+size:10pt"><span style=3D"font-family:"Times New Roman",serif"><b><span sty=
+le=3D"font-size:12.0pt"><span style=3D"font-family:"Arial",sans-serif">Dura=
+tion:</span></span></b><span style=3D"font-size:12.0pt"><span style=3D"font=
+-family:"Arial",sans-serif"> <b>Contract/Fulltime</b></span></span></span><=
+/span></p>
+
+<p class=3D"wordsection1"><br />
+<span style=3D"font-size:10pt"><span style=3D"font-family:"Times New Roman"=
+,serif"><b><span style=3D"font-size:14.0pt"><span style=3D"font-family:"Ari=
+al",sans-serif">Job Description:</span></span></b></span></span></p>
+
+<ul>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"vertical-align:baseline"><span style=3D"=
+font-family:"Times New Roman",serif"><span style=3D"font-size:10.5pt"><span=
+ style=3D"font-family:"-apple-system",serif">Expertise in any automation to=
+ols such as Selenium WebDriver, Selenium Grid, Java, Jenkins (Continuous in=
+tegration), Maven, Cucumber, TestNG (Regression tests), IntelliJ.</span></s=
+pan></span></span></span></span></li>
+</ul>
+
+<ul>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"vertical-align:baseline"><span style=3D"=
+font-family:"Times New Roman",serif"><span style=3D"font-size:10.5pt"><span=
+ style=3D"font-family:"-apple-system",serif">Experience in testing Mobile W=
+eb applications using APPIUM and perform the Apps testing on iPhone, iPad a=
+nd Android Devices.</span></span></span></span></span></span></li>
+</ul>
+
+<ul>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"vertical-align:baseline"><span style=3D"=
+font-family:"Times New Roman",serif"><span style=3D"font-size:10.5pt"><span=
+ style=3D"font-family:"-apple-system",serif">Experience and thorough unders=
+tating of Software development process including Agile, Waterfall Software =
+development life cycles.</span></span></span></span></span></span></li>
+</ul>
+
+<ul>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"vertical-align:baseline"><span style=3D"=
+font-family:"Times New Roman",serif"><span style=3D"font-size:10.5pt"><span=
+ style=3D"font-family:"-apple-system",serif">Developed and maintained Test =
+Plans, Test Cases, Test Procedures and Test Scripts for Manual and Automate=
+d testing.</span></span></span></span></span></span></li>
+</ul>
+<br />
+<div id=3D"EditorSignatureID">
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif"><span style=3D"color:black">With Regards,</span></span></span></=
+span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial=
+",sans-serif"><span style=3D"color:black">Devendra Yadav </span></span></sp=
+an></b><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",=
+sans-serif"><span style=3D"color:black">| Senior Technical Recruiter</span>=
+</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif"><span style=3D"color:black">Phone: 614-495-9222 Ext.465</span></=
+span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif"><span style=3D"color:black">Fax:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; =
+866-764-1148</span></span></span></span></span></p>
+
+<p><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans=
+-serif"><span style=3D"color:black">Email:&nbsp; Devendra.y@usgrpinc.com</s=
+pan></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"background:white"><sp=
+an style=3D"font-family:"Arial",sans-serif"><span style=3D"color:black">To =
+unsubscribe from this mailing, please reply to this email with the word&nbs=
+p;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or click here&nbsp;</span></=
+span></span></span><span style=3D"font-size:10.0pt"><span style=3D"font-fam=
+ily:"Arial",sans-serif"><span style=3D"color:black"><a href=3D"mailto:techs=
+upport@usgrpinc.com?subject=3DUNSUBSCRIBE" target=3D"_blank"><span style=3D=
+"background:white"><span style=3D"color:black">UNSUBSCRIBE</span></span></a=
+><span style=3D"background:white">.</span></span></span></span></span></spa=
+n><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif"><b><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial"=
+,sans-serif"><span style=3D"color:black">USG is an Equal Opportunity Employ=
+er. Qualified applicants will receive consideration for employment without =
+regard to race, color, religion, gender, age, disability, military status, =
+national origin or any other characteristic protected under federal, state,=
+ or applicable local law</span></span></span></b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style=3D"margin-bottom:8px">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style=3D"margin-bottom:8px">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style=3D"margin-bottom:8px">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style=3D"margin-bottom:8px">&nbsp;</p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/87d07882=
+87cd96d840acc056b51000afbca50369/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b=
+>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEEOgyAQAMDXlCPZRdilBy424RuNwFoxrRiMSZ9fm7lPCSgwAagaDBgANHcksA40aoxk=
+HxHZsTdxHP3Nwnm8-l63rHP7qCVQyiQzM9Lg-ZLATWBLkUKEia3qMj9rCWYAr3pY2yH7clzPu27=
+nd20pSf9XP1IvJr0"></body>
+</html>

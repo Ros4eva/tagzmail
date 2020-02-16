@@ -1,0 +1,183 @@
+Return-Path: <al.zargar@iquasar.com>
+Received: from mail2.joboppforyou.com (mail2.joboppforyou.com [216.200.152.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id vhdair35188jk8lit1cel5vgg9hj06qkdc097b81
+ for josephs@linuxjobber.com;
+ Tue, 14 Jan 2020 14:45:23 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=al.zargar@iquasar.com; helo=mail2.joboppforyou.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=al.zargar@iquasar.com; helo=mail2.joboppforyou.com;
+ dkim=pass header.i=@joboppforyou.com;
+ dmarc=pass header.from=iquasar.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHNEZqNDB1dGtjdWw5bWVsTFQ3b3hISzBwR3E5Q0lQbUN4STlKdXBpQWlSd2NmRnRyd1ErVXQ1Nms2VXdaUlBIY0hXSTBkNGp3RkZRU1E4TXpBdDhKRUVWOFFhQ0RldXV3WTFDOWpxYVEyRHZSRERjM3FESWFGTDBvNEs1VEFZaTBuemRDRGF0cnk3NlduTDh2dm5DQndiSFNPVGszOVlVNEExUmlUamZSdG1pUjdrVngzTnZPdUxVOEtvMnMza2tlVWM1c2NGeE5xZ2RuTjJVVHRGTEVjQXB1U3hJVnN4ZFhWc21LZ2ZQeWFhWkxBaFlDTUNReVIwSTdlRnZ4dXpRY1pRaGtXTjJtYzVVcXZUM0NyU1FVeWVpTHlFb2h3cEFDNGplT0piRkEyVmc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Qym6PmwYW0kfskgE3RcETyM0ZDwcVgmrGdqyvMgkzd4wjmd4VSdT8dR88xRybnaNZl927Mgsgkh222EjDuvAMhDBku7ap0f7n3lrJ+i73Vbxm4v78nwebPrL9/jUvWNt8jAMKQxgY5sZOOxF0dYx/zB4NXgcaMQku5HgWr1WFfE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579013124; v=1; bh=9hBDImn+ndBMEwhjdR9PXkd8MsVdXQlC7aaes0pC36w=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=key8; d=joboppforyou.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=zEIhTnazXSV/yAcnyCpG8SiRR7k=;
+ b=tUjnmBs/1uIWja7cEZQfcDgOxpDs7bJb3beN0VZmYbGJYio3kKRc8nkh1aJPimoNtW9+dwBkzA1h
+   zKkM8CoLWOGPY/WyRw7tGrM2v0ESXv6eYCBGCENQtAMw0P8OsAw1KSj2O+dSu/y6ZQRhP6og1zGy
+   1CWunA7hLpidm0TZHy7KoJc/mzkYKya/imoPgdiSdOsyXp/hfKCKICd/MVfOyZ2BO94BoI697Dd1
+   ZYHbyWEzJcG3+i0iM93HPj+MfRqF6I1GoycdtzdgpT7KI4O4czeWjvkGIyCLFwuMLhJ0AqBFAFsT
+   JlH4je2jKb84q3gJn239Y5lF9vRgW2Ar0eicxg==
+Received: by joboppforyou.com id h3n86k1ph64k for <josephs@linuxjobber.com>; Tue, 14 Jan 2020 09:30:01 -0500 (envelope-from <al.zargar@iquasar.com>)
+Date: Tue, 14 Jan 2020 09:45:28 -0500 (EST)
+From: "Amir (Al) Zargar" <al.zargar@iquasar.com>
+To: josephs@linuxjobber.com
+Message-ID: <2027246805.2556521579013128242.JavaMail.admin@emailmerge23.jobdiva.com>
+Subject: Urgent Requirement // System Administrator/Training Specialist //
+ Washington, DC
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_255749_1076077897.1579013128240"
+
+------=_Part_255749_1076077897.1579013128240
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div>
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Hi,</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">My name is Amir (Al) and I represent&nbsp;ASD(Advanced Systems Development) Inc. We are seeking a&nbsp;<strong>System Administrator/Training Specialist</strong>&nbsp;in&nbsp;<strong>Washington, DC</strong>. Please refer to the below job description for your reference.</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><u><strong>Job Description:</strong></u></span></span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<div>
+<table border="0" cellpadding="0" style="width:902px">
+	<tbody>
+		<tr>
+			<td><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><strong>Essential Duties &amp; Responsibilities:</strong></span></span></td>
+		</tr>
+		<tr>
+			<td><br />
+			<span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">This position supports custom SharePoint-based web applications as well as more conventional SharePoint websites. This is a one-person job that directly interfaces with the customer and is responsible for all administration, and deployment duties.</span></span><br />
+			&nbsp;
+			<ul>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Work with Enterprise infrastructure to operate, &nbsp;administer, secure support and maintain the OUSDC Server Production, Development and Test environments and user domain.</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Responsible for the management and maintenance of mission application servers that require support providing installation, configuration, and customization related to mission application software.</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Manage and Maintain SharePoint Sites</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><span style="color:black">Provide instructions and training to OUSDC users as needed</span></span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">User Account Management -administer account creation, maintenance, and deletion process</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Perform diagnoses of user-identified and hardware problems. Provide one-on-one end-user assistance for Comptroller personnel on the software installed on the PC and networks.</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Monitor and perform daily checks of the JSP HBSS policy implementations and Antivirus definition updates on OUSDC systems via the management console</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Trusted Agent - Support the requisition and issuance of SIPR Tokens and Alt Tokens under JSP Registration Authority (RA)guidelines.</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Assist JSP to establish and maintain a process to manage unclassified and classified Enterprise and Comptroller specific mission application accounts</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Support OUSD(C)&rsquo;s needs for video teleconferencing (VTC) and Audio Calls</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Support Monthly patching for Microsoft security update and application update deployments</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Perform diagnoses of user-identified and hardware problems. Provide one-on-one end-user assistance for Comptroller personnel on the software installed on the PC and networks.</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Create and maintain up-to-date Network topology. Document the OUSD(C) as-is network architecture, enclave boundaries, external connections, infrastructure, and related procedures</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><span style="color:black">Perform weekly and on-demand ACAS security scans and analysis. Remediate vulnerabilities on OUSDC servers. Apply manual applications STIGS to remediate application findings</span></span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Grant users access to organizational shares, OUSDC SharePoint Portals and provide support as needed</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><span style="color:black">Address Test and Development environment access and connectivity issues</span></span></span></li>
+			</ul>
+			<br />
+			<span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><strong>SharePoint Administration:</strong></span></span>
+
+			<ul>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Daily health check of SharePoint environments on unclassified and classified networks (both are very small SharePoint farms)</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Perform all configuration tasks</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Implement security and perform all security tasks (including installing updates)</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Troubleshooting errors Internet Information Services (IIS) Administration</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">all Websites &amp; Application Pools associated with SharePoint environments</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Applying for and installing SSL certificates</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Troubleshooting errors SQL Server Administration duties include:</span></span>
+				<ul>
+					<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Daily health check of SQL Server environments on unclassified and classified networks (both are very small SQL Server instances)</span></span></li>
+					<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Perform all configuration tasks</span></span></li>
+					<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Implement security and perform security tasks(including installing updates)</span></span></li>
+					<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Troubleshooting errors</span></span></li>
+				</ul>
+				</li>
+			</ul>
+			<br />
+			<span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><strong>SQL Server Administration duties include:</strong></span></span>
+
+			<ul>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Daily health check of SQL Server environments on unclassified and classified networks (both are very small SQL Server instances)</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Perform all configuration tasks</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Implement security and perform security tasks(including installing updates)</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Troubleshooting errors</span></span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><strong>Required Qualifications:</strong></span></span></td>
+		</tr>
+		<tr>
+			<td>&nbsp;
+			<ul>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Bachelor&#39;s degree in a relevant field or equivalent work experience</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Experience providing mission-essential application operational support and training</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">2+ years&rsquo; experience administering, securing, and maintaining Dell, HP, and IBM servers</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">2+ years of experience in Video Teleconferencing (VTC)technologies.</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">2+ years&rsquo; experience with VMware ESX 4/5.1 server and virtual Infrastructure Center.</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Understanding of Microsoft Windows 2003 / 2008 / 2012servers implementation</span></span></li>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><strong>Security+</strong>&nbsp;Certification</span></span></li>
+			</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">&nbsp;<br />
+			<strong>Preferred Skills &amp; Certifications:</strong></span></span></td>
+		</tr>
+		<tr>
+			<td>&nbsp;
+			<ul>
+				<li><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif"><strong>Clearance Level:</strong>&nbsp;<strong>Secret&nbsp;</strong>or Higher</span></span></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+
+<div>&nbsp;</div>
+
+<div>
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">If you are available and&nbsp;interested in this position,&nbsp;please call me at <strong>(703) 936-0048</strong>&nbsp;or&nbsp;reply to my&nbsp;e-mail&nbsp;at&nbsp;<strong>al.zargar@iquasar.com</strong>&nbsp;with a latest copy of your resume, contact number, and the best time to call you. In considering candidates, time is of essence, so please respond ASAP. Thank you.</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">If you are not looking for new opportunities at this time but know of&nbsp;a friend&nbsp;who might have the required qualifications and interest, please&nbsp;forward this e-mail to them ASAP and/or send their information to me.</span></span></div>
+
+<div><br />
+<span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Please don&rsquo;t hesitate to contact me should you have any question(s).</span></span></div>
+</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Sincerely yours,</span></span><br />
+&nbsp;</div>
+
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Amir Zargar | Technical Recruiter<br />
+Representing Advanced Systems Development, Inc.<br />
+4401 Ford Avenue, Suite 500<br />
+Alexandria, VA 22302<br />
+O: 703-962-6001 Ext 526<br />
+Direct:&nbsp;<a href="https://businesssupport.vonage.com/click2callme?key=ICBqxhqlgMNFCsoYje&amp;company=%20iQuasar%20LLC&amp;type=email" target="_blank">703-936-0048</a>&nbsp;<br />
+Email &ndash;&nbsp;<a href="mailto:al.zargar@iquasar.com" target="_blank">al.zargar@iquasar.com</a></span></span><br />
+&nbsp;</div>
+
+<div><br />
+<span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Note: <em>This email is sent to you in response to your resume posting on Internet/Online Databases or your recent interest in our jobs. If you received this email in error, we apologize. Sorry for any inconvenience this may have caused. If you do not wish to receive future e-mails with information on current iQuasar job openings, please reply with &ldquo;UNSUBSCRIBE&rdquo; in the subject line of your reply and we will update our database accordingly. If you are not currently seeking employment, or if you would prefer I contact you at some later date, please indicate your date of availability so that I may honor your request. In any event, I respectfully recommend you continue to avail yourself to the employment options and job market information we provide with our e-mail notices.</em></span></span></div>
+
+<div><br />
+<span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Thanks again!</span></span></div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:10pt"><span style="font-family:Calibri,Helvetica,sans-serif">Amir (Al)</span></span></div>
+</div>
+
+<div>&nbsp;</div>
+<br><br>If you would like to unsubscribe from iQuasar, LLC, please click <a href='http://jobs.iquasar.com/optout.jsp?d=3439305f6a6f7365706873406c696e75786a6f626265722e636f6d&e=161&t11=1579013128239'>here</a>.<img id='logo' src='http://www1.jobdiva.com/servlets-examples/servlet/trackEmailMerge?a=01bEAlQBhNWNlQBAANZAzsWXlRCAzBXXQJYVVVD' />
+------=_Part_255749_1076077897.1579013128240--
+

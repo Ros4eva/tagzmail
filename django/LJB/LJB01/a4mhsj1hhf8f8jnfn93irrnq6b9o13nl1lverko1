@@ -1,0 +1,634 @@
+Return-Path: <DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com>
+Received: from Ser1.Technicalcenter.in:9998 ([192.155.241.216])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id a4mhsj1hhf8f8jnfn93irrnq6b9o13nl1lverko1
+ for josephs@linuxjobber.com;
+ Tue, 07 Jan 2020 20:27:32 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+ dkim=permerror header.i=@nytpinc.com;
+ dmarc=none header.from=nytpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGRUl5cmlSL1o1bmFQVmJ3OEFLRkRtQnBkYUFEK3dCeWlLUXQ4TERNZHNKd3NOdXo3VmlTUVNrdk10b1pMQlo5cmlDQmlZaTk0aDQ2M3o3RVI0R1dDWlBpaGdWeWhyejlSNEdVRnFKY2VCYThFTGpudnNFeUtKUVo2a1JWNXNlRUpTbTBjT3p0Mkc5ei95N05NaUFFanRmdDhZR1FJUkpCS3dVSE8wM2k4TkxsaERQNnJIOGwwNEQwUDEzZ0oyM2ZLbDF0TGNrWEVWK0dLd3I4ZGpYMzNwV0loOVJ0SHoya0U4TWlZd2QyMzZSSWRQb2ZvOFp0ZXRkbGFSOWhmRTlXdDd0S2U3YTJpbUdnRGR5eEhWM1BXZ3YxNVZuTHFaU0Y0QWdzUEVvSlE0UWswQVI3b2FYUHB6amszOWFkdkE2L2Y5c2dSRGdSaUp6M1RsWldibmZjakg5U0d0TzAwZVlhbEN5Q25KM1dCUm93PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=KOZOHGCW5gSBepfOQLiwVm6TyBzoNXdhC2K9Jhvq0AFTgIIQ14ZZazz3P6hW0Jf9dBueJqOncNtDO+vdHU1+Seklq0f3Pqo21Ec3nE3IZH9cgIye63oXscZnwgBzAoxOzsZ5nLdeTyUkn/OPrHUP2DO6QVCmKocq/TUgvpV7quI=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578428852; v=1; bh=w7IedPCCBO+J3ywNUdMMEks+EiMmouPpD0mfFVLHmbU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+X-SmarterMail-Authenticated-As: Bhavesh@nytpinc.com
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns;
+        d=nytpinc.com; s=key;
+        h=received:from:to:subject:date:message-id:mime-version
+          :content-type:x-mailer:thread-index:content-language:list-id
+          :x-mailing-list:reply-to:precedence:sender:cc;
+        b=UjMQIXdWiNo4J0kL5PR57KGG8CsUk3M6WPs0XbM09vovopP2BQ+/9KIglKdoELrrj
+          rHRAC1MoDgwKZaG9QzZbautwO5gZQNygslQoBdiIu3l0CfBSV+Qy7wL7OXCskQmES
+          pbVvZEfWTCh+q6YPrYGlp2KbL8x3GvQh0RIlPcqL5NFipcXn34mWdQpYT393E9Y+K
+          a3MkzSP2P2JZ6moiVYJ7iObxkstbI/Ob/Wa5ueFXYCvCA9kRnbYJOJFnUUd1pLfHb
+          9ZdFlD+C0+TDN6GSP8GcjaKq8D3Zo577sqWBikFkdGXDZVnAmPXXprh5iz12KNK2V
+          Uj4wF+yhIkgRifQnQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=nytpinc.com; s=key;
+        h=cc:sender:precedence:reply-to:x-mailing-list:list-id
+          :content-language:thread-index:x-mailer:content-type:mime-version
+          :message-id:date:subject:to:from;
+        bh=+eZ72nzO0mabF8BUY5IuWA54Wwk2kPD39F4rtnK3IHM=;
+        b=bv4N6J1131O86MAQr534ivPXA0BlC+MT5zNjLNcEVECq4Z2eX1eG0SKOMcMTbxy1U
+          KN9prEV+S26qMkiur4+M8X3sP+qOFboQd6rXLslkeUYK/CcTogdeqcP0vfwAP22vp
+          Dia2ETV0UZsx24uqtRcSCgw/HVJDCG0LJhJMNqiQvGTrvVNTOkS7K1lYABSach5Wy
+          qcSJFRQegGLV1N1EHkOrO5kO7Gl3Z+hZyVkcx1bstwAGde8ifOdGGaEiRZXdHM7xi
+          mNk+AKpNx876J+DyXtuEo5maPZ/Hf7VQ3w7ZDukRwlHsdnfvacwbTUF/kKSyOj1Wa
+          7RKCAw/RUf+8plzsA==
+Received: from nytppc31 (cpe-70-121-27-82.tx.res.rr.com [70.121.27.82]) by Ser1.Technicalcenter.in:9998 with SMTP;
+   Tue, 7 Jan 2020 13:29:23 -0600
+From: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+To: josephs@linuxjobber.com
+Subject: AWS Cloud Specialist - Implementation partners need in Iselin, NJ
+Date: Tue, 7 Jan 2020 14:32:12 -0500
+Message-ID: <1088611953_90919538534@nytpinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0231_01D5C567.40A18C10"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdXFkQQBQlhPP0guQX6rshi0tJfhjQ==
+Content-Language: en-us
+List-Id: <listid.DevOps.90919538534.nytpinc.com>
+X-Mailing-List: DevOps@nytpinc.com
+Reply-to: "bhavesh@nytpinc.com" <Bhavesh@Nytpinc.com>
+Precedence: list
+Sender: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+CC: 
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_000_0231_01D5C567.40A18C10
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0232_01D5C567.40A18C10"
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_001_0232_01D5C567.40A18C10
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Implementation partners need. 
+
+ 
+
+Job description: Developer / Software Engineer - Cloud
+
+ 
+
+Location: Iselin, NJ
+
+
+
+Rate: $70/hr c2c max or $60/hr on W2 all inclusive. 
+
+ 
+
+100% onsite role. Remote is not an option. 
+
+1 or 2 rounds of skype interview. 
+
+ 
+
+ 
+
+Please do not submit any OPT candidates. 
+
+ 
+
+------------------------------
+
+In your submission (at the top of the first page) include:
+
+Phone #:
+
+Email address:
+
+Location (City and State):
+
+Relocate:
+
+Availability to start:
+
+Visa type and expiration:
+
+Hiring Status: C2C/W2/1099
+
+Open for CTH (y/n):
+
+Timeslots for Skype interview (provide Skype ID)
+
+------------------------------
+
+ 
+
+Knowledge of development, environment and support tools
+
+.           Cloud development of APIs and Microservices
+
+.           Develop and maintain SOAP and RESTful business function on JBos=
+s
+or in the Cloud
+
+.           Technical expert for analysis, design, coding, testing debuggin=
+g
+new and existing services
+
+.           Analyze system interaction issues
+
+.           Perform peer reviews
+
+.           Develop unit test cases and plans
+
+.           Provide testing support (sometimes on weekends)
+
+.           Mentor new developers
+
+.           API management tools experience is a plus
+
+.           RedHat Fuse 7, Virtusa finOS, IBM API Connect experience is a
+plus
+
+ 
+
+Tools Knowledge Requirements
+
+.           Amazon AWS Cloud development 
+
+.           JDK 1.6 and above
+
+.           TOAD for Oracle Pro 12.0 
+
+.           Oracle Client 
+
+.           MKS Integrity and BitBucket Tooling
+
+.           Splunk
+
+.           API Developer experience
+
+.           Spring Boot 
+
+.           Spring Integration 
+
+.           Apache Camel
+
+.           FUSE 7 exposure / experience
+
+.           WSO2 API Manager & Gateway 
+
+.           RESTful interface design and implementation
+
+.           Kubernetes
+
+.           Kibana
+
+.           Elasticsearch
+
+.           AWS Lambda
+
+.           Amazon AWS experience
+
+.           Amazon AWS API Gateway experience
+
+.           Some zip utility (WinRAR, 7-zip, WinZip) 
+
+.           Microsoft Visio, Word, PowerPoint & Excel
+
+.           Database - SQL Server, Oracle
+
+Tools developer is capable of managing 
+
+.           JDK Install 
+
+.           Maven 
+
+.           BitBucket
+
+.           Ant 
+
+.           JBoss Developer Studio 5.0.0 
+
+.           JBoss Application Server/SOA Platform 5.3.1 
+
+.           Soap UI 
+
+.           WTX Design Studio 
+
+.           SonarQube
+
+Qualifications:
+
+.           3 to 5 years IBM IIB development experience
+
+.           3 to 5 years JBoss development experience
+
+.           3 to 5 years of working experiences in financial systems 
+
+.           MBA or equivalent Experience in SOA interface modeling is a plu=
+s
+Anyone for this one ? 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Thanks
+
+_____________________________________
+
+Bhavesh Khatri | New York Technology Partners 
+
+120 Wood Ave S, suite 504. Iselin NJ 08830
+
+Direct: 201.448.8157 | Fax: 201.521.0400 |  <http://www.nytp.com/>
+www.nytp.com
+
+ <https://www.linkedin.com/in/khatribhavesh> 
+
+ 
+
+
+
+
+
+Click here to http://Ser1.Technicalcenter.in:9998/public/list.aspx?action=
+=3Dunsubscribe&email=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3D=
+devops@nytpinc.com
+
+Looking for Bulk Email Service Provider ? mail to Info@TechnicalCenter.in
+
+ 
+
+ 
+
+
+
+------=_NextPart_001_0232_01D5C567.40A18C10
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 15 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#def=
+ault#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3D"#0563C1=
+" vlink=3D"#954F72"><div class=3DWordSection1><p class=3DMsoPlainText><span=
+ style=3D'font-family:"Times New Roman",serif'>Implementation partners need=
+. <o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:=
+"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoPlainTex=
+t><span style=3D'font-family:"Times New Roman",serif'>Job description: Deve=
+loper / Software Engineer - Cloud<o:p></o:p></span></p><p class=3DMsoPlainT=
+ext><span style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></=
+span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roma=
+n",serif'>Location: Iselin, NJ<br><br><o:p></o:p></span></p><p class=3DMsoP=
+lainText><span style=3D'font-family:"Times New Roman",serif'>Rate: $70/hr c=
+2c max or $60/hr on W2 all inclusive. <o:p></o:p></span></p><p class=3DMsoP=
+lainText><span style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o=
+:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New=
+ Roman",serif'>100% onsite role. Remote is not an option. <o:p></o:p></span=
+></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",s=
+erif'>1 or 2 rounds of skype interview. <o:p></o:p></span></p><p class=3DMs=
+oPlainText><span style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;<=
+/o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times N=
+ew Roman",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoPlainText><b><sp=
+an style=3D'font-family:"Times New Roman",serif'>Please do not submit any O=
+PT candidates. <o:p></o:p></span></b></p><p class=3DMsoPlainText><span styl=
+e=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p><p cl=
+ass=3DMsoPlainText><span style=3D'font-family:"Times New Roman",serif'>----=
+--------------------------<o:p></o:p></span></p><p class=3DMsoPlainText><sp=
+an style=3D'font-family:"Times New Roman",serif'>In your submission (at the=
+ top of the first page) include:<o:p></o:p></span></p><p class=3DMsoPlainTe=
+xt><span style=3D'font-family:"Times New Roman",serif'>Phone #:<o:p></o:p><=
+/span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Rom=
+an",serif'>Email address:<o:p></o:p></span></p><p class=3DMsoPlainText><spa=
+n style=3D'font-family:"Times New Roman",serif'>Location (City and State):<=
+o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Ti=
+mes New Roman",serif'>Relocate:<o:p></o:p></span></p><p class=3DMsoPlainTex=
+t><span style=3D'font-family:"Times New Roman",serif'>Availability to start=
+:<o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"=
+Times New Roman",serif'>Visa type and expiration:<o:p></o:p></span></p><p c=
+lass=3DMsoPlainText><span style=3D'font-family:"Times New Roman",serif'>Hir=
+ing Status: C2C/W2/1099<o:p></o:p></span></p><p class=3DMsoPlainText><span =
+style=3D'font-family:"Times New Roman",serif'>Open for CTH (y/n):<o:p></o:p=
+></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New R=
+oman",serif'>Timeslots for Skype interview (provide Skype ID)<o:p></o:p></s=
+pan></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman=
+",serif'>------------------------------<o:p></o:p></span></p><p class=3DMso=
+PlainText><span style=3D'font-family:"Times New Roman",serif'> <o:p></o:p><=
+/span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Rom=
+an",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoPlainText><span style=
+=3D'font-family:"Times New Roman",serif'>Knowledge of development, environm=
+ent and support tools<o:p></o:p></span></p><p class=3DMsoPlainText><span st=
+yle=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud development of APIs and Microser=
+vices<o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-fami=
+ly:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; Develop and maintain SOAP and RESTful business functio=
+n on JBoss or in the Cloud<o:p></o:p></span></p><p class=3DMsoPlainText><sp=
+an style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Technical expert for analysis, de=
+sign, coding, testing debugging new and existing services<o:p></o:p></span>=
+</p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",se=
+rif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An=
+alyze system interaction issues<o:p></o:p></span></p><p class=3DMsoPlainTex=
+t><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Perform peer reviews<o:p></o=
+:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New=
+ Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp; Develop unit test cases and plans<o:p></o:p></span></p><p class=3DM=
+soPlainText><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Provide testing su=
+pport (sometimes on weekends)<o:p></o:p></span></p><p class=3DMsoPlainText>=
+<span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mentor new developers<o:p></o:=
+p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New =
+Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; API management tools experience is a plus<o:p></o:p></span></p><p cl=
+ass=3DMsoPlainText><span style=3D'font-family:"Times New Roman",serif'>&#82=
+26;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RedHat Fuse=
+ 7, Virtusa finOS, IBM API Connect experience is a plus<o:p></o:p></span></=
+p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",seri=
+f'><o:p>&nbsp;</o:p></span></p><p class=3DMsoPlainText><span style=3D'font-=
+family:"Times New Roman",serif'>Tools Knowledge Requirements<o:p></o:p></sp=
+an></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman"=
+,serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Amazon AWS Cloud development <o:p></o:p></span></p><p class=3DMsoPlainText=
+><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JDK 1.6 and above<o:p></o:p><=
+/span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Rom=
+an",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; TOAD for Oracle Pro 12.0 <o:p></o:p></span></p><p class=3DMsoPlainText>=
+<span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Oracle Client <o:p></o:p></spa=
+n></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",=
+serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+MKS Integrity and BitBucket Tooling<o:p></o:p></span></p><p class=3DMsoPlai=
+nText><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Splunk<o:p></o:p></span>=
+</p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",se=
+rif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AP=
+I Developer experience<o:p></o:p></span></p><p class=3DMsoPlainText><span s=
+tyle=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring Boot <o:p></o:p></span></p><p =
+class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",serif'>&#=
+8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring In=
+tegration <o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font=
+-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp; Apache Camel<o:p></o:p></span></p><p class=3DMsoP=
+lainText><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FUSE 7 exposure / exp=
+erience<o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-fa=
+mily:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; WSO2 API Manager &amp; Gateway <o:p></o:p></span></p=
+><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",serif=
+'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RESTf=
+ul interface design and implementation<o:p></o:p></span></p><p class=3DMsoP=
+lainText><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kubernetes<o:p></o:p>=
+</span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Ro=
+man",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp; Kibana<o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'fon=
+t-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; Elasticsearch<o:p></o:p></span></p><p class=3DMs=
+oPlainText><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AWS Lambda<o:p></o:=
+p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New =
+Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; Amazon AWS experience<o:p></o:p></span></p><p class=3DMsoPlainText><=
+span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amazon AWS API Gateway experien=
+ce<o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:=
+"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; Some zip utility (WinRAR, 7-zip, WinZip) <o:p></o:p></spa=
+n></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",=
+serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+Microsoft Visio, Word, PowerPoint &amp; Excel<o:p></o:p></span></p><p class=
+=3DMsoPlainText><span style=3D'font-family:"Times New Roman",serif'>&#8226;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Database &#821=
+1; SQL Server, Oracle<o:p></o:p></span></p><p class=3DMsoPlainText><span st=
+yle=3D'font-family:"Times New Roman",serif'>Tools developer is capable of m=
+anaging <o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-f=
+amily:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; JDK Install <o:p></o:p></span></p><p class=3DMsoPla=
+inText><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Maven <o:p></o:p></span=
+></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",s=
+erif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; B=
+itBucket<o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-f=
+amily:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; Ant <o:p></o:p></span></p><p class=3DMsoPlainText><=
+span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JBoss Developer Studio 5.0.0 <o=
+:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Tim=
+es New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; JBoss Application Server/SOA Platform 5.3.1 <o:p></o:p></span=
+></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New Roman",s=
+erif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S=
+oap UI <o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'font-fa=
+mily:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; WTX Design Studio <o:p></o:p></span></p><p class=3DM=
+soPlainText><span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SonarQube<o:p></o:=
+p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times New =
+Roman",serif'>Qualifications:<o:p></o:p></span></p><p class=3DMsoPlainText>=
+<span style=3D'font-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 to 5 years IBM IIB developme=
+nt experience<o:p></o:p></span></p><p class=3DMsoPlainText><span style=3D'f=
+ont-family:"Times New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 to 5 years JBoss development experience<o:p>=
+</o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times =
+New Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; 3 to 5 years of working experiences in financial systems <o:p></=
+o:p></span></p><p class=3DMsoPlainText><span style=3D'font-family:"Times Ne=
+w Roman",serif'>&#8226;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp; MBA or equivalent Experience in SOA interface modeling is a plus A=
+nyone for this one ? <o:p></o:p></span></p><p class=3DMsoPlainText><span st=
+yle=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'><o:p>=
+&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Tim=
+es New Roman",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span=
+ style=3D'font-family:"Times New Roman",serif;color:black'><o:p>&nbsp;</o:p=
+></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roma=
+n",serif;color:black'>Thanks<o:p></o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'font-family:"Times New Roman",serif;color:black'>_______________=
+______________________<o:p></o:p></span></p><p class=3DMsoNormal><span styl=
+e=3D'font-family:"Times New Roman",serif;color:black'>Bhavesh Khatri&nbsp;|=
+&nbsp;New York Technology Partners <o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'font-family:"Times New Roman",serif'>120 Wood Ave S, suit=
+e 504. Iselin NJ 08830<o:p></o:p></span></p><p class=3DMsoNormal><span styl=
+e=3D'font-family:"Times New Roman",serif;color:black'>Direct: 201.448.8157 =
+| Fax: 201.521.0400 | <a href=3D"http://www.nytp.com/"><span style=3D'color=
+:black'>www.nytp.com</span></a><o:p></o:p></span></p><p class=3DMsoNormal s=
+tyle=3D'background:white'><a href=3D"https://www.linkedin.com/in/khatribhav=
+esh"><span style=3D'font-family:"Times New Roman",serif;color:#0563C1;text-=
+decoration:none'><img border=3D0 width=3D160 height=3D33 style=3D'width:1.6=
+666in;height:.3437in' id=3D"Picture_x0020_1" src=3D"cid:image001.gif@01D5C5=
+67.401B6C20" alt=3DLinkedin></span></a><span style=3D'font-family:"Times Ne=
+w Roman",serif;color:black'><o:p></o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p=
+></div></body></html>
+<br /><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style=3D"font-size:12px;">Click here to </span><a href=3D"http:/=
+/Ser1.Technicalcenter.in:9998/public/list.aspx?action=3Dunsubscribe&email=
+=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3Ddevops@nytpinc.com">=
+Unsubscribe</a></div>
+
+<div><span style=3D"font-size:12px;">Looking for Bulk Email Service Provide=
+r ? mail to <a href=3D"mailto:Info@TechnicalCenter.in?subject=3DBulk%20Emai=
+l%20Service%20Enquiry%2C%20&amp;body=3DClick%20Send%20Button%20to%20submit%=
+20the%20inquiry.%20">Info@TechnicalCenter.in</a></span></div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+
+
+------=_NextPart_001_0232_01D5C567.40A18C10--
+
+------=_NextPart_000_0231_01D5C567.40A18C10
+Content-Type: image/gif;
+	name="image001.gif"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.gif@01D5C567.401B6C20>
+
+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
+
+
+------=_NextPart_000_0231_01D5C567.40A18C10--
+

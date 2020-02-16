@@ -1,0 +1,261 @@
+Return-Path: <handshake@notifications.joinhandshake.com>
+Received: from a3.mail.joinhandshake.com (a3.mail.joinhandshake.com [192.237.158.52])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id cbdgiv7tso5m3ats4ne7ugsfk91h1vjru5lvhhg1
+ for jeff.adekunbi@ideabakr.org;
+ Wed, 01 Jan 2020 13:32:19 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notifications.joinhandshake.com designates 192.237.158.52 as permitted sender) client-ip=192.237.158.52; envelope-from=handshake@notifications.joinhandshake.com; helo=a3.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notifications.joinhandshake.com designates 192.237.158.52 as permitted sender) client-ip=192.237.158.52; envelope-from=handshake@notifications.joinhandshake.com; helo=a3.mail.joinhandshake.com;
+ dkim=pass header.i=@notifications.joinhandshake.com;
+ dmarc=pass header.from=notifications.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHMllZeTdIVFZVNFhGRUtIZ1JtN3VFUWRFRC95b0dmMGJZNHgzVFNERmhSTlhVTG9jUDA3cmhhSmVLekl2M3lFSmhTRllQTmtFSjBmY3RUcWtKSVE3Wk5jZ1pRQXRZRGU4clVrNEFEU2VrV0cwWndyVmNpNnhEWmEzelBsZlMvVlVEN1pWS2Q3QkFVOXdYcy8yQzg1endjMThYM2c4bHg0VkRadURSQ3IwYnowWkp1RUlralVRTFFVYTRsb2U1eEFTMTRINlEwRlpGcCtlYTczT00xRWxDcVVXODkrbEhZNktyOWpXRjBqZEdscnczT1NpRkpTQ1d0QjQxck5xLzhGT1l0eXFKZGVnNEZzVXgxaWYxM0V4bVh0VE1BZkFJakpqZnV5M2lPT3VaRFRYM3R0b3ZCUGNxQWpLZFpjMkVaTzg9
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=eZYbtNvg1jawW/CpDeAFeV+DRfbCyJPNBcpQKpQP1Gzxer7XXAih2jeuJxeWSozfuijAG7Byq9grgqbARA8l4+3iicUH/OV1jW1OxYT5r1UACOzGZ0qf3HNVyQ6oppLCWTq6eHITCEZMFSo5Tz4vkTxzJ/DamoK8jNOC/Z4VLGw=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577885541; v=1; bh=eTJHeRQt+4nWEQMucVl5zJ8caBer+qv+kHDe3+/QnZs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed;
+ d=notifications.joinhandshake.com; q=dns/txt; s=pic; t=1577885541;
+ h=Content-Type: Mime-Version: Subject: From: To: Message-Id: Date:
+ List-Unsubscribe; bh=eTJHeRQt+4nWEQMucVl5zJ8caBer+qv+kHDe3+/QnZs=; b=B+tfx4/r7iwnkkPWPsa4NaDDRUp0EBHAb+xMIbmyU1GdIA3aESSTuPCIcY6ZlfMeSJpzX4NQ
+ 4pFyN95bhECSkECyp9bd/xSdCOewl4UD4DFWHi47F0j0J0kvivW4nF8nBwL7eDp1c8dxwUIo
+ 9fv3MVK25n6xN/msdksjrzAPBok=
+X-Mailgun-Sending-Ip: 192.237.158.52
+X-Mailgun-Sid: WyJhMjA3OCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICIyZDk2NyJd
+List-Unsubscribe: <mailto:u+mq6tezbzgy3sm2j5giydembqgeydcmjtgmzdcnjogexdiqsciyytcnbqim3ecmzsivauijjugbxg65djmzuwgylunfxw44zonjxws3timfxgi43imfvwkltdn5wsm2b5myzwgyjygaydszrymrswcnrsg44dem3chfrwgmldmrqwkzbsmjssm4r5njswmzromfsgk23vnzrgsjjugbuwizlbmjqww4ron5zgojtuhvyg643unfxgo427mv4ha2lsmvsf643vnvwwc4tz@notifications.joinhandshake.com>
+Received: by luna.mailgun.net with HTTP; Wed, 01 Jan 2020 13:32:15 +0000
+Date: Wed, 01 Jan 2020 13:32:15 +0000
+Message-Id: <20200101133215.1.4BBF1140C6A32EAD@notifications.joinhandshake.com>
+X-Mailgun-Native-Send: true
+X-Mailgun-Tag: postings_expired_summary
+To: jeff.adekunbi@ideabakr.org
+From: Handshake <handshake@notifications.joinhandshake.com>
+Subject: Job Applications Summary
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="4445e4b559cb416ba67d340595832711"
+
+--4445e4b559cb416ba67d340595832711
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="ascii"
+Mime-Version: 1.0
+
+Job Application Summaries
+
+
+
+Hello Jeff,
+
+Below are the application packages for all of the jobs that have expired within the last 24 hours.
+Download the application packages below to view all of the applicant details.
+
+
+To browse, view, message and search through applicants, please log in to
+Handshake
+
+
+Teaching Assistant Summary
+
+
+
+Brandeis University
+
+
+No students from this school applied to this position.
+
+
+
+Remote Teaching Assistant Summary
+
+
+
+George Washington University: 14 students applied
+
+
+
+Not Fully Qualified Candidates
+
+
+Applications Package (Zip File)
+
+1.21 MB
+
+
+
+Applications Package (PDF File)
+
+1.92 MB
+
+
+
+
+
+Remote Teaching Assistant Summary
+
+
+
+University of Texas at Arlington
+
+
+No students from this school applied to this position.
+
+
+
+Thank you,
+
+The Handshake Team
+--4445e4b559cb416ba67d340595832711
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html style="background-color:transparent">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="width=device-width" name="viewport">
+<title>Handshake</title>
+
+
+
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+.primary-button a:hover{color:inherit}
+.outline-button a:hover{color:inherit}
+.button a:hover{color:inherit}
+.primary-button a:active{color:inherit}
+.outline-button a:active{color:inherit}
+.button a:active{color:inherit}
+.primary-button:hover{color:#fff;background-color:#ff6860;border-color:1px solid #ff6860}
+.primary-button:active{color:#fff;background-color:#e21d17;border-color:1px solid #ff6860}
+.outline-button:hover{color:#ff6860;border-color:#ff6860}
+.outline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+.primary-button a:hover{color:inherit}
+.outline-button a:hover{color:inherit}
+.button a:hover{color:inherit}
+.primary-button a:active{color:inherit}
+.outline-button a:active{color:inherit}
+.button a:active{color:inherit}
+.primary-button:hover{color:#fff;background-color:#ff6860;border-color:1px solid #ff6860}
+.primary-button:active{color:#fff;background-color:#e21d17;border-color:1px solid #ff6860}
+.outline-button:hover{color:#ff6860;border-color:#ff6860}
+.outline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+@media (max-width: 767px) {
+.avatar--mobile-md{max-width:56px}
+.avatar--mobile-md{max-width:56px}
+}</style></head>
+<body style="font-family:&quot;Suisse Int'l&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, sans-serif;color:#231f20;font-size:16px;line-height:20px;-webkit-print-color-adjust:exact">
+<table class="email-layout" style="max-width:580px;table-layout:fixed;border:0;border-collapse:collapse;width:100%;text-align:inherit;margin:auto;padding:0">
+<tr>
+<td class="email-header">
+<table style="border-collapse:collapse;width:100%;width: 100%">
+<tr>
+<td>
+<img alt="Handshake" class="handshake-logo" src="https://handshake-production-cdn.joinhandshake.com/static_assets/hs-logo-black-lg.png" style="margin-top:24px;margin-bottom:16px;width: 159px; height: 24px" title="Handshake">
+</td>
+<td class="branding" style="width:40px;height:40px">
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td class="email-content">
+<h1 style="font-weight:700;word-break:break-word;font-size:46px;line-height:52px">
+Job Application Summaries
+
+</h1>
+<div class="expired-summary" style="font-size:13px">
+<p style="font-size:18px;line-height:28px">Hello Jeff,</p>
+<p style="font-size:18px;line-height:28px">
+Below are the application packages for all of the jobs that have expired within the last 24 hours.
+Download the application packages below to view all of the applicant details.
+</p>
+<p style="font-size:18px;line-height:28px">
+To browse, view, message and search through applicants, please log in to
+<a href="http://email.notifications.joinhandshake.com/c/eJx1j8luhDAQRL_GHC0vLJkDh5kh_AZq7AZ6wItsIyV_H6LkFkWq05Nelcr2yt7arqJeCSWEFFJqrWTDJa8fj1HKWjzbu1bv94HVwodCCxkoFHzmr0B-A2_zBjtyE1y19VY0gLCg6WrdzrKZbWPs3FhzQ7F0b1Ad_VZKzEzfmRqvQIx_iy5-hJU80-NZ3JTDmQwyPfzsY2Kq_eYOLZ3u4uiAjl9owEWg9XKHGHIhv-YJPyIltFM-nYP0WaX-hcvCweJ--pmuZ2QRZtgTD2mtSv-f-QUg4mes" style="color:#254fa5;font-weight:inherit">Handshake</a>
+</p>
+<h2 style="font-weight:700;word-break:break-word;font-size:39px;line-height:44px">
+Teaching Assistant Summary
+</h2>
+<div class="posting-tile" style="background-color:#f7f9fa;border-radius:4px;border:1px solid #ddd;margin-bottom:12px;padding:18px">
+<div>
+Brandeis University
+</div>
+<div class="application-packages" style="font-size:11px;margin:8px 12px 0">
+No students from this school applied to this position.
+</div>
+</div>
+<h2 style="font-weight:700;word-break:break-word;font-size:39px;line-height:44px">
+Remote Teaching Assistant Summary
+</h2>
+<div class="posting-tile" style="background-color:#f7f9fa;border-radius:4px;border:1px solid #ddd;margin-bottom:12px;padding:18px">
+<div>
+George Washington University: 14 students applied
+</div>
+<div class="application-packages" style="font-size:11px;margin:8px 12px 0">
+<span class="not-fully-qualified" style="color:#7a7a7a;font-weight:bold">
+Not Fully Qualified Candidates
+</span>
+<div class="download-tile" style="background-color:#fff;border-radius:4px;border:1px solid #ddd;margin:8px 0;padding:12px">
+<a href="http://email.notifications.joinhandshake.com/c/eJx1kMtugzAQRb8Glsj28FywIE3SxyLpQ6qibpDxAwyxjWzTNH9fqmZXVbqL0ZHmjObymvAqL2JVE0QQwghjAIKzBCfpZrPHOEV3eQNk12yjFBkblFSMBmWNT0arzEAN9wOdRMKsjodasrSDUsoSMgQFTiuG8kLmFclIWWaQx-d6CGH2ETQR2a-h8_xXtHJuL-ZsKffrDFmKyxQggn2wkzARbJfD-2nb3TO7ezo89tdxHCucXYvn4w4-3ekFjRdZsea4kR-vD29kgVarZugjki9Bt94ujonV8vuPcDeuBVeLXrnQVJ1vkFE9U9X_HJ2tD8r0vhVfs3KCt37Rmrpr7OpRSJlQLqbFdGptSnFBOzq5xLo-DvV_m99_PH8M" style="color:#254fa5;font-weight:inherit;display:inline-block">Applications Package (Zip File)</a>
+<div class="size" style="display:inline-block;text-align:right;float:right">
+1.21 MB
+</div>
+</div>
+<div class="download-tile" style="background-color:#fff;border-radius:4px;border:1px solid #ddd;margin:8px 0;padding:12px">
+<a href="http://email.notifications.joinhandshake.com/c/eJx1kE1Pg0AQhn8N3CT7QRd64EChGLUavWjqpVnYAbawH91dUv33YvRmTOYweZJ53rwjCiK2LItlQRBBCCOMKSV4k-Ak3e0ajFNUsZKSfVlHKdImyF52PEijfXI2Uo9cCz_yCZLOqHgs8mzLcbsBlEHW8RS3PWOwqlm75VnLWTwXYwjWR7SMSLMOt_avaOXCXPVsuPDrTjcpzjHLI9oEM4GOaE0XsPUR4wuxt-3wVrnnB6hZn8My-ux4qGa2v74Oh-qC7u79-f14Uz41jy8RYUtQJ28W18Fq-ekD7pcrEHJRKwfF5fwLO64sl8N3qDU-SD34E3xY6UCc_KIUd5-xK87Q9wkXMC26leunpADe8sklxg1xKP67_AJTcH-h" style="color:#254fa5;font-weight:inherit;display:inline-block">Applications Package (PDF File)</a>
+<div class="size" style="display:inline-block;text-align:right;float:right">
+1.92 MB
+</div>
+</div>
+</div>
+</div>
+<h2 style="font-weight:700;word-break:break-word;font-size:39px;line-height:44px">
+Remote Teaching Assistant Summary
+</h2>
+<div class="posting-tile" style="background-color:#f7f9fa;border-radius:4px;border:1px solid #ddd;margin-bottom:12px;padding:18px">
+<div>
+University of Texas at Arlington
+</div>
+<div class="application-packages" style="font-size:11px;margin:8px 12px 0">
+No students from this school applied to this position.
+</div>
+</div>
+<p style="font-size:18px;line-height:28px">
+Thank you,
+<br>
+The Handshake Team
+</p>
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td class="email-footer" style="padding-top:16px">
+<hr class="divider" style="display:block;height:0;width:100%;border:0;border-top:1px solid #e0e0e0;margin:8px 0">
+<p class="muted extra-small" style="font-size:18px;line-height:28px;color:#7a7a7a;font-size:14px;line-height:20px">
+If you'd no longer like to receive emails like this you can
+<a href="http://email.notifications.joinhandshake.com/c/eJx1j8luhDAQRL_GHC0vLJkDh5kh_AZq7AZ6wItsIyV_H6LkFkWq05Nelcr2yt7arqJeCSWEFFJqrWTDJa8fj1HKWjzbu1bv94HVwodCCxkoFHzmr0B-A2_zBjtyE1y19VY0gLCg6WrdzrKZbWPs3FhzQ7F0b1Ad_VZKzEzfmRqvQIx_iy5-hJU80-NZ3JTDmQwyPfzsY2Kq_eYOLZ3u4uiAjl9owEWg9XKHGHIhv-YJPyIltFM-nYP0WaX-hcvCweJ--pmuZ2QRZtgTD2mtSv-f-QUg4mes" style="color:#254fa5;font-weight:inherit">sign in</a>
+to manage your notification preferences or
+<a href="http://email.notifications.joinhandshake.com/u/eJwNzEkOgyAUANDTlCX5gHVYsKgdrmE-k36NYACT9vZ1__Kclm5oO0ZaggQQIIRSUty54M04foRo4Nk-lHw_XrcGYqoUyGKlFAtfE8UFoysLbp7btLNFB2WxBxhC7zy2suulMoO1wjr0ThrPsl59CByd385o6Erpkga3zFOeWdVHKpXiXCb_PSh7N5Vz3zH__q1GNyU" style="color:#254fa5;font-weight:inherit">unsubscribe</a>.
+</p>
+<img alt="Handshake" class="handshake-logo" src="https://handshake-production-cdn.joinhandshake.com/static_assets/hs-logo-black-lg.png" style="margin-top:16px;width: 159px; height: 24px" title="Handshake">
+<p class="muted extra-small" style="font-size:18px;line-height:28px;color:#7a7a7a;font-size:14px;line-height:20px">P.O. Box 40770, San Francisco, CA 94140</p>
+
+</td>
+</tr>
+</table>
+<img width="1px" height="1px" alt="" src="http://email.notifications.joinhandshake.com/o/eJwNzEkOgyAUANDTlCX5gHVYsKgdrmE-k36NYACT9vZ1__Kclm5oO0ZaggQQIIRSUty54M04foRo4Nk-lHw_XrcGYqoUyGKlFAtfE8UFoysLbp7btLNFB2WxBxhC7zy2suulMoO1wjr0ThrPsl59CByd385o6Erpkga3zFOeWdVHKpXiXCb_PSh7N5Vz3zH__q1GNyU"></body>
+</html>
+
+--4445e4b559cb416ba67d340595832711--

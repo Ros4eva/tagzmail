@@ -1,0 +1,96 @@
+Return-Path: <careercenter@ohlone.edu>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id d7vs329vk3sgmq8q61tqrnlmgtj2ldpf185ph9g1
+ for jeff.adekunbi@ideabakr.org;
+ Tue, 04 Feb 2020 22:30:07 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: permerror (spfCheck: Error in processing SPF Record) client-ip=34.194.230.233; envelope-from=careercenter@ohlone.edu; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=permerror (spfCheck: Error in processing SPF Record) client-ip=34.194.230.233; envelope-from=careercenter@ohlone.edu; helo=us-east-mail1.symplicity.com;
+ dmarc=temperror header.from=ohlone.edu;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFVis2NnNxUndqTS9xZWVQaHdIcnRFOTlKZnJpQWQ1TUoxQzlWM05LYVFtekRXTWhpRDNuMS9BSmVWODU0d2JZOW9vMHlBaXNoeDlFYlVobUZPSDNyKzdpSHBsL2JjazREQ0YxY0NzbTA2Y0lSeGxLc2pkSkRnMlJ1d1JUdldpL01nYXhvem1POHdzaW5iRjU5Mk9HL2hrWGJpOU51dkpYM0dXZ1VvMjJ0UXI2b3NBNXY0RVpYRW5nMEUyaFpRSCtkZWh5cnJzT0xjcDh3NVlLSU5USUlGZE5hYTJsV2JYYTNOOThJOFN3QmlmL2hyS3RXQmJKOElNd0dxM2QrcG1saCtEeC9sK1VIbG1iY2JuVmdhSW1GOEt2UHpGVENxL2hwNXJTOWM2YkxTeE5jSStxZ0M3VE9CU05SbzM2M3dCaDY4YUxPcEhmRENjZi9UNDFQMjdSa2s=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=gYOPYfio3VjqbWsvVAgVzEsN6zDc9okzujMRltJBvaTcboVWFugMghfgTpOomUqbL/lo/FHsbFNtgHtktrE5aIAaZt2ZH/+rLBv+oDSfnJjH77WbQSCBoNWccAamMHOAh5C0vPuM308fkE3+xXOyh05z7S5valjmEQ1U5BIq5VE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580855408; v=1; bh=b/2VVJxDDr0nu71R9GIVNZTgTr7uhqw8xnIwdSGHeJA=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from ip-172-30-12-72 (7gp5 [172.30.12.72])
+	by mail.symplicity.com (Postfix) with ESMTP id F2274120075
+	for <jeff.adekunbi@ideabakr.org>; Tue,  4 Feb 2020 22:30:06 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com F2274120075
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_69923c9cb195749f59d6925ff7025ffb"
+From: careercenter@ohlone.edu
+To: jeff.adekunbi@ideabakr.org
+Subject: Panel Invitation - Ohlone Business Summit 2020  
+Message-ID: <012ba9c62cb34af90529c66faa371e42@ohlone-csm.symplicity.com>
+Date: Tue, 04 Feb 2020 14:30:06 -0800
+
+--=_69923c9cb195749f59d6925ff7025ffb
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Dear Jeff,
+
+Associated Students of Ohlone College (ASOC) is happy to announce the organ=
+ization of the first-ever Ohlone Business Summit. The summit will be held o=
+n February 21, from 4:30 pm to 9:30 pm at Ohlone College=E2=80=99s Newark C=
+enter (39399 Cherry Street. Newark, CA 95368) in room NC 2100 from 4:30 pm-=
+ 9:30 pm. For this summit, our goal is for the students to gain in-depth kn=
+owledge about business, address questions regarding work experience in the =
+industry, and to help them take a step towards their career paths through l=
+istening and interacting with great industry professionals and experts in t=
+he field. Moreover, this is an opportunity for all students to find out wha=
+t they can achieve with a degree in the field of business. We have three ke=
+ynote speakers and have planned workshops and a panel discussion. This is w=
+hy we are writing to you.=20
+
+We would like to invite volunteer consultants and employers in the fields o=
+f Entrepreneurship, Generalist Business, Finance, and Marketing to be on th=
+e Business Summit panel. We believe that this summit will consist of studen=
+ts who are highly knowledgeable of the business courses they took at Ohlone=
+ and would be a great opportunity for the company to discuss job and intern=
+ship opportunities. The company will have the benefit of branding/marketing=
+ themselves at this event. If you are interested in being a panelist, could=
+ you please contact Lea Whitmer at lwitmer@ohlone.edu.=20
+
+=0A=0APowered By Symplicity  
+--=_69923c9cb195749f59d6925ff7025ffb
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+=0A<head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8"></head><p><span style=3D"font-family: arial, helvetica, sans-serif; =
+font-size: 12pt;">Dear Jeff,</span></p>
+<p data-event-added=3D"1"><span style=3D"font-family: arial, helvetica, san=
+s-serif; font-size: 12pt;">Associated Students of Ohlone College (ASOC) is =
+happy to announce the organization of the=C2=A0first-ever <strong>Ohlone Bu=
+siness Summit.</strong> The summit will be held on <strong>February 21, fro=
+m 4:30 pm to 9:30 pm</strong> at <strong>Ohlone College=E2=80=99s Newark Ce=
+nter (<span class=3D"_2HwZTce1zKwQJyzgqXpmAy" tabindex=3D"0" data-markjs=3D=
+"true">39399 Cherry Street. Newark, CA 95368</span>) in room NC 2100 from</=
+strong> <strong>4:30 pm- 9:30 pm.</strong> For this summit,=C2=A0our goal i=
+s for the students to gain in-depth knowledge about business, address quest=
+ions regarding work experience in the industry, and to help them take a ste=
+p towards their career paths through listening and interacting with great i=
+ndustry professionals and experts in the field.=C2=A0Moreover, this is an o=
+pportunity for all students to find out what they can achieve with a degree=
+ in the field of business. We have three keynote speakers and have planned =
+workshops and a panel discussion. This is why we are writing to you.=C2=A0<=
+/span></p>
+<p><span style=3D"font-family: arial, helvetica, sans-serif; font-size: 12p=
+t;">We would like to invite volunteer=C2=A0consultants and employers in the=
+ fields of Entrepreneurship, Generalist Business, Finance, and Marketing to=
+ be on the Business Summit panel. We believe that this summit will consist =
+of students who are highly knowledgeable of the business courses they took =
+at Ohlone=C2=A0and=C2=A0would be a great opportunity for the company to dis=
+cuss job and internship opportunities. The company will have the benefit of=
+ branding/marketing themselves at this event. If you are interested in bein=
+g a panelist, could you=C2=A0please contact Lea Whitmer at=C2=A0lwitmer@ohl=
+one.edu.=C2=A0</span></p>
+<p>=C2=A0</p><br><a href=3D"https://ohlone-csm.symplicity.com/track/5b2dced=
+6fa526f6b1a8ad45a148409f0/771947760/realurl=3Dhttps://symplicity.com/career=
+_services_manager_csm" target=3D"_blank" title=3D"Powered By Symplicity"><i=
+mg src=3D"http://static.symplicity.com/images/powered-by-symplicity.png"></=
+a>  <img src=3D"https://ohlone-csm.symplicity.com/track/5b2dced6fa526f6b1a8=
+ad45a148409f0/771947760/email.gif" border=3D"0" alt=3D"">=0A
+--=_69923c9cb195749f59d6925ff7025ffb--
+

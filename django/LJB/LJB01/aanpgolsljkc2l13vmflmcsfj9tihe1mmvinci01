@@ -1,0 +1,163 @@
+Return-Path: <bounce+0f68bf.665b17-josephs=linuxjobber.com@mg.fstonetechnologies.com>
+Received: from m37-99.mailgun.net (m37-99.mailgun.net [69.72.37.99])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id aanpgolsljkc2l13vmflmcsfj9tihe1mmvinci01
+ for josephs@linuxjobber.com;
+ Thu, 19 Dec 2019 17:47:30 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.fstonetechnologies.com designates 69.72.37.99 as permitted sender) client-ip=69.72.37.99; envelope-from=bounce+0f68bf.665b17-josephs=linuxjobber.com@mg.fstonetechnologies.com; helo=m37-99.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.fstonetechnologies.com designates 69.72.37.99 as permitted sender) client-ip=69.72.37.99; envelope-from=bounce+0f68bf.665b17-josephs=linuxjobber.com@mg.fstonetechnologies.com; helo=m37-99.mailgun.net;
+ dkim=pass header.i=@mg.fstonetechnologies.com;
+ dmarc=none header.from=fstonetechnologies.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIaFFtcTJxRTc5RXR4UDkvM1g2S3RsRm1WanE0TUJ1YWxMWkJvaG9uS1NuZ2tMMXM3N1ZoMEZaQ3RsYkt5QnR2V01IUUJaZVVWS09vK3k0a2ZOZ0YzRTlTblBYeEltTWhyZmNIeG03R3FqYnFuVXo2YThhV1pTVzFnWEVLQVlpemJVK3Q2WU82RzBMeXBiTzBNR3plVkJ0ZWkwMEFaeS9veEhxZ1pBM3F1VGppNmJZOEpBKzJXUldhK2o1dFVmTnNwMG9XUjgzdko0TVA1dGUxajQvQUhrenh2aUl3TWZzamZhVXFwN0p4WWoxbERET2NJbmFJUCtDdXdBRndFUVo3WEVlbUgrMXA4cGtibzZselV0YnlGUm9Yb1Q1MHFWWHZla29obUNLOGxYZFV0N2pKdkZLMmU1V0dFUzZ3UjVyMnRBVlErOGk1ck5BRllRUjFOVk15MUJhVXdjaG4xRFV1c05TZWtjbDFueWRRPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=fb3JAL9gi+zvXQWTEamWm6R8GTX0CVI2EYijUVZH8bTANfP6AkOXOESN3Z9tHWaXCfx9vzIMpK73WO4UEXkeQZIeWKgDhwg1MtqgL3FYRSpj6n59kBeKsEdE3bkJR97o0gMatJNaJU70sKzAQ5aygsSlpPkI5JDUshQ1eRzXG5M=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576777652; v=1; bh=NrY4sYIZeE8Fc9rNp5JBL1P1GTYe0yCpg5hV/YrHbg8=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.fstonetechnologies.com;
+ q=dns/txt; s=pic; t=1576777651; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=zS8o2R2UiZXUbSSbrsar7eDOKQiGz7gUUceI84AEUSY=; b=4MzAxcCTipEl2bP13iZbxbqJQuHopE/KFnwJKfzJoatelJkUT2xZy8rovlV2guzcO30O33Tn
+ 5iwm4ln12PiM+4mey7E+l7i7qMjx70e8+HeJALmOeW+r87EuVCLGSJLT6aQCdIkhUK+bKEiO
+ DCX54fgHW+54TYiIUbIgXWoAIpo=
+X-Mailgun-Sending-Ip: 69.72.37.99
+X-Mailgun-Sid: WyIzNzA2OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI2NjViMTciXQ==
+X-Mailgun-Batch-Id: 5dfbb7ad2be6303095f139a4
+Received: by luna.mailgun.net with HTTP; Thu, 19 Dec 2019 17:47:25 +0000
+Date: Thu, 19 Dec 2019 17:47:25 +0000
+Sender: vivek=fstonetechnologies.com@mg.fstonetechnologies.com
+Message-Id: <20191219174725.1.1C92C45C182DCE65@mg.fstonetechnologies.com>
+X-Mailgun-Variables: {"ref_id": "8526"}
+Reply-To: vivek@fstonetechnologies.com
+To: josephs@linuxjobber.com
+From: Vivek Kumar <vivek@fstonetechnologies.com>
+Subject: Opening for : Core Java Developer ; BOSTON ; MA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"color:black">Hi,<br />
+<br />
+I saw your resume on a job site. We are looking for <b>Core Java Developer<=
+/b></span><b><span lang=3D"EN-IN" style=3D"color:black">.</span></b> <span =
+style=3D"color:black">Please call/email me if you are interested in applyin=
+g for this position.<br />
+OR<br />
+I will appreciate if you can forward this email to anyone who might be look=
+ing out for a change in same domain<br />
+<br />
+<b>Job Title:&nbsp;Core Java Developer</b></span></span></span><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f"><b><span style=3D"color:black">Job Location:&nbsp;BOSTON ; MA<br />
+Duration:&nbsp;Contract 12+ Months</span></b></span></span></p>
+
+<p style=3D"margin-bottom:16px"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span style=3D"background:yellow"><s=
+pan style=3D"color:black">Job Description:</span></span></b></span></span><=
+/p>
+
+<p style=3D"margin-bottom:16px"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"color:black">&bull; Stro=
+ng hands on Java 1.6 and above. Preferably java 1.8.<br />
+&bull; Deep understanding of OOPS and basic design patterns. Should be able=
+ to demonstrate with examples.<br />
+&bull; Hands on knowledge with cloud architectures preferably AWS is a plus=
+=2E<br />
+&bull; Good understanding of Spring and spring boot.<br />
+&bull; Understanding on Micro services architecture, implementation and bes=
+t practices<br />
+&bull; Agile development methodology<br />
+Nice to have Skills:<br />
+&bull; TDD experience is required with at least one working project<br />
+&bull; Experience in MongoDB, Docker, ECS, GraphQL and Python is nice to ha=
+ve.<br />
+&bull; Should have understanding of coding best practices and should adhere=
+ to project defined coding styles.</span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-family:"Garamond","serif""><span style=3D"colo=
+r:#1f497d">Thanks &nbsp;Regards,</span></span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-family:"Garamond","serif""><span style=3D"colo=
+r:#1f497d">Vivek Kumar</span></span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-family:"Garamond","serif""><span style=3D"colo=
+r:#1f497d">Sr. Executive- Talent Acquisition </span></span></b></span></spa=
+n></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-family:"Garamond","serif""><span style=3D"colo=
+r:#1f497d">FSTONE Technologies</span></span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Garamond=
+","serif""><span style=3D"color:#8064a2">3084, Congressional Office Park, R=
+oute &ndash; 27, Suite # 3, Kendall Park, New Jersey &ndash; 08824 |<br />
+Phone: (732) 504-6942 | <b>Cell #</b>|</span></span></span><b> </b><span st=
+yle=3D"font-size:10.0pt"><span style=3D"font-family:"Garamond","serif""><sp=
+an style=3D"color:#8064a2">Fax: (732) 398-0506 | </span></span></span><span=
+ style=3D"font-size:12.0pt"><span style=3D"font-family:"Times New Roman","s=
+erif""><span style=3D"color:black"><a href=3D"http://clicks.mg.fstonetechno=
+logies.com/c/eJwVjU0OgyAUhE8juxJ58iMLFg1tr9FEfAhWxQiNPX4xmdlMvpkZjZRiYIpEAy=
+3TDKoVVyAoo8xqsFxY1sPDPqVoeLtO1OeSNizowpaWNEXM1KWVBKOQM6254g4Ghq5zXoADjwIke=
+Nl3ZDGhlL3p7g28qs7zpD4eudwKfq6NmpED_TuOpq8lcpg5ZdxDrsdL3L6_OQ0DHhf6B4WiN24"=
+ style=3D"color:#0563c1; text-decoration:underline"><span style=3D"font-siz=
+e:10.0pt"><span style=3D"font-family:"Garamond","serif""><span style=3D"col=
+or:#8064a2">www.fstonetechnologies.com</span></span></span></a></span></spa=
+n></span><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Garam=
+ond","serif""><span style=3D"color:#8064a2"> | </span></span></span></span>=
+</span></p>
+</div>
+<br />
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://clicks.mg.fstonetechnolog=
+ies.com/c/eJwVUNtqg0AU_Bp9lD173wcfGrUtBQMpvaR5KbvrMZoYFVdp06-vwhmGGYaBOVUqp=
+XCg4jalBAzQFYorKhJIIDM04yIDTfOskCLi5HZO6jAPPc7om37ohnOLIfHDLW5Sr7UCyVFoW1U1=
+oARhayPQKcGVJVXcpc08jyFiDxF9XG-2HfZz006YeGxH221Fq78EnMLGfVhc8FPrcFWKoKwZQ6O=
+lksw7LlQFFJnmzHpJa-O1UE6ZLcqd0ByoodZqZZR1hBNHFHjjgaBxXhDlCVmjvuh-yqfXrxOM9_=
+KzuH9cx9PhuM8Pxysr33bPh-79_nHcLbY45SXbL74QUOXNi_0jEcvjCevvtkq1oDKe0ssQcGzC-=
+qeu7Zffy-AcTtuof59TbGA" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.fstonete=
+chnologies.com/o/eJwVzEEOgyAQAMDXlCNhFxbkwIn2HU0WV8VYacQmfX7tYa4zJu-JIaia0E=
+AEvAQXkDRoyBGzowwD3vPD082Z16ynfrZdTinL3rY2V-m6tJdaEjGHIQC5gmyCKRZstN66ACNyF=
+FaHTM86poHQqyOtrct76Ve61f3zXRuzHP_qB5gmK2U"></body>
+</html>

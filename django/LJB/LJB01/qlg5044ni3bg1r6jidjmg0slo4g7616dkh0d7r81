@@ -1,0 +1,343 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m40-232.mailgun.net (m40-232.mailgun.net [69.72.40.232])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id qlg5044ni3bg1r6jidjmg0slo4g7616dkh0d7r81
+ for josephs@linuxjobber.com;
+ Thu, 30 Jan 2020 19:51:49 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.232 as permitted sender) client-ip=69.72.40.232; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-232.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.232 as permitted sender) client-ip=69.72.40.232; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-232.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIWWt0THBjQTdlUVdmaDRZSXFpV1IwRDVYa0FvUWZ5djkxSDIxeGVHMmVQcnpjT1VmRjhhZGNCUzZYNnlIaHBOWWZxeU03RFV3S1hva3RMOTg2TTFYUW1MQlRVT0t3K2o2N1VYemVpN25KTSt1LzVlRUMzYkdHck5vODdSZXluY2cveVVIbE9kRFBWemM4Sld3NWExbFJvYTdOZ2xkKzBtbHl4ZXlBeXNQNEVhQzh1ckJwTW91dXlQNisxbUFveUlaQzgzQzNqODdLcW9DTUhwQzFGUXQxL3FrbzVLRlB0dnMvaFdWZy9NMUJ1Zjg2TWlHZ2cwTExMb2FyWkxBeDh5amN3ZlMyNmlPU1hXYVd5N1E0YU84dEs1NlBheU5ScWgxQ0RoaGhFWDdKSDJES0hieFovZno0aWtXR2ljNkFrU3U5cCtMMTVKVjkrZEQvU1cybjBRU2E=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=dm10VFaJq78G0zMc/AbFh9NWkOfXLBYCmLGxFxouVEX5LlHyybjv2QapccCixRKEqll1d3PtXno5oa7DDrNDLcU8lqVjeSe++tnEq7ET6V5EMaoPI422ADSfcOKTv05Q2II3MdABP4ej4gfGyFfHCBVO+PZCQ1axXng7Q3HL0yo=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580413914; v=1; bh=jvftNFJskP5TJHJbCpuZGXS3/OnjOJzeOr5rgFUEt/Y=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1580413914; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=PuZbnSlvDHgtwgEilvuUqYlOxMDE8lffD6yryVHjfzY=; b=G2tnuf9HKFxc2AaonfG5rwBsWmMX5xtJ1sMtuOGK8c3vmVO+Vi82spOrTUNAUByfOE91lkNl
+ ZC+KCXOB4zV3S1sMBWXnr0XIZnm5AxVOENuQpCyJhfjlVpRXLyQXD3WTh7KMgK5hz2UYYd1V
+ A+9sSv5bkxBWCMQCWOUugclA/1A=
+X-Mailgun-Sending-Ip: 69.72.40.232
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5e3333b8136fc29a5c795f85
+Received: by luna.mailgun.net with HTTP; Thu, 30 Jan 2020 19:51:20 +0000
+Date: Thu, 30 Jan 2020 19:51:20 +0000
+Message-Id: <20200130195120.1.BB060C58232C4911@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: sachin.kumar@tryfacta.ai
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Sachin Kumar <sachin.kumar@tryfacta.ai>
+Subject: Critical Requirement :: System Admin cum DevOps Engineer :: San
+ Jose, CA :: Contract
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-MY" style=3D"font-s=
+ize:10.0pt"><span style=3D"font-family:"Arial","sans-serif""><span style=3D=
+"color:black">Hello, </span></span></span></b></span></span></p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-MY" style=3D"font-s=
+ize:10.0pt"><span style=3D"font-family:"Arial","sans-serif""><span style=3D=
+"color:black">Kindly go through the below JD and let me know if you are int=
+erested for the same.</span></span></span></b></span></span></p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-MY" style=3D"font-s=
+ize:10.0pt"><span style=3D"font-family:"Arial","sans-serif""><span style=3D=
+"color:black">Kindly share your most updated resume and let me know your ex=
+pected pay rate !!</span></span></span></b></span></span></p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-MY" style=3D"font-s=
+ize:10.0pt"><span style=3D"font-family:"Arial","sans-serif""><span style=3D=
+"color:black">Role: </span></span></span></b><b><span style=3D"font-size:10=
+=2E0pt"><span style=3D"font-family:"Arial=
+","sans-serif""><span style=3D"color=
+:black">System Admin cum DevOps Engineer</span></span></span></b></span></s=
+pan></p>
+
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-MY" style=3D"font-s=
+ize:10.0pt"><span style=3D"font-family:"Arial","sans-serif""><span style=3D=
+"color:black">Location: </span></span></span></b><b><span style=3D"font-siz=
+e:10.0pt"><span style=3D"font-family:"Arial","sans-serif""><span style=3D"c=
+olor:black">San Jose, CA.</span></span></span></b></span></span></p>
+
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-MY" style=3D"font-s=
+ize:10.0pt"><span style=3D"background:white"><span style=3D"font-family:"Ar=
+ial","sans-serif""><span style=3D"color:black">Contract</span></span></span=
+></span></b></span></span></p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-MY" style=3D"font-s=
+ize:10.0pt"><span style=3D"background:white"><span style=3D"font-family:"Ar=
+ial","sans-serif""><span style=3D"color:black">Job Description:</span></spa=
+n></span></span></b></span></span></p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p style=3D"text-align:justify"><span style=3D"font-size:11pt"><span style=
+=3D"font-family:Calibri,sans-serif"><span style=3D"background:yellow"><span=
+ style=3D"color:black">System Admin cum Dev Ops Engineer -&nbsp; with scrip=
+ting/configuration management background</span></span></span></span></p>
+
+<p style=3D"text-align:justify">&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"border:none windowtext 1.0pt; font-size:10.0pt; pad=
+ding:0in"><span style=3D"background:white"><span style=3D"font-family:"Aria=
+l","sans-serif""><span style=3D"color:#222222">Duties:</span></span></span>=
+</span></b><br />
+<span style=3D"border:none windowtext 1.0pt; font-size:10.0pt; padding:0in"=
+><span style=3D"background:white"><span style=3D"font-family:"Arial","sans-=
+serif""><span style=3D"color:#222222"><span style=3D"font-variant-ligatures=
+:normal; text-align:start; -webkit-text-stroke-width:0px"><span style=3D"fo=
+nt-variant-caps:normal"><span style=3D"font-variant-numeric:inherit"><span =
+style=3D"font-variant-east-asian:inherit"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"orphans:2"><span sty=
+le=3D"widows:2"><span style=3D"text-decoration-style:initial"><span style=
+=3D"text-decoration-color:initial"><span style=3D"word-spacing:0px"><span s=
+tyle=3D"color:inherit">Investigate and resolve technical issues</span><br /=
+>
+<span style=3D"color:inherit">Troubleshooting Linux: (Ubuntu, CentOS), Apac=
+he etc.</span><br />
+<span style=3D"color:inherit">Deploy updates and fixes</span><br />
+<span style=3D"color:inherit">Develop custom tools in Puppet, Python and Ba=
+sh to automate the UNIX infrastructure</span><br />
+<span style=3D"color:inherit">Install, configure and maintain Debian and as=
+sociated applications in an automated Puppet environment</span><br />
+<span style=3D"color:inherit">Perform standard administration tasks (packag=
+ing, OS installs, patch management)</span><br />
+<span style=3D"color:inherit">Perform root cause analysis for production er=
+rors</span><br />
+<br />
+<b><span style=3D"color:inherit">Minimum Requirements:</span></b><br />
+<span style=3D"color:inherit">5-8 years of network administration(implement=
+ation, troubleshooting, firewalls, VPNs, access control lists, etc.).</span=
+><br />
+<span style=3D"color:inherit">5-8 years of Linux system administration expe=
+rience (Debian).</span><br />
+<span style=3D"color:inherit">4+ years of experience in scripting with Pyth=
+on and automation tools.</span><br />
+<span style=3D"color:inherit">4 + years of experience in using configuratio=
+n management and deployment tools such as Puppet or Chef and Linux scriptin=
+g.</span><br />
+<span style=3D"color:inherit">4 + years of experience in the configuration =
+and maintenance of common applications such as Apache, Tomcat, LDAP NFS, DH=
+CP and DNS</span><br />
+<span style=3D"color:inherit">Expert knowledge of TCP/IP and IPv6</span><br=
+ />
+<span style=3D"color:inherit">Expereince in troubleshooting firewall infras=
+tructure problems, security issues etc.</span><br />
+<span style=3D"color:inherit">Site Reliability Engineer (SRE) experience</s=
+pan><br />
+<br />
+<br />
+<b><span style=3D"color:inherit">Preferred skills:</span></b><br />
+<span style=3D"color:inherit">Needs to be highly motivated to learn</span><=
+br />
+<span style=3D"color:inherit">Demonstrated ability to deploy complicated in=
+tranet-based web applications from the ground up.</span><br />
+<span style=3D"color:inherit">A proven track record of developing and imple=
+menting IT strategy and plans</span><br />
+<span style=3D"color:inherit">System administration and IT certifications i=
+n Linux, or other network related fields are a plus</span><br />
+<span style=3D"color:inherit">Shell scripting knowledge is a plus</span><br=
+ />
+<span style=3D"color:inherit">Knowledge of cloud technology is a plus</span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:yellow">Full Name:</span></b></span></sp=
+an></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:yellow">Current Location:</span></b></sp=
+an></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:yellow">Hourly rate on C2C/W2:</span></b=
+></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:yellow">Work Authorization:</span></b></=
+span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:yellow">Earliest Available date to start=
+:</span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:yellow">Date and times available to inte=
+rview:</span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:yellow">Contact number:</span></b></span=
+></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div>&nbsp;</div>
+--
+
+<div class=3D"gmail_signature" data-smartmail=3D"gmail_signature" dir=3D"lt=
+r">
+<div dir=3D"ltr">--
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<p dir=3D"ltr"><span style=3D"line-height:1.38"><span style=3D"font-size:10=
+pt"><span style=3D"font-family:Arial"><span style=3D"color:#000000"><span s=
+tyle=3D"font-weight:700"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"white-space:pre-wrap">Thanks & Regards,</span></span></span></span></s=
+pan></span></span></p>
+
+<p dir=3D"ltr">&nbsp;</p>
+
+<div dir=3D"ltr">
+<table style=3D"border:2.25pt solid #01b5f2; border-collapse:collapse">
+	<colgroup>
+		<col width=3D"227" />
+		<col width=3D"397" />
+	</colgroup>
+	<tbody>
+		<tr style=3D"height:0pt">
+			<td style=3D"border-right:2.25pt solid #01b5f2; vertical-align:top; padd=
+ing:5pt">
+			<p dir=3D"ltr"><span style=3D"line-height:1.2"><span style=3D"font-size:=
+11pt"><span style=3D"font-family:Arial"><span style=3D"color:#000000"><span=
+ style=3D"vertical-align:baseline"><span style=3D"white-space:pre-wrap"><im=
+g src=3D"https://lh3.googleusercontent.com/Mo5BsFFUsUurl8uLL0ptQosHk_Ext_OP=
+0YoVsezlCd7pSov6UyHj08TI0g_GYLyPmJcoyrsLimqQpcDO6e1pMC4eMeRR7nIo4QMCgFJHMxx=
+3HKLnmLxd0Z2JR4aftOeYr65nEEhk" style=3D"border:none; width:209px; height:59=
+px" /></span></span></span></span></span></span></p>
+			</td>
+			<td style=3D"border-left:2.25pt solid #01b5f2; vertical-align:top; paddi=
+ng:5pt">
+			<p><b><span style=3D"font-size:11pt"><span style=3D"font-family:Arial,sa=
+ns-serif"><span style=3D"color:#01b5f2">Sachin Kumar</span></span></span></=
+b></p>
+
+			<p><b><span style=3D"font-size:9pt"><span style=3D"font-family:Arial,san=
+s-serif"><span style=3D"color:#1f497d">Talent Acquisition Associate</span><=
+/span></span></b>&nbsp;&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<p><b><span style=3D"font-size:10pt"><span style=3D"font-family:Arial,sa=
+ns-serif"><span style=3D"color:#01b5f2">TRYFACTA, INC.</span></span></span>=
+</b></p>
+
+			<p><span style=3D"font-size:8pt"><span style=3D"font-family:Arial,sans-s=
+erif"><span style=3D"color:#1f497d">+1 (732) 398-6491 <b>Direct</b></span><=
+/span></span></p>
+
+			<p>&nbsp;</p>
+
+			<p><u><span style=3D"font-size:8pt"><span style=3D"font-family:Arial,san=
+s-serif"><span style=3D"color:#1155cc">sachin.kumar<a href=3D"mailto:adesh.=
+tyagi@tryfacta.ai" target=3D"_blank">@tryfacta.ai</a></span></span></span><=
+/u></p>
+
+			<p dir=3D"ltr">&nbsp;</p>
+
+			<p><span style=3D"font-size:8pt"><span style=3D"font-family:Arial,sans-s=
+erif"><span style=3D"color:#1155cc"><a href=3D"https://www.tryfacta.ai/" ta=
+rget=3D"_blank">https://www.tryfacta.ai/</a></span></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.tryfacta.ai/u=
+sers/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/0af3e4cf0=
+4067b6fd5abb18b7d6140a355a2ef74/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZ=
+DM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>=
+click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg1.ceipalm=
+m.com/o/eJwVzEEOgyAQAMDXlCPZXRbEAxd9SCOyVIwUg2nS59fOAyYFIykaViUQEAAawNEigUY=
+9TeBgtp4MzTwiPhjqC_Uq5VyOWvXaqtoC58W6xQiufshE4pN37j7YZsgsoLrkZ0nBDcSqh71dcm=
+7XfR3l_fnuLUbp_-oH53En0Q"></body>
+</html>

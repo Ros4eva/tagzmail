@@ -1,0 +1,371 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m68-88.mailgun.net (m68-88.mailgun.net [166.78.68.88])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id hueqsud2fmmf4571u3s2mrhph5k29f3qj5gv5j01
+ for josephs@linuxjobber.com;
+ Wed, 05 Feb 2020 20:32:35 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 166.78.68.88 as permitted sender) client-ip=166.78.68.88; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m68-88.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 166.78.68.88 as permitted sender) client-ip=166.78.68.88; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m68-88.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIUE5sNitNRlVmV0UxWHk3eEVxYWRQOFlUQiszbHdRZWl4TjNtbTdQZGFMejB3bGx1RkFpL2dBMGcwcXNBYTQ5Y1RMZVAwR0U1SWU1ZTlQZTBoT3k0RnVTcHczMFlJVk5kaEQ4TGsveHBJVXpYcUp4RFAzNks0SWxBdjNYY2lrdDV5bnVjMHpVU3E2Nk0xN1JLb1N2MG5OVnltR2tTa0c3YTN4S0ZQcVgxdUNDM2U3dTQ5UE9FdlYzZGlJdC9RK3FLTFFlc1pkMm9QZ2k3ZThycmp1Umk5ZENySk5TS3pFSE5rNjZYNEJGZm90VEVpbzZ6Y1pqMU9qT0I0M0NPVGRXcS9UbTFnVXRDditBM0NMcXE1YlNMSURmVlE2VFFHRTdaTS9ualk5Rk12NVJ1ZUt3eEI2MDlET0QzMkxBL3Fpdm9MY3VUanJCbFhWYXh1MjBoNHlnb3NMOHdzMGpSOVBMMWxmUXBFWDVrYnlBPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=R5JbKaViQTfvbZ4kXCfZi1RVg4hnl6wLrUgLJ8bjvdCLo/K4I4M4322KCi1bK0BiKOCzTkmbksNZK8SSOy1Sk6pt1qYyeT3RScZ84JwKcmTG82+wsswG0sYVkkaosMfIIawEQL27+DSw0AxJ1etJm9fBTWNBP7A93o5sV5j8GHk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580934756; v=1; bh=bxLDwXcLmdAITdvpTC6/+3VLcqE9qyJBdCVwzVkHQHQ=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1580934755; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Date; bh=mKYp9CUUZGZb20gFVXwo9oAZNryxvIzS3kdxB4HUZPk=; b=tgfWYaGdN7uNqk/uWe/dX10oxe/Gq0dpSmsCcZkIwB666n9xIKgbEVqWNAG92kokilscMKCY
+ ERrQ0phW8WzhvINhFpWIxQbPceeIljaBCFwW+rkmSrVwFN4Ecqw6SGBPMS6ncUluDeYAq1W+
+ iOIR8s32A06pSnX5Uz3drwaF2E8=
+X-Mailgun-Sending-Ip: 166.78.68.88
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e3b265c2398035c24badbf3
+Received: by luna.mailgun.net with HTTP; Wed, 05 Feb 2020 20:32:28 +0000
+Date: Wed, 05 Feb 2020 20:32:28 +0000
+Message-Id: <20200205203228.1.1B9C59793F947CE0@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: Himanshu.s@e-solutionsinc.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Himanshu Srivastava <Himanshu.s@e-solutionsinc.com>
+Subject: Remote / Travel || Application Architect (AWS) 
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/524184=
+e7b0fc614eb2bf464c3d90159b5352b99a/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><strong><span style=3D"font-family:"Calibri",s=
+ans-serif"><span style=3D"color:black">Hi&nbsp;Joseph&nbsp;Showunmi&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; &nbsp;</span></span></strong></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"color:black">I hope you are doi=
+ng great today. </span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"color:black">Please find the be=
+low requirement for one of my client. If you feel interested, please reply =
+me back with updated resume and a good time to call you.</span></span></spa=
+n></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Full Legal Name=
+ :</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Current Locatio=
+n :</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Visa status:</s=
+pan></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Relocation :</s=
+pan></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Hourly Rate exp=
+ectation:</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Available to jo=
+in :</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Highest Educati=
+on / College/ Year :</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Employer detail=
+s :</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">LinkedIn :</spa=
+n></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Skype ID:</span=
+></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Availability fo=
+r Interview: </span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Availability to=
+ join:</span></b></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"border:none windowtext 1.0pt=
+; color:black; padding:0in">Job Title &nbsp;&nbsp;: </span><span style=3D"c=
+olor:black">Application Architect (AWS) </span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"border:none windowtext 1.0pt=
+; color:black; padding:0in">Location &nbsp;&nbsp;: </span><span style=3D"co=
+lor:black">Remote / 50% Travel Required </span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"border:none windowtext 1.0pt=
+; color:black; padding:0in">Job Type &nbsp;: Full Time</span></b></span></s=
+pan></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"bac=
+kground:white"><span style=3D"font-family:Calibri,sans-serif"><b><span lang=
+=3D"EN-IN" style=3D"color:black">Job Description :</span></b></span></span>=
+</span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:white"><span style=3D"color:black">Manda=
+tory Skills &ndash; </span></span></b></span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"color:black">10 years of overall IT experience includ=
+ing 3 years of Application Architecture experience </span></span></span></s=
+pan></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif">2+ years of hands on experience with Amazon Web Services (AWS):</spa=
+n></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif">Expert level experience and knowledge in Java and Java EE</span></sp=
+an></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Experie=
+nce in cloud assessment and migrating enterprise application(s) to the Clou=
+d and</span></span></span></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Experie=
+nce in building, designing and architecting Cloud native applications</span=
+></span></span></span></span></span></li>
+</ul>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&nbsp;</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"background:white"><span style=3D"color:black">Addit=
+ional Requirement</span></span></b></span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Ability=
+ to do performance analysis and tuning of the Java EE/.NET application</spa=
+n></span></span></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Deep un=
+derstanding of data modelling/UML, Architecture and Design Patterns </span>=
+</span></span></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Expert =
+knowledge of open source web frameworks and databases</span></span></span><=
+/span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Hands o=
+n knowledge of Development and Test processes including agile methodologies=
+</span></span></span></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Good un=
+derstanding of application level security mechanisms and at least basic lev=
+el understanding of network security</span></span></span></span></span></sp=
+an></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Ability=
+ to engage with Sales and customer and drive engagement from technical stan=
+dpoint</span></span></span></span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Excelle=
+nt written and verbal communication skills</span></span></span></span></spa=
+n></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Willing=
+ness to venture into new technical areas, explore and come out with technic=
+al solutions</span></span></span></span></span></span></li>
+</ul>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"tab-stops:list .5in"><sp=
+an style=3D"vertical-align:middle"><span style=3D"font-family:Calibri,sans-=
+serif"><span style=3D"background:white"><span style=3D"color:black">Some pr=
+e-sales experience is desirable</span></span></span></span></span></span></=
+li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"b=
+ackground:white"><span style=3D"tab-stops:list .5in"><span style=3D"font-fa=
+mily:Calibri,sans-serif"><span style=3D"background:white"><span style=3D"co=
+lor:black">Preferably certified on the applicable cloud provider; willingne=
+ss to take up further certifications when required.</span></span></span></s=
+pan></span></span></li>
+</ul>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"bac=
+kground:white"><span style=3D"font-family:Calibri,sans-serif"><b><span styl=
+e=3D"color:black">Thanks & Regards</span></b></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"bac=
+kground:white"><span style=3D"font-family:Calibri,sans-serif"><b><span styl=
+e=3D"color:black">Himanshu Srivastava </span></b></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"bac=
+kground:white"><span style=3D"font-family:Calibri,sans-serif"><span style=
+=3D"color:black">2 N. Market St., #400, San Jose, CA, 95113</span></span></=
+span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"bac=
+kground:white"><span style=3D"font-family:Calibri,sans-serif"><span style=
+=3D"color:black">Ph: 408-722-9421 | </span><a href=3D"mailto:himanshu.s@e-s=
+olutionsinc.com" style=3D"color:#0563c1; text-decoration:underline"><span s=
+tyle=3D"color:black">himanshu.s@e-solutionsinc.com</span></a><span style=3D=
+"color:black">&nbsp;| LinkedIn:&nbsp;</span><a href=3D"https://www.linkedin=
+=2Ecom/in/himanshu-s-5992b9141/" style=3D=
+"color:#0563c1; text-decoration:unde=
+rline"><span style=3D"color:black">https://www.linkedin.com/in/himanshu-s-5=
+992b9141/</span></a></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"bac=
+kground:white"><span style=3D"font-family:Calibri,sans-serif"><a href=3D"ht=
+tp://www.e-solutionsinc.com/" style=3D"color:#0563c1; text-decoration:under=
+line" target=3D"_blank"><span style=3D"color:black">www.e-solutionsinc.com<=
+/span></a><span style=3D"color:black">&nbsp;</span></span></span></span><im=
+g height=3D"41" src=3D"https://talenthirecls5.ceipal.com/articles/Y3NCR1ZHe=
+FpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoaUxDeWJkN2wwZWw5MkViMlE3TFVE=
+YVdNQWVBTEg0d3Y5cEpYUnNpKzJXTXJHWHFBd2FZWUxjckNocVZJSXVtNEVlTVFVdEkvbTZIeE4=
+1eFdjTi9BbWRzSW9TemhRcnM5d1lrdGpKOG1ROXNPM0V3YXFhYTA0R095Wm1HWW5tZHBZPQ=3D=
+=3D" width=3D"101" /></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">e-Solutions Inc=
+=2E is a 15 year old company having 15 Gl=
+obal Offices across 5 Nations and wi=
+th more than 1000+ IT & Software professionals. Working on cutting edge tec=
+hnologies, we are serving 100+ Fortune2000 companies globally. </span></b><=
+/span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"color:black">Dis=
+claimer:</span><b><span style=3D"color:black">E-Solutions Inc.</span></b><s=
+pan style=3D"color:black">&nbsp;provides equal employment opportunities (EE=
+O) to all employees and applicants for employment without regard to race, c=
+olor, religion, gender, sexual orientation, gender identity or expression, =
+national origin, age, disability, genetic information, marital status, amne=
+sty, or status as a covered veteran in accordance with applicable federal, =
+state and local laws. We especially invite women, minorities, veterans, and=
+ individuals with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span><=
+/span></span></p>
+
+<p class=3D"wordsection1"><img height=3D"23" src=3D"https://talenthirecls5.=
+ceipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDR=
+oZy80REJHT241N1dSS2NFN3FFYnVlRXY5T2NEQjdRMGVsL0JYSlhLTTlRcmJkVGMwTzBHaHBSN3=
+Rva2VxMWpTRUR3UmJSdC9wZHhOUzkvQ0dUN0JZaHFJa2JzeUNTOGNPN1MzVTVNTlRsRE85MmFiY=
+mpkZjNRdk5FWjFDOTBpeGJvPQ=3D=3D" width=3D"27" /><img height=3D"23" src=3D"h=
+ttps://talenthirecls5.ceipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyT=
+URXSlpKYUhINlA5bHlGcDRoaUoxekgwUnJITkhFV1EzTU9sTVlldUJIZExMb054dGJnSlRSbHln=
+TG1oR3ZBK1daMkRtOURrdklKcDJrSGJwZjRUaGxqeFEvRklXbXdFRWhoS0JlOWFKdThkMGtjKy9=
+BTGlSNW9oMEJzSFV4VlNZbTBWY09ULzJvTDN6N0JINVF3PQ=3D=3D" width=3D"52" /><span=
+ style=3D"font-size:10pt"><span style=3D"font-family:Calibri,sans-serif">&n=
+bsp;</span></span><img height=3D"23" src=3D"https://talenthirecls5.ceipal.c=
+om/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoaHdkQVJ=
+QVk05SWRKN1U3cktraUh0K09RWXcxZzBLbnhMMWVkeTRuVGZjQk01MkVQNUpSK24rNUJUcUE5al=
+NPMEF1M3IzTDVMUTNIZTlQY2w3OGR5aGhUdGlURW1xQ1Joam5LMHBjTjIrWWozRU11ZlJETENnQ=
+0hIcmdkUXIya05nPQ=3D=3D" width=3D"43" /><span style=3D"font-size:10pt"><spa=
+n style=3D"font-family:Calibri,sans-serif">&nbsp;</span></span><img height=
+=3D"23" src=3D"https://talenthirecls5.ceipal.com/articles/Y3NCR1ZHeFpPOXF3Z=
+U0reE5GMlFQeXdyTURXSlpKYUhINlA5bHlGcDRoamd6b0RpbzE5NGR0dFMzcmgzRlhTSEpuNkNk=
+Z0xOQnpXZDhQMnZGYnNDSlh2NHJEN0tlK0MyOHM5RENWdVpHSVYvcEttaEoxV0pOODhkRTlmVll=
+lNzA4V1RpV1FVRE40NTg3dnp1eitxS2dnQXRBVXZ6UDY4alYySU8za0JxZ3RzPQ=3D=3D" widt=
+h=3D"82" /><span style=3D"font-size:10pt"><span style=3D"font-family:Calibr=
+i,sans-serif">&nbsp;</span></span><img height=3D"19" src=3D"https://talenth=
+irecls5.ceipal.com/articles/Y3NCR1ZHeFpPOXF3ZU0reE5GMlFQeXdyTURXSlpKYUhINlA=
+5bHlGcDRoaHN0b240d2NFNldhSVZ1S0IwVVhjRzMvR0Q3YjVXL1ZvckJDd2d4QTdZYU9yeW9rRD=
+Q2KzhEaVVaeUJkYlVMUGdVMWZnSk1sZ0FneHJLTTI2U1hQWEZTNWZqdXlVaHdUZW1YWjZSdzBGQ=
+kZ4QU5Kb1RITDQ3Ri9FSE1xU0lZTEhZPQ=3D=3D" width=3D"80" /><span style=3D"font=
+-size:10pt"><span style=3D"font-family:Calibri,sans-serif">&nbsp;</span></s=
+pan></p>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEEOgyAQAMDXlFsJroC7By6a9htNWdeKUWmgJn1-bTLnGcPEaL1KAQyYkw=
+PTAqBudNPT4Kij9k62G27mYs320nKteT0-Ke817aw5b2oOEUcGIIlCFpmpMc8pojjwjM57UUWmR=
+xrD2aEqYclV3nM9wzXtx3fJMUr5Vz_yECqK"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

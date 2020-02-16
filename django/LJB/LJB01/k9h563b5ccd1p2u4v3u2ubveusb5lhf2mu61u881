@@ -1,0 +1,761 @@
+Return-Path: <bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com>
+Received: from xtrwpfpc.outbound-mail.sendgrid.net (xtrwpfpc.outbound-mail.sendgrid.net [167.89.63.60])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id k9h563b5ccd1p2u4v3u2ubveusb5lhf2mu61u881
+ for josephs@linuxjobber.com;
+ Tue, 04 Feb 2020 15:58:04 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of email.bullhornmail.com designates 167.89.63.60 as permitted sender) client-ip=167.89.63.60; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=xtrwpfpc.outbound-mail.sendgrid.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of email.bullhornmail.com designates 167.89.63.60 as permitted sender) client-ip=167.89.63.60; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=xtrwpfpc.outbound-mail.sendgrid.net;
+ dkim=pass header.i=@bullhornmail.com;
+ dmarc=none header.from=tanishasystems.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIK1RxT1JhUDZGTUhOMXpQL2F3ajFoVytBZXJMZXlTNWdpQzVxdHk1L0xvc290MmM3bXc3RVNkN2Z5aFRFQ3gzUTNuYTJUM3ljaXFmMitVT0N6VFUzemJEdmppTncyZjBRczZjWmJsbU1mU2dqcXFSaTVzZDI3QXRJOEJJY3FTbGZ2ZFovdWhoazVScitTVWF0eDVYZHlacjB2WXpxK2daL21ESmM4ZTVhRWFOckdiejhLU1FQNWs3Q0JjNkszUXB4c3pKTFhVckgwSkxUZUg4eFR5M3RrVkhOVTVFelZYVzliUDI4ZC9OcVlBOTJxTk90QnkzKy9Kc2NtNFZpdStlZjRGRjdWSk5nYjFLZ1hhcTVpc2ZHMFp2YWFoZFExdGJDVFVheDVnVjdOa3hoVjVFYWZlYmFwa3pIc2IyVStxMHJQeGFYNjZrUkp2UFBCMHFDV2Ura2dnOHl5VFduRE9YaXcvUktNQnRSSyt3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=MMI6Z75AGTKV4E/JTE+MYIni38t6eqt9+5YWbroM4g4tCIQFcNoKmgn/o68my3/bTLNiaIm0tiaXrO79djIXZHvRD8G5SwpTUbKC40qMaFFkPjMAWoZ7Du6mKT8Bl9qz2y6t0mgiIRhQ87DtrdLXgJUVEjYxVn/Dt2lxCSFAc/4=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580831885; v=1; bh=Mkf4qIgTNsLFgm+FySAHFiPCZ+3zEMy8Xlv+iy6S3mA=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=bullhornmail.com; h=from:to:subject:mime-version:content-type; 
+	s=m1; bh=KzdUHsl5luMlqfo8AjKfIdcDwUg60l5u4bQR3qfEJ58=; b=Kmvj8tF
+	E6UfDrCFU52oJ8nqq4qMu9u1gE1VRbVRF6iM4VD1UkeYXk0H3RByrVARpOWeHy4D
+	yAlYBOIGSoLXjI4bpxCGsxh02tOFdyuQ+1aSC2o3DsGvEQXPpG68+GE61kIY4GgI
+	NE5ycvcmESmfyxhqI5wyGVIJivMpwPqOG5HI=
+Received: by filter1551p1mdw1.sendgrid.net with SMTP id filter1551p1mdw1-19559-5E39948B-51
+        2020-02-04 15:58:03.950685977 +0000 UTC m=+175125.618598047
+Received: from outbound2.bullhorn.com (outbound2.bullhorn.com [52.129.17.4])
+	by ismtpd0029p1iad2.sendgrid.net (SG) with ESMTP id de8zHeAlS5mur4fQWMHsvA
+	for <josephs@linuxjobber.com>; Tue, 04 Feb 2020 15:58:03.832 +0000 (UTC)
+Received: from MassMailing (sl131app3.bos.bullhorn.com [10.77.2.62])
+	by outbound2.bullhorn.com (Postfix) with ESMTP id 371451C04C3
+	for <josephs@linuxjobber.com>; Tue,  4 Feb 2020 10:58:03 -0500 (EST)
+Received: from mail pickup service by MassMailing with Microsoft SMTPSVC;
+	 Tue, 4 Feb 2020 10:58:02 -0500
+Message-ID: <2123884227.1580831882895.JavaMail.cfservice@sl131app3>
+From: Wipro Team <wiproteam1@tanishasystems.com>
+To: josephs@linuxjobber.com
+Subject: Urgent Requirement - OIM / OIG Engineer at Richfield /MN
+Mime-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_397244_956392979.1580831882891"
+X-Priority: 1
+X-Charset: UTF-8
+X-messageUUID: 10EC3E8B-DE40-C9C1-2B60C215D49937B8
+X-OriginalArrivalTime: 04 Feb 2020 15:58:02.0906 (UTC) FILETIME=[E18BDFA0:01D5DB73]
+Date: Tue, 04 Feb 2020 15:58:03 +0000 (UTC)
+X-SG-EID: 0yz/L0x4SOtxmT5Q2ZIaRuB3YhbCNPbHhve+IF+xP0r0xqnPuyY1U6X2z+tilPgCf1eqiNEROzeNS3
+ Xj3rlGjw5/K78K1brkS5gdv+UMoi40iL9zz5Tr4pFLZoALQye7F56dXX36xXTh/r0x6UsAOtRnx5Mf
+ yZ/DuBYFca8MrAhFpq5ieYAoFtcS0kGHpOIk/JeazIBaCIOVW2IwolthtommkKlihAPjvUyvy260fY
+ k=
+
+------=_Part_397244_956392979.1580831882891
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_397245_181700258.1580831882891"
+
+------=_Part_397245_181700258.1580831882891
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+
+Greetings,
+
+
+
+My name is Rajat Sharma
+ from Tanisha Systems
+. I saw your profile in one the job boards and feel that your skills and professional experience would be a good fit for a position with one of our premier clients. Please review the job description below. if you are interested in this position please forward your update resume for immediate consideration.
+
+
+
+ 
+
+
+
+Title: OIM / OIG Engineer
+
+
+
+
+Location : Richfield / MN
+
+
+
+
+Duration: 12+ Months Contract 
+
+
+
+
+ 
+
+
+
+Interview &ndash; Web Ex / SKYPE
+
+
+
+
+
+
+
+Visa &ndash; ANY
+
+
+
+
+
+
+
+ 
+
+
+DESCRIPTION :
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+We are looking for a driven, team-focused software engineer and cyber security minded professional to support an Oracle Identity Management Suite implementation. Work on a variety of projects to securely integrate systems on top of a common identity platform.
+
+
+
+ 
+
+
+
+Essential Functions:
+
+
+
+
+
+
+
+ 
+
+
+
+	
+	- Oracle Identity Manager(OIM) / OIG (Oracle Identity Governance) product development and systems integration
+
+
+
+
+
+	
+	- OIM / OIG infrastructure management including lifecycle patching, upgrades, and support
+
+
+
+
+
+	
+	- Implement and manage data feeds between multiple identity stores
+
+
+
+
+
+	
+	- Work with repository owners to define requirements and establish rules for managing identities
+
+
+
+
+
+	
+	- Establish access policies to control provisioning of accounts
+
+
+
+
+
+	
+	- Serve as a senior technical resource demonstrating leadership skills in systems engineering and software development
+
+
+
+
+
+	
+	- Improve the time, cost, and risk associated with identity administration, while driving future direction and evolution of identity management technologies and processes.
+
+
+
+
+
+	
+	- The OIM Engineer must possess experience with:
+
+
+
+
+	
+		
+	- Oracle Identity Manager (OIM) and Oracle Fusion Middleware
+
+
+
+
+
+		
+	- Experience working with OIM tools for migration/synchronization of data and provisioning/de-provisioning of users.
+
+
+
+
+
+		
+	- Developing general purpose services, usable by a variety of authorized systems and applications
+
+
+
+
+
+		
+	- Customization of Oracle Identity Manager product functionality to fulfill requirements that cannot be met with standard out-of-box functionality 
+
+
+
+
+
+	
+	
+
+
+
+
+ 
+
+
+
+Basic Qualifications:
+
+
+
+
+
+
+
+ 
+
+
+
+	
+	- Completed a Bachelors level degree and/or equivalent experience
+
+
+
+
+
+	
+	- 4 years of experience with Oracle Identity Manager (OIM)
+
+
+
+
+
+	
+	- 2 years of Experience with J2EE development and deployment on Oracle Application Server
+
+
+
+
+
+
+
+
+ 
+
+
+
+Preferred Qualifications:
+
+
+
+
+
+
+
+ 
+
+
+
+	
+	- Implementation of web services in a Service Oriented Architecture
+
+
+
+
+
+	
+	- DB operations and data analytics
+
+
+
+
+
+	
+	- Requirements definition, system design, and software development
+
+
+
+
+
+	
+	- Experience in password synchronization across different systems through the core provisioning system
+
+
+
+
+
+	
+	- Experience in integrating applications into the core provisioning system for both provisioning and password synchronization
+
+
+
+
+
+	
+	- Developing general purpose services, usable by a variety of authorized systems and applications
+
+
+
+
+
+	
+	- Customization of Oracle Identity Manager product functionality to fulfill requirements that cannot be met with standard out-of-box functionality
+
+
+
+
+
+	
+	- Understanding XML concepts and processing
+
+
+
+
+
+	
+	- Implementation of web services in a Service Oriented Architecture
+
+
+
+
+
+	
+	- Requirements definition, system design, and software development
+
+
+
+
+
+	
+	- Specifying technical requirements for leadership in the area of data integrity, privacy and security of directory services
+
+
+
+
+
+	
+	- Specifying guidelines and supporting processes for integration, administration and maintenance
+
+
+
+
+
+	
+	- Interaction with application teams that manage major user repositories and/or need to automate/standardize user access request process, to gather requirements, design and deliver solution to integrate with the existing IDM implementation
+
+
+
+
+
+	
+	- Gather requirements and Guide / recommend the right integration pattern for applications needing services, taking into consideration the impact to the environment and standards currently set in.
+
+
+
+
+
+	
+	- Support as required, establishing urgency of the problem and owning the problem through resolution.
+
+
+
+
+
+	
+	- Performs maintenance review of identity management system functions
+
+
+
+
+
+	
+	- Create and maintain documentation for security related activities and metric reporting.
+
+
+
+
+
+	
+	- Advocate secure computing practices and procedures, and communicate Information Security best practices throughout the company.
+
+
+
+
+
+	
+	- Experience in other IAM products like Sailpoint, Okta etc
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+Best Regards
+
+Rajat Sharma
+
+Technical Recruiter
+
+Tanisha Systems Inc.
+
+Tel: 212-729-6543 Ext 329
+
+99 Wood Ave South Suite # 308 Iselin, NJ 08830
+
+Email : rajat.sharma@tanishasystems.com
+ | Web: www.tanishasystems.com
+
+
+E-Verify, Certified Minority Business Enterprise MBE, Dun & Bradstreet CREDIBILITY CORP Certified
+
+
+
+ 
+
+
+
+ 
+
+
+
+This email was sent to josephs@linuxjobber.com, by Wipro Team<wiproteam1@tanishasystems.com>
+To remove your email address permanently from future mailings, please go to the following URL:
+http://email.bullhorn.com/wf/click?upn=9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwthXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYeN-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtMumGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr7qOXB76biudV-2BwpA90nOYCQzr7w9Yyal-2BiYyxcLJiZQn2NFnz0dSsvcxA7BZXce17ldbr1Y-2BQ5vMlNW5nxX9hoD-2BxUj6xVyglrCfWz1LNP7r0bZ2Z0aJf5JG89ooTGIBIRv0QUIYGynaDYUNvGcerlPS2vpBRSx7kKowu-2B0zLytjQ5OKRb2zs3mgYP2oOpW0-3D
+------=_Part_397245_181700258.1580831882891
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p>Greetings,</p>
+
+<p>My name is <strong><span style=3D"font-family:&quot;Calibri&quot;,sans-s=
+erif">Rajat Sharma</span></strong> from <strong><span style=3D"font-family:=
+&quot;Calibri&quot;,sans-serif">Tanisha Systems</span></strong>. I saw your=
+ profile in one the job boards and feel that your skills and professional e=
+xperience would be a good fit for a position with one of our premier client=
+s. Please review the job description below. if you are interested in this p=
+osition please forward your update resume for immediate consideration.</p>
+
+<p>&nbsp;</p>
+
+<p><strong><u><span style=3D"font-family:&quot;Calibri&quot;,sans-serif">Ti=
+tle: OIM / OIG Engineer</span></u></strong></p>
+
+<p><strong><u><span style=3D"font-family:&quot;Calibri&quot;,sans-serif">Lo=
+cation : Richfield / MN</span></u></strong></p>
+
+<p><strong><u><span style=3D"font-family:&quot;Calibri&quot;,sans-serif">Du=
+ration: 12+ Months Contract </span></u></strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong><u><span style=3D"font-size:14.0pt"><span style=3D"background-co=
+lor:yellow"><span style=3D"font-family:&quot;Calibri&quot;,sans-serif"><spa=
+n style=3D"color:black">Interview &ndash; Web Ex / SKYPE</span></span></spa=
+n></span></u></strong></p>
+
+<p><strong><u><span style=3D"font-size:14.0pt"><span style=3D"background-co=
+lor:yellow"><span style=3D"font-family:&quot;Calibri&quot;,sans-serif"><spa=
+n style=3D"color:black">Visa &ndash; ANY</span></span></span></span></u></s=
+trong></p>
+
+<p>&nbsp;</p>
+
+<p style=3D"margin-bottom:.0001pt"><strong><u><span style=3D"font-family:&q=
+uot;Calibri&quot;,sans-serif">DESCRIPTION :</span></u></strong><strong> </s=
+trong></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>We are looking for a driven, team-focused software engineer and cyber se=
+curity minded professional to support an Oracle Identity Management Suite i=
+mplementation. Work on a variety of projects to securely integrate systems =
+on top of a common identity platform.</p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"background-color:white"><strong><u><span style=3D"font-si=
+ze:10.5pt"><span style=3D"font-family:HumanBBY"><span style=3D"color:#33333=
+3">Essential Functions:</span></span></span></u></strong></span></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Oracle=
+ Identity Manager(OIM) / OIG (Oracle Identity Governance) product developme=
+nt and systems integration</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">OIM / =
+OIG infrastructure management including lifecycle patching, upgrades, and s=
+upport</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Implem=
+ent and manage data feeds between multiple identity stores</span></span></s=
+pan></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Work w=
+ith repository owners to define requirements and establish rules for managi=
+ng identities</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Establ=
+ish access policies to control provisioning of accounts</span></span></span=
+></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Serve =
+as a senior technical resource demonstrating leadership skills in systems e=
+ngineering and software development</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Improv=
+e the time, cost, and risk associated with identity administration, while d=
+riving future direction and evolution of identity management technologies a=
+nd processes.</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">The OI=
+M Engineer must possess experience with:</span></span></span></span>
+	<ul style=3D"list-style-type:circle">
+		<li><span style=3D"background-color:white"><span style=3D"font-size:10.5p=
+t"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Oracl=
+e Identity Manager (OIM) and Oracle Fusion Middleware</span></span></span><=
+/span></li>
+		<li><span style=3D"background-color:white"><span style=3D"font-size:10.5p=
+t"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Exper=
+ience working with OIM tools for migration/synchronization of data and prov=
+isioning/de-provisioning of users.</span></span></span></span></li>
+		<li><span style=3D"background-color:white"><span style=3D"font-size:10.5p=
+t"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Devel=
+oping general purpose services, usable by a variety of authorized systems a=
+nd applications</span></span></span></span></li>
+		<li><span style=3D"background-color:white"><span style=3D"font-size:10.5p=
+t"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Custo=
+mization of Oracle Identity Manager product functionality to fulfill requir=
+ements that cannot be met with standard out-of-box functionality </span></s=
+pan></span></span></li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"background-color:white"><strong><u><span style=3D"font-si=
+ze:10.5pt"><span style=3D"font-family:HumanBBY"><span style=3D"color:#33333=
+3">Basic Qualifications:</span></span></span></u></strong></span></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Comple=
+ted a Bachelors level degree and/or equivalent experience</span></span></sp=
+an></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">4 year=
+s of experience with Oracle Identity Manager (OIM)</span></span></span></sp=
+an></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">2 year=
+s of Experience with J2EE development and deployment on Oracle Application =
+Server</span></span></span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"background-color:white"><strong><u><span style=3D"font-si=
+ze:10.5pt"><span style=3D"font-family:HumanBBY"><span style=3D"color:#33333=
+3">Preferred Qualifications:</span></span></span></u></strong></span></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Implem=
+entation of web services in a Service Oriented Architecture</span></span></=
+span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">DB ope=
+rations and data analytics</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Requir=
+ements definition, system design, and software development</span></span></s=
+pan></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Experi=
+ence in password synchronization across different systems through the core =
+provisioning system</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Experi=
+ence in integrating applications into the core provisioning system for both=
+ provisioning and password synchronization</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Develo=
+ping general purpose services, usable by a variety of authorized systems an=
+d applications</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Custom=
+ization of Oracle Identity Manager product functionality to fulfill require=
+ments that cannot be met with standard out-of-box functionality</span></spa=
+n></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Unders=
+tanding XML concepts and processing</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Implem=
+entation of web services in a Service Oriented Architecture</span></span></=
+span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Requir=
+ements definition, system design, and software development</span></span></s=
+pan></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Specif=
+ying technical requirements for leadership in the area of data integrity, p=
+rivacy and security of directory services</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Specif=
+ying guidelines and supporting processes for integration, administration an=
+d maintenance</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Intera=
+ction with application teams that manage major user repositories and/or nee=
+d to automate/standardize user access request process, to gather requiremen=
+ts, design and deliver solution to integrate with the existing IDM implemen=
+tation</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Gather=
+ requirements and Guide / recommend the right integration pattern for appli=
+cations needing services, taking into consideration the impact to the envir=
+onment and standards currently set in.</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Suppor=
+t as required, establishing urgency of the problem and owning the problem t=
+hrough resolution.</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Perfor=
+ms maintenance review of identity management system functions</span></span>=
+</span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Create=
+ and maintain documentation for security related activities and metric repo=
+rting.</span></span></span></span></li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Advoca=
+te secure computing practices and procedures, and communicate Information S=
+ecurity best practices throughout the company.</span></span></span></span><=
+/li>
+	<li><span style=3D"background-color:white"><span style=3D"font-size:10.5pt=
+"><span style=3D"font-family:HumanBBY"><span style=3D"color:#333333">Experi=
+ence in other IAM products like Sailpoint, Okta etc</span></span></span></s=
+pan></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Best Regards</strong><br />
+<strong>Rajat Sharma</strong><br />
+<strong>Technical Recruiter</strong><br />
+<strong>Tanisha Systems Inc.</strong><br />
+Tel: 212-729-6543 Ext 329<br />
+99 Wood Ave South Suite # 308 Iselin, NJ 08830<br />
+Email : <a href=3D"mailto:rajat.sharma@tanishasystems.com" target=3D"_blank=
+"><span style=3D"color:blue">rajat.sharma@tanishasystems.com</span></a> | W=
+eb: <a href=3D"http://email.bullhorn.com/wf/click?upn=3D5pSeBgQvL8CbdtPamO2=
+LiHrnmO6q20tlMNNotvdbns6TepPLKVIyXC3upUguKeq3lGt-2FFFBQwSy6rsVG4iuXLHDh8Gvl=
+uB6ep7hdG9QCWl8Rm14dMRQxUwYtDqLC3QCDytDH6xD7Jww8JQgMoUeBntQgoT9M2uzV4g4MqNL=
+cCN4RtyxZGfiSpwyVUpJGleVtpuAHNrMZ0W7nDQHteifZ4DD1k31HnajSeoZg5d2-2FmJjHJYFO=
+CAewoZJx2deBThQPefihReC-2BVatqWJ58R48gtYsM1cIA2fL0bKP7can9OI1rB-2B2stbCNzIJ=
+nr1LuKY-2FqCxbB2INhpGQiZsqikMEOfgBxbsc-2ByZqwn4ltDXibKS8DW0OTO-2Bfk4ZGEvMLO=
+dBphX1NUt6GSg2nmZ54OCRjK0LWQkSoD-2BkIcDEjkfYm6PL-2B4zGQMdp-2FZrPC5e0y7sm6tr=
+BqhMZufr7sH3Gg7mambx0u4jpiYUQnwDiG5jkfWLks4mX7uCm0-2B7LmLTJLFQua5qNgPqGblgu=
+3bSNLUqBvxMs03avzgC4-2FSJvfoHLl6z1u2-2FAzQMEg7y3Aro2kw21vtsdwP4SG-2F7h3Lp6R=
+sELnwG4DLrBkNBFNxcBOTw-2BSZM0ylDdSJxyi5NCfIKXiVy-2F2SHBQUPHu6NCi1sagcWipdWq=
+kIumtnaQHYoRLFxiW9sO4Oo-2B6VIcw0j-2FJCJwfwZ3aLtJCJDSB4vLBjL2KhcK6vurW9nbPLP=
+-2Bh18ufa0sF-2BD2yV6VNvWyWSYU71cl7utu9g6C4J-2BBu0QiYgwocBoRejeqnbHXfdx4PZG0=
+nCAItEQhhlrOoppqDdqtt9aHEZhd-2FZ2H17a6LjgqPYYD5tOu7bOLdo5JJ1dCEXlBbCIL3cIhP=
+b6fyDnBSSahTMPN-2By-2F4r5g7QRXYgJI-2BWXqQVw0kEZoVH6IQeJlcZeiMppiRRA-2BBALmP=
+nlpeAlOTTqH802PlsuHDzGiJ4vb6wV9SsdxxKOVWelgE4ouEZePqP6XtsXRcejAhx2kYyzswUVl=
+C-2FA34BbzMJUxjIaWgvjBOrx1r2sT2oraUwxQVt6gNAAQG1KDsJxybYxwSBKpNzRjQRGbud6tX=
+e1KUzOVyQocEIm3vQIEA-3D-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr7qO=
+XB76biudV-2BwpA90nOYjpukxWohTIYxF3DxsOnwqdNEP8FDFagIdVVuQ8eA1SJbJpgzSKdpbIW=
+hHtObgZepThuRFGMGk-2Fzq2L7Y80Fet-2Fqi0CAUuR09bBb2nF4GrwFU-2BHtvBxn4bDHavdwO=
+fJz33wPfzig1B-2FlbA1kKSGQQhlBdRBQJim03bzxC-2FqLTT9U-3D" target=3D"_blank"><=
+span style=3D"color:blue">www.tanishasystems.com</span></a><br />
+E-Verify, Certified Minority Business Enterprise MBE, Dun &amp; Bradstreet =
+CREDIBILITY CORP Certified</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<br><div style=3D'color:#999999; font-size:8pt; font-family:arial;'>This em=
+ail was sent to <a style=3D'color:#848484' href=3D'mailto:josephs@linuxjobb=
+er.com'>josephs@linuxjobber.com</a>, by Wipro Team<wiproteam1@tanishasystem=
+s.com>.<br>To remove your email address permanently from future mailings, p=
+lease <a style=3D'color:#848484' href=3D"http://email.bullhorn.com/wf/click=
+?upn=3D9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwt=
+hXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYe=
+N-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL=
+-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtM=
+umGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr7q=
+OXB76biudV-2BwpA90nOYjpukxWohTIYxF3DxsOnwqdnC-2BDiR13YFoSOPldIhyf8dqHdJ-2Fq=
+cWt95OBVvl3d5iqWJ4GjyDR-2BHf-2BDopnkpQDj03SCreaIbI3Sf-2BJH3cUg4sDK4hmur4HqW=
+FPTM-2BOxhRYFl0BLEkEhTkAZBselPv2VJqtnLcuLC5q5duPH3PIhQ-3D" target=3D_blank>=
+click here</a>.</div><img src=3D"http://email.bullhorn.com/wf/open?upn=3Dxl=
+dZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPr7qOXB76biudV-2BwpA90nOYjpukxWohT=
+IYxF3DxsOnwqUkevF0V21z8XHb31ZjO0MWLg0H7rZ7REV7VUW12IxvucEuLZheL2XpPuZxnd5g8=
+bh8nh6EvlFwjFVrqtvu1mwD-2Bm730lIdhOsP2OYwfagZU5-2B1nAMRwGaN5A59vjnHNfOd1-2B=
+5o-2FfFsNjkmGTa8PT6w-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" sty=
+le=3D"height:1px !important;width:1px !important;border-width:0 !important;=
+margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !importan=
+t;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !impor=
+tant;padding-right:0 !important;padding-left:0 !important;"/>
+
+------=_Part_397245_181700258.1580831882891--
+
+------=_Part_397244_956392979.1580831882891--

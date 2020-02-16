@@ -1,0 +1,144 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m68-80.mailgun.net (m68-80.mailgun.net [166.78.68.80])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 4iotppe89jdtnjj9oc7u0g6vss35acg16cird201
+ for josephs@linuxjobber.com;
+ Mon, 27 Jan 2020 21:46:13 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHTWpGV241cy9NUTJCczFLMjFXQktaaGNEZmFVd0oxbTJ2M2htMWR4ZThLbEtKT1hWTDdTWFhVYlNMK05VSXBlZVFLVE1uL1JoR2RQTHA2WlBTRGdHcVdsWjhrUmRrdDhVb3MrbUk1Z2VBczJnbU9CZDdMY2V2cnBrOHkxSVU0dHQ0a2NNQkF5N2kxMlI5YWE2ZC9nTDdmZ0taUXFQaE5JTXNvYkFLUWVYcUFPOUpPMGFoTXIySHpXZHpmenhIN0xvOXR5Ti9HRVU3elFleXZ5Y3ZTc3ZFTWdBRUZMaTc1bWIwcU9ZTUxpSUJBVDdydTJlbHdqVTYrMmE5bTlyakh0YkkvaE91VWt4NloxZy9pQjdCdTNHNERyck5oaTcvc08xMHZXaWI4b1NJb04zOTJFNEttWlFJZDY3OTVDZEN0UVNMNGZZMnhOOWdidWIyNVgxMXRqZU4=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=fEGVDnZ7C4xDs9chm0bJggD8iuYOZsCtr8sIOfwabcfHbFcFz9gCqxwYZ88OiTGh4NPDtsIQpSz6yMRE4IuZGCGtmjpD+xxiWZY9eOkX2mOZ461PACnI2YaROUvco+eMYEEXap07CiXP5tpvoD7uRbkoInYTBmL1M15koPfMq4A=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580161577; v=1; bh=3lqxWf9YGUnF59r/8Q4PtDgBis4hVEu9terFQ7ZGNxo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1580161576; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=Dz1NNGARik4WJzkkOadip3v2VH/+V3A92sSksPph1+c=; b=pDIJJ09QEns2bB9rhOgZ9M0Eu1DcOpk1swM++r8IY8UzdrVddWwWfN4LShmwV60YWlw9k8ac
+ aRgsHqB7DnEdI2/fFL+1pgZvQklrPAVxMiEH27yIiySeShs4qVnHkdB2urQXW6visuqE9Wwv
+ t8sI735+kE7VyMbilaP+Ajshf3A=
+X-Mailgun-Sending-Ip: 166.78.68.80
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e2f5a19af506b1761620342
+Received: by luna.mailgun.net with HTTP; Mon, 27 Jan 2020 21:46:01 +0000
+Date: Mon, 27 Jan 2020 21:46:01 +0000
+Sender: amit.kr@usgrpinc.com
+Message-Id: <20200127214601.1.29D9A68F0A1C39F4@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: amit.kr@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Amit Kumar <amit.kr@usgrpinc.com>
+Subject: Urgent requirement for Java Backend at Indianapolis, IN.
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID">Hi Joseph Showunmi<br />
+&nbsp;</div>
+
+<div id="EditorDefaultBodyId"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">We have an urgent requirement for <b>Java Backend at Indianapolis, IN.</b></span></span></span></div>
+
+<p class="wordsection1"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Below is the job description for it. If you are interested please reply me with updated resume.</span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Position:: Java Backend</b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Location:: Indianapolis, IN</b></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Duration:: 12 Months </b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Mandatory Technical Skills &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Design and develop dynamically scalable, highly available, highly reliable and fault-tolerant applications on AWS</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Experience of AWS kinesis, AWS SQS, AWS S3 will be preferred.</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Experience in developing dynamic interactive web application user interfaces using advanced JavaScript frameworks and JSON supported technologies</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Experience of developing with AWS services (AWS Simple Queue, AWS simple, workflow, etc.) with appropriate SDKs</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Experience of developing with AWS databases (RDS, Aurora and PostgreSQL)</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Experience of developing application with Amazon Lambda and Elastic Beanstalk</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Experience in migrating of document storage to AWS S3</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Knowledge of cloud reference architectures and AWS best practices</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Experience of code-level application security (encryption, IAM roles, etc.)</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; AWS Certified Developer certification.</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Code, test, debug, implement, and document efficient database driven web applications</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Must have a minimum of four years of Java EE programming experience, with at least two years with AWS</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Demonstrated experience of design and implementation of micro-services architecture and RESTful web services</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Migrate existing complex on-premises applications to the AWS platform</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Desirable Technical Skills</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Will be highly motivated, enthusiastic and detail-oriented.</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Excellent communication skills.</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Bachelors degree or equivalent combination of education and experience; degree in computer science, mathematics or related field preferred</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; 4+ years of experience as AWS developer.</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&bull; Must thrive in fast paced, results driven environment, Experience on Agile methodology</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="line-height:16.5pt"><span style="font-family:Calibri,sans-serif"><a name="_MailAutoSig"><b><span style="font-size:10.0pt"><span style="color:black">Thanks and Regards,</span></span></b></a></span></span></span></p>
+
+<p><span style="font-size:11pt"><span style="line-height:16.5pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:10.0pt"><span style="color:black">Amit kumar<br />
+United Software Group Inc.<br />
+Phone: 614-495-9222 ext- 404</span></span></b><b><i> </i></b><b><span style="font-size:10.0pt"><span style="color:black">|| </span></span></b><a href="mailto:amit.kr@usgrpinc.com" target="_blank"><b><span style="font-size:10.0pt"><span style="color:#0563c1">amit.kr@usgrpinc.com</span></span></b></a><b><span style="font-size:10.0pt"><span style="color:black"> || </span></span></b><a href="http://www.usgrpinc.com/" target="_blank"><b><span style="font-size:10.0pt"><span style="color:#0563c1">www.usgrpinc.com</span></span></b></a><b> &nbsp;</b><br />
+<a href="https://maps.google.com/?q=565+Metro+Place+South.+Suite+%23+110+Dublin,+OH+43017&entry=gmail&source=g" target="_blank"><b><span style="font-size:10.0pt"><span style="color:#1f497d">565 Metro Place South. Suite # 110</span></span></b></a><b>&nbsp; </b><a href="https://maps.google.com/?q=565+Metro+Place+South.+Suite+%23+110+Dublin,+OH+43017&entry=gmail&source=g" target="_blank"><b><span style="font-size:10.0pt"><span style="color:#1f497d">Dublin, OH 43017</span></span></b></a></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/551be6e4f7104351d9b638ef10728c322dab1863/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEsOwiAUBdDVyLC574F8BgwaTbdhaAFLo6WBNHH56lnAiZ4SAiCKZzBAbJiUBg00sLu7UdsJI92km9RF4ezPdpR9GZb6Fqs3wRqjI1zMV5vArBEoa6skFAhJtJQfJXqWsKL5rfZ0rP33vMp-frY6z6n9qy8vUCYU"></body>
+</html>

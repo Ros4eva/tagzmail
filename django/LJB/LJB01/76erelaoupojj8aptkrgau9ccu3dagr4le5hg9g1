@@ -1,0 +1,230 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m232-78.mailgun.net (m232-78.mailgun.net [159.135.232.78])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 76erelaoupojj8aptkrgau9ccu3dagr4le5hg9g1
+ for josephs@linuxjobber.com;
+ Wed, 18 Dec 2019 16:52:31 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-78.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-78.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGV2c3M05BcmZ4TlJ2ZytaM1pMazUyc1BONUtDa3lXRFVKQmllbjFjMVpDQjJIYW4xMWJKQ2lhNjFSZ3NQWWM4K3BnY0tIaTJKNmR3RTE1WGtZMzNUdGpvaGZidFJoeFB3clg1bnEzOUFGSlhYSkd5QU9GOXl4b0tQTjNweGNVQTQ3aEFhTG91dkYxdnpGQkh0TWpTc2EwdE5VczJUdit6cHRnTzRGNWlRTm95NXJvVFJSWlk1MStCYlk2YnR1S2dQaHlleXN4QWczbnhzelJHemU1MDFUWW5LUEtJOG1jcWRZVTBGTUVGWW9WWkJ1MWFDNVQ2L2U1MUN0dHcxY1NtZ2xaaUVhZEtQdlhGbGttazNIUEFwUDZ3RVBQNDRidGwxd2dWOVYxdmRwT3ZSWldKaG5rYmZTR1M2SXg0UXhoeWVoZWJYWVdKSUFhMFZqQ04zeUdpWkZRd2VlWFk5cnVTZUExZWpaTHBIRGhBPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=E4kogwDpH08BEogpNEM0B+VuIwuvoWOFLDg6sFPvNlAV2E3cPW36/hcjOVSixXpHhJatdf/mFVqpbm4+8Gf+dOLO29H/nCeHyz9boF2d3jmfRRM0D13aOrfvP7XzYe+iXmHdpz6gTYPN66t8QHoOvLdyBJQyfVdQbIX85iXMbBE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576687952; v=1; bh=X7faCVEfd+g9pqky9AeVdniYXoLS+I+8ESWL4ZXN4uw=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1576687951; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=XlUoo1eaMB44fm2Mn5/Z6zoElEeD+4ZrmxtHg/y5DpI=; b=hP8LnRvRnLZsNY4CI3xGVGpzg6EHT/zgwMjxVooOiMUv3ExSMWO3ug8KqLF4qTbK+VXR2T+n
+ bfRE4R1C0v1B/fXjJ1k/xiH+VuqBy7mkbJ5Z7UHf+Toj3+nMt2rLte2NUoKvPzclzDjOGHWs
+ bTy88vAH6azSL35tHA0VoQRYrkk=
+X-Mailgun-Sending-Ip: 159.135.232.78
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5dfa594e6eb18565c03963e7
+Received: by luna.mailgun.net with HTTP; Wed, 18 Dec 2019 16:52:30 +0000
+Date: Wed, 18 Dec 2019 16:52:30 +0000
+Sender: vikash.kumar=e-solutionsinc.com@mg.e-solutionsinc.com
+Message-Id: <20191218165230.1.25271206F196A548@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: vikash.kumar@e-solutionsinc.com
+To: josephs@linuxjobber.com
+From: Vikash Kumar <vikash.kumar@e-solutionsinc.com>
+Subject: Job Automation Tester with Selenium & Python is shared with you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/2542f5=
+ad08b75c110aba6812711264f55fd07825/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"fo=
+nt-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span style=3D=
+"font-size:12.0pt">My name is </span><b><span lang=3D"EN-IN" style=3D"color=
+:#1f497d">Shalini </span></b><span style=3D"font-size:12.0pt">and I am S</s=
+pan><strong><span style=3D"font-size:12.0pt"><span style=3D"font-family:"Ca=
+libri","sans-serif"">taffing specialist</span></span></strong><strong> </st=
+rong><span style=3D"font-size:12.0pt">at </span><strong><span style=3D"font=
+-size:12.0pt"><span style=3D"font-family:"Calibri","sans-serif"">E-Solution=
+s Inc. </span></span></strong><span style=3D"font-size:12.0pt">We are globa=
+l contingency staffing firm servicing fortune 1000 clients globally. We hav=
+e an excellent job opportunity with one of our client. Kindly find the JD m=
+entioned below and reply along with your most recent resume if you wish to =
+apply.</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12px;"><span style=3D"fo=
+nt-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><span =
+style=3D"font-family:"Calibri","sans-serif""><span style=3D"color:black">Ro=
+le: Automation Tester with Selenium & Python&nbsp;&nbsp; </span></span></b>=
+</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12px;"><span style=3D"fo=
+nt-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><span =
+style=3D"font-family:"Calibri","sans-serif""><span style=3D"color:black">Lo=
+cation: Columbus, OH , Scottsdale, AZ , Farmington, CT , Jupiter, FL , Atla=
+nta, GA & Kentucky </span></span></b></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12px;"><span style=3D"fo=
+nt-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><span =
+style=3D"font-family:"Calibri","sans-serif""><span style=3D"color:black">Co=
+ntract </span></span></b></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12px;">&nbsp;</span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12px;"><span style=3D"fo=
+nt-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><u><sp=
+an style=3D"font-family:"Calibri","sans-serif""><span style=3D"color:black"=
+>Job Description:</span></span></u></b></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12px;"><span style=3D"fo=
+nt-size:12pt"><span style=3D"font-family:"Times New Roman",serif"><b><u><sp=
+an style=3D"font-family:"Calibri","sans-serif""><span style=3D"color:black"=
+>Automation (Selenium, Cloud, PYTHON)</span></span></u></b></span></span></=
+span></p>
+
+<ul>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Good&nbsp;working experience in Pytho=
+n </span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Coordinating with stake holders and t=
+eam to create execution test plan. Attend client meeting and walk through t=
+he test artifacts to Customers. </span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Knowledge in AWS testing and data tes=
+ting, experience in requirement gathering, analysis, development, ETL/BI te=
+sting and support of critical data warehouse systems is mandate.</span></sp=
+an></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Experience in QA Automation testing a=
+nd exposure to GCP Build, design and implement QA automation solution for c=
+loud-based application.</span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"background:white">Good=
+ in Data warehousing Concepts.</span></span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Knowledge with Agile Methodology / Sc=
+rum.</span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Excellent problem solving skills.&nbs=
+p;</span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Excellent communication and documenta=
+tion skills.&nbsp;</span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Excellent team player with ability to=
+ work with multiple stake holders.&nbsp;</span></span></span></span></li>
+	<li class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"=
+font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">Other skills good to have are: &bull;=
+ Exposure to working with Hive &bull; Exposure to working with Parquet and =
+ORC &bull; Exposure to building complex pipelines from data ingestion to fe=
+ature engineering &bull; Exposure to Microsoft Azure &bull; Exposure to Mic=
+rosoft HDInsight&nbsp; &bull; Good software engineering principles and best=
+ practices e.g. debugging skills, release cycles, performance optimization =
+&bull; Know how to work with Git and GitFlow &bull; Any exposure to working=
+ with Analytics and Data Scientist is a plus</span></span></span></span></l=
+i>
+</ul>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:12px;">&nbsp;</span></p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:12px;"><span style=3D"fo=
+nt-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt">E-Solutions Inc.</span></b><span lang=
+=3D"EN-IN" style=3D"font-size:12.0pt"> provides equal employment opportunit=
+ies (EEO) to all employees and applicants for employment without regard to =
+race, colour, religion, gender, sexual orientation, gender identity or expr=
+ession, national origin, age, disability, genetic information, marital stat=
+us, amnesty, or status as a covered veteran in accordance with applicable f=
+ederal, state and local laws. We especially invite women, minorities, veter=
+ans, and individuals with disabilities to apply. EEO/AA/M/F/Vet/Disability.=
+</span></span></span></span></p>
+
+<p><span style=3D"font-size:12px;">&nbsp;</span></p>
+
+<p><span style=3D"font-size:12px;"><span style=3D"font-size:11pt"><span sty=
+le=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-IN" style=3D"colo=
+r:#1f497d">Shalini Shukla | Technical Recruiter </span></b></span></span></=
+span></p>
+
+<p><span style=3D"font-size:12px;"><span style=3D"font-size:11pt"><span sty=
+le=3D"font-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"color:#=
+0563c1">2 N. Market St., #400, San Jose, CA, 95113</span></span></span></sp=
+an></p>
+
+<p><span style=3D"font-size:12px;"><span style=3D"font-size:11pt"><span sty=
+le=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-IN" style=3D"colo=
+r:#0563c1">Ph</span></b><span lang=3D"EN-IN" style=3D"color:#0563c1">: 408-=
+827-9453</span><span lang=3D"EN-IN" style=3D"color:#1f497d">| </span><a hre=
+f=3D"mailto:shalini.s@e-solutionsinc.com" style=3D"color:blue; text-decorat=
+ion:underline"><b>shalini.s@e-solutionsinc.com</b></a> &nbsp;</span></span>=
+</span></p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEEOwiAQAMDXyE2yu4UtHDh48RumwNbStMWATXy-Og-YHObkDKsSCNAjoU=
+O2NIBGTZZGJOA7er5Z4y4G9qeWa6_b-S716OVIOtVdLYGEB5gciticGDEakQwRhilzdCOrJvOj5=
+GD96FQLa-3yWvov3MpxftYao7R_9QXQmCo2"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

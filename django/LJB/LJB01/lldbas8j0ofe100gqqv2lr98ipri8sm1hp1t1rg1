@@ -1,0 +1,125 @@
+Return-Path: <bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com>
+Received: from mail.a15.static.mgsend.net (mail.a15.static.mgsend.net [104.130.123.15])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id lldbas8j0ofe100gqqv2lr98ipri8sm1hp1t1rg1
+ for josephs@linuxjobber.com;
+ Fri, 24 Jan 2020 21:32:22 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of avanciers.com does not designate 104.130.123.15 as permitted sender) client-ip=104.130.123.15; envelope-from=bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com; helo=mail.a15.static.mgsend.net;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of avanciers.com does not designate 104.130.123.15 as permitted sender) client-ip=104.130.123.15; envelope-from=bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com; helo=mail.a15.static.mgsend.net;
+ dkim=pass header.i=@avanciers.com;
+ dmarc=none header.from=avanciers.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFOWJNcnBqZDlJVFJ1S1dkK3NNckNYY2FiZmhjZ1lQZkY1RTEvOU1GMVE1OTM3YndNL1B1SHlJNHcxdUJhcW1NbEEwTG9ieVlUV2RoMWk1VU1iRWlpc2RqTWxFRTZRNFRZMkVkZXpjTkE1bldFd0g3Zzg3ak1HWXdnL3VaNEkwRElZOW42VldWMFQyNDF2TUc1eU5aRHlJMlJJcW9lWWtpaW9uM0FCNDBmYkFKcWt2K2M4SHFYNGM4TmpBSVV1SExtU3M3ODRDN3dVek1DUmZJMEExSG1KUGV4Nk5WOEZvVHJXY01OTDJDYnJuQU9sUm1MWWtWSTFBaFNlOWUyU3l0elMrSnBiNnFGT3IyVmhsUWVXOEthODhQTWVtaldibEE0WVhBRnhOUWlBTXNlNTc3RzZzTmVONEFWUGFqQ0hBM3V6V0hEVmhycFVxS3dmbENyeGs0V3Y=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=RnFgy5lbqZWnWil71nGaxIbvX04F1P9/sui937ntf/Huq2ZtQOoKqEh6kAjRXlSiDJ6IbaUIQl1aMnDDh4sqE8RGp7UvIvtwPtP5sEHuXPg/ad0iFtv/biFFXGcC0invl4/rQmC9o8DRHJ+Hi300x1EPOYLLY6BupxqIyIiL9dk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579901546; v=1; bh=AAHj/DCWGflFl61WFUT4YBpno0PI+QxTtUWiOkLPfYY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=avanciers.com; q=dns/txt;
+ s=pic; t=1579901546; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=ftLfSu6WxfqrtB6JoIhAGcvn1M1YpAaB/DIaDv3sVcY=; b=cGnYt+aBr0z1Mf+SOZZHk5n5sJrJm+cTSWDNUT/v3XyX/C2Lj57tas5WZvTOPkqRpoHpH7Ir
+ 9nhj8pD5qeifFrJmI3T9LQWuZK5PJugGHEsIx0vWtz96l7qy8LGXM94r5j/HgZNMpuK96318
+ fTkJaAswRN0uVmDII4vCCwTD06I=
+X-Mailgun-Sending-Ip: 104.130.123.15
+X-Mailgun-Sid: WyJkODM5NSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJiOWJkMDEiXQ==
+X-Mailgun-Batch-Id: 5e2b62525ac7f28a09b8cc03
+Received: by luna.mailgun.net with HTTP; Fri, 24 Jan 2020 21:32:02 +0000
+Date: Fri, 24 Jan 2020 21:32:02 +0000
+Sender: ravikant@avanciers.com
+Message-Id: <20200124213202.1.67E9723D18C7C2B5@avanciers.com>
+X-Mailgun-Variables: {"ref_id": "3864"}
+Reply-To: ravikant@avanciers.com
+To: josephs@linuxjobber.com
+From: Ravikant trivedi <ravikant@avanciers.com>
+Subject: Program Manager :: SFO, CA :: Cognizant
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <p>Hello Joseph,</p>
+
+<div>
+<p><span style="font-size:11pt"><span style="line-height:16.5pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:black">Please find the below mentioned job details and let me know if you are interested.</span></span></span></span></span></span></p>
+
+<p class="m6718106502197403932wordsection1">&nbsp;</p>
+
+<p class="m6718106502197403932wordsection1"><span style="font-size:11pt"><span style="line-height:16.5pt"><span style="font-family:"Calibri",sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:black">Job Title: Program Manager</span></span></span></b></span></span></span></p>
+
+<p class="m6718106502197403932wordsection1"><span style="font-size:11pt"><span style="line-height:16.5pt"><span style="font-family:"Calibri",sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:black">Location:&nbsp;SFO,CA</span></span></span></b></span></span></span></p>
+
+<p class="m6718106502197403932wordsection1"><span style="font-size:11pt"><span style="line-height:16.5pt"><span style="font-family:"Calibri",sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:black">Duration: Fulltime</span></span></span></b></span></span></span></p>
+
+<p class="m6718106502197403932wordsection1"><span style="font-size:11pt"><span style="line-height:16.5pt"><span style="font-family:"Calibri",sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif"><span style="color:black">Client: Cognizant&nbsp;</span></span></span></b></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Job Description:</span></span></b></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Work closely with project sponsor, cross-functional teams, and assigned project managers to plan and develop scope, deliverables, required resources, work plan, budget, and timing for new initiatives</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Manage program and project teams for optimal return-on-investment, and coordinate and delegate cross-project initiatives</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Identify key requirements needed from cross-functional teams and external vendors</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Develop and manage budget for projects and be accountable for delivering against established business goals/objectives</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Work with other program managers to identify risks and opportunities across multiple projects within the department</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Analyze, evaluate, and overcome program risks, and produce program reports for management and stakeholders.</span></span></span></span></li>
+</ul>
+
+<p><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><b><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Skills and Qualifications</span></span></b></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">5+ years in an advanced management role in the retail industry (preference given to those with program management experience)</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Exceptional leadership, time management, facilitation, and organizational skills</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Working knowledge of digital marketing</span></span></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif"><span style="font-size:10.0pt"><span style="font-family:"Calibri Light",sans-serif">Outstanding working knowledge of change management principles and performance evaluation processes.</span></span></span></span></li>
+</ul>
+</div>
+<br />
+<br />
+&nbsp;
+<div id="EditorSignatureID">
+<table class="Table" style="border:none">
+	<tbody>
+		<tr>
+			<td style="border:none; border-right:solid #dadada 1.0pt; padding:0in 7.5pt 0in 0in">
+			<p><img height="108" src="https://talenthirecls4.ceipal.com/articles/QjljMVVrSjAvL2Z4cFdyWEJvRndZNFhtWHV3Y0xZbncweFBYUlArUURGNUFMQUtuY1BmN0hQbXROUzZvUHlOWUlRSGZFMlRVUDBwMkptb1BVRElya3dNVVQzN0RUVWorR3dVTEpwK3lNNTZjb1U2YlRyNE5Ldk52ZlpnU3FQNjVuejJTNmZTcXpJR0hTWXhPazZzUXFGaEVKYjcvNG5Uc1lDdEp4cDdqMXlNPQ==" width="100" /></p>
+			</td>
+			<td nowrap="nowrap" style="padding:0in 0in 0in 7.5pt">
+			<p><span style="font-size:11pt"><span style="line-height:13.5pt"><span style="font-family:"Calibri",sans-serif"><span style="color:#0070c0">Ravikant Trivedi</span><br />
+			<span style="color:#434343">Technical Recruiter&nbsp; |&nbsp;<b>Avanciers Inc</b></span><br />
+			<b><span style="color:#ef5c26">Desk</span></b><span style="color:#ef5c26">:&nbsp;</span><span style="color:#434343"><a href="tel:510-394-0492" target="_blank"><span style="color:#434343">5</span></a>10-241-2116</span><br />
+			<b><span style="color:#ef5c26">Email</span></b><span style="color:#ef5c26">:&nbsp;</span><span style="color:#002060"><a href="mailto:ravikant@avanciers.com"><span style="color:blue">ravikant@avanciers.com</span></a></span>&nbsp;<br />
+			<b><span style="color:#ef5c26">Web</span></b><span style="color:#ef5c26">:&nbsp;</span><span style="color:#434343"><a href="http://www.avanciers.com/" target="_blank"><span style="color:#434343">www.avanciers.com</span></a></span></span></span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif">&nbsp;&nbsp;</span></span><img height="23" src="https://talenthirecls4.ceipal.com/articles/QjljMVVrSjAvL2Z4cFdyWEJvRndZNFhtWHV3Y0xZbncweFBYUlArUURGNzZJVHBkV20wdllmbWtFNXkzR2p1anhlSGtubHN1VjBDbWpHWEZtU0VRcXJLVE90VXp4UVB1T1J5bWlNVzQzVFdmdW9CUTRjRTZnSGVzQlhqTVFnV1VsQ3EzNytwYlBLU1BZVzE4UzY0dU9vc0wzdXE4MTJ5eVgxa1BQT0djVENnPQ==" width="23" /><span style="font-size:11pt"><span style="font-family:"Calibri",sans-serif">&nbsp;&nbsp;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="https://talenthirecls4.ceipal.com/users/unsubscribe/54a734611576b0e683b676068450a54ad2c3ed2a/b54783a72b966037db56313d2a5a7735be638b18/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+</body>
+</html>

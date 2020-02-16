@@ -1,0 +1,243 @@
+Return-Path: <postmaster@notify.yochana.com>
+Received: from m233-158.mailgun.net (m233-158.mailgun.net [159.135.233.158])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id abfuf1s60ebmfo5q99nsd9dj430p5jvqi1uevk81
+ for josephs@linuxjobber.com;
+ Thu, 23 Jan 2020 15:21:30 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notify.yochana.com designates 159.135.233.158 as permitted sender) client-ip=159.135.233.158; envelope-from=postmaster@notify.yochana.com; helo=m233-158.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notify.yochana.com designates 159.135.233.158 as permitted sender) client-ip=159.135.233.158; envelope-from=postmaster@notify.yochana.com; helo=m233-158.mailgun.net;
+ dkim=pass header.i=@notify.yochana.com;
+ dmarc=none header.from=yochana.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHSUtWdGMvMFF6Q2RLUDJjY0NPK0lpWFNtSXJWN3hraWFlY3dHYlVYbUhIOVFUcVg5K1RqcERZenNFUVgzSkxCNmZ2ZSszSkdIajlPa01OMzBYQzYvT2pwNUhlbEMxR0lzaXFjOFFlMjVIZHBzTWVjWE9WYWIxTEJTaW5kNnZ2QzVVcDgvZmNnS2Zna2ltSjgxc0x2REdNRTM5bVJ5MVhISHNVeGR4d1pvSzFEckU4U2l2c2pJQXFCSFJ2M3V4VVVGTFhPNWxicHl4K1M5eVBTTW8yVkM1ZUZBdXkrZWM2V1gzMFNjYkxrVTVkd1NDdXZ6NFdndE1LQ0tpWmJzbUVIZ2NpWTJyelJnWGhycFNaWFlVcjRjYkwxbWlwc3lHdnhWeEhtSWd6L29WOEE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=b1m6gZUs+Pk7QBox9A1zO+3pDXsP/eXkFDDzKssADcqJe+sndfGprJVa5EpN08H8BVES1zN2k0aNvUK7sKBntczJCmwrprMk5ORyYEpgd7rtqegwq5SawE7NsE+rklkvsHqjRQ07k77NGvMcI88lx5r7gSGWmrgFLd51St+KakA=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579792890; v=1; bh=DUOBvHoer07HDgm9cIq0vL2/7vlIx5pZnqiYIlz1HM0=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=notify.yochana.com; q=dns/txt;
+ s=pic; t=1579792890; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=hw7JifS1yHHF85lSQWJQ+yMsfEfeBkbYi66ubRSa+LU=; b=hrmjAo88yANG5ZZ7H0i/k8nCLkqC1r3ee6PfPF8QAUKk6brnMGEr9QPCznmF1Xmsk2ihcVho
+ Y/yeMse0+IHazjsdPWBH8dzmTj+tFWBrqih2tHnsWasBlNZiszqFxr0Bh/FdFt99D1ENcIdg
+ C6LtCWMissNHWxhv6tnRwUJ5eqo=
+X-Mailgun-Sending-Ip: 159.135.233.158
+X-Mailgun-Sid: WyI3OGZiMyIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI5Yjg5MWIiXQ==
+X-Mailgun-Batch-Id: 5e29b9f0af506b17616e82a9
+Received: by luna.mailgun.net with HTTP; Thu, 23 Jan 2020 15:21:19 +0000
+Date: Thu, 23 Jan 2020 15:21:19 +0000
+Message-Id: <20200123152119.1.8D3104CA1BE6B40B@notify.yochana.com>
+X-Mailgun-Native-Send: true
+Reply-To: zak@yochana.com
+To: josephs@linuxjobber.com
+From: Zak z <zak@yochana.com>
+Subject: Immediate closing position for Full stack Java Developer ||
+ Mountain View, CA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Oorwin Email</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+        
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            /*table-layout: fixed !important;*/
+            margin: initial;
+        }
+        
+        table table table {
+            table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        
+        *[x-apple-data-detectors],
+        /* iOS */
+        
+        .x-gmail-data-detectors,
+        /* Gmail */
+        
+        .x-gmail-data-detectors *,
+        .aBn1 {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        img[Attributes Style] {
+            width: auto;
+        }
+
+
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head>
+
+<body style="background: #ffffff; min-width: 100%; max-width: 620px;">
+    <center>
+       <table cellspacing="0" cellpadding="0" border="0" align="center" style="width: 620px;">
+           <tr>
+                <td style="padding: 20px 0px">
+
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="margin: 0;">
+                        <tr>
+                            <td width="100%">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                        <tr>
+                                        <td style="padding: 0px 0px; font-family:calibri, Arial, Helvetica, sans-serif; font-size: 14px; color:#6f7477; line-height: 1; word-break: break-word">
+                                            <p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:black">Hi,</span></b></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">Hope you are doing great!!!</span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">We have a job opportunity with one our direct client. </span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">If you are interested, please share your updated resume. </span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="color:black">It is highly appreciated, if you refer anyone who is available in the job market.</span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:black">Position:&nbsp;</span>Full stack Java Developer with AWS</b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="font-family:Calibri,sans-serif"><b><span style="color:black">Location: Mountain View, CA</span></b></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="font-family:Calibri,sans-serif"><b><span lang="EN-IN" style="color:black">Duration: Contract</span></b></span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Job Description :</b></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.0pt"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="color:#1d1c1d">Full stack Java developer </span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.0pt"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="color:#1d1c1d">Proficiency with Amazon Web Services such as S3, Lambda</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.0pt"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="color:#1d1c1d">Experience with NoSQL data stores such as Cassandra, HBase, or DynamoDB</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.0pt"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="color:#1d1c1d">Familiar with Java Spring technology</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="background:white"><span style="line-height:12.0pt"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="color:#1d1c1d">Experience with tools such as Github, Jenkins</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="tab-stops:list .5in"><span style="font-family:Calibri,sans-serif"><span style="color:#1d1c1d">Experience developing and extending in-house APIs and writing client side code which interacts with other APIs (RESTful and SDKs)</span></span></span></span></li>
+</ul>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:black">Zak</span></b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="color:black">Resource Specialist</span></b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="color:black"><a href="mailto:zak@yochana.com" style="color:#0563c1; text-decoration:underline"><span style="color:black"><span style="text-decoration:none"><span style="text-underline:none">zak@yochana.com</span></span></span></a>&nbsp;</span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1">&nbsp;</p>                                        </td>
+                                    </tr>
+                                                                       
+                                    <!-- <tr>
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; font-size: 11px; color:#6f7477; padding:10px 20px; border-top: 1px solid #6f7477;">
+                                            This emailer is addressed to and intended only for Beanhire customer and is not spam. You may reach out to Beanhire helpline to clarify any issues that you may have with regard to any information contained in this emailer. 
+                                            <br>Disclaimer: Beanhire won't be responsible for the accuracy, adequacy or completeness of any information in this emailer and is not responsible for any errors or omissions or for results obtained from the use of such information. Beanhire does not have any liability to any person on account of the use of information provided herein and the said information is provided on a best-effort basis
+                                        </td>
+                                    </tr>-->
+                                                                        <tr bgcolor="#484848">
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; width: 100%; font-size: 11px; color:#ffffff; text-align: center; padding: 10px;">
+                                            
+
+                                                                                                Copyright &copy; 2020 | Powered By   &nbsp;<a width="60" height="20" href="https://app.oorwin.com" title="Oorwin Labs Inc."> 
+
+                                                <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" title="Oorwin Labs Inc." style="max-width: 100%; vertical-align: middle;" height="20">
+
+                                                <!-- <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" style="max-width: 100%; vertical-align: middle;" height="20" /> --> </a>
+                                                                                                                                                      <br>
+                                                      To stop receiving these emails please <a style="color:#fff;" href="https://yochana.oorwin.com/unsubscribe.html?company_id=113&&message_id=53687&&to_email=josephs@linuxjobber.com">click here</a> to unsubscribe.
+                                                                                        </td>
+                                    </tr> 
+                                                                    </table>
+                            </td>                
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+       </table>
+    </center>
+<img width="1px" height="1px" alt="" src="http://email.notify.yochana.com/o/eJwVzEsOwiAQANDTyJLMDJQyCxaiHoRvoNFiWk3s7dUDvJcdR8sYRXcEBICkcCJElijtVSHoyxn9zXgN_qRhHa9eD3mM1MIaZBoP0VyGYizGbNCamSixVSEDaa4zMUxVbG4Ze3m2_Tfc-_r-LCPGsv35F5GfJQc"></body>
+
+</html>

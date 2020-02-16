@@ -1,0 +1,144 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m68-80.mailgun.net (m68-80.mailgun.net [166.78.68.80])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id kt286j7q6cq331b63vkfhfoo1blrh67go8san581
+ for josephs@linuxjobber.com;
+ Thu, 16 Jan 2020 18:35:01 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m68-80.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFb2hBdUR6ajQ3cjdBY29mdGFrZEZ5elI0WWVsSlczdTBvNEU2aTJUN1BOYlpzNlBPdWY2N3MzQ2NFVFBuVVdGZGloVWpua3JsQ1gyMDc2K25uK1ZZbUs2UTNOaDBQN0dhdkNQaVlZQUE4QzZsSndmVWloYlZtVGR0SVJNd050OEpJeWtYK09iWTU5b3VtVFI0bk5oUTRpajN3RktIVUtndHZ4VTFlQTRNbUtUZ20vcmM0cFRMM0tNb0x5Mk5jUCtjK3E4TnFJWUZxVWsyRkJSVUtFWnljWVkvKzZYOWRuR0VETjJpZk1XMVFMT0piUGRYd1k4TVh6V1pxY2JWczhEWEdocVg2TGlQWlVBVDlpMVJ5WERiaGdNVDNFVlpTY3VBTkRtRUNmTEFHdkdiblRrN0RFTVl3blhTUmZWOVQ5Mk1xOVhGWFlWcytoemhWQjdTdlF3TEs=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Lq2DF1xoq4Gp6BAQnQ4NsSKnaxGbAyk8K08P9+mRlAM5DMk910WnuFYIzywvFVlxeCkVkZl9d3012p0rt/IYIOAJX81Ft+5VnlZDVoDE3x1g5TRQYku6w8J6/7Ea+sf3yO6XBtwKAiWcvUiON0XtvlsIaT/aZY16IiJaHHQsdG4=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579199704; v=1; bh=0PwyYVB4NZpQXY/zoFMMPdafjS9Bqixrmme28jsyYh0=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1579199703; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=HBJKBCh5FyWItX+4LsBiPAlbQdFIRoQCx6ynrJUOAsY=; b=Dg/InnnWD28QVI9jGQPnJgPJZwfKsf9YU1e7Kjr451x3nrdzDOJkpYSSuC+6q19+uRfjdxia
+ jYBpNthJ4TqeJNq8VvWr3hDyZll6N3PoCjVmBnel5AcscTvtEtOpslWAraQLQUVSHZQEkqgW
+ 9Zl/LtHy1i+QObc9MLTLwDTljgw=
+X-Mailgun-Sending-Ip: 166.78.68.80
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e20accee66f756509b111b9
+Received: by luna.mailgun.net with HTTP; Thu, 16 Jan 2020 18:34:54 +0000
+Date: Thu, 16 Jan 2020 18:34:54 +0000
+Sender: vikash.ks@usgrpinc.com
+Message-Id: <20200116183454.1.9EEB6CB10D2133D1@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: vikash.ks@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Vikash Shandilya <vikash.ks@usgrpinc.com>
+Subject: Urgent Requirement :: AWS ARCHITECT AND DEVELOPER - RTP, North
+ Carolina
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID">Hi Joseph Showunmi
+<p><span style="font-size:12pt"><span style="line-height:16.5pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:#333333">Hope you are doing great!!</span></span></span></span></span></span></p>
+
+<p><span style="font-size:12pt"><span style="line-height:16.5pt"><span style="font-family:"Times New Roman",serif">&nbsp;<span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:#333333">I&#39;m a Talent Acquisition Specialist at United Software Group (USG), a global staffing, IT consulting & Product Development company. We are constantly on the lookout for professionals to fulfill the staffing needs of our clients and we currently have a job opening that may interest you.</span></span></span></span></span></span></p>
+
+<p><span style="font-size:12pt"><span style="line-height:16.5pt"><span style="font-family:"Times New Roman",serif"><span style="font-family:"Calibri",sans-serif">&nbsp;</span></span></span></span></p>
+
+<p><span style="font-size:12pt"><span style="line-height:16.5pt"><span style="font-family:"Times New Roman",serif"><b><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Position : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AWS ARCHITECT AND DEVELOPER</span></span></b></span></span></span></p>
+
+<p><span style="font-size:12pt"><span style="line-height:16.5pt"><span style="font-family:"Times New Roman",serif"><b><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Location :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><b><span lang="EN-IN" style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">RTP, North Carolina</span></span></b></span></span></span></p>
+
+<p><span style="font-size:12pt"><span style="line-height:16.5pt"><span style="font-family:"Times New Roman",serif"><b><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Duration : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full-Time contract</span></span></b></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif">We are looking for hands-on application architects and developers who will: &middot; </span></strong></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Work as a technical leader alongside customer business, development and infrastructure teams &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Lead technical and design discussions with IT executives to help enterprises speed their adoption of new technologies and practices &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Architect and building highly scalable, cloud-native applications on the AWS platform using core developer services like APIGateway, Lambda, SQS, DynamoDB and ECS. &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Leverage new technology paradigms (e.g., serverless, containers, microservices) &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Migrate monolithic applications to micro services architectures &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Advise on implementing AWS best practices &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Influence infrastructure architecture by sharing your application development expertise &middot; </span></span></strong></span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif">Required/Desired Qualifications </span></strong></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">BS level technical degree or equivalent experience; Computer Science or Engineering background preferred &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">10 + years of large scale software development or application engineering with recent coding experience in two or more of the following languages: Java, JavaScript, C/C++, C#, Objective-C, Node.js, .NET, Python, PHP or Ruby &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">5+ years of experience as a technical specialist in Customer-facing roles &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Exposure to Agile development methodologies &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Good experience with Continuous Integration and Continuous Delivery (CI/CD) &middot; </span></span></strong></span></span></li>
+</ul>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong>&nbsp;&nbsp;</strong></span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif">PREFERRED QUALIFICATIONS &middot; </span></strong></span></span></p>
+
+<ul>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Master&#39;s degree in Computer Science or related technical field &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Demonstrated success as a software developer, application architect, product manager, CTO, or consultant working with various platforms &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Architecting, designing and developing applications on the AWS platform &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Designing and building application using Container and serverless technologies &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Experience architecting highly available systems that utilize load balancing, horizontal scalability and high availability &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Good exposure to Agile software development and DevOps practices such as Infrastructure as Code (IaC), </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Continuous Integration and automated deployment &middot; Continuous Integration (CI) tools (e.g. Jenkins) &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Configuration Management platforms (e.g. Chef, Puppet, Salt, or Ansible) &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Strong practical application development experience on Linux and Windows-based systems &middot; Presenting at public events such as technology conferences, hackathons, etc &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Experience working directly with customers, partners or third-party developers &middot; </span></span></strong></span></span></li>
+	<li><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><strong><span style="font-family:"Calibri",sans-serif"><span style="font-weight:normal">Blogging or writing technical articles or contributing to an open source project for new and existing technologies or application architecture and design</span></span></strong></span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Regards,</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Vikash Shandilya</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">United Software Group (USG) INC.</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Phone: 614-495-9222 ex. 608</span></span></p>
+
+<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><a href="mailto:Vikash.ks@usgrpinc.com" style="color:#0563c1; text-decoration:underline">Vikash.ks@usgrpinc.com</a></span></span></p>
+</div>
+
+<div id="EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/bf98f0fdbb21a66cac21bb2a4d3ad461392d88de/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEsOgyAUAMDTlKV5H6C4YGP1HA3Is2JaMRCTHr_2ADPJo0AAUNkTEACiRcfa6A67fpoG-xgQRkLmEW8azvaqR97nbi4ftXpBAOcWg6SjDZy0ULRODN0vwKFXVZZnTp4YnKp-K02OtV3PO-_ndysxSv1XPzkkJkQ"></body>
+</html>

@@ -1,0 +1,101 @@
+Return-Path: <cpdi@ccny.cuny.edu>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id kdapddu0r9m5v0jjapo49r3vt85kfgmmghdshtg1
+ for jeff.adekunbi@ideabakr.org;
+ Mon, 03 Feb 2020 11:46:08 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of ccny.cuny.edu does not designate 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=cpdi@ccny.cuny.edu; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of ccny.cuny.edu does not designate 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=cpdi@ccny.cuny.edu; helo=us-east-mail1.symplicity.com;
+ dmarc=fail header.from=ccny.cuny.edu;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFYjk3cC9vUnlZUUsxaDYvSWh1NTZIWXd0dWpETjMwVWZRWE53bWJ5R25BRnBFbWFCb2JNQzBQSHpxcTZHNXdOb3dTRG9LM1gzU2F5QzBQZUs1MEJrRGJFK0pQdThBMkNVczJFRGJnejQrZFpYWnY3emFLOWtJL0tyODR3d1YrZ1VaWmNkeldmU1hLWE01WTcyL3QwS0g5N3ZuTjFBTHlzalVPRmFMWGsybVFSQkV3REQxcFFRRVorQ0I2ZGNFZUhvVXNMMEsxU1hXUW5RNmYyN0VvMHZKemlyWjZVZUZYWW42UmU1T0pCb2t6SXl3MnpSMnJvaG0wbDgvMFhOblRTTE9TOVN2OGdieCtDUlNaYS9PalplYXNEajJuMXFEdENUd3Z6WmY4aVE3R2c9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=a/96AbcSLo8p7rdwN/kGXz0AJolAF3g3tn0jJi1mvXZFZcZd84zEEC1TU5TF5qH36MCPfytUZ351X93NLB7EjH8wEv04UDnjde9sGxEiwULyF/mEC3aJSampTl6LVQNgh5G3tSfUybdfTaMVTFJcWFpECx03m2TE+AuapakVjUM=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580730371; v=1; bh=uEAluEhQrxJYjTGiTnEV+AJScZgn6Dntsmq1v8TGzEc=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from us-east-7gp3.symplicity.com (7gp3 [172.30.13.131])
+	by mail.symplicity.com (Postfix) with ESMTP id 8A501616E4
+	for <jeff.adekunbi@ideabakr.org>; Mon,  3 Feb 2020 11:46:07 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com 8A501616E4
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_f0b6f7641dfe72622a93eceff27522d6"
+From: "Career and Professional Development Institute" <cpdi@ccny.cuny.edu>
+To: jeff.adekunbi@ideabakr.org
+Subject: CCNY Computer Science Career Fair  
+Message-ID: <b63bb2666b6042a95c8cdc774decceab@ccny-csm.symplicity.com>
+Date: Mon, 03 Feb 2020 06:46:07 -0500
+
+--=_f0b6f7641dfe72622a93eceff27522d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+Ready to hire talented software engineers? Looking to diversify your team? =
+The City College of New York (CCNY) has one of the leading computer science=
+ departments within the NYC area in regards to premier diverse tech talent.
+
+On Friday, February 21st, 2020 the CCNY Career and Professional Development=
+ Institute will be hosting a Computer Science Career Fair on the campus of =
+CCNY in the NAC Ballroom from 12:00pm-3:00pm. This fair is focused on compu=
+ter science and computer engineering students and graduates.
+
+Open to those companies looking to hire software engineers or similar posit=
+ion. REGISTER NOW at:
+
+ <a href=3D"https://www.ccny.cuny.edu/cpdi/computer-science-career-fair" ta=
+rget=3D"_blank">https://<a target=3D"_blank" href=3D"http://www.ccny.cuny.e=
+du/cpdi/computer-science-career-fair"  target=3D"_blank">www.ccny.cuny.edu/=
+cpdi/computer-science-career-fair</a> </a>=20
+
+Companies that have hired our grads range from, Meetup.com, Google, Linkedi=
+n, Verizon Media and many more...
+
+Attend our 1st Computer Science Career Fair to discover best-in-class netwo=
+rk engineering and software engineering talent and robust alumnae network. =
+ These mature, motivated prospective graduates and alumni lend valuable ski=
+lls to any team they join. Students, Graduates & Alumni are prepared to wor=
+k in Data Science, Cyber Security, Mobile Development, Machine Learning, Fr=
+ont End/Back End Development & Database Development.
+
+Sincerely,
+CCNY Career and Professional Development Institute
+=0A=0APowered By Symplicity  
+--=_f0b6f7641dfe72622a93eceff27522d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+=0A<head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8"></head><p>Ready to hire talented software engineers? Looking to dive=
+rsify your team? The City College of New York (CCNY) has one of the leading=
+ computer science=C2=A0departments within the NYC area in regards to premie=
+r diverse tech talent.</p>
+<p>On Friday, February 21st, 2020 the CCNY Career and Professional Developm=
+ent Institute will be hosting a Computer Science Career Fair on the campus =
+of CCNY in the NAC Ballroom from 12:00pm-3:00pm. This fair is focused on co=
+mputer science and computer engineering students and graduates.</p>
+<p>Open to those companies looking to hire software engineers or similar po=
+sition. REGISTER NOW at:</p>
+<p><a href=3D"https://ccny-csm.symplicity.com/track/db01ee3c356ae69f24c7fe2=
+a7604c741/4063815687/realurl=3Dhttps://www.ccny.cuny.edu/cpdi/computer-scie=
+nce-career-fair"> </a><a href=3D"https://ccny-csm.symplicity.com/track/db01=
+ee3c356ae69f24c7fe2a7604c741/4063815687/realurl=3Dhttps://www.ccny.cuny.edu=
+/cpdi/computer-science-career-fair" target=3D"_blank">https://</a><a target=
+=3D"_blank" href=3D"https://ccny-csm.symplicity.com/track/db01ee3c356ae69f2=
+4c7fe2a7604c741/4063815687/realurl=3Dhttp://www.ccny.cuny.edu/cpdi/computer=
+-science-career-fair">www.ccny.cuny.edu/cpdi/computer-science-career-fair</=
+a>  </p>
+<p>Companies that have hired our grads range from, Meetup.com, Google, Link=
+edin, Verizon Media and many more...</p>
+<p>Attend our 1st Computer Science Career Fair to discover best-in-class ne=
+twork engineering and software engineering talent and robust alumnae networ=
+k.=C2=A0 These mature, motivated prospective graduates and alumni lend valu=
+able skills to any team they join. Students, Graduates &amp; Alumni are pre=
+pared to work in Data Science, Cyber Security, Mobile Development, Machine =
+Learning, Front End/Back End Development &amp; Database Development.</p>
+<p>Sincerely,<br>=0ACCNY Career and Professional Development Institute<br><=
+br></p><br><a href=3D"https://ccny-csm.symplicity.com/track/db01ee3c356ae69=
+f24c7fe2a7604c741/4063815687/realurl=3Dhttps://symplicity.com/career_servic=
+es_manager_csm" target=3D"_blank" title=3D"Powered By Symplicity"><img src=
+=3D"http://static.symplicity.com/images/powered-by-symplicity.png"></a>  <i=
+mg src=3D"https://ccny-csm.symplicity.com/track/db01ee3c356ae69f24c7fe2a760=
+4c741/4063815687/email.gif" border=3D"0" alt=3D"">=0A
+--=_f0b6f7641dfe72622a93eceff27522d6--
+

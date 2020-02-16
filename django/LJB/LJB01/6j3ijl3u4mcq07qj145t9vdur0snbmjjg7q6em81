@@ -1,0 +1,344 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m232-78.mailgun.net (m232-78.mailgun.net [159.135.232.78])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 6j3ijl3u4mcq07qj145t9vdur0snbmjjg7q6em81
+ for josephs@linuxjobber.com;
+ Fri, 07 Feb 2020 16:01:56 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m232-78.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m232-78.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIR3Zwb09TbmtqNlFDWFk4VGlUTGw1MmJBSWpEdjVWSjlnVmMzdWdFeGFsRDhaMTdNTmNxeXhrQWoxamFYaTNwd1lYVm0xZzVDcVB6SWhwOWhLUysxbEdHc2NlTGx5SzI4ZG91cTRWbHZoWGdZdlJmTnpNb1h5ay9pNTg0QklPa1g5b1ZNaXRuRytUWCtkV2RxazVjZGVSMVZyYUdoRHhjZmFDaVhqNEdtUHNvYTJoZDRNZmdsbng4cTlmOXlZMEZoVmFUZVdHYWt4dnZ0RVZtdFNzMVN5TXV0aXlKZ3JtcVBVWkxaZlBjVEJJTTJnZlR3ckVBT2g3eFVuRG9XMDdrdVJkb1ZqQjVndmFWcEl5c3BTaEdUNmRrQ3VjQzJjWEVOUS9CYjdlR0VUZTR4VUN2RTNmV1krbzgySjY5eHZrWUw1QXBOc2IzcncyT1U1d1NLQ25abTc=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=cjArEV5D1gu/ZSRWvRo2KYo0PvJ6DrP81aFTCa+FkAfdFJ12LmmCEJKCTATgeMSlnWPd9+aBo5Q7S4v2OC+3ocs9ORaJ2OpoX9EHD5sYOrZ5Y7I81wt6/Zw1RCMzzoVpWIILLGj4/tw6AQQ89BfwYBvwtBgG87NzXeKbfPL/a2o=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581091318; v=1; bh=MM0ZvjlFE3hJIFsKpXjKzy+qAcLBgpy0iGd3LSpXCyU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1581091317; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Date;
+ bh=qN1Xa/krRLv0o8D6yth5lDYxU3soOaQY1AetSuS4JJc=; b=ZHf/An2umH3FDNo6jRSGU0M0GacrcYW3BZ8ES7px/Y27LgqxGkRMEN3lkJgEsCnhn/0TrIvP
+ pTHmp3L5UzohYwL5xHmV2FnVsFDQ7QG4tlph/UjKHF5BKy3RtGZ7bFgtb7Ao25NInYPh5DfS
+ 8d6xbOYZ8NxMcMWa750dng4GkYk=
+X-Mailgun-Sending-Ip: 159.135.232.78
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e3d8890f7dea3655d472d6d
+Received: by luna.mailgun.net with HTTP; Fri, 07 Feb 2020 15:56:00 +0000
+Date: Fri, 07 Feb 2020 15:56:00 +0000
+Message-Id: <20200207155600.1.7D109E87F72D7E33@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: vinay.k@usgrpinc.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Vinay Khatana <vinay.k@usgrpinc.com>
+Subject: Security IAM engineer in Auburn Hills, MI.
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"https://apply.ceipal.com/JobApplication/easy_apply/468173124a9ae=
+c55ff5b4c3bf65d2a26/e58aea67b01fa747687f038dfde066f6/486fe7bf40878c65112d07=
+4c9d0eb4df/e6c7ae6b21d9b4d5f352ab798d94ecf7/29ccb4b8d8a3d62e769f02e3b0a15ec=
+d" style=3D"background:#4285f4; padding:5px 10px; color:#fff; font-size:13p=
+x; font-weight:bold; border-radius:4px;text-decoration:none;float:left;" ta=
+rget=3D"_blank">Apply for this job</a><!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p class=3D"wordsection1"><span style=3D"fo=
+nt-size:10pt"><span style=3D"font-family:Calibri,sans-serif"><span style=3D=
+"font-size:11.0pt">Hello,</span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt">This is <b>Vi=
+nay</b> from United Software Group. Hope you&rsquo;re doing good.</span></s=
+pan></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt">I was trying =
+to reach you for the role of <b>Security IAM engineer in Auburn Hills, MI</=
+b></span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:11.0pt">Please have a=
+ look at the job, you may reply to this e-mail or call me directly to get i=
+n touch with me.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </sp=
+an></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt">Position :=
+: Security IAM engineer</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt">Location: =
+Auburn Hills, MI</span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt">Duration: =
+Full Time</span></b></span></span></p>
+
+<p class=3D"yiv63113889423">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:11.0pt">Job Descri=
+ption:</span></b></span></span></p>
+
+<ul>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Linux\Unix identity management solutions as well as hands-on testing, on-b=
+oarding of Linux servers into FCA&#39;s PAM "privileged access management" =
+system by CA.</span></span></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>The candidate should know very well Unix security and preferably have know=
+ledge or experience on the IDM solution for Linux.</span></span></span></sp=
+an></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>UNIX Security - Identity and Access management for Privileged Access Manag=
+ement.</span></span></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Develop security solutions that include least privilege access and segrega=
+tion of functions, role based authorization</span></span></span></span></sp=
+an></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Testing CA PAM Unix security module- POC</span></span></span></span></span=
+></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Linux cloud identity solution -IaaS.</span></span></span></span></span></l=
+i>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Here high-level requirements.</span></span></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Linux Red Hat IDM.&nbsp; Unix OS and administration experience. </span></s=
+pan></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>3 + years of experience</span></span></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Privilege Access Management - Linux security</span></span></span></span></=
+span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Scripting \ task automation</span></span></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Linux\Unix Account management \ permissions - access management</span></sp=
+an></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Third Party tool for Privilege Access Management, such as CA PAM, CyberArk=
+, etc. is desirable (not required).</span></span></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Security - Identity & Access management fundamentals Example: Least privil=
+ege, segregation of functions, etc.</span></span></span></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"t=
+ab-stops:list .5in"><span style=3D"text-autospace:none"><span style=3D"font=
+-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:11.0pt"=
+>Experience \ knowledge on windows based platforms and security Local serve=
+r security, Active Directory.</span></span></span></span></span></li>
+</ul>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:12.0pt"><span style=
+=3D"font-family:"Times New Roman",serif"><span style=3D"color:#404040">With=
+ Regards,</span></span></span></span></span></p>
+
+<p class=3D"wordsection1" style=3D"margin-bottom:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"=
+font-size:12.0pt"><span style=3D"font-family:"Times New Roman",serif"><span=
+ style=3D"color:#404040">Vinay Khatana </span></span></span></b><span style=
+=3D"font-size:12.0pt"><span style=3D"font-family:"Times New Roman",serif"><=
+span style=3D"color:#404040">| Technical Recruiter</span></span></span></sp=
+an></span></p>
+
+<table class=3D"Table" style=3D"width:571.1pt; border-collapse:collapse; bo=
+rder:dotted #948a54 1.0pt" width=3D"761">
+	<tbody>
+		<tr style=3D"height:.3in">
+			<td style=3D"border:dotted #948a54 1.0pt; width:197.6pt; padding:.05in .=
+1in .05in .1in; height:.3in" width=3D"263">
+			<p align=3D"center" style=3D"text-align:center"><img height=3D"40" src=
+=3D"https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBj=
+QnYzSU5URUcyN28rUXVkUU5BcXIxaThjbkd6RFg2Z29IRGx5Q3pOMFl0OEJlQ0JEeUlUV2Z6Y29=
+6SDNNbmFVOHViTlJWMDdHb1pSOGpVZjFGY1hrWWdNNzUyTXp4VUgzbkNxdEN0ZU83TmFsNXFQK1=
+poQjFYV0UzQm9tY0kxeGJQdU5RODd5YUg5QmV3Z3VVL2lBMk9jPQ=3D=3D" width=3D"75" />=
+</p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"col=
+or:#404040">United Software Group, Inc.</span></b></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"font-s=
+ize:7.0pt"><span style=3D"color:#404040">End-to-End IT Systems | Services |=
+ Solutions Provider</span></span></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"fon=
+t-size:9.0pt"><span style=3D"color:#f79646">A Minority Business Enterprise<=
+/span></span></b></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:121.5pt; border-left:non=
+e; padding:.05in .1in .05in .1in; height:.3in" width=3D"162">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">565=
+, Metro Place South,</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Sui=
+te # 110,</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Dub=
+lin, OH 43017</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"color:#1f497d"><a href=3D"http://www.usgrpinc.com/"=
+ style=3D"color:#0563c1; text-decoration:underline"><span style=3D"font-siz=
+e:10.0pt">www.usgrpinc.com</span></a></span></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:2.5in; border-left:none;=
+ padding:.05in .1in .05in .1in; height:.3in" width=3D"240">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Pho=
+ne: 614-495-9222 Ext.454</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Dir=
+ect: &nbsp;610-973-7431</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Fax=
+:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 866-764-1148</span></span></span></span></=
+p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Ema=
+il:&nbsp; </span></span><span style=3D"font-size:10.0pt"><span style=3D"col=
+or:#1f497d"><a href=3D"mailto:Vinay.k@usgrpinc.com" style=3D"color:#0563c1;=
+ text-decoration:underline">Vinay.k@usgrpinc.com</a></span></span></span></=
+span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:1.0in; border-left:none;=
+ padding:0in 0in 0in 0in; height:.3in" valign=3D"top" width=3D"96">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif">&nbsp;&nbsp; &nbsp;</span></span><img height=3D"90" src=3D"https:/=
+/talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUc=
+yN28rUXVkUU5BcXIxaWhHRXFqZEVWV2s2OGR4WEwwZmRDSFlRamZuTmRFd2dmR3ZIMTJPRTJsc1=
+ZqM3VQb000aUxjeDZISGxxTS9rc0RTbExBaXlhZ0pSdkdsTWRjbkEwRlRFVDg5M3FrUUdJT1pLT=
+UQ4V0VibVZGRmJWaFAyNnBTcGtpVkhrOWkrOGFrPQ=3D=3D" width=3D"90" /></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><b><span style=3D"font-size:8.0pt"><span style=3D"font-family:"Ari=
+al Narrow",sans-serif"><span style=3D"color:#e36c0a">&nbsp;&nbsp;&nbsp; 201=
+6 - 2017 - 2018</span></span></span></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:8.0pt"><span style=3D=
+"background:white"><span style=3D"font-family:"Times New Roman",serif"><spa=
+n style=3D"color:#4a442a">To unsubscribe from this mailing, please reply to=
+ this email with the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line,=
+ or click here&nbsp;</span></span></span></span><span style=3D"font-size:12=
+=2E0pt"><span style=3D"font-family:"Times=
+ New Roman",serif"><span style=3D"co=
+lor:#1f497d"><a href=3D"mailto:mailtomailtom:techsupport@usgrpinc.com?subje=
+ct=3DUNSUBSCRIBE" style=3D"color:#0563c1; text-decoration:underline" target=
+=3D"_blank"><span style=3D"font-size:8.0pt"><span style=3D"background:white=
+"><span style=3D"color:#1f497d">UNSUBSCRIBE</span></span></span></a></span>=
+</span></span><span style=3D"font-size:8.0pt"><span style=3D"background:whi=
+te"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"colo=
+r:#4a442a">.</span></span></span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:8.0pt"><span style=
+=3D"font-family:"Times New Roman",serif"><span style=3D"color:#4a442a">USG =
+is an Equal Opportunity Employer. Qualified applicants will receive conside=
+ration for employment without regard to race, color, religion, gender, age,=
+ disability, military status, national origin or any other characteristic p=
+rotected under federal, state, or applicable local law</span></span></span>=
+</b></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/191374d4=
+47548d7b8d0bd83c3d0a1f8070b9f523/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b=
+>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEEOgyAQAMDXlKNZYNeFAzf1G43IWjGtGIhJn1-bzHlS0AIzgMrBgIEba6IeoNMdDxr8=
+6HhiM_Bo7QPhaq965mPplvJRW0hoPc6AJBJXSql3xD560R4tGvKqyvrMKRgLTtWwlybn1u7nnY_=
+ru5cYpf6rH0mTJoc"></body>
+</html>

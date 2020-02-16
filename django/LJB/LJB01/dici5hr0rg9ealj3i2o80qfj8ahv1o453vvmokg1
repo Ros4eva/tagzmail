@@ -1,0 +1,220 @@
+Return-Path: <bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com>
+Received: from m250.email.mailgun.net (m250.email.mailgun.net [146.20.191.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id dici5hr0rg9ealj3i2o80qfj8ahv1o453vvmokg1
+ for josephs@linuxjobber.com;
+ Mon, 13 Jan 2020 16:13:33 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of avanciers.com does not designate 146.20.191.250 as permitted sender) client-ip=146.20.191.250; envelope-from=bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com; helo=m250.email.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of avanciers.com does not designate 146.20.191.250 as permitted sender) client-ip=146.20.191.250; envelope-from=bounce+abaaca.b9bd01-josephs=linuxjobber.com@avanciers.com; helo=m250.email.mailgun.net;
+ dkim=pass header.i=@avanciers.com;
+ dmarc=none header.from=avanciers.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHdks2a2FqZ1ZlK0RNUGtVcUY2RnMrTVlhNHhzenJIZnY3cVhKYkNZM0tnZXFXTWl5eG01SXZUQmhpQ3FpK3VWZFBEN25SRVFQWEdBSlM1NjRrOHpIMFd1Q2RBNHdMb2VNYjJsc3lmdlNadjVUNUxLRStzNFlkQzdMUktLV1Y5OUVlbkhwbXRiMzJZL0VpQXc4N3V0cjJvL1FtNmJod3ZlZThhOXROeTNEbm51QW9YQlhNM0JaYXBHN1JjQnZvRTdWK2pRS0pwY0RMcUlPMkd3RS9nVFhhNDEweEIvVXdtVnhNRDIrWHdDWFFLQ2VkNm9jYzhPV2VzaUd3VnMxeHNFejhYclJwa3l4Rkh5K1JkU2Q2cDRPaGsyL1pteDM5b29CWmpMZ0h3VHJLa0srOEhuZGFqcW4ya0FKbzMzS0V1RXIxbHFqM21yVUUxL0VXc1dPVkJrcXg=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=YCuERVqipbwm5WrDzx7s6FT92X6t6lryeYB9nRETUx140dtvgnoztwEejmattqdeSYe8yPFxo3QQGeD8NkxnttMVfTLoCCfGAphdCz8/HcGAlpvqgP4vC7Sp8QFr/7LBH9Mq2epxHMi7+VQhdrmafg1l2oMHLnoBoFOLNL/nx/0=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578932014; v=1; bh=M/FFQFkwS1IMsDULARYUN7eTlY9jzSOA6q+AEKyn4x4=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=avanciers.com; q=dns/txt;
+ s=pic; t=1578932014; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=ip6JjgoCR6dTEHygQc0+IWB9CVJTOX0NADuNET/j/Ps=; b=5ZwvntYUYiRuB+roZ79H2U9yPLAZRMLjRYiN2n4zVsqzleBMG/l3wS2/upFOxNcPfXw3Hb2N
+ uqqu37FQpv/sux+J2zJD7+aoA3iOq6NXrunyhphRJwMBrXIt9PTpAoLHV0kt6/eejCURDGpe
+ Qaq3XlhxXdmoPyTXGufJ6mPPv70=
+X-Mailgun-Sending-Ip: 146.20.191.250
+X-Mailgun-Sid: WyJkODM5NSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJiOWJkMDEiXQ==
+X-Mailgun-Batch-Id: 5e1c972935f99a06d2080a7e
+Received: by luna.mailgun.net with HTTP; Mon, 13 Jan 2020 16:13:29 +0000
+Date: Mon, 13 Jan 2020 16:13:29 +0000
+Sender: ajit@avanciers.com
+Message-Id: <20200113161329.1.291AF6CDF914B713@avanciers.com>
+X-Mailgun-Variables: {"ref_id": "3864"}
+Reply-To: ajit@avanciers.com
+To: josephs@linuxjobber.com
+From: Ajit Singh <ajit@avanciers.com>
+Subject: QA Automation Engineer @ Atlanta, GA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p class=3D"m-1607561663957603516wordsectio=
+n1"><strong><span style=3D"background-color:#f1c40f;">Note: It&#39;s W2 Req=
+=2E Joing availbility ASAP.</span></strong></p>
+
+<p class=3D"m-1607561663957603516wordsection1"><span style=3D"font-size:11p=
+t"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"backgro=
+und:white"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"color:#222222">Position :: </span></span></span></b><b><span style=3D"b=
+ackground:white"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"color:black">QA Automation Engineer</span></span></span></b></span=
+></span></p>
+
+<p class=3D"m-1607561663957603516wordsection1"><span style=3D"font-size:11p=
+t"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"backgro=
+und:white"><span style=3D"font-family:"Times New Roman",serif"><span style=
+=3D"color:#222222">Location :: </span></span></span></b><b><span style=3D"b=
+ackground:white"><span style=3D"font-family:"Times New Roman",serif"><span =
+style=3D"color:black">Atlanta, GA</span></span></span></b></span></span></p=
+>
+
+<p class=3D"m-1607561663957603516wordsection1" style=3D"text-align:start; -=
+webkit-text-stroke-width:0px"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif"><b><span style=3D"background:white"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"color:#222222"=
+>Duration :: </span></span></span></b><span style=3D"background:white"><spa=
+n style=3D"font-family:"Times New Roman",serif"><span style=3D"color:#22222=
+2">&nbsp;<b>Contract</b></span></span></span></span></span></p>
+
+<ul>
+	<li class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"f=
+ont-family:"Times New Roman",serif"><b><span style=3D"background-color:#f1c=
+40f;">USC/GC/H4EAD/L2 EAD only</span></b></span></span></li>
+	<li class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"f=
+ont-family:"Times New Roman",serif"><b><span style=3D"background-color:#f1c=
+40f;">Also check if they are comfortable for CTH after 6 months.</span></b>=
+</span></span></li>
+</ul>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif">&nbsp;</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif"><b>Job Description:</b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif">a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; Hands on Automation experience (Framework devel=
+opment) </span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif">b.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; API Automation (Rest)</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif">c.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Java experienced resource</span></span></=
+p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif">d.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; Should have Testing Experience</span></span></p=
+>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif">e.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; Experience in CI/CD (Jenkins/Pipeline experienc=
+e) is preferred.</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif">f.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Knowledge on Cloud platform&nbsp; (Google=
+ Good to have).</span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:12pt"><span style=3D"fon=
+t-family:"Times New Roman",serif"><b>Thanks & Regards</b></span></span></p>
+
+<table class=3D"Table" style=3D"border:none">
+	<tbody>
+		<tr>
+			<td style=3D"border:none; border-right:solid #dadada 1.0pt; padding:0in =
+7.5pt 0in 0in">
+			<p><img height=3D"108" src=3D"https://talenthirecls4.ceipal.com/articles=
+/QjljMVVrSjAvL2Z4cFdyWEJvRndZNFhtWHV3Y0xZbncweFBYUlArUURGN0crVjFNSUg2T0dUME=
+pDZGEvZzlGZlJwNS9wQk5wMlQzRGVNbUF1YzY5RzcrU2NQUWhUeE9NZ29qcFZCV3NaQ0NHRzA0S=
+nRONlhsMU5VUkkycVRRVmNGK2VSemZ0NC9WdS9yUmdvakpZaU14a1NBTUhDVWlucUNsaVdKZDd2=
+VlZVPQ=3D=3D" width=3D"100" /></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"padding:0in 0in 0in 7.5pt">
+			<p><span style=3D"font-size:11pt"><span style=3D"line-height:13.5pt"><sp=
+an style=3D"font-family:Calibri,sans-serif"><b><span style=3D"font-size:9.0=
+pt"><span style=3D"font-family:"Arial",sans-serif"><span style=3D"color:#43=
+4343">Ajit Singh</span></span></span></b><br />
+			<span style=3D"font-size:9.0pt"><span style=3D"font-family:"Arial",sans-=
+serif"><span style=3D"color:#434343"><b>Sr. Technical&nbsp; Recruiter</b>&n=
+bsp;|&nbsp;<b>Avanciers</b></span></span></span><br />
+			<b><span style=3D"font-size:9.0pt"><span style=3D"font-family:"Arial",sa=
+ns-serif"><span style=3D"color:#ef5c26">Desk</span></span></span></b><span =
+style=3D"font-size:9.0pt"><span style=3D"font-family:"Arial",sans-serif"><s=
+pan style=3D"color:#ef5c26">:&nbsp;</span></span></span><span style=3D"font=
+-size:9.0pt"><span style=3D"font-family:"Arial",sans-serif"><span style=3D"=
+color:#434343"><a href=3D"tel:510-394-0492%20" style=3D"color:#0563c1; text=
+-decoration:underline"> <span style=3D"color:#434343">510-255-4886&nbsp;</s=
+pan></a></span></span></span><br />
+			<b><span style=3D"font-size:9.0pt"><span style=3D"font-family:"Arial",sa=
+ns-serif"><span style=3D"color:#ef5c26">Email</span></span></span></b><span=
+ style=3D"font-size:9.0pt"><span style=3D"font-family:"Arial",sans-serif"><=
+span style=3D"color:#ef5c26">:&nbsp;</span></span></span><u><span style=3D"=
+color:#434343"><a href=3D"mailto:ajit@avanciers.com" style=3D"color:#0563c1=
+; text-decoration:underline">ajit@avanciers.com</a></span></u><br />
+			<b><span style=3D"font-size:9.0pt"><span style=3D"font-family:"Arial",sa=
+ns-serif"><span style=3D"color:#ef5c26">Web</span></span></span></b><span s=
+tyle=3D"font-size:9.0pt"><span style=3D"font-family:"Arial",sans-serif"><sp=
+an style=3D"color:#ef5c26">:&nbsp;</span></span></span><span style=3D"font-=
+size:9.0pt"><span style=3D"font-family:"Arial",sans-serif"><span style=3D"c=
+olor:#434343"><a href=3D"http://www.avanciers.com" style=3D"color:#0563c1; =
+text-decoration:underline" target=3D"_blank"><span style=3D"color:#434343">=
+www.avanciers.com</span></a></span></span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"line-height:3.75pt"><sp=
+an style=3D"font-family:Calibri,sans-serif">&nbsp;</span></span></span><img=
+ height=3D"23" src=3D"https://talenthirecls4.ceipal.com/articles/QjljMVVrSj=
+AvL2Z4cFdyWEJvRndZNFhtWHV3Y0xZbncweFBYUlArUURGN214UjFDYkNtT2Z3UUVnQVRFY3BKe=
+HMxSmpnWmphZVFSUVdUbEhNWFpqbTgrN1cyZ1hSRUQ0R1dYR1YvVzJQUkI0dmpBQkx0OTRValIr=
+ajF0S3RpajE0cTc5OERudjZsTk5JYWlGdGxqQUlHWkhJSlFyZ1hHdGRyWkVSTTFaMXlrPQ=3D=
+=3D" width=3D"23" /><span style=3D"font-size:11pt"><span style=3D"line-heig=
+ht:3.75pt"><span style=3D"font-family:Calibri,sans-serif">&nbsp;</span></sp=
+an></span><img height=3D"23" src=3D"https://talenthirecls4.ceipal.com/artic=
+les/QjljMVVrSjAvL2Z4cFdyWEJvRndZNFhtWHV3Y0xZbncweFBYUlArUURGNnVYYTdLbm9IODN=
+hQWN6Y1V4eW9DSFVGTjJQbWNGOTlQQ01WK0pOcWYwZjlYRVFkRHNvZzFJTUpRdnkyMmVSZ1N4OT=
+l2cFBScVBmUkZWZ3NZWDhSeDdvSDZ4bXdabnJ0R2xwQ0MrMGIrNDcvNUMxRkdyZXMrVHNqOUVIV=
+HJBL0VZPQ=3D=3D" width=3D"73" /><span style=3D"font-size:11pt"><span style=
+=3D"line-height:3.75pt"><span style=3D"font-family:Calibri,sans-serif">&nbs=
+p;</span></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br />
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"https://talenthirecls4.ceipal.co=
+m/users/unsubscribe/54a734611576b0e683b676068450a54ad2c3ed2a/ad937c9deabe7b=
+8e7ba3d6090bb986a2e4ebbc8a/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3Nu=
+cE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>click=
+ here </b></a>.</p>    </div>
+</body>
+</html>

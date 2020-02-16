@@ -1,0 +1,527 @@
+Return-Path: <bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com>
+Received: from o1.email.bullhornmail.com (o1.email.bullhornmail.com [198.37.153.11])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id laqcdbbpsi6s7ucuun59fihbq8pnvg89u67ho8g1
+ for josephs@linuxjobber.com;
+ Mon, 10 Feb 2020 21:31:44 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+ dkim=pass header.i=@bullhornmail.com;
+ dmarc=none header.from=mastechdigital.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGR1VVZ0ZUTnMxMS9yM2FJQmNvcXRLY2xYQmlzb051U0ZhUWpZMzVFMW9aS2M1REEvU0hJWUlKSnNEWDlzSjQ0bTRhbnlGbUM4cjZvY21Bc3VQa1M0REJ3c2J5aENDeHpmYTNuek02QmFtNU4weXUvdzBFbE45cDl4S2hqaXJFcjhVRkgxZUhHTitySEs2WnVnNi9ZVVNRdXVqamZTR29SbVJGc2hSRVNEUmRQY2RveTRWM2cwZzEwMlZacGdna1pjakw5eGJHbVdGVTA0WStnNHRQVWpMOUZSMGMxZ2kxL0dvSld5c0hxOGt4Q2wyWk1zdFZTOUpNUVVJY3dyS0hDVDl5cVUyT0hoVWxORkR3V2NHQittU0wrR2J2RUkrWEpTSkFTQ002RXpFMlQyOStWUUk5Tks2cTZCSktQdS9kM3Fab3R6Uk55REU2djczbStGMkNTd1ZjSzV1U0ZLeXc1OGVJZzdTRUZMbUp3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=bE5OhmH6o91c2UyiZ+5n3Mpg+wBTLnx0uqVfLAti1f8jZYtSa0rkDQNxpJfgmBczCTWUo5PoS4ixw4kUPIpndFuyKLRG3gyQlGFXoBLGDgOPy/wkn/esDLldvlrm8Mtl/CNUl5n8PcOFQaSm/PJ5jgxPbI0s7b3s/ZC/TREd8x0=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581370305; v=1; bh=vTDR/d9hKMY3WKNW0X6TsOFahmlsM3BDFvVY2fg63gI=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=bullhornmail.com; h=from:to:subject:mime-version:content-type; 
+	s=m1; bh=/nrrJaj9JY/BIm7JDxSX5IFdnYhN9DAXeQFaPDiwu9A=; b=Faylldc
+	nWAbs4lLHMG3F5aBR5qo+KRxlmUNOg7g1qxx+gSkmYhyac0n+zIRnKaOw7ycctjS
+	Wvl1KjnC850NR3yJsDjzWdqtSfIUs4qzU8TFuUh/uhLt/D2l2qOcszEDi5ZGWQjS
+	12xfg5S3BWWK4yK9A/z7Aa4F6U1RySQ3C7P8=
+Received: by filter1730p1mdw1.sendgrid.net with SMTP id filter1730p1mdw1-32483-5E41CBBF-11
+        2020-02-10 21:31:43.594239516 +0000 UTC m=+343977.929918570
+Received: from outbound2.bullhorn.com (outbound2.bullhorn.com [52.129.17.4])
+	by ismtpd0115p1mdw1.sendgrid.net (SG) with ESMTP id mWpQMNAQQcCH4InaJogf7g
+	for <josephs@linuxjobber.com>; Mon, 10 Feb 2020 21:31:43.489 +0000 (UTC)
+Received: from MassMailing (unknown [10.78.2.174])
+	by outbound2.bullhorn.com (Postfix) with ESMTP id 654061C0417
+	for <josephs@linuxjobber.com>; Mon, 10 Feb 2020 16:31:43 -0500 (EST)
+Received: from mail pickup service by MassMailing with Microsoft SMTPSVC;
+	 Mon, 10 Feb 2020 16:31:44 -0500
+Message-ID: <46897259.1581370304300.JavaMail.cfservice@SL142APP1>
+From: Shalini Mehrotra <shalini.mehrotra@mastechdigital.com>
+To: josephs@linuxjobber.com
+Subject: Devops  Engineer opening @ VA  # Fulltime # 209213
+Mime-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_16988_650346497.1581370304292"
+X-Priority: 3
+X-Charset: UTF-8
+X-messageUUID: 3103E724-0981-6894-BC539FC9E7E87662
+X-OriginalArrivalTime: 10 Feb 2020 21:31:44.0318 (UTC) FILETIME=[7DB765E0:01D5E059]
+Date: Mon, 10 Feb 2020 21:31:43 +0000 (UTC)
+X-SG-EID: 0yz/L0x4SOtxmT5Q2ZIaRuB3YhbCNPbHhve+IF+xP0rfGt5j7gYA1r4adb1WMrF12zKKfTP8HN4Mwk
+ V2EY2uKGpYqgcMCksj+3WoPp7TygtA8MDV6OM1HFUb07mKbhuzNkoN3Inph8SUE3dUDlOETTpVG29d
+ Cw73xPyvIg1JrrjrDxSS92OixJ7QZnWE3Kd3KO4/mFr8/EybAJbHyE8LeYhpg3fTtowdMV5WUHlfwr
+ A578ZBvA0dSwrupt8doyn8
+
+------=_Part_16988_650346497.1581370304292
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_16989_1829295496.1581370304292"
+
+------=_Part_16989_1829295496.1581370304292
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+
+ 
+
+
+Showunmi
+
+
+We are working on a number of exciting opportunities and are eager to talk with you and see if Mastech is the right fit. We value your time and would like to learn more about your skills, experience, and career aspirations.
+
+
+ 
+
+
+Below is some information about an immediate opportunity for which you might be interested. Please contact me at your earliest convenience so that we can have an initial discussion and go from there.  
+
+
+ 
+
+DevOps Engineer
+
+
+
+Arlington VA,
+
+
+
+Skype is okay.
+
+
+
+ 
+
+
+
+&bull; 3-5 years Dev Ops experience required with preferred experience in a senior reporting role.
+
+
+
+&bull; Experience with AWS is required, other cloud providers are a nice bonus.
+
+
+
+&bull; A strong Linux or Unix background.
+
+
+
+&bull; Complete focus on security and mitigating risk through technology.
+
+
+
+&bull; Experience working with automation tools such as Puppet, Terraform, CHEF, or Ansible.
+
+
+
+&bull; Prior work with Kubernetes, Helm, Docker, PostGres, MySQL, Redis, ElasticSearch, microservices, message queues and related technologies will be very helpful.
+
+
+
+&bull; Working knowledge of some form of CI/CD (Jenkins, TravisCI, CircleCI, AppVeyor, etc) is required
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+If you are interested in learning more about the above position, please respond at your earliest convenience, along with an updated resume.  It would be very helpful if you could provide the following information to aid in the process;
+
+
+ 
+
+
+ 
+
+
+
+
+
+1. Your current location (city & state):
+
+
+
+2. Contact number:
+
+
+
+3 Expected rate / compensation:
+
+
+
+4. Date of availability:
+
+
+
+5. Work Authorization Status:
+
+
+ 
+
+
+About Us!
+
+
+
+
+	
+	- Founded in 1986
+
+	
+	- Publicly held ("MHH" on NYSE Amex)
+
+	
+	- $180+ million in Annual Revenue
+
+	
+	- Flexible Benefits
+
+	
+	- Competitive / On-time Pay
+
+	
+	- 1800 billable consultants
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+	
+		
+			
+			 
+
+			
+		
+		
+			
+			 
+
+
+			
+				
+					
+						
+						
+  
+
+
+
+
+
+						
+						
+						
+ 
+
+
+						
+						
+						
+Shalini Mehrotra
+
+
+
+
+						
+Sr Technical Recruiter IT
+
+
+
+
+						
+T: 
++1 
+412-436-0333 x2307
+
+
+
+
+						
+shalini.mehrotra@mastechdigital.com
+
+
+
+						
+					
+					
+						
+						
+Mastech Digital
+
+
+
+
+						
+1305 Cherrington Parkway
+
+
+
+
+						
+Building 210, Suite 400
+
+
+
+
+						
+Moon Township PA 15108
+ 
+
+
+
+						
+ 
+
+
+
+						
+ 
+
+
+
+						
+						
+						
+ 
+
+
+
+						
+						
+						
+www.mastechdigital.com
+
+
+
+
+						
+   
+   
+
+
+
+
+
+						
+ 
+
+
+
+						
+ 
+
+
+
+						
+					
+				
+			
+			
+		
+		
+			
+			
+P
+
+
+			
+			
+			Please consider the environment and do not print this email unless absolutely necessary.
+
+
+			
+		
+	
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+This email was sent to josephs@linuxjobber.com, by Shalini Mehrotra<shalini.mehrotra@mastechdigital.com>
+To remove your email address permanently from future mailings, please go to the following URL:
+http://email.bullhorn.com/ls/click?upn=-2BDNbByuG7ZD382vpfzScOKirb6bBdTIh2Vb1eFkornvi3o7hhRy9I0Wb2tg-2B6otBJcgv6Fz6qmGvDewjqKDSaKTqSNqFf-2BKjtceAHLW6JPvKcxCGw52R8lV8svTgN8TtZENJEtiyeLwKrq5QFgPTiEvVfDJRzgSbSY-2FULUiXB2ldi09ILz62N75-2B6T-2FOYeLPFEJCUffj0IysD6tlTXFxW4r9B4Wvm-2BuqIW7zlCgNr6h5cVHAPvbQIDBrlArEAtks-2BtLU4P75DQFa7lyCDUvHG7U3I84Oaf213jc8etfuECI-3Dfzdl_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJDQ2vG8UL0vVgXfUG5i4NVdpEm7Wk6hO16iCm-2Bb4124FW9C3qcXxQ3r4clNqaY2hmQPoB04-2FPrVCdwFrl1M35DzWfwx-2BcFHBFAOElt0pJ7YSeqZ3zspvLVeEllquWA1w3V8hgkLbpWXcRSFpSwDXlzgeyItWi6p4aRo-2FtnX1tQoFwmDw0XUFCuZ8GhR3Ry8-2FF8-3D
+------=_Part_16989_1829295496.1581370304292
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<font face="Verdana, Geneva, Arial, Sans-serif" size=2 color=#000000><div>
+<div>&nbsp;</div>
+
+<div>Showunmi</div>
+
+<div>We are working on a number of exciting opportunities and&nbsp;are eager to talk with you and see if Mastech is the right fit. We value your time and would like to learn more about your skills, experience, and career aspirations.</div>
+
+<div>&nbsp;</div>
+
+<div>Below is some&nbsp;information about an immediate opportunity for which you might be interested. Please contact me at your earliest convenience so that we can have an initial discussion and go from there. &nbsp;</div>
+
+<div>&nbsp;
+<p><b>DevOps Engineer</b></p>
+
+<p><b>Arlington VA,</b></p>
+
+<p><b>Skype is okay.</b></p>
+
+<p>&nbsp;</p>
+
+<p>&bull; 3-5 years Dev Ops experience required with preferred experience in a senior reporting role.</p>
+
+<p>&bull; Experience with AWS is required, other cloud providers are a nice bonus.</p>
+
+<p>&bull; A strong Linux or Unix background.</p>
+
+<p>&bull; Complete focus on security and mitigating risk through technology.</p>
+
+<p>&bull; Experience working with automation tools such as Puppet, Terraform, CHEF, or Ansible.</p>
+
+<p>&bull; Prior work with Kubernetes, Helm, Docker, PostGres, MySQL, Redis, ElasticSearch, microservices, message queues and related technologies will be very helpful.</p>
+
+<p>&bull; Working knowledge of some form of CI/CD (Jenkins, TravisCI, CircleCI, AppVeyor, etc) is required</p>
+</div>
+
+<div align="left">
+<div><i><font size="3"><font face="Calibri">&nbsp;</font></font></i></div>
+
+<div><i><font size="3"><font face="Calibri">&nbsp;</font></font></i></div>
+</div>
+
+<div>If you are interested in learning more about the above position, please respond at your earliest convenience, along with an updated resume. &nbsp;It would be very helpful if you could provide the following information to aid in the process;</div>
+
+<div>&nbsp;</div>
+
+<div align="left">&nbsp;</div>
+
+<div align="left">
+<div align="left">
+<p>1. Your current location (city &amp; state):</p>
+
+<p>2. Contact number:</p>
+
+<p>3 Expected rate / compensation:</p>
+
+<p>4. Date of availability:</p>
+
+<p>5. Work Authorization Status:</p>
+
+<p align="center">&nbsp;</p>
+
+<h4>About Us!</h4>
+</div>
+
+<ul>
+	<li>Founded in 1986</li>
+	<li>Publicly held (&quot;MHH&quot; on NYSE Amex)</li>
+	<li>$180+ million in Annual Revenue</li>
+	<li>Flexible Benefits</li>
+	<li>Competitive / On-time Pay</li>
+	<li>1800 billable consultants</li>
+</ul>
+</div>
+</div>
+<font color="#000000" face="Verdana, Geneva, Arial, Sans-serif" size="2">&nbsp;</font><br />
+<font color="#000000" face="Verdana, Geneva, Arial, Sans-serif" size="2">&nbsp;</font><!-- Signature 3102C430-BBA1-AC42-457057E9C472837D -->
+
+<div>
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="mso-cellspacing:0in; mso-padding-alt:0in 0in 0in 0in; mso-yfti-tbllook:1184">
+	<tbody>
+		<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+			<td colspan="2" style="BORDER-BOTTOM: #ece9d8; BORDER-LEFT: #ece9d8; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0in; WIDTH: 387.3pt; PADDING-RIGHT: 0in; BORDER-TOP: #cccccc 1pt solid; BORDER-RIGHT: #ece9d8; PADDING-TOP: 0.05in" width="516">
+			<p style="text-align:justify">&nbsp;</p>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow: 1">
+			<td colspan="2" style="BORDER-BOTTOM: #cccccc 1pt solid; BORDER-LEFT: #ece9d8; PADDING-BOTTOM: 0.05in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0in; WIDTH: 387.3pt; PADDING-RIGHT: 0in; BORDER-TOP: #ece9d8; BORDER-RIGHT: #ece9d8; PADDING-TOP: 0in" width="516">
+			<p style="text-align:justify">&nbsp;</p>
+
+			<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="border-collapse:collapse; margin:auto auto auto 1.1pt; mso-padding-alt:0in 0in 0in 0in; mso-yfti-tbllook:1184; width:502.5pt">
+				<tbody>
+					<tr style="HEIGHT: 31.2pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+						<td style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 148.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 31.2pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #0b5ab2 1.5pt solid; PADDING-TOP: 0in" valign="top" width="198">
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="font-family:helvetica,sans-serif; font-size:12pt"><!--?xml:namespace prefix = v ns = "urn:schemas-microsoft-com:vml" /--><span style="font-family:helvetica,sans-serif; font-size:12pt; mso-ansi-language:EN-US; mso-bidi-language:AR-SA; mso-fareast-font-family:'Times New Roman'; mso-fareast-language:EN-US; mso-fareast-theme-font:minor-fareast">&nbsp;<span style="font-family:helvetica,sans-serif; font-size:12pt; mso-ansi-language:EN-US; mso-bidi-language:AR-SA; mso-fareast-font-family:'Times New Roman'; mso-fareast-language:EN-US; mso-fareast-theme-font:minor-fareast"> </span></span></span></font></span></p>
+						</td>
+						<td style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 20.55pt; PADDING-RIGHT: 5.4pt; HEIGHT: 31.2pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" valign="top" width="27">
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri">&nbsp;</font></span></p>
+						</td>
+						<td style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 333.15pt; PADDING-RIGHT: 5.4pt; HEIGHT: 31.2pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" valign="top" width="444">
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><b><span style="font-size:10pt">Shalini Mehrotra</span></b></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><b><span style="font-size:10pt">Sr Technical Recruiter IT</span></b></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="font-size:10pt">T: </span><span style="color:#6c6c6c; font-family:calibri light,sans-serif; font-size:10pt">+1 </span><span style="font-family:calibri light,sans-serif; font-size:10pt">412-436-0333 x2307</span></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="color:#0b4cb4; font-family:calibri light,sans-serif; font-size:10pt"><a href="mailto:shalini.mehrotra@mastechdigital.com"><font color="#0000ff">shalini.mehrotra@mastechdigital.com</font></a></span></font></span></p>
+						</td>
+					</tr>
+					<tr style="HEIGHT: 34.65pt; mso-yfti-irow: 1; mso-yfti-lastrow: yes">
+						<td style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 148.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 34.65pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #0b5ab2 1.5pt solid; PADDING-TOP: 0in" valign="top" width="198">
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><b><span style="font-size:10pt">Mastech Digital</span></b></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="font-size:9pt">1305 Cherrington Parkway</span></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="font-size:9pt">Building 210, Suite 400</span></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="font-size:9pt">Moon Township PA 15108</span> </font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri">&nbsp;</font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><b><span style="color:black; font-family:arial,sans-serif; font-size:8pt; mso-fareast-font-family:Calibri">&nbsp;</span></b></font></span></p>
+						</td>
+						<td style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 20.55pt; PADDING-RIGHT: 5.4pt; HEIGHT: 34.65pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" valign="bottom" width="27">
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><b><span style="color:#0a59c2">&nbsp;</span></b></font></span></p>
+						</td>
+						<td style="BORDER-BOTTOM: #f0f0f0; BORDER-LEFT: #f0f0f0; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 5.4pt; WIDTH: 333.15pt; PADDING-RIGHT: 5.4pt; HEIGHT: 34.65pt; BORDER-TOP: #f0f0f0; BORDER-RIGHT: #f0f0f0; PADDING-TOP: 0in" valign="top" width="444">
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><a href="http://email.bullhorn.com/ls/click?upn=3j2QYNbO2bGx7umOCvO0I5JjwgPFpfEV474JXhpEOgncT3KxnIMM-2B5aaTJs-2Bm3vcI1ED_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJDQ2vG8UL0vVgXfUG5i4NVdlFgAJAez7L3GE9NRNJefYCR8WRAIpM0WrV0XL5k4B0v-2Bi4AATJ2qsl0pLjI2FfKyVZQQRsZmN-2Fj1iW-2FV-2B5wmbntbtUpB-2FvPSjuvavemnJ1eyvEKeIOIkxU11eDHKTCkvQVHuZicSZJfpv-2B6gvKBl7TmIJAyx2jiIp-2FDCOVt31EE-3D"><span style="color:#0b4cb4; font-family:calibri light,sans-serif; font-size:10pt; text-decoration:none; text-underline:none">www.mastechdigital.com</span></a></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="color:#1f497d">&nbsp;&nbsp;<a href="http://email.bullhorn.com/ls/click?upn=SlIRSjGFHfpF9JSSSr72n4wtdu2W8cfdDcL1Idyi6y3HYGmy29V4RvRe4mm3K6FoNkEk_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJDQ2vG8UL0vVgXfUG5i4NVdlFgAJAez7L3GE9NRNJefYCcYVkR5J-2BejIGK3j-2BZKwo9TnEVMQs6cNdXgIs23GgoSGXHNmvN8w6lWhRSwr2-2BDscPTs2tFCRZ2BLkO5bG0Pn10MCsIBnE-2Bri6qajoNTvNWGHRQxcbhMRHQY6lP07dxG7otyAq6g2YEY12O1KDsLc0-3D"><i><span style="color:#6d6d6d; font-size:10pt; mso-fareast-language:EN-IN; text-decoration:none; text-underline:none"> </span></i></a>&nbsp;&nbsp;<a href="http://email.bullhorn.com/ls/click?upn=bNg-2FkGprYeGfRR4G0NngjfwtdouBbRBjESZ-2FH-2FqjZhOe4R6Hr9jQvrLNF4lgtsY574ILmfkrujUU7idtdmUyMhIlX4pxlEKUcolX6yw5xzA9ZZnOdyGtg9IAZzJqNToMsVdv_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJDQ2vG8UL0vVgXfUG5i4NVdlFgAJAez7L3GE9NRNJefYICM5x3OFNqjGJr9OZ6QKvp-2BgFXGWGILnUw0LwQ0e7yhk-2FKxDEneU25BEeIPQnSP1ZBT2hhVYdyGgd-2F22TcrifZat5HwcCc-2BC3hf-2FlV0fjkKOFsN2Iri-2FLLH2HMFbc8-2FRjSiX7zMx4T6WwbiEMbQ2ek-3D"><span style="color:#1f497d; mso-fareast-language:EN-IN; text-decoration:none; text-underline:none"> </span></a></span></font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri">&nbsp;</font></span></p>
+
+						<p><span style="color:#666666; font-size:9pt; line-height:115%"><font face="Calibri"><span style="mso-ascii-font-family:Calibri; mso-fareast-font-family:Calibri; mso-hansi-font-family:Calibri">&nbsp;</span></font></span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style="mso-yfti-irow: 2; mso-yfti-lastrow: yes">
+			<td style="BORDER-BOTTOM: #ece9d8; BORDER-LEFT: #ece9d8; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0in; WIDTH: 22.4pt; PADDING-RIGHT: 2.15pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: #ece9d8; PADDING-TOP: 0in" width="30">
+			<p><span style="color:#2e9271; font-family:webdings; font-size:20pt; line-height:115%">P</span></p>
+			</td>
+			<td style="BORDER-BOTTOM: #ece9d8; BORDER-LEFT: #ece9d8; PADDING-BOTTOM: 0in; BACKGROUND-COLOR: transparent; PADDING-LEFT: 0in; WIDTH: 364.9pt; PADDING-RIGHT: 2.15pt; BORDER-TOP: #ece9d8; BORDER-RIGHT: #ece9d8; PADDING-TOP: 2.15pt" width="487">
+			<p style="text-align:justify"><i><span style="color:#2e9271; font-family:verdana; font-size:7.5pt; line-height:115%; mso-ansi-language:EN-GB">Please consider the environment and do not print this email unless absolutely necessary.</span></i></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<!-- End_Signature 3102C430-BBA1-AC42-457057E9C472837D --></font><br><div style='color:#999999; font-size:8pt; font-family:arial;'>This email was sent to <a style='color:#848484' href='mailto:josephs@linuxjobber.com'>josephs@linuxjobber.com</a>, by Shalini Mehrotra<shalini.mehrotra@mastechdigital.com>.<br>To remove your email address permanently from future mailings, please <a style='color:#848484' href="http://email.bullhorn.com/ls/click?upn=-2BDNbByuG7ZD382vpfzScOKirb6bBdTIh2Vb1eFkornvi3o7hhRy9I0Wb2tg-2B6otBJcgv6Fz6qmGvDewjqKDSaKTqSNqFf-2BKjtceAHLW6JPvKcxCGw52R8lV8svTgN8TtZENJEtiyeLwKrq5QFgPTiEvVfDJRzgSbSY-2FULUiXB2ldi09ILz62N75-2B6T-2FOYeLPFEJCUffj0IysD6tlTXFxW4r9B4Wvm-2BuqIW7zlCgNr6h5cVHAPvbQIDBrlArEAtks-2BtLU4P75DQFa7lyCDUvHG7U3I84Oaf213jc8etfuECI-3DKufV_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJDQ2vG8UL0vVgXfUG5i4NVdlFgAJAez7L3GE9NRNJefYKyTAHdqwRupbf9tUri6QxbBs-2Bh-2BIOeMdtOw9Zep7sfun4vQZYFGXyXgkEeaMX7kP3F4HDXN2CXXoggOMv1cQtAz7Neh55-2Fwi3mDlr9jTkwQcAIH2-2FYaePBzwcJ-2FQLoiwuJ8dU7l54IxpVSz0LyKWhI-3D" target=_blank>click here</a>.</div><img src="http://email.bullhorn.com/wf/open?upn=xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPoNnxqP8KMBMqgKWkambwJPlyeh78qFDdX8os05eksO-2BhGLFtbYBj2wThpnvTkIvoq92asZ68080OmdF-2B471CDDpxK6sy1H0-2F2Ajd5mkQuhB-2BCUiIH2Wlu2BX9M-2FSrnBTt7Q-2FwpJIHW2h-2BHKEYW-2BWNNHFg9TQOI0A66KHXCUftYN391r7QyYWb3h0ZgfLRkjdA-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+
+------=_Part_16989_1829295496.1581370304292--
+
+------=_Part_16988_650346497.1581370304292--

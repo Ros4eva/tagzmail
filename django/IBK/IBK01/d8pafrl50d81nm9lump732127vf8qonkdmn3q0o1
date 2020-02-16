@@ -1,0 +1,45 @@
+Return-Path: <laney@csm.symplicity.com>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id d8pafrl50d81nm9lump732127vf8qonkdmn3q0o1
+ for jeff.adekunbi@ideabakr.org;
+ Wed, 01 Jan 2020 09:09:00 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: none (spfCheck: 34.194.230.233 is neither permitted nor denied by domain of csm.symplicity.com) client-ip=34.194.230.233; envelope-from=laney@csm.symplicity.com; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=none (spfCheck: 34.194.230.233 is neither permitted nor denied by domain of csm.symplicity.com) client-ip=34.194.230.233; envelope-from=laney@csm.symplicity.com; helo=us-east-mail1.symplicity.com;
+ dmarc=none header.from=csm.symplicity.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHNjFWblZSa2Y4NEtDd3B0R1pEUllkVS9mWWJpN2h3bmZHOTRpY2lXbGFJWDZHdHdpSzBwVUFLMWRyeHlUREFabjZadnNCMWhaSmZpMlJMbWFvbXhUL1ZPZXBiYTVBQ1E5VDk2Y052ak1qaWdzSnlpa1htc1JZMVR6eHhqYnFtVmYzNXAzNFFOVzllUVQ5UFVISWJvalBQMkdZbVdiUTNsVFZydmhPSTVHQnZPeW8wZE5kQ0Nnb1JiRkNQdWNCNkFCZ0J1eVRFWkFVcFhITE9jTTRROEtubjFKZWR5VnY2aXNhUEl0Q2ZpRzBqZ3VVVzBUZFZKeE45OHA5RXFTV0dENERTdnAxOW9JRGJmTmU3dUZ5UGF2TDJvQjcvWnFvTlF3U1VaVWprbXNBUUE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=WhGnTkSysK9kQxRWsr01DEglTy+lSvAxvPv7JG55bgX3RtszfGNiDB6KUwQh0E9kQ70TI+4B52EFsP4lMWd4Qtu3cxbygpds4WyADBlzjPZQu17cVmdYI6DcJaWIi9XDUuNt5INxMnOUETALCtRrAVTMZlGuG9Az3/GMAD6+0y0=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577869740; v=1; bh=QHhMx5bVjL8xx6n2aHstydy2nK1DBXFjgG+R8hV3Biw=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from ip-172-30-12-53 (ip-172-30-12-53.ec2.internal [172.30.12.53])
+	by mail.symplicity.com (Postfix) with ESMTP id 7CE3261639
+	for <jeff.adekunbi@ideabakr.org>; Wed,  1 Jan 2020 09:08:59 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com 7CE3261639
+From: laney@csm.symplicity.com
+Reply-To: rzion@peralta.edu
+To: jeff.adekunbi@ideabakr.org
+Content-Type: text/plain; charset=UTF-8;
+Subject: Non-OCR Posting Follow-Up
+Message-ID: <14eba39cb1c845c8a06276a585f9d3b8@laney-csm.symplicity.com>
+Date: Wed, 01 Jan 2020 01:08:59 -0800
+
+Jan 01, 2020, 1:08 AM
+
+ideabkr
+
+Dear Jeff:
+
+Your Teaching Assitant Part Time position expired on Tuesday December 31, 2019.  If you have filled this position please provide the information below by simply replying to this e-mail. This will help us improve our joint recruiting efforts. Please be assured that the data you share will be kept confidential. 
+
+Did you hire one of our candidates?
+Number of candidates hired?
+Hourly Wage (If part-time or intern)
+Monthly Salary (If full-time)
+Major if Available:
+Start date of position
+End date of position if temporary
+
+Thank you,
+Career Services
+
+Powered By Symplicity

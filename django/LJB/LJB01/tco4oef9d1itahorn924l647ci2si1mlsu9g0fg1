@@ -1,0 +1,454 @@
+Return-Path: <bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com>
+Received: from o1.email.bullhornmail.com (o1.email.bullhornmail.com [198.37.153.11])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id tco4oef9d1itahorn924l647ci2si1mlsu9g0fg1
+ for josephs@linuxjobber.com;
+ Thu, 13 Feb 2020 19:48:08 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+ dkim=pass header.i=@bullhornmail.com;
+ dmarc=none header.from=tanishasystems.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGR2dJaTdBUlJoWXlIanJaYU5GTnV2b3g5dzErL3pRcitGZVZWcEZpOUk5ODRkRU85OE56ZG5WLzYzcE5zUmZWMVFoU2VnclFNcDFIamdrZmVKc1FUK3BRZUdaWTdiejJRYWo1dDN5OENLUkZkQ1Q2cEJCaEQvWHV4dDAyWUxrbGU4V3lwY0ZpR1o4dkI0ekN0NlJiaFV0aGJtQ1d5Qlc4V29UdXpqMmlRODg2VEdvNkR4OTAwUThkTUppblJGYklPTm1vNTc5UFhpTEdsZHpEaHpIQWlPT04wRWNycldmNUlNd2NWQnZPSjNYMm1xeDQvNzk5bmd5NlVEQmhSOEFoZ05qQjIrUlEyRzJKYXdvWnJiODdYcTdxeXN6K01KZ3dFVnF0TG14T05UZ3U5SzVrMTFTdzg2d0FibDhjSUlCUHBrb2lncUErMGRMSVBMNEE4ZHYyZkxFWXFITkJ0QlZweXIwL2sxeHJ2a1JnPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=GsIeTgxCbhnNUysx2V+7PXC+Q4+vZHW+I4/Lo1OHfZxLD+70FI1k5MlLcnjiHxHnVLCH7CkZa6GDT/BcvKszAlnkDFhSbaC8Ds0QHm/PBqL1m1bk7/pdU30a08hqurQPBCJcK+ExLUEW4Yx1blqivP+EfaSi+1zJDHzi6MTCG1Y=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581623289; v=1; bh=qIB7GcsM8q+QEIL5ZsbcEDc0+iqfWkA03CgKwqZ9hvE=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=bullhornmail.com; h=from:to:subject:mime-version:content-type; 
+	s=m1; bh=v3TYk3t3qh9QUZQLQIaJgeR2QWxchqLe4HgP9g5bBnI=; b=OYLd1gi
+	KxtwQUHf8THILBf+flZHyy4/rO5xM+ZCII6/sAiQCZxwOpUHiC8sNF6RKHm/ANoT
+	XQY8uKFhtjf5KVuJguhYnlAHSs3BNTz24NDWTr01KVetQIG2/Imcm0NTO0lC4eVi
+	jJtQuurBDUNUqHPTi2nIaMXay2REB60JVWIw=
+Received: by filter0315p1iad2.sendgrid.net with SMTP id filter0315p1iad2-27696-5E45A7F7-1
+        2020-02-13 19:48:07.271261131 +0000 UTC m=+603988.163090977
+Received: from outbound2.bullhorn.com (outbound2.bullhorn.com [52.129.17.4])
+	by geopod-ismtpd-1-0 (SG) with ESMTP id X0apaBrdQXKiwTL6OQ-oxA
+	for <josephs@linuxjobber.com>; Thu, 13 Feb 2020 19:48:04.772 +0000 (UTC)
+Received: from MassMailing (sl131app2.bos.bullhorn.com [10.77.2.61])
+	by outbound2.bullhorn.com (Postfix) with ESMTP id 28551180253
+	for <josephs@linuxjobber.com>; Thu, 13 Feb 2020 14:48:04 -0500 (EST)
+Received: from mail pickup service by MassMailing with Microsoft SMTPSVC;
+	 Thu, 13 Feb 2020 14:48:02 -0500
+Message-ID: <863596421.1581623282015.JavaMail.cfservice@SL131APP2>
+From: Latifa Team <team8@tanishasystems.com>
+To: josephs@linuxjobber.com
+Subject: Solutions Architect IV 9650 with AWS and Microservices | Chicago IL
+ || Local and W2 only
+Mime-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_386112_1040312737.1581623282015"
+X-Priority: 3
+X-Charset: UTF-8
+X-messageUUID: 4018095E-F6E3-D976-204A50A9390EBF1A
+X-OriginalArrivalTime: 13 Feb 2020 19:48:02.0126 (UTC) FILETIME=[803D7EE0:01D5E2A6]
+Date: Thu, 13 Feb 2020 19:48:07 +0000 (UTC)
+X-SG-EID: 0yz/L0x4SOtxmT5Q2ZIaRuB3YhbCNPbHhve+IF+xP0ovYK8O4/H1OtwoXVf+CYFmhD/Dvy4oynmUJm
+ NNpJcb7c57tiMEaTjo4OJAFjRu48RwVzMyDGbr9QSREB0jzkT9T7l/nazd1q4RBQGeaOE2w4lcukTm
+ Elv4ankfrlLZIuVYYUUmyCv6RD7zEilNHepPkdt4qPur8T3M20YGbPtJqBA+eK1HcNWzAM8ffYC1v9
+ I=
+
+------=_Part_386112_1040312737.1581623282015
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_386113_1871800532.1581623282015"
+
+------=_Part_386113_1871800532.1581623282015
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+
+
+Hi
+
+
+
+Hope you are doing good!
+
+
+
+ 
+
+
+
+Description: 
+
+
+
+We are hiring a Solutions Architect to work in Chicago IL! (W2 only)
+
+
+
+ 
+
+
+
+Job Description :
+
+
+*** Contract-to-Hire position. Must be legally authorized to work in the United States for any employer without sponsorship ***
+
+
+
+*** Must be available for onsite, in-person interviews ***
+
+
+
+
+Must have a strong background with AWS platform - AWS Certification required unless the candidate has clear indications on their resume that they are an AWS guru
+
+
+
+
+Experience with Implementation projects is a must
+
+
+
+
+Microservices experience is a must
+
+
+
+
+10 + years experience of a strong development (Java) and architecture background
+
+
+
+
+Bachelors Degree Required
+
+
+
+
+This is a contract to hire role the manager is looking for local candidates
+
+
+
+
+The project is currently in the requirement gathering stage and he would like to bring on someone who has experience working on projects from inception to finish
+
+
+
+
+Batch Processing experience is a plus
+
+
+
+
+Description:
+
+
+
+
+Job Overview and Responsibilities
+
+
+
+The Revenue Management IT team at United Airlines is seeking a strong technical leader and architect with extensive experience in software architecture and development in both batch and real time systems. The candidate will lead the design and development of Revenue Management IT systems and guide overall technical direction and roadmap.
+
+
+
+Contribute to the development of multi-year plans in alignment with business and IT strategy. Provide industry-leading thought leadership - and facilitate development of strategies across multiple disciplines/domains. Facilitate development of architecture patterns and standards. Consult in design of complex departmental initiatives - and provide guidance to project teams. Consult in design of multiple projects across multiple disciplines/domains. Establish communities of practice in areas of expertise. Coach and mentor other departmental IT staff in area of expertise.
+
+
+
+IT Strategy
+
+&bull; Align the development of core business capabilities, information assets and technology in response to strategic imperatives.
+
+&bull; Collaborate with the business to evaluate business goals, identify business problems, and propose solutions.
+
+&bull; Collaborate with enterprise architecture group and align departmental IT strategy.
+
+
+
+Architecture Planning
+
+&bull; Leads architecture strategy & planning for large programs and provides guidance to technical staff across multiple projects.
+
+&bull; Model the department-wide business and technology capabilities to analyze the alignment of business strategies and capabilities with technology strategy and solutions.
+
+&bull; Decompose business strategies and initiatives into actionable multi-year roadmaps, providing clear direction on execution in order to ensure a high return on investment.
+
+&bull; Drive strategic and transitional planning of applications, technology, information and business functions across the enterprise.
+
+&bull; Create a well-informed cloud strategy and manage the adaption process.
+
+&bull; Identify the top cloud architecture solutions to successfully meet the strategic needs of the department.
+
+
+
+IT Delivery
+
+&bull; Regularly evaluate cloud applications, hardware, and software.
+
+&bull; Develop and organize cloud systems.
+
+&bull; Respond to technical issues in a professional and timely manner.
+
+&bull; Offer guidance in infrastructure movement techniques including bulk application transfers into the cloud.
+
+&bull; Provide direction to internal and external resources during the selection and implementation of business systems.
+
+&bull; Participate in the design of business, information and technology architectures on the basis of cost, functionality and practicality.
+
+
+
+Organizational Development
+
+&bull; Maintain communities of practice surrounding business analysis and IT architecture.
+
+&bull; Facilitate open communication and fact-based decision making.
+
+&bull; Research, identify, and recommend industry best practices for solving business and technology problems.
+
+&bull; Function with autonomy and demonstrate influence.
+
+&bull; Clarify, define, coordinate and direct the work of others.
+
+&bull; Provide guidance to other architects.
+
+
+
+Required
+
+&bull; Bachelors degree, preferably in Information Technology or Business or equivalent experience, education, or training
+
+&bull; AWS Certification - Solutions Architect Associate
+
+&bull; 10+ years of experience spanning multiple IT disciplines such as software architecture design, application development, and Operations
+
+&bull; Technical Expertise -
+
+2 years or more, hands on application implementation experience in AWS using technologies such as Kinesis, Kafka, Kubernetes, Apache Spark, NoSQL Database, API Gateway, Redshift, Airflow
+
+In-depth understanding of coding languages (Java, Python, JavaScript)
+
+In-depth understanding of micro-service design patterns
+
+&bull; Persuasion - The ability to engage and enroll others in an initiative - both individually and in a group setting. Involves articulating the new possibility for others - and leading and engaging others in direct, positive, meaningful conversations
+
+&bull; "Big Picture" Thinker - The ability to maintain perspective and establish context. Involves being able to recognize patterns and predict outcomes - and leverage them to redirect personal and/or team work effort in the optimal direction
+
+&bull; Strategic - The ability to visualize and plan for outcomes in the future and sustain work in achieving the outcomes. Involves an ability to support short-term trade-offs in order to achieve longer term gain
+
+&bull; Communication Skills - The ability to communicate verbally and in writing with all levels of employees and management, capable of successful formal and informal communication. Involves an ability to speak and write clearly and understandably at the right level
+
+&bull; Integrity and Trust - Involves being widely trusted, being seen as a direct, truthful individual, can present the unvarnished truth in an appropriate and helpful manner, keeps confidences, admits mistakes, and doesnt misrepresent him/herself for personal gain
+
+&bull; Prioritization - The ability to successfully manage multiple competing work efforts across multiple teams. Involves assessing impacts, importance and urgency and setting direction and expectations - in order to meet or exceed expectations for timeliness and quality of work
+
+&bull; Valuing Diversity - The ability to accept and promote diversity in concepts, processes and outcomes - in order to implement effective business solutions. Involves being open to new ideas, encouraging engagement from stakeholders and focusing individual and team work effort along the best approach
+
+&bull; Experience in leading technical staff or coordinating work across multiple technology teams
+
+&bull; Must be legally authorized to work in the United States for any employer without sponsorship
+
+&bull; Successful completion of interview required to meet job qualification
+
+&bull; Reliable, punctual attendance is an essential function of the position
+
+
+
+Preferred
+
+&bull; Masters degree
+
+&bull; Good understanding of Devops
+
+&bull; Airline industry background
+
+&bull; Agile experience
+
+&bull; TFS experience
+
+&bull; Vendor Management - The ability to manage external vendor relationships professionally, to Uniteds best interests. Involves managing and negotiating contracts, statements of work and financials
+
+&bull; Ability to hold vendors accountable to high standards of performance
+
+&bull; Business Acumen - The ability to make insightful, successful business decisions and tradeoffs assessing the internal and external business landscape, strategies, opportunities, strengths and weaknesses. Involves knowledge of the industry - and awareness of the key trends shaping the future of the corporation
+
+&bull; Creativity & Innovation - The ability to define new, original ideas and successfully implement them across an organization. Involves an ability to think outside-in, assess conventional work products and processes, define new concepts, and manage change across the organization in implementing them
+
+&bull; Negotiation - The ability to resolve disputes and produce an agreement, that is perceived as a collective advantage to all parties involved. Involves the ability to tailor the process, behavior and substance of the negotiation in order to reach agreement
+
+&bull; Proven expertise in design and implementation of complex IT solutions
+
+&bull; Awareness of industry best practices and research
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+Koshal Arora
+
+Sr. Technical Recruiter
+
+
+
+Tanisha Systems Inc
+
+Phone: 212-729-6543 Ext 393
+
+
+Email: Koshal@tanishasystems.com
+
+
+Address: 99 Wood Ave South Suite # 308 Iselin, NJ 08830
+
+
+www.tanishasystems.com
+
+
+
+
+ 
+
+
+
+
+
+This email was sent to josephs@linuxjobber.com, by Latifa Team<team8@tanishasystems.com>
+To remove your email address permanently from future mailings, please go to the following URL:
+http://email.bullhorn.com/ls/click?upn=-2BDNbByuG7ZD382vpfzScOHBB8JRCGpLfQ8-2BlzmNEZIpgGiGxhh07vFZqHothCTT7ajvu14xjtOReeGz8LVN9T4G6AmJrSx1gP0uHDI4Slt3Lhvl3fPg98yNexo5lPD6Gpv0uLh23cre9qhCPhcoT16PdAV-2Bmob5FxdFhIjRGs73c-2FvRqR3wVEvGzrdyoxzDVgGphRhmeLp7WzZxfT7wBFEi6EOdPCDOcF-2FIuthK1fle5o-2BwSqOHPBIrnG07f3xIiwdQ-2BDL4ohJsw3tid-2FBL4ImVTu47kKjuY809dTIhd6gU-3Da2KR_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJCHdySdQW7TnhwTkDSE1rBWZUYGl172kJTuPyjczhJ-2BXnGTG3Yx4E834fwG0nXLfXbhEWrzbl1u86JWCmhINUTJRxVdbMwvoEzJ0-2B04IiCpNhtWYLg9PM-2BXVHbaqVXDbcHJEaxBCq6iFutDFkJaomtZiygI9N-2F-2FIuk0upiriSWMDRfQyM5Daci-2FP1FlP5HP4Ko-3D
+------=_Part_386113_1871800532.1581623282015
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<font face="Geneva, Arial, Sans-serif" size=2 color=#000000><div>
+<p><strong>Hi</strong></p>
+
+<p><strong>Hope you are doing good!</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Description: </strong></p>
+
+<p>We are hiring a Solutions Architect to work in Chicago IL! (W2 only)</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Job Description :</strong></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><span style="color:black">*** Contract-to-Hire position. Must be legally authorized to work in the United States for any employer without sponsorship ***<br />
+<br />
+*** Must be available for onsite, in-person interviews ***</span></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><span style="color:black">Must have a strong background with AWS platform - AWS Certification required unless the candidate has clear indications on their resume that they are an AWS guru</span></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><span style="color:black">Experience with Implementation projects is a must</span></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><strong><span style="color:black">Microservices experience is a must</span></strong></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><strong><span style="color:black">10 + years experience of a strong development (Java) and architecture background</span></strong></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><span style="color:black">Bachelors Degree Required</span></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><span style="color:black">This is a contract to hire role the manager is looking for local candidates</span></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><span style="color:black">The project is currently in the requirement gathering stage and he would like to bring on someone who has experience working on projects from inception to finish</span></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><span style="color:black">Batch Processing experience is a plus</span></span></p>
+
+<p style="margin-bottom:7.5pt"><span style="background-color:white"><strong><span style="color:black">Description:</span></strong><br />
+<br />
+<span style="color:black">Job Overview and Responsibilities<br />
+<br />
+The Revenue Management IT team at United Airlines is seeking a strong technical leader and architect with extensive experience in software architecture and development in both batch and real time systems. The candidate will lead the design and development of Revenue Management IT systems and guide overall technical direction and roadmap.<br />
+<br />
+Contribute to the development of multi-year plans in alignment with business and IT strategy. Provide industry-leading thought leadership - and facilitate development of strategies across multiple disciplines/domains. Facilitate development of architecture patterns and standards. Consult in design of complex departmental initiatives - and provide guidance to project teams. Consult in design of multiple projects across multiple disciplines/domains. Establish communities of practice in areas of expertise. Coach and mentor other departmental IT staff in area of expertise.<br />
+<br />
+<strong>IT Strategy</strong><br />
+&bull; Align the development of core business capabilities, information assets and technology in response to strategic imperatives.<br />
+&bull; Collaborate with the business to evaluate business goals, identify business problems, and propose solutions.<br />
+&bull; Collaborate with enterprise architecture group and align departmental IT strategy.<br />
+<br />
+<strong>Architecture Planning</strong><br />
+&bull; Leads architecture strategy &amp; planning for large programs and provides guidance to technical staff across multiple projects.<br />
+&bull; Model the department-wide business and technology capabilities to analyze the alignment of business strategies and capabilities with technology strategy and solutions.<br />
+&bull; Decompose business strategies and initiatives into actionable multi-year roadmaps, providing clear direction on execution in order to ensure a high return on investment.<br />
+&bull; Drive strategic and transitional planning of applications, technology, information and business functions across the enterprise.<br />
+&bull; Create a well-informed cloud strategy and manage the adaption process.<br />
+&bull; Identify the top cloud architecture solutions to successfully meet the strategic needs of the department.<br />
+<br />
+<strong>IT Delivery</strong><br />
+&bull; Regularly evaluate cloud applications, hardware, and software.<br />
+&bull; Develop and organize cloud systems.<br />
+&bull; Respond to technical issues in a professional and timely manner.<br />
+&bull; Offer guidance in infrastructure movement techniques including bulk application transfers into the cloud.<br />
+&bull; Provide direction to internal and external resources during the selection and implementation of business systems.<br />
+&bull; Participate in the design of business, information and technology architectures on the basis of cost, functionality and practicality.<br />
+<br />
+<strong>Organizational Development</strong><br />
+&bull; Maintain communities of practice surrounding business analysis and IT architecture.<br />
+&bull; Facilitate open communication and fact-based decision making.<br />
+&bull; Research, identify, and recommend industry best practices for solving business and technology problems.<br />
+&bull; Function with autonomy and demonstrate influence.<br />
+&bull; Clarify, define, coordinate and direct the work of others.<br />
+&bull; Provide guidance to other architects.<br />
+<br />
+<strong>Required</strong><br />
+&bull; Bachelors degree, preferably in Information Technology or Business or equivalent experience, education, or training<br />
+&bull; AWS Certification - Solutions Architect Associate<br />
+&bull; 10+ years of experience spanning multiple IT disciplines such as software architecture design, application development, and Operations<br />
+&bull; Technical Expertise -<br />
+2 years or more, hands on application implementation experience in AWS using technologies such as Kinesis, Kafka, Kubernetes, Apache Spark, NoSQL Database, API Gateway, Redshift, Airflow<br />
+In-depth understanding of coding languages (Java, Python, JavaScript)<br />
+In-depth understanding of micro-service design patterns<br />
+&bull; Persuasion - The ability to engage and enroll others in an initiative - both individually and in a group setting. Involves articulating the new possibility for others - and leading and engaging others in direct, positive, meaningful conversations<br />
+&bull; &quot;Big Picture&quot; Thinker - The ability to maintain perspective and establish context. Involves being able to recognize patterns and predict outcomes - and leverage them to redirect personal and/or team work effort in the optimal direction<br />
+&bull; Strategic - The ability to visualize and plan for outcomes in the future and sustain work in achieving the outcomes. Involves an ability to support short-term trade-offs in order to achieve longer term gain<br />
+&bull; Communication Skills - The ability to communicate verbally and in writing with all levels of employees and management, capable of successful formal and informal communication. Involves an ability to speak and write clearly and understandably at the right level<br />
+&bull; Integrity and Trust - Involves being widely trusted, being seen as a direct, truthful individual, can present the unvarnished truth in an appropriate and helpful manner, keeps confidences, admits mistakes, and doesnt misrepresent him/herself for personal gain<br />
+&bull; Prioritization - The ability to successfully manage multiple competing work efforts across multiple teams. Involves assessing impacts, importance and urgency and setting direction and expectations - in order to meet or exceed expectations for timeliness and quality of work<br />
+&bull; Valuing Diversity - The ability to accept and promote diversity in concepts, processes and outcomes - in order to implement effective business solutions. Involves being open to new ideas, encouraging engagement from stakeholders and focusing individual and team work effort along the best approach<br />
+&bull; Experience in leading technical staff or coordinating work across multiple technology teams<br />
+&bull; Must be legally authorized to work in the United States for any employer without sponsorship<br />
+&bull; Successful completion of interview required to meet job qualification<br />
+&bull; Reliable, punctual attendance is an essential function of the position<br />
+<br />
+<strong>Preferred</strong><br />
+&bull; Masters degree<br />
+&bull; Good understanding of Devops<br />
+&bull; Airline industry background<br />
+&bull; Agile experience<br />
+&bull; TFS experience<br />
+&bull; Vendor Management - The ability to manage external vendor relationships professionally, to Uniteds best interests. Involves managing and negotiating contracts, statements of work and financials<br />
+&bull; Ability to hold vendors accountable to high standards of performance<br />
+&bull; Business Acumen - The ability to make insightful, successful business decisions and tradeoffs assessing the internal and external business landscape, strategies, opportunities, strengths and weaknesses. Involves knowledge of the industry - and awareness of the key trends shaping the future of the corporation<br />
+&bull; Creativity &amp; Innovation - The ability to define new, original ideas and successfully implement them across an organization. Involves an ability to think outside-in, assess conventional work products and processes, define new concepts, and manage change across the organization in implementing them<br />
+&bull; Negotiation - The ability to resolve disputes and produce an agreement, that is perceived as a collective advantage to all parties involved. Involves the ability to tailor the process, behavior and substance of the negotiation in order to reach agreement<br />
+&bull; Proven expertise in design and implementation of complex IT solutions<br />
+&bull; Awareness of industry best practices and research</span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><img src="file:///C:/Users/KOSHAL~1.IND/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" style="height:64px; width:171px" /></p>
+
+<p><strong>Koshal Arora</strong><br />
+<strong>Sr. Technical Recruiter</strong></p>
+
+<p><strong>Tanisha Systems Inc</strong><br />
+Phone: <a href="tel:212-729-6543;393" target="_blank"><span style="color:blue">212-729-6543 Ext 393</span></a><br />
+Email: <a href="mailto:Koshal@tanishasystems.com" target="_blank"><span style="color:blue">Koshal@tanishasystems.com</span></a><br />
+Address: <u><span style="color:blue">99 Wood Ave South Suite # 308 Iselin, NJ 08830</span></u><br />
+<a href="http://email.bullhorn.com/ls/click?upn=cE2a4KLMwR6kxvYFyxW-2FtSCF-2FBGVZSBVGrj5DfaXdC64fHP-2Bs0OlxfataBZBCYN-2BO2SE-2FI2DdWQgafObhSq4FxWR9domZRUpmzWORRLwvyjDqIAfcus4mWC-2B2gtkzXqymVKlg4Zhb9JVQyERKmcO-2BKVhriKXBWW3M07NZGDUfxOO4kUxXtXyIRmZX6DP7EquegxfJcO3B5JbQd-2Fso3d4oV31wZuySc2MVx7vi4tB8M7i93zzvV5nk5NojhtXiDSRGbyTyPIx4bTA-2Brw2QRpp4BLVYf-2F0Ow1-2Ff2XAvnYlRyK14hVtUdXvc-2Fas8gkWQFy06kfCKn-2BaBqeNnNin9GzhdEX-2BdKFUSbesE8GlwCM6rrXHC3sNyHzZLRZrDD-2F2DN-2FINPj5jFwJZJb5sSTmUetb9rvIeFi6DnAxbPq13eP5H5tmckCX75kqLyu7-2BK6Cja69A8kDSDHwQ-2Fs4-2BDGv2kLaCg-3D-3DuYJ8_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJCHdySdQW7TnhwTkDSE1rBWbi2TU4YWXgH5zXc55c5BlBVghGkXQVEJfaNuIZyJNjM2XDNO3-2B09hiL20-2FWlj0tgF2lrXZ6nVss8eJXNWCWOxsc01iI7oN2m1z6hgHlBpXIs7MOzoRlFUkmCCJpdSKfOZuAdeozrDVlYsmAnu9h22AP04lhg6AzPpeCxAcV1grw-3D" target="_blank"><span style="color:blue">www.tanishasystems.com</span></a></p>
+
+<p>&nbsp;</p>
+</div>
+</font><br><div style='color:#999999; font-size:8pt; font-family:arial;'>This email was sent to <a style='color:#848484' href='mailto:josephs@linuxjobber.com'>josephs@linuxjobber.com</a>, by Latifa Team<team8@tanishasystems.com>.<br>To remove your email address permanently from future mailings, please <a style='color:#848484' href="http://email.bullhorn.com/ls/click?upn=-2BDNbByuG7ZD382vpfzScOHBB8JRCGpLfQ8-2BlzmNEZIpgGiGxhh07vFZqHothCTT7ajvu14xjtOReeGz8LVN9T4G6AmJrSx1gP0uHDI4Slt3Lhvl3fPg98yNexo5lPD6Gpv0uLh23cre9qhCPhcoT16PdAV-2Bmob5FxdFhIjRGs73c-2FvRqR3wVEvGzrdyoxzDVgGphRhmeLp7WzZxfT7wBFEi6EOdPCDOcF-2FIuthK1fle5o-2BwSqOHPBIrnG07f3xIiwdQ-2BDL4ohJsw3tid-2FBL4ImVTu47kKjuY809dTIhd6gU-3DkSZ__18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJCHdySdQW7TnhwTkDSE1rBWbi2TU4YWXgH5zXc55c5BlE4Dk95IHNEgCfTJP-2BdEXanIyld57Rgk94RkQKpwTIieXth6EzokIJQj0vcKuEQWO0x8p6-2B-2BwkIeLaPrx1eZ9xtcQ9DWkWLby3fs-2BQNwemTQmqf5LBLIcB79p79uhLM-2BgPDgjDB7viHxem-2Fc57FKPKA-3D" target=_blank>click here</a>.</div><img src="http://email.bullhorn.com/wf/open?upn=xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPpW7cgNRqR6HwIEyOaRcy23-2BGQ8-2B3YO-2BOHHRJ-2Fy37FuSszLAow0f1JXzlU0vnk2lslSFb3XC9tfmhlLNFS0DyFhEtLVF8iZSuCEimT5fItKfYj4pL9S0H8OtBzzA1pKCT4JvFmH-2FJpKtyrEBIiiXt8WzOSH0KUpdw56CgptRmWPEnA-2FO-2B7vpYMBeQBjYogtXf8-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+
+------=_Part_386113_1871800532.1581623282015--
+
+------=_Part_386112_1040312737.1581623282015--

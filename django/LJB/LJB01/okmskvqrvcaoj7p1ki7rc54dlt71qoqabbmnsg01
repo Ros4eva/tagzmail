@@ -1,0 +1,101 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-153.mailgun.net (m71-153.mailgun.net [166.78.71.153])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id okmskvqrvcaoj7p1ki7rc54dlt71qoqabbmnsg01
+ for josephs@linuxjobber.com;
+ Wed, 29 Jan 2020 15:18:38 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIRHNNZ0Vuc0ZtMHVYSWY4cnpkV01TcndZNGphYUdaR1dwdU05MDJjVFcrR0pld1NRaS9Tc1RlbHg1Sm1uQU9VQUppbWxvbXkycjZiZ3N1dVdUQyt4djFWVlpZc2wvdFBYNnRWOHBKTzc1U3F5S3RJZ2l1bThGUjYyeFJWS2VUbU81YWdJYmp0QVNsdkQ4bzh1RDJOZzhWYTU5TUFaYVVSejRwNHlYZ3lMdTZRWnhxdFdJdEJuQzBKUTQrM2NZMExtM1BrL0NJUDlWNkY0NmgzWVZFekFxa1R1OHdMUU1mZzVMR2M4bjBVODBXVTdMekV3SitCN3l6SlFnQ21TaklWeWhXN3FWbjE1d1hsUXU3VUs1STZnMHdyS0tTWDZ6VytjYmpPOFNKdk5kYitBSDNaTVdmdXJNWGdzVFlMcWFhUmMweDZhdC9VKytmaVJrbEo2TXAzWTk=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=eZ9K/J+YCUPRxlm3VgwVJGa7vCvh327Nbag55pFQObc4A2gtdN8nbJ9Ob0fdqkq3UY+SgStxCVx5M7cOPD6fW4yUlfEtrOCOAxA83baoFgOKEGZ+klV5p4HVO7D2SGcoHFLtiteMRdLlouR2KZ31I5/0QUjN8Sh/Z+d3MBhS020=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580311125; v=1; bh=kx3S9w2ECnElKHIQ7bWSHbyIhVHbljohRfD4gAnLCAM=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1580311124; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=zPlVOpTtmTUIK2o/Bu05TjrheR5wrwBavrKIf0qiP3w=; b=jRpEhsMnietqTA5h8XZ5sPQmoBcfwBTvVsWr8wOKm5r3404vXa+OKzh+GmrEPpFtw5TrN7Og
+ NSyjqUHlqPxU4BL6TUEek6yAiIZMPn3P6q936Od0zzxFYpyMkm+aSUTuLF71Vigc8tSj/ur6
+ w7sd6D7KtT4a0Bz+WuVyALwmBiQ=
+X-Mailgun-Sending-Ip: 166.78.71.153
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e31a2447515646fd2640fe9
+Received: by luna.mailgun.net with HTTP; Wed, 29 Jan 2020 15:18:28 +0000
+Date: Wed, 29 Jan 2020 15:18:28 +0000
+Sender: rohits@usgrpinc.com
+Message-Id: <20200129151828.1.CCEC90AA5FD3B91A@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: rohits@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Rohit Singh <rohits@usgrpinc.com>
+Subject: Automation QA with Selenium_at_Columbus , IN
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<a href="https://apply.ceipal.com/JobApplication/easy_apply/468173124a9aec55ff5b4c3bf65d2a26/e58aea67b01fa747687f038dfde066f6/cf9113ad0b4f74e1aad04f070dce6751/99f6a934a7cf277f2eaece8e3ce619b2/3efaebf854b6e381679b09eda968024a" style="background:#4285f4; padding:5px 10px; color:#fff; font-size:13px; font-weight:bold; border-radius:4px;text-decoration:none;float:left;" target="_blank">Apply for this job</a><!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">Hello,<br />
+This is <b>Rohit</b> from <b>United Software Group</b>. Hope you&rsquo;re doing good.<br />
+<br />
+I am trying to reach you for the following role. Please have a look at the job, you may reply to this e-mail or call me directly to get in touch with me. &nbsp;</span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Automation QA with Selenium</b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Columbus , IN</b></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>One line Description:</b></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">QA with selenium</span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">Automated testing using Selenium&nbsp; .</span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">Software quality assurance .</span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">Working on an Agile team and with iterative software development.</span></span></li>
+	<li class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">Develop and maintain automated test scripts and test plans to ensure maximum coverage</span></span></li>
+</ul>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif">If this interests you, please share the following details:</span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Salary Expectations:</b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Current Location: </b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Work authorization:</b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Availability to join</b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b>Also Share Resume</b><b><span style="font-family:"Arial",sans-serif">:</span></b></span></span></p>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/1b154c1144e82827720a5ee36b359a3da38e83e0/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEEOgjAQBdDT2CX5My21s-iiol7D0FKkRIGUkHh89R3gDZ4yekAVz2CAWKglx66hputunSCE9n7VF6FwMjj2Z93Kkpq0vtXkyTCMs6Itm96mxKKjGIhkgxHxrGoeH2XwrOFU9fO6523af8-rLMdnXmPM9V99ATRzJig"></body>
+</html>

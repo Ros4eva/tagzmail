@@ -1,0 +1,81 @@
+Return-Path: <manish.rana@hirexcorp.com>
+Received: from mail2.joboppforyou.com (mail2.joboppforyou.com [216.200.152.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id jph4uvbelja7oad2gvkbflekdm6c0s7jdktqh5g1
+ for josephs@linuxjobber.com;
+ Thu, 13 Feb 2020 16:01:24 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of hirexcorp.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=manish.rana@hirexcorp.com; helo=mail2.joboppforyou.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of hirexcorp.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=manish.rana@hirexcorp.com; helo=mail2.joboppforyou.com;
+ dkim=pass header.i=@joboppforyou.com;
+ dmarc=none header.from=hirexcorp.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGZGV4K1NjRTdudmVqODB5a3g5UnA4MTRXRk1zQ2l0dDZaMjNyV0ZKbUlZN0lUT2R4MFJCQ29Rc2tMc0xnL3VGSk5CMnppU2EwVmFLVUlONUIvdEVIUnE3RkZXYVhpMktUU2FpMVFrQlhiaVlTU1IvdGI1blV4Ym42UnZRNGtaaW5wSWl6SnBFeVVTUCt0ZVU0cEFPMzgzcE93TDNoRmFJcm1NNVhNcWpiU1NqUU92SmZ1WjVSVytJaENsWnk3czJyTU8xVVplaXBiMkJOOFdSeTVvenVFcHFlM2RINjZPNWlRTnlGS09ZMzNCdVQ3NUd0UHUwNDZxN09yRWNmbjIwWlE4UVBpRmlkdXAwc0hURkErNjYveTRyOUlHWFJNYVcydHpsbkZCZFVLcFE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=AwSB5nfESprjH9pRpiVS/68mwoeMDWbqDPoVjqltLF34rUAkUG4kz1TYtkb5YxNrCP9HHhFIYQoKYe98sK/VQzeNk4D+KE+HX75l2hDRAEVqhjAA2vLfp7+SzQNK5n81shI4xS53OFsGg67O5ildMO3dmggfDXjQR8Dq5Rh7Eas=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581609685; v=1; bh=1UhlAqJlGMr9Nj9zlcZcQIbHDhUxQ1qT6B0BZCSrdMA=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=key8; d=joboppforyou.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=kv348RSfAbc957Ogd6j+VLaaJfg=;
+ b=qgEAO3ZIWl53Ypyi8p2c/3sfXmhcCO1nHs6CnUuAryCE9/Or659uRaJGhGzevSZAe/zir/WVopUA
+   gLWys+TO32jANoX/m8V8Rtgs0Etl3dKiI2e13W7F9VuVDOow9KRYSLuLd3T5TPeynxRno/504VSN
+   XOgcafZUjKA1Pkm8sRvULmoBOFP24KD9ic4hzh9HyqzFOvaEpWsMIs9eazSllBZf6ZpHh2vdwiqo
+   nUatNvhJUBOB29LbikQ2Wj4KXOLEz9MpEBQNboW3/NtmLGLZQm3QEQUU/ojrJ3dcHu5H8QW7kKFZ
+   JDJI8Kms/5eX+SJXWKUCLqXjBsP6lRaGWhHugg==
+Received: by joboppforyou.com id h8lng81ph648 for <josephs@linuxjobber.com>; Thu, 13 Feb 2020 10:44:22 -0500 (envelope-from <manish.rana@hirexcorp.com>)
+Date: Thu, 13 Feb 2020 11:01:08 -0500 (EST)
+From: Manish Rana <manish.rana@hirexcorp.com>
+To: josephs@linuxjobber.com
+Message-ID: <460395528.1667391581609668580.JavaMail.admin@emailmerge24.jobdiva.com>
+Subject: Automation Architect / Consultant @ Mooresville, NC - Onsite @ 6+
+ Months @ Phone and Skype
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_166834_732118989.1581609668579"
+
+------=_Part_166834_732118989.1581609668579
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div>Hi,<br />
+Hope you are doing great!<br />
+Kindly let me know and send me your updated resume, if you are interested for this position.<br />
+<br />
+<strong>HireX is the North American leader for staffing, recruitment and HR Services. A key player in the recruitment and staffing market, HireX provides unrivalled expertise in matching North America&#39;s top talent with the most sought after North American employers.</strong><br />
+<strong>***PLEASE DISREGARD THIS EMAIL IF YOU FEEL YOU RECEIVED IT IN ERROR OR ARE NOT LOOKING FOR A NEW OPPORTUNITY. YOUR RESUME HAS BEEN IDENTIFIED IN OUR DATABASE AS A POTENTIAL FIT FOR AN OPENING WITH ONE OF OUR CLIENTS***</strong>&nbsp;<br />
+&nbsp;<br />
+<strong><span style="color:windowtext">Automation Architect / Consultant</span></strong><br />
+<strong><span style="color:windowtext">Mooresville, NC</span></strong> <strong>- Onsite</strong><br />
+<strong>Duration &ndash;6+ Months</strong><br />
+<strong>Phone and Skype</strong><br />
+&nbsp;<br />
+<strong>Description and Requirements:</strong><br />
+Automation Architect<br />
+As an Automation Architect, collaborate with Engineering, DevOps, Quality Engineers to develop automation suit foundation.<br />
+&nbsp;<br />
+<strong>Responsibilities</strong>:<br />
+To bring efficiency and increase the reusability of automation scripts for different types of tests,<br />
+Improve the testing execution times to give feedback quickly for engineers<br />
+&#39;Test the Tests&#39; to find the effectiveness of the scripts<br />
+Build required foundation for treating Test Scripts as code<br />
+Mentor quality engineers to think and develop test suite to meet the above needs.<br />
+&nbsp;<br />
+<strong>Requirements</strong>:<br />
+8-10 years of experience in working Automation frameworks and customizing them to suit the team needs<br />
+Experience working with device labs platforms like Perfecto, AWS Device Farm or Firebase Device Lab<br />
+Understanding of iOS and Android application development tools and ecosystem<br />
+Expert level knowledge in either Espresso or XCUITests<br />
+Deep understanding of how CI/CD tools and ability to develop custom plugins<br />
+Ability to work with app distribution platforms like<br />
+Experience in setting up a Device Lab cloud or on-premise supporting different OS and device combinations<br />
+&nbsp;<br />
+&nbsp;<br />
+Thanks &amp; Regards -<br />
+<strong>Manish Kumar Rana | Senior Technical Recruiter</strong><br />
+1441 Broadway # 6100, 6th Floor | New York, NY 10018<br />
+<a href="mailto:Manish.Rana@hirexcorp.com"><span style="color:windowtext">Manish.Rana@hirexcorp.com</span></a> | <a href="http://www.hirexcorp.com/" target="_BLANK"><span style="color:windowtext">www.hirexcorp.com</span></a><br />
+O: 302-298-0986 Ext 303 |Text: 614-715-5228 |Fax - 302 480 9131<br />
+&nbsp;</div>
+
+<div>&nbsp;</div>
+<br><br>If you would like to unsubscribe from HireX, Inc., please click <a href='http://jobs.hirexcorp.com/optout.jsp?d=313239315f6a6f7365706873406c696e75786a6f626265722e636f6d&e=164&t11=1581609668578'>here</a>.<img id='logo' src='http://www1.jobdiva.com/servlets-examples/servlet/trackEmailMerge?a=01cFQc2AhddXF0CCwFdbVIWMFtNCV5RXwlaUlpMFg%3D%3D' />
+------=_Part_166834_732118989.1581609668579--
+

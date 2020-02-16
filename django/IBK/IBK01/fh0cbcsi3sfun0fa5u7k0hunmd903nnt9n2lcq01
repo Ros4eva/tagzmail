@@ -1,0 +1,70 @@
+Return-Path: <ncrc@nebrwesleyan.edu>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id fh0cbcsi3sfun0fa5u7k0hunmd903nnt9n2lcq01
+ for jeff.adekunbi@ideabakr.org;
+ Sun, 29 Dec 2019 09:07:00 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of nebrwesleyan.edu designates 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=ncrc@nebrwesleyan.edu; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of nebrwesleyan.edu designates 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=ncrc@nebrwesleyan.edu; helo=us-east-mail1.symplicity.com;
+ dkim=pass header.i=@nebrwesleyan.edu;
+ dmarc=pass header.from=nebrwesleyan.edu;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHRTV4TVU5Q3ZPendRbnVUV1FIb3MrdU9tS3ZkWm5SS25ZUVpRSXFXaUkxQzdKN2pGQW9ueUVLQ1FqR1BONThsMEY0YWZGaG1CRmxINS9DcTNEbkVBc1RsdWIyRzBCcTZMNVh5Ukt5YmFMcGo3ek8yRUx0bDc2Vzd2d3lxa0VocXFMK0UzTGo3SGFnK1c2WkNPbXFFSU43SUQ0RGNja3ZTTzdtMHQrY3RORkJjQkNMZkY0NU5lSVczSCthT1daQWpHRHZKU1R0Rmhoa016eEJuR2JDREo4NHZvRjBKLzJFcSttaDBsTFJ1YkRFRzdjM3NpbXB3NDV5VVNFRWswb3Z1YWFxT2hqNU9IOTVPVzNKeU5GWXFySVRPbVdMNDd0VThOVVZqYUhzYnJhZ2c9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=XyMQBE99+YEZ9oCkYWQFNLxcrSUteo4e7ONZ69bW8A5tzFbZGG5AfsT1Uzls+NnjH1b2llbFTt7bucXZmvgSXpqWZwBE0IIKIa4hoEwmWtW4dF+UUl89dGazM+omFtiDhzyJVMC65v+liHm53e6e9BC7tN3pn/Chge5F64YhO5c=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577610423; v=1; bh=MB/q9M1p3eBoIBYiCDQqh4gWW/+h804qV38zIi7H6bo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from ip-172-30-12-254 (ip-172-30-12-254.ec2.internal [172.30.12.254])
+	by mail.symplicity.com (Postfix) with ESMTP id 71758615CD
+	for <jeff.adekunbi@ideabakr.org>; Sun, 29 Dec 2019 09:06:59 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com 71758615CD
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nebrwesleyan.edu;
+	s=nebrwesleyansymp; t=1577610419;
+	bh=z1AfAzRVlCkIr4zB/nAEGdQDop/hDN684XPmZWAl1MA=;
+	h=From:To:Subject:Date:From;
+	b=Nl+xOGR0G3z/pVtjAVNh2Jt9Qx9U8Bcl4npeQ1HAGLPYxCpFxdYEDXmS1I7qQMIBG
+	 3H8KvqWJ9wx1xjKnXZ+KXYxlWJvpa7rbr6t2bmmGjQQbshAu2NkvGlstI/Tx9aWhI0
+	 0erTLzQaSzfH5veMz0Q69W2YTNpsSG6rckyQWS40=
+From: ncrc@nebrwesleyan.edu
+To: jeff.adekunbi@ideabakr.org
+Content-Type: text/plain; charset=UTF-8;
+Subject: JobZone posting: Teaching Assitant is expiring
+Message-ID: <04d7b10567cd3aa44ec0a6e34b5b106b@ncrc-csm.symplicity.com>
+Date: Sun, 29 Dec 2019 03:06:59 -0600
+
+Dec 29, 2019, 3:06 AM
+
+Dear Mr Jeff Adekunbi: 
+
+This is a friendly reminder that the Job Posting for Teaching Assitant on the Nebraska College Recruiting Consortium's JobZone is expiring on Tuesday December 31, 2019.
+
+If you wish to extend your posting, you can do so by logging into your account (https://ncrc-csm.symplicity.com/) and follow the instructions below:
+
+1. Go to  https://ncrc-csm.symplicity.com/employers
+2. Enter your username (email) & password
+3. Click "jobs" on the top menu bar 
+4. Select the job position you wish to extend (click the job title) 
+5. Change the 'Expiration Date' to a future date
+6. Click Submit!
+
+If your job posting has expired, below are instructions on how to access the job posting to extend it:       
+
+1. Go to https://ncrc-csm.symplicity.com/employers
+2. Enter your username (email) & password
+3. Click "jobs" on the top menu bar 
+4. Click on ADD NEW button
+5. Click on SHOW ARCHIVED button
+6. Select the "archived" job posting by clicking on the down arrow  
+7. Change the Expiration Date to a future date
+8. Click SUBMIT!
+
+A Career Services staff member can also extend the posting for you if you e-mail the proper information to ncrc@nebrwesleyan.edu.
+
+Thank you!
+
+Sincerely,
+
+Nebraska College Recruiting Consortium (NCRC) Staff
+***************************************************************
+NCRC Member Schools:  Chadron State College, Concordia University, Doane University, Hastings College, Midland University, Nebraska Wesleyan University, Peru State College, Union College, & Wayne State College
+
+
+Powered By Symplicity

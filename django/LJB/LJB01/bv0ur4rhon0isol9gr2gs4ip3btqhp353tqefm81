@@ -1,0 +1,186 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m232-79.mailgun.net (m232-79.mailgun.net [159.135.232.79])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id bv0ur4rhon0isol9gr2gs4ip3btqhp353tqefm81
+ for josephs@linuxjobber.com;
+ Mon, 20 Jan 2020 14:10:31 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.79 as permitted sender) client-ip=159.135.232.79; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-79.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.79 as permitted sender) client-ip=159.135.232.79; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-79.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFcjZWeTlwVnFGMk9aSVFpUG9OZy9QMDJUdjZnTWFzWndpcEZCckZJS2QvQmFkWUJvZk54Q2xuZSszNU96V1haL0Y1dmlkd0xibFlJYkh4TE9XRTU2QWhVaXJsRDdTbkd5NllSZDk4Wm5zNk1EZTA0My95WUcveGFKUmV3dExrSzZxV05mbkR4NTJndXpSdU1zdEdwalFUVTZFTGY0ckhvQnptbFpxWGJUTmVMUUNVb0pWWEFFaHBISm9UMzBXaXJ2WVlpaURVcm4raDZmWU9PdDJuTXIyZjBjeWh4VHgvNnhGZVl3MTdNQS82UVlPR3hiMndyTU0yZmkwY29xRW9NbGNpdzBWY1JRUUE4dEhLVXR6cCtJaUZObTJKeEV2ZDZkbmhmVFZzM1I1Kzg1RkFrcEY2bGxLNVZwZTZaa1JRbUJyRDBRZXBuL3RFc0NiL2JpTVp2UkZCdW93VjhBQ0xzS1pMa2E2VWlNb09BPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=aXdRnx2Nop+MRmIqF0eGcE9NSp2WGQGyKTuYBx8xAjn0J4RMks8pP8cF6qotGJuuOgzUmzpdLjWAdhwT7DBcdtc1PwDUTRVHcWCCCrpcMeOgJe3tcsxiNwgkvL+n2cxvX1vsXhwCnDOYJmpIRk69c5K7N/G07qKqGUtImEQxQRM=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579529432; v=1; bh=SpdtmRiKLhw1wsutqSeayZJZbU1YoqxSHgjwVk9nwdU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1579529431; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=uG3gOySulj3uKMbyvElS373Ucl6I2IxmjNzPybGk+Xg=; b=GsQIB4O14tAhd28s2U1Iv2PND3+DnzsVgrPqPz4AXIy82G77kHcTzpKNl1z5B+p0GGVdcH5Z
+ Ifw0U9hstMj5Ocuum8rkUG6jLS2/ACzNnGntNpZEc2bHZ673vtEANzTZdfMY7Oe/HhGBi0zw
+ nNwB27ruh3CZIP42OvLNqsAMsns=
+X-Mailgun-Sending-Ip: 159.135.232.79
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e25b4d55ac7f28a0981871e
+Received: by luna.mailgun.net with HTTP; Mon, 20 Jan 2020 14:10:29 +0000
+Date: Mon, 20 Jan 2020 14:10:29 +0000
+Sender: lionel.michael=e-solutionsinc.com@mg.e-solutionsinc.com
+Message-Id: <20200120141029.1.8B5193B3F4BC4991@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: lionel.michael@e-solutionsinc.com
+To: josephs@linuxjobber.com
+From: Lionel Michael Michael <lionel.michael@e-solutionsinc.com>
+Subject: Urgent Need for DevOps Application Engineer (.NET AWS) at location
+ Des Moines, IA.
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/f0e9f0=
+0082b87422f556fb3176bd1857148aee1a/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif">My name is Lionel Michael and I am a Staffing Specialist at E-So=
+lutions INC.&nbsp;I am reaching out to you on an exciting job opportunity w=
+ith one of our clients</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif">Role: DevOps Application Engineer (.NET AWS)</span></span></span=
+></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif">Location: Des Moines, IA</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif">Duration: Long term</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Migrating .NET applications to AWS and creating CI/CD pipeline</span>=
+</span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">Experienced in automation/configuration management using either AWS=
+, .NET, Azure DevOps (TFS), PowerShell or an equivalent.</span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">Modernize and Automation .NET Applications and Services to the AWS =
+Cloud</span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">Uses a wide variety of open source technologies and cloud services =
+(experience with AWS is required).</span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">Experienced in SQL and MySQL.</span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">Knowledge of best practices and IT operations in an always-up, alwa=
+ys-available service.</span></span></li>
+</ul>
+
+<p><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f"><b>Technology Platform(s)</b>: AWS, Python, Azure DevOps (TFS), PowerShe=
+ll</span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><a name=3D"_MailAutoSig"><b><span style=3D"font-size:10.0pt"><span st=
+yle=3D"font-family:"Arial",sans-serif">Thanks and Regards,</span></span></b=
+></a><br />
+<span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-se=
+rif">&nbsp;<br />
+Lionel Michael<br />
+Direct: 732-305-2216 |&nbsp;</span></span><a href=3D"mailto:lionel.michael@=
+e-solutionsinc.com" target=3D"_blank"><span style=3D"font-size:10.0pt"><spa=
+n style=3D"font-family:"Arial",sans-serif">lionel.michael@e-solutionsinc.co=
+m</span></span></a><br />
+<span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-se=
+rif"><b>E Solutions Inc</b></span></span><br />
+<a href=3D"https://maps.google.com/?q=3D2+North+Market+Street+Suite+%23400+=
+%0D%0ASan+Jose,+California+95113&entry=3Dgmail&source=3Dg" target=3D"_blank=
+"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-=
+serif">2 North Market Street Suite #400</span></span></a><br />
+<a href=3D"https://maps.google.com/?q=3D2+North+Market+Street+Suite+%23400+=
+San+Jose,+California+95113&entry=3Dgmail&source=3Dg" target=3D"_blank"><spa=
+n style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"=
+>San Jose, California 95113</span></span></a></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEEOgyAQAMDXlFvJLqDuHrjYpN9oWMCKUWmkJn1-23nAJD9Fcr0q3oABQA=
+PoEAxr1DR2yHa0dzfeHDNeHGxPna-true71L2VPepYNzX7lIXDIGSEuB-sWLI5dMIuAJKFoI48P=
+UryHQ-kDr_Ull9z-4Vr2c_PUkXy8a--1YUqCw"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

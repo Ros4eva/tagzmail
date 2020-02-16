@@ -1,0 +1,1022 @@
+Return-Path: <bounce-md_31135966.5e0701b0.v1-85f04fcb7f81458baa01e03f85406a5b@mandrillapp.com>
+Received: from mail128-8.atl41.mandrillapp.com (mail128-8.atl41.mandrillapp.com [198.2.128.8])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id hukprd4t4872fpo71qt6vc37hdl3jvb8sr55ipo1
+ for jeff.adekunbi@ideabakr.org;
+ Sat, 28 Dec 2019 07:18:09 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mandrillapp.com designates 198.2.128.8 as permitted sender) client-ip=198.2.128.8; envelope-from=bounce-md_31135966.5e0701b0.v1-85f04fcb7f81458baa01e03f85406a5b@mandrillapp.com; helo=mail128-8.atl41.mandrillapp.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mandrillapp.com designates 198.2.128.8 as permitted sender) client-ip=198.2.128.8; envelope-from=bounce-md_31135966.5e0701b0.v1-85f04fcb7f81458baa01e03f85406a5b@mandrillapp.com; helo=mail128-8.atl41.mandrillapp.com;
+ dkim=pass header.i=@mailchimp.com;
+ dkim=pass header.i=@mandrillapp.com;
+ dmarc=pass header.from=mailchimp.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIY21QUU9oYlNiYlYyeVoyMVBETjg3RkRTUVkxRDRhb1pzWDlVYVo1U1l0S0E4TkN3VU9vd2w0T2dXMk5BN0VYcWxYODFtNFpMa2YwS0VSVC9lVTdKR3JNT1BaR0x1YjBDeVZhbHV0bG9LaHZUVlRrMkc0dEc3RDlhaTdjSHQraXdaakhVWVNDMkdoaGJjR09vMVBmMnJDWWUvVVYzRmJadHVObW91MEJrQzluK0ZVQ0E2ZEluK0pCREZLekZwMzRmMkdrU1hEMUtVVERNZ1Qyc2JoNGM1QnFJbUxkLzNRUk1WUVBvNTlOcGlDbGdPWk16Ni9iZitHanVZWlR3NlF5bXlIdzVBU3lod2NUbWNlL2NVUXpDVk4yWDgrMzdybXFuRjFncDREbFNyMHEzZ0lkSGRkRDZYV2oxKzhDVml2Y1A1aUtNU3NiQWJSTlJWUlprd2wvckdZVytaZkduSDVTSWlNd1J2YlE1bVc2a3I2MHNYSnkzbkpJVUNsbzNzV3JnPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=MFbwIZ6sBzzhi299wKvD/opOvb/fBQm9FWhSU/Zp3H9mISpgu3rZ/cKbXqc4buiBSSvVO5bVJ9PpImaHR3w+7PW3Htmz1jc1g61nkhgPK/saX/JGBodMkTdK5YXJ2pA39Xldh/7nt2/Fc1etC3EcpHW0YHc5oAZGz4xuG1gT6HY=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577517490; v=1; bh=XKeuF08LXqoSPTVCf59KZ7zvMn3xOwkSwIFV+GzuEGk=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mandrill; d=mailchimp.com;
+ h=From:Subject:Reply-To:To:Message-Id:Date:MIME-Version:Content-Type; i=legalnotice@mailchimp.com;
+ bh=DB6bpCsNf8JXnuekX3+dmDZH5kpSqMr8Wd5W8KTgZAY=;
+ b=GIOciJ2DfXUiudG/Y24JeZz6JInSHVJ1j7e8blyn1+nlADHyJmUNm9pK6l2CeDo2Ot6e7rhUm0Hz
+   mw5NQQNFBcSOKBL9rc5AKl+CC8oV5To/nSRRnMT0EQt1TsJ3G4H0OitCU3hUaI3LSHGBW9toAjpJ
+   l+YIjunhKMLXq7EXcJE=
+Received: from pmta01.mandrill.prod.atl01.rsglab.com (127.0.0.1) by mail128-8.atl41.mandrillapp.com id h0s0r21mqukj for <jeff.adekunbi@ideabakr.org>; Sat, 28 Dec 2019 07:18:08 +0000 (envelope-from <bounce-md_31135966.5e0701b0.v1-85f04fcb7f81458baa01e03f85406a5b@mandrillapp.com>)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mandrillapp.com; 
+ i=@mandrillapp.com; q=dns/txt; s=mandrill; t=1577517488; h=From : 
+ Subject : Reply-To : To : Message-Id : Date : MIME-Version : 
+ Content-Type : From : Subject : Date : X-Mandrill-User : 
+ List-Unsubscribe; bh=DB6bpCsNf8JXnuekX3+dmDZH5kpSqMr8Wd5W8KTgZAY=; 
+ b=HL0MygRaJx0E7xUN3aMOcH1UvWqogcIViAWnqmtbdn7WUIUt7Nr4BjM3ajeldprKu90Ej/
+ zktSIqby4SyxMOkvRGiVW1D4Fd1M5EZ5WlUMB03qGgOueTyw8xj/PH0iaGoAPvfC6hlBh5bG
+ ghD6keaIv6c5NdO0q3bGXXDjkvsRU=
+From: Mailchimp Legal Department <legalnotice@mailchimp.com>
+Subject: Updates to our Policies
+Return-Path: <bounce-md_31135966.5e0701b0.v1-85f04fcb7f81458baa01e03f85406a5b@mandrillapp.com>
+Reply-To: legalnotice@mailchimp.com
+To: jeff.adekunbi@ideabakr.org
+X-Report-Abuse: Please forward a copy of this message, including all headers, to abuse@mandrill.com
+X-Report-Abuse: You can also report abuse here: http://mandrillapp.com/contact/abuse?id=31135966.85f04fcb7f81458baa01e03f85406a5b
+X-Mandrill-User: md_31135966
+Message-Id: <31135966.20191228071808.5e0701b0c5daf8.60656149@mail128-8.atl41.mandrillapp.com>
+Date: Sat, 28 Dec 2019 07:18:08 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_av-OV932b5KVA6pCrZ0c1pFRQ"
+
+--_av-OV932b5KVA6pCrZ0c1pFRQ
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+        Updates to our Policies                                        
+We=E2=80=99re writing to let you know that we=E2=80=99ve updated a number o=
+f our legal
+policies <https://mailchimp.com/legal/> to comply with applicable law,
+ensure transparency, and better align with our practices. We invite you to
+read them in full, but below are some highlights. With these updates,
+Mailchimp reaffirms its commitment to data protection, compliance with
+applicable law, and the safeguarding of our and our users' data.
+ 
+ *Which policies are changing?*
+
+   - We have made revisions to our Standard Terms of Use
+<https://mailchimp.com/legal/terms/>, Acceptable Use Policy
+<https://mailchimp.com/legal/acceptable_use/>, Cookie Statement,
+<https://mailchimp.com/legal/cookies/>=C2=A0Data Processing Addendum
+<https://mailchimp.com/legal/data-processing-addendum/>, and Privacy Policy
+<https://mailchimp.com/legal/privacy/>.
+ 
+ 
+ *What are some of the key changes?=C2=A0*   - We=E2=80=99ve updated our Pr=
+ivacy
+Policy to better explain how we process your data in a concise and
+transparent format.
+  - We=E2=80=99ve added California Consumer Privacy Act disclosures to our
+Privacy Policy.=C2=A0
+  - We=E2=80=99ve restructured our Data Processing Addendum and added a
+California Consumer Privacy Act Addendum, which supplements our agreement
+with you and confirms our role as your service provider.
+  - We=E2=80=99ve revised our Standard Terms of Use, Acceptable Use Policy,=
+ and
+Cookie Statement to better reflect all of our offerings as an all-in-one
+marketing platform.
+ 
+ 
+ *What do you need to do?=C2=A0*   - You do not need to take any further ac=
+tion
+upon receiving this email. The new updates are effective January 1, 2020,
+and by continuing to use our service, you agree to the updated policies.
+ 
+ 
+ We encourage you to review these revisions. If you have questions related
+to these updates, please contact legal@mailchimp.com. =C2=A0
+                                    *Copyright 2019 Mailchimp, All Rights
+Reserved*
+ 
+ *Our mailing address is:*
+ Mailchimp
+ 675 Ponce de Leon Ave. NE
+ Suite 5000
+ Atlanta, GA 30308
+ 
+ You're receiving this email because you have an active Mailchimp account
+and we are required to notify you of these updates.
+ =C2=A0
+
+--_av-OV932b5KVA6pCrZ0c1pFRQ
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+    <head>
+        <!-- NAME: 1 COLUMN -->
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset=3D"UTF-8">
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">
+        <title>Updates to our Policies</title>
+        
+    <style type=3D"text/css">
+=09=09p{
+=09=09=09margin:10px 0;
+=09=09=09padding:0;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09h1,h2,h3,h4,h5,h6{
+=09=09=09display:block;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09img,a img{
+=09=09=09border:0;
+=09=09=09height:auto;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09body,#bodyTable,#bodyCell{
+=09=09=09height:100%;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100%;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09table{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09p,a,li,td,blockquote{
+=09=09=09mso-line-height-rule:exactly;
+=09=09}
+=09=09a[href^=3Dtel],a[href^=3Dsms]{
+=09=09=09color:inherit;
+=09=09=09cursor:default;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09p,a,li,td,body,table,blockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,=
+.ExternalClass span,.ExternalClass font{
+=09=09=09line-height:100%;
+=09=09}
+=09=09a[x-apple-data-detectors]{
+=09=09=09color:inherit !important;
+=09=09=09text-decoration:none !important;
+=09=09=09font-size:inherit !important;
+=09=09=09font-family:inherit !important;
+=09=09=09font-weight:inherit !important;
+=09=09=09line-height:inherit !important;
+=09=09}
+=09=09#bodyCell{
+=09=09=09padding:10px;
+=09=09}
+=09=09.templateContainer{
+=09=09=09max-width:600px !important;
+=09=09}
+=09=09a.mcnButton{
+=09=09=09display:block;
+=09=09}
+=09=09.mcnImage,.mcnRetinaImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent{
+=09=09=09word-break:break-word;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09.mcnDividerBlock{
+=09=09=09table-layout:fixed !important;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Background Style
+=09@tip Set the background color and top border for your email. You may wan=
+t to choose colors that match your company's branding.
+=09*/
+=09=09body,#bodyTable{
+=09=09=09/*@editable*/background-color:#FAFAFA;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Background Style
+=09@tip Set the background color and top border for your email. You may wan=
+t to choose colors that match your company's branding.
+=09*/
+=09=09#bodyCell{
+=09=09=09/*@editable*/border-top:0;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Email Border
+=09@tip Set the border for your email.
+=09*/
+=09=09.templateContainer{
+=09=09=09/*@editable*/border:0;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 1
+=09@tip Set the styling for all first-level headings in your emails. These =
+should be the largest of your headings.
+=09@style heading 1
+=09*/
+=09=09h1{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:26px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 2
+=09@tip Set the styling for all second-level headings in your emails.
+=09@style heading 2
+=09*/
+=09=09h2{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:22px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 3
+=09@tip Set the styling for all third-level headings in your emails.
+=09@style heading 3
+=09*/
+=09=09h3{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:20px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Page
+=09@section Heading 4
+=09@tip Set the styling for all fourth-level headings in your emails. These=
+ should be the smallest of your headings.
+=09@style heading 4
+=09*/
+=09=09h4{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:18px;
+=09=09=09/*@editable*/font-style:normal;
+=09=09=09/*@editable*/font-weight:bold;
+=09=09=09/*@editable*/line-height:125%;
+=09=09=09/*@editable*/letter-spacing:normal;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Style
+=09@tip Set the background color and borders for your email's preheader are=
+a.
+=09*/
+=09=09#templatePreheader{
+=09=09=09/*@editable*/background-color:#FAFAFA;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:9px;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Text
+=09@tip Set the styling for your email's preheader text. Choose a size and =
+color that is easy to read.
+=09*/
+=09=09#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent=
+ p{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:12px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Preheader
+=09@section Preheader Link
+=09@tip Set the styling for your email's preheader links. Choose a color th=
+at helps them stand out from your text.
+=09*/
+=09=09#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextConte=
+nt p a{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Style
+=09@tip Set the background color and borders for your email's header area.
+=09*/
+=09=09#templateHeader{
+=09=09=09/*@editable*/background-color:#FFFFFF;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:9px;
+=09=09=09/*@editable*/padding-bottom:0;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Text
+=09@tip Set the styling for your email's header text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Header
+=09@section Header Link
+=09@tip Set the styling for your email's header links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a=
+{
+=09=09=09/*@editable*/color:#007C89;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Body
+=09@section Body Style
+=09@tip Set the background color and borders for your email's body area.
+=09*/
+=09=09#templateBody{
+=09=09=09/*@editable*/background-color:#ffffff;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:2px solid #EAEAEA;
+=09=09=09/*@editable*/padding-top:0;
+=09=09=09/*@editable*/padding-bottom:9px;
+            /*@editable*/padding-left:40px;
+            /*@editable*/padding-right:40px;
+=09=09}
+=09/*
+=09@tab Body
+=09@section Body Text
+=09@tip Set the styling for your email's body text. Choose a size and color=
+ that is easy to read.
+=09*/
+=09=09#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+=09=09=09/*@editable*/color:#202020;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:16px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:left;
+=09=09}
+=09/*
+=09@tab Body
+=09@section Body Link
+=09@tip Set the styling for your email's body links. Choose a color that he=
+lps them stand out from your text.
+=09*/
+=09=09#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+=09=09=09/*@editable*/color:#007C89;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Style
+=09@tip Set the background color and borders for your email's footer area.
+=09*/
+=09=09#templateFooter{
+=09=09=09/*@editable*/background-color:#FAFAFA;
+=09=09=09/*@editable*/background-image:none;
+=09=09=09/*@editable*/background-repeat:no-repeat;
+=09=09=09/*@editable*/background-position:center;
+=09=09=09/*@editable*/background-size:cover;
+=09=09=09/*@editable*/border-top:0;
+=09=09=09/*@editable*/border-bottom:0;
+=09=09=09/*@editable*/padding-top:9px;
+=09=09=09/*@editable*/padding-bottom:9px;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Text
+=09@tip Set the styling for your email's footer text. Choose a size and col=
+or that is easy to read.
+=09*/
+=09=09#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-family:Helvetica;
+=09=09=09/*@editable*/font-size:12px;
+=09=09=09/*@editable*/line-height:150%;
+=09=09=09/*@editable*/text-align:center;
+=09=09}
+=09/*
+=09@tab Footer
+=09@section Footer Link
+=09@tip Set the styling for your email's footer links. Choose a color that =
+helps them stand out from your text.
+=09*/
+=09=09#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a=
+{
+=09=09=09/*@editable*/color:#656565;
+=09=09=09/*@editable*/font-weight:normal;
+=09=09=09/*@editable*/text-decoration:underline;
+=09=09}
+=09@media only screen and (min-width:768px){
+=09=09.templateContainer{
+=09=09=09width:600px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body,table,td,p,a,li,blockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09#bodyCell{
+=09=09=09padding-top:10px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnRetinaImage{
+=09=09=09max-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImage{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnC=
+aptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,=
+.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCapt=
+ionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCapti=
+onRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImag=
+eCardRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnI=
+mageCardRightImageContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupContent{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOu=
+ter .mcnTextContent{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcn=
+CaptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-=
+child .mcnTextContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardBottomImageContent{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockInner{
+=09=09=09padding-top:0 !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageGroupBlockOuter{
+=09=09=09padding-top:9px !important;
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnTextContent,.mcnBoxedTextContentColumn{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcpreview-image-uploader{
+=09=09=09display:none !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 1
+=09@tip Make the first-level headings larger in size for better readability=
+ on small screens.
+=09*/
+=09=09h1{
+=09=09=09/*@editable*/font-size:22px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 2
+=09@tip Make the second-level headings larger in size for better readabilit=
+y on small screens.
+=09*/
+=09=09h2{
+=09=09=09/*@editable*/font-size:20px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 3
+=09@tip Make the third-level headings larger in size for better readability=
+ on small screens.
+=09*/
+=09=09h3{
+=09=09=09/*@editable*/font-size:18px !important;
+=09=09=09/*@editable*/line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Heading 4
+=09@tip Make the fourth-level headings larger in size for better readabilit=
+y on small screens.
+=09*/
+=09=09h4{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Boxed Text
+=09@tip Make the boxed text larger in size for better readability on small =
+screens. We recommend a font size of at least 16px.
+=09*/
+=09=09.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentCon=
+tainer .mcnTextContent p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Preheader Visibility
+=09@tip Set the visibility of the email's preheader on small screens. You c=
+an hide it to save space.
+=09*/
+=09=09#templatePreheader{
+=09=09=09/*@editable*/display:block !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Preheader Text
+=09@tip Make the preheader text larger in size for better readability on sm=
+all screens.
+=09*/
+=09=09#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent=
+ p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Header Text
+=09@tip Make the header text larger in size for better readability on small=
+ screens.
+=09*/
+=09=09#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Body Text
+=09@tip Make the body text larger in size for better readability on small s=
+creens. We recommend a font size of at least 16px.
+=09*/
+=09=09#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+=09=09=09/*@editable*/font-size:16px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09/*
+=09@tab Mobile Styles
+=09@section Footer Text
+=09@tip Make the footer content text larger in size for better readability =
+on small screens.
+=09*/
+=09=09#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+=09=09=09/*@editable*/font-size:14px !important;
+=09=09=09/*@editable*/line-height:150% !important;
+=09=09}
+
+}</style></head>
+    <body style=3D"height:100%;margin:0;padding:0;width:100%;-ms-text-size-=
+adjust:100%;-webkit-text-size-adjust:100%;background-color:#FAFAFA;">
+        <!---->
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border-c=
+ollapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;height:100%;marg=
+in:0;padding:0;width:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjus=
+t:100%;background-color:#FAFAFA;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" sty=
+le=3D"height:100%;margin:0;padding:10px;width:100%;mso-line-height-rule:exa=
+ctly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;border-top:0;"=
+>
+                        <!-- BEGIN TEMPLATE // -->
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                        <tr>
+                        <td align=3D"center" valign=3D"top" width=3D"600" s=
+tyle=3D"width:600px;">
+                        <![endif]-->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"templateContainer" style=3D"border-collapse:=
+collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100=
+%;-webkit-text-size-adjust:100%;max-width:600px ;border:0;">
+                            <tr>
+                                <td valign=3D"top" id=3D"templatePreheader"=
+ style=3D"mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-te=
+xt-size-adjust:100%;background-color:#FAFAFA;background-image:none;backgrou=
+nd-repeat:no-repeat;background-position:center;background-size:cover;border=
+-top:0;border-bottom:0;padding-top:9px;padding-bottom:9px;"></td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" id=3D"templateHeader" st=
+yle=3D"mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-=
+size-adjust:100%;background-color:#FFFFFF;background-image:none;background-=
+repeat:no-repeat;background-position:center;background-size:cover;border-to=
+p:0;border-bottom:0;padding-top:9px;padding-bottom:0;"><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageBlock" =
+style=3D"min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-t=
+able-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding:9px;mso-line-height-rul=
+e:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;" class=
+=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspa=
+ce:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right:9px;padding-left:9px;padding-top:0;padding-bottom:0;te=
+xt-align:center;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-web=
+kit-text-size-adjust:100%;">
+                                
+                                    
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/7408690b9f7fe1132e6e7422b/images/1048ea01=
+-6d29-4818-b7c4-430af7f33da6.png" width=3D"370" style=3D"max-width:370px;pa=
+dding-bottom:0;display:inline !important;vertical-align:bottom;border:0;hei=
+ght:auto;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;"=
+ class=3D"mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" id=3D"templateBody" styl=
+e=3D"mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-si=
+ze-adjust:100%;background-color:#ffffff;background-image:none;background-re=
+peat:no-repeat;background-position:center;background-size:cover;border-top:=
+0;border-bottom:2px solid #EAEAEA;padding-top:0;padding-bottom:9px;padding-=
+left:40px;padding-right:40px;"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" class=3D"mcnTextBlock" style=3D"min-width:100%;b=
+order-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-=
+size-adjust:100%;-webkit-text-size-adjust:100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top:9px;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-tex=
+t-size-adjust:100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09    
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width:100%;min-width:100%;border-collapse:collapse=
+;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webki=
+t-text-size-adjust:100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding:0px 18px 9px;font-family:Arial,;mso-line-height-rule:exactly;-m=
+s-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-break:break-word=
+;color:#202020;font-size:16px;line-height:150%;text-align:left;" helvetica=
+=3D"" neue",=3D"" helvetica,=3D"" sans-serif;=3D"" font-size:=3D"" 14px;=3D=
+"" font-style:=3D"" normal;=3D"" font-weight:=3D"" text-align:=3D"" left;"=
+=3D"">
+                        
+                            <p dir=3D"ltr" style=3D"font-family:Arial,;marg=
+in:10px 0;padding:0;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;=
+-webkit-text-size-adjust:100%;color:#202020;font-size:16px;line-height:150%=
+;text-align:left;" helvetica=3D"" neue",=3D"" helvetica,=3D"" sans-serif;=
+=3D"" font-size:=3D"" 14px;=3D"" font-style:=3D"" normal;=3D"" font-weight:=
+=3D"" text-align:=3D"" left;"=3D""><span id=3D"docs-internal-guid-6f6f9a24-=
+7fff-7da4-964f-57f311ec8be6">We=E2=80=99re writing to let you know that we=
+=E2=80=99ve updated a number of our </span><a href=3D"https://mailchimp.com=
+/legal/" style=3D"mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-w=
+ebkit-text-size-adjust:100%;color:#007C89;font-weight:normal;text-decoratio=
+n:underline;">legal policies</a> to comply with applicable law, ensure tran=
+sparency, and better align with our practices. We invite you to read them i=
+n full, but below are some highlights. With these updates, Mailchimp reaffi=
+rms its commitment to data protection, compliance with applicable law, and =
+the safeguarding of our and our users' data.<br>
+<br>
+<strong><span id=3D"docs-internal-guid-6f6f9a24-7fff-7da4-964f-57f311ec8be6=
+">Which policies are changing?</span></strong></p>
+
+<ul style=3D"list-style-type:disc;">
+=09<li dir=3D"ltr" style=3D"mso-line-height-rule:exactly;-ms-text-size-adju=
+st:100%;-webkit-text-size-adjust:100%;"><span id=3D"docs-internal-guid-6f6f=
+9a24-7fff-7da4-964f-57f311ec8be6">We have made revisions to our </span><a h=
+ref=3D"https://mailchimp.com/legal/terms/" style=3D"mso-line-height-rule:ex=
+actly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#007C89=
+;font-weight:normal;text-decoration:underline;">Standard Terms of Use</a>, =
+<a href=3D"https://mailchimp.com/legal/acceptable_use/" style=3D"mso-line-h=
+eight-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;=
+color:#007C89;font-weight:normal;text-decoration:underline;">Acceptable Use=
+ Policy</a>, <a href=3D"https://mailchimp.com/legal/cookies/" style=3D"mso-=
+line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adjust=
+:100%;color:#007C89;font-weight:normal;text-decoration:underline;">Cookie S=
+tatement,</a>=C2=A0<a href=3D"https://mailchimp.com/legal/data-processing-a=
+ddendum/" style=3D"mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-=
+webkit-text-size-adjust:100%;color:#007C89;font-weight:normal;text-decorati=
+on:underline;">Data Processing Addendum</a>, and <a href=3D"https://mailchi=
+mp.com/legal/privacy/" style=3D"mso-line-height-rule:exactly;-ms-text-size-=
+adjust:100%;-webkit-text-size-adjust:100%;color:#007C89;font-weight:normal;=
+text-decoration:underline;">Privacy Policy</a>.</li>
+</ul>
+<br>
+<strong><span id=3D"docs-internal-guid-6f6f9a24-7fff-7da4-964f-57f311ec8be6=
+">What are some of the key changes?=C2=A0</span></strong>
+
+<ul style=3D"list-style-type:disc;">
+=09<li dir=3D"ltr" style=3D"mso-line-height-rule:exactly;-ms-text-size-adju=
+st:100%;-webkit-text-size-adjust:100%;"><span id=3D"docs-internal-guid-6f6f=
+9a24-7fff-7da4-964f-57f311ec8be6">We=E2=80=99ve updated our Privacy Policy =
+to better explain how we process your data in a concise and transparent for=
+mat.</span></li>
+=09<li dir=3D"ltr" style=3D"mso-line-height-rule:exactly;-ms-text-size-adju=
+st:100%;-webkit-text-size-adjust:100%;"><span id=3D"docs-internal-guid-6f6f=
+9a24-7fff-7da4-964f-57f311ec8be6">We=E2=80=99ve added California Consumer P=
+rivacy Act disclosures to our Privacy Policy.=C2=A0</span></li>
+=09<li dir=3D"ltr" style=3D"mso-line-height-rule:exactly;-ms-text-size-adju=
+st:100%;-webkit-text-size-adjust:100%;"><span id=3D"docs-internal-guid-6f6f=
+9a24-7fff-7da4-964f-57f311ec8be6">We=E2=80=99ve restructured our Data Proce=
+ssing Addendum and added a California Consumer Privacy Act Addendum, which =
+supplements our agreement with you and confirms our role as your service pr=
+ovider.</span></li>
+=09<li dir=3D"ltr" style=3D"mso-line-height-rule:exactly;-ms-text-size-adju=
+st:100%;-webkit-text-size-adjust:100%;"><span id=3D"docs-internal-guid-6f6f=
+9a24-7fff-7da4-964f-57f311ec8be6">We=E2=80=99ve revised our Standard Terms =
+of Use, Acceptable Use Policy, and Cookie Statement to better reflect all o=
+f our offerings as an all-in-one marketing platform.</span></li>
+</ul>
+<br>
+<strong><span id=3D"docs-internal-guid-6f6f9a24-7fff-7da4-964f-57f311ec8be6=
+">What do you need to do?=C2=A0</span></strong>
+
+<ul style=3D"list-style-type:disc;">
+=09<li dir=3D"ltr" style=3D"mso-line-height-rule:exactly;-ms-text-size-adju=
+st:100%;-webkit-text-size-adjust:100%;"><span id=3D"docs-internal-guid-6f6f=
+9a24-7fff-7da4-964f-57f311ec8be6">You do not need to take any further actio=
+n upon receiving this email. The new updates are effective January 1, 2020,=
+ and by continuing to use our service, you agree to the updated policies.</=
+span></li>
+</ul>
+<br>
+<span id=3D"docs-internal-guid-6f6f9a24-7fff-7da4-964f-57f311ec8be6">We enc=
+ourage you to review these revisions. If you have questions related to thes=
+e updates, please contact legal@mailchimp.com.</span>
+
+<div>=C2=A0</div>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+                
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td valign=3D"top" id=3D"templateFooter" st=
+yle=3D"mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-=
+size-adjust:100%;background-color:#FAFAFA;background-image:none;background-=
+repeat:no-repeat;background-position:center;background-size:cover;border-to=
+p:0;border-bottom:0;padding-top:9px;padding-bottom:9px;"><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnDividerBlo=
+ck" style=3D"min-width:100%;border-collapse:collapse;mso-table-lspace:0pt;m=
+so-table-rspace:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%=
+;table-layout:fixed ;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width:100%;padd=
+ing:10px 18px 25px;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-=
+webkit-text-size-adjust:100%;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:100%;border-top:=
+2px solid #EEEEEE;border-collapse:collapse;mso-table-lspace:0pt;mso-table-r=
+space:0pt;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
+                    <tbody><tr>
+                        <td style=3D"mso-line-height-rule:exactly;-ms-text-=
+size-adjust:100%;-webkit-text-size-adjust:100%;">
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--            
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;"=
+>
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnTextBlock" style=3D"min-width:100%;border-collapse:collapse=
+;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webki=
+t-text-size-adjust:100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top:9px;mso-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-tex=
+t-size-adjust:100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09    
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width:100%;min-width:100%;border-collapse:collapse=
+;mso-table-lspace:0pt;mso-table-rspace:0pt;-ms-text-size-adjust:100%;-webki=
+t-text-size-adjust:100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;m=
+so-line-height-rule:exactly;-ms-text-size-adjust:100%;-webkit-text-size-adj=
+ust:100%;word-break:break-word;color:#656565;font-family:Helvetica;font-siz=
+e:12px;line-height:150%;text-align:center;">
+                        
+                            <em>Copyright 2019 Mailchimp, All Rights Reserv=
+ed</em><br>
+<br>
+<strong>Our mailing address is:</strong><br>
+Mailchimp<br>
+675 Ponce de Leon Ave. NE<br>
+Suite 5000<br>
+Atlanta, GA 30308<br>
+<br>
+You're receiving this email because you have an active Mailchimp account an=
+d we are required to notify you of these updates.<br>
+=C2=A0
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+                
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"https://mandrillapp.com/track/open.php?u=3D31135966&id=3D85=
+f04fcb7f81458baa01e03f85406a5b" height=3D"1" width=3D"1"></body>
+</html>
+
+--_av-OV932b5KVA6pCrZ0c1pFRQ--
+

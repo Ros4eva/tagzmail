@@ -1,0 +1,283 @@
+Return-Path: <Veena.Rani@nttdata.com>
+Received: from mx07-004dc301.pphosted.com (mx07-004dc301.pphosted.com [185.132.183.31])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id ni49fnub6bkcngqpkbut9ur623oq5vu1tdests01
+ for josephs@linuxjobber.com;
+ Thu, 23 Jan 2020 15:11:24 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of nttdata.com designates 185.132.183.31 as permitted sender) client-ip=185.132.183.31; envelope-from=Veena.Rani@nttdata.com; helo=mx07-004dc301.pphosted.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of nttdata.com designates 185.132.183.31 as permitted sender) client-ip=185.132.183.31; envelope-from=Veena.Rani@nttdata.com; helo=mx07-004dc301.pphosted.com;
+ dkim=pass header.i=@nttdata.com;
+ dmarc=pass header.from=nttdata.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIUVhUemdLMXd0a0M1Z0VoWW55dEgzdDlXSE9YOEdTcTd1emVoNW1aOStyVmJLTjd2dU1YWXlncnduZXpIZnFHYjdiVlpwMmxLdmZJV3NIaTRHSHhmOWdWaUlLTWJBM29NaHQ0ODJJRUR3aXJGVmk1OWhZZ242RTAvYmtyY05kRXFzMjN4anFmc2Z5NVpYUjJjVUVDNG9YQ3lHdG80bTJhSnZBUCtvdGY4bVlOWVEzY3UrSUd0YmZ2b1dyQW9nRmQ1YVJEZ1UyZmhGemhaUjVUa3RNNHlKWVM4KzdTZGVkQXlyWGVDQytSWXFjaVVwRUU1eUlQNzhxSW9PblF0ZGtFQ1dZYStMVVhsa016VHVRb1dmaVRzQjBmNEZWRXFZcVU4MjlKYnlQNkVTNVE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=J4ouSpRUrf0tqDEahyvNFNBz4xZsLkADFwnA80egSR3IWMfYqcOprADyhCnh1FUxut0yl/2ozGOgofZh9qlzThbo8mplqD6xwDY50R+tIuWk9w0+j7bBL/84Rzp9179yX+HaXfqM54aaewsFrdE4oe90gQ3tUpWjhtqgPGRV0kw=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579792285; v=1; bh=2PzZEg8yFly2PRIUMHjCKWwDC05aNUlqmWm7A7EZHGQ=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from pps.filterd (m0196593.ppops.net [127.0.0.1])
+	by mx07-004dc301.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id 00NF82Mm017116
+	for <josephs@linuxjobber.com>; Thu, 23 Jan 2020 15:11:22 GMT
+Received: from mx07-004dc303.pphosted.com (mx07-004dc303.pphosted.com [185.132.183.32])
+	by mx07-004dc301.pphosted.com with ESMTP id 2xnk75g300-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <josephs@linuxjobber.com>; Thu, 23 Jan 2020 15:11:22 +0000
+Received: from pps.filterd (m0196618.ppops.net [127.0.0.1])
+	by mx07-004dc303.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id 00NFAdBs011853
+	for <josephs@linuxjobber.com>; Thu, 23 Jan 2020 15:11:22 GMT
+Received: from nam11-bn8-obe.outbound.protection.outlook.com (mail-bn8nam11lp2177.outbound.protection.outlook.com [104.47.58.177])
+	by mx07-004dc303.pphosted.com with ESMTP id 2xkq7k1hj0-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <josephs@linuxjobber.com>; Thu, 23 Jan 2020 15:11:21 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=emzyGDD9DDymscW+n+xJaz2urq28SOgpfuNPAhkLp+/O325uPE0q8kPf7QGkn/15BvpZ2QBPv5oQZaJ49D5VsqwuEt/J3jmQijwro57ibTQj1Xaze/yK987vxFGWbjE8EXz9OTOtEsZSNCpnvL7bT1zNrqiBbOKpBU/vWOtjD4clmcypuZcnhXQSwclSosUzPtREAE7CiTV0t0y5Z4HFj+YaDYqbMINxtsU6B+Mz4X3BenkE1QQhLWjM1eQyxo4g9+dSk1FW6X9my7JnDCwPuYfSkJUNLCb7LwJF5UUnVM3cSQIvGuJIz5ZtnuxCURLC3+D+6DceBimoaawXRdOzPw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=2PzZEg8yFly2PRIUMHjCKWwDC05aNUlqmWm7A7EZHGQ=;
+ b=IGO8+YN1Hx/Tf8Y4falswtAnYe4hNqpISs3YYAcvPoBXNRfxhEyIG+3HHeARNpw1naLKsmbD0rGdpOV112uAXJbomEmWeAcpeBrZfJrlirN+2pAP+4UYN7gFBTstEvalRzxw1hopwMY51LhDbx1+z3bAV8rXjfRPYh3nANxhWJtwTt1nnUmTyarKMwC6MMR/LUR5P8CIedEgoP8U9texxH3IsGoug7ZJNDUbzvWvVyaD3dOqUQsbNAbmhq9rhhA3NDZOZbWyqb4AqeSQ+9ER/3PDt8T6XbIB8uSNAOnu2mifx0nvew9xXDhb/8LE91Zq+8/B+uUDK8bEdWlRgeTKZA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 64.124.36.194) smtp.rcpttodomain=linuxjobber.com smtp.mailfrom=nttdata.com;
+ dmarc=pass (p=none sp=none pct=100) action=none header.from=nttdata.com;
+ dkim=none (message not signed); arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nttdata.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=2PzZEg8yFly2PRIUMHjCKWwDC05aNUlqmWm7A7EZHGQ=;
+ b=YSgUHwhr5YPCWbWpjX2iiMncmFdlW050dmvxRG6MDDBMmM3naWpJGFYygwk6dCWZDe0+TycBhS+f2hMcTvprwh1sKup/497sUsgl2aaQpdgitqaOYg86K0eKL9sgt0N/50mSxb3UzRUyJG1oSLkoqw+VEAdRqiokwAE9M+s6/cw=
+Received: from MWHPR1201CA0005.namprd12.prod.outlook.com
+ (2603:10b6:301:4a::15) by CY4PR1201MB0007.namprd12.prod.outlook.com
+ (2603:10b6:903:d4::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2644.21; Thu, 23 Jan
+ 2020 15:11:19 +0000
+Received: from CO1NAM03FT018.eop-NAM03.prod.protection.outlook.com
+ (2a01:111:f400:7e48::209) by MWHPR1201CA0005.outlook.office365.com
+ (2603:10b6:301:4a::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2665.20 via Frontend
+ Transport; Thu, 23 Jan 2020 15:11:19 +0000
+Received-SPF: Pass (protection.outlook.com: domain of nttdata.com designates
+ 64.124.36.194 as permitted sender) receiver=protection.outlook.com;
+ client-ip=64.124.36.194; helo=emailmerge24.jobdiva.com;
+Received: from emailmerge24.jobdiva.com (64.124.36.194) by
+ CO1NAM03FT018.mail.protection.outlook.com (10.152.80.174) with Microsoft SMTP
+ Server (version=TLS1_0, cipher=TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA) id
+ 15.20.2665.18 via Frontend Transport; Thu, 23 Jan 2020 15:11:19 +0000
+Date: Thu, 23 Jan 2020 10:11:24 -0500 (EST)
+From: Vinni Grover <Veena.Rani@nttdata.com>
+To: josephs@linuxjobber.com
+Message-ID: <1202917033.2804891579792285649.JavaMail.admin@emailmerge24.jobdiva.com>
+Subject: =?UTF-8?Q?Cloud_Support_E?= =?UTF-8?Q?ngineer=E2=80=8B?=
+ =?UTF-8?Q?=E2=80=8B=E2=80=8B=E2=80=8B=E2=80=8B=E2=80=8B=E2=80=8B_:?=
+ =?UTF-8?Q?:Woodcliff_Lake,_NJ=C2=A0::_NTT_DATA?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_280612_1346971452.1579792284433"
+X-EOPAttributedMessage: 0
+X-Forefront-Antispam-Report: 
+	CIP:64.124.36.194;IPV:CAL;SCL:-1;CTRY:US;EFV:NLI;SFV:NSPM;SFS:(10009020)(4636009)(39860400002)(136003)(396003)(376002)(346002)(199004)(189003)(356004)(118246002)(6666004)(9686003)(86362001)(5660300002)(55016002)(7066003)(316002)(7696005)(45080400002)(33964004)(2906002)(8936002)(336012)(26826003)(6506007)(246002)(956004)(7636002)(26005)(186003)(478600001)(6916009)(70206006)(70586007);DIR:OUT;SFP:1101;SCL:1;SRVR:CY4PR1201MB0007;H:emailmerge24.jobdiva.com;FPR:;SPF:Pass;LANG:en;PTR:mail4.jobdiva.com;A:1;MX:1;
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: c9a5fa18-146b-4784-5368-08d7a0167ff0
+X-MS-TrafficTypeDiagnostic: CY4PR1201MB0007:|CY4PR1201MB0007:|CY4PR1201MB0007:
+X-Microsoft-Antispam-PRVS: 
+ <CY4PR1201MB0007D8532E894411D0000487880F0@CY4PR1201MB0007.namprd12.prod.outlook.com>
+X-LD-Processed: 65e4e06f-f263-4c1f-becb-90deb8c2d9ff,ExtAddr
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:10000;
+X-Forefront-PRVS: 029174C036
+X-MS-Exchange-SenderADCheck: 1
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info: 
+	NdezeiZ+lLCBSLhPEKB8e7/xniyqbAwuiGPzFIxLzEUhSNZJHDcvccrK5r8VAoYrtLJG83JGsXmEa0KDEbTH6mYwPBjTTIv12G271qWqixiedLOtC/86gOvnTxy15wPU1SJV3n3YJY07KFM0QAeWNkt1MZHVUsceMYLsfC98hLHWfxmj0G8ofPGYrXGNcb4sW5SC3hg8eTqsGiRhdKZErsxBnCmnJOavzlxaODSfRS///BYT6j3Q37L8lA0a79NtVxEQq06xZCy4U5fuIhE66XbITKps/HX3AJR/PndYKBCcfesvzDSSEhVejcq3ZUOc6w44ttMICIAaTN0t7Axs/iSMzaSgjwKotQXm4zXk7Cb1iwBPW1T/kWzh2CxNPS7r/CaWdjT8TZSrprUyqGzS7rVV316L81fPYqbW/B6Skg+FMzDlXKpIhrzMlmFbtUZtSnpYPWL7l0G5KBuANTZoiTX6ZOqeEItUlmFtmVn85Xg=
+X-OriginatorOrg: nttdata.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Jan 2020 15:11:19.0283
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: c9a5fa18-146b-4784-5368-08d7a0167ff0
+X-MS-Exchange-CrossTenant-Id: 65e4e06f-f263-4c1f-becb-90deb8c2d9ff
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=65e4e06f-f263-4c1f-becb-90deb8c2d9ff;Ip=[64.124.36.194];Helo=[emailmerge24.jobdiva.com]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CY4PR1201MB0007
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.138,18.0.572
+ definitions=2020-01-23_08:2020-01-23,2020-01-23 signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 lowpriorityscore=0 phishscore=0
+ adultscore=0 mlxscore=0 clxscore=1011 spamscore=0 priorityscore=1501
+ suspectscore=2 malwarescore=0 mlxlogscore=999 impostorscore=0 bulkscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-1910280000
+ definitions=main-2001230125
+
+------=_Part_280612_1346971452.1579792284433
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body>
+<img alt=3D"" src=3D"https://us.nttdata.com/en/-/media/nttdataamerica/logo/=
+ntt-data-services-logo.gif"><br>
+<span style=3D"font-family:arial,helvetica,sans-serif">Hello and thank you =
+for taking the time to read about what could be a great opportunity for you=
+ or someone in your network. My name is&nbsp;Vinni Grover&nbsp;and I'm the&=
+nbsp;Technical Recruiter for
+</span>NTT DATA Services, a top 10 global business and IT services provider=
+ with business operations in more than 50 countries and regions.&nbsp;<br>
+<br>
+<br>
+<strong>NTT DATA is an IT Powerhouse</strong><br>
+<br>
+<span style=3D"font-family:arial,helvetica,sans-serif">I am currently in ne=
+ed of a Cloud Support Engineer. I appreciate any assistance you could provi=
+de, and I welcome you to pass my information along to anyone in your networ=
+k.<br>
+&nbsp;<br>
+Please scroll below for additional details:&nbsp;</span><br>
+<strong><span style=3D"font-family:Calibri,sans-serif">Title:&nbsp;Cloud Su=
+pport Engineer</span></strong><br>
+<strong><span style=3D"font-family:Calibri,sans-serif">Location: Woodcliff =
+Lake, NJ&nbsp;</span></strong><br>
+<br>
+<strong><span style=3D"color:#00338d"><span style=3D"font-family:Calibri,sa=
+ns-serif">Responsibilities</span></span></strong><br>
+The Operations Specialist for Microsoft Azure Cloud Services is primarily f=
+ocused on operational support and the accompanying deployment processes. Th=
+e Operations Specialist is responsible for the delivery of high-quality ope=
+rational services, maintaining and
+ improving the operational state. Work with various technologies to maintai=
+n, deliver and support the operational services. Work in close collaboratio=
+n with operational staff in other disciples and the staff within and outsid=
+e other areas of One Platform organization
+ such as, Project Management, Cloud Architect, and Product Management, to a=
+ssure seamless transition of new or modified services or improvement opport=
+unities to production environment. Plays a lead role in operational issues =
+across country borders, while representing
+ the One Platform Operations organization.
+<ul>
+<li>Be a subject matter expert in related discipline;</li><li>Be a promoter=
+ and guardian of global standards;</li><li>Work with outsource providers an=
+d development teams and provide guidance to guarantee overall quality;</li>=
+<li>Assist in the translation of business needs into product management roa=
+dmaps;</li><li>Serve as the escalation level support for problem analysis a=
+nd resolution;</li><li>Be the operations specialist in related discipline;<=
+/li><li>Manage small projects to enhance the environment;</li><li>Be an esc=
+alation point, providing support in an on-call rotation model.;</li><li>Ens=
+uring that operational services are functioning in accordance with agreed s=
+ervice levels;</li><li>Leading troubleshooting in the incumbent's areas of =
+expertise;</li><li>Ensuring that the infrastructure and operational service=
+s adheres to agreed security levels;</li><li>Identification opportunities f=
+or improving One Platform operational services;</li><li>Create procedures a=
+nd metrics to measure service effectiveness and identify areas for improvem=
+ent;</li><li>Implement security and data integrity solutions meeting the hi=
+ghest enterprise standards;</li><li>Implement, test and support solutions, =
+Microsoft features and disaster recovery solutions;</li><li>Technical suppo=
+rt with external technical teams and outsourced provider;</li><li>Seek ways=
+ to enhance operations, repeatable tasks and activities, with a focus on au=
+tomation and opportunities to optimize the cost;</li></ul>
+<strong><span style=3D"color:#00338d"><span style=3D"font-family:Calibri,sa=
+ns-serif">Core Competencies</span></span></strong>
+<ul>
+<li>Attention to detail and pride in well-presented and accurate work;</li>=
+<li>Connects with individuals, teams and organizations to build lasting, co=
+llaborative relationships that enable growth across the firm;</li><li>Deliv=
+ers high-quality products and exceptional service that enhance value and ex=
+ceed client expectations;</li><li>Demonstrate, deliver and promote high qua=
+lity work;</li><li>Demonstrate ability to lead technical discussions in a c=
+onstructive way with clear goals, deliverables and with documented agreemen=
+ts and follow up actions;</li><li>Build constructive working relations acro=
+ss the different teams, functions, cultures, genders and demonstrate KPMG b=
+ehaviors and value;</li><li>Engages teams, instills confidence, and coaches=
+ people to find meaning in their work and achieve exceptional results;</li>=
+<li>Entrepreneurial mind-set; self-starter, strategically focused, with att=
+ention to detail, good business judgment and excellent organizational skill=
+s;</li><li>Uses various sets of inputs to develop a broad perspective on is=
+sues related to both business and people;</li></ul>
+<strong><span style=3D"color:#00338d"><span style=3D"font-family:Calibri,sa=
+ns-serif">Personal Qualifications</span></span></strong>
+<ul>
+<li>Ability to analyze situations rigorously, logically, and systematically=
+</li><li>Ability to thrive in a high pressure business critical operational=
+ environment;</li><li>Ability to work with people from many different cultu=
+ral backgrounds</li><li>Able to evaluate information quickly, look beyond t=
+he information, gather appropriate facts and evidence and explore potential=
+ root causes before a conclusion is made;</li><li>Able to clearly articulat=
+es the importance and expectations regarding support work and results, impa=
+ct, time effort and timelines to team member, vendors and management;</li><=
+li>A pro-active nature and an overall high level of creativity, plus a prob=
+lem-solving mentality;</li><li>Proven ability to dynamically prioritize wor=
+k efforts to meet deadlines and work effectively with minimal supervision i=
+n a team environment and to diagnose interrelationships between data center=
+ facility, network, server, and application issues;</li><li>Consult and esc=
+alate operational issues and challenges beyond own experience or skillset;<=
+/li><li>Strong communication skills in order to create and share best work =
+processes with teammates;</li><li>Effective project management abilities in=
+ order to successfully oversee an organization's information technology bus=
+iness initiatives;</li><li>Orchestration systems such as Azure IaaS servers=
+; PowerShell scripting; and, Splunk and AppD;</li><li>Ability to script in =
+Powershell, BASH or higher level language;</li></ul>
+<strong><span style=3D"color:#00338d"><span style=3D"font-family:Calibri,sa=
+ns-serif">Education / Academics</span></span></strong>
+<ul>
+<li>Bachelor degree from an accredited university in in computer science, e=
+ngineering, or a or equivalent experience in the related discipline;</li><l=
+i>A strong background in Microsoft Azure Services or a similar cloud platfo=
+rm will be beneficial;</li><li>Any related to Azure services certifications=
+ is beneficial;</li><li>High degree of credibility and acumen in respect of=
+ security and data integrity;</li><li>Excellent communication skills in Eng=
+lish, verbally and in writing to all levels of the organization;</li></ul>
+<br>
+<br>
+<span style=3D"font-family:arial,helvetica,sans-serif">Regards, </span><br>
+<br>
+<span style=3D"font-size:10pt"><span style=3D"font-family:arial,sans-serif"=
+><span style=3D"color:black">Vinni Grover&nbsp;| Technical Recruiter, Strat=
+egic Staffing</span></span></span><br>
+<span style=3D"font-size:10pt"><span style=3D"font-family:arial,sans-serif"=
+><span style=3D"color:#333333">Veena.Rani@nttdata.com&nbsp;</span></span></=
+span><span style=3D"font-size:10pt"><span style=3D"font-family:arial,sans-s=
+erif"><span style=3D"color:black">|
+<strong>o.</strong> &#43;(617) 273-4615 |</span></span></span><span style=
+=3D"font-size:10pt"><span style=3D"font-family:arial,sans-serif"><span styl=
+e=3D"color:#6785c1">
+<a href=3D"https://us.nttdata.com/en/careers/job-staffing">NTT DATA Staffin=
+g Jobs</a></span></span></span><span style=3D"font-size:10pt"><span style=
+=3D"font-family:arial,sans-serif"><span style=3D"color:black">|</span></spa=
+n></span>
+<span style=3D"font-size:10pt"><span style=3D"font-family:arial,sans-serif"=
+><span style=3D"color:#333333"><a href=3D"https://twitter.com/NTTDATAServic=
+es"><span style=3D"color:#6785c1">@nttdataservices</span></a></span></span>=
+</span><br>
+<span style=3D"font-family:arial,helvetica,sans-serif">100 City Square, Bos=
+ton, MA, 02129</span><br>
+<span style=3D"font-size:10pt"><span style=3D"font-family:arial,sans-serif"=
+><span style=3D"color:#333333"><strong>NTT DATA Services</strong></span></s=
+pan></span><br>
+<span style=3D"font-size:10pt"><span style=3D"font-family:arial,sans-serif"=
+><span style=3D"color:black">Consulting | Industry Solutions | Digital | Cl=
+oud | Application, Infrastructure &amp; BPO Services</span></span></span><b=
+r>
+&nbsp;<br>
+<span style=3D"font-size:8pt"><span style=3D"font-family:arial,sans-serif">=
+<span style=3D"color:#7f7f7f">NTT DATA, Inc.</span></span></span><br>
+&nbsp;<br>
+<br>
+If you are interested in this position, please click <a href=3D"http://care=
+ers.nttdatainc.com/jobseekers/myjobs/emailmerge_response.jsp?d=3D96_9268206=
+96226_13567769_2380223_1_Vinni&#43;Grover&amp;t11=3D1579792281929">
+here</a>.<br>
+<br>
+If you would like to unsubscribe from NTT DATA, Inc., please click <a href=
+=3D"http://careers.nttdatainc.com/optout.jsp?d=3D39365f6a6f7365706873406c69=
+6e75786a6f626265722e636f6d&amp;e=3D160&amp;t11=3D1579792281932">
+here</a>.<br>
+<br>
+<a href=3D"http://careers.nttdatainc.com/employers/open_candidate.jsp?canid=
+=3D77288334439268206962264468138887&amp;teamid=3D0&amp;docids=3D-1&amp;enc=
+=3D1&amp;rfqid=3D13567769">Lookup Candidate</a><img id=3D"logo" src=3D"http=
+://www1.jobdiva.com/servlets-examples/servlet/trackEmailMerge?a=3D01bHQNbCB=
+NZNjsEBAMwA1USXltGAVZYWwdaVltN">
+ Disclaimer: This email and any attachments are sent in strictest confidenc=
+e for the sole use of the addressee and may contain legally privileged, con=
+fidential, and proprietary data. If you are not the intended recipient, ple=
+ase advise the sender by replying
+ promptly to this email and then delete and destroy this email and any atta=
+chments without any further use, copying or forwarding.
+</body>
+</html>
+
+------=_Part_280612_1346971452.1579792284433--

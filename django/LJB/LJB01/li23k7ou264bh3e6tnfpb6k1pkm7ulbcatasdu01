@@ -1,0 +1,182 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m232-79.mailgun.net (m232-79.mailgun.net [159.135.232.79])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id li23k7ou264bh3e6tnfpb6k1pkm7ulbcatasdu01
+ for josephs@linuxjobber.com;
+ Tue, 14 Jan 2020 21:25:09 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.79 as permitted sender) client-ip=159.135.232.79; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-79.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.79 as permitted sender) client-ip=159.135.232.79; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-79.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHZDM5R25EUnYzYmdZUVdiS2x0UURLR01vdVc3bHdlWDk3VjZseVZSWVlHa1kwdTBrOG1qYzVORWtKWlAyYjM3QnBaMjlrdXFLVUM4M0kwb2JsaERESTBXQytNVWk0bVpjUGtCUlRrYjVwb05OSVJzVUVYUUVxcmZhbC9aeGpiUUtvVkNQRUxhd1VqeXVRalJhNFg3WVYwSmw5RXhwMlBxbWpvT0pIOG9NcTd1cmE5Zlpvd0JpVU1mcXZ4SU1lNVhGbFkzd2cvZ2ZWcXlvWEFZQ0xzSkxCNks2M1dUZFY0RmFkT20rRGpicFpEQldNR2g1aHdFbERRSk5jamNmdEdNOEIwR2Z0MURWZFJ5SUdFNnJmMjBZYXJFQzFYc2ZOS3BQUzNpd2t3cldGZ2Z2eG1QdUY1dDhYbXh1dUxwdjl0VmhGcXVJcTdhWi96WTliOW1vNWd5K0pIQUNlb1kxMHR1WDFuUmtkOGJ0ZVR3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=MNOASgXV+TeDxPvD5vKrxcJ29jT4q/9QBgbY5+7LG4BkQw8lFgmkn7uBZovBCmd4YFgdXE/T/aw86uLiEiaOWJrsfz/3kTFAwTNqTIUipCXa4JNQeDA7GlfMThlptvrDz1th4mMtL7FMw6C+z/6qQ5ApqxhoK9ySU66p9ABD9Og=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579037111; v=1; bh=scy7jlHhyqOhE2SqbfgmKEvHcNfm5dvm/JWQzEPq9Qo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1579037110; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=yAOPGnuLQU0mZTmfoNDOUfa9u4OwRlpBnSNKw+IUOkQ=; b=X3noyYc2ekX5SZIN41AKh4GXAIcFTk3oqaJEBnYu3LwMn2+cR9ijAXyaUU48WUtjtip/yA4u
+ DdJr4Ws/qYwno1vOefFm57RyPNELdFxpXw+Q0x3AX6BtvwU0B9y644CWNFBZDkxqFLiNToOm
+ fBwYwT6Uc9LR6ukhk6nF9Co9cZA=
+X-Mailgun-Sending-Ip: 159.135.232.79
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e1e3182502e4ddc750934e7
+Received: by luna.mailgun.net with HTTP; Tue, 14 Jan 2020 21:24:18 +0000
+Date: Tue, 14 Jan 2020 21:24:18 +0000
+Sender: rahul.d=e-solutionsinc.com@mg.e-solutionsinc.com
+Message-Id: <20200114212418.1.8EFBF9DBF2E0471C@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: rahul.d@e-solutionsinc.com
+To: josephs@linuxjobber.com
+From: Rahul Dandriyal <rahul.d@e-solutionsinc.com>
+Subject: Job Configuration Manager//Houston, TX is shared with you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/2f7aa3=
+61e3c8b5ec777e9a6078c49774bde52b1f/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<div>Hello&nbsp;Joseph&nbsp;Showunmi</div>
+
+<div>&nbsp;</div>
+
+<div>My name is Rahul Dandriyal and I am a Staffing Specialist at E-Solutio=
+ns INC.&nbsp;I am reaching out to you on an exciting job opportunity with o=
+ne of our clients.</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><b>Client &ndash; Halliburton/L&T</b></p>
+
+<p>&nbsp;</p>
+
+<p><b>Role : Configuration Manager</b></p>
+
+<p><b>Location : Houston, TX</b></p>
+
+<p><b>Duration 6 months+</b></p>
+
+<p>&nbsp;</p>
+
+<p><b>Job Description :</b></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li>"5-8 "+ years of demonstrated experience managing associated professio=
+nals and functions.</li>
+	<li>Have at least "2-4 " years of work experience in government or industr=
+y establishing, managing, and/or leading tool-based configuration managemen=
+t</li>
+	<li>processes and practices for baselining traditional and Agile based eff=
+orts to include DevOps and Continuous Integration/Continuous Deployment (CI=
+/CD).</li>
+	<li>Must have broad level of knowledge of the Product/Application Lifecycl=
+e and Configuration Management domains.</li>
+	<li>Should possess the strong knowledge of CM responsibilities in ALM, TFS=
+, Azure DevOps.</li>
+	<li>Must have experience in management configuration programs to ensure th=
+at all proposed and actual changes to program technology and documentation =
+are</li>
+	<li>properly staffed, approved, and tracked.</li>
+	<li>Demonstrated hands-on experience in Software Configuration and change =
+management processes and implementation across different environments (Dev,=
+ QA, Prod).</li>
+	<li>Have knowledge/experience in other devops tools like Jenkins, Maven, D=
+ocker.</li>
+	<li>Should have the knowledge in versioning control.</li>
+	<li>Experience working in an Agile environment.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Best Regards</p>
+
+<p><b>Rahul Dandriyal</b></p>
+
+<p>E-mail:<a href=3D"mailto:rahul.d@e-solutionsinc.com">rahul.d@e-solutions=
+inc.com</a></p>
+
+<p>&nbsp;</p>
+
+<p><b>e-Solutions</b><b> </b><b>Inc. is a 15 year old company having 15 Glo=
+bal Offices across 5 Nations and with more than 1000+ IT & Software profess=
+ionals. Working on cutting edge technologies, we are serving 100+ Fortune20=
+00 companies globally. </b></p>
+
+<p>Disclaimer:<b>E-Solutions Inc.</b>&nbsp;provides equal employment opport=
+unities (EEO) to all employees and applicants for employment without regard=
+ to race, color, religion, gender, sexual orientation, gender identity or e=
+xpression, national origin, age, disability, genetic information, marital s=
+tatus, amnesty, or status as a covered veteran in accordance with applicabl=
+e federal, state and local laws. We especially invite women, minorities, ve=
+terans, and individuals with disabilities to apply. EEO/AA/M/F/Vet/Disabili=
+ty.</p>
+</div>
+
+<div>&nbsp;</div>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEsOgyAUAMDTlF0JjwA-Fmy0eo2Gb8UoNFKTHr90N6sJJnkUimTDGWcMQH=
+DgApACxXkZF_0YFz4zMcB0E-x40Xhvdb8-uZaWi6e-HmQ1zgqpEFmE1DuZECwPDj0krVy0SM6Yn=
+jkYqYdus9UW32vr4Z7L9d2qc_H8Vz8KXSro"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

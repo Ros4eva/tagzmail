@@ -1,0 +1,517 @@
+Return-Path: <bounce+c3e69c.6bdba01-josephs=linuxjobber.com@mg2.ceipalmm.com>
+Received: from m40-232.mailgun.net (m40-232.mailgun.net [69.72.40.232])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id fuqf1754jtuh528c328ii2oav8dkgr6cp6j3a2o1
+ for josephs@linuxjobber.com;
+ Wed, 15 Jan 2020 22:55:19 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg2.ceipalmm.com designates 69.72.40.232 as permitted sender) client-ip=69.72.40.232; envelope-from=bounce+c3e69c.6bdba01-josephs=linuxjobber.com@mg2.ceipalmm.com; helo=m40-232.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg2.ceipalmm.com designates 69.72.40.232 as permitted sender) client-ip=69.72.40.232; envelope-from=bounce+c3e69c.6bdba01-josephs=linuxjobber.com@mg2.ceipalmm.com; helo=m40-232.mailgun.net;
+ dkim=pass header.i=@mg2.ceipalmm.com;
+ dmarc=none header.from=mwidminc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHUGluQ2NDTlBROHNRKzRVRlBoY210QUtlN0E3TmZXUE01bndFc2p0KzNweVk2QkR0aTFNNmhjZXZYcGJsMTU3Nm1NL2VQUXhhdm13OGtSL0NVYmJmaElUMWErRWh1L2wvOGRncUVKa0NESGZsRDFCTmRNTmU2RkRIcUlCZTY2a2d4K0U4YiszdncxM0xHQ0Vmamc0RnNIZHVUUURwcTE3VE14YXRRdnRyNlp4d0Fta3dvaVFySzBsY1hHcFNYWktlaXUvc0R4NzN4dXcrK3I4ZlVpK0c3YWtCZnROK3NNa2dxYmMvdm41Q01ybkd4eWhMQmZab09GTVlmTEpkWVdYb29QYTcwbFdiSWRSd2RYanJCck55ckdId1lmL2dXc1NPVVd4VlhrSjVQeHphQkJhUnUrZkkxbEE5bEZTTnRxMkJIelZxNDlLcnVObjJRam1QeWFnS1l1WmFnYU5melhDd1Iva2plUWdxbkVnPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=ffcZI7+35Pf3q28cRqiS73WgxuFk9A3urLlHZ7LZACM12WwaLSuyOnJSkd5dE+uJIfjziJQoCBBfOlxiOGdu0UMa3e8K/D7ZzN5x57qdyLJpX4G3cSSgYopBS0eWM4mdh5k3h8tTUGHAmYiBsikU+B5uFieuTrSv1fmY3lJpJlA=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579128921; v=1; bh=1Qhab99+YWZaIxt43zcC+I0pn6y06Vrn2lH1qVgksrg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg2.ceipalmm.com; q=dns/txt;
+ s=pic; t=1579128920; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=LQl3ImKUEFbmkro7wN5lFkq/wKebkILhExzKoguaUkg=; b=gmi/+N2XMODSsRrwYsJnkbbTeEXbczbx69MZxr9pqTs1gH5E90IY000yUCRuyjM1waW8wbN+
+ bVXa9TEGU8OBw7VxrvS8PXuhTWKbu0877Z4X1Tyfxxwfu4jbeXj1Dlws/o1WVj2a6lC8XPWo
+ jbODsRvQvfSqvy3gniwylQYOl3k=
+X-Mailgun-Sending-Ip: 69.72.40.232
+X-Mailgun-Sid: WyI4MzA1OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI2YmRiYTAxIl0=
+X-Mailgun-Batch-Id: 5e1f984e7ce035f25af15b64
+Received: by luna.mailgun.net with HTTP; Wed, 15 Jan 2020 22:55:10 +0000
+Date: Wed, 15 Jan 2020 22:55:10 +0000
+Sender: anshul=mwidminc.com@mg2.ceipalmm.com
+Message-Id: <20200115225510.1.28807077B2F84A1A@mg2.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "7144"}
+Reply-To: anshul@mwidminc.com
+To: josephs@linuxjobber.com
+From: Anshul Lochab <anshul@mwidminc.com>
+Subject: Job Devops / AWS Engineer is shared with you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"font-size:12px;">My name is Anshul Lochab and I am a St=
+affing Specialist at CEIPAL LLC.&nbsp;I am reaching out to you on an exciti=
+ng job opportunity with one of our clients.</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"font-size:12px;"><strong>Job Title</strong> -&nbsp;Devo=
+ps / AWS Engineer<br />
+<strong>Location</strong> -&nbsp;Reston,&nbsp;Virginia</span></div>
+
+<div><span style=3D"font-size:12px;"><strong>Job Description</strong>:&nbsp=
+;</span></div>
+
+<div>
+<p class=3D"MsoNoSpacing" style=3D"margin:0in 0in 0.0001pt"><span style=3D"=
+font-size:12px;"><span style=3D"font-size:11pt"><span style=3D"font-family:=
+Calibri,sans-serif"><b>Job Title: Devops / AWS Engineer</b></span></span></=
+span></p>
+
+<p class=3D"MsoNoSpacing" style=3D"margin:0in 0in 0.0001pt"><span style=3D"=
+font-size:12px;">&nbsp;</span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Location: Reston VA 20190</b></span></span></span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;">&nbsp;=
+</span></p>
+
+<p class=3D"MsoNoSpacing" style=3D"margin:0in 0in 0.0001pt"><span style=3D"=
+font-size:12px;"><span style=3D"font-size:11pt"><span style=3D"font-family:=
+Calibri,sans-serif"><b>Duration: 1 Year</b></span></span></span></p>
+
+<p class=3D"MsoNoSpacing" style=3D"margin:0in 0in 0.0001pt"><span style=3D"=
+font-size:12px;">&nbsp;</span></p>
+
+<p class=3D"MsoNoSpacing" style=3D"margin:0in 0in 0.0001pt"><span style=3D"=
+font-size:12px;">&nbsp;</span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;">&nbsp;=
+</span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Description:</b></span></span></span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Position Purpose -</b></span></span></span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif">Und=
+er minimal supervision, provide operations support for office or business u=
+nit users of proprietary or custom application software in a 24/7/365 envir=
+onment supporting Cloud Operations. Position will require some work during =
+non-traditional business hours to support large scale cloud platforms that =
+support mission critical applications, take point on end to end support and=
+ smooth operations of Fannie Mae&rsquo;s cloud based infrastructure, suppor=
+t change windows, incident response and resolution and other scheduled main=
+tenance activities. Will be trained and required to follow Incident, Change=
+ and Problem standards. Individual will gain business and application knowl=
+edge through training and resolving Production incidents and inquiries. </s=
+pan></span></span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;">&nbsp;=
+</span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Key Job Functions:</b></span></span></span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Incident Management </b></span></span></span></p>
+
+<ol>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Triage and resolve Production incidents related to the cloud platform =
+and participate in root cause analysis and post mortem discussions. </span>=
+</span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Provide on the job training and support to new and junior team members=
+ as required. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Analyze cloud platform related Production incidents and engage busines=
+s teams(s) to determine impact of incident. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Work with application support members and cloud support vendors to ide=
+ntify a work-around if permanent solution cannot be reached in a timely man=
+ner. Provide a collaborative conduit between Fannie Mae application/support=
+ teams and the Cloud vendor support such as AWS, Azure etc. </span></span><=
+/span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Escalate to team leads in a timely manner when resolution cannot be ac=
+hieved. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Help recreate and test possible solutions and/or workarounds in lower =
+environments prior to implementing in Production. </span></span></span></li=
+>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Work closely with Cloud Engineering team and other support staff to id=
+entify and resolve incidents and create and implement long term remediation=
+ techniques and fixes. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Identify and document known issues and work with Cloud engineering par=
+tners and vendor support to address reoccurrence and the identified workaro=
+und activity </span></span></span></li>
+</ol>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Operations, Monitoring, and Capacity Planning </b></span></span></span></p>
+
+<ol>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Cloud operations and infrastructure management - rehydration activitie=
+s, IAM, security and compliance, availability, data protection, authenticat=
+ion and authorization, capacity and resource management, service metering a=
+nd operational cost oversight, disaster recovery and mitigation. </span></s=
+pan></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Create processes designed to measure system effectiveness and identify=
+ areas for improvement. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Create processes intended to provide environment security, as well as =
+automated processes to provide information on current specifications. </spa=
+n></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Stay abreast of new technologies in the field and provide recommendati=
+ons to organizational management on new solutions. </span></span></span></l=
+i>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Oversee the selection of orchestration tooling, as well as compliance =
+audits and reporting. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Identify, correct, and enhance important software tools; seek ways to =
+enhance systems operations, with a focus on automation and minimizing cost.=
+ </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Build effective monitoring, alerts, and metrics for production service=
+s. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Plan for adequate capacity of systems based on utilization metrics and=
+ planned projects to establish supply and demand forecasts. </span></span><=
+/span></li>
+</ol>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Change Management </b></span></span></span></p>
+
+<ol>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Work closely with internal team members and other stakeholders to revi=
+ew proposed changes and help devise post implementation verification routin=
+es and system health checks. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Assist in testing changes in lower environments to ensure solution is =
+as desired. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Create and review operational change tickets with senior team members =
+when changes to Production are needed ensuring they are complete, clear and=
+ concise. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Review operational change tickets with senior team members after they =
+are submitted by other teams to make sure they are complete, clear and conc=
+ise and meet all requirements of the change standard. </span></span></span>=
+</li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Communicate impacts of change to all stakeholders in a timely manner <=
+/span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Coordinate with patch management teams as well as teams involved in in=
+frastructure upgrades. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Coordinate emergency changes per standards </span></span></span></li>
+</ol>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Compliance and Security </b></span></span></span></p>
+
+<ol>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Provide assistance in maintaining compliance with password resets, acc=
+ess reviews, remediation of Operational Incidents and MSIs. </span></span><=
+/span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Assist in documenting remediation steps for operational incidents and/=
+or an MSI. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Engage with management, risk and compliance teams as needed. </span></=
+span></span></li>
+</ol>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Job Function Descriptor:</b> </span></span></span></p>
+
+<ul>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Work is generally moderate in scope and complexity. Knowledge, when ga=
+ined, is applied to resolve routine and non-routine incidents, as necessary=
+=2E Works under moderate supervision. </span></span></span></li>
+</ul>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Education Required Preferred </b></span></span></span></p>
+
+<ul>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Bachelor Degree or Equivalent </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Area of Study Computer Science or IT/IS preferred </span></span></span=
+></li>
+</ul>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Minimum Experience: </b></span></span></span></p>
+
+<ul>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">6-8 years of related experience </span></span></span></li>
+</ul>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Specialized Knowledge & Skills </b></span></span></span></p>
+
+<ul>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Broad knowledge of the AWS platform, AWS Certification required. </spa=
+n></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Experience with Docker/Kubernetes and container orchestration. </span>=
+</span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Solid knowledge of AWS platform and its services - including but not l=
+imited to: AMIs, Route53, VPC, EC2, S3, IAM, AWS CLI, EBS, ELB, SQS, Cloud =
+Watch, Cloudtrail. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Hands on experience in AWS provisioning of systems, securing of VPC, i=
+mplementation of Security Groups, Identity and Access Management, Backups, =
+Restore and Disaster Recovery. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">System health monitoring and optimizing performance (CloudWatch, Solar=
+Winds, Nagios, SumoLogic, Splunk). </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Administration of web servers running Apache, Tomcat, IIS, Nginx. </sp=
+an></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Networking including DNS, certificate management, load balancing, fire=
+walls and routing. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Broad experience with software-defined and traditional networking. </s=
+pan></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Strong understanding of Linux, including experience with server admini=
+stration, monitoring, and troubleshooting. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Broad experience with IaaS and PaaS. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Broad experience building cloud infrastructure using infrastructure-as=
+-code tools like AWS CloudFormation or Terraform. </span></span></span></li=
+>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Exceptional problem solving </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Excellent communications and collaboration skills required to develop =
+required security policies and share information with business and technolo=
+gy staff. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Project management and implementation skills to implement new technolo=
+gies as necessary. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Must have previous operations experience in cloud environments </span>=
+</span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Strong written and oral communication skills. </span></span></span></l=
+i>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Ability to lead technical discussions between stakeholders. </span></s=
+pan></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Excellent technical abilities which include the following: cloud metho=
+dologies like PaaS and SaaS; programming languages like Python; orchestrati=
+on systems such as Chef; IaaS servers; PowerShell scripting; and, Splunk an=
+d AppD are preferred. </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Experience with APM technologies such as Dynatrace, App Dynamics, New =
+Relic. Wire Data Analytics experience with tools such as Extrahop and other=
+ monitoring tools such as Catchpoint, Splunk, Moogsoft etc. is preferred. <=
+/span></span></span></li>
+</ul>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;">&nbsp;=
+</span></p>
+
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Working knowledge of the following: </b></span></span></span></p>
+
+<ul>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Remedy, ServiceNow or other ticketing system </span></span></span></li=
+>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Window O/S </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Autosys job management for scheduling, monitoring and reporting </span=
+></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Middleware technologies such as Weblogic, JBOSS, Apache, Global Load B=
+alancers </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Tibco/ESB </span></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Experience in support various phases of SDLC (Waterfall or Agile) </sp=
+an></span></span></li>
+	<li style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-se=
+rif">Demonstrable knowledge of ITIL and or Service Management</span></span>=
+</span></li>
+</ul>
+
+<div style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+"><strong><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri=
+,sans-serif">If you are interested in the position then please share your r=
+esume or you can directly reach to me at&nbsp;</span></span></strong><b><sp=
+an style=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri","sans-se=
+rif"">707-202-6175</span></span></b></span></div>
+
+<div style=3D"margin:0in 0in 0.0001pt 0.5in"><span style=3D"font-size:12px;=
+">&nbsp;</span></div>
+
+<div style=3D"margin:0in 0in 0.0001pt 0.5in">
+<p style=3D"margin:0in 0in 0.0001pt"><span style=3D"font-size:12px;"><span =
+style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b>=
+Thanks and Regards,</b></span></span></span></p>
+<span style=3D"font-size:12px;"><b><span style=3D"font-size:11.0pt"><span s=
+tyle=3D"font-family:"Calibri","sans-serif"">Anshul Goyal</span></span></b><=
+/span></div>
+</div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"font-size:12px;">Should you be interested, please send =
+me a copy of your resume in word format along with the following details AS=
+AP.</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"font-size:12px;">Full Name:<br />
+Current Location:<br />
+Hourly rate on C2C/W2:<br />
+Work Authorization:<br />
+Earliest Available date to start:<br />
+Date and times available to interview:<br />
+Two Professional References:(Preferably Supervisory references):</span></di=
+v>
+
+<div><br />
+<span style=3D"font-size:12px;">Best Regards,</span></div>
+
+<div><span style=3D"font-size:12px;">Anshul&nbsp;Lochab</span></div>
+
+<div><span style=3D"font-size:12px;">214-666-6625</span></div>
+
+<div><span style=3D"font-size:12px;">anshul@mwidminc.com</span></div>
+<br />
+<br />
+&nbsp;
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.mwidm.com/use=
+rs/request_unsubscribe/b23edb8a31117b655f6ea5f68095b09b92edacf6/040deb1df2e=
+11d8fb1de4ce39842458dfb25fb15/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM=
+3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>cl=
+ick here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg2.ceipalm=
+m.com/o/eJwVzEsOgyAQANDTlCWZGUGmCxa66DUaPmPFSDGYJj1-7QHey36MOQZAVTwBASBaIms=
+RNGpiBgfOzfRgM-F0M1BfpJOUI-y16tSqWj0uzBwMxZgIBNJl-T5QGAyOLrOoLsuzZO_QGNX91k=
+451vO69vL-fLcWo_R_9QMMAifz"></body>
+</html>

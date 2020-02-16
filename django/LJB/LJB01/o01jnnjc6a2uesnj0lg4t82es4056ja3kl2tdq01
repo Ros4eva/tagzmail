@@ -1,0 +1,175 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m45-14.mailgun.net (m45-14.mailgun.net [69.72.45.14])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id o01jnnjc6a2uesnj0lg4t82es4056ja3kl2tdq01
+ for josephs@linuxjobber.com;
+ Fri, 10 Jan 2020 23:24:27 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m45-14.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m45-14.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGWG02b0JJYm1EU2VHdGVlWHhlTzdJd0kwNzNWRUw1di9aSnRVSHFFQXJvQ3VjMS9INHBCU2NvM002b0tCU0lSZGZ3RCtLQzBNazcxTmd0NU9XcjIxbGdBb3hSWm5xWDFkeENidml6S0E0TnBvUSs1eXk3ZmJvb3hWN25JaFIrNnQ5ZnUwQ1k5ajhCTE9ZS01mSXk0UmpreVNKSHJ3RDVEaFpJVXZJZTdEQS9penJJdU00ZTQwYnBNMVRkSXlEWE4xeDhDdVV5Z3RWRFFVdWpIT25SdU5kQmRvbjczY1B4ZXE1dHZqZzFnY2lkZ1NjWnB3VmVwazU3WE12V1Q0VEl6MmRuNUNOdHZxQTZXK1V5MGdkZTA1VXozZ2JucFV0cW00N0U4OFlTSlR5OE9ETUxIMlBDcUVKSk9XZlJJd0ZlS0orNis2Q2NLYkxsRnhnSUkySC9VWnA=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=B7zOmvSAMTHrw9Z79QD8GuO8UrC2sxTWOYrrFHNem4O10IZhBRcO4F4mntBTW5lNJ8mLKbOcdvPEK0BF2FL2JO3ry+LZoCmNRvqihK43tHImXnxi3EI+Ggr3gdOCVnm+AwSKKSZsU04ambPHqzkEgIVhSaXi33W3Ey1hhkUzhYA=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578698668; v=1; bh=1BZn+zSa9he6TTIbOATDmntwlrT7A9scmR7WpbJQ6UM=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1578698668; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=fd1nmeMsxsGFyWKrHQiF3R+2dZh6qEWNPYgfLh57bEA=; b=jFF0HAMIgFGH+ThZwew7EPDs4oe15nJqrIQiwqTbpCpJqSCthw5xCF9p+8XmFVNa7ldXXJJP
+ GksmqJzjF/zYGUwakOjbXq1QZ32o402Vc4FIoA39t6272E3frzXbs4CS5Ttj58NTPFfWCJQy
+ z/OT0HZ0WQ2HfeYk4m5TYllK3ik=
+X-Mailgun-Sending-Ip: 69.72.45.14
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5e1907920102231acb60bf5f
+Received: by luna.mailgun.net with HTTP; Fri, 10 Jan 2020 23:24:02 +0000
+Date: Fri, 10 Jan 2020 23:24:02 +0000
+Sender: nikhil.upadhyay=tryfacta.ai@mg1.ceipalmm.com
+Message-Id: <20200110232402.1.25E75D88E70636FA@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: nikhil.upadhyay@tryfacta.ai
+To: josephs@linuxjobber.com
+From: Nikhil Upadhyay <nikhil.upadhyay@tryfacta.ai>
+Subject: Role for Java Developer & Full-stack Java Developer & UI Developer
+ at NJ & TX
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div><span style="font-size:12px;">Hello&nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>
+<div>
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Please find the complete job description and share your updated resume along with the below requested information if this position is suitable for you.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Position: 1</b></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Requirement Details:</b></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Title:</b>&nbsp;Java Developer</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Locations</b>: Irving, TX</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job</b>&nbsp;<b>Type</b>: Contract Position</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job Description:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Java Spring Boot Micro Services</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Position: 2</b></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Requirement Details:</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Title:</b>&nbsp;Java Developer</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Locations</b>: Basking Ridge, NJ</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job</b>&nbsp;<b>Type</b>: Contract Position</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job Description:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Java, J2ee, Prostgre SQL(PLSQL)</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Position: 3</b></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Requirement Details:</b></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Title:</b>&nbsp;Java Developer</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Locations</b>: Irving, TX</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job</b>&nbsp;<b>Type</b>: Contract Position</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job Description:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Java Node JS</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Position: 4</b></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Requirement Details:</b></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Title:</b>&nbsp;UI Developer</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Locations</b>: Piscataway, NJ & Irving, TX</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job</b>&nbsp;<b>Type</b>: Contract Position</span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><b>Job Description:</b></span></span></p>
+
+<ul>
+	<li><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Experience in JAVA, J2EE</span></span></li>
+	<li><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Strong UI experience, experience with modern front-end framework</span></span></li>
+	<li><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Defining Web controllers, writing spring services, working with different scopes, binding data to the UI layer</span></span></li>
+	<li><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Experience required on any framework Angular, React OR Node.</span></span></li>
+</ul>
+</div>
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;"><strong>Should you be interested, please send me a copy of your resume in word format along with the following details ASAP.</strong></span></span></div>
+
+<div><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Full Name:<br />
+Current Location:<br />
+Hourly rate on C2C/W2:<br />
+Work Authorization:<br />
+Earliest Available date to start:<br />
+Date and times available to interview:<br />
+Two Professional References:(Preferably Supervisory references):</span></span></div>
+
+<div>&nbsp;</div>
+&nbsp;
+
+<div id="EditorSignatureID"><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Thanks</span></span></div>
+
+<div><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">Nikhil Upadhyay</span></span></div>
+
+<div><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">408.789.8718</span></span></div>
+
+<div><span style="font-size:12px;"><span style="font-family:Calibri,Verdana,Geneva,sans-serif;">nikhil.upadhyay@tryfacta.ai</span></span></div>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.tryfacta.ai/users/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/6c5575ef91b529e5aa6b8a5adcebe20252219f78/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://clicks.mg1.ceipalmm.com/o/eJwVzEsKwyAQANDT1KWMM2Z046LQ5BrFz6QxxBoSCj1-U3jrVwJJSWRVDQgIYAwgoQXURuMwuuHh_eiAiaf7zUJ7GZ2l7nFrTefe1BLIu8iCxD6mQliEowG5WJs5w6wOmZ-1BHZo1RHWfsq-nNe11ffnu_aU5PhXP_z3KDo"></body>
+</html>

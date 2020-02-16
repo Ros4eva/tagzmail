@@ -1,0 +1,521 @@
+Return-Path: <DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com>
+Received: from Ser1.Technicalcenter.in:9998 ([192.155.241.216])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id kjh4ejeri81l3gbsilkde111vsf55hk3tlccnt81
+ for josephs@linuxjobber.com;
+ Thu, 06 Feb 2020 17:31:28 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of nytpinc.com designates 192.155.241.216 as permitted sender) client-ip=192.155.241.216; envelope-from=DevOps-437fe88afa3c4fb5b7205701f856b2a2@nytpinc.com; helo=192.155.241.216;
+ dkim=permerror header.i=@nytpinc.com;
+ dmarc=none header.from=nytpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFbllvMGh4bStQd1RrL2tPci9ZQmRtZnpmK2JoQWsrVzViTkpESVQ3aXVFRUM3dlYxQm9RU1VnZ1dhMWlGS21aYjNDYnQ1d05nbVFFcnVyZDh2d080cDMwQXFtUEJvTjlqK0pCOVArSFI4b1hVYXlMS0FzaTNCUDA4K1QxUDdxdUR4a3c4dDcyNUxVUkVmOUhickx1V2xJdVVYdit4bmQ1Z0RmL2J2OWdHVEw5YUZSUTJSdUFPN0dBUUx0dHFKT3hubWFpdVZieHpJRFZBd3pCbkd2N1ljZUgwVFNFd216MlUrNUVyOWlML0hRQ3psZ0xYT3haZXp6RVJsNisvNExaZjRBVFFnaWpuR2V0cGs1L2ZYRyt1T0RMOVZPalhVWlZyT1hqNGpzWU1ILzRIejU3aGVhQ1RaT2F3SHJ4RkVRK3pLNzE0ZWtpS2ZSOE1WQlNwYWtZT0RlNEQzais3SkMwOXJMOUNPRDQwYy93PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=fGdBvyttmXuqGrCIucCFWEF4hjY21JFMI3Lj82zdG3IZnKWI0HksrSaAKssMEuHrGruFokd21i7/HBUk/iCBtCuARexBeCdzoFrwxP859ZEJFr/Dl66ZVgpLI7XZxwnjTfjdCjpJxkFFDTQQaBo5BHz9UBcmzG8ZxwMo6/80qJ0=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581010289; v=1; bh=iWOm0xa5h1KH5BDVlF3HrP/M//vyMe/d2zbnoW11vCg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+X-SmarterMail-Authenticated-As: Bhavesh@nytpinc.com
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns;
+        d=nytpinc.com; s=key;
+        h=received:from:to:references:in-reply-to:subject:date:message-id
+          :mime-version:content-type:x-mailer:thread-index:content-language
+          :list-id:x-mailing-list:reply-to:precedence:sender:cc;
+        b=t9AaR0Z/vtKsEnytML4UrydQW2yqvL2H/uCaLbgLQzXaf5ZX0lV95Pcli802uV3o7
+          7KuKkdBVf5zqXGbxlLjrn2KeGmOKSKVCbYGG4fyFmDGwJ0LDeDoyw+TSHEVcLd16W
+          sjDZItXDURw1tsPpdA/+7l60Uo4iK829p+o9npI0j/wZboMGAOqLUuTUgoT7lCTQG
+          gQ9fQF+9A016I7A+p3XMaCIq9CWGVk/M5rmRayBaoV/cVfFt5YKugnEkPl99TMk1z
+          Zb0hCSA/NNTRIxcgdk4CueiOGao0dCi5DTxKl/9AatNfnSqg767slq0nXLv6mND9A
+          sLr2DobxeLBKzj8Bw==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=nytpinc.com; s=key;
+        h=cc:sender:precedence:reply-to:x-mailing-list:list-id
+          :content-language:thread-index:x-mailer:content-type:mime-version
+          :message-id:date:subject:in-reply-to:references:to:from;
+        bh=XsZfv7ue1GbAktmqf1Mx3iS1pd03CNXcx59CKzZO2YM=;
+        b=Uj/6ya20jJtxC0r0I1cM+lf4OtDQDkgEhaEkTOLoUOG38oogfl9Gyb6SOtlrW7aXX
+          lnBlkfu2OJdMqkJIWwogyS2GJ4GS5cKlquOLY0kBsWkZNSknkl/B58fzg1kWzuzQl
+          Kqd2x/WNT9D54DggzrdLvbldIKTaKroTRebFZRWzt4KtWIW/0PeEpW6hqKPkRBTxl
+          lCBytymstTLaHvP8wSP+/sWk1G4clxDZVN2JjFKKwJeEezZENnJzYSPe58QOwLyp1
+          z1llPezadlXVg5JQgkSzqZQFrUsCF4MnLM/t7lhz8HkwuhrI6Jed24YPiBIujAkgx
+          b4Rbq2c6qpYIZNmBw==
+Received: from nytppc31 (cpe-70-121-27-82.tx.res.rr.com [70.121.27.82]) by Ser1.Technicalcenter.in:9998 with SMTP;
+   Thu, 6 Feb 2020 11:02:44 -0600
+From: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+To: josephs@linuxjobber.com
+References: 
+In-Reply-To: 
+Subject: Need Sr. Devops/Java Technical Manager for Cary, NC - Implementation partners need
+Date: Thu, 6 Feb 2020 12:05:53 -0500
+Message-ID: <787686500_631266311@nytpinc.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_09B6_01D5DCE5.C7D7AE40"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AdXdD2QIw6PHXaGuQu64VueCJJmY9QAAEYWQ
+Content-Language: en-us
+List-Id: <listid.DevOps.631266311.nytpinc.com>
+X-Mailing-List: DevOps@nytpinc.com
+Reply-to: "bhavesh@nytpinc.com" <Bhavesh@Nytpinc.com>
+Precedence: list
+Sender: "Bhavesh Khatri" <Bhavesh@nytpinc.com>
+CC: 
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_000_09B6_01D5DCE5.C7D7AE40
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_09B7_01D5DCE5.C7D7AE40"
+
+This is a multi-part message in MIME format.
+
+
+------=_NextPart_001_09B7_01D5DCE5.C7D7AE40
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Implementation partners need. 
+
+Location: Cary, NC. 
+
+100% onsite role. Remote is not an option. Long term contract. We can do w2
+or c2c. 
+
+Rate: $80/hr corp 2 corp or $75/hr on W2 all inclusive no benefits. 
+
+Sr. Devops/Java Technical manager 
+
+In your submission (at the top of the first page) include:
+Phone #:
+Email address:
+Location (City and State):
+Relocate:
+Availability to start:
+Visa type and expiration:
+Hiring Status: C2C/W2/1099:
+Open for CTH (y/n):
+Timeslots for Skype interview (provide Skype ID)
+
+------------------------------
+
+Job description:
+***Location: Cary, NC***
+
+"12-15 years extensive experience of IT Infrastructure and Application
+Development/Deployment.
+
+Project Technical Management as a Sr. Manager- Provide vision for and direc=
+t
+oversight of the IT Infrastructure Strategy Integration Management function
+within IT Infrastructure Business Operations and Develop key performance
+metrics, establish baselines and drive continuous improvement in delivery o=
+f
+respective services.
+
+Utilizing Java tools in business as a Technical Manager: Re-factors
+tight-coupled Java code by applying Java J2EE Design Patterns (Service
+Locator, Business Delegate, and DAO, TO, MVC) and Java best practices for
+performance, better maintenance and code readability.
+
+ 
+
+Hands on experience: CI/CD, Distributed Tracing and Domain-driven design.
+
+ 
+
+Architecting: design and development of large scale enterprise applications
+
+ 
+
+Utilizing open source framework: (Spring, Hibernate) with N-tier
+architecture, J2EE (EJB/3.x, JPA/2.x , JMS/2.x), Core Java, JSP/Servlets,
+JMS, JDBC connect to back-end. Use the messaging components JMS to
+integrates with SOURCE & TARGET system files and monitor with IBM Web Spher=
+e
+MQ. Proficient in Spring 4.x/5.x (Core, AOP, and Data support using
+different template) and Hibernate 4.x-5.x.
+
+Experience with the VISA ACQUIRER/ISSUER domain: with Merchant data (Label
+data) using SUPERVISE model. Used Linear Regression algorithms approach to
+training and test data get the best predicates best-case scenarios of
+Merchant. Use the Jupyter notebook to generate the results and graph for
+each ACQUIRER/ISSUER Payment Facilitators.
+
+ 
+
+Pivotal Cloud Foundry Migration Coach: Participate the Pivotal Cloud Foundr=
+y
+2 weeks training program with training materials . Coordinates with Lab
+session and help for the Wells Fargo developers resolve the technical issue=
+s
+( All the lab running on Spring Boot / Debugging, training example push int=
+o
+PCF Dev env, Blue & Green deployment, Auto Scaling the instance, Diego
+Brain/Cell and BOSH Architecture ).
+
+Coordinates with on-site and offshore team:, deliver products based on
+client release cycles (make sure products are stable for different
+environments). Conducts the online knowledge transfer meeting for new
+resources and allocation/de-allocation process based on client approach.
+
+ 
+
+European GDPR Data Privacy: Implemented payment domain data internal
+applications, consume the privacy request and will process accordingly and
+Internal Applications use the REST API's to update the internal ID with
+their responses for all Data Subject Rights request types except access. As
+per GDPR guidelines, the file has to be machine readable. The application
+team can consult with the Data Privacy Product office and the Legal teams t=
+o
+decide on the format.
+
+ 
+
+Java Full-Stack Architect - Java 7 & 8 ,JPA, JMS, JAAS Spring Framework,
+Spring Boot, Spring , Spring Security ,REST , SOAP, Hibernate, Kafka,
+MicroServices, , Thymeleaf
+
+ 
+
+ 
+
+ 
+
+Thanks
+
+_____________________________________
+
+Bhavesh Khatri | New York Technology Partners 
+
+120 Wood Ave S, suite 504. Iselin NJ 08830
+
+Direct: 201.448.8157 | Fax: 201.521.0400 |  <http://www.nytp.com/>
+www.nytp.com
+
+ <https://www.linkedin.com/in/khatribhavesh> 
+
+ 
+
+
+
+
+
+Click here to http://Ser1.Technicalcenter.in:9998/public/list.aspx?action=
+=3Dunsubscribe&email=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3D=
+devops@nytpinc.com
+
+Looking for Bulk Email Service Provider ? mail to Info@TechnicalCenter.in
+
+ 
+
+ 
+
+
+
+------=_NextPart_001_09B7_01D5DCE5.C7D7AE40
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><META HTTP-EQUIV=3D"Content-Type" CONTENT=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 15 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#def=
+ault#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Times New Roman",serif;}
+span.EmailStyle20
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.EmailStyle21
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3D"#0563C1=
+" vlink=3D"#954F72"><div class=3DWordSection1><p class=3DMsoNormal style=3D=
+'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span style=3D'font-si=
+ze:12.0pt;font-family:"Times New Roman",serif'>Implementation partners need=
+. <o:p></o:p></span></p><p class=3DMsoNormal style=3D'mso-margin-top-alt:au=
+to;mso-margin-bottom-alt:auto'><span style=3D'font-size:12.0pt;font-family:=
+"Times New Roman",serif'>Location: Cary, NC. <o:p></o:p></span></p><p class=
+=3DMsoNormal style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><=
+span style=3D'font-size:12.0pt;font-family:"Times New Roman",serif'>100% on=
+site role. Remote is not an option. Long term contract. We can do w2 or c2c=
+. <o:p></o:p></span></p><p class=3DMsoNormal style=3D'mso-margin-top-alt:au=
+to;mso-margin-bottom-alt:auto'><span style=3D'font-size:12.0pt;font-family:=
+"Times New Roman",serif'>Rate: $80/hr corp 2 corp or $75/hr on W2 all inclu=
+sive no benefits. <o:p></o:p></span></p><p class=3DMsoNormal style=3D'mso-m=
+argin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span style=3D'font-size:=
+12.0pt;font-family:"Times New Roman",serif'>Sr. Devops/Java Technical manag=
+er <o:p></o:p></span></b></p><p class=3DMsoNormal style=3D'mso-margin-top-a=
+lt:auto;mso-margin-bottom-alt:auto'><span style=3D'font-family:"Times New R=
+oman",serif'>In your submission (at the top of the first page) include:<br>=
+Phone #:<br>Email address:<br>Location (City and State):<br>Relocate:<br>Av=
+ailability to start:<br>Visa type and expiration:<br>Hiring Status: C2C/W2/=
+1099:<br>Open for CTH (y/n):<br>Timeslots for Skype interview (provide Skyp=
+e ID)</span><span style=3D'font-size:12.0pt;font-family:"Times New Roman",s=
+erif'><o:p></o:p></span></p><p class=3DMsoNormal style=3D'mso-margin-top-al=
+t:auto;mso-margin-bottom-alt:auto'><span style=3D'font-family:"Times New Ro=
+man",serif'>------------------------------</span><span style=3D'font-size:1=
+2.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p><p class=
+=3DMsoNormal style=3D'mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><=
+span style=3D'font-family:"Times New Roman",serif'>Job description:<br>***L=
+ocation: Cary, NC***</span><span style=3D'font-size:12.0pt;font-family:"Tim=
+es New Roman",serif'><o:p></o:p></span></p><p class=3DMsoNormal><b><span st=
+yle=3D'font-family:"Times New Roman",serif'>&quot;12-15 years extensive exp=
+erience of IT Infrastructure and Application Development/Deployment.</span>=
+</b><b><span style=3D'font-size:12.0pt;font-family:"Times New Roman",serif'=
+><o:p></o:p></span></b></p><p class=3DMsoNormal><b><span style=3D'font-fami=
+ly:"Times New Roman",serif'>Project Technical Management as a Sr. Manager</=
+span></b><span style=3D'font-family:"Times New Roman",serif'>- Provide visi=
+on for and direct oversight of the IT Infrastructure Strategy Integration M=
+anagement function within IT Infrastructure Business Operations and Develop=
+ key performance metrics, establish baselines and drive continuous improvem=
+ent in delivery of respective services.</span><span style=3D'font-size:12.0=
+pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p><p class=3DMs=
+oNormal><span style=3D'font-family:"Times New Roman",serif'>Utilizing <b>Ja=
+va tools in business as a Technical Manager</b>: Re-factors tight-coupled J=
+ava code by applying Java J2EE Design Patterns (Service Locator, Business D=
+elegate, and DAO, TO, MVC) and Java best practices for performance, better =
+maintenance and code readability.</span><span style=3D'font-size:12.0pt;fon=
+t-family:"Times New Roman",serif'><o:p></o:p></span></p><p class=3DMsoNorma=
+l><span style=3D'font-size:12.0pt;font-family:"Times New Roman",serif'><o:p=
+>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Ti=
+mes New Roman",serif'>Hands on experience: <b>CI/CD, Distributed Tracing an=
+d Domain-driven design</b>.</span><span style=3D'font-size:12.0pt;font-fami=
+ly:"Times New Roman",serif'><o:p></o:p></span></p><p class=3DMsoNormal><spa=
+n style=3D'font-size:12.0pt;font-family:"Times New Roman",serif'><o:p>&nbsp=
+;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"Times Ne=
+w Roman",serif'>Architecting: design and development of large scale enterpr=
+ise applications</span><span style=3D'font-size:12.0pt;font-family:"Times N=
+ew Roman",serif'><o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'=
+font-size:12.0pt;font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></sp=
+an></p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roman",se=
+rif'>Utilizing open source framework: (<b>Spring, Hibernate) with N-tier ar=
+chitecture, J2EE (EJB/3.x, JPA/2.x , JMS/2.x), Core Java, JSP/Servlets</b>,=
+ JMS, JDBC connect to back-end. Use the messaging components JMS to integra=
+tes with SOURCE &amp; TARGET system files and monitor with IBM Web Sphere M=
+Q. Proficient in Spring 4.x/5.x (Core, AOP, and Data support using differen=
+t template) and Hibernate 4.x-5.x.</span><span style=3D'font-size:12.0pt;fo=
+nt-family:"Times New Roman",serif'><o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'font-family:"Times New Roman",serif'>Experience with the =
+VISA ACQUIRER/ISSUER domain: with Merchant data (Label data) using SUPERVIS=
+E model. Used Linear Regression algorithms approach to training and test da=
+ta get the best predicates best-case scenarios of Merchant. Use the Jupyter=
+ notebook to generate the results and graph for each ACQUIRER/ISSUER Paymen=
+t Facilitators.</span><span style=3D'font-size:12.0pt;font-family:"Times Ne=
+w Roman",serif'><o:p></o:p></span></p><p class=3DMsoNormal><span style=3D'f=
+ont-size:12.0pt;font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></spa=
+n></p><p class=3DMsoNormal><b><span style=3D'font-family:"Times New Roman",=
+serif'>Pivotal Cloud Foundry Migration Coach: Participate the Pivotal Cloud=
+ Foundry 2 weeks training program with training materials</span></b><span s=
+tyle=3D'font-family:"Times New Roman",serif'> . Coordinates with Lab sessio=
+n and help for the Wells Fargo developers resolve the technical issues ( Al=
+l the lab running on Spring Boot / Debugging, training example push into PC=
+F Dev env, Blue &amp; Green deployment, Auto Scaling the instance, Diego Br=
+ain/Cell and BOSH Architecture ).</span><span style=3D'font-size:12.0pt;fon=
+t-family:"Times New Roman",serif'><o:p></o:p></span></p><p class=3DMsoNorma=
+l><span style=3D'font-family:"Times New Roman",serif'>Coordinates with on-s=
+ite and offshore team:, deliver products based on client release cycles (ma=
+ke sure products are stable for different environments). Conducts the onlin=
+e knowledge transfer meeting for new resources and allocation/de-allocation=
+ process based on client approach.</span><span style=3D'font-size:12.0pt;fo=
+nt-family:"Times New Roman",serif'><o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'font-size:12.0pt;font-family:"Times New Roman",serif'><o:=
+p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"T=
+imes New Roman",serif'>European GDPR Data Privacy: Implemented payment doma=
+in data internal applications, consume the privacy request and will process=
+ accordingly and Internal Applications use the REST API&#8217;s to update t=
+he internal ID with their responses for all Data Subject Rights request typ=
+es except access. As per GDPR guidelines, the file has to be machine readab=
+le. The application team can consult with the Data Privacy Product office a=
+nd the Legal teams to decide on the format.</span><span style=3D'font-size:=
+12.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></p><p class=
+=3DMsoNormal><span style=3D'font-size:12.0pt;font-family:"Times New Roman",=
+serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font=
+-family:"Times New Roman",serif'>Java Full-Stack Architect &#8211; Java 7 &=
+amp; 8 ,JPA, JMS, JAAS Spring Framework, Spring Boot, Spring , Spring Secur=
+ity ,REST , SOAP, Hibernate, Kafka, MicroServices, , Thymeleaf</span><span =
+style=3D'font-size:12.0pt;font-family:"Times New Roman",serif'><o:p></o:p><=
+/span></p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roman"=
+,serif'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'fon=
+t-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></p><p class=3DMs=
+oNormal><span style=3D'font-family:"Times New Roman",serif;color:black'><o:=
+p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-family:"T=
+imes New Roman",serif;color:black'>Thanks<o:p></o:p></span></p><p class=3DM=
+soNormal><span style=3D'font-family:"Times New Roman",serif;color:black'>__=
+___________________________________<o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'font-family:"Times New Roman",serif;color:black'>Bhavesh =
+Khatri&nbsp;|&nbsp;New York Technology Partners <o:p></o:p></span></p><p cl=
+ass=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif'>120 Woo=
+d Ave S, suite 504. Iselin NJ 08830<o:p></o:p></span></p><p class=3DMsoNorm=
+al><span style=3D'font-family:"Times New Roman",serif;color:black'>Direct: =
+201.448.8157 | Fax: 201.521.0400 | <a href=3D"http://www.nytp.com/"><span s=
+tyle=3D'color:black'>www.nytp.com</span></a><o:p></o:p></span></p><p class=
+=3DMsoNormal style=3D'background:white'><a href=3D"https://www.linkedin.com=
+/in/khatribhavesh"><span style=3D'font-size:8.0pt;font-family:"Times New Ro=
+man",serif;text-decoration:none'><img border=3D0 width=3D160 height=3D33 st=
+yle=3D'width:1.6666in;height:.3437in' id=3D"_x0000_i1029" src=3D"cid:image0=
+01.gif@01D5DCE5.BC80B230" alt=3DLinkedin></span></a><span style=3D'font-siz=
+e:8.0pt;font-family:"Times New Roman",serif;color:black'><o:p></o:p></span>=
+</p><p class=3DMsoNormal><span style=3D'font-family:"Times New Roman",serif=
+'><o:p>&nbsp;</o:p></span></p></div></body></html>
+<br /><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div><span style=3D"font-size:12px;">Click here to </span><a href=3D"http:/=
+/Ser1.Technicalcenter.in:9998/public/list.aspx?action=3Dunsubscribe&email=
+=3Djosephs@linuxjobber.com&domain=3DNytpinc.com&list=3Ddevops@nytpinc.com">=
+Unsubscribe</a></div>
+
+<div><span style=3D"font-size:12px;">Looking for Bulk Email Service Provide=
+r ? mail to <a href=3D"mailto:Info@TechnicalCenter.in?subject=3DBulk%20Emai=
+l%20Service%20Enquiry%2C%20&amp;body=3DClick%20Send%20Button%20to%20submit%=
+20the%20inquiry.%20">Info@TechnicalCenter.in</a></span></div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+</div>
+
+
+------=_NextPart_001_09B7_01D5DCE5.C7D7AE40--
+
+------=_NextPart_000_09B6_01D5DCE5.C7D7AE40
+Content-Type: image/gif;
+	name="image001.gif"
+Content-Transfer-Encoding: base64
+Content-ID: <image001.gif@01D5DCE5.BC80B230>
+
+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
+
+
+------=_NextPart_000_09B6_01D5DCE5.C7D7AE40--
+

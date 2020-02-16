@@ -1,0 +1,202 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m45-14.mailgun.net (m45-14.mailgun.net [69.72.45.14])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id qn0hatlnmd8gsab1hsfp3j8h4b1p1r1iolmvtg01
+ for josephs@linuxjobber.com;
+ Wed, 29 Jan 2020 20:54:56 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m45-14.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m45-14.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIN0d5S0JFOVFncnhVbEw0ejR6M1c1RDRBUTQ5TEFBOCt2Wk1iOTMyU01Nbjc2VmRCeEVxMndvMW1wclV4dTAwVkUzNW5yQUhhWjd6UU93TWJXcmwvODQvaXV5NzYvSzhRbWRuRFNOWDluR291L1ZDTUo3dGNsa3dPVTFrank4S21JOGVlQjBUN25ZRlJodnBPUFNCc2VVTVNoYWx0bmFUZU82OTVCcVpOeEMxcGVaZlNuNGRvUUs2Z0Ficit0VlF6a2hPOG9sRU5VVGhXMkViZ3h3UTVsdW5FWnM4Y2hMamxwUjI2WVV5VWxmZEdBZlV1WmcyVVZMUUs2QmZuOXJDSkZUT3Bia0dJOXg2aEdlL2srbytNamYrNDJHVHZrSkpLQldJSmhHYUhzQlNSV2RRcEtCcHluRmN4RXRKa2tVZkkxL2tFVUhZdzRyNjVINlV6R0FUZFRxZ0M5RVZ5Q2k2U2RCbmdMMXFVcDR3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=JipHaefH4OzlI5JGtiTBMTFsLnj4C359qpWMT7x6yzgg8YYO0tbzEuEQ32r3jXz+ZyFa7ELx+UyPCc5HqtUgMgxLPJ7lgYkUqVj7bA8FuX8G+lm8X5hDhdQz2gET9/ZjuaUmmJfTU7sbls/GI7Sp+kuhZ0/sOYhPHmGafzvVRPQ=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580331298; v=1; bh=qOwmNahia+73pxG54Gd1T9hVJRaMTIokzOtFEDJhEBU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1580331297; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=+9ohZ1LR5gvSvYUcYSyl6S4brG5DTUfwj0s0CWG4zI8=; b=L4vYpHAL7iWcoTE/hByW5MYKOt4qE95wV+gqC0OwtUBVt9a/sgx8WBs5mcXG4fRr0/l9Ce0X
+ FunlVHUlEH9/pnFYfjONrz2GwU7MELB69y15X4hF+a997Bxz7OOKkVdtCavweig4U3JkTIia
+ IV7rU1KJJ2MYkTP5P9Z6PEaPJ2g=
+X-Mailgun-Sending-Ip: 69.72.45.14
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e31f11e5fe2c173c43dfb5c
+Received: by luna.mailgun.net with HTTP; Wed, 29 Jan 2020 20:54:54 +0000
+Date: Wed, 29 Jan 2020 20:54:54 +0000
+Sender: dev.v=e-solutionsinc.com@mg.e-solutionsinc.com
+Message-Id: <20200129205454.1.89DCEA23AD93A0EB@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: dev.v@e-solutionsinc.com
+To: josephs@linuxjobber.com
+From: Dev Vishnu <dev.v@e-solutionsinc.com>
+Subject: Job Opening :  Devops Engineer @ Charlotte, NC
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/5f64cc=
+b4ada3d2f9b98e03e2f0c4f7d2a16460f0/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Role : Devops Engineer</b></span></span></p=
+>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Location: Charlotte, NC</b></span></span></=
+p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Type: Contract </b></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Job Description:</b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Techn=
+ical knowledge on integration services, Java J2EE, Micro services&nbsp; </s=
+pan></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Jenki=
+ns, Open shift, AWS, DevOps</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">Experience in versioning tools like SVN, GIT,Bitbucket, GitHub</span></s=
+pan></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Techn=
+ical Transition Management, Technical knowledge on integration services, Ja=
+va J2EE, Microservices. </span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">&bull;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hands=
+ on Exp on DevOps and application configurations and deployments in open sh=
+ift, AWS</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Arial","sans-serif=
+"">Understand the issues, coordinate with required team to triage the issue=
+s.</span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"color:#1f497d">Thanks & Regards=
+,</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:#1f497d">Dev </span></=
+b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"color:black">2 N. Market St., #=
+400, San Jose, CA, 95113</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"color:#1f497d">Tel: 408-722-944=
+8</span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"color:#1f497d">email : <a href=
+=3D"mailto:dev.v@e-solutionsinc.com" style=3D"color:#0563c1; text-decoratio=
+n:underline">dev.v@e-solutionsinc.com</a></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"color:#1f497d"><=
+a href=3D"http://www.e-solutionsinc.com/" style=3D"color:#0563c1; text-deco=
+ration:underline" target=3D"_blank"><span lang=3D"EN-US" style=3D"color:#1f=
+497d">&nbsp;www.e-solutionsinc.com</span></a></span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-family:"Times New Roman","=
+serif""><span style=3D"color:black">mY LiNKeD iN pRoFILe:</span></span></sp=
+an></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:8.5pt"><span style=3D=
+"background:#f6f6f6"><span style=3D"font-family:"Arial","sans-serif""><span=
+ style=3D"color:black"><a href=3D"https://www.linkedin.com/in/dev-vishnu-a0=
+aa3791" style=3D"color:#0563c1; text-decoration:underline"><span style=3D"c=
+olor:black">https://www.linkedin.com/in/dev-vishnu-a0aa3791</span></a></spa=
+n></span></span></span></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+</div>
+
+<div>&nbsp;</div>
+<br />
+<br />
+&nbsp;
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEsOgyAUAMDTlF3J46ewYIHVczSAj4pRaaAmPX7rdhYz2xS17Ei2HDgA44=
+aDkkpSRrUZH5Pjwo1GOJiGm4T9RfHeynZ-cjlaPiKNZSeLjToEMNjJpBnKDjjrvU_ei0sjMlIxP=
+fNslek1qXYtDd9L-4dbPs7vWkLAelU_BOgqzg"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

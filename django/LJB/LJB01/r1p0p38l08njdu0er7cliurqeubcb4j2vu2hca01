@@ -1,0 +1,74 @@
+Return-Path: <shivam@hirexcorp.com>
+Received: from mail2.joboppforyou.com (mail2.joboppforyou.com [216.200.152.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id r1p0p38l08njdu0er7cliurqeubcb4j2vu2hca01
+ for josephs@linuxjobber.com;
+ Fri, 24 Jan 2020 15:46:19 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of hirexcorp.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=shivam@hirexcorp.com; helo=mail2.joboppforyou.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of hirexcorp.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=shivam@hirexcorp.com; helo=mail2.joboppforyou.com;
+ dkim=pass header.i=@joboppforyou.com;
+ dmarc=none header.from=hirexcorp.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFUWczQ04wWnNXS2NtWjRTK0lYUTR0bWJVMFRyWkM3NjRhTUFOcGtibTN0R0tDYTN2QnJlL0V3YWRiWTAxakFyRS9wSFVBMy84M2QvQ3BxU1RnZjdKMHU4cVJON1kzMlRRSW0vMkpaSTlCd1hlZWJvU1JsYXBlT0hHa2pDekFKcGM0dVBtNnYvYWhpQkY3cmMxaVFjbGZPK0ttdHN0emFOZXFNRWY1ZWErbUM1Mkx4a0dLRzR0QTdLWkFOSWFSSEFDUWpUNnh2OEx2R3g0eFJXOTJHUG8xWXkwZDlBUVdiU0pqUGVlUGhpRXo4SEZzd3FYbHd4NDF0MHlneHBEbWZoQm01Q0ZDT1JWOEJwZmlhT1lRODRxblJIMTRqNWdPeXBTVW9TVVZXT281ZUE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=EiKItbN2vb6iPH9ODRanJ9U+IBOTtEYkLJlbvdbtFojreKzEIF+Fo2uyVBU48TENKe4eE4OKGezBCo4BpdfzgcxMDsgp35Yg3OFhBnJe7mCLzxDu/bUflHLngOoKpSNCynv9VibU1DWAiSfnviPuNXrUtOejc86Z5fNZkHKaZtk=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579880779; v=1; bh=Uq1iN4Z3Q97ORVjzEwB5+k1cYiM0xr+vXAkjDXXLQHs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=key8; d=joboppforyou.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=gvxgei4buKUk4mbfB52sS5iPayY=;
+ b=Ekq+/Q8BfuN8uCSKQXDkvXgMY07Ip69+u3JJHtJ+6F/Y3TR5uS9uoXgrJKX18xlMZZcxJb+H9XIT
+   ybXUHX6EDwr0oVp72YlFVBsY50WPSOCioKSOpNjEHcFRNPXTPMP5S3TwXbvhVYQd04WwjHIpQNXb
+   CHssXoY/BfOIce02X0R6MJTO8d5EvRkcAaXL/PRXUDpaTbD83hQaEV2FpBfvmvsCq9851hTfml5d
+   7bw1FQxcry4mPdgqtz7YVNFzrgGHfZhuP9l4GhlmsNGDbhbaZ1hlFocPUvX2958relU7xuJx0cpm
+   2guYcrgW2t1QlyLj02oZQBnvpUmrGowB56rW3A==
+Received: by joboppforyou.com id h5c6pu1ph64i for <josephs@linuxjobber.com>; Fri, 24 Jan 2020 10:30:38 -0500 (envelope-from <shivam@hirexcorp.com>)
+Date: Fri, 24 Jan 2020 10:45:34 -0500 (EST)
+From: Shivam Bajpai <shivam@hirexcorp.com>
+To: josephs@linuxjobber.com
+Message-ID: <181120636.3519631579880734843.JavaMail.admin@emailmerge25.jobdiva.com>
+Subject: Urgent Requirement :: Python Software Developer :: 100% Remote ::
+ Full-Time/ Contract/ C2H
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_352077_1794499541.1579880734842"
+
+------=_Part_352077_1794499541.1579880734842
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div>Hi ,<br />
+Hope you are doing well !!<br />
+This is Shivam from Hirex. Please see the following Job Description and let me know if you are interested in the role.<br />
+You can revert me over the same email: <a href="mailto:shivam@hirexcorp.com">shivam@hirexcorp.com</a> Or can also call me at the number mentioned below in the signature.<br />
+<br />
+<strong>Job Role: </strong><strong><span style="color:#1f497d"><span style="font-family:Calibri,sans-serif">Python Software Developer</span></span></strong><br />
+<strong><span style="color:#1f497d">100% Remote</span></strong><br />
+<strong><span style="color:#1f497d">Can do Full-Time/ Contract/ C2H</span></strong><br />
+&nbsp;<br />
+<strong><span style="color:red">***PLEASE DISREGARD THIS EMAIL IF YOU FEEL YOU RECEIVED IT IN ERROR OR ARE NOT LOOKING FOR A NEW OPPORTUNITY. YOUR RESUME HAS BEEN IDENTIFIED IN OUR DATABASE AS A POTENTIAL FIT FOR AN OPENING WITH ONE OF OUR CLIENTS***</span></strong><br />
+<br />
+<strong>Software Dev</strong> &ndash;
+<ul>
+	<li>Python</li>
+	<li>C</li>
+	<li>JavaScript</li>
+	<li>Experience in relational and nosql databases (Postgres, MySQL, Dynamo) with an emphasis on writing performant SQL Queries</li>
+</ul>
+&nbsp;
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="height:72px; width:132px"><a href="http://www.hirexcorp.com/"><img alt="hire-new" id="_x0000_i1025" src="file:///C:\Users\HIREXC~1\AppData\Local\Temp\msohtmlclip1\01\clip_image002.gif" style="float:left; height:63px; width:132px" title="Click or tap to follow link" /></a></td>
+			<td style="height:72px; width:352px"><strong><span style="color:#1f497d">Shivam Bajpai | Sr. Technical Recruiter</span></strong><br />
+			<span style="color:#1f497d">1441 Broadway # 6100, 6th Floor | New York, NY 10018</span><br />
+			<span style="color:#1f497d"><a href="mailto:shivam@hirexcorp.com">shivam@hirexcorp.com</a> | <a href="http://www.hirexcorp.com/">www.hirexcorp.com</a> </span><br />
+			<span style="color:#1f497d">O: 302-298-0986 <strong>x 307</strong> |F: 302-480-9131 </span></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div>&nbsp;</div>
+<br><br>If you would like to unsubscribe from HireX, Inc., please click <a href='http://jobs.hirexcorp.com/optout.jsp?d=313239315f6a6f7365706873406c696e75786a6f626265722e636f6d&e=164&t11=1579880734841'>here</a>.<img id='logo' src='http://www1.jobdiva.com/servlets-examples/servlet/trackEmailMerge?a=01cFQc2AhddWl0CCwFdbVIWMFtNCV5RXwldUVRDEw%3D%3D' />
+------=_Part_352077_1794499541.1579880734842--
+

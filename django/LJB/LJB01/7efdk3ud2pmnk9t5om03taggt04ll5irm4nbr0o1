@@ -1,0 +1,180 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m68-80.mailgun.net (m68-80.mailgun.net [166.78.68.80])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 7efdk3ud2pmnk9t5om03taggt04ll5irm4nbr0o1
+ for josephs@linuxjobber.com;
+ Thu, 26 Dec 2019 16:25:28 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m68-80.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 166.78.68.80 as permitted sender) client-ip=166.78.68.80; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m68-80.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFL2NOaElaRXpUU0hEVyt6VWZ6T1A4NkpyaFl1Rm4wSnhDUlNjRk5wRW8rdkZ1b0ptNGs1VUEzR0E5TGxiWXNiYlZPeElScHoxSVFyWHByNWxicXhxUzY3NGRpdURpQjVreGJBVkkrMnc1bEJubjJzUjdXWUV4WlpVOEdFVEZmRlVrUTZNZ2tNd3VrSkNmbGFFR0VGU1ZWaFBzQXBlK2d2M2tHcG14UGpyZThVZkUwdUpqYS9OVzhQODdGN2liNU11MFFXNmpTNW5yWXBMQVZHNDFld2N6UGEzclJ1Q09NSDhCYk1IR1llZVZtTGowSEptRjBiVjNMRmRBL2hrbTY0R3lFVjdCZDNHeW11Zm1UYk92eWl4cFhkV0pWNkJpYjY2bEdNUDdQdnpBNVhWM2lFbmFjK0ZDQUxIRCtzTkU1eHRENVA3aCtITkR2VURtUGRWUVRna1pETk1rUTQ5Njhoa3ovY2tTajUvV2x3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=DVCQCYUEP/IyuncEmbTJLdLmRnwW4d1oLsXoETR8nB3xjRmmjc8Yfkac2EXFRoTWwB+yhn95hbVamCwuc9FH9+a25UdRbi7kcak9j2Uejh18PEXocDcrN/pyktVTg73xsq3kYMg0HuJFqYFZh5QctZ4Dxmk/c1WUKTy3ndK5oZo=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577377528; v=1; bh=POqtrAQb+rr5RxVhmNEiagp+5kYj/OjNR1DfbOWXpyo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1577377528; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=fkuS1jHUAiVjivMPkYo9g4NrPc5SjcZoqZTQclsanUg=; b=Hgk9/CrZd9ISFWwypDRBYTrvYpuA7g2FEenjyReXarHtCYtwSFWNFYCRDFKc42VlVdbiSUkt
+ C62/f7U7QX2T3PDo19CrD31VyQ8CABDYf+JjbnPmAOZrXbpkZGPK7YRSx25CqpYl9qwtyPL1
+ aJT79E/NPaPcZOE7or/1p7eEl1U=
+X-Mailgun-Sending-Ip: 166.78.68.80
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e04dedb890589e2e4d29823
+Received: by luna.mailgun.net with HTTP; Thu, 26 Dec 2019 16:24:59 +0000
+Date: Thu, 26 Dec 2019 16:24:59 +0000
+Sender: lionel.michael=e-solutionsinc.com@mg.e-solutionsinc.com
+Message-Id: <20191226162459.1.EF4C7984E2E1282D@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: lionel.michael@e-solutionsinc.com
+To: josephs@linuxjobber.com
+From: Lionel Michael Michael <lionel.michael@e-solutionsinc.com>
+Subject: Urgent Need for Devops with Electronic Arts at location Redwood
+ City, CA.
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/f0e9f0=
+0082b87422f556fb3176bd1857148aee1a/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><span style=3D"font-size:12pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:"Times New Roman",serif"><span style=3D"font-size:10.0=
+pt"><span style=3D"font-family:"Arial",sans-serif">My name is Lionel Michae=
+l and I am a Staffing Specialist at E-Solutions INC.&nbsp;I am reaching out=
+ to you on an exciting job opportunity with one of our clients.</span></spa=
+n></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif">Role: </span></span><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">Devops with Electronic Arts</span></spa=
+n></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif">Location: Redwood City, CA</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",s=
+ans-serif">Duration: Long term</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-size:10.0pt=
+"><span style=3D"font-family:"Arial",sans-serif">Demonstrable knowledge of =
+DevOps culture and modern CICD best practices Someone who is autonomous and=
+ can learn our environments, configurations, and systems quickly Ability to=
+ build CICD automation from scratch for products with several componentsKno=
+wledge of Amazon Web Services is a plusStrong background in Docker, Kuberne=
+tes and related techGood understanding and experience with operations of la=
+rge productsAn individual who can explain and demonstrate improvements in a=
+ given approach, provide alternative approaches with documented examples of=
+ anti-patterns, and is an empathetic team player. Experience with technolog=
+ieslanguages like Groovy, Python, Linux shell scripts, Ansible, Git, JavaSc=
+ript, Java Experience using tools and frameworks such as Jenkins, Gradle, A=
+pache, Nginx, JMeter, Sauce Labs, Docker, Maven, Node.js, MySQL, coverty, e=
+tc.Working experience of modern engineering operations duties, including pr=
+oviding the necessary tools and infrastructure to support high performance =
+development Ability and drive to collaborate with rest of team to research,=
+ design, develop, and implement automation release features and enhancement=
+s Ability to influence, guide, and reinforce the adoption of standards and =
+processes across the development teamsUnderstanding of security in CICDComf=
+ortable using the JIRAgitConfluence Qualifications 5-8 years as a software =
+or systems engineer, with a minimum of 3 years in release automation implem=
+entation Expert knowledge in some Configuration Management tool Preferably =
+Ansible Expert knowledge in some Continuous Integration tool or platform pr=
+eferably Jenkins Expert knowledge in CICD concepts and toolchain developmen=
+t. Take lead in different initiatives and collaborate well with different t=
+eams and make the things happen.</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial=
+",sans-serif">Thanks and Regards,</span></span></b><br />
+<span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-se=
+rif">&nbsp;<br />
+Lionel Michael<br />
+Direct: 732-305-2216 |&nbsp;<a href=3D"mailto:lionel.michael@e-solutionsinc=
+=2Ecom" target=3D"_blank">lionel.michael@e-solutionsinc.com</a><br />
+<b>E Solutions Inc</b><br />
+<a href=3D"https://maps.google.com/?q=3D2+North+Market+Street+Suite+%23400+=
+%0D%0ASan+Jose,+California+95113&entry=3Dgmail&source=3Dg" target=3D"_blank=
+">2 North Market Street Suite #400</a><br />
+<a href=3D"https://maps.google.com/?q=3D2+North+Market+Street+Suite+%23400+=
+San+Jose,+California+95113&entry=3Dgmail&source=3Dg" target=3D"_blank">San =
+Jose, California 95113</a></span></span></span></span></p>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzFESgiAQANDTxF8MrMsCH3yZXaORFRJHpZGc6fjVO8CbQmaHJEoApb0GIE=
+2Axksthzv21jscYNDg4HZBtT1lura6nu9S91Z2llw3MYc0smOLmcdI2SiIjnKHHfnETNlGcaT8K=
+FMw3jpxhKW29JrbL1zLfn6WGmM6_tUXFLcrAw"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

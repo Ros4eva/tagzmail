@@ -1,0 +1,255 @@
+Return-Path: <bounce+521a2a.ee4493-josephs=linuxjobber.com@ceipal.com>
+Received: from mail.a15.static.mgsend.net (mail.a15.static.mgsend.net [104.130.123.15])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id tp2edl52mq4qt1udd5dcr15ocu3cki5m94var4o1
+ for josephs@linuxjobber.com;
+ Mon, 03 Feb 2020 22:40:03 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: permerror (spfCheck: Error in processing SPF Record) client-ip=104.130.123.15; envelope-from=bounce+521a2a.ee4493-josephs=linuxjobber.com@ceipal.com; helo=mail.a15.static.mgsend.net;
+Authentication-Results: amazonses.com;
+ spf=permerror (spfCheck: Error in processing SPF Record) client-ip=104.130.123.15; envelope-from=bounce+521a2a.ee4493-josephs=linuxjobber.com@ceipal.com; helo=mail.a15.static.mgsend.net;
+ dkim=pass header.i=@ceipal.com;
+ dmarc=none header.from=tricascadetech.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFYSs4RUF2ZnRvcFZGWm52aVRPUlJnMDduMkhZWlR3Zk9pemgvdnF3OFR4blZpTVBZV2cwUkRBeU9QQkxCN0xEWTJ6MXVHMHFnalNnQkNtM0lRM1R1ZXZ6TEJ0M2Y5Y1V6WUhDNnptZzFDWTBkdDA2WVdNYUJWbXRVaWI3WU5sM1NkdmxrcW1idHpadnQrMC8yWURSVzVWRzNudUVRcVJpU0hSRy9xaXNyRE5YSHRxNXRoSXB1VFNqS203QTNGQngzQUFsVW1RclBCS1NCZk9Gd3JQOXBmb3FtL1MyRkE5MTI0WC9DNlRBZU53VkdmajVsVHBQN1hiV0h6VVY0QWhMbFZaNWw4TTN2WVFqUDBXQktSNTQzRmkyMmlDWUN4eFJTL3BmTm5nRVQ4RVFuQ280Q0M1RlZKMVpxZ3FiSGNENFJnQXVZdXdrNnpCK25CM0NYQlZWQ1o=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=ghtt42jezIib1Cugvt3gKQpRGhOemGcJxeJ1irhF23pD235NXxDTv4jHgdp9727beVdCJVIWZs8yaJpFF3nB7ANtzsn+dmRCji5knhL217qogxIw9noDJ0FJ5ovCrQ9nvIkGWcYHbVW+R/FN/zFttjlFTeFm3epTfI8XTGumuxE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580769605; v=1; bh=wvyWPXUK1ZT41mxKN2d1zPQ5b5uJKRwvIPIESnaZgSc=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=ceipal.com; q=dns/txt; s=krs;
+ t=1580769605; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Date;
+ bh=eTZGgYYpZM2S8izgLLV5VsHkDWTUxf+91El4Q6VfRaQ=; b=e5HOlqfW/i1S5jg4hDQ5fl/qyIaYy4VRh9IWOTMzINyftKCBwG/wwb9WVU1ZB7WfB5WLz/vm
+ Wbu9Aj2epP/i4i8wF6l+ivmZuq5a5Q1B899aP8ufgEmPzV83KZDIFAYl38fO95bWiFUoyqHN
+ ovc0xB56IMopsP9PGkp068PCNp0=
+X-Mailgun-Sending-Ip: 104.130.123.15
+X-Mailgun-Sid: WyIyYjIzNSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJlZTQ0OTMiXQ==
+X-Mailgun-Batch-Id: 5e38a13b25acfcba140fc8e0
+Received: by luna.mailgun.net with HTTP; Mon, 03 Feb 2020 22:39:55 +0000
+Date: Mon, 03 Feb 2020 22:39:55 +0000
+Message-Id: <20200203223955.1.6F6B1B991B7F8756@3835.ceipal.com>
+X-Mailgun-Variables: {"ref_id": "3835"}
+Reply-To: punit.v@tricascadetech.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Puneet <punit.v@tricascadetech.com>
+Subject: Urgent Need :: Systems Administrator :: St. Louis, MO
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p class=3D"gmail-m7012131560629742939words=
+ection1"><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,=
+sans-serif"><b><span lang=3D"EN-IN" style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">Hello,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></b></span></span>=
+</p>
+
+<p class=3D"gmail-m7012131560629742939wordsection1"><span style=3D"font-siz=
+e:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span lang=3D"EN-=
+IN" style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-seri=
+f">Hope you doing great.</span></span></b></span></span></p>
+
+<p class=3D"gmail-m7012131560629742939wordsection1"><span style=3D"font-siz=
+e:11pt"><span style=3D"font-family:Calibri,sans-serif"><strong><span style=
+=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span =
+style=3D"font-weight:normal">This is </span></span></span></strong><strong>=
+<span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-se=
+rif">Punit </span></span></strong><strong><span style=3D"font-size:10.0pt">=
+<span style=3D"font-family:"Arial",sans-serif"><span style=3D"font-weight:n=
+ormal">from </span></span></span></strong><b><span style=3D"font-size:10.0p=
+t"><span style=3D"font-family:"Arial",sans-serif">Tricascade Technologies<s=
+trong><span style=3D"font-family:"Arial",sans-serif">, if you are looking f=
+or job change or available in the job market so please send me your updated=
+ resume </span></strong></span></span></b><strong><span style=3D"font-size:=
+10.0pt"><span style=3D"font-family:"Arial",sans-serif"><span style=3D"font-=
+weight:normal">at</span></span></span></strong><span style=3D"font-size:10.=
+0pt"><span style=3D"font-family:"Arial",sans-serif">&nbsp;<b><a href=3D"mai=
+lto:punit.v@tricascadetech.com" style=3D"color:#0563c1; text-decoration:und=
+erline"><span style=3D"text-decoration:none"><span style=3D"text-underline:=
+none">punit.v@tricascadetech.com</span></span></a></b> <strong><span style=
+=3D"font-family:"Arial",sans-serif">or call me at</span></strong>&nbsp;<b>9=
+72-559-3478.</b></span></span></span></span></p>
+
+<p class=3D"x"><span style=3D"font-size:12pt"><span style=3D"font-family:"T=
+imes New Roman",serif"><b><span style=3D"font-size:10.0pt"><span style=3D"b=
+ackground:yellow"><span style=3D"font-family:"Arial",sans-serif"><span styl=
+e=3D"color:black">Job Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+</span></span></span></b><b><span style=3D"font-size:10.0pt"><span style=3D=
+"background:yellow"><span style=3D"font-family:"Arial",sans-serif">Systems =
+Administrator</span></span></span></b></span></span></p>
+
+<p class=3D"x"><span style=3D"font-size:12pt"><span style=3D"font-family:"T=
+imes New Roman",serif"><b><span style=3D"font-size:10.0pt"><span style=3D"b=
+ackground:yellow"><span style=3D"font-family:"Arial",sans-serif"><span styl=
+e=3D"color:black">Location &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><=
+/span></span></span></b><b><span style=3D"font-size:10.0pt"><span style=3D"=
+background:yellow"><span style=3D"font-family:"Arial",sans-serif">St. Louis=
+, MO</span></span></span></b></span></span></p>
+
+<p class=3D"x"><span style=3D"font-size:12pt"><span style=3D"font-family:"T=
+imes New Roman",serif"><b><span style=3D"font-size:10.0pt"><span style=3D"b=
+ackground:yellow"><span style=3D"font-family:"Arial",sans-serif"><span styl=
+e=3D"color:black">Duration &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><=
+/span></span></span></b><b><span style=3D"font-size:10.0pt"><span style=3D"=
+background:yellow"><span style=3D"font-family:"Arial",sans-serif">12+ Month=
+s (C2H)</span></span></span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:10.0pt"><span styl=
+e=3D"background:yellow"><span style=3D"font-family:"Arial",sans-serif">MOI =
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;Phone & WebEx</span></span></span></b><b> </b></span></sp=
+an></p>
+
+<p class=3D"x"><span style=3D"font-size:12pt"><span style=3D"font-family:"T=
+imes New Roman",serif"><span style=3D"font-size:10.0pt"><span style=3D"font=
+-family:"Arial",sans-serif">&nbsp;</span></span></span></span><span style=
+=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span=
+ style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-serif">=
+Required Skill Requirements: &nbsp;</span></span></b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&bull; Knowledge and experience working with BIOS/UEFI, firmware, =
+drivers, and Operating Systems including Windows 7, Windows 10, Linux, MacO=
+S, iOS</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Experience with system administration tools including process ex=
+plorer, process monitor, and Wireshark</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Ability or experience to evaluate, configure, implement, and sup=
+port hardware solutions to meet business needs</span></span></span></span><=
+/p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Excellent communications skills</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Expert troubleshooting and problem resolution skills</span></spa=
+n></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Ability to work with aggressive deadlines</span></span></span></=
+span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Ability to work independently as well as within and across teams=
+ and departments</span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Ability to drive results, take ownership, and follow through</sp=
+an></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:10.0pt"><span styl=
+e=3D"font-family:"Arial",sans-serif">Strongly Desired Skill Requirements:</=
+span></span></b> </span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&bull; Advanced knowledge/experience with Vbscript and PowerShell<=
+/span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><span style=3D"font-size:10.0pt"><span style=
+=3D"font-family:"Arial",sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp; &bull; Bachelor&#39;s degree in technology or related work experience.<=
+/span></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:10.0pt"><span styl=
+e=3D"font-family:"Arial",sans-serif">Thanks and Regards</span></span></b></=
+span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:10.0pt"><span styl=
+e=3D"font-family:"Arial",sans-serif">Punit<br />
+<span style=3D"color:black">Technical Recruiter</span><br />
+Tricascade Technologies<br />
+<span style=3D"color:black">Office:&nbsp;972-550-9346 Extn- 345<br />
+Direct:&nbsp; 972-559-3478<br />
+1320 Greenway Drive, Suite #660, Irving, TX</span></span></span></b><br />
+<span style=3D"font-size:10.0pt"><span style=3D"font-family:"Arial",sans-se=
+rif">w: <a href=3D"http://www.tricascadetech.com.com" style=3D"color:#0563c=
+1; text-decoration:underline"><b><span style=3D"text-decoration:none"><span=
+ style=3D"text-underline:none">www.tricascadetech.com.com</span></span></b>=
+</a><b>&nbsp;&nbsp;</b>e: <a href=3D"mailto:punit.v@tricascadetech.com" sty=
+le=3D"color:#0563c1; text-decoration:underline"><b>punit.v@tricascadetech.c=
+om</b></a></span></span></span></span></p>
+
+<p class=3D"wordsection1"><img height=3D"75" src=3D"https://talenthirecls4.=
+ceipal.com/articles/QjljMVVrSjAvL2Z4cFdyWEJvRndZOVI5cGt1aTZsQkNjdmkzQ3B1Rmh=
+1R2tkY0Z1eGp2TUFkeWNsRTlXRVV0cWVNdURkOG8wdk1HUEhqdElxS0NpbktjL1dOWEd6emVENT=
+hMSFByeGYrNlp5Y1l1YUxIRmoybzZkQTdtWUxRam12ZDgvOG9wdnVHL29hSklrK2hXS3B1SExOS=
+lByS3UrbitTWXgxV0NPaEpNPQ=3D=3D" width=3D"295" /></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"https://talenthirecls4.ceipal.co=
+m/users/unsubscribe/3311ca137a4679956b7c7da691b850c9ae975f1f/ee919cf9626f9a=
+202ddb894314a7f7d0cdad084b/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3Nu=
+cE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>click=
+ here </b></a>.</p>    </div>
+</body>
+</html>

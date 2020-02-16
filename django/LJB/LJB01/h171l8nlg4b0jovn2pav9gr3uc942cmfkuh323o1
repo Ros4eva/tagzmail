@@ -1,0 +1,222 @@
+Return-Path: <bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com>
+Received: from o1.email.bullhornmail.com (o1.email.bullhornmail.com [198.37.153.11])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id h171l8nlg4b0jovn2pav9gr3uc942cmfkuh323o1
+ for josephs@linuxjobber.com;
+ Fri, 31 Jan 2020 15:27:05 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+ dkim=pass header.i=@bullhornmail.com;
+ dmarc=none header.from=tanishasystems.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHK1Z1MDRwVlVDc1ZhK1dOQ3Nyb05PcDU0WVF6VmVIY01yUVdmSWF4V3d1cDRvRW1VKzBIdG5UQStmQ1NSSjlscWVuNVpZclVZTVBQUkFJYkV3MDQvamljNEo5bS9uQzhzWkpNa0ovVmttNDdSV0o3MXU4eGhNS2dUM3RsQTB3UGs4MzMxT3ZFVDZzVUJFOHNnSVQwblJEck1abFB1dStmWGVqaUljQkE4Wkhrem5EVEs3WU5nYWt0Y0djRHhCVXgraGR3djhtMHBma3Y4Mkh5aXY2VFFLdVowbUFnQXdFcDhrb08zbEJoVWovV3NQRlRNTE9URnY1MTBnQkVOeDQ5VWpBcXFpQjJVblpDc0JCMnFrRk0zQ2Z6dml3VkhhL2ZNTkkyNytoeERld0RCaENDcHc4MjlqRS9PS0JjVFljTUNCcUl5ajZaMy9IMlJnVHBhcUZDTVk1eWZPbzg2UklqRlNYcGVGRS9NYnp3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=AinOj1k9dekTa3V4VxJMTmEXvlLMnb+178UcNaY9kaSvVqqf1OmFbxKmDSYAGT6aW8pc3d2a6Oj7+JYJMLChXUhGtqYWeY6OwOlzxZkM+ylAZ9TiiboypILcjRifSt+x87Ss2fcqkyLgTSgqBFNl+jOiEuK5WPigkfJPkhARjSQ=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580484426; v=1; bh=k2zWpXkz1+BwsxEgx8iACPS7+TFb8LaJuuUUx2IL7WQ=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=bullhornmail.com; h=from:to:subject:mime-version:content-type; 
+	s=m1; bh=0ccdAPxgSYhcdGmu9D02RCrDXkwgEJej5Mraf1wrqlg=; b=df+LYPk
+	7AHJ2dlISlQO8NoznwKIvbDxA0Wpxd0SrX5QZCIjQAU0pcDG5GimSRH+O7KVXUhR
+	3PYM32wUbGpTJRQyiBnNmmMC6jUm5byA7G/0BcEHy3F/ltyxZ6As8vmD/hsZXmo1
+	VUJPj/jt8xHIPIGguKRT7ljWSsh72u06b/Vk=
+Received: by filter0414p1iad2.sendgrid.net with SMTP id filter0414p1iad2-12425-5E344748-4
+        2020-01-31 15:27:04.117699618 +0000 UTC m=+352122.429344268
+Received: from outbound2.bullhorn.com (outbound2.bullhorn.com [52.129.17.4])
+	by ismtpd0001p1iad1.sendgrid.net (SG) with ESMTP id lmhfhhKoS4uG-b6FJB81xw
+	for <josephs@linuxjobber.com>; Fri, 31 Jan 2020 15:27:03.884 +0000 (UTC)
+Received: from MassMailing (sl131app5.bos.bullhorn.com [10.77.2.64])
+	by outbound2.bullhorn.com (Postfix) with ESMTP id 653DA180347
+	for <josephs@linuxjobber.com>; Fri, 31 Jan 2020 10:27:03 -0500 (EST)
+Received: from mail pickup service by MassMailing with Microsoft SMTPSVC;
+	 Fri, 31 Jan 2020 10:27:03 -0500
+Message-ID: <199594473.1580484423948.JavaMail.cfservice@sl131app5>
+From: Wipro Team <wiproteam1@tanishasystems.com>
+To: josephs@linuxjobber.com
+Subject: Urgent Opening of DevOps Engineer in Pittsburgh, PA
+Mime-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_271462_1424750277.1580484423947"
+X-Priority: 1
+X-Charset: UTF-8
+X-messageUUID: FC36710A-BA5A-9E47-ADEEFEBC95B0F9A7
+X-OriginalArrivalTime: 31 Jan 2020 15:27:03.0951 (UTC) FILETIME=[E3DED9F0:01D5D84A]
+Date: Fri, 31 Jan 2020 15:27:04 +0000 (UTC)
+X-SG-EID: 0yz/L0x4SOtxmT5Q2ZIaRuB3YhbCNPbHhve+IF+xP0q1TvOJXDo2IJhhpx10mKMBDIV95KRN7xaus9
+ na1JSlT/xnxKgsVal34Rblaq25GFslMUezwj8ypC6li8J3EaAFV8ckkaT+sDnhhmVz7BhNE3k8zquL
+ 5Z2OiRJwsIPnA7e0U/nTgmGD2j3JeUnMzaxAA90k/YHYz1EXC/uq1ZKdgHwqSNi6nX7atcIz0NeH/O
+ I=
+
+------=_Part_271462_1424750277.1580484423947
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_271463_1335241489.1580484423947"
+
+------=_Part_271463_1335241489.1580484423947
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+
+Hi ,
+
+
+
+Hope you are doing well&hellip;&hellip;.!
+
+
+
+We have the below position one of my direct client. So please review and let me know if you have any candidates.
+
+
+
+ 
+
+
+
+Job Title:- DevOps Engineer
+
+
+
+Location:- Pittsburgh, PA 
+
+
+
+
+
+Interview Types:- Phone and Skype 
+
+
+
+Contract:- Long Term (12+ months) 
+
+
+
+ 
+
+
+
+Job Description:- 
+
+
+
+
+ 
+
+
+
+ &bull;Good experience with implementation of common DevOps tools and good experience with Ansible 
+
+
+
+
+&bull;implements application solutions using a microservices or service oriented architecture design patterns
+
+
+
+
+ 
+
+
+
+Thanks & Regards,
+
+
+
+Nikhilesh Soni
+
+
+
+(Sr. Technical Recruiter)
+
+
+
+Tanisha Systems Inc.
+
+
+
+(E-Verify, Certified Minority Business Enterprise MBE, Dun & Bradstreet CREDIBILITY CORP Certified)
+
+
+
+499 Wood Ave South Suite
+
+
+
+5# 308 Iselin, NJ 08830
+
+
+
+6Ph -  212-729-6543 ext.-462
+
+
+
+Email: nikhilesh@tanishasystems.com
+
+
+
+http://email.bullhorn.com/wf/click?upn=rzKdQ51uZboFy3cCqn2pFQj5BhuHHDjtVOwtzQsd4AklTwVLAlt-2B5wac5vQAxYph_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPp6Lo99hUIUyi29ZE00ZqJGOq8-2Bdd-2FMMak7RI8n5uVbZEz0FJ2yLChvTVDg4OaENwhVUeSWHL7uceXlHH0bFdlF-2BVdZrv6dKqSU18mysxCwusxpQVCcTsAAM7ypcnip4PgcUQw2FMaqZK8rb0R4bvRJnxWcgPeaDJ-2BCgsjr5dI-2F-2FVZANmmMbVm4BLHMGQSxrEc-3D
+
+
+
+ 
+
+
+
+This email was sent to josephs@linuxjobber.com, by Wipro Team<wiproteam1@tanishasystems.com>
+To remove your email address permanently from future mailings, please go to the following URL:
+http://email.bullhorn.com/wf/click?upn=9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwthXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYeN-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtMumGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPp6Lo99hUIUyi29ZE00ZqJGOq8-2Bdd-2FMMak7RI8n5uVbZK-2B8OCSfS-2Fi3OOkMqAe9J9kBt-2BaX7ZlEHbRo7JJc2etU-2BV9hEMEnn5PgMnGbCK8MYkN67Aaaa4hD88LRPPHGFjcVMo9FwUJs1xCVREDBrDSezc4ot6m5tN-2Blb-2B433-2Fk6SAksrR13Vwv33h1vlC4Rguc-3D
+------=_Part_271463_1335241489.1580484423947
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<p><strong>Hi ,</strong></p>
+
+<p><strong>Hope you are doing well&hellip;&hellip;.!</strong></p>
+
+<p><strong>We have the below position one of my direct client. So please review and let me know if you have any candidates.</strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Job Title:- DevOps Engineer</strong></p>
+
+<p><strong>Location:- </strong><strong><span style="font-size:10.5pt"><span style="font-family:&quot;Calibri&quot;,sans-serif">Pittsburgh, PA </span></span></strong></p>
+
+<p><strong>Interview Types:- Phone and Skype </strong></p>
+
+<p><strong>Contract:- Long Term (12+ months) </strong></p>
+
+<p>&nbsp;</p>
+
+<p><strong><span style="font-family:&quot;Calibri&quot;,sans-serif">Job Description:- </span></strong></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;<span style="font-family:&quot;Times New Roman&quot;,serif">&bull;Good experience with implementation of common DevOps tools and good experience with Ansible </span></p>
+
+<p><span style="font-family:&quot;Times New Roman&quot;,serif">&bull;implements application solutions using a microservices or service oriented architecture design patterns</span></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Thanks &amp; Regards,</strong></p>
+
+<p><strong>Nikhilesh Soni</strong></p>
+
+<p><strong>(Sr. Technical Recruiter)</strong></p>
+
+<p><strong>Tanisha Systems Inc.</strong></p>
+
+<p><strong>(E-Verify, Certified Minority Business Enterprise MBE, Dun &amp; Bradstreet CREDIBILITY CORP Certified)</strong></p>
+
+<p><strong>499 Wood Ave South Suite</strong></p>
+
+<p><strong>5# 308 Iselin, NJ 08830</strong></p>
+
+<p><strong>6Ph -&nbsp; 212-729-6543 ext.-462</strong></p>
+
+<p><strong>Email: <u>nikhilesh@tanishasystems.com</u></strong></p>
+
+<p><strong>http://www.tanishasystems.com</strong></p>
+
+<p>&nbsp;</p>
+<br><div style='color:#999999; font-size:8pt; font-family:arial;'>This email was sent to <a style='color:#848484' href='mailto:josephs@linuxjobber.com'>josephs@linuxjobber.com</a>, by Wipro Team<wiproteam1@tanishasystems.com>.<br>To remove your email address permanently from future mailings, please <a style='color:#848484' href="http://email.bullhorn.com/wf/click?upn=9PHVqJROJZxwvA3zOhpnUxxRQf34FKeLLzfse1sD1FiLWRv3QtpeaWuzYDdkdvPLgjwthXFB9uXjpu-2BnVpSJ-2BcDctdPV-2BemIdAqf0dC54B2Ftk7dPLGGfNcBLL0pXme1md8kJnAYeN-2B8bSyUTYcAzjz7jSYk7wgUEF-2F7edaiTAl5NudEUw53aPvz0AQTGuUIrHtnfvLsVM-2BJlL-2B3srcieCFOvrj1RzgrCkp2-2FeLK8iEtX7LGmaDCUqR-2F3rovPyapNa3W4yiWgypSW5tSgtMumGhUgDb9rd9xXAaYxv8inRA-3D_xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPp6Lo99hUIUyi29ZE00ZqJGP8U-2FZFGwF9mcrWZwkVJ-2BP6LYM2vekKEvMpG1AEw4rESMIiHYuWghAz2ZOK-2BdODPK7MzQLJTsfrVRkgOjo02UavQIDukxLdK3OFmZba99hMopxOAXSFr3qQfch7r4UDFG6lSQzHMwXqicCM0wHFv7Vm5Wh9DigFlan1YuEra5z-2Bo-3D" target=_blank>click here</a>.</div><img src="http://email.bullhorn.com/wf/open?upn=xldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPp6Lo99hUIUyi29ZE00ZqJGP8U-2FZFGwF9mcrWZwkVJ-2BP6yqQtq9CuAHXFv2EcTw7Y-2BOZyYGEQHA5kcrR4FhXslue-2FNW38Yjc8Ka5C51mjqNuy-2BjMS9QWU9g46U-2FwB-2B-2BMXl-2FkKLhJ9f9Frp2THVwoqyOknQT3bh-2B6nqm-2BhuJvlUh55pckeMbxWfO0XYpZw71bzo-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+
+------=_Part_271463_1335241489.1580484423947--
+
+------=_Part_271462_1424750277.1580484423947--

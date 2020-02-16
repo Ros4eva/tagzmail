@@ -1,0 +1,172 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m232-79.mailgun.net (m232-79.mailgun.net [159.135.232.79])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 1v2o1icjguti80jmsm3r2qjnvke4vo0hmr2lcq01
+ for josephs@linuxjobber.com;
+ Thu, 19 Dec 2019 22:15:16 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.79 as permitted sender) client-ip=159.135.232.79; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-79.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 159.135.232.79 as permitted sender) client-ip=159.135.232.79; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m232-79.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHZ0VveVhPRXlLUU9PazVYU1ZyNHVCVW4zbGVadnRpNzR6dFAxWHQydy8zSzhzVDVMcHp6bWVDOHAzVEU1UkJFaDB5MFBaYUdua2luRm56cDFNUTc2YVM3cncxeFlOZjlBVHZ1V0JWZjluUyt2VkdJSXFEa0RqRmtRT3g4a2RZNEhSNUJ3amVMa0ZFWlBUdVkyOEFFS1MxYys0c2JXaXZuTWl4QzhHTGdQVFc2RTI2SkZiV2tYQjZ2TGI0ODJWZ2ozY1R6c2tHOC84OHBwdWM4ODZhb3cvSGJWMDVmM2pGanZyVGE5N0NCOUpKWEpUTlF6cERxODBvV2wwZjUxUHVoQ21HVVh4T0phQzU5cTdUbEJ0and4azh1K0pYb2NvaXYrWHFZR2RIQThabnpZNmNaVGFaUll5cnQ3U0NWekxCYU5Xb0JjN3J4VXI3NmYvaFNOOUlxcHYzZTFzeTRCbWwwaERiMnFrNm8vdFF3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=A3mfQofZfXKmMFAjGgCW0yJhJmxv2QcUyiCQVEeV1vXgt8m8Nf2keA/zxML0SNOwWy355+heU64ciDuCFiR4ZKpXkgBS4HWGiQ2+OXzVyyR97hXEsMz9h+0XREDHbGX+QFh9Pr4vhK0bP/Ub84pr6ju1EDxMIyB7oYxS0ujDFEU=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576793718; v=1; bh=QNnXhQ33OzOATAIUGd87C9E0X9IXu9xtg/o1/65J+ao=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1576793718; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Sender: Date; bh=6+X90+sffjoPZyTJDt/pbu83rQMjcF/8z7twu1I9fe0=; b=DA+Cl6CqLIhPF9yfsLehATbnE+tJRASaL19jAOXSr+EmKdpVGZMCBAlurwj2L0AJFCqctIXF
+ 27T4WHUhRSjWbnnjnMaZX/doQsaz4ccfFsKC9dmW+9CTp3cYD+Uw5SoOEyWEkLAATV2fowIR
+ gWn2ubZ/PNjFsuWKf3JQFRgWCEM=
+X-Mailgun-Sending-Ip: 159.135.232.79
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5dfbf24c7bf54afed4b3a6a5
+Received: by luna.mailgun.net with HTTP; Thu, 19 Dec 2019 21:57:32 +0000
+Date: Thu, 19 Dec 2019 21:57:32 +0000
+Sender: ashish.k=e-solutionsinc.com@mg.e-solutionsinc.com
+Message-Id: <20191219215732.1.57607929F04ACF97@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: ashish.k@e-solutionsinc.com
+To: josephs@linuxjobber.com
+From: Ashish Kumar <ashish.k@e-solutionsinc.com>
+Subject: Need UNIX/Linux Systems Administrator  Location: Reston, VA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/7fdf32=
+ec6c3b95ac9c14204eb79ce363dcffe543/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Position: UNIX/Linux </b><b><span style=3D"=
+color:black">Systems Administrator </span></b></span></span></p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:black">Location: </spa=
+n></b><b>Reston, VA</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"color:black">Unix/Linux Systems Administrator who w=
+ill act as a technical expert and advisor on Linux and Solaris. &nbsp;Provi=
+de L3 troubleshooting and problem resolution for any Linux (SUSE or Redhat)=
+ or UNIX (Solaris or AIX) issues.&nbsp;</span></b><br />
+<br />
+<span style=3D"color:black">Must have at least 8 years&rsquo; experience ad=
+ministering / maintaining the Linux (SUSE and Redhat) operating system and =
+its associated software</span><br />
+<span style=3D"color:black">Must have at least 5 years&rsquo; experience ad=
+ministering / maintaining the Solaris operating system and its associated s=
+oftware</span><br />
+<span style=3D"color:black">Must have excellent problem determination skill=
+ and experience in successfully searching vendor knowledge bases, opening v=
+endor support requests, and generating diagnostic reports</span><br />
+<span style=3D"color:black">Must be able to identify, analyze, and resolve =
+problems. Support problem and change tickets for client servers, including =
+implementing changes to hardware and/or software. Interact with other teams=
+ as required to solve issues.</span><br />
+<span style=3D"color:black">Must have experience with Veritas clustering</s=
+pan><br />
+<span style=3D"color:black">Must have an understanding of RAID, Linux LVM, =
+and file systems</span><br />
+<span style=3D"color:black">Must be familiar with SAN storage and multipath=
+ing, Linux OS tuning, and handling of common configuration files</span><br =
+/>
+<span style=3D"color:black">Must have an understanding of authentication an=
+d authorization technologies such as LDAP and Kerberos</span><br />
+<span style=3D"color:black">Must have a functional understanding of virtual=
+ization (using VMware and UCS) and HA concepts</span><br />
+<span style=3D"color:black">Must be able to standardize repeatable tasks an=
+d steps within a team and create documentation or scripts to solve similar =
+problems in the future.</span><br />
+<span style=3D"color:black">Must be able to engage in problem solving to cr=
+eate a continuous improvement culture.</span><br />
+<span style=3D"color:black">Must be able to effectively prioritize and exec=
+ute tasks in a demanding environment.</span><br />
+<span style=3D"color:black">Must have fluent English speaking skills to int=
+erface with PMs and customer &nbsp;&nbsp;</span><br />
+<span style=3D"color:black">Must have excellent interpersonal skills in dea=
+ling with other teams, account team, PMs, peers and customer</span><br />
+<span style=3D"color:black">Must be located in the Reston, VA area since th=
+ey will be onsite with the customer</span><br />
+<span style=3D"color:black">Prefer someone with a basic knowledge of Agile =
+methodologies</span><br />
+<span style=3D"color:black">Prefer someone with the ability to write script=
+s in one or more of the scripting languages such as bash, Perl, Python, or =
+R</span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-family:-webkit-standard"><span style=3D"color:bla=
+ck">Best Regards,</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-family:-webkit-standard"><span style=3D"color:bla=
+ck">Ashish Kumar</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span style=3D"font-family:-webkit-standard"><span style=3D"color:bla=
+ck"><a href=3D"mailto:ashish.k@e-solutionsinc.com" style=3D"color:#0563c1; =
+text-decoration:underline">ashish.k@e-solutionsinc.com</a></span></span></s=
+pan></span></p>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVzEsOwiAUAMDTyE7C4_dgwaIx6TUMX0vTgik28fjW3awmuRKN1KQ6zsACB8=
+tBoeAUqELN0HI7Mzk9Zos3yfYXzffRt_NTexu1RRr7ThbnCwiIXsaCWqOEIAAS89wHUzAGQ45cn=
+jU5ZfGyW_vI72Vc4Vbb-V17CPn4Vz_k9Spm"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

@@ -1,0 +1,2531 @@
+Return-Path: <Al3jx34mSTPKBITC3h5Ur2Q==_1130508791088_C6f1kP5HEei0EdSuUpLEfQ==@in.constantcontact.com>
+Received: from ccm183.constantcontact.com (ccm183.constantcontact.com [208.75.123.183])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 48nbf5t2h5ebs23g1tkk3sjic60d7bmv5nm7ug81
+ for jeff.adekunbi@ideabakr.org;
+ Wed, 29 Jan 2020 19:15:31 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of in.constantcontact.com designates 208.75.123.183 as permitted sender) client-ip=208.75.123.183; envelope-from=Al3jx34mSTPKBITC3h5Ur2Q==_1130508791088_C6f1kP5HEei0EdSuUpLEfQ==@in.constantcontact.com; helo=ccm183.constantcontact.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of in.constantcontact.com designates 208.75.123.183 as permitted sender) client-ip=208.75.123.183; envelope-from=Al3jx34mSTPKBITC3h5Ur2Q==_1130508791088_C6f1kP5HEei0EdSuUpLEfQ==@in.constantcontact.com; helo=ccm183.constantcontact.com;
+ dkim=pass header.i=@auth.ccsend.com;
+ dmarc=none header.from=uta.edu;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFeDdtVXhseGFoWEVNMjhYajJqeWU5RnQzb2ozTlUwcUlnK3RtTytuTlUzQ1Rlb1NobG1TZDd6VGpJdVdyRE9ERWo2ZXpQMzNsQ284K3JQYWtZcWxLV1pIbkVUMWMrNnYxbGE3T0crQk9MYkRQUXZ0Q0hxaENKaHVvd2dCRGVPY2dCMko3VzFyOHhWeVJFVXhKM2ZlZkZkelVLaHRZanZnVStLM1k1clVWSlNteU1RUUc3OVg2anZ3R0dBR1ovZEpBdFhiemdxV2lQMHlnMU52SldyVzloYXJRK0M3Y0NsRE9vaDh5RGdrZlZ4UVQ3Tlg2WTlqNHpHUUR0enNSRFJ1WmVtVGtOOEJRZmNJNENrU3hFNDFkQzVGR0NwQTRqWHZBZlpVWkhaeXB0cTdWVDV4U2ppTWRYYVg1MUdtVEZZV1FRN0pMemtZS2t0ZThGZTIwWjgxbGZSZmEveFd0Z0dHay9pNStVY1ZNY1A3endSc0xncUxFbXFYb3gxRFRBVE1ZPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=hlxkQI5Mfpn8x3ANk6k+B1qhBHJ7SPo/EJg5DTTDV2hPwNKzEQt09WSFrBPjYcf2YKW6yUGpYGZxdQRJAnMdjKFu0waoPq0HQ6H/bHgAxtFtcipeabBfo9bgilrlvjd8MAg1zh0DPWKo0YU77fczPyLauWP/2xXKX79t7a+9EiE=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580325332; v=1; bh=olH9exE1uKmvd01bxnEtMEyhPqD2+Bx+k6MdfZCxqUQ=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Return-Path: <Al3jx34mSTPKBITC3h5Ur2Q==_1130508791088_C6f1kP5HEei0EdSuUpLEfQ==@in.constantcontact.com>
+Received: from [10.252.1.141] ([10.252.1.141:52232] helo=p2-jbemailsyndicator21.ctct.net)
+	by 10.249.247.10 (envelope-from <Al3jx34mSTPKBITC3h5Ur2Q==_1130508791088_C6f1kP5HEei0EdSuUpLEfQ==@in.constantcontact.com>)
+	(ecelerity 4.2.1.52273 r(Core:4.2.1.11)) with ESMTP
+	id EE/7B-01725-2D9D13E5; Wed, 29 Jan 2020 14:15:30 -0500
+DKIM-Signature: v=1; q=dns/txt; a=rsa-sha256; c=relaxed/relaxed; s=1000073432; d=auth.ccsend.com; h=date:mime-version:subject:X-Feedback-ID:message-id:from:reply-to:list-unsubscribe:list-unsubscribe-post:to; bh=/zdiKgkWdh1PfpFeAi2vCANXmN5YRrZUHyL2KdfDLj0=; b=BmndfahXvxJ3IZ+7hr3Bqk2xvXaFPg4y+4Y7YfwzuoGqbCASZELgGgNUPfSZfdWkPxoS/9hJKTaX5K0vBytg2bwENC9U1pJ8376qLxBQEdni/k6P24UXyCy9LUI6rc69dvmwx3dTPH61RhZPmSiPchmEFgmspRKp6HrP7LN4310=
+Message-ID: <1133837937692.1130508791088.1148843635.0.901415JL.3010@scheduler.constantcontact.com>
+Date: Wed, 29 Jan 2020 14:15:30 -0500 (EST)
+From: UTA Lockheed Martin Career Development Center <nicole.philip@uta.edu>
+Reply-To: hireamav@uta.edu
+To: jeff.adekunbi@ideabakr.org
+Subject: Reminder: Register now for UT Arlington Job and Internship Fairs
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_816780238_151186121.1580325330392"
+List-Unsubscribe: <https://visitor.constantcontact.com/do?p=un&m=001YQzlr5fvGfNN7ys7mQz9dw%3D%3D&se=001cXFKS4BigR-CKqsvGb06TA%3D%3D&t=001EkZLEx15CcE%3D&llr=qjlgz87ab>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Campaign-Activity-ID: 9778f1df-8992-4cf2-8121-30b787952bd9
+X-Channel-ID: 0ba7f590-fe47-11e8-b411-d4ae5292c47d
+X-Mailer: Roving Constant Contact 2012 (http://www.constantcontact.com)
+X-Return-Path-Hint: Al3jx34mSTPKBITC3h5Ur2Q==_1130508791088_C6f1kP5HEei0EdSuUpLEfQ==@in.constantcontact.com
+X-Roving-Campaignid: 1133837937692
+X-Roving-Id: 1130508791088.1148843635
+X-Feedback-ID: 0ba7f590-fe47-11e8-b411-d4ae5292c47d:9778f1df-8992-4cf2-8121-30b787952bd9:1130508791088:CTCT
+X-CTCT-ID: 0b6c9a40-fe47-11e8-b400-d4ae5292c47d
+
+------=_Part_816780238_151186121.1580325330392
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Registration now open for all UT Arlington Spring 2020 Job Fairs and other =
+employer events  The University of Texas at Arlington Lockheed Martin Caree=
+r Development Center Where Talent Meets Opportunity Spring 2020 Employer Ev=
+ents Spring 2020 All Majors Job Fair Registration Open Interested in hiring=
+ UTA talent for internship and career opportunities? The Spring 2020 All Ma=
+jors Job will be held on Wednesday, February 26th from 12:00 p.m. - 4:00 p.=
+m. in the Maverick Activities Center. Register to participate online at Han=
+dshake. Pricing for the Spring 2020 All Majors Job Fair $400 corporate/for-=
+profit registration fee $225 non-profit and government/start-ups registrati=
+on fee $450 third-party staffing agency registration fee $60 extra table fe=
+e Over 150 employers and over 1,000 students and alumni are expected to att=
+end. Contact the Employer Relations team at hireamav@uta.edu with any quest=
+ions. *See below for additional Job Fairs. Spring 2020 Internship Fair Regi=
+stration Open Wednesday, February 19th, 2:00 p.m. - 4:30 p.m. =EF=BB=BFInte=
+rnship Fair: 2:00 p.m. =E2=80=93 4:30 p.m. Cost: $125 Registration Fee Host=
+ a table to recruit students for open internship positions. To register, pl=
+ease visit Handshake. Over 500 students participated in this fall's fair an=
+d that number is expected to grow this spring. Join us for the Spring 2020 =
+Activity Fair The Spring 2020 Activity Fair Day is taking place inside the =
+University Center on Wednesday, January 29 from 10 a.m. =E2=80=93 1:30 p.m.=
+ This event, both in January and August, is a rare opportunity for off camp=
+us vendors, businesses, non-profit agencies, etc. to be on campus and in fr=
+ont of thousands of UTA students. Participation in this event allows vendor=
+s to recruit employees and market their services and products. For event de=
+tails, pricing and registration, please visit this website. Questions may b=
+e directed to Julia Clark at mavorgs@uta.edu. Never miss an opportunity to =
+build your brand! Stay informed with Hire-a-Mav =EF=BB=BFHire-a-Mav Monthly=
+ will arrive at the first of each month and will include, upcoming events, =
+registration information, a monthly calendar, program highlights, and other=
+ information to help your organization develop an effective talent acquisit=
+ion strategy.  Please complete this short form to receive our monthly updat=
+es.  =E2=80=8C Join us for Employer Office Hours on Monday, February 10th f=
+rom 1:00 p.m. - 4:00 p.m. Meet with students and alumni from all majors on =
+a walk-in basis for brief, 15 minute sessions. Students/alumni may have the=
+ir resume reviewed, get quick advice about interviews and job search strate=
+gies, or ask general questions. Employer Office Hours are an excellent bran=
+ding opportunity, while providing students with invaluable feedback on thei=
+r career. Sign up here. *See below for additional dates. Bring UTA students=
+ to you during Mavs on Site The program offers a single day visit to a comp=
+any site and provides an opportunity for students to experience the employe=
+r=E2=80=99s unique workplace culture. In addition to the satisfaction of le=
+aving a lasting impact on the students, the outcomes for your company are e=
+qually beneficial. We can invite student populations that meet your hiring =
+needs and in turn create a pool of 25+ interested and engaged students whic=
+h we bring to you. It=E2=80=99s an excellent opportunity to recruit interns=
+, part-time staff, and future full-time employees. Request more information=
+ by completing the Employer Application Form. Connect with UTA talent durin=
+g our spring events Interested in increasing your visibility on campus? Cli=
+ck here to see all the ways we can help and scroll through the options belo=
+w. We are looking forward to an exciting spring semester. Employer Office H=
+ours Monday, February 10th, 1:00 p.m. - 4:00 p.m. Monday, February 24th, 1:=
+00 p.m. - 4:00 p.m. Monday, March 16th, 1:00 p.m. - 4:00 p.m. Monday, April=
+ 13th, 1:00 p.m. - 4:00 p.m. Meet with students and alumni from all majors =
+on a walk-in basis for brief, 15 minute sessions. Students/alumni may have =
+their resume reviewed, get quick advice about interviews and job search str=
+ategies, or ask general questions. Register here. Prepare for the Fair Tues=
+day, February 18th, 1:00 p.m. - 4:00 p.m. Meet with students and alumni and=
+ discuss with them specific topics relevant to the job fair, such as: how t=
+o perfect a 30 second elevator pitch. At this booth you'll help students un=
+derstand how to greet employers and craft a quick introduction to promote t=
+heir skills. Internship Workshop and Fair Wednesday, February 19th, 1:00 p.=
+m. - 4:30 p.m. Internship Fair: 2:00 p.m. =E2=80=93 4:30 p.m. Cost: $125 Re=
+gistration Fee Host a table to recruit students for open internship positio=
+ns. To register, please visit Handshake. Over 500 students participated in =
+this fall's fair. Spring 2020 All Majors Job Fair Wednesday, February 26th,=
+ 12:00 p.m. - 4:00 p.m. Recruit underclassmen, graduating seniors, graduate=
+ students, and alumni for full-time, part-time, co-op, and internship posit=
+ions. For more information and to register visit Handshake. We expect over =
+1,000 students and alumni to attend! Face-to-Face Mock Interviews Thursday,=
+ March 26th, 1:00 p.m. - 4:00 p.m. Conduct 30-minute practice interviews wi=
+th our students/alumni and provide them with feedback. We will provide you =
+with sample questions and evaluation forms. Register here. Virtual Job Fair=
+ - Cost: Registration Fee Wednesday, April 29th & Thursday, April 30th, Liv=
+e 1:00 p.m. - 4:00 p.m. CST / set your own hours. Employers will have the o=
+pportunity to recruit underclassmen, graduating seniors, graduate students,=
+ and alumni for full-time positions, part-time positions, co-ops and intern=
+ships. This is a virtual two day fair during which you can host a webinar a=
+bout your organization, chat virtually with students and alumni, and more. =
+You are able to set your own hours and can host this from anywhere with an =
+internet connection. Employer Interest Form. Register to earn continuing ed=
+ucation credits and improve your internship pipeline with Dr. Robert Shinde=
+ll Everyone knows the value of internships, but does your organization run =
+a strong intern program that maintains a pipeline of highly qualified candi=
+dates for full-time roles? Internships and other forms of experiential educ=
+ation help students make a seamless transition to the world of work and are=
+ a perfect vehicle to increase retention rates, complete short-term project=
+s, and identify future hires. On Tuesday, April 21, 2020 the Lockheed Marti=
+n Career Development Center at The University of Texas at Arlington will we=
+lcome Dr. Robert Shindell from Intern Bridge and ThincInterns, the nation's=
+ leading research and consulting firms to share a newfound approach to inte=
+rnships based on in-depth research and proven strategies. In this full-day,=
+ highly interactive and participatory workshop, participants will learn how=
+ to: Effectively implement an impactful internship program; Utilize softwar=
+e to manage your intern projects and programs; Identify future hires throug=
+h a no-strings-attached 12-week interview; Create and maintain a pipeline o=
+f highly qualified and educated full-time job candidates; Increase your org=
+anization's brand awareness on university and college campuses This worksho=
+p has been accredited by both HRCI and SHRM-PDC and by attending you will r=
+eceive six (6) CEU Credits! We invite you to join us on Tuesday, April 21, =
+2020 at The University of Texas at Arlington for this amazing opportunity t=
+o maximize your internship and entry talent acquisition programs. Arlington=
+ Total Internship Management Workshop: Register here! =EF=BB=BF Tuesday, Ap=
+ril 21, 2020 | 8:30 a.m. - 3:30 p.m. | The University of Texas at Arlington=
+ =E2=80=8C =E2=80=8C =E2=80=8C University of Texas in Arlington Lockheed Ma=
+rtin Career Development Center | 300 W. 1st St., Suite 180S, Arlington, TX =
+76019 Unsubscribe jeff.adekunbi@ideabakr.org Update Profile | About Constan=
+t Contact Sent by nicole.philip@uta.edu in collaboration with Try email mar=
+keting for free today!
+------=_Part_816780238_151186121.1580325330392
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type">
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewpor=
+t">
+<meta charset=3D"UTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+ maximum-scale=3D1">
+<!--[if gte mso 9]>
+<style id=3D"ol-styles">
+/* OUTLOOK-SPECIFIC STYLES */
+li {
+text-indent: -1em;
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+ul, ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+sup {
+font-size: 85% !important;
+}
+sub {
+font-size: 85% !important;
+}
+</style>
+<![endif]-->
+<style id=3D"template-styles-head" data-premailer=3D"ignore">
+.footer-main-width {
+width: 630px!important;
+max-width: 630px;
+}
+table {
+border-collapse: collapse;
+table-layout: fixed;
+}
+.bgimage {
+table-layout: auto;
+}
+.preheader-container {
+color: transparent;
+display: none;
+font-size: 1px;
+line-height: 1px;
+max-height: 0px;
+max-width: 0px;
+opacity: 0;
+overflow: hidden;
+}
+/* LIST AND p STYLE OVERRIDES */
+.editor-text p {
+margin: 0;
+padding: 0;
+margin-bottom: 0;
+}
+.editor-text ul,
+.editor-text ol {
+padding: 0;
+margin: 0 0 0 40px;
+}
+.editor-text li {
+padding: 0;
+margin: 0;
+line-height: 1.2;
+}
+/* =3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D
+CLIENT/BROWSER SPECIFIC OVERRIDES
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+ */
+/* IE: correctly scale images with w/h attbs */
+img {
+-ms-interpolation-mode: bicubic;
+}
+/* Text Link Style Reset */
+a {
+text-decoration: underline;
+}
+/* iOS: Autolink styles inherited */
+a[x-apple-data-detectors] {
+text-decoration: underline !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+color: inherit !important;
+}
+/* FF/Chrome: Smooth font rendering */
+.editor-text, .MainTextFullWidth {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+/* Gmail/Web viewport fix */
+u + .body .template-body {
+width: 630px;
+}
+@media only screen and (max-width:480px) {
+u + .body .template-body {
+width: 100% !important;
+}
+}
+/* Office365/Outlook.com image reset */
+[office365] button, [office365] .divider-base div, [office365] .spacer-base=
+ div, [office365] .editor-image div { display: block !important; }
+</style>
+<style>@media only screen and (max-width:480px) {
+table {
+border-collapse: collapse;
+}
+.main-width {
+width: 100% !important;
+}
+.mobile-hidden {
+display: none !important;
+}
+td.OneColumnMobile {
+display: block !important;
+}
+.OneColumnMobile {
+width: 100% !important;
+}
+td.editor-col .editor-text {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-button-container {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .editor-social td {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col .block-margin {
+padding-left: 20px !important; padding-right: 20px !important;
+}
+td.editor-col td.block-margin .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.editor-col td.block-margin .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.editor-button td > table tr > td {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-button td > table tr > td td {
+padding: 9px 15px 10px 15px !important;
+}
+.layout {
+padding: 15px 9px 15px 9px !important;
+}
+.layout-container-border {
+padding: 1px 1px 1px 1px !important;
+}
+.layout-container {
+padding: 0px 0px 0px 0px !important;
+}
+.editor-image img {
+width: auto !important; margin-left: auto !important; margin-right: auto !i=
+mportant;
+}
+.editor-image .image-cell {
+padding-bottom: 15px !important;
+}
+.editor-text {
+font-size: 16px !important;
+}
+.preheader-text {
+font-size: 12px !important;
+}
+.section-headline-text {
+font-size: 24px !important;
+}
+.headline-text {
+font-size: 24px !important;
+}
+.subheadline-text {
+font-size: 20px !important;
+}
+.feature {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.layout-outer {
+padding: 0px 20px !important;
+}
+.feature-heading-text {
+font-size: 20px !important;
+}
+.feature-text {
+font-size: 16px !important;
+}
+.split.editor-col {
+margin-top: 0px !important;
+}
+.split.editor-col ~ .split.editor-col {
+margin-top: 10px !important;
+}
+.split-layout-margin {
+padding: 0px 20px !important;
+}
+.article {
+padding-top: 0px !important; padding-bottom: 0px !important;
+}
+.article-heading-text {
+font-size: 20px !important;
+}
+.article-text {
+font-size: 16px !important;
+}
+.social-container {
+text-align: center !important;
+}
+.social-text {
+font-size: 14px !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.editor-cpn-heading-text {
+font-size: 28px !important;
+}
+td.col-divided .editor-col {
+border-right: 0px solid #FFFFFF !important; border-bottom: 1px solid #FFFFF=
+F !important;
+}
+td.col-divided td.editor-col:last-of-type {
+border-bottom: 0 !important;
+}
+.col-divided {
+padding: 0 20px !important;
+}
+td.col-divided .editor-col .editor-text {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-image.editor-image-hspace-on td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-button-container {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .editor-social td {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+td.col-divided .editor-col .block-margin {
+padding-left: 0px !important; padding-right: 0px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.cpn-heading-text {
+font-size: 28px !important;
+}
+.action-block .poll-answer {
+width: 100% !important; display: block !important;
+}
+.action-block .poll-button {
+width: 100% !important;
+}
+div.MobileFooter {
+font-size: 11px !important;
+}
+td.FooterMobile {
+padding: 0px 10px 0px 10px !important;
+}
+td.MainCenter {
+width: 100% !important;
+}
+table.MainSide {
+display: none !important;
+}
+img.MainSide {
+display: none !important;
+}
+td.MainSide {
+display: none !important;
+}
+.rsvp-button-inner {
+padding: 0px 0px 10px 0px !important;
+}
+.rsvp-button-outer {
+width: 100% !important; max-width: 100% !important;
+}
+.footer-main-width {
+width: 100% !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-mobile-hidden {
+display: none !important;
+}
+.footer-column {
+display: block !important;
+}
+.footer-mobile-stack {
+display: block !important;
+}
+.footer-mobile-stack-padding {
+padding-top: 3px;
+}
+}
+@media only screen and (max-width:320px) {
+.layout {
+padding: 0px 0px 0px 0px !important;
+}
+}
+@media screen {
+@font-face {
+font-family: ''; font-style: normal; font-weight: 400; src: local(''), loca=
+l(''), url() format(''); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U=
++02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+}
+</style>
+</head>
+<body class=3D"body" align=3D"center" style=3D"width: 100%; min-width: 100%=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; background-co=
+lor: #FFFFFF; margin: 0px; padding: 0px;" bgcolor=3D"#FFFFFF">
+<table class=3D"template-body" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"text-align: center; min-width: 100%;" width=3D"100%">
+<tr>
+<td class=3D"preheader-container">
+<div>
+<div id=3D"preheader" style=3D"display: none; font-size: 1px; color: transp=
+arent; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overf=
+low: hidden;">
+<span data-entity-ref=3D"preheader">Registration now open for all UT Arling=
+ton Spring 2020 Job Fairs and other employer events</span>
+</div>
+<img src=3D"http://r20.rs6.net/on.jsp?ca=3D9778f1df-8992-4cf2-8121-30b78795=
+2bd9&a=3D1130508791088&c=3D0b6c9a40-fe47-11e8-b400-d4ae5292c47d&ch=3D0ba7f5=
+90-fe47-11e8-b411-d4ae5292c47d" / alt=3D"">
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"template-shell-container" align=3D"center">
+<div class=3D"bgcolor" style=3D"background-color: #FFFFFF;">
+<table class=3D"bgimage" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0" style=3D"background-color: #FFFFFF;" bgcolor=3D"#FFFFFF">
+<tbody>
+<tr>
+<td align=3D"center">
+<table class=3D"main-width" width=3D"630" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" align=3D"center" style=3D"width: 630px;">
+<tbody>
+<tr>
+<td class=3D"layout" valign=3D"top" align=3D"center" style=3D"padding: 15px=
+ 5px;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" alig=
+n=3D"center">
+<tbody>
+<tr>
+<td class=3D"layout-container-border" valign=3D"top" align=3D"center" style=
+=3D"background-color: #FFFFFF; padding: 10px;" bgcolor=3D"#FFFFFF">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" alig=
+n=3D"center" style=3D"background-color: #FFFFFF;" bgcolor=3D"#FFFFFF">
+<tbody>
+<tr>
+<td class=3D"layout-container" valign=3D"top" align=3D"center" style=3D"bac=
+kground-color: #ffffff; padding: 0;" bgcolor=3D"#ffffff">
+<div class=3D"">
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"preheader editor-col OneColumnMobile" style=3D"background-colo=
+r: rgb(231, 246, 253);" width=3D"100%" valign=3D"top" align=3D"left" bgcolo=
+r=3D"E7F6FD">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text " valign=3D"top" align=3D"left" style=3D"font-fami=
+ly: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #403F42;=
+ text-align: left; display: block; word-wrap: break-word; line-height: 1.2;=
+ padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"color: r=
+gb(0, 100, 177); font-family: Georgia, Times New Roman, Times, serif; font-=
+weight: bold;">The University of Texas at Arlington</span></div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"color: r=
+gb(0, 100, 177); font-family: Georgia, Times New Roman, Times, serif; font-=
+weight: bold;">Lockheed Martin Career Development Center</span></div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"color: r=
+gb(245, 128, 37); font-style: italic;">Where Talent Meets Opportunity</span=
+></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" style=3D"background-color: rgb(23=
+1, 246, 253);" width=3D"100%" valign=3D"top" align=3D"" bgcolor=3D"E7F6FD">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div style=3D"=
+text-align: center;" align=3D"center"><span style=3D"font-size: 36px; color=
+: rgb(0, 100, 177); font-family: Georgia, Times New Roman, Times, serif;">S=
+pring 2020 Employer Events</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-spacer">
+<table class=3D"editor-spacer" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"spacer-base" width=3D"100%" valign=3D"top" align=3D"center" st=
+yle=3D"padding-bottom: 30px; height: 1px; line-height: 1px;">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; color: rgb(49, 101, 190); font-weight: bold;">Spring 2020 All Majo=
+rs Job Fair Registration Open</span></div>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div>
+<span style=3D"font-size: 12px;">Interested in hiring UTA talent for intern=
+ship and career opportunities? The Spring 2020 All Majors Job will be held =
+on </span><span style=3D"font-size: 12px; font-weight: bold;">Wednesday, Fe=
+bruary 26th from 12:00 p.m. - 4:00 p.m.</span><span style=3D"font-size: 12p=
+x;"> in the Maverick Activities Center. Register to participate online at <=
+/span><a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX17=
+9hP90MXW1zYk3Zi1_XQfzxHAgrH1dS-V7YYTcTvwL9WR-6Q-xeZNhtU3ZGF8OTqcNkh64XKOXtQ=
+IOy4pwGCt8clt8UTPZq18tP87kbQAMYekr6mbS5Xax2iI6QfFQ=3D=3D&c=3DOqo9XBZMZ8jaa-=
+ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHB=
+Z1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank" style=3D"font-size=
+: 12px; color: #0064B1; font-weight: normal; font-style: normal; text-decor=
+ation: underline;">Handshake.</a>
+</div>
+<div><br></div>
+<div><span style=3D"font-weight: bold;">Pricing for the Spring 2020 All Maj=
+ors Job Fair</span></div>
+<ul>
+<li>$400 corporate/for-profit registration fee</li>
+<li>$225 non-profit and government/start-ups registration fee</li>
+<li>$450 third-party staffing agency registration fee</li>
+<li>$60 extra table fee</li>
+</ul>
+<div><br></div>
+<div><span style=3D"font-style: italic;">Over 150 employers and over 1,000 =
+students and alumni are expected to attend.</span></div>
+<div><br></div>
+<div>
+<span style=3D"font-size: 12px;">Contact the Employer Relations team at </s=
+pan><a href=3D"mailto:hireamav@uta.edu" target=3D"_blank" style=3D"font-siz=
+e: 12px; color: #0064B1; font-weight: normal; font-style: normal; text-deco=
+ration: underline;">hireamav@uta.edu</a><span style=3D"font-size: 12px;"> w=
+ith any questions.</span>
+</div>
+<div><br></div>
+<div><span style=3D"font-size: 10px; font-weight: bold; font-style: italic;=
+">*See below for additional Job Fairs.</span></div>
+<div><br></div>
+<div><br></div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; color: rgb(49, 101, 190); font-weight: bold;">Spring 2020 Internsh=
+ip Fair Registration Open</span></div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"color: r=
+gb(0, 100, 177); font-weight: bold;">Wednesday, February 19th, 2:00 p.m. - =
+4:30 p.m.</span></div>
+<div><br></div>
+<div>
+<span style=3D"font-size: 12px; color: rgb(0, 112, 179); text-decoration: u=
+nderline; font-weight: normal; font-family: Arial, Verdana, Helvetica, sans=
+-serif; font-style: normal;">&#xfeff;</span><span style=3D"font-weight: bol=
+d;">Internship Fair:&#xa0;2:00 p.m. &#x2013; 4:30 p.m. Cost: $125 Registrat=
+ion Fee</span>
+</div>
+<div>Host a table to recruit students for open internship positions. To reg=
+ister, please visit <a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYp=
+HkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1dS-V7YYTcTvwL9WR-6Q-xeZNhtU3ZGF8O=
+TqcNkh64XKOXtQIOy4pwGCt8clt8UTPZq18tP87kbQAMYekr6mbS5Xax2iI6QfFQ=3D=3D&c=3D=
+Oqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFg=
+jQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank" styl=
+e=3D"color: #0064B1; font-weight: normal; font-style: normal; text-decorati=
+on: underline;">Handshake</a>. Over 500 students participated in this fall'=
+s fair and that number is expected to grow this spring.</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table style=3D"cursor: default; min-width: 100%;" class=3D"galileo-ap-cont=
+ent-editor" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" style=3D"padding: 9px 0px;" width=
+=3D"100%" valign=3D"top" align=3D"center">
+<table style=3D"width: 94%; min-width: 94%; height: 1px;" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"background-color: rgb(0, 112, 179); padding-bottom: 0px; borde=
+r-bottom-width: medium; border-bottom-style: none; height: 1px; line-height=
+: 1px;" height=3D"1" align=3D"center" bgcolor=3D"0070B3">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; color: rgb(49, 101, 190); font-weight: bold;">Join us for the Spri=
+ng 2020 Activity Fair</span></div>
+<div>The Spring 2020 Activity Fair Day is taking place inside the Universit=
+y Center on Wednesday, January 29 from 10 a.m. &#x2013; 1:30 p.m. This even=
+t, both in January and August, is a rare opportunity for off campus vendors=
+, businesses, non-profit agencies, etc. to be on campus and in front of tho=
+usands of UTA students. Participation in this event allows vendors to recru=
+it employees and market their services and products. For event details, pri=
+cing and registration, please <a href=3D"http://r20.rs6.net/tn.jsp?f=3D001e=
+bW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1eiZT2_r7N8khMwiLHVNUpRn=
+a61VH1998bDBKanL1IKB78ePXFSei-X7PuWTwUVbCEqCImhGfxMxOa0JM-XojhoSy0x7_a87Hoy=
+uSD7unsdYum-DZxbi8Jlc6UGrB4wnnlK4iXjDygJxmFb_QIZyql2OxUpefPTx8FzzmX0--agKrg=
+fit9DQo_PXE5JXAD6e45tOoHISZ_RPjfYyNQHJmpbt0dNQeDx7xymYgmBB2fmI5gfqHfXNDWeZH=
+GjzYXLst1utKSpgmD9NI9Dzt8njjRas4mZHi6DOMJJoaYeT23uFdJ_DcP39Z0hVfH9xgxxdf286=
+EpYzRWyO9ZuqCAtcrnJcCduW1EYqDZR5vg3qTU2OoUXZnrDvJWpeEwcSw6uXtSrDZ9pbcwlQart=
+XTvkbWnEhyKjDW3iENOUxTPzrkx-npqqG6tmCJmD8poS5kYdS0fLUrshRlWjd3VR1VVblxpicyX=
+a05M00_L8Jrk0G9Zaw_1q84OHPc_cLb3HrlfrIsEABBBKlt_40_C2hVDr47VdR36PNAn_fl4bWy=
+lo9peJL&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=
+=3D-y1P9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"=
+_blank" style=3D"color: #0064B1; font-weight: normal; font-style: normal; t=
+ext-decoration: underline;">visit this website</a>. <span style=3D"font-wei=
+ght: bold;">Questions may be directed to Julia Clark at </span><a href=3D"m=
+ailto:mavorgs@uta.edu" target=3D"_blank" style=3D"font-weight: bold; color:=
+ #0064B1; font-style: normal; text-decoration: underline;">mavorgs@uta.edu<=
+/a><span style=3D"font-weight: bold;">. </span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table style=3D"cursor: default; min-width: 100%;" class=3D"galileo-ap-cont=
+ent-editor" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" style=3D"padding: 9px 0px;" width=
+=3D"100%" valign=3D"top" align=3D"center">
+<table style=3D"width: 94%; min-width: 94%; height: 1px;" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"background-color: rgb(0, 112, 179); padding-bottom: 0px; borde=
+r-bottom-width: medium; border-bottom-style: none; height: 1px; line-height=
+: 1px;" height=3D"1" align=3D"center" bgcolor=3D"0070B3">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" va=
+lign=3D"top" align=3D"left" style=3D"background-color: #0064B1;" bgcolor=3D=
+"#0064B1">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" valign=3D"top" align=3D"lef=
+t" style=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: =
+24px; color: #ffffff; text-align: center; display: block; word-wrap: break-=
+word; line-height: 1.2; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div><div><span sty=
+le=3D"font-size: 24px; color: rgb(255, 255, 255); font-weight: bold;">Never=
+ miss an opportunity to build your brand!</span></div></div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; color: rgb(49, 101, 190); font-weight: bold;">Stay informed with H=
+ire-a-Mav</span></div>
+<div><br></div>
+<div>
+<span style=3D"font-size: 12px; color: rgb(0, 112, 179); text-decoration: u=
+nderline; font-weight: normal; font-family: Arial, Verdana, Helvetica, sans=
+-serif; font-style: normal;">&#xfeff;</span>Hire-a-Mav Monthly will arrive =
+at the first of each month and will include, upcoming events, registration =
+information, a monthly calendar, program highlights, and other information =
+to help your organization develop an effective talent acquisition strategy.=
+&#xa0;</div>
+<div><br></div>
+<div>Please complete <a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRY=
+pHkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1Y9cnW2T-8DU5WcWhyGsznjNrjOGG7kLV=
+M7OryoNY_nMoNFxiQZQvPJM5kOCb25XyN2-a4dnF783nVtWrOJ3jIQnfYoDQMRBNveelKnmuVRu=
+2j5-n4N6ucs5dzBOBrS7Hu8FjLX9lkSI8m6TsL2UkB64YXCiBCtHRGCwaO89PN7s2opPtXfw886=
+Tgwr-zIJBxmfs743woSXnGZswfDF6smq1A_WU57tdOusXrWd4v7L-ASFt6-k7PYhgXZwhxiucV_=
+8NtRN9IQcnqU67rl2ZZNTifkwAKdE3EeLiv5eZvFzQJLOoKahFkQTUhrX2dBtVIBdLFKBG2OgQ4=
+9lk_qEx6nqU8FERYm1vvHxi5VNlvnDNnGuSRq-M-pfE7zDGaurXwNOmAj1b_zDbYNPehD9v6rTS=
+n8cErsHMi0hmyB2mVCpNjsvJxSib2cqQW0ZAMH-_LzyiIOxt8zTWV7Mo8NCvqh9wlddu-SO4ROw=
+wKD4HGdu_3NChTtP7dugAOiDG8zcghRqRHa8fTxkSVpXUSIV1FCzCsP7EHYsMCg=3D=3D&c=3DO=
+qo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgj=
+Q9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank" style=
+=3D"color: #0064B1; font-weight: normal; font-style: normal; text-decoratio=
+n: underline;">this short form</a> to receive our monthly updates.&#xa0;</d=
+iv>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"section-headline editor-col OneColumnMobile" width=3D"100%" va=
+lign=3D"top" align=3D"left" style=3D"background-color: #0064B1;" bgcolor=3D=
+"#0064B1">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text section-headline-text" valign=3D"top" align=3D"lef=
+t" style=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: =
+24px; color: #ffffff; text-align: center; display: block; word-wrap: break-=
+word; line-height: 1.2; font-weight: bold; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor">&#x200c;</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table style=3D"cursor: default; min-width: 100%;" class=3D"galileo-ap-cont=
+ent-editor" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" style=3D"padding: 9px 0px;" width=
+=3D"100%" valign=3D"top" align=3D"center">
+<table style=3D"width: 94%; min-width: 94%; height: 1px;" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"background-color: rgb(0, 112, 179); padding-bottom: 0px; borde=
+r-bottom-width: medium; border-bottom-style: none; height: 1px; line-height=
+: 1px;" height=3D"1" align=3D"center" bgcolor=3D"0070B3">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-spacer">
+<table class=3D"editor-spacer" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"spacer-base" style=3D"padding-bottom: 10px; height: 1px; line-=
+height: 1px;" width=3D"100%" valign=3D"top" align=3D"center">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"split-layout-margin" valign=3D"top" align=3D"left" style=3D"ba=
+ckground-color: #ffffff; padding: 0px 15px;" bgcolor=3D"#ffffff">
+<table class=3D"feature-split-container" width=3D"100%" cellspacing=3D"0" c=
+ellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"mobile-hidden layout-container" style=3D"height: 5px; line-hei=
+ght: 1px; background-color: #ffffff; padding: 0;" width=3D"5" valign=3D"top=
+" align=3D"center" bgcolor=3D"#ffffff"><img style=3D"display: block; width:=
+ 5px; height: 5px;" alt=3D"" src=3D"https://imgssl.constantcontact.com/lett=
+ers/images/sys/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"5" bo=
+rder=3D"0"></td>
+<td class=3D"split evenly-padded feature editor-col OneColumnMobile" width=
+=3D"50%" valign=3D"top" align=3D"left" style=3D"background-color: #E6E6E6;"=
+ bgcolor=3D"#E6E6E6">
+<div><div class=3D"column-resize-bar">
+<span class=3D"line"></span>
+<span class=3D"grabber"></span>
+</div></div>
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on" style=3D=
+"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"padding-top: 10px; padding-bot=
+tom: 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" src=3D"https://files.constantcont=
+act.com/03d23973701/d4d5419a-598e-4ded-8294-87c77f5a6c58.jpg" width=3D"240"=
+ vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text feature-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center">
+<span style=3D"font-size: 18px; color: rgb(49, 101, 190); font-weight: bold=
+;">Join us for </span><span style=3D"font-size: 18px; color: rgb(49, 101, 1=
+90); font-weight: bold; font-style: italic;">Employer Office Hours </span><=
+span style=3D"font-size: 18px; color: rgb(49, 101, 190); font-weight: bold;=
+">on Monday, February 10th from 1:00 p.m. - 4:00 p.m.</span>
+</div>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div>Meet with students and alumni from all majors on a walk-in basis for b=
+rief, 15 minute sessions. Students/alumni may have their resume reviewed, g=
+et quick advice about interviews and job search strategies, or ask general =
+questions. Employer Office Hours are an excellent branding opportunity, whi=
+le providing students with invaluable feedback on their career. <a href=3D"=
+http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_=
+XQfzxHAgrH1fT5iJSYLqu91h2dH4oaVJwjvSeYnr3LTVqrkIEa0i2OJ3ZwGC6ob_CdwvFUtR9kY=
+rXWSQUw1qUEuKvMqb2qNg-OKxb0u94E44OPwQ2mzShbdKA7acJ7KfaWzCikL1KIDg=3D=3D&c=
+=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9r=
+CFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank" s=
+tyle=3D"color: #0064B1; font-weight: normal; font-style: normal; text-decor=
+ation: underline;">Sign up here</a>.</div>
+<div><br></div>
+<div>
+<span style=3D"font-size: 10px; font-weight: bold; font-style: italic;">*Se=
+e below for additional dates</span>.</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D"mobile-hidden layout-container" style=3D"height: 10px; line-he=
+ight: 1px; background-color: #ffffff; padding: 0;" width=3D"5" valign=3D"to=
+p" align=3D"center" bgcolor=3D"#ffffff"><img style=3D"display: block; width=
+: 5px; height: 10px;" alt=3D"" src=3D"https://imgssl.constantcontact.com/le=
+tters/images/sys/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"10"=
+ border=3D"0"></td>
+<td class=3D"mobile-hidden layout-container" style=3D"height: 5px; line-hei=
+ght: 1px; background-color: #ffffff; padding: 0;" width=3D"5" valign=3D"top=
+" align=3D"center" bgcolor=3D"#ffffff"><img style=3D"display: block; width:=
+ 5px; height: 5px;" alt=3D"" src=3D"https://imgssl.constantcontact.com/lett=
+ers/images/sys/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"5" bo=
+rder=3D"0"></td>
+<td class=3D"split evenly-padded feature editor-col OneColumnMobile" width=
+=3D"50%" valign=3D"top" align=3D"left" style=3D"background-color: #E6E6E6;"=
+ bgcolor=3D"#E6E6E6">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image content-image editor-image-vspace-on editor-im=
+age-hspace-on" style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"right" style=3D"padding: 10px 20px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" src=3D"https://files.constantcont=
+act.com/03d23973701/572fbe91-e28d-4237-81cb-25ebe3860d0c.jpg" width=3D"235"=
+ vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text feature-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center">
+<span style=3D"font-size: 18px; color: rgb(49, 101, 190); font-weight: bold=
+;">Bring UTA students to you during </span><span style=3D"font-size: 18px; =
+color: rgb(49, 101, 190); font-weight: bold; font-style: italic;">Mavs on S=
+ite</span>
+</div>
+<div style=3D"text-align: center;" align=3D"center"><br></div>
+<div>The program offers a single day visit to a company site and provides a=
+n opportunity for students to experience the employer&#x2019;s unique workp=
+lace culture. In addition to the satisfaction of leaving a lasting impact o=
+n the students, the outcomes for your company are equally beneficial. We ca=
+n invite student populations that meet your hiring needs and in turn create=
+ a pool of 25+ interested and engaged students which we bring to you. <span=
+ style=3D"font-size: 12px; color: rgb(64, 63, 66); font-family: Arial, Verd=
+ana, Helvetica, sans-serif;">It&#x2019;s an excellent opportunity to recrui=
+t interns, part-time staff, and future full-time employees.&#xa0;Request mo=
+re information by completing the&#xa0;</span><a href=3D"http://r20.rs6.net/=
+tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1U30nFSI-=
+NMB_j9aRlRuvxOQeBo1p84yq1VQ4BC9gagedggpYTwcP76TExhiIwY87Ql4DPzRA8VGU-Ex8krb=
+GuLonroSBiqI5nKGu0lnD2tcEfr6v1ME4SvjJ7e6ReL9e7K25ZwJHAV6fJfXYNpkcth81EO0ABS=
+kdpea56w4H7TepxdzdZqcFhWgkhJS2HuUEN0PkGI-mXR4XUF5LN2p8y-HNiRESYHw2CYDil0hkf=
+5qhWeAFTtFbLecOTEwVkyXKhJmQOshx3TreSOFFWP_5FGy3XlYtBGj-lJgmx-hhrsSmN2M08S63=
+Rbpu7CLmIMxnbKN2d3I_ocqFgA6KcH8SyMAt0dwHExtk4OSTcrYS2v50IGqEnBRaJexKE30T2qQ=
+fshnU8cfovoJHAbCPp2SwZQ1s730KsFDHYRlzPM4bbp_l0zBW3G5Tn9_K9CH7Ye3DpFWnsyUtaa=
+umzPBlKPhApT8owa3OuqpcW3Oh7e9jutUBgJN7v0tLBsdl0gM48C2aKJC2gFbndKg7nX8qYvfc5=
+k=3D&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D=
+-y1P9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_bl=
+ank" style=3D"font-size: 12px; color: rgb(0, 112, 179); font-family: Arial,=
+ Verdana, Helvetica, sans-serif; font-weight: normal; font-style: normal; t=
+ext-decoration: underline;">Employer Application Form</a><span style=3D"fon=
+t-size: 12px; color: rgb(64, 63, 66); font-family: Arial, Verdana, Helvetic=
+a, sans-serif;">.</span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+<td class=3D"mobile-hidden layout-container" style=3D"height: 10px; line-he=
+ight: 1px; background-color: #ffffff; padding: 0;" width=3D"5" valign=3D"to=
+p" align=3D"center" bgcolor=3D"#ffffff"><img style=3D"display: block; width=
+: 5px; height: 10px;" alt=3D"" src=3D"https://imgssl.constantcontact.com/le=
+tters/images/sys/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"10"=
+ border=3D"0"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-spacer">
+<table class=3D"editor-spacer" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"spacer-base" width=3D"100%" valign=3D"top" align=3D"center" st=
+yle=3D"padding-bottom: 30px; height: 1px; line-height: 1px;">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table style=3D"cursor: default; min-width: 100%;" class=3D"galileo-ap-cont=
+ent-editor" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" style=3D"padding: 9px 0px;" width=
+=3D"100%" valign=3D"top" align=3D"center">
+<table style=3D"width: 94%; min-width: 94%; height: 1px;" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"background-color: rgb(0, 112, 179); padding-bottom: 0px; borde=
+r-bottom-width: medium; border-bottom-style: none; height: 1px; line-height=
+: 1px;" height=3D"1" align=3D"center" bgcolor=3D"0070B3">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text content-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; color: rgb(49, 101, 190); font-weight: bold;"> Connect with UTA ta=
+lent during our spring events</span></div>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div style=3D"text-align: left;" align=3D"left">
+<span style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: no=
+ne;">Interested in increasing your visibility on campus? </span><a href=3D"=
+http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_=
+XQfzxHAgrH1UEBbxaHkrdgNCaNpJZ3gHBpkNJ79agANlVja--3bWA9X0rZWRwk5rwa4XbBF5HKg=
+22TLW76bYTwETN9tzaddCnFolGyYo1YtpeuCeUyGULOnzJj-GTz7EyRrLNUQWzJdAGUKiPFXAXZ=
+&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P=
+9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank"=
+ style=3D"font-size: 12px; color: rgb(49, 101, 190); text-decoration: under=
+line; font-weight: normal; font-style: normal;">Click here to see all the w=
+ays</a><a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX1=
+79hP90MXW1zYk3Zi1_XQfzxHAgrH1UEBbxaHkrdgNCaNpJZ3gHBpkNJ79agANlVja--3bWA9X0r=
+ZWRwk5rwa4XbBF5HKg22TLW76bYTwETN9tzaddCnFolGyYo1YtpeuCeUyGULOnzJj-GTz7EyRrL=
+NUQWzJdAGUKiPFXAXZ&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0on=
+pA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D"=
+ target=3D"_blank" style=3D"font-size: 12px; color: rgb(69, 69, 69); text-d=
+ecoration: none; font-weight: normal; font-style: normal;"> we can help</a>=
+<span style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: no=
+ne;"> and scroll through the options below. </span><span style=3D"font-size=
+: 12px; color: rgb(64, 63, 66); text-decoration: none;">W</span><span style=
+=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none;">e are =
+looking forward to an exciting spring semester. </span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"article editor-col OneColumnMobile" width=3D"100%" valign=3D"t=
+op" align=3D"left">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text article-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left"=
+>
+<tbody>
+<tr>
+<td class=3D"image-cell " style=3D"padding: 0px;" valign=3D"top" align=3D"c=
+enter">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" src=3D"http://files.constantconta=
+ct.com/03d23973701/a5035f0b-1758-42f8-a8c8-acf891d0939d.png" width=3D"103" =
+vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"15" valign=3D"top" height=3D"1" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"15" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" style=3D"height: 5px; line-height: 1px; padding=
+: 0px;" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"1" vspace=3D"0" hspace=3D"0" height=3D"5" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"5" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(0, 100, 177); text-decorati=
+on: underline; font-weight: bold;">Employer Office Hours</span></div>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Monday, Fe=
+bruary 10th, 1:00 p.m. - 4:00 p.m.</span></div>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Monday, Fe=
+bruary 24th, 1:00 p.m. - 4:00 p.m.</span></div>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Monday, Ma=
+rch 16th, 1:00 p.m. - 4:00 p.m.</span></div>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Monday, Ap=
+ril 13th, 1:00 p.m. - 4:00 p.m.</span></div>
+<div><br></div>
+<div>Meet with students and alumni from all majors on a walk-in basis for b=
+rief, 15 minute sessions. Students/alumni may have their resume reviewed, g=
+et quick advice about interviews and job search strategies, or ask general =
+questions. <a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4b=
+gFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1fT5iJSYLqu91h2dH4oaVJwjvSeYnr3LTVqrkIEa0i2=
+OJ3ZwGC6ob_CdwvFUtR9kYrXWSQUw1qUEuKvMqb2qNg-OKxb0u94E44OPwQ2mzShbdKA7acJ7Kf=
+aWzCikL1KIDg=3D=3D&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0on=
+pA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D"=
+ target=3D"_blank" style=3D"color: #0064B1; font-weight: normal; font-style=
+: normal; text-decoration: underline;">Register here</a>.</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"article editor-col OneColumnMobile" width=3D"100%" valign=3D"t=
+op" align=3D"left">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text article-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left"=
+>
+<tbody>
+<tr>
+<td class=3D"image-cell " style=3D"padding: 0px;" valign=3D"top" align=3D"c=
+enter">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" src=3D"http://files.constantconta=
+ct.com/03d23973701/65ee53c5-f3b7-49f4-9eb8-bd4ee5beea0c.png" width=3D"103" =
+vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"15" valign=3D"top" height=3D"1" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"15" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" style=3D"height: 5px; line-height: 1px; padding=
+: 0px;" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"1" vspace=3D"0" hspace=3D"0" height=3D"5" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"5" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(0, 100, 177); text-decorati=
+on: underline; font-weight: bold;">Prepare for the Fair</span></div>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Tuesday, F=
+ebruary 18th, 1:00 p.m. - 4:00 p.m.</span></div>
+<div><br></div>
+<div>Meet with students and alumni and discuss with them specific topics re=
+levant to the job fair, such as: <span style=3D"font-size: 12px; color: rgb=
+(64, 63, 66); font-family: Arial, Verdana, Helvetica, sans-serif;">how to p=
+erfect a 30 second elevator pitch. At this booth you'll help students under=
+stand how to greet employers and craft a quick introduction to promote thei=
+r skills.</span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"article editor-col OneColumnMobile" width=3D"100%" valign=3D"t=
+op" align=3D"left">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text article-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left"=
+>
+<tbody>
+<tr>
+<td class=3D"image-cell " style=3D"padding: 0px;" valign=3D"top" align=3D"c=
+enter">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" src=3D"https://files.constantcont=
+act.com/03d23973701/1c863596-c61c-4259-9970-b094bac79f6b.png" width=3D"103"=
+ vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"15" valign=3D"top" height=3D"1" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"15" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" style=3D"height: 5px; line-height: 1px; padding=
+: 0px;" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"1" vspace=3D"0" hspace=3D"0" height=3D"5" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"5" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(0, 100, 177); text-decorati=
+on: underline; font-weight: bold;">Internship Workshop and Fair</span></div=
+>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Wednesday,=
+ February 19th, 1:00 p.m. - 4:30 p.m.</span></div>
+<div><br></div>
+<div><span style=3D"font-weight: bold;">Internship Fair:&#xa0;2:00 p.m. &#x=
+2013; 4:30 p.m. Cost: $125 Registration Fee</span></div>
+<div>Host a table to recruit students for open internship positions. To reg=
+ister, please visit <a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYp=
+HkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1dS-V7YYTcTvwL9WR-6Q-xeZNhtU3ZGF8O=
+TqcNkh64XKOXtQIOy4pwGCt8clt8UTPZq18tP87kbQAMYekr6mbS5Xax2iI6QfFQ=3D=3D&c=3D=
+Oqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFg=
+jQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank" styl=
+e=3D"color: #0064B1; font-weight: normal; font-style: normal; text-decorati=
+on: underline;">Handshake</a>. Over 500 students participated in this fall'=
+s fair.</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"article editor-col OneColumnMobile" width=3D"100%" valign=3D"t=
+op" align=3D"left">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text article-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left"=
+>
+<tbody>
+<tr>
+<td class=3D"image-cell " style=3D"padding: 0px;" valign=3D"top" align=3D"c=
+enter">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" src=3D"http://files.constantconta=
+ct.com/03d23973701/1517b9aa-5887-4451-92a7-c6061cc88b3c.png" width=3D"103" =
+vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"15" valign=3D"top" height=3D"1" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"15" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" style=3D"height: 5px; line-height: 1px; padding=
+: 0px;" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"1" vspace=3D"0" hspace=3D"0" height=3D"5" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"5" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(0, 100, 177); text-decorati=
+on: underline; font-weight: bold;">Spring 2020 All Majors Job Fair</span></=
+div>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Wednesday,=
+ February 26th, 12:00 p.m. - 4:00 p.m.</span></div>
+<div><br></div>
+<div>Recruit underclassmen, graduating seniors, graduate students, and alum=
+ni for full-time, part-time, co-op, and internship positions. For more info=
+rmation and to register visit <a href=3D"http://r20.rs6.net/tn.jsp?f=3D001e=
+bW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1ePRRc0SizNNBF4QaR_YVz80=
+EYDcXMzh3NoSqHHnxRKbm69Tqog95UU22arzf0spYtHkuNoiLPGuxHTmSPn1ZkVq9sX6laEIaA=
+=3D=3D&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=
+=3D-y1P9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"=
+_blank" style=3D"color: #0064B1; font-weight: normal; font-style: normal; t=
+ext-decoration: underline;">Handshake</a>. We expect over 1,000 students an=
+d alumni to attend!</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"article editor-col OneColumnMobile" width=3D"100%" valign=3D"t=
+op" align=3D"left">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text article-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left"=
+>
+<tbody>
+<tr>
+<td class=3D"image-cell " style=3D"padding: 0px;" valign=3D"top" align=3D"c=
+enter">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto !important; max-width: 100% !important;" src=3D"http=
+s://files.constantcontact.com/03d23973701/dc146b98-60c3-4948-bf45-c1a15cd46=
+1d3.png" width=3D"105" vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"15" valign=3D"top" height=3D"1" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"15" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" style=3D"height: 5px; line-height: 1px; padding=
+: 0px;" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"1" vspace=3D"0" hspace=3D"0" height=3D"5" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"5" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(0, 100, 177); text-decorati=
+on: underline; font-weight: bold;">Face-to-Face Mock Interviews</span></div=
+>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Thursday, =
+March 26th, 1:00 p.m. - 4:00 p.m.</span></div>
+<div><br></div>
+<div>
+<span style=3D"font-size: 12px; color: rgb(69, 69, 69); font-family: Arial,=
+ Verdana, Helvetica, sans-serif;">Conduct 30-minute practice interviews wit=
+h our students/alumni and provide them with feedback. We will provide you w=
+ith sample questions and evaluation forms. </span><a href=3D"http://r20.rs6=
+.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1Y9C=
+t40cEWMCm-RB1y-iJ1d3YbJx5orSl_guweV8AvfIjXerPMRjC0l-MtpgtblsVb_rDdCy0Dy1l6-=
+hVHCJ8vZ9SqG4oBeioxHBbXvsfq-ce5ZTxeAxAGdjyw9vbjOB4w=3D=3D&c=3DOqo9XBZMZ8jaa=
+-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcH=
+BZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank" style=3D"font-siz=
+e: 12px; color: rgb(0, 112, 179); font-family: Arial, Verdana, Helvetica, s=
+ans-serif; font-weight: normal; font-style: normal; text-decoration: underl=
+ine;">Register here</a><span style=3D"font-size: 12px; color: rgb(69, 69, 6=
+9); font-family: Arial, Verdana, Helvetica, sans-serif;">. </span>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"article editor-col OneColumnMobile" width=3D"100%" valign=3D"t=
+op" align=3D"left">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text article-text" valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left"=
+>
+<tbody>
+<tr>
+<td class=3D"image-cell " style=3D"padding: 0px;" valign=3D"top" align=3D"c=
+enter">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto; max-width: 100%;" src=3D"https://files.constantcont=
+act.com/03d23973701/c6b7f676-2e1c-4060-9605-e6962992e4e6.png" width=3D"103"=
+ vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"15" valign=3D"top" height=3D"1" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"15" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" style=3D"height: 5px; line-height: 1px; padding=
+: 0px;" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"1" vspace=3D"0" hspace=3D"0" height=3D"5" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"5" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><span style=3D"font-size: 14px; color: rgb(0, 100, 177); text-decorati=
+on: underline; font-weight: bold;">Virtual Job Fair - Cost: Registration Fe=
+e</span></div>
+<div><span style=3D"color: rgb(0, 100, 177); font-weight: bold;">Wednesday,=
+ April 29th &amp; Thursday, April 30th, Live 1:00 p.m. - 4:00 p.m. CST / se=
+t your own hours.</span></div>
+<div><br></div>
+<div>
+<span style=3D"font-size: 12px; color: rgb(64, 63, 66); font-family: Arial,=
+ Verdana, Helvetica, sans-serif;">Employers will have the opportunity to re=
+cruit underclassmen, graduating seniors, graduate students, and alumni for =
+full-time positions, part-time positions, co-ops and internships.</span><sp=
+an style=3D"font-size: 12px; color: rgb(31, 78, 121); font-family: Arial, V=
+erdana, Helvetica, sans-serif;"> </span><span style=3D"font-size: 12px; col=
+or: rgb(64, 63, 66); font-family: Arial, Verdana, Helvetica, sans-serif;">T=
+his is a virtual two day fair during which you can host a webinar about you=
+r organization, chat virtually with students and alumni, and more. You are =
+able to set your own hours and can host this from anywhere with an internet=
+ connection. </span><a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYp=
+HkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1U30nFSI-NMBe2cFsaKCREpeCoqeOqxuCV=
+Gyjjj_WKRsg2Kv-rmTY3TJd-73SkTtLmuAoSBpHDFhv_EF0B8yc0iFP-yV_qLgboLdpyV-ehHmd=
+CwxqCGHNExMq1e-7ZAkONjfEyzkEUwfrBDI_67arJdL9CjQDuN1Rlp25_UoBrm5GfEWk4vULaqK=
+C6WKQpffHn6r6ENPm7IPJMHfYtIza47HziXgiOuSUBKcEHn0neGfCPRXbDrjJViX_m7UX4fDasQ=
+texmDXj8hcNErQqyRxCr1khByxTQB_xopggFMa3hK7A3Iqtuf5_JZpiI4Iuqefr0_HmSgNGBucz=
+TxHElLdzhOKi2Oj2gM0JiEi-1q7AnUQm8AmH609IYQzEZx-UJqgqOLta_aCXIzj73piKzuVYMo6=
+U7-sm6iYJWEmyU_ne72n0zqlzg9yNbpwXJWZ99ofeOyuRBxoqy19Lc7AcYrB_b9jsBha_rMxG_2=
+AAPAxqKBxsvCWWRQ-cqkCWp8aZnFViNPSaBrQ6CS_QBEb3uPch00KCXckZ-Czg6OmqpaRmRQ&c=
+=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9r=
+CFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" target=3D"_blank" s=
+tyle=3D"font-size: 12px; color: rgb(0, 112, 179); font-family: Arial, Verda=
+na, Helvetica, sans-serif; font-weight: normal; font-style: normal; text-de=
+coration: underline;">Employer Interest Form.</a>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table style=3D"cursor: default; min-width: 100%;" class=3D"galileo-ap-cont=
+ent-editor" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" style=3D"padding: 9px 0px;" width=
+=3D"100%" valign=3D"top" align=3D"center">
+<table style=3D"width: 94%; min-width: 94%; height: 1px;" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"background-color: rgb(0, 112, 179); padding-bottom: 0px; borde=
+r-bottom-width: medium; border-bottom-style: none; height: 1px; line-height=
+: 1px;" height=3D"1" align=3D"center" bgcolor=3D"0070B3">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-text">
+<table style=3D"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"editor-text editor-text " valign=3D"top" align=3D"left" style=
+=3D"font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; co=
+lor: #403F42; text-align: left; display: block; word-wrap: break-word; line=
+-height: 1.2; padding: 10px 20px;">
+<div><table class=3D"editor-image OneColumnMobile" style=3D"mso-table-rspac=
+e: 5.75pt;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"left"=
+>
+<tbody>
+<tr>
+<td class=3D"image-cell " style=3D"padding: 0px;" valign=3D"top" align=3D"c=
+enter">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto !important; max-width: 100% !important;" src=3D"http=
+s://files.constantcontact.com/03d23973701/0b9d8c23-d6c6-4d97-b476-3d289f2f0=
+54f.jpg" width=3D"131" vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"15" valign=3D"top" height=3D"1" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"15" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" sty=
+le=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+<tr>
+<td class=3D"mobile-hidden" style=3D"height: 5px; line-height: 1px; padding=
+: 0px;" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"1" vspace=3D"0" hspace=3D"0" height=3D"5" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+<td class=3D"mobile-hidden" style=3D"height: 1px; line-height: 1px; padding=
+: 0px;" width=3D"5" valign=3D"top" height=3D"5" align=3D"center">
+<img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images/sys/=
+S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" border=3D"0" styl=
+e=3D"display: block; height: auto; max-width: 100%;">
+</td>
+</tr>
+</tbody>
+</table></div>
+<div class=3D"text-container galileo-ap-content-editor"><div>
+<div><br></div>
+<div style=3D"text-align: center;" align=3D"center"><span style=3D"font-siz=
+e: 18px; color: rgb(49, 101, 190); font-weight: bold;">Register to earn con=
+tinuing education credits and improve your internship pipeline with Dr. Rob=
+ert Shindell</span></div>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div style=3D"text-align: left;" align=3D"left">
+<span style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: no=
+ne;">Everyone knows the value of internships, but does your organization ru=
+n a strong intern program that maintains a&#xa0;</span><span style=3D"font-=
+size: 12px; color: rgb(69, 69, 69); text-decoration: none; font-weight: bol=
+d;">pipeline of highly qualified candidates</span><span style=3D"font-size:=
+ 12px; color: rgb(69, 69, 69); text-decoration: none;">&#xa0;for full-time =
+roles? Internships and other forms of experiential education help students =
+make a seamless transition to the world of work and are a perfect vehicle t=
+o&#xa0;</span><span style=3D"font-size: 12px; color: rgb(69, 69, 69); text-=
+decoration: none; font-weight: bold; font-style: italic;">increase retentio=
+n rates,&#xa0;complete short-term projects,</span><span style=3D"font-size:=
+ 12px; color: rgb(69, 69, 69); text-decoration: none;"> and&#xa0;</span><sp=
+an style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none;=
+ font-weight: bold; font-style: italic;">identify future hires</span><span =
+style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none;">.=
+</span>
+</div>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div style=3D"text-align: left;" align=3D"left">
+<span style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: no=
+ne;">On </span><span style=3D"font-size: 12px; color: rgb(69, 69, 69); text=
+-decoration: none; font-weight: bold;">Tuesday, April 21, 2020</span><span =
+style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none;"> =
+the Lockheed Martin Career Development Center at The University of Texas at=
+ Arlington will welcome Dr. Robert Shindell from </span><a href=3D"http://r=
+20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAg=
+rH1bxYQhwq0Hwm6DCiPCrp17i8r9ZfroagCYzQB9flfLZlYUNV4r3mkoSSIcAbLdKV-CbfpDPPF=
+y7dp6rjMoVPc9Z80DNOhUZ6ZsdU97rynsif&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu=
+35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXb=
+s2tnvGOaRw=3D=3D" target=3D"_blank" style=3D"font-size: 12px; color: rgb(0,=
+ 100, 177); text-decoration: underline; font-weight: normal; font-style: no=
+rmal;">Intern Bridge and ThincInterns</a><span style=3D"font-size: 12px; co=
+lor: rgb(69, 69, 69); text-decoration: none;">, the nation's leading resear=
+ch and consulting firms to share a newfound approach to internships based o=
+n in-depth research and proven strategies.&#xa0;In this full-day, highly in=
+teractive and participatory workshop, participants will learn how to:</span=
+>
+</div>
+<ul>
+<li style=3D"text-align: left; font-size: 12px; color: rgb(69, 69, 69);"><s=
+pan style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none=
+;">Effectively implement an impactful internship program;</span></li>
+<li style=3D"text-align: left; font-size: 12px; color: rgb(69, 69, 69);"><s=
+pan style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none=
+;">Utilize software to manage your intern projects and programs;</span></li=
+>
+<li style=3D"text-align: left; font-size: 12px; color: rgb(69, 69, 69);"><s=
+pan style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none=
+;">Identify future hires through a no-strings-attached 12-week interview;</=
+span></li>
+<li style=3D"text-align: left; font-size: 12px; color: rgb(69, 69, 69);"><s=
+pan style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none=
+;">Create and maintain&#xa0;a pipeline of highly qualified and educated ful=
+l-time job candidates;</span></li>
+<li style=3D"text-align: left; font-size: 12px; color: rgb(69, 69, 69);"><s=
+pan style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoration: none=
+;">Increase your organization's brand awareness on university and college c=
+ampuses</span></li>
+</ul>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div style=3D"text-align: left;" align=3D"left"><span style=3D"font-size: 1=
+2px; color: rgb(69, 69, 69); text-decoration: none; font-weight: bold; font=
+-style: italic;">This workshop has been accredited by both HRCI and SHRM-PD=
+C and by attending you will receive six (6) CEU Credits! </span></div>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div style=3D"text-align: left;" align=3D"left"><span style=3D"font-size: 1=
+2px; color: rgb(69, 69, 69); text-decoration: none;">We invite you to join =
+us on Tuesday, April 21, 2020 at The University of Texas at Arlington for t=
+his amazing opportunity to maximize your internship and entry talent acquis=
+ition programs. </span></div>
+<div style=3D"text-align: left;" align=3D"left"><br></div>
+<div style=3D"text-align: left;" align=3D"left"><a href=3D"http://r20.rs6.n=
+et/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90MXW1zYk3Zi1_XQfzxHAgrH1bxYQh=
+wq0Hwm6DCiPCrp17i8r9ZfroagCYzQB9flfLZlYUNV4r3mkoSSIcAbLdKV-CbfpDPPFy7dp6rjM=
+oVPc9Z80DNOhUZ6ZsdU97rynsif&c=3DOqo9XBZMZ8jaa-ZG2kC8s4R1F_QRIX3GcOu35fFortS=
+I2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHBZ1fOHkcfsAIxFXbwRhXXbs2tnvGOa=
+Rw=3D=3D" target=3D"_blank" style=3D"font-size: 14px; color: rgb(0, 100, 17=
+7); text-decoration: underline; font-weight: bold; font-style: normal;">Arl=
+ington Total Internship Management Workshop: Register here! </a></div>
+<div style=3D"text-align: left;" align=3D"left"><span style=3D"font-size: 1=
+4px; color: rgb(0, 100, 177); text-decoration: underline; font-weight: bold=
+; font-style: normal;">&#xfeff;</span></div>
+<div><span style=3D"font-size: 12px; color: rgb(69, 69, 69); text-decoratio=
+n: none; font-weight: bold;">Tuesday, April 21, 2020 | 8:30 a.m. - 3:30 p.m=
+. |&#xa0;The University of Texas at Arlington</span></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table style=3D"cursor: default; min-width: 100%;" class=3D"galileo-ap-cont=
+ent-editor" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" style=3D"padding: 9px 0px;" width=
+=3D"100%" valign=3D"top" align=3D"center">
+<table style=3D"width: 94%; min-width: 94%; height: 1px;" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"background-color: rgb(0, 112, 179); padding-bottom: 0px; borde=
+r-bottom-width: medium; border-bottom-style: none; height: 1px; line-height=
+: 1px;" height=3D"1" align=3D"center" bgcolor=3D"0070B3">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-image">
+<table class=3D"editor-image editor-image  editor-image-vspace-on" style=3D=
+"min-width: 100%;" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"center" style=3D"padding-top: 10px; padding-bot=
+tom: 10px;">
+<div class=3D"publish-container">  <img alt=3D"" class=3D"" style=3D"displa=
+y: block; height: auto !important; max-width: 100% !important;" src=3D"http=
+://files.constantcontact.com/03d23973701/732c6436-49c9-49fd-8adc-925e2896e0=
+df.png" width=3D"574" vspace=3D"0" hspace=3D"0" border=3D"0">
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" editor-col OneColumnMobile" width=3D"100%" valign=3D"top" ali=
+gn=3D"">
+<div class=3D"gl-contains-divider">
+<table class=3D"editor-divider" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"" valign=3D"top" align=3D"center">
+<table style=3D"cursor: default; min-width: 100%;" class=3D"galileo-ap-cont=
+ent-editor" width=3D"100%">
+<tbody>
+<tr>
+<td class=3D"divider-base divider-solid" style=3D"padding: 9px 0;" width=3D=
+"100%" valign=3D"top" align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"height: 1px; width: 94%; min-width: 94%;">
+<tbody>
+<tr>
+<td style=3D"border-bottom-width: medium; border-bottom-style: none; height=
+: 1px; line-height: 1px; padding-bottom: 0px; background-color: #FFFFFF;" h=
+eight=3D"1" align=3D"center" bgcolor=3D"#FFFFFF">
+<div><img alt=3D"" src=3D"https://imgssl.constantcontact.com/letters/images=
+/1101116784221/S.gif" width=3D"5" vspace=3D"0" hspace=3D"0" height=3D"1" bo=
+rder=3D"0" style=3D"display: block; height: 1px; width: 5px;"></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"galileo-ap-layout-editor" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" border=3D"0" style=3D"min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D"social editor-col OneColumnMobile" width=3D"100%" valign=3D"to=
+p" align=3D"left" style=3D"background-color: #FFFFFF;" bgcolor=3D"#FFFFFF">
+<div class=3D"gl-contains-social-button">
+<table class=3D"editor-social" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" style=3D"width: 100%; min-width: 100%;">
+<tbody>
+<tr>
+<td class=3D" social-container social-container" align=3D"center" style=3D"=
+padding: 0px 20px 10px;">
+<div class=3D"galileo-ap-content-editor">
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90M=
+XW1zYk3Zi1_XQfzxHAgrH1QJoj5PCV_8kbQkoaI_jFPgoQ07rZUvGAchy_xzHlwzT4jN8a4br1s=
+FhmjdwhlMEhAYhVPmWQzsNkJpBMSbBorrk-aLGFyIkSHp086oGDUTD&c=3DOqo9XBZMZ8jaa-ZG=
+2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHBZ1=
+fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" style=3D"display: inline-block; text-d=
+ecoration: none;">
+<img alt=3D"Facebook" src=3D"https://imgssl.constantcontact.com/galileo/ima=
+ges/templates/Galileo-SocialMedia/facebook-visit-default.png" style=3D"disp=
+lay: inline-block; margin: 0; padding: 0;" width=3D"32" border=3D"0"> &#x20=
+0c;
+</a>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90M=
+XW1zYk3Zi1_XQfzxHAgrH1QJoj5PCV_8kYlbRtECUD0P-HO62teQ_I81htKfK0xP8aRhjNbkG7D=
+QYnlGGsYwavwgNyy5uT6awrXv6J90yD-63VLm8bCWjxA=3D=3D&c=3DOqo9XBZMZ8jaa-ZG2kC8=
+s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHBZ1fOHk=
+cfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" style=3D"display: inline-block; text-decor=
+ation: none;">
+<img alt=3D"Twitter" src=3D"https://imgssl.constantcontact.com/galileo/imag=
+es/templates/Galileo-SocialMedia/twitter-visit-default.png" style=3D"displa=
+y: inline-block; margin: 0; padding: 0;" width=3D"32" border=3D"0"> &#x200c=
+;
+</a>
+<a href=3D"http://r20.rs6.net/tn.jsp?f=3D001ebW0CVvoRYpHkMMcny4bgFX179hP90M=
+XW1zYk3Zi1_XQfzxHAgrH1QJoj5PCV_8kQpAt3kSa6N9mO3LDS-eyDxp-YyLyPs1R1pfCL3CPXL=
+RsoA0PwjnWnVkr50cutwedFkP4pUGTRdSXg8BJ7St3FS-3Z0zgw4jL&c=3DOqo9XBZMZ8jaa-ZG=
+2kC8s4R1F_QRIX3GcOu35fFortSI2nV-d0onpA=3D=3D&ch=3D-y1P9rCFgjQ9ndneuJKZcHBZ1=
+fOHkcfsAIxFXbwRhXXbs2tnvGOaRw=3D=3D" style=3D"display: inline-block; text-d=
+ecoration: none;">
+<img alt=3D"Instagram" src=3D"https://imgssl.constantcontact.com/galileo/im=
+ages/templates/Galileo-SocialMedia/instagram-visit-default.png" style=3D"di=
+splay: inline-block; margin: 0; padding: 0;" width=3D"32" border=3D"0"> &#x=
+200c;
+</a>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+<table class=3D"footer-container" width=3D"100%" cellpadding=3D"0" cellspac=
+ing=3D"0" border=3D"0" style=3D"background: #ffffff; margin-left: auto; mar=
+gin-right: auto; table-layout: auto !important" bgcolor=3D"#ffffff">
+  <tr>
+    <td width=3D"100%" align=3D"center" valign=3D"top" style=3D"width: 100%=
+;">
+      <div class=3D"footer-max-main-width" align=3D"center" style=3D"margin=
+-left: auto; margin-right: auto; max-width: 100%;">
+        <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D=
+"0">
+          <tr>
+            <td class=3D"footer-layout" align=3D"center" valign=3D"top" sty=
+le=3D"padding: 16px 0px;">
+              <table class=3D"footer-main-width" style=3D"width: 580px;" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                <tr>
+                  <td class=3D"footer-text" align=3D"center" valign=3D"top"=
+ style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size=
+: 12px; padding: 4px 0px;">
+                   =20
+                    <span class=3D"footer-column">University of Texas in Ar=
+lington Lockheed Martin Career Development Center<span class=3D"footer-mobi=
+le-hidden"> | </span></span><span class=3D"footer-column">300 W. 1st St., S=
+uite 180S<span class=3D"footer-mobile-hidden">, </span></span><span class=
+=3D"footer-column"></span><span class=3D"footer-column"></span><span class=
+=3D"footer-column">Arlington, TX 76019</span><span class=3D"footer-column">=
+</span>
+                   =20
+                  </td>
+                </tr>
+                <tr>
+                  <td class=3D"footer-row" align=3D"center" valign=3D"top" =
+style=3D"padding: 10px 0px;">
+                    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          <a href=3D"https://visitor.constantcontact.com/do=
+?p=3Dun&m=3D001YQzlr5fvGfNN7ys7mQz9dw%3D&ch=3D0ba7f590-fe47-11e8-b411-d4ae5=
+292c47d&ca=3D9778f1df-8992-4cf2-8121-30b787952bd9" style=3D"color: #5d5d5d"=
+>Unsubscribe jeff.adekunbi@ideabakr.org</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          <a href=3D"https://visitor.constantcontact.com/do=
+?p=3Doo&m=3D001YQzlr5fvGfNN7ys7mQz9dw%3D&ch=3D0ba7f590-fe47-11e8-b411-d4ae5=
+292c47d&ca=3D9778f1df-8992-4cf2-8121-30b787952bd9" style=3D"color: #5d5d5d"=
+>Update Profile</a> |
+                         =20
+                          <a class=3D"footer-about-provider" href=3D"http:/=
+/www.constantcontact.com/legal/about-constant-contact" style=3D"color: #5d5=
+d5d">About Constant Contact</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-text" align=3D"center" valign=
+=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; f=
+ont-size: 12px; padding: 4px 0px;">
+                          Sent by
+                         =20
+                          <a href=3D"mailto:nicole.philip@uta.edu" style=3D=
+"color: #5d5d5d; text-decoration: none">nicole.philip@uta.edu</a>
+                         =20
+
+                         =20
+                         =20
+                          <span class=3D"footer-column">in collaboration wi=
+th</span>
+                         =20
+                         =20
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=3D"footer-text" align=3D"center" valign=3D"top"=
+ style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif; font-size=
+: 12px; padding: 4px 0px;">
+                   =20
+                   =20
+                    <table width=3D"240" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+                      <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddin=
+g: 0px 0px 3px 10px;">
+                          <a href=3D"http://www.constantcontact.com/index.j=
+sp?cc=3Dnge&rmc=3DVF19_3GE" style=3D"color: #5d5d5d; text-decoration: none"=
+>
+                            <img alt=3D"Trusted Email from Constant Contact=
+ - Try it FREE today." width=3D"211" border=3D"0" hspace=3D"0" vspace=3D"0"=
+ src=3D"https://imgssl.constantcontact.com/ui/images1/logo_ctct_2x.png"></a=
+>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class=3D"footer-cta-text" align=3D"center" vali=
+gn=3D"top" style=3D"color: #5d5d5d; font-family: Verdana,Geneva,sans-serif;=
+ font-size: 9px;">
+                          <a href=3D"http://www.constantcontact.com/index.j=
+sp?cc=3Dnge&rmc=3DVF19_3GE" style=3D"color: #5d5d5d; text-decoration: none"=
+>Try email marketing for free today!</a>
+                        </td>
+                      </tr>
+                    </table>
+                   =20
+                   =20
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table></body>
+</html>
+
+------=_Part_816780238_151186121.1580325330392--

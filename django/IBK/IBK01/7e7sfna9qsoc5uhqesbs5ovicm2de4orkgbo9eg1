@@ -1,0 +1,61 @@
+Return-Path: <csi.careers@csm.symplicity.com>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 7e7sfna9qsoc5uhqesbs5ovicm2de4orkgbo9eg1
+ for jeff.adekunbi@ideabakr.org;
+ Sat, 28 Dec 2019 09:08:33 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: none (spfCheck: 34.194.230.233 is neither permitted nor denied by domain of csm.symplicity.com) client-ip=34.194.230.233; envelope-from=csi.careers@csm.symplicity.com; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=none (spfCheck: 34.194.230.233 is neither permitted nor denied by domain of csm.symplicity.com) client-ip=34.194.230.233; envelope-from=csi.careers@csm.symplicity.com; helo=us-east-mail1.symplicity.com;
+ dmarc=none header.from=csm.symplicity.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHam9tc094OVRxTHYwWUU1MmpRYnR5U1ExdTFkV2pYcU9qUXpNNW4wTmRFZEtCQ1JSUU9qNCtSSUNCY2ZZa01NVlVqeXY0WGxreFhxcGUrdTRvNCtVbHp4NGNqWklQVExob01hOUV0RmZRcy9CNmJFcFlsTkFBQVBkVEFFUmF2S25xV0FOcTJ2VW41U0ltcHNEdG9tazU0RnhhN2EyeVc1NGxqelJKL3NWdGdOUlJwWVpQWjQ3elNhY3Q3UHVIY2lPRHlUMmdzQUN6Qk0rTG81d2UwTmtzRS9rWWd2R2FTdjVvVUtxemNTd0hyb1hhY2QrQmJGd3pvS1F4T05jejlDRS9EZUZQVjQraTJoZmNPeGZNOGZDNUk3NlV1dVNhSnowR1BFd0RBR2MraVNCVWRTYXR3bUtjUTZWcHRCR24vOFk9
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=cIFDT48li6PXecNvKE+DOQjLXTybtVa3TFoLGccFlfnIegspDGnlQAE+gBuGl9pp7qLPgMgkf5vMjy5nTKX4IXTp9nQP2aHIllmrxRwIQ9SqQpjbj/5O5tj31bEBqkaqYa45Zc3QerIvY7WxF0V3ZYstYI046jMqyyEAXYk7JzM=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577524113; v=1; bh=JS/EONkFCau7WvNngQeyLn2Xy2CXyzDxJz9CNK9u7/c=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from ip-172-30-13-86 (ip-172-30-13-86.ec2.internal [172.30.13.86])
+	by mail.symplicity.com (Postfix) with ESMTP id 60E0912007B
+	for <jeff.adekunbi@ideabakr.org>; Sat, 28 Dec 2019 09:08:32 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com 60E0912007B
+From: csi.careers@csm.symplicity.com
+Reply-To: careers@csi.cuny.edu
+To: jeff.adekunbi@ideabakr.org
+Content-Type: text/plain; charset=UTF-8;
+Subject: CUNY CSI: Part-Time Developer is expiring
+Message-ID: <896809bff063c3ec27246e9ae3059fe8@csi-cuny-csm.symplicity.com>
+Date: Sat, 28 Dec 2019 04:08:32 -0500
+
+Dec 28, 2019, 4:08 AM
+
+Dear Mr Jeff Adekunbi: 
+
+This is a reminder that the Job Posting for Part-Time Developer is expiring on Tuesday December 31, 2019.
+
+If you wish to extend your posting, you can do so by logging into your account (https://csi-cuny-csm.symplicity.com/) and follow the instructions below:
+
+1 - Go to  https://csi-cuny-csm.symplicity.com//employers
+2- Enter your username (email) & password on (Login screen page)
+3- You are now on your HOME PAGE 
+4- Click "jobs" on the top menu bar 
+5- Select the job position you wish to EXTEND (click the job title) 
+6-Change the 'Expiration Date' to a future date
+7- Click SUBMIT!
+
+If your job posting has expired, below are instructions on how to access the job posting to extend it:       
+
+1 - Go to https://csi-cuny-csm.symplicity.com//employers
+2- Enter your username (email) & password on (Login screen page)
+3- You are now on your HOME PAGE 
+4- Click "jobs" on the top menu bar 
+5- Click on ADD NEW button
+6-Click on SHOW ARCHIVED button
+7-Select the "archived" job posting by clicking on the down arrow  
+8-Change the Expiration Date to a future date
+9-Click SUBMIT button!
+
+If you do not have a password to access the position, please contact 
+
+The City University of New York, College of Staten Island
+Center for Career and Professional Development
+http://www.csi.cuny.edu/career
+718-982-2300
+
+Powered By Symplicity

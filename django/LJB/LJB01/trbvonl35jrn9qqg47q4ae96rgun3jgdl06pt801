@@ -1,0 +1,324 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m43-210.mailgun.net (m43-210.mailgun.net [69.72.43.210])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id trbvonl35jrn9qqg47q4ae96rgun3jgdl06pt801
+ for josephs@linuxjobber.com;
+ Mon, 10 Feb 2020 16:57:22 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.43.210 as permitted sender) client-ip=69.72.43.210; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m43-210.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.43.210 as permitted sender) client-ip=69.72.43.210; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m43-210.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=crimsonsol.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHMlJDbTQrQmN5d25sWllUUDY3S2dOY3N3VU50eWxjU3I1dml5UmJzL0tBSkFzWi9TbUcwd3J5RUZCQTV4RkZ1eU1UZGdHeWI5U2kvRWRWeU5aWDZ0WTI0NndlNWI0VDJJSXZORjNyeUNZTHZvVlpYR1E2cHhYRUlPWHlPZU1JSXBBZEZDSmdRRnRubkxwV05wUnovZFcwOFdoNE9NL21pMVhrMmpreHdXQ1hVWHlnc0QyMkRqWlhpdlRQK2lZL0ZKRjhtWGRYUkdQajVyTC9iY0pBQnFiUGU0RDVPa0NiVWFVazhGNHNZRUE3OEdWQ1lkdC94SHVlSVEzdWVmTFpvQmZiVWxTRHhiRHV4NFJ2bzd6U1BJV3B0T2R5V1hBaDBHaVhReG1TenhKRnFHRWlydEF5amE4VUZXLy9oYWx4WnpmVi85KzVTbzhyd1YzLzZnZHRaREw=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=LrKMBo/IZXnhXCJj0CEVdQ6m8tMKQXqWhE1VIEwj+jR45QUR5UvoBYhl2H3T4QN/x3Y7yDAXcoYm/35VJCZ0kwnSN68bBcQ0QqjB9EmJ7J0MOYNMwKAStdVSrDadSx+9CYreW6nkWpUbeCmO2kNTlZtDNFHskFzIqD8Ja749bDs=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581353843; v=1; bh=Cq02g16kLPx0kIu4ghMor/bpHU/+QonMueu5k7hBJFg=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1581353842; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=FKPfagxVGTgWWso6YjC8DUVTzF+CFomQygMfFrkxFgY=; b=flsSdpavb86wPqcvUQLSrEv3BBjjURLHcbtqK/1s1laOHTEuIIYFzUPragOjRwBD7eLTe9Ms
+ qCFbc98MuVkIPX4hPpSp14fKEgmfGG4xVxebSFiGtfcC+GQdRyMOvGNbQFifysQvaqB8+Syc
+ HwexhG8ksGd6AYQAgH911Peejgs=
+X-Mailgun-Sending-Ip: 69.72.43.210
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5e418b4f3f15dbf7b5143c1a
+Received: by luna.mailgun.net with HTTP; Mon, 10 Feb 2020 16:56:47 +0000
+Date: Mon, 10 Feb 2020 16:56:47 +0000
+Message-Id: <20200210165647.1.C449433E343B362D@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: rahul.prakash@crimsonsol.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Rahul Prakash <rahul.prakash@crimsonsol.com>
+Subject: Urgent Position - AWS DevOps Architect - Merrimack, NH - Contract
+ Position
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p><span style=3D"font-size:11pt"><span sty=
+le=3D"font-family:Calibri,sans-serif"><span lang=3D"EN-IN" style=3D"font-si=
+ze:12.0pt"><span style=3D"font-family:"Arial","sans-serif"">Hi,</span></spa=
+n></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">Greetings,</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">We have an urgent requirement for<b> AWS DevOps=
+ Architect. </b>The client is located in <b>Merrimack, NH</b></span></span>=
+<b><span style=3D"font-size:12.0pt"><span style=3D"font-family:"Arial","san=
+s-serif"">.</span></span></b><span lang=3D"EN-IN" style=3D"font-size:12.0pt=
+"><span style=3D"font-family:"Arial","sans-serif""> The complete job descri=
+ption is captured below. If you are interested in this role, <b>please resp=
+ond to this email with your updated resume.</b></span></span></span></span>=
+</p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Job Title &ndash; AWS DevOps Architect</span=
+></span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Location &ndash; Merrimack, NH</span></span>=
+</b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Contract Position (Onsite Position)</span></=
+span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Only W2 Candidates</span></span></b></span><=
+/span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Job Description</span></span></b></span></sp=
+an></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Responsibilities:</span></span></b></span></=
+span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; This leadership role is accountable for =
+the DevOps Practice execution of strategic planning, road mapping, executio=
+n, and continuous improvement of the product and services factory automatio=
+n at our customer sites.</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Provide Consultancy and architecture sup=
+port for Application migration to AWS cloud - Migrate on premise applicatio=
+ns to target cloud (public/private)</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Produce high-quality, testable and optim=
+ally deployed code for complex trading products and components on AWS.</spa=
+n></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Work with teams in creating processes an=
+d tools to ensure the software release pipeline flows smoothly, safely, and=
+ efficiently.</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Able to engineer enterprise-grade soluti=
+ons using AWS services</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Evaluate Continuous Integrations and Con=
+tinuous Deployment tools, technologies for appropriate fit to solutions</sp=
+an></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Comfortable with Software Development Li=
+fe Cycles, Test Driven Development, Continuous Integration and Continuous D=
+elivery/Deployment</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Interacts with business users, I/T, vend=
+ors and customers to define current and future application requirements.</s=
+pan></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Involved in troubleshooting and debuggin=
+g critical problems and resolving complex technical issues that may arise.<=
+/span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Use your strong background of AWS Cloud =
+services, patterns, container technology, monitoring, telemetry and logging=
+ and experience in Cloud migration projects</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Build and manage CI/CD workflows and com=
+plex system integration</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Minimal Qualifications:</span></span></b></s=
+pan></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Minimum 10 - years&rsquo; experience wor=
+king in complex enterprise IT environments using software engineering techn=
+iques</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Minimum 5 - years&rsquo; experience Solu=
+tion architecture / relevant DevOps experience</span></span></span></span><=
+/p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Minimum 2-years of relevant AWS Cloud ex=
+perience</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Minimum 2-years&rsquo; experience with D=
+evOps monitoring and alerting systems</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Successfully established and implemented=
+ a hybrid AWS cloud architecture strategy</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Bachelor&rsquo;s degree in Computer Scie=
+nce, Information Systems and/or equivalent formal training or work experien=
+ce</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Preferred Skills:</span></span></b></span></=
+span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; AWS Solutions Architect professional lev=
+el certification</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; You have an awareness of event-based sys=
+tems, functional programming, and messaging frameworks such as Kafka and EM=
+S</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; Experience with stock trading business f=
+unctionality</span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"font-f=
+amily:"Arial","sans-serif"">&bull; The person is expected to have credible =
+experience in understanding the entire project context, and able to demonst=
+rate the knowledge of end-to-end application architecture in Cloud environm=
+ent. Ideal candidate will have extensive experience in various AWS Cloud se=
+rvices, Cloud management and monitoring technologies and Java programming t=
+echnologies (Core Java, C, JMS, Spring/Spring Boot, Web Services, Hibernate=
+/DAO frameworks and advanced messaging and microservices framework</span></=
+span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"bac=
+kground:yellow"><span style=3D"font-family:"Arial","sans-serif"">Please rep=
+ly me with your updated resume and required details:<br />
+Full Name ( As per Legal Docs):<br />
+Contact Number:<br />
+Work authorization/Visa Status:<br />
+Current Location:</span></span></span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"bac=
+kground:yellow"><span style=3D"font-family:"Arial","sans-serif"">Pay Rate:<=
+br />
+Phone Interview Availability:<br />
+Availability to Join project:</span></span></span></b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Thanks & Regards,</span></span></b></span></=
+span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">Rahul Prakash</span></span></b></span></span=
+></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif"">732-737-6064</span></span></b></span></span>=
+</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><span style=3D"fon=
+t-family:"Arial","sans-serif""><a href=3D"mailto:rahul.prakash@crimsonsol.c=
+om" style=3D"color:blue; text-decoration:underline">rahul.prakash@crimsonso=
+l.com</a></span></span></b></span></span></p>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.tryfacta.ai/u=
+sers/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/b3acb870d=
+34a59efb0b5434a0e5c9780fafaeaf5/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZ=
+DM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>=
+click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg1.ceipalm=
+m.com/o/eJwVzEsOwiAQANDTyJIMM8NgF2z8nMPwq6Up0tCYeHz1HeBlTyVHYlU9AgKgASNW2Gm=
+jr8wTE92J6UKCtxNDexqdSt3D1ppOvanFx2gkWHe2mNkJZXApBYKIkpPleVKjzI-avThkNfzaj7=
+Ivx-_a6uv9WXuMZfyrL_FUKAU"></body>
+</html>

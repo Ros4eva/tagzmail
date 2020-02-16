@@ -1,0 +1,166 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m232-78.mailgun.net (m232-78.mailgun.net [159.135.232.78])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id b42pemhbslssedctsbkhgn0i3rvqpuoi81ccnt81
+ for josephs@linuxjobber.com;
+ Fri, 24 Jan 2020 15:18:41 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m232-78.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 159.135.232.78 as permitted sender) client-ip=159.135.232.78; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m232-78.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFMjd6UXhGS2Y3bGdQYk5NbUp5bENpRjNCSVMyNnFkb3RrSVhUY1FRd0RYbTlyS1RDSk5xMFpMQUFLRW12NlVjdGg2Nmt6VmZmRkMyUXh5dmpUVktIaEZ0YUVxRmF0cGNjdmJ2b1NzeGFTY1loRUhEdGloWmxscFQ4ZFBwUjUweHBwcGpOVkxrVkR2eEpZS2lEcHhJUERlR1pDQlF3Rm9VQzIzYjlGZ3RRQ1VZQUdrYWRQNHBtbHd4eVphaWJlaE4vMkFGR21Rb2JJbHYrOTRmRVlNZENhRnRBVG5wLy9La01RTkdJSDlmSzJxRTVQRzhCcDI0MWw4c2w0ZUdDamhSaVQ4cjNPeU9XMFNUMDhUVUlydWd4SCtCWERHM3QxSjFiYnlvUDNUVnI5amxkK25UT2YwdGtKMkFRZktHRVMzWnp4RS8vb3A3QXZiWHlMd2Job1h2WVo=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=fDjy0ic+PJ1tNUiERsiJ8Z7rGl92w7etMaZD70PcZ0zTMyyXPpX6EnRH8uol2ID5jwfVvoU5fK+cGpdV6jwskNINwoyLNWaffLuoGZob0QI/QkMXZnIR4fKO7CH0x05kD/4KhqkZlmqIzNkgYnrdkmLNYHk6NGfJnMSs6Y/ibpI=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579879130; v=1; bh=+odcxt9T0DaFc6BISiah4ju4Ua+bz83Z+MBY20fqS6U=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1579879129; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=1bAnygwFGtUlneD3TUeRi0pc5mrzpsxe1tZrEY9sLGA=; b=oLZnTrDyAxx+89/gJjBLz8ublJ+H6Q4/FKT3VLN2y+SOaJcShjvRmSkuZi6PhOlRARf2SJm4
+ QaR6K/0YH759/lHILxSL2jUnil7aZg2KEu4EHhJuOVEOKkvhoezUV/udTQaCCfqhnG+brHEW
+ QqhVlAJXaqmrf4HTiXC9OKZEz6Y=
+X-Mailgun-Sending-Ip: 159.135.232.78
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e2b0ab7af506b1761572cbf
+Received: by luna.mailgun.net with HTTP; Fri, 24 Jan 2020 15:18:15 +0000
+Date: Fri, 24 Jan 2020 15:18:15 +0000
+Sender: k.vinay@usgrpinc.com
+Message-Id: <20200124151815.1.DCB133F9476A8700@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: k.vinay@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Vinay kumar <k.vinay@usgrpinc.com>
+Subject: Full Time Employment || AWS Devops Engineer || Alpharetta, GA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div id="EditorSalutationID">Hi Joseph,</div>
+
+<div>
+<p class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Hope you are doing great.<br />
+We have a job opportunity for position&nbsp;as mentioned below. Please go through the job description below and let me know your interest for this position. If you are interested, please reply me back with your most updated resume.<br />
+<b>Full Time Employment<br />
+Position: AWS Devops Engineer<br />
+Location: <span style="color:black">Alpharetta, GA </span><br />
+<u>Technical/Functional Skills &nbsp;</u></b></span></span></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Public cloud experience implementing solutions with public cloud using AWS.</span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Strong background in Linux/Unix Administration.</span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Experience setting up DevOps pipelines in AWS. </span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Strong analytical skills with the ability to learn new information quickly.</span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="background:white"><span style="font-family:"Calibri",sans-serif">Experience with the majority of EC2, ELB, EMR, and S3.</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Experience with container orchestration utilizing ECS, EKS.</span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Experience writing scripts in YAML/Groovy/Unix Shell Scripting. </span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="background:white"><span style="font-family:"Calibri",sans-serif">Experience with IaC or automated builds using CI/CD tools such as: Jenkins</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="background:white"><span style="font-family:"Calibri",sans-serif">Experience automating cloud infrastructure using Cloud Formation templates and Terraform.</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Experience with one or more of the following Configuration Management Tools: Ansible, Chef, Salt, and Puppet.</span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Experience managing Atlassian tooling such as Jira and Confluence preferred</span></span></span></span></li>
+</ul>
+
+<p class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><b><u><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:black">Good to have: </span></span></span></u></b></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="background:white"><span style="font-family:"Calibri",sans-serif">Certified AWS Devops Engineer or Sysops Administrator</span></span></span></span></span></li>
+</ul>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><strong><u><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Roles & Responsibilities</span></span></u></strong></span></span></p>
+
+<ul>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:black">Self-starter with hands-on work experience on AWS clout platform</span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:black">Responsible for <span style="background:white">developing automation in CloudFormation/Terraform for testing and promotion of applications from Development, Staging and Production environments.</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="background:white"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:black">Assist Web / Application Developers in optimizing their respective technologies for migration to the Cloud</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:black">Should play role in implementing Continuous Integration & Continuous Deployment tools and processes for cloud environments. </span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="background:white"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:black">Responsible to publish, improve and maintain technical documentation along with processes and procedures.</span></span></span></span></span></span></li>
+	<li class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif"><span style="color:black">Work well with cross functional global and remote teams</span></span></span></span></span></li>
+</ul>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Thanks & Regards</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:12pt"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">Vinay Kumar| Technical Recruiter</span></span></span></span></p>
+
+<table class="Table" style="width:571.1pt; border-collapse:collapse; border:dotted #948a54 1.0pt" width="761">
+	<tbody>
+		<tr style="height:.3in">
+			<td style="border:dotted #948a54 1.0pt; width:197.6pt; padding:.05in .1in .05in .1in; height:.3in" width="263">
+			<p align="center" style="text-align:center"><img height="40" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxZzhVeHNOMmpYT0pKQldnWHo1Z1g5aUl0b2FQNTBUZk41MnkvTmRVakdxVXVGZHhGUXpwNHpteHduZ21uKzIrZXFMeTR6SHRpa0ZUSXVocGdzQzRqKzZVcFlwVUdQNUhqc3dRMTkycGFOaTZBPT0=" width="75" /></p>
+
+			<p align="center" style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>United Software Group, Inc.</b></span></span></p>
+
+			<p align="center" style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">End-to-End IT Systems | Services | Solutions Provider</span></span></p>
+
+			<p align="center" style="text-align:center"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>A Minority Business Enterprise</b></span></span></p>
+			</td>
+			<td style="border:dotted #948a54 1.0pt; width:121.5pt; border-left:none; padding:.05in .1in .05in .1in; height:.3in" width="162">
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">565, Metro Place South,</span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Suite # 110,</span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Dublin, OH 43017</span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><a href="http://www.usgrpinc.com/" style="color:#0563c1; text-decoration:underline">www.usgrpinc.com</a></span></span></p>
+			</td>
+			<td style="border:dotted #948a54 1.0pt; width:2.5in; border-left:none; padding:.05in .1in .05in .1in; height:.3in" width="240">
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Phone: 614-495-9222 Ext.673</span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Direct: &nbsp;315-825-0691</span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Fax:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 866-764-1148</span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Email:&nbsp; <a href="mailto:k.vinay@usgrpinc.com" style="color:#0563c1; text-decoration:underline">k.vinay@usgrpinc.com</a></span></span></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Linkedin: <a href="https://www.linkedin.com/in/vinay-kumar-609937183/" style="color:#0563c1; text-decoration:underline">https://www.linkedin.com/in/vinay-kumar-609937183/</a></span></span></p>
+			</td>
+			<td style="border:dotted #948a54 1.0pt; width:1.0in; border-left:none; padding:0in 0in 0in 0in; height:.3in" valign="top" width="96">
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">&nbsp;&nbsp; &nbsp;</span></span><img height="90" src="https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVkUU5BcXIxakFwWHBKNkRSQ1l2aXAvbWEwZ3p4dG1GN1ozWllJK1VyVkxSck1KWmxaM01vYUlBMHJqaitTM0lGS3NkZVRaZExSY0xRV1dVemhDTERVSXo4NnZ1dGVWcHRJM2ZPVUpQZVd4M3VaVmxRVFBCYmVUSVIzMWNkQ2RFV1o2ck1pVEZVPQ==" width="90" /></p>
+
+			<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>&nbsp;&nbsp;&nbsp; 2016 - 2017 - 2018</b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="wordsection1"><span style="font-size:12pt"><span style="background:white"><span style="font-family:"Times New Roman",serif"><span style="font-size:11.0pt"><span style="font-family:"Calibri",sans-serif">To unsubscribe from this mailing, please reply to this email with the word&nbsp;<a href="mailto:techsupport@usgrpinc.com,piyushkumar@usgrpinc.com?subject=UNSUBSCRIBE%E2%80%9D." style="color:#0563c1; text-decoration:underline" target="_blank">UNSUBSCRIBE&nbsp;</a>in the subject line, or click here.</span></span></span></span></span></p>
+</div>
+
+<div id="EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id="EditorMessageBodyID">&nbsp;</div>
+
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.usgrpinc.com/users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/1c6fdf40a22ba564b8344126e2825bbbd0a5465d/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=/" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://email.usgrpinc.com/o/eJwVzEsOwiAQANDTyLKZGWCgCxZ-4jUMn8HSaNvQNPH46jvAKwEFIoBqgYAAkAxa9GgHHG7XC2p9H43js3cAJwPH_uxbW_KQ17eaQi2mRm0TOxa0lIm1YxIbxXItPKou9dFKIA1e9TCvu2zT_ntebTk-85qS9H_1BVXsJtI"></body>
+</html>

@@ -1,0 +1,95 @@
+Return-Path: <gufran.chesti@iquasar.com>
+Received: from mail2.joboppforyou.com (mail2.joboppforyou.com [216.200.152.250])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id m9cmn8scc30hqbdpuapjeebfde5djomg3vbk8ug1
+ for josephs@linuxjobber.com;
+ Fri, 17 Jan 2020 19:27:52 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=gufran.chesti@iquasar.com; helo=mail2.joboppforyou.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of iquasar.com designates 216.200.152.250 as permitted sender) client-ip=216.200.152.250; envelope-from=gufran.chesti@iquasar.com; helo=mail2.joboppforyou.com;
+ dkim=pass header.i=@joboppforyou.com;
+ dmarc=pass header.from=iquasar.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHQjAwZmhLMGZtTHpjVWFJUjh0SHU4akdIMjA3aUtOcHp1S2ZDdm5JZmtmbXh2NGpMbERLVS9LUjlOWVJqYW5WRkI5eHpxWTJxQlE5cmxTRGxVZkt0TGhjOXBwSkJmUlRodFJoWG1yRThOQjh5Q3ZCLzdjUmhlZzk5QSsyTUt5SlZtWnlQbGErNHVFN2cwQm5GRHFHTGlJMlJNbjhwL1ZuL1duakRscHlqUlp2RmVFRXNmeFRJYTRXb3UvYlU2WTJGOW9VSWd3S3lSMi9zdlNPRGl1U0VrTkphUm1jYm94NmhPTEdFTXZ0U3dsNXVjRjhrRTNtWFVFTml4SXZqQ0hGTTIrZXFsd1JoQ215azBIRklvSyt3ejhBbzdveGdPK0tNYTcvUFByZVRNbWc9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Ds43nF39Ay+XkYWaRcgJhOs1TbQv/Zrca1Gpizzb58C2egF3btAxeumFIUSTM/fXP0p5vIKHIg0rGarkB/QSGl/hhUeTPRrm4eVBzKL2ilQqr5A5nLMH2fZ69/wHNw79d7hRfzHeTFvjwH3gx6maiUbfcwzJp1HB8eMhNPnSOaU=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579289272; v=1; bh=9AAkXqxZ32NOv6DJ6SUToq9KP5dtaG43CEIwHF9AlX4=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=key8; d=joboppforyou.com;
+ h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+ bh=+dYZoPs8AIKvikHruVtyNR56I8o=;
+ b=rXMJHucI/qDzj8yAnZtDxw9hRTzAENqIZSUYewbQhRWgblP6G7oRVODHmxbiER6tpwg4QBbFbJXA
+   iDm0zdiWDB3Disy3Ahcj6n8mpBxO0wS7rhmSiJGJSIhVZZL0EQIbrjhMSZfzz93F0wLpmjcP+gGS
+   VMShEhr0mojqcMXPPjnllKzB8b6XVfXFQgOWh1psvv5MqlnsG03eJ8uqIzlYwTzucxjBveD0Fk5v
+   4OfLbXqoJJEg1c5imtGPyLGTf57Xz4pGPSz2JIzrPkWAhF5CUyShyzEc2odCJ2VsMqlOXIRR+F9g
+   2X+o/uwnAKuX8qUAP8+TpTAEHs1iboB4WwIBFg==
+Received: by joboppforyou.com id h483hg1ph64k for <josephs@linuxjobber.com>; Fri, 17 Jan 2020 14:12:23 -0500 (envelope-from <gufran.chesti@iquasar.com>)
+Date: Fri, 17 Jan 2020 14:27:48 -0500 (EST)
+From: Gufran Chesti <gufran.chesti@iquasar.com>
+To: josephs@linuxjobber.com
+Message-ID: <663453770.3958921579289268525.JavaMail.admin@emailmerge22.jobdiva.com>
+Subject: Urgent Requirement // SharePoint web Designer // Washington, DC
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_396105_1714252461.1579289268524"
+
+------=_Part_396105_1714252461.1579289268524
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div>
+<div>Hi,<br />
+<br />
+My name is Gufran and I represent TMR (Technical and Management Resources). TMR, Inc. seeks a SharePoint Web Designer to provide a centralized license repository of purchases, inventory tracking, and inventory normalization for the FBI Enterprise Licensing Agreements for hardware and software.<br />
+&nbsp;<br />
+<strong>Required:</strong><br />
+<strong>Top Secret clearance</strong><br />
+<strong>Bachelor&rsquo;s degree in a technical field</strong><br />
+&nbsp;<br />
+<strong>Responsibilities:</strong>
+<ul>
+	<li>Develop and deploy a dashboard (i.e., SharePoint) that allows researching and data mining/analysis to provide accurate standard and ad hoc data displays and reports.</li>
+	<li>Establishes the overall strategic goals for community-based content.</li>
+	<li>Shows documented success in the operations and management of Microsoft Office SharePoint implementations of varying size and complexity.</li>
+	<li>Develops and implements campaigns to build the online community and its awareness of corporate messages and events.</li>
+	<li>Monitors and edits site content as required to ensure community activity follows guidelines and expectations.</li>
+	<li>Customizes and configures workflow to allow for the integration of other data sources.</li>
+	<li>Coordinate the Monthly Outreach information and coordinate participation throughout the entire enterprise.</li>
+	<li>Serve as the communications liaison for ELAMU to impart Software License Agreement schedules, statuses, activities to the user community</li>
+</ul>
+<strong>Qualifications:</strong>
+
+<ul>
+	<li>Seven (7) years of experience in a specific functional area (i.e., SharePoint Design/Development)</li>
+	<li>Bachelor&#39;s degree in a related scientific or technical discipline.</li>
+	<li>Clearance:&nbsp;Top Secret Required</li>
+</ul>
+<strong>If you are interested and looking for new opportunities, please get back to me with the following:</strong>
+
+<ul>
+	<li><strong>Best number and time slot to discuss more:</strong></li>
+	<li><strong>Your Updated resume:</strong></li>
+	<li><strong>Salary Expectation:</strong></li>
+</ul>
+<br />
+<br />
+<strong>NOTE: This email has been sent to you as a result of a mass mailer to all candidates matching certain keywords from the Job Description. If this job is not relevant to your profile, we would like to apologize for the inconvenience caused.</strong><br />
+<br />
+<br />
+Technical and Management Resources, Inc. is an Equal Opportunity Employer and does not discriminate with regard to race, color, religion, sex, age, national origin, disability, or Vietnam veteran status. This policy affirms TMR&rsquo;s commitment to the principles of fair employment and the elimination of discriminatory practices. We encourage all employees to take advantage of opportunities for promotion as they occur.<br />
+<br />
+<br />
+<strong>Gufran Chesti</strong><br />
+<strong>Lead&nbsp;Recruiter</strong><br />
+Technical and Management Resources, Inc. (TMR)<br />
+10511 Braddock Road, Suite 1B<br />
+Fairfax, VA 22032<br />
+CMMI Svc Lv3, ISO 9001-2015, ISO 20000-1, ISO 27001<br />
+Direct. 703-936-0082<br />
+&nbsp;<br />
+<em>All information and attachments in this email are proprietary and confidential.</em><br />
+&nbsp;<br />
+&quot;This message (including any attachments)&nbsp;is intended only for the person or entity to which it is addressed and may contain information that is non-public, confidential, proprietary,&nbsp;privileged, and exempt from disclosure under applicable law or may constitute as attorney work product. &nbsp;Any review, retransmission, dissemination or other use of, or taking of any action in reliance upon, this information by persons or entities other than the intended recipient is prohibited. If you received this in error, please contact the sender and delete the material from all computers.&rdquo;</div>
+</div>
+
+<div>&nbsp;</div>
+<br><br>If you would like to unsubscribe from iQuasar, LLC, please click <a href='http://jobs.iquasar.com/optout.jsp?d=3439305f6a6f7365706873406c696e75786a6f626265722e636f6d&e=161&t11=1579289268523'>here</a>.<img id='logo' src='http://www1.jobdiva.com/servlets-examples/servlet/trackEmailMerge?a=01bEAlQBhNWNlQBAANZAzsWXlRCAzBXXQNUVlVH' />
+------=_Part_396105_1714252461.1579289268524--
+

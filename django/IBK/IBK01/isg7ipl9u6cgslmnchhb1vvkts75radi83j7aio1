@@ -1,0 +1,397 @@
+Return-Path: <bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com>
+Received: from a2.mail.joinhandshake.com (a2.mail.joinhandshake.com [192.237.159.132])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id isg7ipl9u6cgslmnchhb1vvkts75radi83j7aio1
+ for jeff.adekunbi@ideabakr.org;
+ Mon, 06 Jan 2020 17:04:44 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.132 as permitted sender) client-ip=192.237.159.132; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a2.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.132 as permitted sender) client-ip=192.237.159.132; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a2.mail.joinhandshake.com;
+ dkim=pass header.i=@mail.joinhandshake.com;
+ dmarc=pass header.from=mail.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIZEdxY2RUUDdEK0pWeExPTTZoenowNklHaVVKRy93c0pPSGEwaUhDTmpscUIwTnVhdUR4QnpUMHRPOHNvQVpybTFQS2wxN010Nlc0Q1Q1bVJrbnpVaGd6UUVhUzc2MkRuZnB6N1Z5dnNReDJubmUwSm5VQXhkMXNCRWFxNXdaYnFscTUva0VTZ2JCcHFXbWNPb0NWWDZoeDZZaG9wd25WcFdSVlQrQ1UrSmRzaGx4eEI2U2ZyRE9yc1F4ZExQa0I4Uy9Gbk56SEFaSFJBMk9iSTFIUGkyc0JtQVZxZ29QK2xRdEE0TmZ0Rlc5MDQrVE9NVkNUekpQZWpwYWZWeGFEOEFXeUJGWUNlZURmODNtL0UrZjl5TmNHZW1WRWJMdG5OSTNjY2lnbWtmeE53SXBESjBxNE9kYVIydGtTTW82blNjSkEzT0FvL1VzRE9oOHFycjVVRmxJWlBzajdwaGcvcUtvazVJb2VZVGpRPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=PE045C7TZDz4cExZH93EiiUvwiNMSF+hEeaT3/ZwIXq25cFLBhiXe/A/+PG2LT1pvEttEs0d0tWwac5Pdp1/J/Yu3PnYHh7S1HXD1vzw/sjbOXjk2DLvCbwhPY8LApBR2q5nuwQ2yVoE8KUDNYVaE1re4YIhA3ppJ1n4WdfNLvo=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578330290; v=1; bh=+whNmZBJYagf3/7516XDNQoGgN6PyhKwPNYR11vpq0Q=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1578330289; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe;
+ bh=z7CO/NN5DYaieQj4N+2oHqv2uyytvz466b7IfQxbfUs=; b=lCr1+txFrjMVuVdpuYkJckSp/ijiXIhcbWoSIf0pPf6nB6ldjYTZjgu+ulYodegX9DBibuBn
+ PvA1RUaifAstHGSskP5398EPTkarNbDzXBhhGxMUAEq16KGNpBOCoIgwavv5YVpiB950aA0Y
+ tCrT6VoiLu6/tPdRWYLtZhRmPgg=
+X-Mailgun-Sending-Ip: 192.237.159.132
+X-Mailgun-Sid: WyIyNGNhOCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICI4OGNiOCJd
+List-Unsubscribe: <mailto:u+mq6tqoddmi4cm2j5giydembqgeydmmjxgaztemrogexeencfhfbekm2gii2tamzrgi3tgjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihu2ggyzrmftdmmjxhbsgmojsga2tqnjtgfqwmzlfmm3tkzdfmvswcjtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6tknzyfvjwg2dpn5wcm2dbnzshg2dbnnsv63lbonzv6zlnmfuwyx3jmq6tkmbqgizdi@mail.joinhandshake.com>
+X-Mailgun-Batch-Id: 5e13685aee86af6e33fc7191
+Received: by luna.mailgun.net with HTTP; Mon, 06 Jan 2020 17:03:22 +0000
+Date: Mon, 06 Jan 2020 17:03:22 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20200106170322.1.B4E9BE3FB5031273@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "500224"}
+Reply-To: careers@nmu.edu
+X-Mailgun-Tag: 578-School
+To: jeff.adekunbi@ideabakr.org
+From: NMU Career Services via joinhandshake.com
+ <handshake@mail.joinhandshake.com>
+Subject: NMU Winter Semester Job Fair Invitation
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="549f972ee00f443fac93b5b345623c9f"
+
+--549f972ee00f443fac93b5b345623c9f
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+Dear Jeff Adekunbi,It
+gives us great pleasure to invite you to participate in Northern Michigan U=
+niversity's 30th Annual Winter Semester Job
+Fair!  The job fair will take
+place on Wednesday, March 18, 2020, from 1:00 until 4:00 PM (EST), in the b=
+allrooms of the Northern
+Center (formerly the University Center).=20
+=C2=A0 =C2=A0=20
+
+Studies by the National Association of Colleges and
+Employers (NACE) indicate that face-to-face contact at job fairs and campus
+interview visits are the best way to fill vacancies that you have (or that =
+you
+anticipate).=C2=A0 This event is typically
+geared towards employers looking to fill full-time positions, although you =
+are welcome to recruit
+for any positions you have open (full-time, part-time, summer employment, o=
+r
+internship opportunities).=C2=A0=C2=A0
+
+Due to
+the popularity of this event and the limited facility space available, plea=
+se submit your registration as soon as
+possible; registrations
+will be accepted on a first-come, first-serve basis.=C2=A0 Also
+due to limited space, graduate schools will not be able to register for
+this event.=C2=A0 We will have a table at the
+job fair for graduate school information.=C2=A0
+If you would like to have information about your graduate school
+program(s) displayed, please send advertising materials to us by email or m=
+ail.
+
+To
+register as an employer, please log into Handshake (http://email.mail.joinh=
+andshake.com/c/eJxtjksOgyAURVcjs5LHAwUGDGrSbqALME-BQv1g1O6_dtJRkzs951zvjBl6=
+w7JDQAABjdAgEbngrbrZ9ibvbQ1SoJaVgpnyxF8lL4kWvycaAx_KzJKzVgCSjSS1UGQaGa0KYAU=
+KBKljzyaXjmPdK3mt8H6O1vWPaHOvECMnH8b30uezmH2gnsaNl-3JDldrc3kMqZSJ_chupn3vwv=
+dbl72rARDVB1MIQq4).=C2=A0 You will receive confirmation via Handshake.=C2=
+=A0 Registration includes a table, tablecloth,
+small table sign, chairs, internet access and lunch for two recruiters.=C2=
+=A0=C2=A0
+
+The deadline for registration and payment is
+Wednesday, March 11, 2020, at 5 PM EST.=C2=A0
+
+REGISTRATION FEES=20
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 For-Profit Organizations=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0$100=C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Non-Profit Organizations $=
+25
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 Additional Lunch (ea.)=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 $15=C2=A0
+
+INFORMATION SESSIONS & ON-CAMPUS INTERVIEWS
+Many companies hold information sessions in the evening after the job
+fair to present specific information to candidates they met at the fair.=C2=
+=A0 These information sessions are becoming very
+popular and our conference room space is limited, so make your reservations
+quickly.=C2=A0 Attendees are also welcome to remain on-campus in order to i=
+nterview
+interested and qualified candidates.=C2=A0 If
+your company would like to set up an on-campus recruiting event, please
+complete a request in Handshake or contact Career Services.=C2=A0 =C2=A0=C2=
+=A0=C2=A0
+
+If
+you are unable to attend this event, but would like us to distribute
+information about your company or job openings, we encourage you to send
+promotional/employment materials to us at any time by email or mail.=20
+
+We
+hope you will seriously consider joining your colleagues and us on March 18=
+th
+for this exciting event.=C2=A0 We value our
+relationship with employers who recruit NMU students, and we look forward t=
+o
+personally meeting you.=C2=A0 If you have any
+questions, please contact us at careers@nmu.edu or
+(906) 227-2800.=C2=A0=C2=A0
+
+Sincerely,=C2=A0
+
+The NMU Career Services Staff______________________________________________=
+________________1401 Presque Isle Avenue | 3302.3 C.B. Hedgcock | Marquette=
+, MI  49855(t) 906-227-2800 | (f) 906-227-2807careers@http://email.mail.joi=
+nhandshake.com/c/eJw9zj2OwyAQQOHThG7RACbggsZScoEcwBqYyZr4Bwni-PpJpNV2r3sfBe=
+9T9CIHDRpAwVk5MFpLJYfu0g8Xcx0sGKWdOXWwYl7ko-Rtwo3ahDPLVFYxhd5qRkOKoAcm41RKB=
+jwp20V3Bh_FErZ1l0z7cRzyL0_6mrAy18b1lRM3UcOD73eJxPO-xfw5ZmKMOFdZ6q94Buv8zy1N=
+pSzinzCu2NrIX9uYKVgArbs3F6FEeg
+
+
+
+
+
+
+
+
+Winter Semester Job Fair 2020
+
+Northern Michigan University
+| Northern Michigan University - Northern Center
+
+The Winter Semester Job Fair is marking its 30th anniversary this year!  Th=
+is fair brings together students and employers from the Midwest to explore =
+today's exciting job outlook. Many employers will be interviewing students =
+for positions with their...
+
+
+
+
+
+
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+Northern Michigan University
+
+If you do not want to receive these emails, you can
+unsubscribe
+from emails from
+Northern Michigan University
+
+If you do not want to receive any mass emails from Handshake, you can
+unsubscribe
+from all Handshake emails
+
+P.O. Box 40770, San Francisco, CA 94140
+--549f972ee00f443fac93b5b345623c9f
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<title>Handshake</title>
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+=2Eprimary-button a:hover{color:inherit}
+=2Eoutline-button a:hover{color:inherit}
+=2Ebutton a:hover{color:inherit}
+=2Eprimary-button a:active{color:inherit}
+=2Eoutline-button a:active{color:inherit}
+=2Ebutton a:active{color:inherit}
+=2Eprimary-button:hover{color:#fff;backgr=
+ound-color:#ff6860;border-color:1px =
+solid #ff6860}
+=2Eprimary-button:active{color:#fff;backg=
+round-color:#e21d17;border-color:1px=
+ solid #ff6860}
+=2Eoutline-button:hover{color:#ff6860;border-color:#ff6860}
+=2Eoutline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+@media (max-width: 767px) {
+=2Eavatar--mobile-md{max-width:56px}
+}</style></head>
+</html><html><body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-sy=
+stem, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neu=
+e&quot;, sans-serif;color:#231f20;font-size:16px;line-height:20px;-webkit-p=
+rint-color-adjust:exact">
+<div class=3D"email-content" style=3D"width: 800px; margin: 0 auto;">
+<div class=3D"tile" style=3D"position:relative;margin-bottom:12px;padding:6=
+px;border:1px solid #e6e6e6;background-color:#fff;border-radius:3px;box-sha=
+dow:0 0 4px 1px rgba(0,0,0,0.05),2px 2px 2px 1px rgba(0,0,0,0.05);padding-r=
+ight:6px;padding: 8px;">
+<div>
+<div class=3D"mass-email-body">
+<p style=3D"font-size:18px;line-height:28px">Dear Jeff Adekunbi,</p>
+<p style=3D"font-size:18px;line-height:28px"><br>It
+gives us great pleasure to invite you to participate in Northern Michigan U=
+niversity's <b>30<sup>th</sup> Annual Winter Semester Job
+Fair!  </b>The job fair will take
+place on Wednesday, March 18, 2020, from 1:00 until 4:00 PM (EST), in the b=
+allrooms of the Northern
+Center (formerly the University Center).=20
+<b>&nbsp; &nbsp; </b></p>
+
+<p style=3D"font-size:18px;line-height:28px">Studies by the National Associ=
+ation of Colleges and
+Employers (NACE) indicate that face-to-face contact at job fairs and campus
+interview visits are the best way to fill vacancies that you have (or that =
+you
+anticipate).&nbsp; This event is typically
+geared towards employers looking to fill full-time positions,<b> </b>althou=
+gh you are welcome to recruit
+for any positions you have open (full-time, part-time, summer employment, o=
+r
+internship opportunities).&nbsp;<b>&nbsp;</b></p>
+
+<p style=3D"font-size:18px;line-height:28px"><b>Due to
+the popularity of this event and the limited facility space available,</b><=
+b> please submit your registration as soon as
+possible; </b><b>registrations
+will be accepted on a first-come, first-serve basis</b><b>.</b>&nbsp; Also
+due to limited space, graduate schools will not be able to register for
+this event.&nbsp; We will have a table at the
+job fair for graduate school information.&nbsp;
+If you would like to have information about your graduate school
+program(s) displayed, please send advertising materials to us by email or m=
+ail.</p>
+
+<p style=3D"font-size:18px;line-height:28px">To
+register as an employer, please log into Handshake (<a target=3D"_blank" hr=
+ef=3D"http://email.mail.joinhandshake.com/c/eJxlj0mOhSAURVejsyI0NvwBgzL13UA=
+tgDwBla-AAdx_odVMKnmjc3ObpwXnauK1FRRTjAnuSI8ZpYigoXk-hicbhxYzQntWNdiB3dErWL=
+-C12mFzSAVXL0K1fUagGoyqeJuyWNmpJsBCJm6B-O83sWa85Eq9l7RsRwcx_-gS2LjmZ1M4YzKV=
+OzDQUryqjWxot0lOaPt6YpkLvwDVfDZ-FxoizGlzS8Gd4BdfOGntzJDXEw2Wt7WVEfxMvOMQJvt=
+9JMtD1ptYIItohCXOou252-fag1hr_-GynvSnSCtFt99X3duamw" style=3D"color:#254fa5=
+;font-weight:inherit">https://app.joinhandshake.com</a>).&nbsp; You will re=
+ceive confirmation via Handshake.&nbsp; Registration includes a table, tabl=
+ecloth,
+small table sign, chairs, internet access and lunch for two recruiters.&nbs=
+p;<b><i>&nbsp;</i></b></p>
+
+<p style=3D"font-size:18px;line-height:28px"><b><i>The deadline for registr=
+ation and payment is
+Wednesday, March 11, 2020, at 5 PM EST.</i></b>&nbsp;</p>
+
+<p style=3D"font-size:18px;line-height:28px"><b>REGISTRATION FEES <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For-Profit Organizations&nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$100&nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Non-Profit Organizations $25<b=
+r>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Additional Lunch (ea.)&nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $15</b><b><i>&nbsp;</i></b></p=
+>
+
+<p style=3D"font-size:18px;line-height:28px"><b>INFORMATION SESSIONS &amp; =
+ON-CAMPUS INTERVIEWS<br>
+</b>Many companies hold information sessions in the evening after the job
+fair to present specific information to candidates they met at the fair.&nb=
+sp; These information sessions are becoming very
+popular and our conference room space is limited, so make your reservations
+quickly.&nbsp; Attendees are also welcome to remain on-campus in order to i=
+nterview
+interested and qualified candidates.&nbsp; If
+your company would like to set up an on-campus recruiting event, please
+complete a request in Handshake or contact Career Services.&nbsp; &nbsp;&nb=
+sp;<b>&nbsp;</b></p>
+
+<p style=3D"font-size:18px;line-height:28px"><b>If
+you are unable to attend this event, but would like us to distribute
+information about your company or job openings, we encourage you to send
+promotional/employment materials to us at any time by email or mail. </b></=
+p>
+
+<p style=3D"font-size:18px;line-height:28px">We
+hope you will seriously consider joining your colleagues and us on March 18=
+<sup>th</sup>
+for this exciting event.&nbsp; We value our
+relationship with employers who recruit NMU students, and we look forward t=
+o
+personally meeting you.&nbsp; If you have any
+questions, please contact us at <a target=3D"_blank" style=3D"color:#254fa5=
+;font-weight:inherit">careers@nmu.edu</a> or
+(906) 227-2800.&nbsp;&nbsp;</p>
+
+<p style=3D"font-size:18px;line-height:28px">Sincerely,&nbsp;</p>
+
+<p style=3D"font-size:18px;line-height:28px">The NMU Career Services Staff<=
+/p>
+<p style=3D"font-size:18px;line-height:28px"><b><i>________________________=
+______________________________________<br>1401 Presque Isle Avenue | 3302.3=
+ C.B. Hedgcock | Marquette, MI  49855<br>(t) 906-227-2800 | (f) 906-227-280=
+7<br>careers@nmu.edu<br><a target=3D"_blank" href=3D"http://email.mail.join=
+handshake.com/c/eJw9j0uShCAQRE8juyEQRO0FizGmvcAcwEAoW1qBDj7j9QedT0Rt6mVUZaY=
+Wfa_mHhlBCSWkJm3dEUYprvHQ3G_DnY0DJ6ymHasaYqXZ8dMbt0qn4yo3wMpbtIqGyE6ppiZzy9=
+SNcQ68WaBfFlAFUYJ2sab0qth7Rccyx3FgZzMGncumZAAIEcKXURArNuZkp-hzUFCxDytjnE5nC=
+BVtT8mCNtkWCU78C5V3CVwqlBNCafOHpX1J83CFZ2emJMMDEujpOo0oiCcsC5YatuxmUzoaDXKW=
+W8A-PFASvOvfPtXq_Y7-S09XpOvDZLT48fsGLFZsIQ" style=3D"color:#254fa5;font-wei=
+ght:inherit">www.nmu.edu/careerservices</a></i></b></p>
+
+</div>
+</div>
+<div class=3D"preview" style=3D"background-color:#fff;border-bottom:2px sol=
+id #e2e2e2;border-radius:2px;border:1px solid #e6e6e6;margin-bottom:12px;mi=
+n-height:70px;padding:6px;position:relative">
+<div class=3D"image" style=3D"background-color:#fff;border-bottom:2px solid=
+ #e2e2e2;border-radius:2px;border:1px solid #e6e6e6;bottom:0;box-shadow:2px=
+ 2px 2px #ccc;display:block;float:left;height:50px;left:0;margin:0 -5px;ove=
+rflow:hidden;padding:6px;position:absolute;right:0;top:0;width:50px">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJxlj0luhTAMQE8Du6IMQOgii4=
+_6uUAPgJzEQD4kQSTcv4EOm0peWM_Ts5Fdp1VXWskII4SSlgrCGato1dfP9_7Jh74hnDLBi5o4s=
+Fv1CtYv4E1cYMVKB1cushNGdRRqzL0TVbqlqiFMCFYjCFS63OSS0h4L_ijYkAP2_f-izKNeQthi=
+zhrRFXw4kxtjOA-NBf9wEON4OeBRsPYqOTT2dLmEF_6BOviEPmXaEMJY_YvB7WBnn_np7ZjgmDG=
+hGe_RWB7yhdNUgcH19Mrmb61BULAeVTjmMsks9PZ565V_1uOtdG8YrZHf974A6wlu2w" style=
+=3D"color:#254fa5;font-weight:inherit"><img class=3D"feed-item-photo" src=
+=3D"https://s3.amazonaws.com/handshake.production/app/public/assets/schools=
+/578/feed_item/hs-school-logo-data.?1510606316" style=3D"min-height:0;width=
+:100%">
+</a>
+</div>
+<div class=3D"content" style=3D"margin-left:60px">
+<a href=3D"http://email.mail.joinhandshake.com/c/eJxlj0tywyAQRE8j7aIawPp4wS=
+Kq2BfIAagRjCQsASpA9w92PptUzWZe1_R0GzkMehpqKzlwAAYd60Fw3rBmvNyu403cxxYE472oL=
+uDQ7s0jWL-iN2nFjRodXL1KACTqO07i2msYGJjBMNZiRzRxZF29yzXnI1XiveL3Mngc_40K1xiJ=
+oprRxlRWxlgHlbif2akUzqipEh8OU1LPKBQr3j0lR8aerkj0xD9QB5_J50JbAM4vvxjdgXbxhZ_=
+eqoxxoUxGvU5THeWD5rlBQ9vpJ1tKW0M44RabEJc6y7Yf3j71GsJe_4VXr0gvB2WN_P73BaXtcO=
+Y" style=3D"color:#254fa5;font-weight:inherit">Winter Semester Job Fair 202=
+0</a>
+<p style=3D"font-size:18px;line-height:28px;margin:0">
+<span>Northern Michigan University</span>
+<span>| Northern Michigan University - Northern Center</span>
+</p>
+<p class=3D"text-muted" style=3D"font-size:18px;line-height:28px;color:#7a7=
+a7a;margin:0">The Winter Semester Job Fair is marking its 30th anniversary =
+this year!  This fair brings together students and employers from the Midwe=
+st to explore today's exciting job outlook. Many employers will be intervie=
+wing students for positions with their...</p>
+</div>
+</div>
+
+
+<div class=3D"mass-email-footer">
+<p class=3D"text-muted" style=3D"font-size:18px;line-height:28px;color:#7a7=
+a7a;font-size:11px;margin:2px;text-align:center">
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+Northern Michigan University
+<br>
+If you do not want to receive these emails, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9jTsSwiAUAE8jnczjAUIKms=
+zEC3iAzAs8BPNhJtH7GxvLLXY3Be_j5EUNCAig4KYcaESpZG-Grh_0vbegFTp9MbBSXeSr1a3Ql=
+o5CM8vYVlGCiVFRPl2fcodgvdUnM0dnEzOT2MOLc5aUeP5sUz1bNTFNNO-y7U_xDtb56yOW1hbx=
+j48rHcfIv-tYU7AAiOYL-543LQ" style=3D"color:#254fa5;font-weight:inherit">uns=
+ubscribe</a>
+from emails from
+Northern Michigan University
+<br>
+If you do not want to receive any mass emails from Handshake, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9zUEOgyAQAMDXyJEsCygcOJ=
+TEfsMssFa0aqL2_7WXfmCmBOdycqIGBARQ0KoONKJUMprex14_owWtsNONgZXqW8573SbayjnRw=
+jLvq5iCzcYnZ4m9R91mzQXJmcT-tq1BFkeYeRwlFV4-W6q3VQtTouWQ-_ESV2jwIf7qsNJ5Dvzr=
+hlqCBUA0X1ZWNAc" style=3D"color:#254fa5;font-weight:inherit">unsubscribe</a=
+>
+from all Handshake emails
+<br>
+P.O. Box 40770, San Francisco, CA 94140
+</p>
+</div>
+
+
+</div>
+</div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mail.joinhan=
+dshake.com/o/eJw9jTsSwiAUAE8jnczjAUIKmszEC3iAzAs8BPNhJtH7GxvLLXY3Be_j5EUNCA=
+ig4KYcaESpZG-Grh_0vbegFTp9MbBSXeSr1a3Qlo5CM8vYVlGCiVFRPl2fcodgvdUnM0dnEzOT2=
+MOLc5aUeP5sUz1bNTFNNO-y7U_xDtb56yOW1hbxj48rHcfIv-tYU7AAiOYL-543LQ"></body><=
+/html>
+
+--549f972ee00f443fac93b5b345623c9f--

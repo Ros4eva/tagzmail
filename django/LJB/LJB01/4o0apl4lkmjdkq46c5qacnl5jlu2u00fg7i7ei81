@@ -1,0 +1,131 @@
+Return-Path: <bounce+6d60b8.842487-josephs=linuxjobber.com@mg.iserveworld.com>
+Received: from m40-233.mailgun.net (m40-233.mailgun.net [69.72.40.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 4o0apl4lkmjdkq46c5qacnl5jlu2u00fg7i7ei81
+ for josephs@linuxjobber.com;
+ Mon, 13 Jan 2020 21:17:17 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.iserveworld.com designates 69.72.40.233 as permitted sender) client-ip=69.72.40.233; envelope-from=bounce+6d60b8.842487-josephs=linuxjobber.com@mg.iserveworld.com; helo=m40-233.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.iserveworld.com designates 69.72.40.233 as permitted sender) client-ip=69.72.40.233; envelope-from=bounce+6d60b8.842487-josephs=linuxjobber.com@mg.iserveworld.com; helo=m40-233.mailgun.net;
+ dkim=pass header.i=@mg.iserveworld.com;
+ dmarc=none header.from=iserveworld.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIWjlZQzdDbGw3QUtYb2x1V2JWYmwwWFgrUE16RDFvWllSWXBzRUVBRWo0WE13clBXbVBJM2had3J4VHBBYmtXL2EvVGVXMjNibys0bTVSSG1ycDhLc3kyUVIwOXliaEhwRjRIckZCVXdHUHJ4cG5hMFJlM1YwWWdpSWFXMUF6bk1XZWJKVlgxbVltSENxMk5Kd0NFclpQY3hMTDZzZHZjSGN2aUhCZ2R0cjJUTWJhelR3VVd1TnlBS3VNVVRjaWdYNUc5QTdtcG1YTzZ1WU1kQVNiRUlJVVp6MkNmUHBoNU9kL3RCc1RucHBjNU9SblpFRitoRFNWU0xieEorbzM5b1NkWm5pV2ZQMjVjTUFVdzB0Z0hsTmpLdGVBRS9CejFGdzJnRzh2K0N4cjI1T1lyU05UM09TcmNmdFAwUVRLRy84SWpDMFRqL2dSaTNINjFlMXRpdWZQWDJXL1AxN2lIbWdqdEw1MHV4MWRnPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Otk5I006TjhpTy4ge4jnfcc66WsPpT9wv9zOPB5Z8y4JjtfbP3ZnaoT7chEUkYc6EZY1766k86AaJKDp524MNrWrJQsj/Yy3f9Vfg+nxRN32DzU8s1yTE2XCIihzlqzjR0B/6Q0Zhe3sPR/KbPxaEvEBC7XCmmPfNjmzBsERzdU=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578950240; v=1; bh=yhScMmxl1USX60D7XXTXxyp+GM4o26JFouSZo47GLfU=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.iserveworld.com; q=dns/txt;
+ s=pic; t=1578950239; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=f8Ly1dfi6YEhREge2CLS3rAub1FprBWn7COGGGwDmxc=; b=JakU1rNUZobTq8p+Vy/KwU0bpGyGw4lneGVMJFhjluzYsWZ7xqPO26XebtP3sZR/IIXIGD+l
+ Mxr9EccsTIDntVviEoWzM6UU8kTq1OXNKJ1po0gYeCki/0+n2Px3QrW+LZNaWYj+TFYYvyXa
+ Arw2YByaSRb3q+gRo5idtuBSHRA=
+X-Mailgun-Sending-Ip: 69.72.40.233
+X-Mailgun-Sid: WyJkNmE2MCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI4NDI0ODciXQ==
+X-Mailgun-Batch-Id: 5e1cde54da90cd444f60d988
+Received: by luna.mailgun.net with HTTP; Mon, 13 Jan 2020 21:17:08 +0000
+Date: Mon, 13 Jan 2020 21:17:08 +0000
+Sender: samriti.g=iserveworld.com@mg.iserveworld.com
+Message-Id: <20200113211708.1.1007C219AF44186E@mg.iserveworld.com>
+X-Mailgun-Variables: {"ref_id": "7048"}
+Reply-To: samriti.g@iserveworld.com
+To: josephs@linuxjobber.com
+From: Samriti Guleria <samriti.g@iserveworld.com>
+Subject: Job Senior IT Project Manager is shared with you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <p style="margin:0cm 0cm 0.0001pt"><span style="font-size:14px;"><span new="" roman="" times="">Hello&nbsp;Joseph&nbsp;Showunmi,</span></span></p>
+
+<p style="margin:0cm 0cm 0.0001pt">&nbsp;</p>
+
+<div><span style="font-size:14px;">I am&nbsp;Samriti Guleria&nbsp;and I&#39;m a Technical Recruiter at InstantServe. I am currently taking resume for below mentioned Position.</span></div>
+
+<div><span style="font-size:14px;">If interested, revert back with your updated resume and rate expectations.</span></div>
+
+<div><span style="font-size:14px;">Even if this position is not relevant to you, apologies first of all. Also, you can share your resume with me so that I can come with more suitable roles for you in the future.</span></div>
+
+<p style="margin:0cm 0cm 0.0001pt"><br />
+<span style="font-size:14px;"><span new="" roman="" times=""><b>Job Description</b>:&nbsp;</span></span></p>
+
+<p style="margin-bottom:11px"><span style="font-size:14px;"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>IT Project Manager Senior</b></span></span></span></p>
+
+<p style="margin-bottom:11px"><span style="font-size:14px;"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>&nbsp;Washington DC</b></span></span></span></p>
+
+<p style="margin-bottom:11px"><span style="font-size:14px;"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>on w2 or 1099</b></span></span></span></p>
+
+<p style="margin-bottom:11px"><span style="font-size:14px;"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>Either Webcam or In Person</b></span></span></span></p>
+
+<p style="margin-bottom:11px"><span style="font-size:14px;"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif">Client requires contract services of an Information Technology Project Manager who is highly skilled and experienced.</span></span></span></p>
+
+<p style="margin-bottom:11px"><span style="font-size:14px;"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>Responsibilities:</b></span></span></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Organizes, directs, and manages contract operation support functions, involving multiple, complex, and inter- related project tasks.</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Manages teams of contract Support Personnel at multiple locations.</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Maintains and manages the client interface at the senior levels of the client organization.</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Meets with customer and contractor personnel to formulate and review task plans and deliverable items.</span></span></span></li>
+	<li style="margin-bottom:13px"><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Ensures conformance with program task schedules and costs.</span></span></span></li>
+</ul>
+
+<div style="margin-bottom:13px">
+<p style="margin-bottom:11px"><span style="font-size:14px;"><span style="line-height:107%"><span style="font-family:Calibri,sans-serif"><b>Requirements</b></span></span></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">11-15 yrs in progressive consulting leadership role, providing full lifecycle services in enterprise environment</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">11-15 yrs managing, coordinating, and establishing priorities for entire project lifecycle</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Bachelor&rsquo;s degree in IT or related field or equivalent experience</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Project Management Professional (PMP) certification</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Expert knowledge and demonstrated skills in building complex Web applications. AJAX expertise and familiarity with Web 2.0 methodologies</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">IT project management expertise covering front end user and back end application code and databases</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Experience using source code control, change management software packages and application security</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Technical knowledge of MS SQL Server, Visual Studio, .NET, Java, DB2, SQL, and web related technologies</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Advanced knowledge and experience generating use cases, test plans, and test scripts during requirements gathering, design, development and user test</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Skill is documenting requirement specifications through an industry approved software system</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Expertise in generating user manuals, training documents and conducting user training for senior management members and user groups</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Excellent written, verbal and presentation communication skills for liaison, technical guidance, project status updates, etc.</span></span></span></li>
+	<li><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Mastery knowledge and skills in applying advanced IT principles, concepts, methods, techniques and standards in the development of complex systems</span></span></span></li>
+	<li style="margin-bottom:13px"><span style="font-size:14px;"><span style="line-height:115%"><span style="font-family:Calibri,sans-serif">Technical experience in .NET, Java and other advanced web-based projects</span></span></span></li>
+</ul>
+</div>
+
+<p style="margin-bottom:11px">&nbsp;</p>
+<br />
+<br />
+<span style="font-size:14px;"><span new="" roman="" times="">Best Regards,</span></span>
+
+<p style="margin:0cm 0cm 0.0001pt"><span style="font-size:14px;"><span new="" roman="" times="">Samriti&nbsp;Guleria</span></span></p>
+
+<p style="margin:0cm 0cm 0.0001pt"><span style="font-size:14px;"><span new="" roman="" times="">samriti.g@iserveworld.com</span></span></p>
+<br />
+<br />
+&nbsp;
+<div id="EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="https://talenthirecls1.ceipal.com/users/unsubscribe/c40d4850013e8351091314c7b29c4e339dad30c8/8dcfd49f48eea8336ab128d3addf6c31f066cbde/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://clicks.mg.iserveworld.com/o/eJwVzEsOwiAQANDTyJLM0JHPgoUxeg3DZ7A0rRiIn-Nb3wFe9pYUWSOqV6AAECeFaMBKlAhgzgrd6UqEVl8OBNtd1sH9zZ_W1yxT28TsS5wIp1yOThdgHVzWjiyHoNJepyg6l1vN3gBZ0f3SBj_nsW9rfby-S4uR-7_6AUJNKR8"></body>
+</html>

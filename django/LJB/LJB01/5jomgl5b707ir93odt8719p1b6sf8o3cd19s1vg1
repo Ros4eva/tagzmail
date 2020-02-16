@@ -1,0 +1,360 @@
+Return-Path: <postmaster@notify.yochana.com>
+Received: from m38-32.mailgun.net (m38-32.mailgun.net [69.72.38.32])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 5jomgl5b707ir93odt8719p1b6sf8o3cd19s1vg1
+ for josephs@linuxjobber.com;
+ Thu, 06 Feb 2020 18:33:16 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notify.yochana.com designates 69.72.38.32 as permitted sender) client-ip=69.72.38.32; envelope-from=postmaster@notify.yochana.com; helo=m38-32.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notify.yochana.com designates 69.72.38.32 as permitted sender) client-ip=69.72.38.32; envelope-from=postmaster@notify.yochana.com; helo=m38-32.mailgun.net;
+ dkim=pass header.i=@notify.yochana.com;
+ dmarc=none header.from=yochana.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFRGFZQjhIODMyVWNCSitYaVZoYkNLYk9nbklSbytTcWdMMGZoRm5yVklJNGtOOHcxM1VBZ1Q1Q25xaE1VR1J0SktHbmxFYkJkbk0rMGpralZnRXRMUjNGc3dWYTZMVnBOVDVSWEErZy81TVNML2NKQkkrSVV6d1lKNHZzZUdlc3kzK1FBTVB0YmRmRkdzUlFkZXUvQlc2ZjhSRFNTbkYvUzNqNkY4cTU3NktaR1pOZHh5RzdlSGI1REtaVlh0Q1lTU05MOFVHQmtuYzNMTWlpRStraWRTWlpYbzdLTGphWTFwS1cyS0N2SDZCUllDOGtEMVdZN2tnSG56OWhoL3N6eHFNMXp0ZkRzZm9TQnJ5STBOUjRoUmowZjZVcVJwQmw4eFdTeW9HeTFMd2c9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Aed0Njr9Q54iyhcow03l2fTSdY84uUZtqLYq2RxerCHjTj1no0jK6UZsz2q7ASaKSprcrN9Bcr0F2MfkFk927L8X0dux3QOqgJYdx17+i4yz3JXiBlrQjAKrZUzu5tzFaEZYz1Szp0Et3aLJKHx7zW+G8i1OXKVZtVHVHE/0I+Y=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581014001; v=1; bh=OM5mwbDp09CsiucqZd4MCVQS1ySTbUfj5cbslYrH09s=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=notify.yochana.com; q=dns/txt;
+ s=pic; t=1581014000; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=QLqu4D5MaqeF9qCLXkqwc3QEWASvnYd52gF/gBFT0vE=; b=NLlcmurd5WlgmLtf52WA+OEmLS589t+aloqb4KWKTDGXvAFlpWUiG6FBo7Z/x+nXiF15GCGC
+ nE2K5JOi5Efzisbu438HhAJ82bosCYBCqHcfTS9WT6BeuWhV84Q/KWL47loBIonfrXO3/V2b
+ XVE35XfAmqwFi3QYI2+3B4MWNT4=
+X-Mailgun-Sending-Ip: 69.72.38.32
+X-Mailgun-Sid: WyI3OGZiMyIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI5Yjg5MWIiXQ==
+X-Mailgun-Batch-Id: 5e3c5bca0187ae52f4be756b
+Received: by luna.mailgun.net with HTTP; Thu, 06 Feb 2020 18:32:42 +0000
+Date: Thu, 06 Feb 2020 18:32:42 +0000
+Message-Id: <20200206183242.1.2374F2E51FBFBF12@notify.yochana.com>
+X-Mailgun-Native-Send: true
+Reply-To: indrasena@yochana.com
+To: josephs@linuxjobber.com
+From: Indrasena K <indrasena@yochana.com>
+Subject: Contract - Infrastructure Engineer - Windows & Linux,
+ Richmond,Michigan, Virginia
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Oorwin Email</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+        
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            /*table-layout: fixed !important;*/
+            margin: initial;
+        }
+        
+        table table table {
+            table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        
+        *[x-apple-data-detectors],
+        /* iOS */
+        
+        .x-gmail-data-detectors,
+        /* Gmail */
+        
+        .x-gmail-data-detectors *,
+        .aBn1 {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        img[Attributes Style] {
+            width: auto;
+        }
+
+
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head>
+
+<body style="background: #ffffff; min-width: 100%; max-width: 620px;">
+    <center>
+       <table cellspacing="0" cellpadding="0" border="0" align="center" style="width: 620px;">
+           <tr>
+                <td style="padding: 20px 0px">
+
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="margin: 0;">
+                        <tr>
+                            <td width="100%">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                        <tr>
+                                        <td style="padding: 0px 0px; font-family:calibri, Arial, Helvetica, sans-serif; font-size: 14px; color:#6f7477; line-height: 1; word-break: break-word">
+                                            <!--this comment line is required by mohan -->
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: auto;" width="100%">
+	<tbody>
+		<tr>
+			<td style="width: 100%; padding: 10px;">&nbsp;</td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>
+			<td style="width: 100%;" width="100%">
+			<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td style="background: rgba(46,204,113,1);" width="100%">
+						<table align="left" border="0" cellpadding="0" cellspacing="0">
+							<tbody>
+								<tr>
+									<td style="padding:10px 10px; font-family:calibri,Arial,Helvetica,sans-serif; color: #ffffff; font-size: 18px; text-transform: uppercase; font-weight: 400;" width="100%">Job Share</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 100%; background: #ffffff;" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody>
+								<tr>
+									<td style="width: 100%; padding: 15px 10px;" width="100%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td style="width: 120px" width="120"><img src="https://res.cloudinary.com/demo/image/fetch/w_100/https://oorwin-hcm.s3.ap-south-1.amazonaws.com/company_113/logo/YrFUifgroLO7fSIyxW4QJc71ESPwLirvMXlXrU7B.png" style="max-width: 100px;" width="100px" /></td>
+												<td style="width: 350px;" width="350">
+												<table border="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td style=" font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #000000; line-height: 18px;">Cloud Engineer &nbsp;- Windows &amp; Linux</td>
+														</tr>
+														<tr>
+															<td style=" font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #4d98b3; line-height: 18px;">Contractual | Michigan, Virginia</td>
+														</tr>
+														<tr>
+															<td style=" font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #4d98b3; line-height: 18px;">Posted on 02/06/2020</td>
+														</tr>
+														<tr>
+															<td style="width: 110px; padding-top: 10px; text-align: left;" width="110">
+															<table align="left" border="0" cellpadding="0" cellspacing="0" style="width: 110px;" width="110">
+																<tbody>
+																	<tr>
+																		<td align="left" bgcolor="#f0f3f6" style="width: 110px; background: #f0f3f6; border-radius: 4px; padding:5px 10px; text-align: center;" width="110"><a href="https://yochana.oorwin.com/careers/index.html#/job/4dc06907993b669b668879f0904352019da6e026?share=85" style=" font-family:calibri,Arial,Helvetica,sans-serif;font-size: 14px; text-transform: uppercase; font-weight: 400; text-decoration: none; white-space: nowrap;color:#000000;">APPLY NOW </a></td>
+																	</tr>
+																</tbody>
+															</table>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="width: 100% !important; padding: 10px 10px 0px;" width="100%">
+									<table border="0" cellpadding="0" cellspacing="0" style="width: 100% !important" width="100%">
+										<tbody>
+											<tr>
+												<td style="border: 1px solid #cfcfcf; border-right: 0px; background: #eaeaea; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #000000; padding:4px 10px;" valign="top" width="100">Job ID</td>
+												<td style="border-top: 1px solid #cfcfcf; border-right: 1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; border-left: 1px solid #cfcfcf; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #838282; padding:4px 10px" valign="top">OOJ - 9145</td>
+											</tr>
+											<tr>
+												<td style="border: 1px solid #cfcfcf; border-right: 0px; border-top: 0px; background: #eaeaea; padding:4px 10px; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #000000;" valign="top" width="100">Job Title</td>
+												<td style="border-right: 1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; border-left: 1px solid #cfcfcf; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #838282; padding:4px 10px" valign="top">Cloud Engineer &nbsp;- Windows &amp; Linux</td>
+											</tr>
+											<tr>
+												<td style="border: 1px solid #cfcfcf; border-right: 0px; border-top: 0px; background: #eaeaea; padding:4px 10px; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #000000;" valign="top" width="100">Location</td>
+												<td style="border-right: 1px solid #cfcfcf; border-bottom:1px solid #cfcfcf; border-left: 1px solid #cfcfcf; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 14px; color: #838282; padding:4px 10px" valign="top">Richmond, Michigan, Virginia USA</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="width: 100%; padding: 15px 10px;" width="100%">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td style="width: 100%; padding-bottom: 10px;" width="100%">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tbody>
+														<tr>
+															<td style="width: 100%; color: #000000; font-family:calibri,Arial,Helvetica,sans-serif; font-size: 18px; font-weight: bold; line-height: 30px;">Job Description</td>
+														</tr>
+														<tr>
+															<td style="width: 100%; color: #525252; font-size: 14px; font-family:calibri,Arial,Helvetica,sans-serif; line-height: 18px;" width="100%">
+															<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Cloud Engineer or Infrastructure Engineer &nbsp;- Windows &amp; Linux</b></span></span></p>
+
+															<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">-Infrastructure Engineer roles with 20 positions</span></span></p>
+
+															<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><b>Southfield, MI &amp; Richmond VA</b></span></span></p>
+
+															<p><font face="Calibri, sans-serif"><span style="font-size: 14.6667px;"><b>Atleast 3 yrs experience needed in either Linux engineer role or Windows administration</b></span></font></p>
+
+															<ul>
+																<li style="margin-left:8px"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Excellent technical knowledge of former and current Microsoft Windows enterprise desktop and server operating systems, including installation procedures, security tuning, troubleshooting and configuration management.</span></span></li>
+																<li style="margin-left:8px"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Excellent technical knowledge of network, security and storage infrastructure including: local area networks, wide area networks, wireless networking, VPN, firewalls, routers, switches, storage arrays, load balancers, WAN optimizers, endpoint security and encryption, proxy servers, digital certificates, hypervisors, data center management and cabling standards.</span></span></li>
+																<li style="margin-left:8px"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Knowledge of applications and platforms including: Microsoft Exchange, Microsoft Active Directory and Group Policy, Microsoft Office and Office 365, DNS servers, DHCP servers and Lightweight Directory Access Protocol.</span></span></li>
+																<li style="margin-left:8px"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Excellent troubleshooting abilities through the use of techniques and methods which will isolate and identify faulty components or configurations within a system so that services can be quickly restored to normal levels of operation</span></span></li>
+																<li style="margin-left:8px"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Ability to use Oracle database utilities and management tools.</span></span></li>
+																<li style="margin-left:8px"><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Knowledge of SQL and PL/SQL, UNIX commands, and shell programming.</span></span></li>
+															</ul>
+
+															<p>&nbsp;</p>
+
+															<p>&nbsp;</p>
+
+															<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Regards,</span></span></p>
+
+															<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif"><span style="color:#002060">Indrasena</span></span></span></p>
+
+															<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Yochana IT Solutions Inc.,</span></span></p>
+
+															<p><span style="font-size:11pt"><span style="font-family:Calibri,sans-serif">Desk:+1 248-537-0767 , Email:&nbsp;<a href="mailto:indrasena@yochana.com" style="color:#0563c1; text-decoration:underline"><span style="color:blue">indrasena@yochana.com</span></a></span></span></p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="width:100%; color: #6f7477; font-family:calibri, Arial, Helvetica, sans-serif; font-size: 12px; background-color: #fafafa; padding: 5px;" width="100%">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" valign="middle" width="100%">
+													<tbody>
+														<tr>
+															<td style="width: 90px; vertical-align: middle;"><img alt="logo" src="https://res.cloudinary.com/demo/image/fetch/w_100/https://oorwin-hcm.s3.ap-south-1.amazonaws.com/company_113/logo/YrFUifgroLO7fSIyxW4QJc71ESPwLirvMXlXrU7B.png" /></td>
+															<td style="color: #6f7477; font-family:calibri, Arial, Helvetica, sans-serif; font-size: 12px; padding-left: 10px; vertical-align: middle; word-break: break-word;">
+															<p>Yochana Challenges the Status Quo! We believe in taking a different approach to recruiting. We provide quality candidates to our clients at reasonable rates. We take pride in our process and have a passion for helping candidates land a new role and assisting clients in finding a perfect resource! We specialize in Direct Hire, Contract and Contract to Hire roles.</p>
+															</td>
+														</tr>
+														<tr>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>                                        </td>
+                                    </tr>
+                                                                       
+                                    <!-- <tr>
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; font-size: 11px; color:#6f7477; padding:10px 20px; border-top: 1px solid #6f7477;">
+                                            This emailer is addressed to and intended only for Beanhire customer and is not spam. You may reach out to Beanhire helpline to clarify any issues that you may have with regard to any information contained in this emailer. 
+                                            <br>Disclaimer: Beanhire won't be responsible for the accuracy, adequacy or completeness of any information in this emailer and is not responsible for any errors or omissions or for results obtained from the use of such information. Beanhire does not have any liability to any person on account of the use of information provided herein and the said information is provided on a best-effort basis
+                                        </td>
+                                    </tr>-->
+                                                                        <tr bgcolor="#484848">
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; width: 100%; font-size: 11px; color:#ffffff; text-align: center; padding: 10px;">
+                                            
+
+                                                                                                Copyright &copy; 2020 | Powered By   &nbsp;<a width="60" height="20" href="https://app.oorwin.com" title="Oorwin Labs Inc."> 
+
+                                                <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" title="Oorwin Labs Inc." style="max-width: 100%; vertical-align: middle;" height="20">
+
+                                                <!-- <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" style="max-width: 100%; vertical-align: middle;" height="20" /> --> </a>
+                                                                                                                                                      <br>
+                                                      To stop receiving these emails please <a style="color:#fff;" href="https://yochana.oorwin.com/unsubscribe.html?company_id=113&&message_id=59034&&to_email=josephs@linuxjobber.com">click here</a> to unsubscribe.
+                                                                                        </td>
+                                    </tr> 
+                                                                    </table>
+                            </td>                
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+       </table>
+    </center>
+<img width="1px" height="1px" alt="" src="http://email.notify.yochana.com/o/eJwVjEEOwiAUBU8jS8J_YMtfsDFp7wEIgUbBtJrY24uZ2c7cHQfLFER1UFDDiayGgSQJPZsVy5XW24BwMar1d82nPHssvnkZ-1MUF3yOYAvLM5QGG-akInycSCNnErvb-pFe5RiHR22f79ZDSPs__wGdnyVC"></body>
+
+</html>

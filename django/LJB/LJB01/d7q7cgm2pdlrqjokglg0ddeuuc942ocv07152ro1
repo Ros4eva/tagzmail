@@ -1,0 +1,259 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-156.mailgun.net (m71-156.mailgun.net [166.78.71.156])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id d7q7cgm2pdlrqjokglg0ddeuuc942ocv07152ro1
+ for josephs@linuxjobber.com;
+ Thu, 16 Jan 2020 16:35:20 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.156 as permitted sender) client-ip=166.78.71.156; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-156.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.156 as permitted sender) client-ip=166.78.71.156; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-156.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHUkpwdVBVN1A5cDltRndKYldFRWdNQWVsbEJUMFlnR0tzWjZZTFYrbkovNnZveEhycU1VL0JJKzhCYU1UVVU0dWp2OWlQZGFLK3diSjU4cVdZOWtFS3VLNlAvaWZDSnZFZmpQQm9IZllIbkFaaDRKVUR5T3p1bFhEZ1pzRE5zbnlsb2V6cnpsYkNjU1BIaGxubEtUYzcvMEtWZDNrazNwVmxBeVpjQ203Ky9rNXZ0Q2NsdHJvbkRqdjNJcEJzVkxoK2JtY1JBWlZWS3RGQ2pWUE5NbmpBSWcxbFU4MmtqTHkrelpkemhIYlhkMWovMU5naWFYakZLL0ZUMkRzWDgzR05ZTWZxREgxNkJXOENSYXMvb0hyZXhnMllKRmhYUjJ0S1FSdGwveXAxQ0w3MVFPRmFRWDJoSTArQ3dWTEtUOGxsR1hjWmxnWmZmell1R2Z5NDBMMWo=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=MW+v43YKWrcOP07gC0T9CKi71n0kw8ck1CqQR/LN1AeNpw3Ds70cCPddeExqvevn1GNSJ9MgXvCBokmpuN+CAnPW82fvJqIjtJVD0/JgHxS+cDeIpCUVnJ2qIj3InCUid4k9t+CchroCI3g/qtsdMVhkt61B1eLCFmdlFm8rWsQ=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579192521; v=1; bh=+Ns/VlDre8qW5uwlMwbqm7kADDUx921HtA86ZpfOnrs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1579192521; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=hJEnMkg55bCzxXVF/85BM5J74HkYSj7YWy/coU6DMqE=; b=Qvx6i7x072u5FfsbIdL3V7B9uBOUaTa5oUrdSIHMWXRANtirLq27h0ELy0adrIVQuHhASUyd
+ m34adYAIOa0Uj87huhWXy5YspiXocwSmHEUiLp+OLyXAjvm2E/biGi/9DjnJ8Ae2pTA7QUoa
+ grFaPUyJ9Ycs/wBXB2loHcIyjdk=
+X-Mailgun-Sending-Ip: 166.78.71.156
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e2090c66ac99668c4b38a3f
+Received: by luna.mailgun.net with HTTP; Thu, 16 Jan 2020 16:35:18 +0000
+Date: Thu, 16 Jan 2020 16:35:18 +0000
+Sender: piyushkumar@usgrpinc.com
+Message-Id: <20200116163518.1.A32F4966422FAE2B@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: piyushkumar@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Piyush Kumar <piyushkumar@usgrpinc.com>
+Subject: Full Time Employment || Cloud Engineer || Chicago, IL
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div id=3D"EditorSalutationID">Hi Joseph,</=
+div>
+
+<div><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f">Hope you are doing great!</span></span><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f">My name is Piyush Kumar and I am working as a Technical Recruiter with U=
+nited Software Group Inc. Please go through the below mentioned job descrip=
+tion and share you updated resume in case you feel interested.</span></span=
+></div>
+
+<div>
+<p class=3D"x"><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f"><b>Full Time Employment</b></span></span><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f"><b>Position : Cloud Engineer<br />
+Location: <span style=3D"color:black">Chicago, IL</span></b></span></span><=
+/p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><u><span style=3D"color:black">Required:</span></u></b> </span></s=
+pan></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Resources with hands on experience with configuring and mainta=
+ining resources on AWS</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Expertise in production deployments, and automation of cloud i=
+nfrastructure</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Operations background, demonstrating experience with monitorin=
+g and troubleshooting of AWS infrastructure and managed services</span></sp=
+an></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Hands-on experience with virtualized environments, including V=
+Ms, Docker Containers, and Kubernetes</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Experience with AWS Native services such as EC2, EKS, SQS/Kine=
+sis/SNS, RDS, DynamoDB, DocumentDB/Mongo, S3, and others.</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Familiarity with configuring and using ELK stack, as well as o=
+ther logging technologies within AWS such as CloudWatch and CloudTrail </sp=
+an></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Working experience with IAM</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">&bull; Working experience with Kubernetes tooling and technologies su=
+ch as Kubectl, Prometheus, Grafana, Fluentd</span></span></p>
+
+<p><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f"><span style=3D"color:#404040">With Regards,</span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b><span style=3D"font-size:12.0pt"><span style=3D"color:#404040">Piy=
+ush Kumar </span></span></b></span></span></p>
+
+<table class=3D"Table" style=3D"width:490.1pt; border-collapse:collapse; bo=
+rder:dotted #948a54 1.0pt" width=3D"653">
+	<tbody>
+		<tr style=3D"height:.3in">
+			<td style=3D"border:dotted #948a54 1.0pt; width:142.55pt; padding:.05in =
+=2E1in .05in .1in; height:.3in" width=3D"190">
+			<p align=3D"center" style=3D"text-align:center"><img height=3D"40" src=
+=3D"https://talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBj=
+QnYzSU5URUcyN28rUXVkUU5BcXIxalJKR2YydnkvNnFMMHltQjY3cDlxQWplVFUvcTNpSldINTU=
+1Y2ZTZ1U5YmxreEZwSFVzNENJK0VhckdyVDNUM2MzbVBMNGJRRERlNWhXRFhSWiswbXV6NTRTTD=
+RxY3A5YS90ZlpxYkNZa3JBPT0=3D" width=3D"75" /></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"col=
+or:#404040">United Software Group, Inc.</span></b></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><span style=3D"font-s=
+ize:7.0pt"><span style=3D"color:#404040">End-to-End IT Systems | Services |=
+ Solutions Provider</span></span></span></span></p>
+
+			<p align=3D"center" style=3D"text-align:center"><span style=3D"font-size=
+:11pt"><span style=3D"font-family:Calibri,sans-serif"><b><span style=3D"fon=
+t-size:9.0pt"><span style=3D"color:#f79646">A Minority Business Enterprise<=
+/span></span></b></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:107.6pt; border-left:non=
+e; padding:.05in .1in .05in .1in; height:.3in" width=3D"143">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">565=
+, Metro Place South,</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Sui=
+te # 110,</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Dub=
+lin, OH 43017</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><a href=3D"http://www.usgrpinc.com/" style=3D"color:#0563c1; text-=
+decoration:underline"><span style=3D"font-size:10.0pt">www.usgrpinc.com</sp=
+an></a></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:159.75pt; border-left:no=
+ne; padding:.05in .1in .05in .1in; height:.3in" width=3D"213">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Pho=
+ne: 614-495-9222 Ext.489</span></span></span></span></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Fax=
+:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 866-764-1148</span></span></span></span></=
+p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><span style=3D"font-size:10.0pt"><span style=3D"color:#404040">Ema=
+il:&nbsp; </span></span><a href=3D"mailto:piyushkumar@usgrpinc.com" style=
+=3D"color:#0563c1; text-decoration:underline"><span style=3D"font-size:10.0=
+pt">piyushkumar@usgrpinc.com</span></a></span></span></p>
+			</td>
+			<td style=3D"border:dotted #948a54 1.0pt; width:80.2pt; border-left:none=
+; padding:0in 0in 0in 0in; height:.3in" valign=3D"top" width=3D"107">
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif">&nbsp;&nbsp; &nbsp;</span></span><img height=3D"90" src=3D"https:/=
+/talenthirecls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUc=
+yN28rUXVkUU5BcXIxZ2ZXWFFHbTUxVUtZMUNnYStFN0g5ZDBvVU1RTVZQMExuT0lBU3FneWgzTn=
+Z4d0p6QmsvRWxPaWR2dEQ0RFBmQktNOUZ5VFcvZnluVnFTdHovZ2Q2dHZ2V1poZ1kwVldCZWZvc=
+S9JNnlKRVpWeDRQN2FsTmQwc04zV0VsR0crd29nPQ=3D=3D" width=3D"90" /></p>
+
+			<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,san=
+s-serif"><b><span style=3D"font-size:8.0pt"><span style=3D"color:#e36c0a">&=
+nbsp;&nbsp;&nbsp; 2016 - 2017 - 2018</span></span></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b>&nbsp;</b></span></span><img height=3D"38" src=3D"https://talenthi=
+recls3.ceipal.com/articles/Nzl6em50bXhIK2lFWU9GM2MvNVBjQnYzSU5URUcyN28rUXVk=
+UU5BcXIxaXh0VkdEaC9PN2NBTytLYmJaZFlJUjg4aWxHNGVFSHoxelZPdUVhekhuSGtzNXJyNlc=
+3clMzMnR4R1RlQ1QzQlhvbXNlR2VZcUFGTkYwaWRaNHVMc05ML25rMWFXdkNtSHhTYWNPbXlkbz=
+F1ajBBODlaaHFuOVJVVGRIT3c2cDJVPQ=3D=3D" width=3D"168" /><br />
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f"><span style=3D"font-size:8.0pt"><span style=3D"background:white"><span s=
+tyle=3D"color:#4a442a">To unsubscribe from this mailing, please reply to th=
+is email with the word&nbsp;<b>UNSUBSCRIBE</b>&nbsp;in the subject line, or=
+ click here&nbsp;</span></span></span><a href=3D"mailto:techsupport@usgrpin=
+c.com?subject=3DUNSUBSCRIBE" style=3D"color:#0563c1; text-decoration:underl=
+ine" target=3D"_blank"><span style=3D"font-size:8.0pt"><span style=3D"backg=
+round:white"><span style=3D"color:#1f497d">UNSUBSCRIBE</span></span></span>=
+</a><span style=3D"font-size:8.0pt"><span style=3D"background:white"><span =
+style=3D"color:#4a442a">.</span></span></span><br />
+<b><span style=3D"font-size:8.0pt"><span style=3D"color:#4a442a">USG is an =
+Equal Opportunity Employer. Qualified applicants will receive consideration=
+ for employment without regard to race, color, religion, gender, age, disab=
+ility, military status, national origin or any other characteristic protect=
+ed under federal, state, or applicable local law.</span></span></b> </span>=
+</span></p>
+
+<p>&nbsp;</p>
+</div>
+
+<div id=3D"EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id=3D"EditorMessageBodyID">&nbsp;</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/41347601=
+43777c7330b32eda67c5a50338c65ee5/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D/" style=3D"color:#0077c5; text-decoration:underline"><=
+b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEsKwyAQANDT1KXMjN9ZuEihuUaJ0TSGNgYl0OM3XT94KWCGCUCUQEAAiBatMuglykHR=
+qNlaTTQOD7rfNJz91Y6yz3KuH7EGTs7mOClU4JnYOfDaMbM3YIxdkmh5eZYU6HLRwlZ7PtZ-Pe-=
+yn9-txpjbv_oBIMEl2w"></body>
+</html>

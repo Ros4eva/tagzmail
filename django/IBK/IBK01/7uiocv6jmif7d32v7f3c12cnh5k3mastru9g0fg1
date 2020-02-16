@@ -1,0 +1,240 @@
+Return-Path: <bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com>
+Received: from a4.mail.joinhandshake.com (a4.mail.joinhandshake.com [192.237.159.133])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 7uiocv6jmif7d32v7f3c12cnh5k3mastru9g0fg1
+ for jeff.adekunbi@ideabakr.org;
+ Mon, 13 Jan 2020 15:19:47 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.133 as permitted sender) client-ip=192.237.159.133; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a4.mail.joinhandshake.com;
+ dkim=pass header.i=@mail.joinhandshake.com;
+ dmarc=pass header.from=mail.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGNDlzRE1zdjFHWS9iSzZXUklnTnRXekt3KytqZGxGcVgvQUhSV2pIM2pnWWRZbTZSQmNGOXZLQXc2YWNra1ZRNnhWUkJ0NTM2c3hYUUpOVVRZSEdMMndJYXdKb0FUQi9rOWMwaFFjSnJ0VEkrUGMxOUNPRWEvV3U4aFZqc2plMEIxNUlDcVFVVkFQQjIyeDZ5akZDSFFmN1VqRFRnUHhTcWt1RUYyZGZRSUpuNVU2bDZxb2pBenNXTkwxNG5LU04wU3QzY0c1YkVVMC9KVEZUNkNFM0FTUzJYdGxmTzdRVVo3Rks5NFU0c3RtRVBuTmtUWGIyUWN6djV1dXpJSDV5cmR2SW9vQy9uMWhsUWQ5QkRUL2JrRmJJSGxDVVZNQUJZN1psYUgzeUlDVUlVTlM4STRZVlloK0FDeFVBOVgvc05oYVJVREF5a3ZrZ3ZONnBHTDhNbGdMUU9ScGFzZ1puRXM0eEJ5RjRBc1B3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=Izw5TrcG9jGitmjP9WAXp6+0I8MfWNiQ+UDbdIS1qQGp+wjpdVVy8c2Zvri1JXVNwSgG6zp1CCvyWtJBYN36OYDHRzjJeK+HEXum0Kti6Mt3/6HJfsDEpfo1RnYsS0655Ey+A9DSpdeHKL6hWNazZLg1YTwBZ+E4NYSUkZYe1AI=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578928792; v=1; bh=zvqs/Ht395xBG+JdkFEBy5i6J4UAjS+0dzx77Dc+mmo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1578928791; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe;
+ bh=fbJ2t/0xf6LZ+Gf5vl2rX6l5ddyowbvlS12eZu4r9/I=; b=RdOknEunBs8aPo5Z40cciSSO7K8jF6UZWVZDAxQ6ZWObzpX0BJLF/kh4RSCm1xAuuYCpbflT
+ 1iIAEfsEhXceanr9W5JYdskSFApTz6jbwaZ5GKnsub7TLkgGJEn8gn13NF9LzE2myz0ptHgX
+ QrohFHY/jdJLd2/lmHz1+14EP/Q=
+X-Mailgun-Sending-Ip: 192.237.159.133
+X-Mailgun-Sid: WyIyNGNhOCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICI4OGNiOCJd
+List-Unsubscribe: <mailto:u+mq6tqoddmi4cm2j5giydembqgeytgmjvga3danzogexeembsgi4tcmztiu4tanzrgrdemjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihu4tqojqmvrtinbtga4dizrrmfstay3bgu4domjwgvtdqmldmrtdejtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6tknbqfvjwg2dpn5wcm2dbnzshg2dbnnsv63lbonzv6zlnmfuwyx3jmq6tkmbtguzda@mail.joinhandshake.com>
+X-Mailgun-Batch-Id: 5e1c875f0102231acb587196
+Received: by luna.mailgun.net with HTTP; Mon, 13 Jan 2020 15:06:07 +0000
+Date: Mon, 13 Jan 2020 15:06:07 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20200113150607.1.B0229133E90714FF@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "503520"}
+Reply-To: handshake@mail.joinhandshake.com
+X-Mailgun-Tag: 540-School
+To: jeff.adekunbi@ideabakr.org
+From: Handshake via joinhandshake.com <handshake@mail.joinhandshake.com>
+Subject: Reminder! Booths Available UAPB 2020 Spring Career Fair
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="987f189d1a444cd3aa81868464709280"
+
+--987f189d1a444cd3aa81868464709280
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+University of Arkansas at Pine Bluff
+Dear Recruiter:=C2=A0It's not too late!! If  you are currently seeking amaz=
+ing students to make a difference at your company or graduate school. We wo=
+uld like to invite you to our upcoming Spring Career and Networking Expo wh=
+ere you can meet those candidates face to face. This event will be held on =
+Wednesday, February 26th from 9:00 a.m. =E2=80=93 1:00 p.m.=C2=A0 at the Pi=
+ne Bluff Convention Center, One Convention Center Drive, Pine Bluff, Arkans=
+as, 71601.=C2=A0 =EF=BB=BF=C2=A0We still have booths available and we do no=
+t want you to miss it.This is your special invitation to kick-off your recr=
+uitment efforts and to diversity your company by coming to the University o=
+f Arkansas at Pine Bluff (UAPB).  UAPB is the second oldest public institut=
+ion in Arkansas and the oldest institution with a black heritage.Our top ma=
+jors to recruit but not limited to are:STEM - 90% Retention RateBusiness - =
+Accounting, Management, Finance & MarketingAgriculture - New majors added t=
+o School of Agriculture, Fisheries and Human Sciences (Agricultural Enginee=
+ring and Hospitality and Tourism Management).=EF=BB=BFJoin us on Wednesday,=
+ February 26 for the UAPB/SEARK College 2020 Career & Networking Expo. Belo=
+w is the tentative schedule:8:00 a.m. - 8:45 a.m. =C2=A0 =C2=A0 Registratio=
+n and set-up9:00 a.m. - 1:00 p.m. =C2=A0 =C2=A0 UAPB/SEARK College 2020 Car=
+eer & Networking Expo12:00 p.m. - 2:00 p.m. =C2=A0 Lunch=EF=BB=BFTo partici=
+pate in this remarkable opportunity, please use our Handshake portal to com=
+plete your registration by accessing the link below.https://app.joinhandsha=
+ke.com/career_fairs/13908/employer_previewh
+
+
+
+
+
+
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+University of Arkansas at Pine Bluff
+
+If you do not want to receive these emails, you can
+unsubscribe
+from emails from
+University of Arkansas at Pine Bluff
+
+If you do not want to receive any mass emails from Handshake, you can
+unsubscribe
+from all Handshake emails
+
+P.O. Box 40770, San Francisco, CA 94140
+--987f189d1a444cd3aa81868464709280
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<title>Handshake</title>
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+=2Eprimary-button a:hover{color:inherit}
+=2Eoutline-button a:hover{color:inherit}
+=2Ebutton a:hover{color:inherit}
+=2Eprimary-button a:active{color:inherit}
+=2Eoutline-button a:active{color:inherit}
+=2Ebutton a:active{color:inherit}
+=2Eprimary-button:hover{color:#fff;backgr=
+ound-color:#ff6860;border-color:1px =
+solid #ff6860}
+=2Eprimary-button:active{color:#fff;backg=
+round-color:#e21d17;border-color:1px=
+ solid #ff6860}
+=2Eoutline-button:hover{color:#ff6860;border-color:#ff6860}
+=2Eoutline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+@media (max-width: 767px) {
+=2Eavatar--mobile-md{max-width:56px}
+}</style></head>
+</html><html><body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-sy=
+stem, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neu=
+e&quot;, sans-serif;color:#231f20;font-size:16px;line-height:20px;-webkit-p=
+rint-color-adjust:exact">
+<div class=3D"email-content" style=3D"width: 800px; margin: 0 auto;">
+<div class=3D"tile" style=3D"position:relative;margin-bottom:12px;padding:6=
+px;border:1px solid #e6e6e6;background-color:#fff;border-radius:3px;box-sha=
+dow:0 0 4px 1px rgba(0,0,0,0.05),2px 2px 2px 1px rgba(0,0,0,0.05);padding-r=
+ight:6px;padding: 8px;">
+<div>
+<div class=3D"mass-email-body">
+<img src=3D"https://s3.amazonaws.com/handshake.production/app/public/assets=
+/schools/540/original/hs-school-logo-data.?1509989249" alt=3D"logo" width=
+=3D"50" height=3D"50">
+<h1 class=3D"no-margin-top margin-left" style=3D"font-weight:700;word-break=
+:break-word;font-size:46px;line-height:52px;display: inline;">University of=
+ Arkansas at Pine Bluff</h1>
+<p class=3D"margin-top" style=3D"font-size:18px;line-height:28px"></p>
+<p class=3D"wysiwyg-text-align-left" style=3D"font-size:18px;line-height:28=
+px;text-align:left !important">Dear Recruiter:</p>
+<p style=3D"font-size:18px;line-height:28px"></p>
+<div><p style=3D"font-size:18px;line-height:28px">&nbsp;It's not too late!!=
+ If  you are currently seeking amazing students to make a difference at you=
+r company or graduate school. We would like to invite you to our upcoming S=
+pring Career and Networking Expo where you can meet those candidates face t=
+o face. This event will be held on Wednesday, February 26th from 9:00 a.m. =
+=E2=80=93 1:00 p.m.&nbsp; at the Pine Bluff Convention Center, One Conventi=
+on Center Drive, Pine Bluff, Arkansas, 71601.&nbsp; =EF=BB=BF&nbsp;We still=
+ have booths available and we do not want you to miss it.<br></p></div>
+<p style=3D"font-size:18px;line-height:28px">This is your special invitatio=
+n to kick-off your recruitment efforts and to diversity your company by com=
+ing to the University of Arkansas at Pine Bluff (UAPB).  UAPB is the second=
+ oldest public institution in Arkansas and the oldest institution with a bl=
+ack heritage.</p>
+<p style=3D"font-size:18px;line-height:28px">Our top majors to recruit but =
+not limited to are:</p>
+<p style=3D"font-size:18px;line-height:28px"><b>STEM</b> - 90% Retention Ra=
+te</p>
+<p style=3D"font-size:18px;line-height:28px"><b>Business</b> - Accounting, =
+Management, Finance &amp; Marketing</p>
+<p style=3D"font-size:18px;line-height:28px"><b>Agriculture</b> - New major=
+s added to School of Agriculture, Fisheries and Human Sciences (Agricultura=
+l Engineering and Hospitality and Tourism Management).</p>
+<p style=3D"font-size:18px;line-height:28px"><b><br></b></p>
+<p style=3D"font-size:18px;line-height:28px"><b>=EF=BB=BFJoin us on Wednesd=
+ay, February 26 </b>for the UAPB/SEARK College 2020 Career &amp; Networking=
+ Expo. Below is the tentative schedule:</p>
+<p class=3D"wysiwyg-text-align-center" style=3D"font-size:18px;line-height:=
+28px;text-align:center !important">8:00 a.m. - 8:45 a.m. &nbsp; &nbsp; Regi=
+stration and set-up</p>
+<p class=3D"wysiwyg-text-align-center" style=3D"font-size:18px;line-height:=
+28px;text-align:center !important">9:00 a.m. - 1:00 p.m. &nbsp; &nbsp; UAPB=
+/SEARK College 2020 Career &amp; Networking Expo</p>
+<p class=3D"wysiwyg-text-align-center" style=3D"font-size:18px;line-height:=
+28px;text-align:center !important">12:00 p.m. - 2:00 p.m. &nbsp; Lunch</p>
+<blockquote style=3D"margin:8px 0;background-color:#f7f7f7;border-radius:3p=
+x;padding:24px;margin-right:0px;"><p class=3D"wysiwyg-text-align-left" styl=
+e=3D"font-size:18px;line-height:28px;text-align:left !important">=EF=BB=BFT=
+o participate in this remarkable opportunity, please use our Handshake port=
+al to complete your registration by accessing the link below.</p></blockquo=
+te>
+<p class=3D"wysiwyg-text-align-left" style=3D"font-size:18px;line-height:28=
+px;text-align:left !important"><a href=3D"http://email.mail.joinhandshake.c=
+om/c/eJxlkEtuxCAMhk-T7BoZyGsWWUzV5gI9ADLgTJgJEAFp1duXmT42lSxZ_n7Z_m0zjaNWY2=
+0nDhyAMcE66GFoWPMMnJ-YEK8nGFg7z1ULDu3WXIP1K3qTVrxRo4Or14kbMga0aLvWQM_E0g2ke=
+uyNWQalWlVv05rznipxrvhcAvf9_6DCNUaiKBe0MZWSiROMJZPbt_BZhD3Su6WPSsxHdjKFI2qq=
+xIvDlOTdHcWK93fJkbGHKxLd8Q_UwWfyudAORMfhF6Pb0V584Ye3MmO8UCYjH62pjtOVlqVBQ7f=
+DK1v-YA2hwltsQrzUeepaeHrTawhb_XePfFh6TJDWTN_7vgCJ4nkA" target=3D"_blank" st=
+yle=3D"color:#254fa5;font-weight:inherit">https://app.joinhandshake.com/car=
+eer_fairs/13908/employer_preview</a></p>
+<p class=3D"wysiwyg-text-align-right" style=3D"font-size:18px;line-height:2=
+8px;text-align:right !important"></p>
+<p class=3D"wysiwyg-text-align-left" style=3D"font-size:18px;line-height:28=
+px;text-align:left !important"><br></p>
+<p class=3D"wysiwyg-text-align-left" style=3D"font-size:18px;line-height:28=
+px;text-align:left !important"></p>
+<p class=3D"wysiwyg-text-align-right" style=3D"font-size:18px;line-height:2=
+8px;text-align:right !important">h</p>
+<p class=3D"wysiwyg-text-align-left" style=3D"font-size:18px;line-height:28=
+px;text-align:left !important"><br></p>
+
+</div>
+</div>
+
+<div class=3D"mass-email-footer">
+<p class=3D"text-muted" style=3D"font-size:18px;line-height:28px;color:#7a7=
+a7a;font-size:11px;margin:2px;text-align:center">
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+University of Arkansas at Pine Bluff
+<br>
+If you do not want to receive these emails, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9zUsOwiAQANDTyE4yw6eFBR=
+sTewEP0ExhEPojafX-6sYLvJeCc3FyogYFCgBRo4UOeonyBkp51PruoUczDBcDG9VVzq3uhfZ0F=
+lpYxraJErzzwNEYDc5kJIZI1vXY2ewwpqzEEWbOWVLi5b1P9WvVxDTRcsh2PMUrWAPXRyytreKP=
+jxud58i_dawpWNBWwQeVYjYY" style=3D"color:#254fa5;font-weight:inherit">unsub=
+scribe</a>
+from emails from
+University of Arkansas at Pine Bluff
+<br>
+If you do not want to receive any mass emails from Handshake, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9zUEOgyAQQNHTyJLMDKCwYN=
+Em9RoGnKGiVRNt71-76f7nfY7ej9mrGgkIANGggxY6jfoORAGNeQTo0PZ9Y2FN9aXnvW5T2vic0=
+iJ63Fc1xTG7EMR7zFyK7SyypCBSAjnD3Fp1xFlK0Yll-Wy5Xla9kpyWQ-_HU71jQzf1V4c1necg=
+v91QOTowjuALa3M0Vg" style=3D"color:#254fa5;font-weight:inherit">unsubscribe=
+</a>
+from all Handshake emails
+<br>
+P.O. Box 40770, San Francisco, CA 94140
+</p>
+</div>
+
+
+</div>
+</div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mail.joinhan=
+dshake.com/o/eJw9zUsOwiAQANDTyE4yw6eFBRsTewEP0ExhEPojafX-6sYLvJeCc3FyogYFCg=
+BRo4UOeonyBkp51PruoUczDBcDG9VVzq3uhfZ0FlpYxraJErzzwNEYDc5kJIZI1vXY2ewwpqzEE=
+WbOWVLi5b1P9WvVxDTRcsh2PMUrWAPXRyytreKPjxud58i_dawpWNBWwQeVYjYY"></body></h=
+tml>
+
+--987f189d1a444cd3aa81868464709280--

@@ -1,0 +1,483 @@
+Return-Path: <30d7249c.AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QBeJYu2@bnc3.mailjet.com>
+Received: from o47.p25.mailjet.com (o47.p25.mailjet.com [185.189.236.47])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id e4bm3dc5gm0s5rus4dkhe26qh1kjktolpnumsk01
+ for ademolaa@linuxjobber.com;
+ Mon, 20 Jan 2020 11:15:04 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of bnc3.mailjet.com designates 185.189.236.47 as permitted sender) client-ip=185.189.236.47; envelope-from=30d7249c.AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QBeJYu2@bnc3.mailjet.com; helo=o47.p25.mailjet.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of bnc3.mailjet.com designates 185.189.236.47 as permitted sender) client-ip=185.189.236.47; envelope-from=30d7249c.AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QBeJYu2@bnc3.mailjet.com; helo=o47.p25.mailjet.com;
+ dkim=pass header.i=@getprospect.io;
+ dmarc=pass header.from=getprospect.io;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHMzlOMmlwNk5oN0RNYitZcG1nNmxoK1QzZWNZRUZEU0lOazU0WUc3U0RqckxodVhlYjNZZk9IL1lBVVVsOFY0WUh4VmsyU2dwb3loY3BUQzBsUFRvb2E5TU1QU0RvZW9sNTZTSllPY3BSTVdsTWtJMnFrZzZCTk9qbWU1a0V1K1RMYWtHWlFxa2FFL2s5WGZxM1FCSGduYVVkbXZoT2gvdFZpZjhRV3g4RXVtdXloTG44bnFLcGh0VHRPL0JDSUN3Wm5yeXBUdEJsSjJ6ZUdNYUpNeGd3ZEdJMTU5ZXcwZGl2NjFvekFpVEhLQS92WldSdVNMMW1OSWs0a0hsQTc3Q1JXOGZxdldmU01aZEpJNUdQS3dEMG9sK2JFRWY2cTVrRWJHWVpHQXdSbU02VkZJNy9XMDNDd2puVzZCSE1zQlJ6S1FrMXkwR1pIZ1Y1NlJiZEp1bndlNjdzMXUzUEdxWWRPYlpuSGZKSEV0dmJ0UUhhYjNvV0ZnMGJHdWV4b1ZVPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=enrf594+jO+rwckI4a9Q6QHBBPbgvcBiwR410fmZCGVRa1JvTwbm+HsEg30ne6QxHJ6NyxhBD6m+zAn5zYEwfjn7gWJfwr/RHT+vSReoQdkCLXlRKNaF07iSeuq3wYzVjCqt4aPVVUu4HPZzPYhBlrohqEiQ4IhLU9pUp591/3c=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579518905; v=1; bh=oXcNIzpwL43T1Z/Jm+GgikXnSXe3EHOS6sQe5t/MMDo=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; q=dns/txt;
+  d=getprospect.io; i=dima@getprospect.io; s=mailjet;
+  h=message-id:mime-version:from:reply-to:to:subject:date:list-id:list-unsubscribe:
+  list-unsubscribe-post:precedence:x-campaignid:x-csa-complaints:x-mj-mid:
+  x-mj-smtpguid:x-report-abuse-to:feedback-id:content-type;
+  bh=oXcNIzpwL43T1Z/Jm+GgikXnSXe3EHOS6sQe5t/MMDo=;
+  b=akWrL23d7gYriVsQtD56mAnsCoCjvCTzYIDyjQ+5qsXi937x+FUlBFdCe
+ a+1v0p7UuCfcA5kwdKa2UEI4H9IX+/Il1Y+KikcA+LLJql+ARJcJBOhT6kGx
+ 9t5aH5PMaYJr1T0lNFpGh/FZzy+oeVaPcpCEvYhoGWiyM1CeyiM2mI=
+Message-Id: <30d7249c.AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QBeJYu2@mailjet.com>
+MIME-Version: 1.0
+From: Dima at GetProspect <dima@getprospect.io>
+Reply-To: alona@getprospect-0776989dc08c.intercom-mail.com
+To: ademolaa@linuxjobber.com
+Subject: New features, plans and pricing
+Date: Mon, 20 Jan 2020 11:15:02 +0000 (UTC)
+List-Id: <dima.getprospect.io.x17ku-5oq4l.mj>
+List-Unsubscribe:
+	<mailto:unsub-30d7249c.x17ku.sxti4951t71j@bnc3.mailjet.com>,
+	<https://x17ku.mjt.lu/unsub2?m=AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QBeJYu2O-NONO5ZQhqj33lnc_OObwAOOkU&b=30d7249c&e=f6ac5761&x=pBwWsA15QY6HcFQ7Mrr3_0HCZliTICM7kLhjIapytCA>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Precedence: bulk
+X-CampaignID: 7654756016
+X-CSA-Complaints: whitelist-complaints@eco.de
+X-MJ-Mid:
+	AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QBeJYu2O-NONO5ZQhqj33lnc_OObwAOOkU
+X-MJ-SMTPGUID: 3be34e34-ee59-421a-a3df-796773f38e6f
+X-REPORT-ABUSE-TO: Message sent by Mailjet please report to
+	abuse@mailjet.com with a copy of the message
+Feedback-Id: 932421.942073:MJ
+Content-Type: multipart/alternative; boundary="=-PXrOoYiwR92IVMR96iSd"
+
+--=-PXrOoYiwR92IVMR96iSd
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+GetProspect [https://getprospect.io/public/img/logo.png]
+ Happy 2020, Ademola! We wish you a successful year ahead, bringing you new=
+ customers, successful sales and luck in all your achievements.
+
+At the end of the previous year, our team made a lot of improvements to Get=
+Prospect, and this is just a beginning. Let=E2=80=99s remember of the some =
+of the most useful features we=E2=80=99ve added:
+
+ * new field "Lead city" in our =E2=80=9CSearch by filter=E2=80=9D;
+ * speeding up the search to find more leads with a new search engine;
+ * spinning icon while processing the search to let you know when email sea=
+rch is finished and you can export your results;
+ * the leads added from plugin appear in the list right after you added the=
+m without reloading the page;
+ * the enhanced email verification process now validates the emails even mo=
+re accurately;
+ * folders to group your lists.
+
+
+The Next Steps for GetProspect
+
+Starting a new decade means new opportunities, so in 2020 we have great pla=
+ns we want to bring to life.=20
+We=E2=80=99re doubling down on our mission to provide quality, accurate and=
+ convenient services with upcoming new features:
+
+
+
+=F0=9F=93=AC Lead profile update
+
+
+The data of the already saved lead will be auto-updated in case of some cha=
+nges (ex. if they switch job places or email becomes invalid). Frequency of=
+ updates will depend on how popular this profile is on LinkedIn. Also, you=
+=E2=80=99ll have the ability to refresh info of lead already added with Get=
+Prospect plugin.=20
+
+
+
+=F0=9F=94=8E Live search=20
+
+
+See lead search results instantly as you set search filters, and preview th=
+em before saving.
+
+
+
+=F0=9F=91=A5 CRM for already added leads=20
+
+
+You=E2=80=99ll have a powerful tool to filter already added leads by any fi=
+lters (ex. by country, email status, position, etc). You=E2=80=99ll be able=
+ to save your custom segments and reuse them in future.=20
+
+
+
+=F0=9F=93=9D Custom fields=20
+
+
+You=E2=80=99ll be able to add custom fields to lead info, then import and e=
+xport them.
+
+
+
+=F0=9F=92=BC Lead data enrichment=20
+
+
+Import your lead data and let us enrich it with data from our database (suc=
+h as LinkedIn profile URL, location, company info, email, etc.)
+
+
+
+=F0=9F=93=A9 Sending personalized emails at the right time.=20
+
+
+Create email campaigns and automate sending with email a sequence. Track de=
+liverability, open rate and other metrics.=20
+
+
+
+We=E2=80=99re going to make this year a year of hard teamwork! =F0=9F=A4=9D
+
+If you have any feature suggestions or want to vote for new features, visit=
+ our new feedback portal - https://feedback.getprospect.io [https://feedbac=
+k.getprospect.io]
+
+=E2=80=A2 =E2=80=A2 =E2=80=A2
+
+New Pricing
+
+For those who use only verified emails, we added a new option on the subscr=
+iption page: you=E2=80=99ll get two times less credits, but you will find o=
+nly verified emails and charged for them.=20
+On a less exciting note, we have decided to increase our prices moving forw=
+ard. However, we also added Yearly subscriptions, so you can be billed annu=
+ally for 12 months and you will not be impacted by this change.=20
+We simplified subscriptions, so there will be no Silver and Enterprise plan=
+ now.=20
+Our new pricing is as follows and will take effect from January, the 24th a=
+t 8:00 AM PST:
+
+ * 1,000 discovered emails for $49/month
+ * 5,000 discovered emails for $99/month
+ * 20,000 discovered emails for $199/month
+ * 50,000 discovered emails for $399/month=20
+
+Such pricing change is required to boost the growth of our platform and imp=
+lement significant product changes. We hope that our loyal customers won=E2=
+=80=99t be affected as they can pay anually 1 year upfront with old prices =
+before Jan 24. After this date, all upgrades and renewals will be done acco=
+rding to the new pricing.
+
+Upgrade for 1 year with old prices [https://getprospect.io/app/settings/sub=
+scription]
+ If you have any questions or concerns, please let us know! We would love t=
+o hear your feedback and your thoughts on how we could improve our product.=
+=20
+
+Best regards,
+Dima, Head of GetProspect=20
+
+
+
+
+
+Don't want to get emails like this? Unsubscribe from our emails http://x17k=
+u.mjt.lu/unsub2?hl=3Den&m=3DAMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QB=
+eJYu2O-NONO5ZQhqj33lnc_OObwAOOkU&b=3D30d7249c&e=3Df6ac5761&x=3DpBwWsA15QY6H=
+cFQ7Mrr3_0HCZliTICM7kLhjIapytCA=
+
+--=-PXrOoYiwR92IVMR96iSd
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+  <meta content=3D"text/html; charset=3DUTF-8" http-equiv=3D"Content-Type">
+  <meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewp=
+ort">
+  <style type=3D"text/css" media=3D"screen">
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
+    #body-table {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+    }
+
+    .outlink:hover {
+      color: #2c3e67 !important
+    }
+
+    a {
+      color: #1970cd
+    }
+
+    a:hover {
+      text-decoration: underline
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", san=
+s-serif;
+      font-weight: 400;
+      line-height: 1.2em;
+      color: #333;
+    }
+
+    img {
+      border: 0 none;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      a[href^=3D"tel"] {
+        text-decoration: none;
+        color: blue;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      a[href^=3D"sms"] {
+        text-decoration: none;
+        color: blue;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .mobile_link a[href^=3D"tel"] {
+        text-decoration: default;
+        color: orange !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+
+      .mobile_link a[href^=3D"sms"] {
+        text-decoration: default;
+        color: orange !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width:=
+ 1024px) {
+      a[href^=3D"tel"] {
+        text-decoration: none;
+        color: blue;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      a[href^=3D"sms"] {
+        text-decoration: none;
+        color: blue;
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+
+    @media (min-width: 480px) {
+      .feature-text {
+        font-size: 18px;
+      }
+    }
+
+  </style>
+</head>
+<body
+  style=3D"color: #333; font-family: 'Helvetica Neue', Helvetica, Arial, 'L=
+ucida Grande', sans-serif; font-weight: 400; font-size: 15px; line-height: =
+1.2em; margin: 0; padding: 0">
+<div id=3D"wrapper" style=3D"background: #ffffff">
+  <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+    <tr width=3D"100%">
+      <td align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" style=3D"back=
+ground:#ffffff">
+        <table width=3D"" cellspacing=3D"0" cellpadding=3D"0">
+          <tr>
+            <td height=3D"40" colspan=3D"3"></td>
+          </tr>
+          <tr>
+            <td width=3D"20" style=3D"width: 20px"></td>
+            <td width=3D"" style=3D"max-width: 660px" align=3D"left">
+
+             =20
+                <div class=3D"header">
+                  <img src=3D"https://getprospect.io/public/img/logo.png" w=
+idth=3D"64" height=3D"64"
+                       style=3D"border:0;border-width:0; image-rendering: -=
+webkit-optimize-contrast; margin-bottom: 24px"
+                       alt=3D"GetProspect" title=3D"GetProspect"/>
+                </div>
+             =20
+
+             =20
+<p>Happy 2020, Ademola! We wish you a successful year ahead, bringing you n=
+ew customers, successful sales and luck in all your achievements.</p>
+
+<p>At the end of the previous year, our team made a lot of improvements to =
+GetProspect, and this is just a beginning. Let=E2=80=99s remember of the so=
+me of the most useful features we=E2=80=99ve added:</p>
+
+<ul>
+<li>new field "Lead city" in our =E2=80=9CSearch by filter=E2=80=9D;</li>
+
+<li>speeding up the search to find more leads with a new search engine;</li=
+>
+
+<li>spinning icon while processing the search to let you know when email se=
+arch is finished and you can export your results;</li>
+
+<li>the leads added from plugin appear in the list right after you added th=
+em without reloading the page;</li>
+
+<li>the enhanced email verification process now validates the emails even m=
+ore accurately;</li>
+
+<li>folders to group your lists.</li> =20
+</ul>            =20
+
+<br>
+
+<p><b>The Next Steps for GetProspect</b></p>
+
+<p>Starting a new decade means new opportunities, so in 2020 we have great =
+plans we want to bring to life.=20
+We=E2=80=99re doubling down on our mission to provide quality, accurate and=
+ convenient services with upcoming new features:<br><br></p>
+
+<p>=F0=9F=93=AC Lead profile update</p><p>
+The data of the already saved lead will be auto-updated in case of some cha=
+nges (ex. if they switch job places or email becomes invalid). Frequency of=
+ updates will depend on how popular this profile is on LinkedIn. Also, you=
+=E2=80=99ll have the ability to refresh info of lead already added with Get=
+Prospect plugin. <br><br></p>
+
+<p>=F0=9F=94=8E Live search </p><p>
+See lead search results instantly as you set search filters, and preview th=
+em before saving.<br><br></p>
+
+<p>=F0=9F=91=A5 CRM for already added leads </p><p>
+You=E2=80=99ll have a powerful tool to filter already added leads by any fi=
+lters (ex. by country, email status, position, etc). You=E2=80=99ll be able=
+ to save your custom segments and reuse them in future. <br><br></p>
+
+<p>=F0=9F=93=9D Custom fields </p><p>
+You=E2=80=99ll be able to add custom fields to lead info, then import and e=
+xport them.<br><br></p>
+
+<p>=F0=9F=92=BC Lead data enrichment </p><p>
+Import your lead data and let us enrich it with data from our database (suc=
+h as LinkedIn profile URL, location, company info, email, etc.)<br><br></p>
+
+<p>=F0=9F=93=A9 Sending personalized emails at the right time. </p><p>
+Create email campaigns and automate sending with email a sequence. Track de=
+liverability, open rate and other metrics. <br><br></p>
+
+<p>We=E2=80=99re going to make this year a year of hard teamwork! =F0=9F=A4=
+=9D</p>=20
+
+<p>If you have any feature suggestions or want to vote for new features, vi=
+sit our new feedback portal - <a href=3D"http://x17ku.mjt.lu/lnk/AMAAAF_VbP=
+0AAchCTrAAAHIww9UAAYCUQlEAmS55AA5f-QBeJYu2O-NONO5ZQhqj33lnc_OObwAOOkU/1/4P8=
+F8w_t7Al5cU1sW110tw/aHR0cHM6Ly9mZWVkYmFjay5nZXRwcm9zcGVjdC5pbw">https://fee=
+dback.getprospect.io</a></p>
+
+<p>=E2=80=A2 =E2=80=A2 =E2=80=A2</p>
+
+<p><b>New Pricing</b></p>
+
+<p>For those who use only verified emails, we added a new option on the sub=
+scription page: you=E2=80=99ll get two times less credits, but you will fin=
+d only verified emails and charged for them. <br>
+On a less exciting note, we have decided to increase our prices moving forw=
+ard. However, we also added Yearly subscriptions, so you can be billed annu=
+ally for 12 months and you will not be impacted by this change. <br>
+We simplified subscriptions, so there will be no Silver and Enterprise plan=
+ now. <br>
+Our new pricing is as follows and will take effect from January, the 24th a=
+t 8:00 AM PST:</p>
+
+              <ul>
+                 <li>1,000 discovered emails for $49/month</li>
+                 <li>5,000 discovered emails for $99/month</li>
+                 <li>20,000 discovered emails for $199/month</li>
+                 <li>50,000 discovered emails for $399/month </li>
+              </ul>
+
+
+<p>Such pricing change is required to boost the growth of our platform and =
+implement significant product changes. We hope that our loyal customers won=
+=E2=80=99t be affected as they can pay anually 1 year upfront with old pric=
+es before Jan 24. After this date, all upgrades and renewals will be done a=
+ccording to the new pricing.</p>             =20
+             =20
+           =20
+
+  <div>
+    <a href=3D"http://x17ku.mjt.lu/lnk/AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlEA=
+mS55AA5f-QBeJYu2O-NONO5ZQhqj33lnc_OObwAOOkU/2/X4M0uKYudEaRC9Ypw1uFkQ/aHR0cH=
+M6Ly9nZXRwcm9zcGVjdC5pby9hcHAvc2V0dGluZ3Mvc3Vic2NyaXB0aW9u"
+       style=3D"box-sizing:border-box;font-size:14px;color:#fff;text-decora=
+tion:none;font-weight:bold;text-align:center;display:inline-block;border-ra=
+dius:3px;background-color:#2196F3;border-color:#2196F3;border-style:solid;b=
+order-width:10px 0px;padding:5px 30px;margin:20px 0"
+       target=3D"_blank">Upgrade for 1 year with old prices</a>
+  </div>
+
+
+<p>If you have any questions or concerns, please let us know! We would love=
+ to hear your feedback and your thoughts on how we could improve our produc=
+t. </p>
+
+<p>Best regards,<br>
+Dima, Head of GetProspect </p>   <br>         =20
+             =20
+
+              <hr style=3D"height:0;border:0;border-bottom: 1px solid #ddd"=
+/>
+ <div style=3D"font-size: 12px;color: #aaa;position:relative; top:-2px">
+   Don't want to get emails like this? <a style=3D"color: #aaa;" href=3D"ht=
+tp://x17ku.mjt.lu/unsub2?hl=3Den&amp;m=3DAMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQl=
+EAmS55AA5f-QBeJYu2O-NONO5ZQhqj33lnc_OObwAOOkU&amp;b=3D30d7249c&amp;e=3Df6ac=
+5761&amp;x=3DpBwWsA15QY6HcFQ7Mrr3_0HCZliTICM7kLhjIapytCA">Unsubscribe from =
+our emails</a>
+  =20
+            </div>
+
+</td>
+<td width=3D"20" style=3D"width: 20px"></td>
+</tr>
+<tr>
+  <td height=3D"40" colspan=3D"3"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</div>
+
+<br/><img src=3D"http://x17ku.mjt.lu/oo/AMAAAF_VbP0AAchCTrAAAHIww9UAAYCUQlE=
+AmS55AA5f-QBeJYu2O-NONO5ZQhqj33lnc_OObwAOOkU/eb0a9568/e.gif" height=3D"1" w=
+idth=3D"1" alt=3D"" border=3D"0" style=3D"height:1px;width:1px;border:0;"/>
+</body>
+</html>
+
+=
+
+--=-PXrOoYiwR92IVMR96iSd--
+

@@ -1,0 +1,318 @@
+Return-Path: <bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com>
+Received: from m45-14.mailgun.net (m45-14.mailgun.net [69.72.45.14])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id sssbqc3ksegji2kmc8g7uaf2n9dhf3kp7ptuhlg1
+ for josephs@linuxjobber.com;
+ Wed, 05 Feb 2020 19:38:48 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg.e-solutionsinc.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m45-14.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg.e-solutionsinc.com designates 69.72.45.14 as permitted sender) client-ip=69.72.45.14; envelope-from=bounce+5bb673.fc846-josephs=linuxjobber.com@mg.e-solutionsinc.com; helo=m45-14.mailgun.net;
+ dkim=pass header.i=@mg.e-solutionsinc.com;
+ dmarc=none header.from=e-solutionsinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHYlpwWSs2RDNqUWI2UzdkSWV4T2l0bFV3WW14MFJDMDlJWGxPYnFLdXJ2QXd3SFlGSC9tZDNsUHROaFBPczd4bEdRZlJ2Q2wwa0RhVG40eGxtRkhzM05UT3pJSE5ldEZhOVRpeUVSYVpkbHFaSTd0Z2hiUlFUeXNkeTFOWFhoa0Q3a2VPM2ZGbzdIOGxSU0VxTG9XYjJhV0JocE9Mc1hhblNJTE84NmZDa2JPK1NkM254NnJhR0ZuakJmZ1kreVk1TXlsOGpTTjVvRlNxeVFHakI1bEZKa3ZKdzc3U1BVS0FsM2YxWG5vT3oycHJ0MEpBZVR5cVFUTmdZZ3NLa2doRnpOQmZrMEFjRFl0Y05iYnJYaitVZERKU1hnelZOYit3S2VUU2EyaCtlR1dCUFZHeWNxWjhzbjFNY0RTK05GUE1XY1NsNFkrMkZ3dTc0QWdFWWgvUUFLSGFSVDdJanQ4N0hzcjYyMUFQMFdnPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=CgW6z7M96gsrFTipmwxyjvviMSOSO2igter3Czrxm1DrbFOBAvFjblmFkHEhn4b9bAcKtD1jQUK/DRDLUbuwV0rZv8x96g0OnpWfy0vG03xBCD+HpRBYQLFQXO6rrbvWHjT33ZCOFLUeRTqYk4GQGctTfUAGWQp2h3osFBXwUUA=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1580931528; v=1; bh=2bwXtsT1S8pPLNiyBhQ0wgdBAuzq4ccrGUcZQQekVGc=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.e-solutionsinc.com;
+ q=dns/txt; s=mailo; t=1580931528; h=Content-Transfer-Encoding:
+ Mime-Version: Content-Type: Subject: From: To: Reply-To: Message-Id:
+ Date; bh=5aRAAVz+v0ghKnF1+w0cvCVDJp0tCpeLgJ/o+3ymS1g=; b=Fc34P+uoCszoHjzCKR4dnwqBuiYfwi7qBvFx8twTz5R0/jyiaxtyEPcL7aT9/b+3PNG2Zc1L
+ BkrIdORuVF/ak0OGiAdk12n0SivMDBbZAzEIDDjCLGg2dNnP7Aoj9ZKnHFs/+sFOUhspRwx5
+ LkoQv24C8CqqahHoy4Ergw3giVM=
+X-Mailgun-Sending-Ip: 69.72.45.14
+X-Mailgun-Sid: WyJmNzA0YSIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICJmYzg0NiJd
+X-Mailgun-Batch-Id: 5e3b19c6daca8a4495ff0cb8
+Received: by luna.mailgun.net with HTTP; Wed, 05 Feb 2020 19:38:46 +0000
+Date: Wed, 05 Feb 2020 19:38:46 +0000
+Message-Id: <20200205193846.1.1EBC1E33A915FBC1@mg.e-solutionsinc.com>
+X-Mailgun-Variables: {"ref_id": "5978"}
+Reply-To: amneet.b@e-solutionsinc.com
+X-Mailgun-Rewrite-Sender-Header: false
+To: josephs@linuxjobber.com
+From: Amneet Bedi <amneet.b@e-solutionsinc.com>
+Subject: Job DevOps Positions is shared with you
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+    <p style=3D"border:none; padding-left:10px; font-size:11px; font-family=
+:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:=
+18px;text-transform: uppercase;"> To unsubscribe from future emails or to u=
+pdate your email preferences<a href=3D"http://unsubscribe.e-solutionsinc.co=
+m/users/request_unsubscribe/427374d0c0fc6744d7cc13f21ee013ebfb7b10e0/86f7a7=
+3265c72630875e3e1704d4d43b98b33eab/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBu=
+aEZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline">=
+<b>click here </b></a>.</p>    <div style=3D"width:100%; overflow:auto; flo=
+at:left; margin: auto;">
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div>
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"font-size:12.0pt">Job <i><u>=
+DevOps Positions </u></i>is shared with you</span></b></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:9.0pt"><s=
+pan style=3D"font-family:"Times New Roman",serif">Hello&nbsp;Joseph&nbsp;Sh=
+owunmi</span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-family:"Calibr=
+i Light",sans-serif">My name is Amneet Bedi and I am a Staffing Specialist =
+at E-Solutions INC.&nbsp;I am reaching out to you on an exciting job opport=
+unity with one of our clients.</span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><b><u><span style=3D"background:aq=
+ua"><span style=3D"font-family:"Calibri Light",sans-serif">Position 1: </sp=
+an></span></u><span style=3D"background:aqua">DevOps Consultant</span></b><=
+/span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><b><u><span style=3D"background:aq=
+ua"><span style=3D"font-family:"Calibri Light",sans-serif">Position 2: </sp=
+an></span></u><span style=3D"background:aqua">Sr. AWS DevOps Engineer</span=
+></b></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"background:yellow">Job Title=
+: - DevOps Consultant </span></b></span></span></p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"background:yellow">Duration:=
+ - Contract, Long Term</span></b></span></span></p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"background:yellow">Location:=
+ - Palo Alto, CA</span></b></span></span></p>
+
+<p class=3D"MsoNoSpacing">&nbsp;</p>
+
+<p style=3D"margin-bottom:11px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:107%"><span style=3D"font-family:Calibri,sans-serif"><b>Req=
+uired - Kubernetes with Docket and Linux expertise with AWS experience</b><=
+/span></span></span></p>
+
+<p style=3D"margin-bottom:11px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:107%"><span style=3D"font-family:Calibri,sans-serif"><b>Job=
+ Description:- </b></span></span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with creating best pr=
+actice Docker images from scratch and running them in different environment=
+s.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with deploying, maint=
+aining applications in Kubernetes environment.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with packaging applic=
+ations as Helm chart for Kubernetes deployments.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with logging architec=
+ture in Kubernetes, specifically using fluentd (ideally).</span></span></sp=
+an></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Must have knowledge about differ=
+ent ingress mechanisms which can be used in Kubernetes and concepts for ser=
+vice mesh technologies.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with different deploy=
+ment strategies like rolling, blue green and canary.</span></span></span></=
+li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Senior level as a Linux systems =
+engineer/administrator</span></span></span></li>
+</ul>
+
+<div style=3D"border-bottom:solid windowtext 1.0pt; padding:0in 0in 1.0pt 0=
+in">
+<p style=3D"border:none; padding:0in; margin-bottom:11px">&nbsp;</p>
+</div>
+
+<p style=3D"margin-bottom:11px">&nbsp;</p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"background:yellow">Job Title=
+: - Sr. AWS DevOps Engineer </span></b></span></span></p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"background:yellow">Duration:=
+ - Contract, Long Term</span></b></span></span></p>
+
+<p class=3D"MsoNoSpacing"><span style=3D"font-size:11pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"background:yellow">Location:=
+ - Denver, CO</span></b></span></span></p>
+
+<p style=3D"margin-bottom:11px">&nbsp;</p>
+
+<p style=3D"margin-bottom:11px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:107%"><span style=3D"font-family:Calibri,sans-serif"><b>Job=
+ Description:- </b></span></span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Senior DevOps engineer with stro=
+ng experience with AWS-based infrastructure and all its common services. </=
+span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience supporting large clou=
+d deployments and debugging application problems.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience integrating with CI/C=
+D platforms and tool chains such as Jenkins and Gitlab.</span></span></span=
+></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience in developing scripts=
+ using Shell, Python, NodeJS or any other relevant language.</span></span><=
+/span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Must have in depth automation ex=
+perience with nay of the configuration management tool like Terraform, Clou=
+dFormation, Ansible, Chef, Salt etc.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Senior level as a Linux System&r=
+squo;s Engineer/Administrator.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Good understanding of modern app=
+lication architectures. E.g. micro-services, event-based.</span></span></sp=
+an></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Excellent communication and pres=
+entation skills.</span></span></span></li>
+</ul>
+
+<p style=3D"margin-bottom:11px">&nbsp;</p>
+
+<p style=3D"margin-bottom:11px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:107%"><span style=3D"font-family:Calibri,sans-serif"><b>Nic=
+e to have:</b></span></span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience deploying, configurin=
+g, and managing Kubernetes based orchestration platforms.</span></span></sp=
+an></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with MongoDB, Cassand=
+ra, Kafka/Zookeeper</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with common monitorin=
+g tools such as Icigna, New Relic etc.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience in deploying, managin=
+g and troubleshooting critical applications to production.</span></span></s=
+pan></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Experience with the software dev=
+elopment lifecycle, including Scrum, unit and integration test automation, =
+continuous integration and deployment, and more.</span></span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><spa=
+n style=3D"font-family:Calibri,sans-serif">Solid understanding of and abili=
+ty to apply security controls to applications within AWS</span></span></spa=
+n></li>
+</ul>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif">&nbsp;</span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:9.0pt"><s=
+pan style=3D"font-family:"Times New Roman",serif">Best Regards,</span></spa=
+n></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:9.0pt"><s=
+pan style=3D"font-family:"Times New Roman",serif">Amneet&nbsp;Bedi</span></=
+span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:9.0pt"><s=
+pan style=3D"font-family:"Times New Roman",serif">408-709-2587</span></span=
+></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:normal"><span =
+style=3D"font-family:Calibri,sans-serif"><span style=3D"font-size:9.0pt"><s=
+pan style=3D"font-family:"Times New Roman",serif">amneet.b@e-solutionsinc.c=
+om</span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p style=3D"margin-bottom:11px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif">This=
+ is a search based on words in your resume, If the recruiters get REMOVE re=
+quest they need to ask Helpdesk and Helpdesk team will block that Email ID =
+from our servers!</span></span></span></p>
+
+<p style=3D"margin-bottom:11px"><span style=3D"font-size:11pt"><span style=
+=3D"line-height:normal"><span style=3D"font-family:Calibri,sans-serif"><spa=
+n style=3D"font-size:9.0pt"><span style=3D"color:#1f497d">Disclaimer:</span=
+></span><b><span style=3D"font-size:9.0pt"><span style=3D"color:#26282a">E-=
+Solutions Inc.</span></span></b><span style=3D"font-size:9.0pt"><span style=
+=3D"color:#26282a">&nbsp;provides equal employment opportunities (EEO) to a=
+ll employees and applicants for employment without regard to race, color, r=
+eligion, gender, sexual orientation, gender identity or expression, nationa=
+l origin, age, disability, genetic information, marital status, amnesty, or=
+ status as a covered veteran in accordance with applicable federal, state a=
+nd local laws. We especially invite women, minorities, veterans, and indivi=
+duals with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span><=
+/span></span></span></p>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+            </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg.e-soluti=
+onsinc.com/o/eJwVjEEOwiAQAF8jNwm7lJY9cFBTv2EEtpamBVNs4vPFZA6TOUx0U7BdL5JDha=
+phgHQLEiSM1xuMWl8IzL3pqVPbS_K5lvX4pJJrykGGsonZEaF_MsdojQoYAS1q1j1FQhjsZMXO0=
+yNFZ2ho7pZS-T3XNlxTPr5L8Z73_-oH4nAqGQ"></body>
+</html>
+<span style=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><=
+span style=3D"color:#1f497d">Disclaimer:</span></span></span><b><span style=
+=3D"font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=
+=3D"color:#26282a">E-Solutions Inc.</span></span></span></b><span style=3D"=
+font-size:9.0pt"><span calibri=3D"" style=3D"font-family:"><span style=3D"c=
+olor:#26282a">&nbsp;provides equal employment opportunities (EEO) to all em=
+ployees and applicants for employment without regard to race, color, religi=
+on, gender, sexual orientation, gender identity or expression, national ori=
+gin, age, disability, genetic information, marital status, amnesty, or stat=
+us as a covered veteran in accordance with applicable federal, state and lo=
+cal laws. We especially invite women, minorities, veterans, and individuals=
+ with disabilities to apply. EEO/AA/M/F/Vet/Disability.</span></span></span>

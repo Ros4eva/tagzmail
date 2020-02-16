@@ -1,0 +1,701 @@
+Return-Path: <postmaster@notify.yochana.com>
+Received: from m237-55.mailgun.net (m237-55.mailgun.net [159.135.237.55])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 0jm1dk46bk02937gldoql4e02nqbgsvuru9g0fg1
+ for josephs@linuxjobber.com;
+ Fri, 14 Feb 2020 15:16:55 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notify.yochana.com designates 159.135.237.55 as permitted sender) client-ip=159.135.237.55; envelope-from=postmaster@notify.yochana.com; helo=m237-55.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notify.yochana.com designates 159.135.237.55 as permitted sender) client-ip=159.135.237.55; envelope-from=postmaster@notify.yochana.com; helo=m237-55.mailgun.net;
+ dkim=pass header.i=@notify.yochana.com;
+ dmarc=none header.from=yochana.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIcjdUR1NnN2JuTTlPeVNNRXFiYU9MSDRUWlRnNGdabE1oUTI4bHo5bnIzMWNWZDlYV1g2NXVDaGpZakRqNExCOHNiY1I1SHhUTkxJUU11YjJzeXBtOTExUVc2bnY5VU1NbFhoaERNQXRyQmZRalkvMVRCeFZRYmk4VU1JR1JFRTkwTy8xZXROaFgydGVNSmxFeXhlSkxqczlTOXBtR3pvWjlndExZbG1mR0JPOTEvelJnMmxRam1tOHloZ21zWjZ6MkZ6bHdHU1JUbjlxMVluVEtNTWdwaG5hWitWTmtWMmJReEpvcGZFOG96U09xbGZpMzVUUUd1VUFRbzR5bm05R3RVdHZHaWlFbDZrV1ZqZGp2NmhUbnY0K05HVG16VUtvenpxQzZVREtUR2c9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=bcVTjWrdDVB/NU245A8+pGZRk0/ul414+eM3DP4OsUrIOSyNFpkSYEH9WooGUYGSys00/Mkagcaq3RdXNosBcqGOI9/hF1/9rK5wgGQuCQMCCGX71+Qr5MrgWCFPtcaslwGyS5oXdNWbNpy1VJ9pYSw3NRDWbgyV5npYjGxteYc=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581693420; v=1; bh=jTMoRt4PxR988CTgTejUz3cH55l9h6AWMimBR0h13qw=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=notify.yochana.com; q=dns/txt;
+ s=pic; t=1581693419; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=h04fBn3Wb9KCHkIEMAi+bzq11JEbwszJsqEJyui+c/4=; b=keBDm/gdscnGhPdeYgkJUxyFU2fnbLHwUbGSlIeCRBkSIjrXd7XCH9DvXjAtLWrF4doHKUc0
+ +DC0f07jvKbJFteaqEP9hzJZf3knOpbScQAwgmDrmSeJAJtI/e4YfITvkaGuKChadKPhCRfC
+ 3Eq3nPfS91YQsBf5WYPdW8yH/1U=
+X-Mailgun-Sending-Ip: 159.135.237.55
+X-Mailgun-Sid: WyI3OGZiMyIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI5Yjg5MWIiXQ==
+X-Mailgun-Batch-Id: 5e46b7b362bfc25ff388d115
+Received: by luna.mailgun.net with HTTP; Fri, 14 Feb 2020 15:07:31 +0000
+Date: Fri, 14 Feb 2020 15:07:31 +0000
+Message-Id: <20200214150731.1.AFB515735FC027ED@notify.yochana.com>
+X-Mailgun-Native-Send: true
+Reply-To: akhila@yochana.com
+To: josephs@linuxjobber.com
+From: Akhila K <akhila@yochana.com>
+Subject: Looking For Network Engineer - Houston, TX
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:sch=
+emas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"=
+>
+
+<head>
+    <meta charset=3D"utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Oorwin Email</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely r=
+emoved. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Time=
+s New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the =
+font and others will silently fail to the fallbacks. More on that here: htt=
+p://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href=3D'https://fonts.googlea=
+pis.com/css?family=3DRoboto:400,700' rel=3D'stylesheet' type=3D'text/css'> =
+-->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+        /* What it does: Remove spaces around the email design added by som=
+e email clients. */
+        /* Beware: It can remove the padding / margin and add a background =
+color to the compose a reply window. */
+       =20
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+       =20
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+       =20
+        div[style*=3D"margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables.=
+ */
+       =20
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail tab=
+le alignment bug. Applies table-layout to the first 2 tables then removes f=
+or anything nested deeper. */
+       =20
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            /*table-layout: fixed !important;*/
+            margin: initial;
+        }
+       =20
+        table table table {
+            table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing image=
+s in IE. */
+       =20
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* What it does: A work-around for email clients meddling in trigge=
+red links. */
+       =20
+        *[x-apple-data-detectors],
+        /* iOS */
+       =20
+        .x-gmail-data-detectors,
+        /* Gmail */
+       =20
+        .x-gmail-data-detectors *,
+        .aBn1 {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        img[Attributes Style] {
+            width: auto;
+        }
+
+
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at c=
+orrect size. -->
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head>
+
+<body style=3D"background: #ffffff; width: 620px;">
+    <center>
+       <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cen=
+ter" style=3D"width: 620px;">
+           <tr>
+                <td style=3D"padding: 20px 0px">
+
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center" width=3D"100%" bgcolor=3D"#ffffff" style=3D"margin: 0;">
+                        <tr>
+                            <td width=3D"100%">
+                                                                           =
+                     <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" width=3D"100%">
+                                                                        <tr=
+>
+                                        <td style=3D"padding: 0px 0px; font=
+-family:calibri, Arial, Helvetica, sans-serif; font-size: 14px; color:#6f74=
+77; line-height: 1; word-break: break-word">
+                                            <p class=3D"wordsection1"><span=
+ style=3D"font-size:10pt"><span style=3D"font-family:Calibri,sans-serif"><a=
+ name=3D"_MailOriginal"></a></span></span></p>
+
+<p class=3D"xwordsection1"><span style=3D"font-size:11pt"><span style=3D"fo=
+nt-family:Calibri,sans-serif"><b>Hi,</b></span></span></p>
+
+<p class=3D"xwordsection1"><span style=3D"font-size:11pt"><span style=3D"fo=
+nt-family:Calibri,sans-serif">&nbsp;</span></span></p>
+
+<p class=3D"xm-8671126640566492382gmail-wordsection1" style=3D"text-align:s=
+tart"><span style=3D"font-size:12pt"><span style=3D"background:white"><span=
+ style=3D"font-variant-ligatures:normal"><span style=3D"font-variant-caps:n=
+ormal"><span style=3D"orphans:2"><span style=3D"widows:2"><span style=3D"te=
+xt-decoration-style:initial"><span style=3D"text-decoration-color:initial">=
+<span style=3D"word-spacing:0px"><span style=3D"font-family:&quot;Times New=
+ Roman&quot;,serif"><span style=3D"font-size:11.0pt"><span style=3D"font-fa=
+mily:&quot;Calibri&quot;,&quot;sans-serif&quot;">This is&nbsp;<b>akhila &nb=
+sp;</b>from&nbsp;<b>Yochana IT Solutions.</b>&nbsp;I would like to talk to =
+you regarding an exciting opportunity we have with one of&nbsp;<b>Yochana I=
+T&rsquo;s premier clients.</b></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></p>
+
+<p class=3D"xm-8671126640566492382gmail-wordsection1" style=3D"text-align:s=
+tart"><span style=3D"font-size:12pt"><span style=3D"background:white"><span=
+ style=3D"font-variant-ligatures:normal"><span style=3D"font-variant-caps:n=
+ormal"><span style=3D"orphans:2"><span style=3D"widows:2"><span style=3D"te=
+xt-decoration-style:initial"><span style=3D"text-decoration-color:initial">=
+<span style=3D"word-spacing:0px"><span style=3D"font-family:&quot;Times New=
+ Roman&quot;,serif"><span style=3D"font-size:11.0pt"><span style=3D"font-fa=
+mily:&quot;Calibri&quot;,&quot;sans-serif&quot;">I wanted to know if you wo=
+uld be interested in exploring this opportunity.</span></span></span></span=
+></span></span></span></span></span></span></span></span></p>
+
+<p class=3D"xm-8671126640566492382gmail-wordsection1" style=3D"text-align:s=
+tart"><span style=3D"font-size:12pt"><span style=3D"background:white"><span=
+ style=3D"font-variant-ligatures:normal"><span style=3D"font-variant-caps:n=
+ormal"><span style=3D"orphans:2"><span style=3D"widows:2"><span style=3D"te=
+xt-decoration-style:initial"><span style=3D"text-decoration-color:initial">=
+<span style=3D"word-spacing:0px"><span style=3D"font-family:&quot;Times New=
+ Roman&quot;,serif"><b>&nbsp;</b></span></span></span></span></span></span>=
+</span></span></span></span></p>
+
+<p class=3D"xm-8671126640566492382gmail-wordsection1" style=3D"text-align:s=
+tart"><span style=3D"font-size:12pt"><span style=3D"background:white"><span=
+ style=3D"font-variant-ligatures:normal"><span style=3D"font-variant-caps:n=
+ormal"><span style=3D"orphans:2"><span style=3D"widows:2"><span style=3D"te=
+xt-decoration-style:initial"><span style=3D"text-decoration-color:initial">=
+<span style=3D"word-spacing:0px"><span style=3D"font-family:&quot;Times New=
+ Roman&quot;,serif"><b><u><span style=3D"font-size:11.0pt"><span style=3D"f=
+ont-family:&quot;Calibri&quot;,&quot;sans-serif&quot;">Since this is an urg=
+ent business requirement, I&rsquo;d appreciate a prompt response on this</s=
+pan></span></u></b><u><span style=3D"font-size:11.0pt"><span style=3D"font-=
+family:&quot;Calibri&quot;,&quot;sans-serif&quot;">.</span></span></u></spa=
+n></span></span></span></span></span></span></span></span></span></p>
+
+<p class=3D"xwordsection1"><span style=3D"font-size:11pt"><span style=3D"fo=
+nt-family:Calibri,sans-serif">&nbsp;</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Job Title: AWS Network Engineer</b></span><=
+/span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Location: Houston, TX</b></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Duration: contract </b></span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><a name=3D"_MailAutoSig"><b>Job Description:</=
+b></a></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><u>AWS Network Engineer</u></b></span></spa=
+n></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<ul style=3D"list-style-type:square">
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Must have Knowledge on web &amp; application servers apac=
+he, tomcat, jboss, and web-proxy, haproxy, application load balancers</span=
+></span></span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Must have experience on AWS compute, storage, VPC, route5=
+3, cloud front services and ability create new VPC&#39;s, SG, ALB, ELB and =
+analysis of Cloud Trails</span></span></span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Windows and/or Linux server environments with extensive k=
+nowledge of systems and application server maintenance</span></span></span>=
+</li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Experience in administering and managing an enterprise le=
+vel application/s</span></span></span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Extensive knowledge of systems and application server mai=
+ntenance</span></span></span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Familiarity with networking technologies including LAN, W=
+LAN, VPN</span></span></span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Solid knowledge of TCP/IP networking, and related network=
+ services (i.e. DNS, SMTP, DHCP, etc.)</span></span></span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Expertise on App Discovery &amp; Rebranding</span></span>=
+</span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Experience in understanding External &amp; Internal facin=
+g URLs/Apps</span></span></span></li>
+	<li class=3D"wordsection1" style=3D"margin-left:8px"><span style=3D"font-s=
+ize:10pt"><span style=3D"tab-stops:list .5in"><span style=3D"font-family:Ca=
+libri,sans-serif">Knowledge on I3 / WAF (Incapsula), F5 (Big- IP), SSL Cert=
+ificate, Web Server/ App Server</span></span></span></li>
+</ul>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<table class=3D"Table" style=3D"width:479px; background:white" width=3D"479=
+">
+	<tbody>
+		<tr>
+			<td colspan=3D"2" nowrap=3D"nowrap" style=3D"border-bottom:1px solid bla=
+ck; width:479px; padding:0in 7px 0in 7px; height:21px; background-color:#da=
+eef3; border-top:1px solid black; border-right:1px solid black; border-left=
+:1px solid black" valign=3D"bottom">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif"><b>Submission Template</b></span></span></=
+p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif"><b>Employment Type</b></span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p align=3D"center" class=3D"xmsonospacing" style=3D"text-align:center">=
+<span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-seri=
+f"><b>W2/1099/C2C</b></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Candidate Name</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">SR Number / Position</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Present location (city, state or ZIP)</spa=
+n></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Work Authorization/ Validity</span></span>=
+</p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Tel No</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">E-mail ID</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Date of Birth(MM/DD)</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Last 4 digits of SSN</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Skype ID</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">LinkedIn</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Joining Mode (TP / FTE)</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none" valign=3D"bottom">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:20px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">*Onsite availability (post-selection)</spa=
+n></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:20px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:22px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Total onsite experience</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:22px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Overall relevant experience of candidate</=
+span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:20px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Availability for Interview (Preferred Time=
+)</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:20px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:20px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Highest Education &amp; Passed out year</s=
+pan></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:20px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Rate - $$/HR including Overheads</span></s=
+pan></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:281p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:1px solid black">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">Source/ Vendor Details</span></span></p>
+			</td>
+			<td nowrap=3D"nowrap" style=3D"border-bottom:1px solid black; width:199p=
+x; padding:0in 7px 0in 7px; height:21px; background-color:white; border-top=
+:none; border-right:1px solid black; border-left:none">
+			<p class=3D"xmsonospacing"><span style=3D"font-size:11pt"><span style=3D=
+"font-family:Calibri,sans-serif">&nbsp;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">Thanks,</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">Akhila kairamkonda, </span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">Yochana Solutions Inc.</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">Phone: (248)5987504.</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">Email: <a href=3D"mailto:akhila@Yochana.com" s=
+tyle=3D"color:blue; text-decoration:underline">akhila@Yochana.com</a>, Webs=
+ite: <a href=3D"http://www.yochana.com/" style=3D"color:blue; text-decorati=
+on:underline">www.yochana.com</a></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">Note: This is not an unsolicited mail. If you =
+are not interested in receiving our e-mails then please reply with subject =
+line Remove</span></span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1">&nbsp;</p>                                       =
+ </td>
+                                    </tr>
+                                                                      =20
+                                    <!-- <tr>
+                                        <td style=3D"font-family:calibri, A=
+rial, Helvetica, sans-serif; font-size: 11px; color:#6f7477; padding:10px 2=
+0px; border-top: 1px solid #6f7477;">
+                                            This emailer is addressed to an=
+d intended only for Beanhire customer and is not spam. You may reach out to=
+ Beanhire helpline to clarify any issues that you may have with regard to a=
+ny information contained in this emailer.=20
+                                            <br>Disclaimer: Beanhire won't =
+be responsible for the accuracy, adequacy or completeness of any informatio=
+n in this emailer and is not responsible for any errors or omissions or for=
+ results obtained from the use of such information. Beanhire does not have =
+any liability to any person on account of the use of information provided h=
+erein and the said information is provided on a best-effort basis
+                                        </td>
+                                    </tr>-->
+                                                                        <tr=
+ bgcolor=3D"#484848">
+                                        <td style=3D"font-family:calibri, A=
+rial, Helvetica, sans-serif; width: 100%; font-size: 11px; color:#ffffff; t=
+ext-align: center; padding: 10px;">
+                                           =20
+
+                                                                           =
+                     Copyright &copy; 2020 | Powered By   &nbsp;<a width=3D=
+"60" height=3D"20" href=3D"https://app.oorwin.com" title=3D"Oorwin Labs Inc=
+=2E">=20
+
+                                                <img src=3D"https://api.oor=
+win.com/api/v2/public/images/oorwin_logo.png" title=3D"Oorwin Labs Inc." st=
+yle=3D"max-width: 100%; vertical-align: middle;" height=3D"20">
+
+                                                <!-- <img src=3D"https://ap=
+i.oorwin.com/api/v2/public/images/oorwin_logo.png" style=3D"max-width: 100%=
+; vertical-align: middle;" height=3D"20" /> --> </a>
+                                                                           =
+                                                                           =
+<br>
+                                                      To stop receiving the=
+se emails please <a style=3D"color:#fff;" href=3D"https://yochana.oorwin.co=
+m/unsubscribe.html?company_id=3D113&&message_id=3D62240&&to_email=3Djosephs=
+@linuxjobber.com">click here</a> to unsubscribe.
+                                                                           =
+             </td>
+                                    </tr>=20
+                                                                    </table=
+>
+                            </td>               =20
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+       </table>
+    </center>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.notify.yocha=
+na.com/o/eJwVzEsOwiAQANDTyJLMDL-yYGHV3oNvoFEwrSb29uoB3kvOhsliYM0REAChRAVGIE=
+d-XmaFygi1XIDM7XqS0MerlYMfI1bfPY_jwaoTuZAvWesE2pYkSzaUJquKCDJ6Ara5dez5Wfffc=
+G_9_VlHCHn78y_LBSY2"></body>
+
+</html>

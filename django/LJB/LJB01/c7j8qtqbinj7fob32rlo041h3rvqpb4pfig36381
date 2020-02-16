@@ -1,0 +1,293 @@
+Return-Path: <postmaster@notify.yochana.com>
+Received: from rs226.mailgun.us (rs226.mailgun.us [209.61.151.226])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id c7j8qtqbinj7fob32rlo041h3rvqpb4pfig36381
+ for josephs@linuxjobber.com;
+ Fri, 10 Jan 2020 15:07:28 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of notify.yochana.com designates 209.61.151.226 as permitted sender) client-ip=209.61.151.226; envelope-from=postmaster@notify.yochana.com; helo=rs226.mailgun.us;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of notify.yochana.com designates 209.61.151.226 as permitted sender) client-ip=209.61.151.226; envelope-from=postmaster@notify.yochana.com; helo=rs226.mailgun.us;
+ dkim=pass header.i=@notify.yochana.com;
+ dmarc=none header.from=yochana.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGZWs3WVMwS1JLQ2pWUHMzMUc3ZDNxWW1OcnluV0RKK2tZWDJ0QUhTemJPMlpNM3diRjlraE95dmt4SjAzUy9XMWZEcVNPbWhEVkVVYlJraUs0S1d6WnBmN1ZQVmZSc2F6ZW1TQmNHOEJCbldhVDd2cjdKdTROVW5mMHhPN2NBM0pMUTd0WUZLakxIc0NSemk1RzIxR1hRbzBBZE1vakdFb2kyNkRlRmNIVWlyQjk4c3JhSHJQYWxJUDRqUDlMV3VWUGJYYXk0MzB4bG8yajN4NkVOd0V6a0s3bkJCWDRjeXBjUEhPcDVZQThsM3NKTFJaUjN2K0tra1pFTnliQm5reEc0bWJudFJuR1hUbXowcTlORWt4TXNlTFlmbFFSVDBkWlRpczY3bE9qOEE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=X4iwj6G4VuVGygfOPLceUhBJmMKYxTOkd7w59saD30r3hfz0rb0WbqRlHr7ilraD1Iq6dAXk9hpjyr97fOm/FmyIsv98InjSARGn57q6UYfs9aegvkvjc3gZ2lbPCX5jRjDlYAv0TSak1WXUV84db2jb55bymjRCZLFnmU7WG64=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578668851; v=1; bh=xty0f3AtSfbu1ssx082oWQLhzc8Fhotal+Td47gUUXY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=notify.yochana.com; q=dns/txt;
+ s=pic; t=1578668851; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Date;
+ bh=OufmplM1QMpa4Njjyo0yM/4QtLuonzCCt7ipNWdhCNo=; b=vOq2jHi9SmLtvCrq7XDRNaUQd7ZSVeVsC88OLc5PYSnC/FZXBb4Nd/WLky/0rb0CK0Dv20Ue
+ 3PkWMi5rt0KUD8l2MFh+va9O9z294GzYkaSbnTPzby7sGaUZGflPTP6ZvxcJyZHeLkIyq1IL
+ fKMATEi917xboBHv9AK7skHBSzw=
+X-Mailgun-Sending-Ip: 209.61.151.226
+X-Mailgun-Sid: WyI3OGZiMyIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICI5Yjg5MWIiXQ==
+X-Mailgun-Batch-Id: 5e1892350a303c323f556d6b
+Received: by luna.mailgun.net with HTTP; Fri, 10 Jan 2020 15:03:17 +0000
+Date: Fri, 10 Jan 2020 15:03:16 +0000
+Message-Id: <20200110150316.1.EC5E4C0BE8C95BE2@notify.yochana.com>
+X-Mailgun-Native-Send: true
+Reply-To: prathyusha@yochana.com
+To: josephs@linuxjobber.com
+From: Prathyusha Meda <prathyusha@yochana.com>
+Subject: Regarding AWS Cloud Requirements
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Oorwin Email</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+        
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            /*table-layout: fixed !important;*/
+            margin: initial;
+        }
+        
+        table table table {
+            table-layout: auto;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        
+        *[x-apple-data-detectors],
+        /* iOS */
+        
+        .x-gmail-data-detectors,
+        /* Gmail */
+        
+        .x-gmail-data-detectors *,
+        .aBn1 {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        img[Attributes Style] {
+            width: auto;
+        }
+
+
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+     </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+</head>
+
+<body style="background: #ffffff; min-width: 100%; max-width: 620px;">
+    <center>
+       <table cellspacing="0" cellpadding="0" border="0" align="center" style="width: 620px;">
+           <tr>
+                <td style="padding: 20px 0px">
+
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" bgcolor="#ffffff" style="margin: 0;">
+                        <tr>
+                            <td width="100%">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                                        <tr>
+                                        <td style="padding: 0px 0px; font-family:calibri, Arial, Helvetica, sans-serif; font-size: 14px; color:#6f7477; line-height: 1; word-break: break-word">
+                                            <p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Hello,</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Hope you are doing good !!</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Please find the below Job description if you are interested then share your updated profile, visa status &amp; current location.</span></span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:11.0pt"><span style="color:#1f4e79">Requirement 1:</span></span></b></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Title: Cloud Architect</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Location: Windsor, CT</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Contract</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Onsite</span></span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><u><span style="font-size:11.0pt"><span style="color:#1f4e79">Job Description: </span></span></u></b></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">1.In depth knowledge of key AWS services like EC2, S3 etc.&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">2.Proven experience assessing clients workloads and technology landscape for Cloud suitability, develop business case and Cloud adoption roadmap&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">3.Proven knowledge of AWS platform and tools&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">4.Experience in defining new architectures and ability to drive project from architecture standpoint </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">5.Knowledge of best practices and market trends pertaining to Cloud and overall industry to provide thought leadership (seminars, whitepapers etc.,) and mentor team to build necessary competency&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">6.Ability to quickly establish credibility and trustworthiness with key stakeholders in client organization.&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">7.Experience provisioning and spinning up AWS Clusters&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">8.Experience to build scalable production systems (load balancers, master/slave architectures)&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">9.Excellent verbal, written and presentation skills.&nbsp; 10.Certification on AWS architecture desirable</span></span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:11.0pt"><span style="color:#1f4e79">Requirement 2:</span></span></b></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Title: Cloud Specialist</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Location: Windsor, CT</span></span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><u><span style="font-size:11.0pt"><span style="color:#1f4e79">Job Description:</span></span></u></b></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">1.In depth knowledge of key AWS services like EC2, S3 etc.&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">2.Proven experience assessing clients workloads and technology landscape for Cloud suitability, develop business case and Cloud adoption roadmap&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">3.Proven knowledge of AWS platform and tools&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">4.Experience in defining new architectures and ability to drive project from architecture standpoint&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">5.Knowledge of best practices and market trends pertaining to Cloud and overall industry to provide thought leadership (seminars, whitepapers etc.,) and mentor team to build necessary competency </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">6.Ability to quickly establish credibility and trustworthiness with key stakeholders in client organization.&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">7.Experience provisioning and spinning up AWS Clusters&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">8.Experience to build scalable production systems (load balancers, master/slave architectures)&nbsp; </span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">9.Excellent verbal, written and presentation skills.&nbsp; 10.Certification on AWS architecture desirable</span></span></span></span></p>
+
+<p class="wordsection1">&nbsp;</p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:11.0pt"><span style="color:#1f4e79">Thanks &amp; Regards,</span></span></b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Prathyusha,</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Recruiter,</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><b><span style="font-size:11.0pt"><span style="color:#1f4e79">Yochana IT Solutions Inc.</span></span></b></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">23000 Commerce Dr, Farmington hills, MI-48335,</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Contact: 248-537-0766 (D)</span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79"><a href="mailto:prathyusha@yochana.com" style="color:#0563c1; text-decoration:underline"><b><span style="color:#1f4e79">prathyusha@yochana.com</span></b></a>&nbsp; || <a href="http://www.yochana.com" style="color:#0563c1; text-decoration:underline"><span style="color:#1f4e79">www.yochana.com</span></a></span></span></span></span></p>
+
+<p class="wordsection1"><span style="font-size:10pt"><span style="font-family:Calibri,sans-serif"><span style="font-size:11.0pt"><span style="color:#1f4e79">Note: This is not an unsolicited mail. If you are not interested in receiving our e-mails then please reply with subject line Remove</span></span></span></span></p>                                        </td>
+                                    </tr>
+                                                                       
+                                    <!-- <tr>
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; font-size: 11px; color:#6f7477; padding:10px 20px; border-top: 1px solid #6f7477;">
+                                            This emailer is addressed to and intended only for Beanhire customer and is not spam. You may reach out to Beanhire helpline to clarify any issues that you may have with regard to any information contained in this emailer. 
+                                            <br>Disclaimer: Beanhire won't be responsible for the accuracy, adequacy or completeness of any information in this emailer and is not responsible for any errors or omissions or for results obtained from the use of such information. Beanhire does not have any liability to any person on account of the use of information provided herein and the said information is provided on a best-effort basis
+                                        </td>
+                                    </tr>-->
+                                                                        <tr bgcolor="#484848">
+                                        <td style="font-family:calibri, Arial, Helvetica, sans-serif; width: 100%; font-size: 11px; color:#ffffff; text-align: center; padding: 10px;">
+                                            
+
+                                                                                                Copyright &copy; 2020 | Powered By   &nbsp;<a width="60" height="20" href="https://app.oorwin.com" title="Oorwin Labs Inc."> 
+
+                                                <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" title="Oorwin Labs Inc." style="max-width: 100%; vertical-align: middle;" height="20">
+
+                                                <!-- <img src="https://api.oorwin.com/api/v2/public/images/oorwin_logo.png" style="max-width: 100%; vertical-align: middle;" height="20" /> --> </a>
+                                                                                                                                                      <br>
+                                                      To stop receiving these emails please <a style="color:#fff;" href="https://yochana.oorwin.com/unsubscribe.html?company_id=113&&message_id=49805&&to_email=josephs@linuxjobber.com">click here</a> to unsubscribe.
+                                                                                        </td>
+                                    </tr> 
+                                                                    </table>
+                            </td>                
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+       </table>
+    </center>
+<img width="1px" height="1px" alt="" src="http://email.notify.yochana.com/o/eJwVzEEOwiAQAMDXyJHsbksDBy5teAi7QKBRMK0m9vfqA2aSd2wdsmqegAAQAQ1MuGjUYTNh3mANdnNmDXSboY9XK5e-htTYo5bxUNWDLQSZGIkMO4ZSSKaYRHIqCwuow-_jzM96_oZ76-_PPpjz8edf0ekmkQ"></body>
+
+</html>

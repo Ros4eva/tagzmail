@@ -1,0 +1,1652 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m40-234.mailgun.net (m40-234.mailgun.net [69.72.40.234])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id c5iiltld1msdut3g8jm7ho35eiasdogs559c3vo1
+ for josephs@linuxjobber.com;
+ Wed, 15 Jan 2020 21:56:24 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.234 as permitted sender) client-ip=69.72.40.234; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-234.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.234 as permitted sender) client-ip=69.72.40.234; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-234.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHTDBiOW5Oa2JzWkh6cUlQUWUxWlJLM2MxSWpoVmVuRUZvQTZCMVM3LzB1WkJHd3lCQVoyUUtUWThRSVFqWmFLUUZxcDFMV3MrN3I5dTdKbEEzbnBJWnBGTWlGRG04QUZkWDJiWUtERjUzVVQxRk1TQk1qb3dqdzUvS0dsc210TmRibTNTdkRXUjRqK0JacXdOdG52Szc2bEh4LzRVNjRabDZ6MDFiVjFEZ3hMKzU1bWVFRzBXSlNWcUoxaURRR0ROV3FGSDVJR2JLUTJ6UTcramlKbU5oMlBRRm1rTXVKRmhlaEhYVHFvN2FWMlRGcFlvdm0yY3VlL0VKMjQxTDlJMlp6dHBybkFXZFdPZnE2QmZaMlFNanhLL250bWlEYk9yWXNrOUNCblZpUWRJWG4rZU4vVTAvb20weHh2MXMzZ0hhV2JjOGJmNmlaMG9ibHhLaUwzVkE=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=G8Wol08eLWIGsClGfu+Q+rq7ivaHe2ehMQryROao0TVPwtGkP/Y4g4OM9C2VOp4pMBxGOJGcvLrHBH+kI/u+Zxtjw3kH87PFKkr0SDTaZkxqakp2rSl7L0Fp7jJmok1D7Y5gaoZgDvqrjOGMdDVK3yAqcOvfBlqpTVi8tBL739U=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579125390; v=1; bh=7lW/JykfnlowpEMObjnv5dFv7xqCSAc5WXCQF6+8kEw=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1579125390; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=XzElUYHSK4RnwyJDRu0ZtrNDZRYDlIEmE2GQYtwzj0g=; b=duls25OCAVsp1e98756zp6QRKJOuIOx9ia/JsCNFQOY/Lzl9X70XiahVAYw6iBYc6rV2ovnj
+ anZX8Yk5zO8f+JiStVvOLJSEdqfAEr9Qf2MtzC5GXNVz9qmMzUY3rO0TuF0C/CruNFQddOg9
+ HQ+G8vUF3hYK7k58H3+gLt+8Stg=
+X-Mailgun-Sending-Ip: 69.72.40.234
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5e1f8a843dda07850624085b
+Received: by luna.mailgun.net with HTTP; Wed, 15 Jan 2020 21:56:20 +0000
+Date: Wed, 15 Jan 2020 21:56:20 +0000
+Sender: nikhil.upadhyay=tryfacta.ai@mg1.ceipalmm.com
+Message-Id: <20200115215620.1.0E73DDFA305D9C39@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: nikhil.upadhyay@tryfacta.ai
+To: josephs@linuxjobber.com
+From: Nikhil Upadhyay <nikhil.upadhyay@tryfacta.ai>
+Subject: Role for Java Developer & Java Lead at Emeryville, CA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>
+<div>
+<div style=3D"border:0px; padding:0px; text-align:start; text-indent:0px; -=
+webkit-text-stroke-width:0px">
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:black">Please find the complete job =
+description and share your updated resume along with the below-requested in=
+formation if this position is suitable for you.</span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Position: 1</b></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Requirement Details:</b>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Title</b>: Java Develope=
+r</span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Locations</b>:&nbsp;Emer=
+yville, CA</span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Job Type</b>: Contract P=
+osition</span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>&nbsp;</b></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Job Description:</b></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></p>
+<span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span style=
+=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-v=
+ariant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span sty=
+le=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian:=
+inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inheri=
+t"><span style=3D"line-height:inherit"><span style=3D"vertical-align:baseli=
+ne"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal"><sp=
+an style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"w=
+hite-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0px=
+"><span style=3D"text-decoration-style:initial"><span style=3D"text-decorat=
+ion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D"=
+border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"=
+font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"fo=
+nt-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vert=
+ical-align:baseline"><span style=3D"color:inherit"><b>Skill:</b></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></div>
+
+<div style=3D"border:0px; padding:0px; text-align:start; text-indent:0px; -=
+webkit-text-stroke-width:0px">
+<ul>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Bachelor&rsquo;s=
+ Degree in Computer Science or a related field (Master&rsquo;s Degree prefe=
+rred) 5+ years of hands-on software development experience</span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Strong understan=
+ding of computer science fundamentals including data structures, algorithms=
+ and Object-Oriented design</span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Expertise in Cor=
+e Java and J2EE technologies such as Spring Boot and Hibernate</span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Experience desig=
+ning REST APIs and software components</span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Experience with =
+database design, both SQL and No-SQL</span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Experience with =
+microservices, service discovery frameworks, service availability and failo=
+ver.</span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Strong understan=
+ding of message brokers such as ActiveMQ</span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Understanding of=
+ CI/CD pipelines</span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Working knowledg=
+e of Unix/Linux required</span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Excellent commun=
+ication skills</span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Excellent analyt=
+ical and troubleshooting skills</span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Strong work ethi=
+c</span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:inherit">Agile/Scrum expe=
+rience"</span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></li>
+</ul>
+
+<div style=3D"border:0px; padding:0px">&nbsp;</div>
+
+<div style=3D"border:0px; padding:0px"><span style=3D"font-family:Calibri,V=
+erdana,Geneva,sans-serif"><span style=3D"font-size:12px"><span style=3D"fon=
+t-style:normal"><span style=3D"font-variant-ligatures:normal"><span style=
+=3D"font-variant-caps:normal"><span style=3D"font-variant-numeric:inherit">=
+<span style=3D"font-variant-east-asian:inherit"><span style=3D"font-weight:=
+400"><span style=3D"font-stretch:inherit"><span style=3D"line-height:inheri=
+t"><span style=3D"vertical-align:baseline"><span style=3D"color:#000000"><s=
+pan style=3D"letter-spacing:normal"><span style=3D"orphans:2"><span style=
+=3D"text-transform:none"><span style=3D"white-space:normal"><span style=3D"=
+widows:2"><span style=3D"word-spacing:0px"><span style=3D"text-decoration-s=
+tyle:initial"><span style=3D"text-decoration-color:initial"><span style=3D"=
+background-color:#ffffff"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:inherit"><span style=3D"border:0=
+px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"font-var=
+iant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-stret=
+ch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertical-ali=
+gn:baseline"><span style=3D"color:inherit"><b>Additional Skills:</b></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></div>
+
+<div style=3D"border:0px; padding:0px">
+<ul>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Work in an Agile team environment distributed across US and Indi=
+a</span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">End to end understanding of the core platform for customer facin=
+g engagement from a technical standpoint.</span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Contribute to all phases of the development lifecycle</span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Collaborate with Product Managers on feature definition</span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Translate product requirements into system design</span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Lead the product execution effort by working with various functi=
+onal groups</span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Solicit design feedback from other engineering teams</span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Communicate design to engineers and QA who are a part of our glo=
+bal engineering team</span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Perform code review and enforce best practices</span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Write modular, efficient and testable code</span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#000000"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:inherit"><span style=3D"border:0px; padding:0px"><span style=3D"=
+font-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"fon=
+t-weight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-=
+height:inherit"><span style=3D"vertical-align:baseline"><span style=3D"colo=
+r:inherit">Production support &ndash; Unix based platforms"</span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></li>
+</ul>
+</div>
+
+<div style=3D"border:0px; padding:0px">&nbsp;</div>
+</div>
+
+<div style=3D"border:0px; padding:0px; text-align:start; text-indent:0px; -=
+webkit-text-stroke-width:0px">&nbsp;</div>
+
+<div style=3D"border:0px; padding:0px; text-align:start; text-indent:0px; -=
+webkit-text-stroke-width:0px">&nbsp;</div>
+
+<div style=3D"border:0px; padding:0px; text-align:start; text-indent:0px; -=
+webkit-text-stroke-width:0px">
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Position: 2</b></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Requirement Details:</b>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Title</b></span></span><=
+/span></span></span></span></span></span><span style=3D"border:0px; padding=
+:0px"><span style=3D"font-style:inherit"><span style=3D"font-variant:inheri=
+t"><span style=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"=
+><span style=3D"line-height:inherit"><span style=3D"vertical-align:baseline=
+"><span style=3D"color:inherit">: Java Lead</span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Locations</b></span></sp=
+an></span></span></span></span></span></span><span style=3D"border:0px; pad=
+ding:0px"><span style=3D"font-style:inherit"><span style=3D"font-variant:in=
+herit"><span style=3D"font-weight:inherit"><span style=3D"font-stretch:inhe=
+rit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:base=
+line"><span style=3D"color:inherit">:&nbsp;Emeryville, CA</span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Job Type</b></span></spa=
+n></span></span></span></span></span></span><span style=3D"border:0px; padd=
+ing:0px"><span style=3D"font-style:inherit"><span style=3D"font-variant:inh=
+erit"><span style=3D"font-weight:inherit"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:inherit">: Contract Position</span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>&nbsp;</b></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Job Description:</b></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></p>
+
+<p><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span styl=
+e=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-=
+variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span st=
+yle=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian=
+:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inher=
+it"><span style=3D"line-height:inherit"><span style=3D"vertical-align:basel=
+ine"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><s=
+pan style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"=
+white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0p=
+x"><span style=3D"text-decoration-style:initial"><span style=3D"text-decora=
+tion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D=
+"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D"bor=
+der:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"fon=
+t-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-=
+stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertica=
+l-align:baseline"><span style=3D"color:inherit"><b>Skills:</b></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></p>
+
+<p>&nbsp;</p>
+
+<ul>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Bachelor&rsquo;s=
+ Degree in Computer Science or a related field (Master&rsquo;s Degree prefe=
+rred)</span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">10+ years of han=
+ds-on software development experience</span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Strong understan=
+ding of computer science fundamentals including data structures, algorithms=
+ and Object Oriented design</span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Expertise in Cor=
+e Java and J2EE technologies such as Spring Boot and Hibernate</span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Experience desig=
+ning REST APIs and software components</span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Experience with =
+database design, both SQL and No-SQL</span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></li>
+</ul>
+<span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span style=
+=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"font-v=
+ariant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span sty=
+le=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asian:=
+inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inheri=
+t"><span style=3D"line-height:inherit"><span style=3D"vertical-align:baseli=
+ne"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal"><sp=
+an style=3D"orphans:2"><span style=3D"text-transform:none"><span style=3D"w=
+hite-space:normal"><span style=3D"widows:2"><span style=3D"word-spacing:0px=
+"><span style=3D"text-decoration-style:initial"><span style=3D"text-decorat=
+ion-color:initial"><span style=3D"background-color:#ffffff"><span style=3D"=
+border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D"=
+font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"fo=
+nt-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"vert=
+ical-align:baseline"><span style=3D"color:#000000">Experience with microser=
+vices</span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span>
+
+<ul>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Strong understan=
+ding of message brokers such as ActiveMQ</span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Strong knowledge=
+ of CI/CD pipelines</span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></l=
+i>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Working knowledg=
+e of Unix/Linux</span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Excellent analyt=
+ical and troubleshooting skills</span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000">Strong work ethi=
+c</span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000"><span style=3D"b=
+ackground-color:rgba(0, 0, 0, 0)">Excellent communication skills</span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000"><span style=3D"b=
+ackground-color:rgba(0, 0, 0, 0)">Agile/Scrum experience</span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000"><span style=3D"b=
+ackground-color:rgba(0, 0, 0, 0)">Experience with Docker and Kubernetes (pr=
+eferred)</span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000"><span style=3D"b=
+ackground-color:rgba(0, 0, 0, 0)">Experience with Puppet (preferred)</span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"border:0px; padding:0px"><span style=3D"font-style:inherit"><span styl=
+e=3D"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=
+=3D"font-stretch:inherit"><span style=3D"line-height:inherit"><span style=
+=3D"vertical-align:baseline"><span style=3D"color:#000000"><span style=3D"b=
+ackground-color:rgba(0, 0, 0, 0)">Exp</span></span></span></span></span></s=
+pan></span></span></span><span style=3D"border:0px; padding:0px"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#000000"><span style=3D"background-color:rgba(0, 0, 0, 0)">erien=
+ce with AWS/GCP (preferred) &nbsp; "</span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></li>
+</ul>
+
+<div style=3D"border:0px; padding:0px">&nbsp;</div>
+
+<div style=3D"border:0px; padding:0px">
+<div style=3D"border:0px; padding:0px"><span style=3D"font-family:Calibri,V=
+erdana,Geneva,sans-serif"><span style=3D"font-size:12px"><span style=3D"fon=
+t-style:normal"><span style=3D"font-variant-ligatures:normal"><span style=
+=3D"font-variant-caps:normal"><span style=3D"font-variant-numeric:inherit">=
+<span style=3D"font-variant-east-asian:inherit"><span style=3D"font-weight:=
+400"><span style=3D"font-stretch:inherit"><span style=3D"line-height:inheri=
+t"><span style=3D"vertical-align:baseline"><span style=3D"color:#201f1e"><s=
+pan style=3D"letter-spacing:normal"><span style=3D"orphans:2"><span style=
+=3D"text-transform:none"><span style=3D"white-space:normal"><span style=3D"=
+widows:2"><span style=3D"word-spacing:0px"><span style=3D"text-decoration-s=
+tyle:initial"><span style=3D"text-decoration-color:initial"><span style=3D"=
+background-color:#ffffff"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#222222"><span style=3D"backgrou=
+nd-color:#ffffff"><span style=3D"font-style:inherit"><span style=3D"font-va=
+riant:inherit"><span style=3D"font-weight:inherit"><span style=3D"font-stre=
+tch:inherit"><span style=3D"line-height:inherit"><span style=3D"vertical-al=
+ign:baseline"><span style=3D"color:#000000"><span style=3D"background-color=
+:#ffffff"><span style=3D"border:0px; padding:0px"><span style=3D"font-style=
+:inherit"><span style=3D"font-variant:inherit"><span style=3D"font-weight:i=
+nherit"><span style=3D"font-stretch:inherit"><span style=3D"line-height:inh=
+erit"><span style=3D"vertical-align:baseline"><span style=3D"color:inherit"=
+><span style=3D"background-color:rgba(0, 0, 0, 0)"><b>Additional Skills:</b=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></div>
+</div>
+
+<div style=3D"border:0px; padding:0px">
+<ul>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Work in an Agile team environment</span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Contribute to all phases of the development life=
+cycle</span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Collaborate with Product Managers on feature def=
+inition</span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">T</span></span></span></span></span></span></spa=
+n></span></span><span style=3D"border:0px; padding:0px"><span style=3D"font=
+-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"font-we=
+ight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-heig=
+ht:inherit"><span style=3D"vertical-align:baseline"><span style=3D"color:#0=
+00000"><span style=3D"background-color:rgba(0, 0, 0, 0)">ranslate product r=
+equirements into system design</span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></li=
+>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Lead the product execution effort by working wit=
+h various functional groups</span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Solicit design feedback from other engineering t=
+eams</span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Communicate design to engineers and QA who are a=
+ part of our global engineering team</span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Perform code review and enforce best practices</=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></span></span></span></span></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><span style=3D=
+"border:0px; padding:0px"><span style=3D"font-style:inherit"><span style=3D=
+"font-variant:inherit"><span style=3D"font-weight:inherit"><span style=3D"f=
+ont-stretch:inherit"><span style=3D"line-height:inherit"><span style=3D"ver=
+tical-align:baseline"><span style=3D"color:#000000"><span style=3D"backgrou=
+nd-color:rgba(0, 0, 0, 0)">Write modular, efficient and testable code</span=
+></span></span></span></span></span></span></span></span></span></span></sp=
+an></span></span></span></span></span></span></span></span></span></span></=
+span></span></span></span></span></span></span></span></span></span></span>=
+</span></span></span></span></span></li>
+	<li><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><span style=3D"font-style:normal"><span style=3D"fon=
+t-variant-ligatures:normal"><span style=3D"font-variant-caps:normal"><span =
+style=3D"font-variant-numeric:inherit"><span style=3D"font-variant-east-asi=
+an:inherit"><span style=3D"font-weight:400"><span style=3D"font-stretch:inh=
+erit"><span style=3D"line-height:inherit"><span style=3D"vertical-align:bas=
+eline"><span style=3D"color:#201f1e"><span style=3D"letter-spacing:normal">=
+<span style=3D"orphans:2"><span style=3D"text-transform:none"><span style=
+=3D"white-space:normal"><span style=3D"widows:2"><span style=3D"word-spacin=
+g:0px"><span style=3D"text-decoration-style:initial"><span style=3D"text-de=
+coration-color:initial"><span style=3D"background-color:#ffffff"><span styl=
+e=3D"font-style:inherit"><span style=3D"font-variant:inherit"><span style=
+=3D"font-weight:inherit"><span style=3D"font-stretch:inherit"><span style=
+=3D"line-height:inherit"><span style=3D"vertical-align:baseline"><span styl=
+e=3D"color:#222222"><span style=3D"background-color:#ffffff"><font color=3D=
+"#222222">&nbsp;<span style=3D"border:0px; padding:0px"><span style=3D"font=
+-style:inherit"><span style=3D"font-variant:inherit"><span style=3D"font-we=
+ight:inherit"><span style=3D"font-stretch:inherit"><span style=3D"line-heig=
+ht:inherit"><span style=3D"vertical-align:baseline"><span style=3D"color:in=
+herit"><span style=3D"background-color:#ffffff">Production support "</span>=
+</span></span></span></span></span></span></span></span></font></span></spa=
+n></span></span></span></span></span></span></span></span></span></span></s=
+pan></span></span></span></span></span></span></span></span></span></span><=
+/span></span></span></span></span></span></li>
+</ul>
+</div>
+</div>
+<br class=3D"Apple-interchange-newline" />
+&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px"><strong>Should you be interested, please send me a c=
+opy of your resume in word format along with the following details ASAP.</s=
+trong></span></span></div>
+
+<div><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px">Full Name:<br />
+Current Location:<br />
+Hourly rate on C2C/W2:<br />
+Work Authorization:<br />
+Earliest Available date to start:<br />
+Date and times available to interview:<br />
+Two Professional References:(Preferably Supervisory references):</span></sp=
+an></div>
+
+<div>&nbsp;</div>
+<br />
+<br />
+&nbsp;
+<div id=3D"EditorSignatureID"><span style=3D"font-family:Calibri,Verdana,Ge=
+neva,sans-serif"><span style=3D"font-size:12px">Thanks</span></span></div>
+
+<div><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px">Nikhil Upadhyay</span></span></div>
+
+<div><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px">408.789.8718</span></span></div>
+
+<div><span style=3D"font-family:Calibri,Verdana,Geneva,sans-serif"><span st=
+yle=3D"font-size:12px">nikhil.upadhyay@tryfacta.ai</span></span></div>
+</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.tryfacta.ai/u=
+sers/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/6c5575ef9=
+1b529e5aa6b8a5adcebe20252219f78/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZ=
+DM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>=
+click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg1.ceipalm=
+m.com/o/eJwVzEsOwiAQANDTyJLM8GfBwli9huEzWJpSmjYmHl99B3glSCpJKtaCAAGAqAVqI4A=
+jh7uV0_S4StCTv0l_UdBfyDO1Pa698zw6m4ONVCOJ5FAhOVerxxwLGGsleUuaHVSfrQRjhWJHWM=
+ZJ-3z-rrVt788yUqLjX30BJDoopw"></body>
+</html>

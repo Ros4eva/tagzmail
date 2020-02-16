@@ -1,0 +1,126 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m40-236.mailgun.net (m40-236.mailgun.net [69.72.40.236])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id hi8328f92jbj4dtvqeea6l9sca1t1ul0po49n981
+ for josephs@linuxjobber.com;
+ Tue, 14 Jan 2020 19:39:33 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.236 as permitted sender) client-ip=69.72.40.236; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-236.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.236 as permitted sender) client-ip=69.72.40.236; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-236.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGUDJuMHViUWpiNTZzWlRQU3hxM21DaldnOWZ4c3pUanZlOVh0MkJ5UC9aVWhoQUlaN1JEVUFqUGxRYjJnSGJjN3NSekRCSFk4a0pQU3l1NWJsQmt0Z21PSzJtdjk1b1VLaXdzbG1OYmMzTmw4b2QxYU1Pak5maTNHV2ZvaVpCNlpDK1lkSXZTaEhmVzN4NWFrVVJTZTVVcmMvem1PWlBiR0ZFNkNJMnUrd2R2ejFDQy9QYmR0RDJvai82UzFRWEJKak9ISFUzZzVsNG55bCtqZFlrVWpEY1pQcWtickN3WXVFZjNaNTdTZjNnWWdJdnlEbko0SG9yRlU4MW5vNVhQakxsNEQ3ODd0RmFKWFNkUEpOc05PanJnSDBPM1NsS0hSZmFIY1dYZTliZXd5d3VWSTlqWkdMZTk5QjhFQkZzUXVySEFiRjRCSnJJVy9EVGcvT0VlRTY=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=LnJ9723Mspknxm0A3J7IZXEN7OcvEf8e49wJGV4gpRyuk3Cg6J1q7gKaszMeneLMUL/NzY3XrEZz+FuPCyXJpWQeq3lqAFI4yYE7X3Jj/rpCPqwNzGQI8aqdF1HoPmX+PvVW9qYDP5a6sx9QmaGIvqRQMrwkv7JP312CMV9Rs48=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579030775; v=1; bh=74CJNkp/SJ44U/Bw9qEyFXcWbc30YS2H1WNmVackUHs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1579030775; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=JHyQj0pTaridMEzm3dLNSENPKC+tjNYwMRI8SQvjYEY=; b=VJ1UGc8JlsGE/8IpGAzwwLXs0oqHU45DAzSRpLIoyjd4pihe/U17snBcbBu4NNn8s3ad3WTu
+ 8aQbn0lziYZ1C6RJFKBwcuua3GlnrdvqmBtN6OIuVY1vE8Q7IVaMqa9ODhWWHE7mInpbP9P9
+ ewSAoai/EtToMbFWq78YWZ3iZA0=
+X-Mailgun-Sending-Ip: 69.72.40.236
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5e1e18edda90cd444ffe0b39
+Received: by luna.mailgun.net with HTTP; Tue, 14 Jan 2020 19:39:25 +0000
+Date: Tue, 14 Jan 2020 19:39:25 +0000
+Sender: anshul.dua=tryfacta.ai@mg1.ceipalmm.com
+Message-Id: <20200114193925.1.F70C70FAB76C47F7@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: anshul.dua@tryfacta.ai
+To: josephs@linuxjobber.com
+From: Anshul Dua <anshul.dua@tryfacta.ai>
+Subject: Urgent Position Software Engineer in Emeryville, CA
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+        
+<body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+        <div style="width:100%; overflow:auto; float:left; margin: auto;">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:100%; min-width:300px;">
+                        <tr>
+                <td style=" border:none;">
+                	<table cellpadding="0" cellspacing="0" style="width:100%; min-width:280px; margin:0 auto; border:none;"> 
+                        <tr>
+                            <td style="font-family: calibri,sans-serif !important; font-size:15px !important; color:#333 !important; line-height:22px; border:none;">
+                                <div><span style="font-size:12px;">Hello&nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>
+<div>
+<div>
+<p>My name is Anshul Dua and I am a Staffing Specialist at Tryfacta Inc.&nbsp;I am reaching out to you on an exciting job opportunity with one of our clients.</p>
+
+<p><strong>Job Title</strong>&nbsp;- Software Engineer<br />
+<strong>Location</strong>&nbsp;&ndash; Emeryville, CA</p>
+
+<p><b>Client: Persistent Systems</b></p>
+
+<p><b>Minimum Experience: 08 Years</b></p>
+
+<p><b>Job Description:</b></p>
+</div>
+
+<div>&bull; Possess a bachelor&rsquo;s or graduate degree in Computer Science or a related field &nbsp; &nbsp;&nbsp;
+<div>&bull; Developed cloud software using C++ or Go-Lang &nbsp; &nbsp;&nbsp;</div>
+
+<div>&bull; Strong backend systems and services knowledge, especially familiarity with Linux-based systems &nbsp; &nbsp;&nbsp;</div>
+
+<div>&bull; 8+ years of software development experience &nbsp; &nbsp;&nbsp;</div>
+
+<div>&bull; Competency in one or more scripting languages such as Python, Shell Scripting etc &nbsp; &nbsp;&nbsp;</div>
+
+<div>&bull; Exposure to cloud technologies and micro-services architecture &nbsp; &nbsp;&nbsp;</div>
+
+<div>&bull; Experience with version control software, preferably GIT &nbsp; &nbsp;&nbsp;</div>
+&bull; Good written and verbal communication skills</div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><b>Thanks & Regards,</b></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td>
+			<p>&nbsp;</p>
+			</td>
+			<td>
+			<p><b>Anshul Dua</b></p>
+
+			<p><b>Technical Recruiter</b></p>
+
+			<p><b>+1 (732) 204 8406 Direct</b>&nbsp;&nbsp;</p>
+
+			<p><b>TRYFACTA, INC.</b></p>
+
+			<p><a data-auth="NotApplicable" href="mailto:anshul.dua@tryfacta.ai" rel="noopener noreferrer" target="_blank">anshul.dua@tryfacta.ai</a></p>
+
+			<p><a data-auth="NotApplicable" href="https://www.tryfacta.ai/" rel="noopener noreferrer" target="_blank">https://www.tryfacta.ai/</a>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family: calibri,sans-serif; font-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+                	</table>
+        <p style="border:none; padding-left:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-height:18px;text-transform: uppercase;"> To unsubscribe from future emails or to update your email preferences<a href="http://unsubscribe.tryfacta.ai/users/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/c35a77c25ef5d26cf0d8b69129c6cb573317c91a/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZDM3NucE51dDhJaz0=" style="color:#0077c5; text-decoration:underline"><b>click here </b></a>.</p>    </div>
+<img width="1px" height="1px" alt="" src="http://clicks.mg1.ceipalmm.com/o/eJwVzEsOgyAQANDTlCUZYJjRBYvWxGs0fCtG1GCa9Pht3wFecianYFBUp0EDKIVqNKO2UsmZYWKY7w-mCXnmG0J7KRlzPf3WmoxHE4uzxVgoaGJIkOxAhCF7Ah48EEVvRM_lWZMj1ii6W48rn8v1u7a6vz_rEULu_-oLC4MoQA"></body>
+</html>

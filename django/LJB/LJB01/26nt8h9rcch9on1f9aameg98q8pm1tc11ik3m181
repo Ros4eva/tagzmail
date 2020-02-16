@@ -1,0 +1,346 @@
+Return-Path: <bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com>
+Received: from m40-232.mailgun.net (m40-232.mailgun.net [69.72.40.232])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id 26nt8h9rcch9on1f9aameg98q8pm1tc11ik3m181
+ for josephs@linuxjobber.com;
+ Wed, 18 Dec 2019 20:42:43 +0000 (UTC)
+X-SES-Spam-Verdict: FAIL
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.232 as permitted sender) client-ip=69.72.40.232; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-232.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mg1.ceipalmm.com designates 69.72.40.232 as permitted sender) client-ip=69.72.40.232; envelope-from=bounce+214a73.3edb34-josephs=linuxjobber.com@mg1.ceipalmm.com; helo=m40-232.mailgun.net;
+ dkim=pass header.i=@mg1.ceipalmm.com;
+ dmarc=none header.from=tryfacta.ai;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHQmR1blljelRLR0ZtVm5pS3FvU2pZS1Y5cWxjdG9CcTlhcFVOZTcwTnlOcG40cHJoQVRKaW43WG9wT3ZJcFQrblY2cXpOa3J0SXNBeThIOCtUVHJ0MDNCQ3REenFtWW5aSjVURW9WREhQNkUzbUtBMU1UQTd5UDA4VktUZ0hzUGltSCs4akVkdWZzM1dPYStHelZnaEdlb0pibDNuL3F5WWFFTVR5T1FCK2dsaXRkb1dXOGdNM1FDeVN3NUVWT09XYzE2SVpsVnVuNjUyUVBrZlJOYnNqUG1GdDZkNVJsODFJT2dtU1RoVVBSb2U3bFRjdnlKRDA5emM5aGJxQXljb3dPbjhDWWZOdXFRNXNCMXlzbUlkWXZxbEJrR2F0cVcvaUFjOU9XdkNhbmtWc0ZselY1SXZhaGl0dDNJSWVENEI4NnFTT0hvSEREL1lva3h6QVNlbHo=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=TPJ5oljAG43rD6ChKC4QrRNADK/yi5QtyESWPBdYNLmGvD94D2ldnOaDtzrNyBIWXtS2WtcL+sv7pmSJjg3ekJV+Q83rAiZRiMOaXSkMC5BBimtlC3BoiaD0FX6vfw7GuWn9OWdXA4wc7FhfpE5Srvb+y8uN7sNr/gk4w/UdW3U=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576701769; v=1; bh=E+HTfotWGQuqKcRBv/lVpjTkpNz/2TY3XYngskxXwME=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg1.ceipalmm.com; q=dns/txt;
+ s=smtp; t=1576701769; h=Content-Transfer-Encoding: Mime-Version:
+ Content-Type: Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=cOQy4F1UFe2SETZP6s9z6xQ39sJU+8/JElbJd/nYkp0=; b=k1RWeDornfN3DMOMy/0+pYZ4VHXq93mcPAZWvWigFV1OPHBkzx12rII05+9gL+IsB0Di/8tX
+ sQNIE/oDOQ/FDSRlAkZv9+4tk/M9QL4EJ7pJlPiaV6SzAN7hfRs4ZVAYS3CjG+ye44GLZVrs
+ ec7glTKYhtBf76PQbNTaDK/sGsQ=
+X-Mailgun-Sending-Ip: 69.72.40.232
+X-Mailgun-Sid: WyI5OGU3OCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIzZWRiMzQiXQ==
+X-Mailgun-Batch-Id: 5dfa8f3f49cc76cd1d5f1867
+Received: by luna.mailgun.net with HTTP; Wed, 18 Dec 2019 20:42:39 +0000
+Date: Wed, 18 Dec 2019 20:42:39 +0000
+Sender: mayank.kumar=tryfacta.ai@mg1.ceipalmm.com
+Message-Id: <20191218204239.1.8510ACE616764ACB@mg1.ceipalmm.com>
+X-Mailgun-Variables: {"ref_id": "6724"}
+Reply-To: mayank.kumar@tryfacta.ai
+To: josephs@linuxjobber.com
+From: Mayank Kumar <mayank.kumar@tryfacta.ai>
+Subject: Full Time Position // Senior DevOps/Site Reliability Engineer //
+ Portland, OR // R-System // TransUnion
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div><span style=3D"font-size:12px;">Hello&=
+nbsp;Joseph&nbsp;Showunmi</span></div>
+
+<div>&nbsp;</div>
+
+<div><span style=3D"font-size:12px;">My name is Mayank Kumar and I am a Sta=
+ffing Specialist at Tryfacta Inc.&nbsp;I am reaching out to you on an excit=
+ing job opportunity with one of our clients.</span></div>
+
+<div>&nbsp;</div>
+
+<div>
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri","sans-serif"">Position: Senior DevOps/Site Reliability Engineer</s=
+pan></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri","sans-serif"">Client &ndash; R-System // TransUnion</span></span><=
+/b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri","sans-serif"">Location- Portland, OR</span></span></b></span></spa=
+n></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri","sans-serif"">Job: Full Time position</span></span></b></span></sp=
+an></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"background:ye=
+llow"><span style=3D"font-family:"Calibri","sans-serif"">GC, GC-EAD or USC =
+only</span></span></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b>&nbsp;</b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri","sans-serif"">Job description</span></span></b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">At least 3 years of de=
+velopment operations and/or application development experience, including d=
+emonstrated experience in a SaaS environment.</span></span></span></span></=
+p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Proven experience perf=
+orming root cause analysis and advanced troubleshooting</span></span></span=
+></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Experience with system=
+s management tools such as Puppet, Chef, or Ansible and concepts of configu=
+ration management in a large-scale environment</span></span></span></span><=
+/p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Strong experience supp=
+orting customer-facing applications on a Linux platform</span></span></span=
+></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Practical knowledge of=
+ at least one scripting language (Bash, Ruby, Python, Perl)</span></span></=
+span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b>&nbsp;</b></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-family:"=
+Calibri","sans-serif"">We&rsquo;d Love to See</span></span></b></span></spa=
+n></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Experience operating S=
+QL and NoSQL data stores in a high throughput, high availability, low laten=
+cy environment</span></span></span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Experience with capaci=
+ty planning practices or methodologies</span></span></span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Familiarity with Java =
+debugging tools</span></span></span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Familiarity with opera=
+ting software based on Spring Cloud and/or associated components</span></sp=
+an></span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Experience operating A=
+pache Cassandra, Elastic Search, Lucene, Solr or Katta in a production envi=
+ronment</span></span></span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Experience operating c=
+ontainers (Docker, rkt) in a production setting</span></span></span></span>=
+</p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Experience using Kuber=
+netes, Marathon, Docker Swarm or another container orchestration platform</=
+span></span></span></span></p>
+
+<p class=3D"gmail-" style=3D"margin-left:48px"><span style=3D"font-size:12p=
+t"><span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-=
+size:11.0pt"><span style=3D"font-family:Symbol">&middot;</span></span>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style=3D"font-size:11.0pt=
+"><span style=3D"font-family:"Calibri","sans-serif"">Experience troubleshoo=
+ting and/or building systems in the JVM</span></span></span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif">&nbsp;</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New Rom=
+an",serif"><a name=3D"_MailAutoSig"><span style=3D"font-size:11.0pt"><span =
+style=3D"font-family:"Calibri","sans-serif"">Thanks & Regards,</span></span=
+></a></span></span></p>
+
+<p>&nbsp;</p>
+
+<table class=3D"Table" style=3D"border-collapse:collapse; border:none">
+	<tbody>
+		<tr>
+			<td style=3D"border:none; border-right:solid #01b5f2 2.25pt; padding:5.0=
+pt 5.0pt 5.0pt 5.0pt" valign=3D"top">
+			<p><img height=3D"74" src=3D"https://talenthirecls6.ceipal.com/articles/=
+WjdjeEZuelpSMm5KZEVIakllcmJKM2t0L25kc3p2MHo2eHBVNmRnWFpYT2Iwd2s5TGx0MTVUVW1=
+BYmorQ1dSWng3NzJsdVdqY1dHR0o4c2xVKzMyeG93ODhhK3JNSEl5ZS8zSFdCdGovMDRyTDlPV1=
+BNWFQrd0hSSURmTWVwanVEV0Q1a2htejJUc3h2Wk5hV05ZK0FFMkFRaFFLY3VUZTBCK1dEYnJCO=
+EdzPQ=3D=3D" width=3D"261" /></p>
+			</td>
+			<td style=3D"padding:5.0pt 5.0pt 5.0pt 5.0pt" valign=3D"top">
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-famil=
+y:"Calibri","sans-serif""><span style=3D"color:#01b5f2">Mayank Kumar</span>=
+</span></span></b></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><b><span style=3D"font-size:9.0pt"><span style=3D"font-family=
+:"Calibri","sans-serif""><span style=3D"color:#1f497d">Talent Acquisition A=
+ssociate</span></span></span></b></span></span></p>
+
+			<p>&nbsp;</p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><b><span style=3D"font-size:11.0pt"><span style=3D"font-famil=
+y:"Calibri","sans-serif""><span style=3D"color:#01b5f2">TRYFACTA, INC.</spa=
+n></span></span></b></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><span style=3D"font-size:8.0pt"><span style=3D"font-family:"C=
+alibri","sans-serif""><span style=3D"color:#1f497d">+1 732-759-9632 Direct<=
+/span></span></span></span></span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><a href=3D"mailto:mayank.kumar@tryfacta.ai"><span style=3D"fo=
+nt-size:8.0pt"><span style=3D"font-family:"Calibri","sans-serif""><span sty=
+le=3D"color:blue">mayank.kumar@tryfacta.ai</span></span></span></a></span><=
+/span></p>
+
+			<p><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New =
+Roman",serif"><a href=3D"https://www.tryfacta.ai/" target=3D"_blank"><span =
+style=3D"font-size:8.0pt"><span style=3D"font-family:"Calibri","sans-serif"=
+"><span style=3D"color:#1155cc">https://www.tryfacta.ai/</span></span></spa=
+n></a> </span></span></p>
+			</td>
+		</tr>
+		<tr style=3D"height:21.0pt">
+			<td colspan=3D"2" style=3D"border:none; border-right:solid black 1.0pt; =
+padding:5.0pt 5.0pt 5.0pt 5.0pt; height:21.0pt" valign=3D"top">
+			<p><img height=3D"43" src=3D"https://talenthirecls6.ceipal.com/articles/=
+WjdjeEZuelpSMm5KZEVIakllcmJKM2t0L25kc3p2MHo2eHBVNmRnWFpYT2dWT052Y1F0TVFtcUU=
+4ZkFEVDRIMThnbHg4djNPY2xjM0wzQ2JRZmpjcUdFLzJDQWdwNGRweWNvMHZzRVVsdjYzUWIrV0=
+lUdTNhYUY4VkdQd1J3M0cxQzdVaVNWdTFGM3QrMk9pcU1HM1NRQ0lpVW13clVmSGRPMW1ZMnIwS=
+mIwPQ=3D=3D" width=3D"43" /><img height=3D"41" src=3D"https://talenthirecls=
+6.ceipal.com/articles/WjdjeEZuelpSMm5KZEVIakllcmJKM2t0L25kc3p2MHo2eHBVNmRnW=
+FpYUE9wYTM0UW8rUWpJUWpGcjFyOE5zS1VSODJBaWZSa3VWbUtUTkJVUStsOHhMWEpoVDI4R0dw=
+MW0vMXhGaHVhV1pBTEdMMTVVYUw0eFVWaHpEZUEra2VCKzZmelhIaHZLT3lXd3hFYUlRZWNpRkl=
+YK3pQQ0lEZ3ZURCszdlZBL1ZZPQ=3D=3D" width=3D"41" /><img height=3D"38" src=3D=
+"https://talenthirecls6.ceipal.com/articles/WjdjeEZuelpSMm5KZEVIakllcmJKM2t=
+0L25kc3p2MHo2eHBVNmRnWFpYT0ZBM2llQTVxblBRQkR2UW5ZSklmeFhwZ0lkK1Ywa0xheWxOOD=
+lnYU00WnNDa1k3RzVKcGVYQUo1bndHSnYyZUxGWk1sTUZyU0x2VXlnNkFqdDlndW1TdGdEZUpnS=
+ERQVnVlMzZmaSs3dll6NFl6YXdQYU9pNDhWOUNIYmZPUjc4PQ=3D=3D" width=3D"46" /><sp=
+an style=3D"font-size:12pt"><span style=3D"font-family:"Times New Roman",se=
+rif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",=
+"sans-serif""><span style=3D"color:black">&nbsp;</span></span></span></span=
+></span><img height=3D"46" src=3D"https://talenthirecls6.ceipal.com/article=
+s/WjdjeEZuelpSMm5KZEVIakllcmJKM2t0L25kc3p2MHo2eHBVNmRnWFpYTlAxSnpiNlh1SWdQd=
+Ud3RkgwZ2JvNlhXcHh2cE5CMnV0OGtkdFdOMG0xdHVMTERRYmh2YzgrbWU4cDNBNnZJMVMvb3FW=
+ejBlcU9qbm5TQlZKSzNWVFp0NStDV2VOOVFFbUttRHJzOHIwMjd4QnVWNFkwRVlTZldVSWtsYTd=
+UNXNZPQ=3D=3D" width=3D"160" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.tryfacta.ai/u=
+sers/request_unsubscribe/2cfc84ed2f2c864291ee146be109eb4a10e32a35/12bef4fd8=
+f3075ae601ede627b2a76e05080b6d7/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaEZ=
+DM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b>=
+click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://clicks.mg1.ceipalm=
+m.com/o/eJwVzEsOwiAQANDTyJLMDJTPgkVtPIfha2lKaWhMPL76DvCSEzkFIVl1BGiR0BBIEpY=
+jNxPCvDwUKq3kvNxvEtoLecz19HtrPPbGVhcgK5IxWgGgQxFT9EQIxSufhDaFjVyeNTmlSbLhtn=
+7lc71-116P92frIeTxr74HxihM"></body>
+</html>

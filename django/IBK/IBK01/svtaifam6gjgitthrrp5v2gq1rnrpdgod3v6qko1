@@ -1,0 +1,249 @@
+Return-Path: <bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com>
+Received: from a1.mail.joinhandshake.com (a1.mail.joinhandshake.com [192.237.159.131])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id svtaifam6gjgitthrrp5v2gq1rnrpdgod3v6qko1
+ for jeff.adekunbi@ideabakr.org;
+ Wed, 08 Jan 2020 13:43:31 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.131 as permitted sender) client-ip=192.237.159.131; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a1.mail.joinhandshake.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of mail.joinhandshake.com designates 192.237.159.131 as permitted sender) client-ip=192.237.159.131; envelope-from=bounce+0ac34c.88cb8-jeff.adekunbi=ideabakr.org@mail.joinhandshake.com; helo=a1.mail.joinhandshake.com;
+ dkim=pass header.i=@mail.joinhandshake.com;
+ dmarc=pass header.from=mail.joinhandshake.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIWVAyc2krZUUyU3pXNFlPQi95c1RpWWNTV0JpbGRUWVNsUmd5VDBJNVJlQlcrZ0Y4a0p3bDVPWWVFV2RiSStROEE3dVlEaE9SaUQzOXg2ajA2QmRUUGdXdXkvY1lHZ1RUaHBlRG1PSTF0b0ZFSzRiY21YSmFBZTFySnRRazF5S1dYUlptZmxRTy96d2NwM012bkdnS1hmY1lUNXFhaGJSTmhqc0x2MmJqcnRyU3hzK3E1ZlRvTUUrelpxNC9ZUkxrblZ6SUp1bThWU1FhYkJqNjVaUVQ5ektsa1c2ZTQ1VllWdVNsLzVodkI1bFEyUlN6Unh2OWlZOFErZC93U205WTNlaXNseVUwWTdyMjJkVE1iVkM4NGNyNkVBbnZSMzFZaWZVaUVVdTk3bzhneWxqZ1ZtdnI0L0V6YjJPeUlPZElJM2QxZE5KVy9CbzRMU2J3YU85V3pjbVAxYkU2bkdjcklkWlVsWVVCMWZ3PT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=OsAuPK9qZu8f/2S2yU3BJ2ztWTFzBk/09102MjZli5BizzGnCWm8N0PCHxElqR3stafA8ElwfVVTXrVXTphGXQkJqj5qKwQUbrUTX0ura4LwgG9SKmmqjRT15HU7gQk71LjO3WeRZ8qijBM743kBMjKSDNKHkEqFk9BAl0KVHVA=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1578491011; v=1; bh=loS4YmUni03g/N8kOxykEJn5fHu6EgIkqMxg2wzqjRw=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mail.joinhandshake.com;
+ q=dns/txt; s=mx; t=1578491011; h=Content-Type: Mime-Version: Subject:
+ From: To: Reply-To: Message-Id: Sender: Date: List-Unsubscribe;
+ bh=loS4YmUni03g/N8kOxykEJn5fHu6EgIkqMxg2wzqjRw=; b=fYznqtGaIm+g2JXHw/7CuZjNlF1cg8YwPQ5gOmKO7gcZBeUGtioo4TIRAdFZIV1l7R0zmPNs
+ lnuzYcu8m0t3OUJcaL/aBDJlPRu6Wy6gU8rbgxtCMa1Zb15KmZXfq64zdX7M4Y+mIOZ1vHyF
+ O1dNw2sHuAe7djXLOfdvfoDDXLE=
+X-Mailgun-Sending-Ip: 192.237.159.131
+X-Mailgun-Sid: WyIyNGNhOCIsICJqZWZmLmFkZWt1bmJpQGlkZWFiYWtyLm9yZyIsICI4OGNiOCJd
+List-Unsubscribe: <mailto:u+mq6tqoddmi4cm2j5giydembqgeydqmjtgqztcmzogexdgmjugqydcmjqgncemojqgy4emjjugbwwc2lmfzvg62lonbqw4zdtnbqwwzjomnxw2jtihuztonzug43dsnbxgzstqobzga4dszbsgu2tqytbgnqtsnlbmqztajtshvvgkztgfzqwizllovxge2jfgqygszdfmfrgc23sfzxxezzgoq6tcobnknrwq33pnqtgqylomrzwqyllmvpw2yltonpwk3lbnfwf62lehu2tamjuhezq@mail.joinhandshake.com>
+X-Mailgun-Batch-Id: 5e15dc719b9fd4549abb17c0
+Received: by luna.mailgun.net with HTTP; Wed, 08 Jan 2020 13:43:13 +0000
+Date: Wed, 08 Jan 2020 13:43:13 +0000
+Sender: handshake@mail.joinhandshake.com
+Message-Id: <20200108134313.1.314401103DF9068F@mail.joinhandshake.com>
+X-Mailgun-Variables: {"handshake_mass_email_id": "501493"}
+Reply-To: career-fair@wmich.edu
+X-Mailgun-Tag: 18-School
+To: jeff.adekunbi@ideabakr.org
+From: Amanda Jeppesen via joinhandshake.com
+ <handshake@mail.joinhandshake.com>
+Subject: Register today for February job fairs at Western Michigan
+ University!
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="56b10eb2f6db40f89c57e2128083bd7c"
+
+--56b10eb2f6db40f89c57e2128083bd7c
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+Western Michigan University
+Hello Jeff,We hope you'll join us for one of our job fairs in February, if =
+you'll be hiring new talent in 2020.Career and Student Employment Services =
+hosts an all-major=C2=A0Spring Recruiting Showcase in
+ February 2020, consisting of the three events outlined below. Employers
+ are welcome to attend one, two, or three job fairs, based on their=20
+hiring needs. (If you've already registered, we look forward to seeing=20
+you in February.)Science, Technology, Engineering, and Mathematics (STEM) F=
+airWednesday, February 5, 2020The
+ STEM Fair attracts students studying in hard sciences, computer=20
+science, telecommunications and information management, business=20
+information systems, data science, and all engineering programs.https://app=
+=2Ejoinhandshake.com/career_fairs/12019/e=
+mployer_previewCareer FairThursday, =
+February 6, 2020Career Fair supports students studying in programs outside=
+=C2=A0of
+ those served specifically by the STEM Fair. Career Fair attracts=20
+students studying in business, healthcare, aviation, human development,=20
+liberal arts (non-hard sciences), supply chain management, and fine arts
+ programs.https://app.joinhandshake.com/career_fairs/12192/employer_preview=
+Government and Nonprofit FairFriday, February 7, 2020Government
+ and Nonprofit Fair supports all students seeking employment in=20
+government and nonprofit organizations, regardless of programs of study.Not=
+e: Organizations must be governmental or registered nonprofits to qualify f=
+or entry into the Government and Nonprofit Fair.https://app.joinhandshake.c=
+om/career_fairs/12194/employer_previewPlease contact us if you have any que=
+stions.We look forward to hosting you in February!Buffy and AmandaSpring Re=
+cruiting Showcase Co-ChairsBuffy Nespodzany - Assistant Director for Employ=
+er EngagementAmanda Jeppesen - Employer Engagement AssistantWestern Michiga=
+n UniversityCareer and Student Employment ServicesCareer-Fair@wmich.edu =C2=
+=A0| =C2=A0(269) 387-2745WMU students are Smart http://email.mail.joinhands=
+hake.com/c/eJxlzj1uxCAQQOHTQBfEAMZsQWNtUPocwBrDEFj_IOGsfP0kipQm7Ss-veSdi4vj=
+1SuppATpQBsNWoDQYIwEkPoebtK6wIzcsW7i0epR8EhnwZVEbDsvflQaYBjs6ACttVnr7DCPWpG=
+L45KRb_6tdjqv6xLXXmMRlJ5MhYidqP-Wfy57DWya2BR49w_KWWCi9Xks9fukJsIF1y5a_-CfHt=
+zLeyytbfxPmHc8z5l-luea_CDB3PQXLudLsQ
+
+
+
+
+
+
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+Western Michigan University
+
+If you do not want to receive these emails, you can
+unsubscribe
+from emails from
+Western Michigan University
+
+If you do not want to receive any mass emails from Handshake, you can
+unsubscribe
+from all Handshake emails
+
+P.O. Box 40770, San Francisco, CA 94140
+--56b10eb2f6db40f89c57e2128083bd7c
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<title>Handshake</title>
+
+<style>a:hover{color:#254fa5}
+a:active{color:#183684}
+a.plain:hover{color:#2e2a2b}
+a.plain:active{color:#1c1819}
+=2Eprimary-button a:hover{color:inherit}
+=2Eoutline-button a:hover{color:inherit}
+=2Ebutton a:hover{color:inherit}
+=2Eprimary-button a:active{color:inherit}
+=2Eoutline-button a:active{color:inherit}
+=2Ebutton a:active{color:inherit}
+=2Eprimary-button:hover{color:#fff;backgr=
+ound-color:#ff6860;border-color:1px =
+solid #ff6860}
+=2Eprimary-button:active{color:#fff;backg=
+round-color:#e21d17;border-color:1px=
+ solid #ff6860}
+=2Eoutline-button:hover{color:#ff6860;border-color:#ff6860}
+=2Eoutline-button:active{color:#e21d17;border-color:#e21d17}
+table.lined a:hover{text-decoration:none}
+@media (max-width: 767px) {
+=2Eavatar--mobile-md{max-width:56px}
+}</style></head>
+</html><html><body style=3D"font-family:&quot;Suisse Int'l&quot;, -apple-sy=
+stem, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neu=
+e&quot;, sans-serif;color:#231f20;font-size:16px;line-height:20px;-webkit-p=
+rint-color-adjust:exact">
+<div class=3D"email-content" style=3D"width: 800px; margin: 0 auto;">
+<div class=3D"tile" style=3D"position:relative;margin-bottom:12px;padding:6=
+px;border:1px solid #e6e6e6;background-color:#fff;border-radius:3px;box-sha=
+dow:0 0 4px 1px rgba(0,0,0,0.05),2px 2px 2px 1px rgba(0,0,0,0.05);padding-r=
+ight:6px;padding: 8px;">
+<div>
+<div class=3D"mass-email-body">
+<img src=3D"https://s3.amazonaws.com/handshake.production/app/public/assets=
+/schools/18/original/hs-school-logo-data.?1499787376" alt=3D"logo" width=3D=
+"50" height=3D"50">
+<h1 class=3D"no-margin-top margin-left" style=3D"font-weight:700;word-break=
+:break-word;font-size:46px;line-height:52px;display: inline;">Western Michi=
+gan University</h1>
+<p class=3D"margin-top" style=3D"font-size:18px;line-height:28px">Hello Jef=
+f,<br><br>We hope you'll join us for one of our job fairs in February, if y=
+ou'll be hiring new talent in 2020.<br><br>Career and Student Employment Se=
+rvices hosts an <u><i>all-major</i></u>&nbsp;<b>Spring Recruiting Showcase =
+</b>in
+ February 2020, consisting of the three events outlined below. Employers
+ are welcome to attend one, two, or three job fairs, based on their=20
+hiring needs. (If you've already registered, we look forward to seeing=20
+you in February.)<br><br><b>Science, Technology, Engineering, and Mathemati=
+cs (STEM) Fair</b><br><i>Wednesday, February 5, 2020</i><br>The
+ STEM Fair attracts students studying in hard sciences, computer=20
+science, telecommunications and information management, business=20
+information systems, data science, and all engineering programs.<br><a targ=
+et=3D"_blank" href=3D"http://email.mail.joinhandshake.com/c/eJxlkEtuxCAMhk-=
+T7BrxSgQLFpVGuUAPgBxwJswEiIC06u3LTB-bSpYsf79s_7bTUtpF9l4zwgihRFIuOOUDHTgVgl=
+BK-GVWZJJzJ0gAvw-35OMG0ZUN7jjYFPpNLwt1Ixu5pCsXk0JYleKcCbXYSQCIftdbrUfp-GvH5=
+hZwHP8HNW4hI2azgs-llZQRqlrGcOzpswlHxnePHx2fzxpMSWe22PFLgFLMwx3mjk0PKaDzZ2gS=
+PvAPtClWjLXRkVCh-C-GcIC_xsbP6E2FfMWKzjxbS5_1Ddd1AIf3My6-_cE7hAXueUj52ldN5cu=
+b3VLa-79zzNPRc4DxTn-v-wIFCHfe" style=3D"color:#254fa5;font-weight:inherit">=
+https://app.joinhandshake.com/career_fairs/12019/employer_preview</a><br><b=
+r><b>Career Fair</b><br><i>Thursday, February 6, 2020</i><br>Career Fair su=
+pports students studying in programs <u>outside</u>&nbsp;of
+ those served specifically by the STEM Fair. Career Fair attracts=20
+students studying in business, healthcare, aviation, human development,=20
+liberal arts (non-hard sciences), supply chain management, and fine arts
+ programs.<br><u><a target=3D"_blank" href=3D"http://email.mail.joinhandsha=
+ke.com/c/eJxlkEtuxCAMhk-T7BphnJkmCxaVRrlAD4AccCZ0AkRAWvX2ZaaPTSXLlr9fflo1DG=
+YeWqekkEKAGAB7BOygQ-h7ASDwMo3iPExNLzy5rXuLLqwUbF7pxp2Jvl2VBUSJC_QzGBR8Gs8nM=
+mP1gmbzvMztptZS9tzgSyOnarTv_xtVbigxJ72QS7mmIGGUNbLft_hZhT3xu-OPBqejeJ3jkQw3=
+ePGUs75vx6mR57vk2brDV4nv-AeaGAqHUulJQD_iLya_k7uGyo_gdKF05cJWP0pzm9QbL0tHlm9=
+HmF39g7NMM91SF9O1LQqGp1ezxri1f-fox0aPBtpZ9T3uCyX0eAM" style=3D"color:#254fa=
+5;font-weight:inherit">https://app.joinhandshake.com/career_fairs/12192/emp=
+loyer_preview</a></u><br><br><b>Government and Nonprofit Fair</b><br><i>Fri=
+day, February 7, 2020</i><br>Government
+ and Nonprofit Fair supports all students seeking employment in=20
+government and nonprofit organizations, regardless of programs of study.<br=
+>Note: Organizations must be governmental or registered nonprofits to quali=
+fy for entry into the Government and Nonprofit Fair.<br><a target=3D"_blank=
+" href=3D"http://email.mail.joinhandshake.com/c/eJxlkEtuxCAMhk-T7BrxmpQsWIw=
+0ygV6AGTAmTATIALSqrcvM31sKlmy_P2y_dtOSWmN7L1ihBFCiaRccMoHOnAqBKGU8Ms8kVHOnS=
+AB_Dbcko8rRFdWuONgU-hXdaKLnTizwuAoXs24MCGpWbiQozMnSfpNrbXupePnjs0tYN__D2rcQ=
+kbMegGfSyspo5NoGcO-pc8m7BnfPX50fD5q0CUd2WLHLwFK0Q93mDs2PqSAzh-hSfjAP9CmWDHW=
+Rk-Eion_Ygg7-Gts_IheV8hXrOj0s7X0Wd1wWQZweD-i8e0P3iEYuOch5WtfFZUvb3ZNaev_ztF=
+PR88B2jv1ve4LDxR35g" style=3D"color:#254fa5;font-weight:inherit">https://ap=
+p.joinhandshake.com/career_fairs/12194/employer_preview</a><br><br>Please c=
+ontact us if you have any questions.<br><br>We look forward to hosting you =
+in February!<br>Buffy and Amanda<br>Spring Recruiting Showcase Co-Chairs<br=
+><br>Buffy Nespodzany - Assistant Director for Employer Engagement<br>Amand=
+a Jeppesen - Employer Engagement Assistant<br>Western Michigan University<b=
+r>Career and Student Employment Services<br>Career-Fair@wmich.edu &nbsp;| &=
+nbsp;(269) 387-2745<br><br>WMU students are Smart Hires<br><a target=3D"_bl=
+ank" href=3D"http://email.mail.joinhandshake.com/c/eJw9j02OhCAQhU-juyFVQre4=
+YDFJxwvMAQxCqXQLdBDj9Qedn6Q29b1UvfesktKMsnaqgQYAQSIXHDlDxlEIQAT-6Du4y74S4LV=
+b2TO6sOhgt0W_iJno60VxEIIsl4jjaKlrEQhu7YRtazuQjaxXteT8rvhn1fRljuNgh3dmYWT3sh=
+udiFLF-z37YYt7MlTxh9fbNpyeRWrup-TJut0XiU78C00MmUIu9AYoOv6HtX9rN4fC9-CGrNNMm=
+exwnW51Uk-aJqYtvfYwutLOWdKjfiUW01xnhfLjyywxrvV_2-FKdD0YnFU_dt8S3Gh1" style=
+=3D"color:#254fa5;font-weight:inherit">www.wmich.edu/career</a><br>wmich.jo=
+inhandshake.com=EF=BB=BF<br></p>
+
+</div>
+</div>
+
+<div class=3D"mass-email-footer">
+<p class=3D"text-muted" style=3D"font-size:18px;line-height:28px;color:#7a7=
+a7a;font-size:11px;margin:2px;text-align:center">
+This email is being sent to Jeff Adekunbi (jeff.adekunbi@ideabakr.org) on b=
+ehalf of
+Western Michigan University
+<br>
+If you do not want to receive these emails, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9zT0SgyAQQOHThC7Mrgu6FH=
+QZL5ADOItgwD9mNLl_TJPitd-LnnkMrIpvoAFAYCRDSBo1oTGACPToHbTc3wxsUlY917Jn2eOZZ=
+Ul6rJvKnrrOdK27SswO2MXGWg5C4qxEAnX4OU2TlpiWzx7KZZWYJMhy6Hq81Nsj359jrnVVf3vY=
+5DyH9JsOJXoLaBx9ARwyNTM" style=3D"color:#254fa5;font-weight:inherit">unsubs=
+cribe</a>
+from emails from
+Western Michigan University
+<br>
+If you do not want to receive any mass emails from Handshake, you can
+<a href=3D"http://email.mail.joinhandshake.com/u/eJw9zUEOgjAQQNHT2GUz0xl0WH=
+RhYrgGmXaKFAQS0PuLGw_w37cokpO4GgMEAARBYkLy6AmZARHo0bVwle7CsGh9-Wmr66irHaPOx=
+edtceMZZwiDGBVmM8y5IQG4SZNYOGR1e5zKMHi1Mn_WVE-rWtGk8-63_ene8RLu7q_2ix5HX367=
+vlpsALmlLxLpM2E" style=3D"color:#254fa5;font-weight:inherit">unsubscribe</a=
+>
+from all Handshake emails
+<br>
+P.O. Box 40770, San Francisco, CA 94140
+</p>
+</div>
+
+
+</div>
+</div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.mail.joinhan=
+dshake.com/o/eJw9zT0SgyAQQOHThC7Mrgu6FHQZL5ADOItgwD9mNLl_TJPitd-LnnkMrIpvoA=
+FAYCRDSBo1oTGACPToHbTc3wxsUlY917Jn2eOZZUl6rJvKnrrOdK27SswO2MXGWg5C4qxEAnX4O=
+U2TlpiWzx7KZZWYJMhy6Hq81Nsj359jrnVVf3vY5DyH9JsOJXoLaBx9ARwyNTM"></body></ht=
+ml>
+
+--56b10eb2f6db40f89c57e2128083bd7c--

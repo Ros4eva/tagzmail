@@ -1,0 +1,168 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-153.mailgun.net (m71-153.mailgun.net [166.78.71.153])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id gjm95f1kt8npt00s4qsd94c4gpjj8ogl3hhv1jg1
+ for josephs@linuxjobber.com;
+ Fri, 24 Jan 2020 22:46:20 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFIWWRGazhWejkxWDg0dThrRUZjTkZ0TUFFTVUzeEpjNFZLemd1aEVMMytGcnc2eC9FMnFXQlNua3RFWEFCd1JYNVN0ZHBEVmtmbWZJV1k2QUNZWnJDNUl2ck84Z3FkY2NWYmJUWndYd0VVL2FNRUZQMG5tTk9kNWdOeHR6dFRtM2lWM0ZrQS9TRHVQUmZZRnpHMVltb2lMTzZZdW9GVG5PRlBUTTBJLzRnUXR5QmFjd2ZacWtnWmxTem1ZM1BQbnBJTkVUZ1YyQTV3Um0wNTVLREd2ZVFGN3JDTFpQWm5GcHlCOGV1S0o5UXNka2RvUEhWalhkajgrUHZ2ZEtFUkV3aGE0TmpIc3AxQnhwTkxnMWl6QlRkL2F5NUFKMGFkejMvV1czb3BqVC9oZ1ZEeHNsZ2wvV3hrZnhOTVhhY1BPenVsYnZjWXZnUE5LMThVWVpRczVYVXk=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=FoNrltDaGMWHp0Rwo71026DTQXcWnsPUTOp0Sw1NU0CQ7DzD6gEVYB1XoAP1jVcaQMUvlHBijvHrsuyHEEqUyLeDn9RzH8xMYRgcpQ7REpCP/1sOeRFCF/xkdifsYrOQpj0QgwWtemUSVlRTI7g+CIMHe1FVZxDJXBe61cHipSI=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1579905981; v=1; bh=v24WtqJswv9/lqW7PXOKBeIHBstzxbLyFrw2ZbGty3c=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1579905980; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=frz4k5HqesCzphyWuB9q25RLhSdiLYTFM/foFeR3nzs=; b=bIY+SybIsLwqTVVkv6eZnqH5C5u5GeAHDm3A7kpa8wF+em/3yIGkCzwyNjJkRHEuisj56xbX
+ VHdttM7naoAyaO3Wb5w7dy2odYbTaxRHXphcuYQL+/u6gxseh5nD579KZxyRoSGl1DcOXZjd
+ +4Ml/0vqzsYVarJUR+SP+Rei1j4=
+X-Mailgun-Sending-Ip: 166.78.71.153
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5e2b73bbc46aff9f4ac69ee1
+Received: by luna.mailgun.net with HTTP; Fri, 24 Jan 2020 22:46:18 +0000
+Date: Fri, 24 Jan 2020 22:46:18 +0000
+Sender: vikash.ks@usgrpinc.com
+Message-Id: <20200124224618.1.1BAB3DE1186791F8@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: vikash.ks@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Vikash Shandilya <vikash.ks@usgrpinc.com>
+Subject: Urgent Requirement :: Full stack Developer with Adobe - Richfield,
+ MN
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <div id=3D"EditorSalutationID">Hi Joseph Sh=
+owunmi
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:Calibri,sans-serif">Hope you are doing great!!</span><=
+/span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"line-height:16.5pt"><span =
+style=3D"font-family:Calibri,sans-serif">I&#39;m a Talent Acquisition Speci=
+alist at United Software Group (USG), a global staffing, IT consulting & Pr=
+oduct Development company. We are constantly on the lookout for professiona=
+ls to fulfill the staffing needs of our clients and we currently have a job=
+ opening that may interest you.</span></span></span></p>
+
+<p class=3D"gmail-xxx"><span style=3D"font-size:12pt"><span style=3D"font-f=
+amily:"Times New Roman",serif"><b><span style=3D"font-size:11.0pt"><span st=
+yle=3D"font-family:"Calibri",sans-serif">Position</span></span></b><span st=
+yle=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif"> =
+: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Full stack Developer with A=
+dobe</b></span></span></span></span></p>
+
+<p class=3D"gmail-xxx"><span style=3D"font-size:12pt"><span style=3D"font-f=
+amily:"Times New Roman",serif"><b><span style=3D"font-size:11.0pt"><span st=
+yle=3D"font-family:"Calibri",sans-serif">Location</span></span></b><span st=
+yle=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif">:=
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Richfield, MN</b></span></sp=
+an></span></span></p>
+
+<p class=3D"gmail-xxx"><span style=3D"font-size:12pt"><span style=3D"font-f=
+amily:"Times New Roman",serif"><b><span style=3D"font-size:11.0pt"><span st=
+yle=3D"font-family:"Calibri",sans-serif">Duration</span></span></b><span st=
+yle=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif"> =
+: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Full Time</b></span></span></span></spa=
+n></p>
+
+<p class=3D"gmail-xxx"><span style=3D"font-size:12pt"><span style=3D"font-f=
+amily:"Times New Roman",serif"><b><span style=3D"font-size:11.0pt"><span st=
+yle=3D"font-family:"Calibri",sans-serif">Responsibility </span></span></b><=
+span style=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-s=
+erif">As a Lead, you are responsible for managing a small team of analysts,=
+ developers, testers or engineers and drive delivery of a small module with=
+in a project (Delivery/Maintenence/Testing) You may serve as entry level sp=
+ecialist with expertise in particular technology/industry domain/a process =
+/ application / product. You are responsible for functional/technical track=
+ of a project<b>.</b></span></span></span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><b>Key skills required for the job are:</b></span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">Full Stack Adobe Experience Cloud-L3 (Mandatory)</span></span></li>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">DevOps - Continuous Delivery-L3</span></span></li>
+</ul>
+
+<ul>
+	<li><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans=
+-serif">Minimum work experience:5 - 8 Years</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Regards,</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Vikash Shandilya</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">United Software Group (USG) INC.</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif">Phone: 614-495-9222 ex. 608</span></span></p>
+
+<p><span style=3D"font-size:11pt"><span style=3D"font-family:Calibri,sans-s=
+erif"><a href=3D"mailto:Vikash.ks@usgrpinc.com" style=3D"color:#0563c1; tex=
+t-decoration:underline">Vikash.ks@usgrpinc.com</a></span></span></p>
+</div>
+
+<div id=3D"EditorDefaultBodyId">&nbsp;</div>
+&nbsp;
+
+<div id=3D"EditorMessageBodyID">&nbsp;</div>
+
+<div id=3D"EditorSignatureID">&nbsp;</div>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/bf98f0fd=
+bb21a66cac21bb2a4d3ad461392d88de/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D/" style=3D"color:#0077c5; text-decoration:underline"><=
+b>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEsOwiAQANDTyLKZGYYKCxY26jVMh4-l0dJAmnh89R3gRY8JZgBVPAEBIDERj2gHHHC6=
+TPp6Q7Tj2eHdnhiO_mx72cIQ6lstHmcSYQOsIwgRoHboTAZGI5JNUC3lR4meNFjV_Fp72pf-e15=
+lOz5rFUntX30BNxwmVQ"></body>
+</html>

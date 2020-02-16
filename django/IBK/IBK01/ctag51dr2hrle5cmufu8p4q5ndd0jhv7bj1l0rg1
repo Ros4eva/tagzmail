@@ -1,0 +1,166 @@
+Return-Path: <cpdi@ccny.cuny.edu>
+Received: from mail.symplicity.com (us-east-mail1.symplicity.com [34.194.230.233])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id ctag51dr2hrle5cmufu8p4q5ndd0jhv7bj1l0rg1
+ for jeff.adekunbi@ideabakr.org;
+ Thu, 26 Dec 2019 11:16:01 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: softfail (spfCheck: transitioning domain of ccny.cuny.edu does not designate 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=cpdi@ccny.cuny.edu; helo=us-east-mail1.symplicity.com;
+Authentication-Results: amazonses.com;
+ spf=softfail (spfCheck: transitioning domain of ccny.cuny.edu does not designate 34.194.230.233 as permitted sender) client-ip=34.194.230.233; envelope-from=cpdi@ccny.cuny.edu; helo=us-east-mail1.symplicity.com;
+ dmarc=fail header.from=ccny.cuny.edu;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGenVkU1NzVFRDcVUzS21XZk4zVGJ4aER3RGhGR1BHVWY0a1k1R3R1SVhKTUtGT2g5eklzRHg5VlBnRXlQUSs1NmhKaXkxeHVLa0R3VnlVSDRLbENpSUQ0bFBYUDRZa1phS1dMSDR0aDZETWh6cExkWmU1ZVlPemQyU3lLdFR4MDUvQlRLeVRmR1F2Kzk5QXczRzdoUlYzQkQ3UDJXYTl0cGpkRzlRRHlPNmw5VlFxTHVCeWtndXVsY3R5dC9XRzkvTkpSZWNDYXdESEdPQ0NuWTNUS1lpYTYzSVFFNHl3amNPN21tWWo1d2VUWlRtMFBLQzRGZm1udHJrR2hDZ3ErRzNRaVBEVjU2NndRb1ZYUklBd1lFRWVET0FpVktaTVQ1WWNnOWxxbk12RkE9PQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=JD/fTqwq0nmnoYGp2K5Tx2rYZv3T9ZdlxgZWKP3cpFb+W87cjmWjyPREwq1rYO/UqPNeaBjqIF20/3Xu0XM13pyQvGb072Eztx7BE/aIRVfTZktpN6ZclIkowOXrfMeDthfLbMjJzx+xip65ONkGmMzRoAErdTN4a9epXO5dlG4=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1577358964; v=1; bh=jVA9kVtlQeC7FnY1KM2JA+YyHZP+bG71etDl7rcMi74=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: from ip-172-30-12-53 (ip-172-30-12-53.ec2.internal [172.30.12.53])
+	by mail.symplicity.com (Postfix) with ESMTP id 878A56057C
+	for <jeff.adekunbi@ideabakr.org>; Thu, 26 Dec 2019 11:16:00 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.symplicity.com 878A56057C
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_c6dcdc4b4894a0909e50b27f02b222f8"
+From: "CCNY Career and Professional Development" <cpdi@ccny.cuny.edu>
+To: jeff.adekunbi@ideabakr.org
+Subject: CCNY Spring Career Fairs!!!  
+Message-ID: <6d1e88df7bfba2a8ac1e08fad9c74a7b@ccny-csm.symplicity.com>
+Date: Thu, 26 Dec 2019 06:16:00 -0500
+
+--=_c6dcdc4b4894a0909e50b27f02b222f8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+
+CCNY SPRING JOB AND INTERNSHIP FAIR
+The City College of New York (CCNY) Career and Professional Development Ins=
+titute would like to invite you to our Spring Job and Internship on Thursda=
+y, March 26th, 2020 from 12pm to 4pm.  This event is open to all CCNY stude=
+nts and alumni.
+
+Please visit  <a href=3D"https://www.ccny.cuny.edu/careercenter/employer-jo=
+b-fairs" target=3D"_blank">https://<a target=3D"_blank" href=3D"http://www.=
+ccny.cuny.edu/careercenter/employer-job-fairs"  target=3D"_blank">www.ccny.=
+cuny.edu/careercenter/employer-job-fairs</a> </a>  for more information and=
+ to register for the fair.  We do reach capacity for this event quickly so =
+early registration is encouraged.=20
+
+CCNY ARCHITECTURE & URBAN DESIGN CAREER FAIR
+The City College of New York (CCNY) Career and Professional Development Ins=
+titute and Spitzer School of Architecture would like to invite you to the S=
+pitzer Career Fair on Thursday, February 20th from 11:30am - 2:00pm.  Recru=
+it CCNY students and recent alumni from the majors below.  Please visit .  =
+<a href=3D"https://www.ccny.cuny.edu/careercenter/employer-job-fairsfor" ta=
+rget=3D"_blank">https://<a target=3D"_blank" href=3D"http://www.ccny.cuny.e=
+du/careercenter/employer-job-fairsfor"  target=3D"_blank">www.ccny.cuny.edu=
+/careercenter/employer-job-fairsfor</a> </a>  more information and to regis=
+ter.
+
+Architecture
+Landscape Architecture
+Urban Design
+Urban Sustainability
+COMPUTER SCIENCE CAREER FAIR
+On Friday, February 21st, 2020 the CCNY Career and Professional Development=
+ Institute will be hosting a Computer Science Career Fair on the campus of =
+CCNY in the NAC Ballroom from 12:00pm-3:00pm.  This fair is focused on comp=
+uter science and computer engineering students. REGISTER NOW...  <a href=3D=
+"https://www.ccny.cuny.edu/careercenter/employer-job-fairs" target=3D"_blan=
+k">https://<a target=3D"_blank" href=3D"http://www.ccny.cuny.edu/careercent=
+er/employer-job-fairs"  target=3D"_blank">www.ccny.cuny.edu/careercenter/em=
+ployer-job-fairs</a> </a> =20
+
+
+Sincerely,
+CCNY Career and Professional Development Institute
+212-650-5327
+ <a href=3D"http://www.ccny.cuny.edu/careercenter/employer-services.cfm" ta=
+rget=3D"_blank">http://<a target=3D"_blank" href=3D"http://www.ccny.cuny.ed=
+u/careercenter/employer-services.cfm"  target=3D"_blank">www.ccny.cuny.edu/=
+careercenter/employer-services.cfm</a> </a> =0A=0APowered By Symplicity  
+--=_c6dcdc4b4894a0909e50b27f02b222f8
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+=0A<head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8"></head><p><img src=3D"http://ccny-csm.symplicity.com/tinyfiles/CPDIl=
+ogo1.png" alt=3D"" width=3D"110" height=3D"85"><img style=3D"float: right;"=
+ src=3D"http://ccny-csm.symplicity.com/tinyfiles/CityCollegeLogo.png" alt=
+=3D"" width=3D"100" height=3D"40"></p>
+<p><strong><span class=3D"il">CCNY</span>=C2=A0<span class=3D"il">SPRING</s=
+pan>=C2=A0<span class=3D"il">JOB</span>=C2=A0<span class=3D"il">AND</span>=
+=C2=A0<span class=3D"il">INTERNSHIP</span>=C2=A0FAIR</strong><br>=0AThe Cit=
+y College of New York (<span class=3D"il">CCNY</span>) Career=C2=A0<span cl=
+ass=3D"il">and</span>=C2=A0Professional Development Institute would like to=
+ invite you to our=C2=A0<span class=3D"il">Spring</span>=C2=A0<span class=
+=3D"il">Job</span>=C2=A0<span class=3D"il">and</span>=C2=A0<span class=3D"i=
+l">Internship</span>=C2=A0on=C2=A0<span class=3D"aBn" tabindex=3D"0" data-t=
+erm=3D"goog_373431742"><span class=3D"aQJ">Thursday, March 26th, 2020 from =
+12pm to 4pm.</span></span>=C2=A0 This event is open to all=C2=A0<span class=
+=3D"il">CCNY</span>=C2=A0students=C2=A0<span class=3D"il">and</span>=C2=A0a=
+lumni.</p>
+<p>Please=C2=A0visit=C2=A0<a href=3D"https://ccny-csm.symplicity.com/track/=
+bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/realurl=3Dhttps://www.ccny.cuny=
+.edu/careercenter/employer-job-fairs"> </a><a href=3D"https://ccny-csm.symp=
+licity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/realurl=3Dhttp=
+s://www.ccny.cuny.edu/careercenter/employer-job-fairs" target=3D"_blank">ht=
+tps://</a><a target=3D"_blank" href=3D"https://ccny-csm.symplicity.com/trac=
+k/bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/realurl=3Dhttp://www.ccny.cun=
+y.edu/careercenter/employer-job-fairs">www.ccny.cuny.edu/careercenter/emplo=
+yer-job-fairs</a>  =C2=A0for=C2=A0<span class=3D"il">more</span>=C2=A0infor=
+mation=C2=A0<span class=3D"il">and</span>=C2=A0to register for the fair. =
+=C2=A0We do reach capacity for this event quickly so early registration is =
+encouraged.=C2=A0</p>
+<p><strong><span class=3D"il">CCNY</span>=C2=A0ARCHITECTURE=C2=A0<span clas=
+s=3D"il">&amp;</span>=C2=A0URBAN DESIGN CAREER FAIR</strong><br>=0AThe City=
+ College of New York (<span class=3D"il">CCNY</span>)=C2=A0<span class=3D"m=
+_1659745700944140251il">Career</span>=C2=A0<span class=3D"il">and</span>=C2=
+=A0Professional Development Institute=C2=A0<span class=3D"il">and</span>=C2=
+=A0Spitzer School of=C2=A0<span class=3D"m_1659745700944140251il">Architect=
+ure</span>=C2=A0would like to invite you to the Spitzer=C2=A0<span class=3D=
+"m_1659745700944140251il">Career</span>=C2=A0<span class=3D"m_1659745700944=
+140251il">Fair</span>=C2=A0on=C2=A0<span class=3D"aBn" tabindex=3D"0" data-=
+term=3D"goog_373431744"><span class=3D"aQJ">Thursday, February 20th from 11=
+:30am - 2:00pm.</span></span>=C2=A0 Recruit=C2=A0<span class=3D"il">CCNY</s=
+pan>=C2=A0students=C2=A0<span class=3D"il">and</span>=C2=A0recent alumni fr=
+om the majors below.=C2=A0 Please visit . <a href=3D"https://ccny-csm.sympl=
+icity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/realurl=3Dhttps=
+://www.ccny.cuny.edu/careercenter/employer-job-fairs"> </a><a href=3D"https=
+://ccny-csm.symplicity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/406381568=
+7/realurl=3Dhttps://www.ccny.cuny.edu/careercenter/employer-job-fairs" targ=
+et=3D"_blank">https://</a><a target=3D"_blank" href=3D"https://ccny-csm.sym=
+plicity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/realurl=3Dhtt=
+p://www.ccny.cuny.edu/careercenter/employer-job-fairs">www.ccny.cuny.edu/ca=
+reercenter/employer-job-fairs</a>  for=C2=A0<span class=3D"il">more</span>=
+=C2=A0information=C2=A0<span class=3D"il">and</span>=C2=A0to register.</p>
+<ul><li><span class=3D"m_1659745700944140251il">Architecture</span></li>
+<li>Landscape=C2=A0<span class=3D"m_1659745700944140251il">Architecture</sp=
+an></li>
+<li>Urban Design</li>
+<li>Urban Sustainability</li>
+</ul><p><strong>COMPUTER SCIENCE CAREER FAIR<br></strong>On Friday, Februar=
+y 21st, 2020 the CCNY Career and Professional Development Institute will be=
+ hosting a Computer Science Career Fair on the campus of CCNY in the NAC Ba=
+llroom from 12:00pm-3:00pm.=C2=A0 This fair is focused on computer science =
+and computer engineering students. REGISTER NOW... <a href=3D"https://ccny-=
+csm.symplicity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/realur=
+l=3Dhttps://www.ccny.cuny.edu/careercenter/employer-job-fairs"> </a><a href=
+=3D"https://ccny-csm.symplicity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/=
+4063815687/realurl=3Dhttps://www.ccny.cuny.edu/careercenter/employer-job-fa=
+irs&amp;nbsp" target=3D"_blank">https://</a><a target=3D"_blank" href=3D"ht=
+tps://ccny-csm.symplicity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/406381=
+5687/realurl=3Dhttp://www.ccny.cuny.edu/careercenter/employer-job-fairs&amp=
+;nbsp">www.ccny.cuny.edu/careercenter/employer-job-fairs&amp;nbsp</a>  ;<br=
+><br></p>
+<p>Sincerely,<br><span class=3D"il">CCNY</span>=C2=A0Career=C2=A0<span clas=
+s=3D"il">and</span>=C2=A0Professional Development Institute<br>=0A212-650-5=
+327<br><a href=3D"https://ccny-csm.symplicity.com/track/bb7e5a9ff8d0b0b5197=
+5c56d85630df2/4063815687/realurl=3Dhttps://www.ccny.cuny.edu/CPDI/employer-=
+services"> </a><a href=3D"https://ccny-csm.symplicity.com/track/bb7e5a9ff8d=
+0b0b51975c56d85630df2/4063815687/realurl=3Dhttp://www." target=3D"_blank">h=
+ttp://www.</a> <span class=3D"il">ccny</span>.cuny.edu/<wbr></wbr>careercen=
+ter/employer-<wbr></wbr>services.cfm</p><br><a href=3D"https://ccny-csm.sym=
+plicity.com/track/bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/realurl=3Dhtt=
+ps://symplicity.com/career_services_manager_csm" target=3D"_blank" title=3D=
+"Powered By Symplicity"><img src=3D"http://static.symplicity.com/images/pow=
+ered-by-symplicity.png"></a>  <img src=3D"https://ccny-csm.symplicity.com/t=
+rack/bb7e5a9ff8d0b0b51975c56d85630df2/4063815687/email.gif" border=3D"0" al=
+t=3D"">=0A
+--=_c6dcdc4b4894a0909e50b27f02b222f8--
+

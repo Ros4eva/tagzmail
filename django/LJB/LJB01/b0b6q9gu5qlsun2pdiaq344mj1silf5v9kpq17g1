@@ -1,0 +1,225 @@
+Return-Path: <bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com>
+Received: from m71-153.mailgun.net (m71-153.mailgun.net [166.78.71.153])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id b0b6q9gu5qlsun2pdiaq344mj1silf5v9kpq17g1
+ for josephs@linuxjobber.com;
+ Wed, 18 Dec 2019 16:13:13 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of usgrpinc.com designates 166.78.71.153 as permitted sender) client-ip=166.78.71.153; envelope-from=bounce+1077e0.1e0a00-josephs=linuxjobber.com@usgrpinc.com; helo=m71-153.mailgun.net;
+ dkim=pass header.i=@usgrpinc.com;
+ dmarc=pass header.from=usgrpinc.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFFSzdqRTFiNHBKcWlJdENjanZqWUpXcUdHejJyeHhlcUhvSHNaYVhyeGdjMDNlOWJCZ0RIZzdWM01wUmo5SkhsSWFGOW1CQldYMXhLREgvQ21NWHFRV2dXbjBlREd3QmVjMGNFeXFycmx1cXpzSCs2UWFqNEFqL1NZQVQwL0dBeTVCaE0vemVHUmI5ODRkYUpYUjVjc1dGTHJ6eERmbWd6eTFpbTVzSTdWWFVCSWNYU1hsWjZLMktwWXZLQjVVVUxJb0dOc2NFbllDUi9Nazh1Sk1udldTamd0VGNMdUphL3BoT3c5cWhYQ1BLWnpIT3BHQ3E4Y0tPZjV2MjNmY2w0aFRSZzJDeUpZZ2p3bmlYN2RwVzZkNXp1MkhKNkM0Ly9hQkM0K0s1c0dFVnJ1OGR0SUxOV1lMYzRPUWpXVTE3NFpYTDB5aGJFNG9NSXZ0RHBreDJjUlk=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=BS4vAhGuwfFtgVAc+Qh641UEXsfp0bIxH3JsBMzhefp6RXcAT9fTMJfu1wUwQdHyO08DmTd4Pv+yy4TuvGzD7nAMU6+5wHnaTzjRbviyUnPwmJdqVKqhyuGHgKwNReUgCUZ7HMZcRV9ABmMxTD1jyDdEkim1X5SvC6ZDt3XO65c=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1576685594; v=1; bh=oueQabFEHYnuT80SPBAte2pOT4ZHhlmJfGVevdE+NhM=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=usgrpinc.com; q=dns/txt; s=mx;
+ t=1576685593; h=Content-Transfer-Encoding: Mime-Version: Content-Type:
+ Subject: From: To: Reply-To: Message-Id: Sender: Date;
+ bh=cH5cZWxSeYH1V8c4III2tTAm3nwgqFa+j5NVTP3vaa4=; b=APGS2Jr8TU84VqcbaUGlAE0lV/IZIuFThrL99MM716u8UIT1xcpk6vAxUWyFeImHu47jf6o9
+ DhDDiivPRkZKx/71mxVNDiX3XStXtzdGrw/biHzWk53wfiIgYt+Zwy4S60Oq3J0yL0vu7XG6
+ vE2z7iBih6au4ajtL16SoRnHS7Y=
+X-Mailgun-Sending-Ip: 166.78.71.153
+X-Mailgun-Sid: WyJiMDhkMCIsICJqb3NlcGhzQGxpbnV4am9iYmVyLmNvbSIsICIxZTBhMDAiXQ==
+X-Mailgun-Batch-Id: 5dfa500fc025be6898ed7997
+Received: by luna.mailgun.net with HTTP; Wed, 18 Dec 2019 16:13:03 +0000
+Date: Wed, 18 Dec 2019 16:13:03 +0000
+Sender: parth.d@usgrpinc.com
+Message-Id: <20191218161303.1.392E9A8A2F5A4DE4@usgrpinc.com>
+X-Mailgun-Variables: {"ref_id": "2308"}
+Reply-To: parth.d@usgrpinc.com
+To: josephs@linuxjobber.com
+From: Parth Dixit <parth.d@usgrpinc.com>
+Subject: Network Admin  || Boca Raton, FL || Independent Consultant 
+Content-Type: text/html; charset="ascii"
+Mime-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"https://apply.ceipal.com/JobApplication/easy_apply/468173124a9ae=
+c55ff5b4c3bf65d2a26/e58aea67b01fa747687f038dfde066f6/66f185be8c09e6746e18ff=
+160e90b380/5ba91a75ef8e503d9466e9b5701ad35d/2768a82058301668a600fa800bc9cd6=
+4" style=3D"background:#4285f4; padding:5px 10px; color:#fff; font-size:13p=
+x; font-weight:bold; border-radius:4px;text-decoration:none;float:left;" ta=
+rget=3D"_blank">Apply for this job</a><!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>TalentHire - Simplified Recruiting and Staffing</title>
+</head>
+       =20
+<body leftmargin=3D"0" rightmargin=3D"0" topmargin=3D"0" bottommargin=3D"0"=
+>
+        <div style=3D"width:100%; overflow:auto; float:left; margin: auto;"=
+>
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"wi=
+dth:100%; min-width:300px;">
+                        <tr>
+                <td style=3D" border:none;">
+                	<table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:=
+100%; min-width:280px; margin:0 auto; border:none;">=20
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif !i=
+mportant; font-size:15px !important; color:#333 !important; line-height:22p=
+x; border:none;">
+                                <p class=3D"gmail-msg-s-event-listitembody"=
+><span style=3D"font-size:12pt"><span style=3D"line-height:15.0pt"><span st=
+yle=3D"vertical-align:baseline"><span style=3D"font-family:"Times New Roman=
+",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"Calib=
+ri",sans-serif">Hi !!!</span></span></span></span></span></span></p>
+
+<p class=3D"gmail-msg-s-event-listitembody"><span style=3D"font-size:12pt">=
+<span style=3D"line-height:15.0pt"><span style=3D"vertical-align:baseline">=
+<span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-siz=
+e:11.0pt"><span style=3D"font-family:"Calibri",sans-serif">Greetings of the=
+ day&hellip;..</span></span></span></span></span></span></p>
+
+<p class=3D"gmail-msg-s-event-listitembody"><span style=3D"font-size:12pt">=
+<span style=3D"line-height:15.0pt"><span style=3D"vertical-align:baseline">=
+<span style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></s=
+pan></span></p>
+
+<p class=3D"gmail-msg-s-event-listitembody"><span style=3D"font-size:12pt">=
+<span style=3D"line-height:15.0pt"><span style=3D"vertical-align:baseline">=
+<span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-siz=
+e:11.0pt"><span style=3D"font-family:"Calibri",sans-serif">My name is Parth=
+=2E I am a IT Recruiter with United Softw=
+are Group. We are an It consulting c=
+ompany based in Dublin, OH. We are serving fortune 500 Clients for their IT=
+ needs. </span></span></span></span></span></span></p>
+
+<p class=3D"gmail-msg-s-event-listitembody"><span style=3D"font-size:12pt">=
+<span style=3D"line-height:15.0pt"><span style=3D"vertical-align:baseline">=
+<span style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></s=
+pan></span></p>
+
+<p class=3D"gmail-msg-s-event-listitembody"><span style=3D"font-size:12pt">=
+<span style=3D"line-height:15.0pt"><span style=3D"vertical-align:baseline">=
+<span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-siz=
+e:11.0pt"><span style=3D"font-family:"Calibri",sans-serif">One of my client=
+ is looking for <b>Network Admin </b>in</span></span><b> </b><b><span style=
+=3D"font-size:11.0pt"><span style=3D"font-family:"Calibri",sans-serif">Boca=
+ Raton, FL</span></span></b><span style=3D"font-size:11.0pt"><span style=3D=
+"font-family:"Calibri",sans-serif"> location. Kindly let me know if you wou=
+ld be interested in the same. I would really appreciate if you could share =
+your resume along with best time to reach you. </span></span></span></span>=
+</span></span></p>
+
+<p class=3D"gmail-msg-s-event-listitembody"><span style=3D"font-size:12pt">=
+<span style=3D"line-height:15.0pt"><span style=3D"vertical-align:baseline">=
+<span style=3D"font-family:"Times New Roman",serif">&nbsp;</span></span></s=
+pan></span></p>
+
+<p class=3D"gmail-msg-s-event-listitembody"><span style=3D"font-size:12pt">=
+<span style=3D"line-height:15.0pt"><span style=3D"vertical-align:baseline">=
+<span style=3D"font-family:"Times New Roman",serif"><span style=3D"font-siz=
+e:11.0pt"><span style=3D"font-family:"Calibri",sans-serif">You can reach me=
+ at my number for further discussion. 614 495 9222 Ext 639</span></span></s=
+pan></span></span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><a name=3D"_MailAutoSig"></a></span></span></p=
+>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Position: Network Admin</b></span></span></=
+p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Location: </b><b>Boca Raton, FL</b></span><=
+/span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b><span style=3D"color:#333333">Job type</spa=
+n></b><span style=3D"color:#333333"> : <b>Contract on w2 </b></span></span>=
+</span></p>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><b>Job Description-</b></span></span></p>
+
+<ul>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">CCNA or CCNP ROuting and Switching certification Mandat=
+ory&middot; Good LAN and WAN experience.</span></span></span></span></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">Hands on Experience in Cisco Routers and Switches.</spa=
+n></span></span></span></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">Solid understanding of OSI model.</span></span></span><=
+/span></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">In depth knowledge of TCP/IP.&middot; Extensive experie=
+nce and expertise on IP routing protocols such as EIGRP, OSPF, and BGP&midd=
+ot; </span></span></span></span></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">Strong knowledge of layer-2 technologies such as STP, V=
+TP, PAGP, LACP, PPP, PPTP, ARP, LLDP, ISL , 802.1Q, Port security, VLANs&mi=
+ddot; </span></span></span></span></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">Good analytical and problem-solving skills.&middot; </s=
+pan></span></span></span></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">.Ability to create accurate network diagrams and docume=
+ntations.&middot; </span></span></span></span></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">Experience with packet-level capture and traffic analys=
+is tools such as Wireshark and tcpdump.&middot; </span></span></span></span=
+></li>
+	<li><span style=3D"font-size:12pt"><span style=3D"font-family:"Times New R=
+oman",serif"><span style=3D"font-size:11.0pt"><span style=3D"font-family:"C=
+alibri",sans-serif">Remote coordination skills and ability to organize and =
+prioritize work remotely. </span></span></span></span></li>
+</ul>
+
+<p class=3D"wordsection1">&nbsp;</p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">Parth Dixit </span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif">United Software Group Inc.<br />
+565 Metro Place S. Suite # 110<br />
+Dublin, OH 43017<br />
+Direct: 614- 495 9222 Ext: 639||Fax: 1-866-764-114</span></span></p>
+
+<p class=3D"wordsection1"><span style=3D"font-size:10pt"><span style=3D"fon=
+t-family:Calibri,sans-serif"><a href=3D"http://www.usgrpinc.com||" style=3D=
+"color:#0563c1; text-decoration:underline"><span style=3D"text-decoration:n=
+one"><span style=3D"text-underline:none">www.usgrpinc.com||</span></span></=
+a> <a href=3D"mailto:parth.d@usgrpinc.com" style=3D"color:#0563c1; text-dec=
+oration:underline"><span style=3D"text-decoration:none"><span style=3D"text=
+-underline:none">parth.d@usgrpinc.com</span></span></a>|| </span></span></p=
+>
+                             </td>
+                        </tr>
+                        <tr>
+                            <td style=3D"font-family: calibri,sans-serif; f=
+ont-size:14px; line-height:normal; color:#333; border:none">
+                                                           </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+           =20
+                	</table>
+        <p style=3D"border:none; padding-left:10px; font-size:11px; font-fa=
+mily:Arial, Helvetica, sans-serif; color:#6b6c72; text-align:left; line-hei=
+ght:18px;text-transform: uppercase;"> To unsubscribe from future emails or =
+to update your email preferences<a href=3D"http://unsubscribe.usgrpinc.com/=
+users/request_unsubscribe/a002f2f44c4eb97169796e571751a450aa506770/4f951f34=
+50f2d1e2ac83ee6d9ec2cab45474e24d/cElwMGRYZ1pyMWEyVkpZQXNDQXk3MTBHQlUyVXBuaE=
+ZDM3NucE51dDhJaz0=3D" style=3D"color:#0077c5; text-decoration:underline"><b=
+>click here </b></a>.</p>    </div>
+<img width=3D"1px" height=3D"1px" alt=3D"" src=3D"http://email.usgrpinc.com=
+/o/eJwVzEsOwiAQANDTyJLMMFBgwYLEeg3Dr5ZGSwNp4vGtB3gvOywQAFh1AtCiQIMTEhBHTlbM=
+1hsvHsrL-yxvEs7x6kfdE0_tw1anp6STwXABlYAyKVqMVSHoqBUJyXpZnjU7QWBYd1sb5VjH9bz=
+rfn63FmPp_-oHQJEmWw"></body>
+</html>

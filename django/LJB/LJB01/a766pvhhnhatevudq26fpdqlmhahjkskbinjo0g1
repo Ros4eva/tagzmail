@@ -1,0 +1,535 @@
+Return-Path: <bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com>
+Received: from o1.email.bullhornmail.com (o1.email.bullhornmail.com [198.37.153.11])
+ by inbound-smtp.us-west-2.amazonaws.com with SMTP id a766pvhhnhatevudq26fpdqlmhahjkskbinjo0g1
+ for josephs@linuxjobber.com;
+ Fri, 14 Feb 2020 21:13:43 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of email.bullhornmail.com designates 198.37.153.11 as permitted sender) client-ip=198.37.153.11; envelope-from=bounces+28313-667f-josephs=linuxjobber.com@email.bullhornmail.com; helo=o1.email.bullhornmail.com;
+ dkim=pass header.i=@bullhornmail.com;
+ dmarc=none header.from=mastechdigital.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHUUFSYjJpeUU1Vnc1QndSK1VVOGQrYk1kalBoZ1BSMCtxUGFUYkZ4a0xxTnk3UVpzK2s3WG96UlhYNGU1d1prNjhoQ0RkWW4ra1dGeE5kUFNwdkdUbXJPVndZc2kxb2ZNTDIxaUltSm1mdG1hSFh1Uld6M1RrQzZNN3M0eFpBSzlDTXBKbkFDZDVoZ0o3cHlhRDdiT0VoQW1UMWwwOCtUK1c5QXZma251U2l1MXJ4bExsZktjMXI4clA2a1pvTUYrYTRxcEVUWnZYeDhDZGRLSm1rVVo5S2J1R1h0WlhCUFhXdmhsU3Btd0VUNi9kSGdDOWtCY0JYWlBzZkYxeHBTN2UxNzZVVllOOWs2TTdMNEQwajlQRGFqaEpKQUdxYW5LV2J0QUNuaHVkckc0b09HSjRGQkJCdVA1TmxSZi9HM29NbmhRNTJkS3VsU3lHQVpuRjlnS1I5dDFFMTBTTzFuNVVlWHNVMXZ3U2pnPT0=
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=LvBquesGSoSlSMmuqIixxuLaqeWeWX/nUurMxUyzF1u/DgcD0eN8coiUxvpJgGd7Y+T5254SeEoYyMsdkJ4JD/jm7yqebwXDlXr/zmEbZYsVPEG/kxskNYeowZ8NHV9BQWNWbQb1kHREGCktuRVtte8WmXxIxY7OQgMWA21AlYw=; c=relaxed/simple; s=gdwg2y3kokkkj5a55z2ilkup5wp5hhxx; d=amazonses.com; t=1581714824; v=1; bh=IaBUW1NXDqLwANek26dFE3Y9DQJLb/7yOG9k2n6rcIY=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+	d=bullhornmail.com; h=from:to:subject:mime-version:content-type; 
+	s=m1; bh=/CO2ioL1b44LST2t/1DaRZXjaZtu8SrtQ8AWq8vvnbI=; b=WZUEz2c
+	5XG/tejyRh4MpVDkGUSd3b5F4QqcfQDLz43CoWgsXddxPqKeZZ/K3ZoFl86R2QId
+	o/SfVSd4ESlBFBxwdg0a4oczzNUESn9gArU180CT6g7OgEe9uSNcV4dNUXK5/MHZ
+	TMT9euzoJrbjRcQZ0UBlEFULYYsuXQOYgUaM=
+Received: by filter1709p1mdw1.sendgrid.net with SMTP id filter1709p1mdw1-31789-5E470D86-C
+        2020-02-14 21:13:42.251732173 +0000 UTC m=+688544.341251332
+Received: from outbound2.bullhorn.com (outbound2.bullhorn.com [52.129.17.4])
+	by ismtpd0046p1iad1.sendgrid.net (SG) with ESMTP id 26IwnCnTRKu4bH3_x5x3cg
+	for <josephs@linuxjobber.com>; Fri, 14 Feb 2020 21:13:42.172 +0000 (UTC)
+Received: from MassMailing (unknown [10.78.2.178])
+	by outbound2.bullhorn.com (Postfix) with ESMTP id E03661C0533
+	for <josephs@linuxjobber.com>; Fri, 14 Feb 2020 16:13:41 -0500 (EST)
+Received: from mail pickup service by MassMailing with Microsoft SMTPSVC;
+	 Fri, 14 Feb 2020 16:13:40 -0500
+Message-ID: <643911600.1581714820118.JavaMail.cfservice@SL142APP5>
+From: Harleen Ahluwalia <Harleen.Ahluwalia@mastechdigital.com>
+To: josephs@linuxjobber.com
+Subject: State Project - AWS infrastructure Team Lead with strong Linux -
+ Linthicum Heights, MD
+Mime-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_8264_396977739.1581714820112"
+X-Priority: 3
+X-Charset: UTF-8
+X-messageUUID: 458CCC10-FE6D-EA66-7F60A36D98815A8E
+X-OriginalArrivalTime: 14 Feb 2020 21:13:40.0150 (UTC) FILETIME=[A1277D60:01D5E37B]
+Date: Fri, 14 Feb 2020 21:13:42 +0000 (UTC)
+X-SG-EID: 0yz/L0x4SOtxmT5Q2ZIaRuB3YhbCNPbHhve+IF+xP0oPmBcNNBsnu6WvFuZuxGbKuOa5Ucx/IoNSmV
+ g/g6dTjHgMF1EiIhKRnMWI+OqOQcyd5b3t2fWJZyQ1Ezh0ox20BWXusL2I77g/u+bQ/c1Csyo5jUom
+ 7IXuFdctLqdJDVqWsxcoUWtg8+/QdDpvvZoqiItKpbgSXFllGEmfNSW5/iSrNq8eCnWm0ztFfFV5MR
+ sU2NsDBbJAi9pXYaG6K59O
+
+------=_Part_8264_396977739.1581714820112
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8265_1920651791.1581714820112"
+
+------=_Part_8265_1920651791.1581714820112
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+ Below is regarding an opportunity with our client that might be of interest to you.
+
+ 
+
+Title:  Team Lead with strong Linux Experience  
+
+Location: Linthicum Heights, MD
+
+Duration: 6 months contract to start with
+
+ 
+
+ AWS Infrastructure Team Lead with strong Linux Experience  
+
+(We really need to focus on the LINUX experience here)
+
+- Demonstrate expert experience with architecting, implementing and administering Linux systems in a AWS cloud environment
+
+- Ability to work and succeed in a fast pace and organizationally complex environment, to effectively adapt to rapidly changing technology, and to lead and manage AWS infrastructure projects
+
+- Expert knowledge in Linux OS security and hardening methods
+
+- Knowledgeable in Linux patching technologies
+
+- Knowledgeable in centralized Linux authentication technologies such as Centrify
+
+- Experience with scripting, automation, and orchestration technologies
+
+- Provide Linux system administration, and operational support of client
+
+- Demonstrate experience with architecting and deploying large AWS cloud projects. This includes compute, memory, storage, network resources and associated services knowledge of other virtualization and cloud computing technologies in the industry
+
+- Full lifecycle management of environments from deployment through maintenance, to decommission
+
+ 
+
+ If you are interested in this opportunity, please respond back with an updated copy of your word-format resume. Please also advise me on the following details:
+
+- Availability
+
+- Expected Compensation (on W2 in ball park range)
+
+- Work Authorization Status for US ( US Citizen/ Green Card Holder/ Visa Status) 
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+Thanks and Regards
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+	
+		
+			
+			
+
+
+
+
+
+			
+			
+			
+ 
+
+
+
+
+			
+			
+			
+Harleen Ahluwalia
+
+
+
+
+
+			
+T: 
+
++1 412 436 0333 extn 2302
+
+|  
+
+ 
+
+F:
+
++1 412.291.1095
+
+
+
+			harleen.ahluwalia@mastechdigital.com
+
+
+
+
+			
+		
+		
+			
+			
+Mastech Digital
+
+
+
+
+
+			
+1305 Cherrington Parkway
+
+
+
+
+
+			
+Building 210, Suite 400
+
+
+
+
+
+			
+Moon Township PA 15108
+
+
+
+
+			
+			
+			
+ 
+
+
+
+
+			
+			
+			
+www.mastechdigital.com
+
+
+
+
+
+			  
+
+ 
+
+  
+
+ 
+
+
+
+
+			
+		
+	
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+This email was sent to josephs@linuxjobber.com, by Harleen Ahluwalia<Harleen.Ahluwalia@mastechdigital.com>
+To remove your email address permanently from future mailings, please go to the following URL:
+http://email.bullhorn.com/ls/click?upn=-2BDNbByuG7ZD382vpfzScOKirb6bBdTIh2Vb1eFkornvi3o7hhRy9I0Wb2tg-2B6otBJcgv6Fz6qmGvDewjqKDSaKTqSNqFf-2BKjtceAHLW6JPvKcxCGw52R8lV8svTgN8TtZENJEtiyeLwKrq5QFgPTiEvVfDJRzgSbSY-2FULUiXB2ldi09ILz62N75-2B6T-2FOYeLPFEJCUffj0IysD6tlTXFxW4r9B4Wvm-2BuqIW7zlCgNr6h5cVHAPvbQIDBrlArEAtks-2BtLU4P75DQFa7lyCDUvHG7U3I84Oaf213jc8etfuECI-3DjqKT_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJA8fmrIyHP1ur3gTt5SKMvXUkFXRpkGPqkdN9k3cQ-2FHs6nFEJvUg7RC-2FzylxHBEiKCjJrvD-2Bx12tUmaFZe71JH4-2F2qMbR2MLXuf3rSijCGS7Poxx4oqBcz6AZnXGK-2BOQV5uTY1vlByeW7mmyisW9rFm0wu5m0H-2BayuEaEC7aLMiuip9MFh2hRtF50UMXZJKjIU-3D
+------=_Part_8265_1920651791.1581714820112
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"Times New Roman, Times, Serif" size=3D3 color=3D#000000><font=
+ color=3D"#000000" face=3D"Times New Roman, Times, Serif" size=3D"3">&nbsp;=
+</font>Below&nbsp;is regarding an opportunity with our client that might be=
+ of interest to you.<br />
+&nbsp;<br />
+Title:&nbsp;<u> Team Lead with strong Linux Experience</u>&nbsp;&nbsp;<br />
+Location: Linthicum Heights, MD<br />
+Duration: 6 months contract to start with<br />
+&nbsp;<br />
+&nbsp;<u>AWS Infrastructure Team Lead with strong Linux Experience</u>&nbsp=
+;&nbsp;<br />
+(We really need to focus on the LINUX experience here)<br />
+- Demonstrate expert experience with architecting, implementing and adminis=
+tering Linux systems in a AWS cloud environment<br />
+- Ability to work and succeed in a fast pace and organizationally complex e=
+nvironment, to effectively adapt to rapidly changing technology, and to lea=
+d and manage AWS infrastructure projects<br />
+- Expert knowledge in Linux OS security and hardening methods<br />
+- Knowledgeable in Linux patching technologies<br />
+- Knowledgeable in centralized Linux authentication technologies such as Ce=
+ntrify<br />
+- Experience with scripting, automation, and orchestration technologies<br =
+/>
+- Provide Linux system administration, and operational support of client<br=
+ />
+- Demonstrate experience with architecting and deploying large AWS cloud pr=
+ojects. This includes compute, memory, storage, network resources and assoc=
+iated services knowledge of other virtualization and cloud computing techno=
+logies in the industry<br />
+- Full lifecycle management of environments from deployment through mainten=
+ance, to decommission<br />
+&nbsp;<br />
+&nbsp;If you are interested in this opportunity, please respond back with a=
+n updated copy of your word-format resume. Please also advise me on the fol=
+lowing details:<br />
+- Availability<br />
+- Expected Compensation (on W2 in ball park range)<br />
+- Work Authorization Status for US ( US Citizen/ Green Card Holder/ Visa St=
+atus)&nbsp;<br />
+<br />
+<br />
+<font color=3D"#000000" face=3D"Times New Roman, Times, Serif" size=3D"3">&=
+nbsp;</font><!-- Signature 458C66F3-B1F3-52F4-33D4E90931F04DAD -->
+<div>
+<p>&nbsp;</p>
+
+<p><span style=3D"color:black; font-family:times new roman,serif; mso-farea=
+st-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themecolo=
+r:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D"#0=
+00033"><!--?xml:namespace prefix =3D "o" ns =3D "urn:schemas-microsoft-com:=
+office:office" /--><font color=3D"#000000" face=3D"Calibri" size=3D"3">&nbs=
+p;</font></font></font></span></p>
+
+<p><span style=3D"color:black; font-family:times new roman,serif; mso-farea=
+st-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themecolo=
+r:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D"#0=
+00033"><font color=3D"#000000" face=3D"Calibri" size=3D"3">&nbsp;</font></f=
+ont></font></span></p>
+
+<p><span style=3D"color:black; font-family:times new roman,serif; mso-farea=
+st-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themecolo=
+r:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D"#0=
+00033"><a name=3D"_MailAutoSig"><b><span style=3D"color:#1f497d; font-size:=
+12pt; mso-ascii-font-family:Calibri"><font face=3D"Calibri">Thanks and Rega=
+rds</font></span></b></a></font></font></span></p>
+
+<p><span style=3D"color:black; font-family:times new roman,serif; mso-farea=
+st-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themecolo=
+r:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D"#0=
+00033"><span style=3D"mso-bookmark:_MailAutoSig"><span style=3D"color:#1f49=
+7d; mso-ascii-font-family:Calibri"><font face=3D"Calibri" size=3D"3">&nbsp;=
+</font></span></span></font></font></span></p>
+
+<p>&nbsp;</p>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"MsoNormalT=
+able" style=3D"border-collapse:collapse; margin:auto auto auto 1.1pt; mso-p=
+adding-alt:0in 0in 0in 0in; mso-yfti-tbllook:1184; width:502.5pt">
+	<tbody>
+		<tr style=3D"HEIGHT: 31.2pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+			<td style=3D"BORDER-TOP: #f0f0f0; HEIGHT: 31.2pt; BORDER-RIGHT: #0b5ab2 =
+1.5pt solid; WIDTH: 148.45pt; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0in; =
+PADDING-TOP: 0in; PADDING-LEFT: 5.4pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT:=
+ 5.4pt; BACKGROUND-COLOR: transparent" valign=3D"top" width=3D"198">
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><span style=3D"mso-bookmark:_MailAutoSig"><span style=3D"color:#1=
+f497d; font-family:helvetica,sans-serif; mso-fareast-font-family:Calibri; m=
+so-no-proof:yes"><!--?xml:namespace prefix =3D "v" ns =3D "urn:schemas-micr=
+osoft-com:vml" /--></span></span></font></font></span></p>
+			</td>
+			<td style=3D"BORDER-TOP: #f0f0f0; HEIGHT: 31.2pt; BORDER-RIGHT: #f0f0f0;=
+ WIDTH: 20.55pt; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0in; PADDING-TOP: =
+0in; PADDING-LEFT: 5.4pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 5.4pt; BACKG=
+ROUND-COLOR: transparent" valign=3D"top" width=3D"27">
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><font face=3D"Calibri"><span style=3D"mso-bookmark:_MailAutoSig">=
+<span style=3D"color:#1f497d; mso-ascii-font-family:Calibri">&nbsp;</span><=
+/span></font></font></font></span></p>
+			</td>
+			<td style=3D"BORDER-TOP: #f0f0f0; HEIGHT: 31.2pt; BORDER-RIGHT: #f0f0f0;=
+ WIDTH: 333.15pt; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0in; PADDING-TOP:=
+ 0in; PADDING-LEFT: 5.4pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 5.4pt; BACK=
+GROUND-COLOR: transparent" valign=3D"top" width=3D"444">
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><font face=3D"Calibri"><span style=3D"mso-bookmark:_MailAutoSig">=
+<b><span style=3D"color:#1f497d; font-size:10pt; mso-ascii-font-family:Cali=
+bri">Harleen Ahluwalia</span></b></span></font></font></font></span></p>
+
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><span style=3D"mso-bookmark:_MailAutoSig"><span style=3D"color:#1=
+f497d; font-size:10pt; mso-ascii-font-family:Calibri"><font face=3D"Calibri=
+">T:</font> </span></span><span style=3D"mso-bookmark:_MailAutoSig"><span s=
+tyle=3D"color:#6c6c6c; font-family:calibri light,sans-serif; font-size:10pt=
+">+1 412 436 0333 extn 2302</span></span><span style=3D"mso-bookmark:_MailA=
+utoSig"><span style=3D"color:#1f497d; font-size:10pt; mso-ascii-font-family=
+:Calibri"><font face=3D"Calibri">|</font>&nbsp; </span></span><span style=
+=3D"mso-bookmark:_MailAutoSig"><span style=3D"color:#1f497d; font-family:ca=
+libri light,sans-serif; font-size:10pt">&nbsp;</span></span><span style=3D"=
+mso-bookmark:_MailAutoSig"><span style=3D"color:#1f497d; font-size:10pt; ms=
+o-ascii-font-family:Calibri"><font face=3D"Calibri">F:</font></span></span>=
+<span style=3D"mso-bookmark:_MailAutoSig"><span style=3D"color:#6c6c6c; fon=
+t-family:calibri light,sans-serif; font-size:10pt">+1 412.291.1095</span></=
+span><br />
+			<a href=3D"mailto:harleen.ahluwalia@mastechdigital.com"><span style=3D"m=
+so-bookmark:_MailAutoSig"><span style=3D"color:#0563c1; font-family:calibri=
+ light,sans-serif; font-size:10pt">harleen.ahluwalia@mastechdigital.com</sp=
+an></span></a></font></font></span></p>
+			</td>
+		</tr>
+		<tr style=3D"HEIGHT: 34.65pt; mso-yfti-irow: 1; mso-yfti-lastrow: yes">
+			<td style=3D"BORDER-TOP: #f0f0f0; HEIGHT: 34.65pt; BORDER-RIGHT: #0b5ab2=
+ 1.5pt solid; WIDTH: 148.45pt; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0in;=
+ PADDING-TOP: 0in; PADDING-LEFT: 5.4pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT=
+: 5.4pt; BACKGROUND-COLOR: transparent" valign=3D"top" width=3D"198">
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><font face=3D"Calibri"><span style=3D"mso-bookmark:_MailAutoSig">=
+<b><span style=3D"color:#1f497d; font-size:10pt; mso-ascii-font-family:Cali=
+bri">Mastech Digital</span></b></span></font></font></font></span></p>
+
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><font face=3D"Calibri"><span style=3D"mso-bookmark:_MailAutoSig">=
+<span style=3D"color:#161616; font-size:9pt; mso-ascii-font-family:Calibri"=
+>1305 Cherrington Parkway</span></span></font></font></font></span></p>
+
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><font face=3D"Calibri"><span style=3D"mso-bookmark:_MailAutoSig">=
+<span style=3D"color:#161616; font-size:9pt; mso-ascii-font-family:Calibri"=
+>Building 210, Suite 400</span></span></font></font></font></span></p>
+
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><font face=3D"Calibri"><span style=3D"mso-bookmark:_MailAutoSig">=
+<span style=3D"color:#161616; font-size:9pt; mso-ascii-font-family:Calibri"=
+>Moon Township PA 15108</span></span></font></font></font></span></p>
+			</td>
+			<td style=3D"BORDER-TOP: #f0f0f0; HEIGHT: 34.65pt; BORDER-RIGHT: #f0f0f0=
+; WIDTH: 20.55pt; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0in; PADDING-TOP:=
+ 0in; PADDING-LEFT: 5.4pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 5.4pt; BACK=
+GROUND-COLOR: transparent" valign=3D"bottom" width=3D"27">
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><font face=3D"Calibri"><span style=3D"mso-bookmark:_MailAutoSig">=
+<b><span style=3D"color:#0a59c2; mso-ascii-font-family:Calibri">&nbsp;</spa=
+n></b></span></font></font></font></span></p>
+			</td>
+			<td style=3D"BORDER-TOP: #f0f0f0; HEIGHT: 34.65pt; BORDER-RIGHT: #f0f0f0=
+; WIDTH: 333.15pt; BORDER-BOTTOM: #f0f0f0; PADDING-BOTTOM: 0in; PADDING-TOP=
+: 0in; PADDING-LEFT: 5.4pt; BORDER-LEFT: #f0f0f0; PADDING-RIGHT: 5.4pt; BAC=
+KGROUND-COLOR: transparent" valign=3D"top" width=3D"444">
+			<p><span style=3D"color:black; font-family:times new roman,serif; mso-fa=
+reast-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themec=
+olor:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D=
+"#000033"><a href=3D"http://email.bullhorn.com/ls/click?upn=3D3j2QYNbO2bGx7=
+umOCvO0I5JjwgPFpfEV474JXhpEOgncT3KxnIMM-2B5aaTJs-2Bm3vcnZpl_18RU-2Fxi03MMi1=
+j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJA8fmrIyHP1ur3gTt5SKMvX1a6on9XcjgQX0HgrTX-2=
+FwrIVMoCvK-2BTZ7uYDsHrlZp9QIoHj6tLWBgCK7RcDTerliy4kibpjbO7-2BHuqrBdA5JPLz18=
+yhtNOG1GnmWHwLJsNVuOfRn4roH0OvNmVnC9EpWPeC676W13tAz0ufd94uvQgOrbbYot3-2BnTB=
+-2BMasQB7JM-3D"><span style=3D"mso-bookmark:_MailAutoSig"><span style=3D"co=
+lor:#0b4cb4; font-family:calibri light,sans-serif; font-size:10pt">www.mast=
+echdigital.com</span></span></a></font></font></span></p>
+
+			<p style=3D"text-align:justify"><span style=3D"color:black; font-family:=
+times new roman,serif; mso-fareast-font-family:'Times New Roman'; mso-farea=
+st-language:EN-IN; mso-themecolor:text1"><font face=3D"Garamond, Times, Ser=
+if" size=3D"1"><font color=3D"#000033"><span style=3D"mso-bookmark:_MailAut=
+oSig"><span style=3D"color:#1f497d; mso-ascii-font-family:Calibri"><font fa=
+ce=3D"Calibri">&nbsp;&nbsp;</font></span></span><a href=3D"http://email.bul=
+lhorn.com/ls/click?upn=3DSlIRSjGFHfpF9JSSSr72n4wtdu2W8cfdDcL1Idyi6y3HYGmy29=
+V4RvRe4mm3K6Fo021v_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A-2FiWKJA8fmrIyH=
+P1ur3gTt5SKMvX1a6on9XcjgQX0HgrTX-2FwrHXhEhejr9SoomAIT83d7cUlrjIRPWNXqShlH8W=
+JW7tPpqoA-2FqEucYfWWLa1nYDwDq7gLfqlSyw3KU8QkHFjgG7igIEXAouJG3JkoqiIvRUq9m-2=
+BUynwia36Z67dfR66g1cH79deUnPNIgvJmzWOE4U0-3D"><span style=3D"mso-bookmark:_=
+MailAutoSig"><i><span style=3D"color:#6d6d6d; font-size:10pt; mso-ascii-fon=
+t-family:Calibri"><font face=3D"Calibri"> </font></span></i></span></a><spa=
+n style=3D"mso-bookmark:_MailAutoSig"><span style=3D"color:#1f497d; mso-asc=
+ii-font-family:Calibri"><font face=3D"Calibri">&nbsp;&nbsp;</font></span></=
+span><a href=3D"http://email.bullhorn.com/ls/click?upn=3DbNg-2FkGprYeGfRR4G=
+0NngjfwtdouBbRBjESZ-2FH-2FqjZhOe4R6Hr9jQvrLNF4lgtsY574ILmfkrujUU7idtdmUyMhI=
+lX4pxlEKUcolX6yw5xzA9ZZnOdyGtg9IAZzJqNToMOHb-_18RU-2Fxi03MMi1j2ouOMeU-2FDUU=
+6xBRaYIuG62A-2FiWKJA8fmrIyHP1ur3gTt5SKMvX1a6on9XcjgQX0HgrTX-2FwrGR5nbadsYwy=
+EeVZ-2BS6Hm7cUijyrGRDrSdHu95g4DIdXoGgXQPX1sMYv-2Bcd-2B7qd-2F0zJDjHen8Emml8P=
+MbB9CjE1JAD9hEcADK9xsEGO4ghhEDcSQIZHjWpLaahCQXFqeDoErICMo8N7CeSBs330AgRQ-3D=
+"><span style=3D"mso-bookmark:_MailAutoSig"><span style=3D"color:#1f497d; m=
+so-ascii-font-family:Calibri"><font face=3D"Calibri"> </font></span></span>=
+</a></font></font></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style=3D"color:black; font-family:times new roman,serif; mso-farea=
+st-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themecolo=
+r:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D"#0=
+00033"><span style=3D"mso-bookmark:_MailAutoSig"><span><font color=3D"#0000=
+00" face=3D"Calibri" size=3D"3">&nbsp;</font></span></span></font></font></=
+span></p>
+
+<p><span style=3D"color:black; font-family:times new roman,serif; mso-farea=
+st-font-family:'Times New Roman'; mso-fareast-language:EN-IN; mso-themecolo=
+r:text1"><font face=3D"Garamond, Times, Serif" size=3D"1"><font color=3D"#0=
+00033">&nbsp;</font></font></span></p>
+</div>
+<!-- End_Signature 458C66F3-B1F3-52F4-33D4E90931F04DAD --></font><br><div s=
+tyle=3D'color:#999999; font-size:8pt; font-family:arial;'>This email was se=
+nt to <a style=3D'color:#848484' href=3D'mailto:josephs@linuxjobber.com'>jo=
+sephs@linuxjobber.com</a>, by Harleen Ahluwalia<Harleen.Ahluwalia@mastechdi=
+gital.com>.<br>To remove your email address permanently from future mailing=
+s, please <a style=3D'color:#848484' href=3D"http://email.bullhorn.com/ls/c=
+lick?upn=3D-2BDNbByuG7ZD382vpfzScOKirb6bBdTIh2Vb1eFkornvi3o7hhRy9I0Wb2tg-2B=
+6otBJcgv6Fz6qmGvDewjqKDSaKTqSNqFf-2BKjtceAHLW6JPvKcxCGw52R8lV8svTgN8TtZENJE=
+tiyeLwKrq5QFgPTiEvVfDJRzgSbSY-2FULUiXB2ldi09ILz62N75-2B6T-2FOYeLPFEJCUffj0I=
+ysD6tlTXFxW4r9B4Wvm-2BuqIW7zlCgNr6h5cVHAPvbQIDBrlArEAtks-2BtLU4P75DQFa7lyCD=
+UvHG7U3I84Oaf213jc8etfuECI-3DShab_18RU-2Fxi03MMi1j2ouOMeU-2FDUU6xBRaYIuG62A=
+-2FiWKJA8fmrIyHP1ur3gTt5SKMvX1a6on9XcjgQX0HgrTX-2FwrAdN55wFc9Ma7HhO2c8pDKB-=
+2FzSRkiYAlzpFNG4mV59G8ZHtmDVrRXytAMMNV3pfXuMPvu3P1cTZWkazugd4c6VfvzpA-2BwU4=
+wSrarL0eQmusP3wUhYg-2FWX85MXn4Jaja4wwV6NPyxv0ocNgEUq1B8yNc-3D" target=3D_bl=
+ank>click here</a>.</div><img src=3D"http://email.bullhorn.com/wf/open?upn=
+=3DxldZNndQ0Fk4frClCuCP-2BqzUGq2wdkWrlTKSnyD4hPrOX3b6G3Gze9wsHa-2FB7qMLR7zo=
+gtHkbULnr2Pz3F5Yfc0JvWa1hAaHuxhXiLwSVQeulVcOAFpARsnIso-2FpBXsiavmt1k9knmX4W=
+-2FDFnBUZBDMiKOCbeyreMgN59JSoccT6r0crgpqiwFF9HAi1TY5oSuYd2yL0Z4dV7N-2Fb6Owi=
+fG-2FtmDya8q-2BvIXvp26wLO9I-3D" alt=3D"" width=3D"1" height=3D"1" border=3D=
+"0" style=3D"height:1px !important;width:1px !important;border-width:0 !imp=
+ortant;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !i=
+mportant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0=
+ !important;padding-right:0 !important;padding-left:0 !important;"/>
+
+------=_Part_8265_1920651791.1581714820112--
+
+------=_Part_8264_396977739.1581714820112--
