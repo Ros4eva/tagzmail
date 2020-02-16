@@ -8,16 +8,11 @@ import { MailPlatformModule } from './mail-platform/mail-platform.module';
 import { HttpClientModule } from '@angular/common/http';
 import {Location} from "@angular/common";
 import { CommonModule } from '@angular/common';
-import { MailPipe } from './mail/mail.pipe';
-import { TruncPipe } from './trunc.pipe';  
-
 
 @NgModule({
   declarations: [
     AppComponent,
     ApiComponent,
-    MailPipe,
-    TruncPipe,
   ],
   imports: [
     BrowserModule,
