@@ -6,7 +6,6 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 import { MzModalModule } from 'ngx-materialize';
 import { HttpClient } from '@angular/common/http';
 import { MailModel } from "../model/mail-model";
-import { MailPipe } from '../mail/mail.pipe';
 
 
 
