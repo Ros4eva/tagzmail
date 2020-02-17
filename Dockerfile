@@ -68,7 +68,9 @@ RUN mkdir -p /web/www/flask/attachments
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ENV NVM_DIR=/root/.nvm
 RUN . $HOME/.nvm/nvm.sh && nvm install stable
-RUN . $HOME/.nvm/nvm.sh && npm install -g @angular/cli@7.0.7
+RUN . $HOME/.nvm/nvm.sh && npm install -g yarn
+RUN . $HOME/.nvm/nvm.sh && yarn global add @angular/cli@7.0.7
+#RUN . $HOME/.nvm/nvm.sh && npm install -g @angular/cli@7.0.7
 RUN git config --global user.email "joseph.showunmi@linuxjobber.com"
 RUN git config --global user.name "joseph.showunmi"
 RUN cd /web && . $HOME/.nvm/nvm.sh && ng new fasmail --routing
