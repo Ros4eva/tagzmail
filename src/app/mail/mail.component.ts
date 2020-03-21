@@ -27,11 +27,13 @@ export class MailComponent implements OnInit {
   public from;
   public mailer;
   public mailee;
+  public user_date;
   public mails: MailModel[];
   public user_message;
   public user_mailer;
   public toEmail = null;
   public subject = '';
+  selectedIndex = null;
 
 
   public modalOptions: Materialize.ModalOptions = {
@@ -104,7 +106,7 @@ export class MailComponent implements OnInit {
     if (this.toEmail == null || this.sendNewEmailForm.get('message').value == null) {
       return;
     } else {
-      this.viewMail('', '', this.toEmail)
+      this.viewMail('', '', '', '', this.toEmail)
       formData.append("frommail", this.form.get('frommail').value);
       formData.append("tomail", this.toEmail);
       formData.append("subject", this.subject);
@@ -113,7 +115,7 @@ export class MailComponent implements OnInit {
     }
 
 
-    this.http.post('https://127.0.0.1:9000/mail/', formData).subscribe(
+    this.http.post('http://127.0.0.1:9000/mail/', formData).subscribe(
       data => {
         this.message = 'Email has been sent.'
       },
@@ -139,7 +141,7 @@ export class MailComponent implements OnInit {
     }
 
 
-    this.http.post('https://127.0.0.1:9000/mail/', formData).subscribe(
+    this.http.post(this.dataservice.domain_protocol + this.dataservice.f_domain_name + '/mail/', formData).subscribe(
       data => {
         this.message = 'Email has been sent.'
       },
@@ -211,15 +213,19 @@ export class MailComponent implements OnInit {
     return sample
   }
 
-  viewMail(mail, mailer, mailee) {
+  viewMail(mail, mailer, mailee, user_date, _index: number) {
     this.router.navigate(['mail/'+ mailer])
     console.log(mail)
     console.log(mailer)
+    console.log(user_date)
     this.message = ''
     sessionStorage.setItem('mailer', mailer)
     sessionStorage.setItem('mailee', mailee);
+    sessionStorage.setItem('user_date', user_date)
     console.log(sessionStorage.getItem('mailer'))
     this.user_message = mail;
     this.mailee = mailee;
+    this.user_date = user_date;
+    this.selectedIndex = _index;
   }
 }

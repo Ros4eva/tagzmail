@@ -13,6 +13,7 @@ from .settings_secret import *
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 from django.http import HttpResponse, HttpResponseRedirect
+from datetime import datetime
 # Create your views here.
 
 
@@ -138,12 +139,11 @@ def list_content_and_parse():
         for find_eml in contents:
             if(find_eml[-1] != "/"):
                eml_list.append(find_eml)
-            eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
+            #eml_dict[find_eml.split('/')[1]] = find_eml.split('/')[-1]
             
                 
 
     final_list = []
-    print(len(eml_list))
     #Read eml files and assigns content to dicitonary
     for list_values in eml_list:
         user_content = {}
@@ -155,6 +155,7 @@ def list_content_and_parse():
         subject = mail.subject
         content = list(mail.text_plain)
         body = mail.body
+        date = mail.date
         #print(sender_name)
         #print(content)
         user_content['TO'] = receiver_mail
@@ -162,7 +163,9 @@ def list_content_and_parse():
         user_content['SUBJECT'] = subject
         user_content['MESSAGE'] = content
         user_content['NAME'] = sender_name
+        user_content['DATE'] = str(date)
         final_list.append(user_content)
+        #print(final_list)
     return final_list
 
 
@@ -179,12 +182,16 @@ def find_user_content(request):
         return HttpResponse("Error: No id field provided. Please specify an id.")
     
     final_list = list_content_and_parse()
-    print(final_list)
     mail_list = []
     for find_mail in final_list:
-        print(find_mail)
         if id == find_mail['TO']:
             mail_list.append(find_mail)
+
+    sortedArray = sorted(
+        mail_list,
+        key=lambda x: datetime.strptime(x['DATE'], '%Y-%m-%d %H:%M:%S'), reverse=True
+    )
+
             
     initial_keys_to_check = [x['FROM'] for x in mail_list]
     keys_to_check = list(set(initial_keys_to_check))
@@ -195,4 +202,4 @@ def find_user_content(request):
         new_list =  list(filter(lambda x: x["FROM"] in key_to_check, final_list))
         sorted_list.append(new_list)
     
-    return JsonResponse(sorted_list,safe=False)
+    return JsonResponse(sortedArray,safe=False)

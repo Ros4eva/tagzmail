@@ -57,13 +57,13 @@ RUN /bin/pip3.6 install stripe selenium django-ckeditor boto django-background-t
 RUN /bin/pip3.6 install boto3 django-ses django-amazon-ses flask flask-mail mail-parser
 
 RUN mkdir -p /web/
-COPY . /web/www/
-COPY nginx.conf /etc/nginx/
-COPY start.sh /start.sh
+COPY fasmail/* /web/www/
+COPY fasmail/nginx.conf /etc/nginx/
+COPY fasmail/start.sh /start.sh
 RUN chmod +x /start.sh
-COPY ang.sh /ang.sh
+COPY fasmail/ang.sh /ang.sh
 RUN chmod +x /ang.sh
-RUN mkdir -p /web/www/flask/attachments
+COPY settings_secret.py /web/www/django/djangoapi/settings_secret.py
 
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ENV NVM_DIR=/root/.nvm
@@ -77,13 +77,9 @@ RUN cd /web && . $HOME/.nvm/nvm.sh && ng new fasmail --routing
 
 RUN . $HOME/.nvm/nvm.sh && yes | cp -r /web/www/* /web/fasmail
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/stage.linuxjobber.com/' src/app/data.service.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/stagefasmailapi.linuxjobber.com/' src/app/data.service.ts;
-
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/stagefasmailapi.linuxjobber.com/' src/app/mail/mail.component.ts;
-
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/stage.linuxjobber.com/' src/app/auth.guard.ts;
+RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/intfasmailapi.linuxjobber.com/' src/app/data.service.ts;
 
 RUN cd /web/fasmail && . $HOME/.nvm/nvm.sh && npm install ngx-materialize materialize-css@next ng2-dragula rxjs && ng build --prod --aot
 RUN mkdir -p /usr/share/nginx/web/fasmail

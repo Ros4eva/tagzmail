@@ -2,3 +2,7 @@
   background-color: #c6ffc369;
   cursor: pointer;
 }
+.selected {
+  background-color: #c6ffc3;
+}
+.highlight{ background-color: green }
