@@ -57,13 +57,13 @@ RUN /bin/pip3.6 install stripe selenium django-ckeditor boto django-background-t
 RUN /bin/pip3.6 install boto3 django-ses django-amazon-ses flask flask-mail mail-parser
 
 RUN mkdir -p /web/
-COPY fasmail/* /web/www/
-COPY fasmail/nginx.conf /etc/nginx/
-COPY fasmail/start.sh /start.sh
+COPY * /web/www/
+COPY nginx.conf /etc/nginx/
+COPY start.sh /start.sh
 RUN chmod +x /start.sh
-COPY fasmail/ang.sh /ang.sh
+COPY ang.sh /ang.sh
 RUN chmod +x /ang.sh
-COPY settings_secret.py /web/www/django/djangoapi/settings_secret.py
+COPY ../settings_secret.py /web/www/django/djangoapi/settings_secret.py
 
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ENV NVM_DIR=/root/.nvm
