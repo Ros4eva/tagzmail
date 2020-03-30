@@ -229,3 +229,10 @@ export class MailComponent implements OnInit {
     this.selectedIndex = _index;
   }
 }
+export interface djangoMail{
+  TO: string,
+  FROM: string,
+  SUBJECT: string,
+  NAME: string,
+  "MESSAGE-DATE": any[]
+}

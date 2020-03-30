@@ -8,6 +8,7 @@ import os
 import boto3
 import collections
 import mailparser
+import json
 import yagmail
 from .settings_secret import *
 from django.views.decorators.csrf import csrf_exempt
@@ -27,13 +28,6 @@ def get_client():
 def index(request):
     return HttpResponse("Welcome to the fasmail api")
  
-send_mail(
-subject = 'Subject here',
-message = 'Here is the message.',
-from_email = 'test001@linuxjobber.com',
-recipient_list = ['oluwaseyieniayomi@gmail.com'],
-fail_silently=False,
-)
 
 @csrf_exempt 
 def mail(request):
@@ -193,13 +187,52 @@ def find_user_content(request):
     )
 
             
-    initial_keys_to_check = [x['FROM'] for x in mail_list]
+    initial_keys_to_check = [x['FROM'] for x in sortedArray]
     keys_to_check = list(set(initial_keys_to_check))
+    #print(initial_keys_to_check)
+    #print(keys_to_check)
 
     sorted_list =[]
 
     for key_to_check in keys_to_check:
-        new_list =  list(filter(lambda x: x["FROM"] in key_to_check, final_list))
+        new_list =  list(filter(lambda x: x["FROM"] in key_to_check, sortedArray))
+        #print(new_list)
         sorted_list.append(new_list)
-    
-    return JsonResponse(sortedArray,safe=False)
+        #print(sorted_list)
+
+    s = json.dumps(sortedArray)
+    print(s)
+    loaded = json.loads(s)
+    #print(loaded)
+    dictionary = {}
+    for item in loaded:
+        FROM = item["FROM"] # From
+        MESSAGE = item["MESSAGE"][0] # Message
+        DATE = item["DATE"] # Date
+        if FROM not in dictionary: # If it hasn't been seen before
+            dictionary[FROM] = item.copy() # To preserve TO, SUBJECT, ...
+            del dictionary[FROM]["MESSAGE"] # No more >:)
+            del dictionary[FROM]["DATE"] # No more >:)
+            dictionary[FROM]["MESSAGE-DATE"] = [] # This
+        dictionary[FROM]["MESSAGE-DATE"].append((MESSAGE, DATE)) # Here, the message and date are combined into a single item as a tuple
+    for key in dictionary:
+        print ("works")
+        new = ([dictionary[key] for key in dictionary])
+
+    #print(new)
+  #  s = json.dumps(sorted_list)
+  #  messages = json.loads(s)[0]
+  #  def unify_messages(messages):
+  #      unified_msgs = {}
+  #      for message in messages:
+  #          if message['FROM'] in unified_msgs:
+  #              unified_msgs[message['FROM']]['MESSAGE'].extend(message['MESSAGE'])
+  #          else:
+  #              unified_msgs[message['FROM']] = message
+
+  #      return [v for v in unified_msgs.values()]
+
+  #  for message in messages:
+  #      unified_messages = unify_messages(messages)
+    #print (list(dictionary.keys()))
+    return JsonResponse(new,safe=False)

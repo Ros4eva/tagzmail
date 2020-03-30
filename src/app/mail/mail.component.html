@@ -53,7 +53,7 @@
                   </div>
                   <div class="card-body p-0">
                       <div class="float-left" style="width: 330px; height: 430px; border-right: 1px solid #dad9d9; overflow-x: hidden; overflow-y: auto;">
-                          <div class="p-2 profile-card" style="width: 315px; height: 100px; border-bottom: 1px solid #dad9d9;" *ngFor="let mail of dataservice.data; let i = index;" (click)="viewMail(mail.MESSAGE,mail.FROM,mail.NAME,mail.DATE,i)" [ngClass]="{'highlight': selectedIndex === i}">
+                          <div class="p-2 profile-card" style="width: 315px; height: 100px; border-bottom: 1px solid #dad9d9;" *ngFor="let mail of dataservice.data; let i = index;" [ngClass]="{'highlight': selectedIndex === i}">
                               <div class="row">
                                   <div class="col-md-3 pt-2">
                                       <div class="rounded-circle shadow" style="background-image: url('images/avt.jpg'); background-repeat: round; height: 70px; width: 70px;">
@@ -61,8 +61,8 @@
                                       </div>
                                   </div>
                                   <div class="col-md-7 p-0 pl-3 pt-4" style="line-height: 12px;">
-                                      <p style="font-size:18px;"><b>{{mail.FROM}}</b></p>
-                                      <p style="font-size:13px;">{{mail.NAME }}.</p>
+                                      <p style="font-size:18px;"><b>{{mail?.FROM}}</b></p>
+                                      <p style="font-size:13px;">{{mail?.NAME }}.</p>
                                   </div>
                                   <div class="col-md-2 p-0 pt-3" style="line-height:11px;">
                                       <p class="text-secondary" style="font-size:12px;">20m <i class="fa fa-star fa-md" aria-hidden="true"></i></p>
@@ -78,9 +78,9 @@
                                       <div class="col-md-1 pl-3">
                                           <div class="rounded-circle" style="background-image: url('images/avt5.png'); background-repeat: round; height: 50px; width: 50px;"></div>
                                       </div>
-                                      <div class="col-md-10 ml-4 pt-1" style="line-height:10px;">
-                                          <p style="font-size:16px;"><b>{{mailee}}</b><span class="text-secondary pl-2" style="font-size:13px;"> {{user_date}}</span> </p>
-                                          <p style="font-size:15px; color: #676767;line-height:18px">{{user_message}}</p>
+                                      <div class="col-md-10 ml-4 pt-1" style="line-height:10px;" *ngFor="let msg of mail['MESSAGE-DATE']; let i = index;">
+                                          <p style="font-size:16px;"><b>{{mailee}}</b><span class="text-secondary pl-2" style="font-size:13px;"> {{ msg[1] | date}}</span> </p>
+                                          <p style="font-size:15px; color: #676767;line-height:18px">{{ msg[0] }}</p>
                                       </div>
                                   </div>
                               </div>
