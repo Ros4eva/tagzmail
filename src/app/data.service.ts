@@ -13,7 +13,7 @@ export class DataService {
 
   public f_domain_name = '127.0.0.1:9000';
   public l_domain_name = '127.0.0.1:8000';
-  public domain_protocol = 'http://';
+  public domain_protocol = 'https://';
 
 
 
@@ -30,7 +30,6 @@ export class DataService {
   public DATE;
   public TO;
   public FROM;
-  public MESSAGE_DATE;
   public SUBJECT;
   public NAME;
   public projects;
@@ -41,6 +40,8 @@ export class DataService {
   public message_body;
   public to_email;
   public email_subject;
+  public MESSAGE_DATE;
+  public MESSAGE;
 
   private headers: HttpHeaders = new HttpHeaders();
 
@@ -124,12 +125,7 @@ export class DataService {
     this.staff_email=sessionStorage.getItem('email');
     console.log(this.staff_email)
 
-    //this.http.get('http://127.0.0.1:9000' + '/api/v1.0/get_user_detail/?id=' + 'josephs@linuxjobber')
-    this.http.get(this.domain_protocol + this.f_domain_name+'/api/v1.0/get_user_detail/?id='+this.staff_email)
-      .subscribe((res) => {
-      this.data = res
-      console.log(this.data)
-    })
+    return this.http.get(this.domain_protocol + this.f_domain_name+'/api/v1.0/get_user_detail/?id='+this.staff_email);
   }
 }
 
