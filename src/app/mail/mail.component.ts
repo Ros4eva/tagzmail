@@ -136,7 +136,7 @@ export class MailComponent implements OnInit {
     }
 
 
-    this.http.post('http://127.0.0.1:9000/mail/', formData).subscribe(
+    this.http.post(this.dataservice.domain_protocol + this.dataservice.f_domain_name + '/mail/', formData).subscribe(
       data => {
         this.message = 'Email has been sent.';
       },
