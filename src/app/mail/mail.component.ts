@@ -151,11 +151,14 @@ export class MailComponent implements OnInit {
   sendEmail() {
     this.message = '';
     let formData: any = new FormData();
+    console.log(this.form.get('frommail').value)
+    console.log(this.toEmail)
+    console.log(this.form.get('messagebody').value)
     if (this.toEmail == null || this.form.get('messagebody').value == null) {
       return;
     } else {
       formData.append('frommail', this.form.get('frommail').value);
-      formData.append('tomail', this.form.get('tomail').value);
+      formData.append('tomail', this.toEmail);
       formData.append('subject', this.form.get('subject').value);
       formData.append('msgb', this.form.get('messagebody').value);
       formData.append('attach', this.form.get('avatar').value);
@@ -250,6 +253,7 @@ export class MailComponent implements OnInit {
     sessionStorage.setItem('mailee', mailee);
     // sessionStorage.setItem('user_date', user_date) //Sooo, it we expect an array of message so you might not have a single user_date
     console.log(sessionStorage.getItem('mailee'));
+    console.log(sessionStorage.getItem('mailer'));
     this.userMsg = [];
     mail.forEach(m => {
       this.userMsg.push({
@@ -259,6 +263,7 @@ export class MailComponent implements OnInit {
     })
     console.log(this.userMsg);
     this.mailee = mailee;
+    this.mailer = mailer;
     // this.user_date = user_date;
     this.selectedIndex = _index;
   }
