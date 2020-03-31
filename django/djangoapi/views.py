@@ -207,17 +207,22 @@ def find_user_content(request):
     dictionary = {}
     for item in loaded:
         FROM = item["FROM"] # From
-        MESSAGE = item["MESSAGE"][0] # Message
+        MESSAGE = item["MESSAGE"] # Message
         DATE = item["DATE"] # Date
         if FROM not in dictionary: # If it hasn't been seen before
             dictionary[FROM] = item.copy() # To preserve TO, SUBJECT, ...
             del dictionary[FROM]["MESSAGE"] # No more >:)
-            del dictionary[FROM]["DATE"] # No more >:)
+            #del dictionary[FROM]["DATE"] # No more >:)
             dictionary[FROM]["MESSAGE-DATE"] = [] # This
         dictionary[FROM]["MESSAGE-DATE"].append((MESSAGE, DATE)) # Here, the message and date are combined into a single item as a tuple
     for key in dictionary:
         print ("works")
         new = ([dictionary[key] for key in dictionary])
+
+    old = sorted(
+        new,
+        key=lambda x: datetime.strptime(x['DATE'], '%Y-%m-%d %H:%M:%S'), reverse=True
+    )        
 
     #print(new)
   #  s = json.dumps(sorted_list)
@@ -235,4 +240,4 @@ def find_user_content(request):
   #  for message in messages:
   #      unified_messages = unify_messages(messages)
     #print (list(dictionary.keys()))
-    return JsonResponse(new,safe=False)
+    return JsonResponse(old,safe=False)
