@@ -127,6 +127,7 @@ export class MailComponent implements OnInit {
         NAME: '',
         TO: this.toEmail
       }, null);
+      console.log(this.form.get('frommail').value)
       formData.append('frommail', this.form.get('frommail').value);
       formData.append('tomail', this.toEmail);
       formData.append('subject', this.subject);
@@ -248,7 +249,7 @@ export class MailComponent implements OnInit {
     sessionStorage.setItem('mailer', mailer);
     sessionStorage.setItem('mailee', mailee);
     // sessionStorage.setItem('user_date', user_date) //Sooo, it we expect an array of message so you might not have a single user_date
-    console.log(sessionStorage.getItem('mailer'));
+    console.log(sessionStorage.getItem('mailee'));
     this.userMsg = [];
     mail.forEach(m => {
       this.userMsg.push({

@@ -13,7 +13,7 @@ export class DataService {
 
   public f_domain_name = '127.0.0.1:9000';
   public l_domain_name = '127.0.0.1:8000';
-  public domain_protocol = 'https://';
+  public domain_protocol = 'http://';
 
 
 

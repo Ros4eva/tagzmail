@@ -183,7 +183,7 @@ def find_user_content(request):
 
     sortedArray = sorted(
         mail_list,
-        key=lambda x: datetime.strptime(x['DATE'], '%Y-%m-%d %H:%M:%S'), reverse=True
+        key=lambda x: datetime.strptime(x['DATE'], '%Y-%m-%d %H:%M:%S')
     )
 
             
