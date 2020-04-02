@@ -240,7 +240,7 @@ export class MailComponent implements OnInit {
 
   viewMail(mailItem: djangoMail, _index: number) {
     // mail, mailer, mailee, user_date, _index: number
-    const mail = mailItem['MESSAGE-DATE'];
+    const mail = mailItem['MESSAGE-DATE'].map(r=>r).reverse();
     const mailer = mailItem.FROM;
     const mailee = mailItem.TO;
 

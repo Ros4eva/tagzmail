@@ -183,7 +183,7 @@ def find_user_content(request):
 
     sortedArray = sorted(
         mail_list,
-        key=lambda x: datetime.strptime(x['DATE'], '%Y-%m-%d %H:%M:%S')
+        key=lambda x: datetime.strptime(x['DATE'], '%Y-%m-%d %H:%M:%S'),reverse=True
     )
 
             
@@ -240,4 +240,4 @@ def find_user_content(request):
   #  for message in messages:
   #      unified_messages = unify_messages(messages)
     #print (list(dictionary.keys()))
-    return JsonResponse(old,safe=False)
+    return JsonResponse(new,safe=False)
