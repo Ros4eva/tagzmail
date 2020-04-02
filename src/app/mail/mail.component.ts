@@ -125,6 +125,7 @@ export class MailComponent implements OnInit {
         FROM: '',
         SUBJECT: '',
         NAME: '',
+        DATE: '',
         TO: this.toEmail
       }, null);
       console.log(this.form.get('frommail').value)
@@ -243,15 +244,16 @@ export class MailComponent implements OnInit {
     const mail = mailItem['MESSAGE-DATE'].map(r=>r).reverse();
     const mailer = mailItem.FROM;
     const mailee = mailItem.TO;
+    const user_date = mailItem.DATE;
 
     this.router.navigate(['/mail/', mailer]);
     console.log(mail);
     console.log(mailer);
-    // console.log(user_date) //Sooo, it we expect an array of message so you might not have a single user_date
+    console.log(user_date) //Sooo, it we expect an array of message so you might not have a single user_date
     this.message = '';
     sessionStorage.setItem('mailer', mailer);
     sessionStorage.setItem('mailee', mailee);
-    // sessionStorage.setItem('user_date', user_date) //Sooo, it we expect an array of message so you might not have a single user_date
+    sessionStorage.setItem('user_date', user_date) //Sooo, it we expect an array of message so you might not have a single user_date
     console.log(sessionStorage.getItem('mailee'));
     console.log(sessionStorage.getItem('mailer'));
     this.userMsg = [];
@@ -264,7 +266,7 @@ export class MailComponent implements OnInit {
     console.log(this.userMsg);
     this.mailee = mailee;
     this.mailer = mailer;
-    // this.user_date = user_date;
+    this.user_date = user_date;
     this.selectedIndex = _index;
   }
 }
@@ -275,6 +277,7 @@ export interface djangoMail {
   FROM: string;
   SUBJECT: string;
   NAME: string;
+  DATE: string;
   'MESSAGE-DATE': any[];
 }
 

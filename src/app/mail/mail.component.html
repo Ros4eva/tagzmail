@@ -47,8 +47,8 @@
                           All Conversations (1) <span class="pull-right text-secondary"> <i class="fa fa-search"></i></span>
                       </div>
                       <div class="float-left mt-4 pl-3" style="line-height:9px">
-                          <p style="font-size:20px;"><b>{{mailee}}</b></p>
-                          <p class="text-secondary" style="font-size:13px;"><b> Active </b>&nbsp;| &nbsp;typing...</p>
+                          <p style="font-size:20px;"><b>{{mailer}}</b></p>
+                          <p class="text-secondary" style="font-size:13px;"><b> Active </b>&nbsp;| &nbsp;</p>
                       </div>
                   </div>
                   <div class="card-body p-0">
@@ -62,7 +62,9 @@
                                   </div>
                                   <div class="col-md-7 p-0 pl-3 pt-4" style="line-height: 12px;">
                                       <p style="font-size:18px;"><b>{{mail?.FROM}}</b></p>
-                                      <p style="font-size:13px;">{{mail?.NAME}}.</p>
+                                      <p style="font-size:13px;">{{mail?.NAME}} . ({{mail?.DATE}})</p>
+
+
                                   </div>
                               </div>
                           </div>
@@ -88,6 +90,7 @@
                           <div class="p-4" style="width: 100%; position: relative;">
                               <form class="form-group" [formGroup]="form" (ngSubmit)="sendEmail();">
                                   <input type="text"class="form-control" id="messagebody" formControlName="messagebody" name="messagebody" aria-describedby="helpId" placeholder="">
+                                  
                                   <small id="helpId" class="form-text text-muted"><i class="fa fa-smile-o" aria-hidden="true"></i> <i class="fa fa-paperclip" aria-hidden="true"></i>
                                       <span class="pull-right">
                                           <a class="nav-link dropdown-toggle float-left text-secondary" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
