@@ -1,0 +1,57 @@
+<div class="row justify-content-center">
+  <div class="col-md-11">
+    <div class="card mt-5 shadow-sm">
+      <div class="card-header p-0 bg-white">
+        <div class="pt-4 pl-3 pr-3 float-left" style="width: 330px; height: 80px; border-right: 1px solid #dad9d9;">
+          <div class="dropdown show">
+            <span class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Sent Emails
+            </span>
+      
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="mail">Received Emails</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <div class="float-left"
+          style="width: 330px; height: 430px; border-right: 1px solid #dad9d9; overflow-x: hidden; overflow-y: auto;">
+          <div class="p-2 profile-card" style="width: 315px; height: 100px; border-bottom: 1px solid #dad9d9;"
+            *ngFor="let mail of sent_emails">
+            <div class="row" style="cursor: pointer;" (click)="showEmail(mail['To'], mail['Subject'], mail['Message'], mail['Time'])">
+              <div class="col-md-3 pt-2">
+                <div class="rounded-circle shadow"
+                  style="background-repeat: round; height: 65px; width: 65px;">
+                  <div style="height: 20px; width: 20px; border: 3px solid white;"
+                    class="rounded-circle bg-success"></div>
+                </div>
+              </div>
+              <div class="col-md-7 p-0 pl-3 pt-4" style="line-height: 12px;">
+                <p style="font-size:18px; line-height: 15px;"><b>{{mail['To']}}</b></p>
+                <p style="font-size:13px;">Me<span style="font-size: 14px; color:black; font-weight: 500; margin: 10px;">|</span> {{mail['Time'] | date}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-left" style="width: 600px; border-right: 1px solid #dad9d9;">
+          <div style="width: 600px; ">
+            <div class="p-4" style="width: 100%;" style="padding-bottom: 5px;">
+              <!-- <div *ngFor="let mails of sent_emails"> -->
+                <div id="showMessageField" class="card mb-3 shadow" style="border-color: rgba(0,0,0,0.1); max-width: 100%; left: 20px; border-radius: 6px; margin-right: 5px;">
+                  <div class="card-header bg-transparent" style="padding-top:8px; padding-bottom: 2px; border: none!important;" id="sentToBox"></div>
+                  <div class="card-body" style="color: rgba(0, 0, 0, 0.9); padding-top: 5px;">
+                    <h5 class="card-title" style="font-size: 16px;" id="subjectBox"></h5>
+                    <p class="card-text" style="font-size: 14px;" id="messageBox"></p>
+                  </div>
+                  <div class="card-footer bg-transparent" style="text-align: right; border: none!important; padding-bottom: 5px; padding-top: 0px; font-size: 12px; color: rgba(0,0,0,0.5);" >{{messageTime | date}}</div>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

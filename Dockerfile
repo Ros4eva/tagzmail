@@ -43,7 +43,7 @@ RUN  yum clean all;
 
 RUN yum -y install gcc
 
-RUN pip install --upgrade pip && pip install boto && pip install boto3
+RUN pip install --upgrade pip && pip install boto && pip install boto3 && pip install django-background-task
 RUN yum -y install https://centos7.iuscommunity.org/ius-release.rpm python36u python36u-devel python36u-pip
 RUN /bin/pip3.6 install django==2.1
 #RUN /bin/pip3.6 install channels
@@ -63,27 +63,24 @@ COPY start.sh /start.sh
 RUN chmod +x /start.sh
 COPY ang.sh /ang.sh
 RUN chmod +x /ang.sh
-COPY ../settings_secret.py /web/www/django/djangoapi/settings_secret.py
+# COPY ../settings_secret.py /web/www/django/djangoapi/settings_secret.py
 
 RUN wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ENV NVM_DIR=/root/.nvm
 RUN . $HOME/.nvm/nvm.sh && nvm install stable
 RUN . $HOME/.nvm/nvm.sh && npm install -g yarn
-RUN . $HOME/.nvm/nvm.sh && yarn global add @angular/cli@7.0.7
-#RUN . $HOME/.nvm/nvm.sh && npm install -g @angular/cli@7.0.7
-RUN git config --global user.email "joseph.showunmi@linuxjobber.com"
-RUN git config --global user.name "joseph.showunmi"
-RUN cd /web && . $HOME/.nvm/nvm.sh && ng new fasmail --routing
+RUN . $HOME/.nvm/nvm.sh && yarn global add @angular/cli@7.3.9
+RUN git config --global user.email "prosper.sopuruchi@gmail.com"
+RUN git config --global user.name "Prosper Ndubueze"
+RUN cd /web/tagzmail && . $HOME/.nvm/nvm.sh && npm install
 
-RUN . $HOME/.nvm/nvm.sh && yes | cp -r /web/www/* /web/fasmail
+# RUN cd /web/tagzmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:8000/int.linuxjobber.com/' src/app/data.service.ts;
+# RUN cd /web/tagzmail/ && sed -i 's/127.0.0.1:9000/intfasmailapi.linuxjobber.com/' src/app/data.service.ts;
 
-RUN cd /web/fasmail/ && sed -i 's/127.0.0.1:9000/intfasmailapi.linuxjobber.com/' src/app/data.service.ts;
-
-RUN cd /web/fasmail && . $HOME/.nvm/nvm.sh && npm install ngx-materialize materialize-css@next ng2-dragula rxjs && ng build --prod --aot
-RUN mkdir -p /usr/share/nginx/web/fasmail
-RUN yes | cp -r /web/fasmail/dist/fasmail/* /usr/share/nginx/web/fasmail
+RUN cd /web/tagzmail && . $HOME/.nvm/nvm.sh &&  ng build --prod --aot
+RUN mkdir -p /usr/share/nginx/web/tagzmail
+RUN yes | cp -r /web/tagzmail/dist/tagzmail/* /usr/share/nginx/web/tagzmail
 
 
 

@@ -1,0 +1,3 @@
+#loginBtn::before, #loginBtn::after {
+    outline-color: transparent!important;
+}

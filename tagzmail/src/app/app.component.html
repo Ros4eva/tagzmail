@@ -1,0 +1,39 @@
+<nav [ngClass]="'navbar navbar-expand-md navbar-light bg-white shadow-sm'">
+    <a class="navbar-brand" routerLink="/mail"><b>Fasmail</b></a>
+    <button [ngClass]="'navbar-toggler d-lg-none'" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div [ngClass]="'collapse navbar-collapse'" id="collapsibleNavId">
+        <form [ngClass]="'form-inline mr-auto  my-2 my-lg-0'">
+            <div [ngClass]="'input-group ml-3'">
+                <input class="form-control" type="text" size="35" placeholder="Search">
+                <div class="input-group-append">
+                    <button [ngClass]="'btn btn-outline-success my-2 my-sm-0'" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+        <ul [ngClass]="'navbar-nav mt-2 mt-lg-0'">
+            <li [ngClass]="'nav-item active'">
+                <a class="nav-link" routerLink="/mail">{{email}} <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="logout()">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li [ngClass]="'nav-item dropdown'">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+<router-outlet></router-outlet>
