@@ -1,6 +1,0 @@
-aws_access_key='AKIA6RSO4E74CLPHQCQO'
-aws_secret_key='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'
-bucket='ljtestmails'
-mail_username='admin@linuxjobber.com'
-mail_password='m4k3Aw!y'
-mail_server='smtp.linuxjobber.com'
